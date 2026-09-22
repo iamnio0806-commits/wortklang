@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import {
   categories,
   countByLevel,
@@ -9,10 +9,15 @@ import {
   type Level,
   type VocabWord,
 } from './data/vocabulary'
+import {
+  enrich,
+  PLURAL_PATTERN_GUIDE,
+  type EnrichedWord,
+} from './lib/enrich'
 import { ensureVoicesLoaded, speakGerman, stopSpeaking } from './lib/speech'
 import './App.css'
 
-type Mode = 'browse' | 'flash'
+type Mode = 'browse' | 'flash' | 'plural' | 'verb' | 'family'
 type LevelFilter = Level | '全部'
 
 const LEARNED_KEY = 'wortklang-learned'
@@ -21,6 +26,14 @@ const genderClass: Record<NonNullable<Gender>, string> = {
   der: 'gender-der',
   die: 'gender-die',
   das: 'gender-das',
+}
+
+const MODE_LABEL: Record<Mode, string> = {
+  browse: '單字瀏覽',
+  flash: '閃卡意思',
+  plural: '複數記憶',
+  verb: '動詞變化',
+  family: '字族聯想',
 }
 
 function loadLearned(): Set<string> {
@@ -35,9 +48,7 @@ function loadLearned(): Set<string> {
 }
 
 function WordBadge({ article }: { article: Gender }) {
-  if (!article) {
-    return <span className="badge badge-neutral">無冠詞</span>
-  }
+  if (!article) return <span className="badge badge-neutral">無冠詞</span>
   return <span className={`badge ${genderClass[article]}`}>{article}</span>
 }
 
@@ -65,21 +76,188 @@ function SpeakButton({
   )
 }
 
+function NavButtons({
+  onPrev,
+  onNext,
+  label,
+}: {
+  onPrev: () => void
+  onNext: () => void
+  label: string
+}) {
+  return (
+    <div className="nav-row">
+      <button type="button" className="ghost nav-btn" onClick={onPrev}>
+        ← 上一個
+      </button>
+      <span className="nav-label">{label}</span>
+      <button type="button" className="ghost nav-btn" onClick={onNext}>
+        下一個 →
+      </button>
+    </div>
+  )
+}
+
+function GrammarPanels({ e }: { e: EnrichedWord }) {
+  return (
+    <>
+      {e.parts && (e.parts.prefixes.length > 0 || e.parts.suffixes.length > 0) && (
+        <section className="panel">
+          <h3>字首／字根／字尾</h3>
+          <div className="parts-row">
+            {e.parts.prefixes.map((p) => (
+              <span key={p} className="chip chip-prefix">
+                {p}-
+              </span>
+            ))}
+            <span className="chip chip-root">{e.parts.root}</span>
+            {e.parts.suffixes.map((s) => (
+              <span key={s} className="chip chip-suffix">
+                -{s}
+              </span>
+            ))}
+          </div>
+          {e.parts.note && <p className="panel-note">{e.parts.note}</p>}
+        </section>
+      )}
+
+      {e.wordType === '名詞' && (
+        <section className="panel">
+          <h3>名詞複數（對照英文記法）</h3>
+          <p className="panel-lead">
+            {e.plural ? (
+              <>
+                <strong>
+                  {e.article} {e.word}
+                </strong>{' '}
+                → <strong>die {e.plural}</strong>
+                {e.pluralPattern && (
+                  <span className="pattern-tag">{e.pluralPattern}</span>
+                )}
+              </>
+            ) : (
+              '此詞複數較少用或不規則，先記單數＋冠詞。'
+            )}
+          </p>
+          {e.pluralHint && <p className="panel-note">{e.pluralHint}</p>}
+          <ul className="guide-list">
+            {PLURAL_PATTERN_GUIDE.slice(0, 5).map((g) => (
+              <li key={g.pattern}>
+                <strong>{g.pattern}</strong>：{g.likeEnglish}（例 {g.example}）
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {e.verb && (
+        <section className="panel">
+          <h3>動詞用法與變化</h3>
+          <p className="panel-lead">
+            <span className="pattern-tag">{e.verb.class}</span>
+            {e.verb.separable && (
+              <span className="pattern-tag">可分：{e.verb.separable}-</span>
+            )}
+          </p>
+          <p className="panel-note">{e.verb.usage}</p>
+          <div className="conj-grid">
+            <div>
+              <span>ich</span>
+              <strong>{e.verb.present.ich}</strong>
+            </div>
+            <div>
+              <span>du</span>
+              <strong>{e.verb.present.du}</strong>
+            </div>
+            <div>
+              <span>er/sie/es</span>
+              <strong>{e.verb.present.er}</strong>
+            </div>
+            <div>
+              <span>wir</span>
+              <strong>{e.verb.present.wir}</strong>
+            </div>
+            <div>
+              <span>ihr</span>
+              <strong>{e.verb.present.ihr}</strong>
+            </div>
+            <div>
+              <span>Sie/sie</span>
+              <strong>{e.verb.present.sie}</strong>
+            </div>
+          </div>
+          <dl className="meta compact">
+            <dt>過去式</dt>
+            <dd>{e.verb.preterite}</dd>
+            <dt>過去分詞</dt>
+            <dd>
+              {e.verb.auxiliary} + {e.verb.participle}
+            </dd>
+          </dl>
+          <div className="speak-row">
+            <SpeakButton
+              label="聽現在時"
+              text={`${e.verb.present.ich}. ${e.verb.present.du}. ${e.verb.present.er}.`}
+            />
+          </div>
+        </section>
+      )}
+
+      {e.related.length > 0 && (
+        <section className="panel">
+          <h3>相關詞／字族（像英文 work→worker）</h3>
+          <ul className="related-list">
+            {e.related.map((r) => (
+              <li key={`${r.relation}-${r.word}`}>
+                <span className="related-rel">{r.relation}</span>
+                <strong>
+                  {r.article ? `${r.article} ` : ''}
+                  {r.word}
+                </strong>
+                <span className="related-zh">{r.translation}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <section className="panel tips">
+        <h3>記憶法</h3>
+        <ul>
+          {e.memoryTips.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+      </section>
+    </>
+  )
+}
+
 function WordDetail({
   word,
   learned,
   onToggleLearned,
+  onPrev,
+  onNext,
+  positionLabel,
 }: {
   word: VocabWord
   learned: boolean
   onToggleLearned: () => void
+  onPrev: () => void
+  onNext: () => void
+  positionLabel: string
 }) {
+  const e = enrich(word)
   const lemma = word.article ? `${word.article} ${word.word}` : word.word
 
   return (
     <article className="detail" key={word.id}>
+      <NavButtons onPrev={onPrev} onNext={onNext} label={positionLabel} />
+
       <div className="detail-top">
         <WordBadge article={word.article} />
+        <span className="type-pill">{e.wordType}</span>
         <span className={`level-pill level-${word.level}`}>{word.level}</span>
       </div>
 
@@ -104,6 +282,8 @@ function WordDetail({
             <dd>die {word.plural}</dd>
           </>
         )}
+        <dt>詞性</dt>
+        <dd>{e.wordType}</dd>
         <dt>等級</dt>
         <dd>{word.level}</dd>
         <dt>分類</dt>
@@ -113,6 +293,9 @@ function WordDetail({
       <div className="speak-row">
         <SpeakButton label="聽單字" text={lemma} />
         <SpeakButton label="慢速" text={lemma} slow />
+        {word.plural && (
+          <SpeakButton label="聽複數" text={`die ${word.plural}`} />
+        )}
         <button
           type="button"
           className={learned ? 'learned-btn on' : 'learned-btn'}
@@ -131,55 +314,158 @@ function WordDetail({
           <SpeakButton label="慢速例句" text={word.example} slow />
         </div>
       </section>
+
+      <GrammarPanels e={e} />
     </article>
   )
 }
 
-function FlashCard({
+function PracticeCard({
+  mode,
   word,
   revealed,
   onReveal,
+  onPrev,
   onNext,
-  onMarkLearned,
+  onMark,
+  positionLabel,
 }: {
+  mode: Mode
   word: VocabWord
   revealed: boolean
   onReveal: () => void
+  onPrev: () => void
   onNext: () => void
-  onMarkLearned: () => void
+  onMark: () => void
+  positionLabel: string
 }) {
+  const e = enrich(word)
   const lemma = word.article ? `${word.article} ${word.word}` : word.word
+
+  let prompt = '這是什麼意思？'
+  let frontExtra: ReactNode = null
+  let backExtra: ReactNode = null
+
+  if (mode === 'plural') {
+    prompt = '複數是什麼？屬於哪種變化？'
+    frontExtra = (
+      <p className="flash-sub">
+        {word.article} {word.word}
+      </p>
+    )
+    backExtra = (
+      <>
+        <p className="translation">
+          die {word.plural ?? '（少用／無）'}
+        </p>
+        {e.pluralPattern && (
+          <p className="pattern-tag">{e.pluralPattern}</p>
+        )}
+        {e.pluralHint && <p className="example-zh">{e.pluralHint}</p>}
+      </>
+    )
+  } else if (mode === 'verb') {
+    prompt = '現在時 ich / du / er 怎麼說？'
+    frontExtra = <p className="flash-sub">{word.word}</p>
+    backExtra = e.verb ? (
+      <>
+        <p className="translation">{word.translation}</p>
+        <div className="conj-grid mini">
+          <div>
+            <span>ich</span>
+            <strong>{e.verb.present.ich}</strong>
+          </div>
+          <div>
+            <span>du</span>
+            <strong>{e.verb.present.du}</strong>
+          </div>
+          <div>
+            <span>er</span>
+            <strong>{e.verb.present.er}</strong>
+          </div>
+        </div>
+        <p className="example-zh">
+          {e.verb.class} · {e.verb.preterite} / {e.verb.participle}
+        </p>
+        <p className="panel-note">{e.verb.usage}</p>
+      </>
+    ) : (
+      <p className="translation">{word.translation}</p>
+    )
+  } else if (mode === 'family') {
+    prompt = '有哪些相關詞／字族？'
+    frontExtra = <p className="flash-sub">{lemma}</p>
+    backExtra = (
+      <>
+        <p className="translation">{word.translation}</p>
+        {e.parts?.note && <p className="panel-note">{e.parts.note}</p>}
+        <ul className="related-list">
+          {e.related.length ? (
+            e.related.map((r) => (
+              <li key={r.word + r.relation}>
+                <span className="related-rel">{r.relation}</span>
+                <strong>
+                  {r.article ? `${r.article} ` : ''}
+                  {r.word}
+                </strong>
+                <span className="related-zh">{r.translation}</span>
+              </li>
+            ))
+          ) : (
+            <li>此詞暫無內建字族，可看字首字尾拆解。</li>
+          )}
+        </ul>
+      </>
+    )
+  } else {
+    // flash meaning
+    frontExtra = (
+      <h2 className="lemma">
+        {word.article && <span className="article">{word.article}</span>}
+        <span className="word">{word.word}</span>
+      </h2>
+    )
+    backExtra = (
+      <>
+        <p className="translation">{word.translation}</p>
+        <p className="example-de">{word.example}</p>
+        <p className="example-zh">{word.exampleTranslation}</p>
+      </>
+    )
+  }
 
   return (
     <div className={`flash ${revealed ? 'revealed' : ''}`}>
+      <NavButtons onPrev={onPrev} onNext={onNext} label={positionLabel} />
       <div className="flash-front">
         <WordBadge article={word.article} />
+        <span className="type-pill">{e.wordType}</span>
         <span className={`level-pill level-${word.level}`}>{word.level}</span>
-        <p className="flash-prompt">這是什麼意思？</p>
-        <h2 className="lemma">
-          {word.article && <span className="article">{word.article}</span>}
-          <span className="word">{word.word}</span>
-        </h2>
+        <p className="flash-prompt">{prompt}</p>
+        {mode !== 'flash' ? (
+          <h2 className="lemma">
+            {word.article && mode !== 'verb' && (
+              <span className="article">{word.article}</span>
+            )}
+            <span className="word">{word.word}</span>
+          </h2>
+        ) : (
+          frontExtra
+        )}
+        {mode !== 'flash' && frontExtra}
         <SpeakButton label="聽發音" text={lemma} />
       </div>
 
-      {revealed && (
-        <div className="flash-back">
-          <p className="translation">{word.translation}</p>
-          <p className="example-de">{word.example}</p>
-          <p className="example-zh">{word.exampleTranslation}</p>
-          <SpeakButton label="聽例句" text={word.example} />
-        </div>
-      )}
+      {revealed && <div className="flash-back">{backExtra}</div>}
 
       <div className="flash-actions">
         {!revealed ? (
           <button type="button" className="primary" onClick={onReveal}>
-            顯示意思
+            顯示答案
           </button>
         ) : (
           <>
-            <button type="button" className="learned-btn on" onClick={onMarkLearned}>
+            <button type="button" className="learned-btn on" onClick={onMark}>
               標記已學會並下一個
             </button>
             <button type="button" className="ghost" onClick={onNext}>
@@ -222,11 +508,16 @@ export default function App() {
       const done = vocabulary.filter(
         (w) => w.level === level && learned.has(w.id),
       ).length
-      return { level, total, done, pct: total ? Math.round((done / total) * 100) : 0 }
+      return {
+        level,
+        total,
+        done,
+        pct: total ? Math.round((done / total) * 100) : 0,
+      }
     })
   }, [learned])
 
-  const filtered = useMemo(() => {
+  const baseFiltered = useMemo(() => {
     const q = query.trim().toLowerCase()
     return vocabulary.filter((w) => {
       if (levelFilter !== '全部' && w.level !== levelFilter) return false
@@ -253,6 +544,23 @@ export default function App() {
     })
   }, [query, category, gender, levelFilter, hideLearned, learned])
 
+  // Mode-specific pool
+  const filtered = useMemo(() => {
+    if (mode === 'plural') {
+      return baseFiltered.filter((w) => w.article && w.plural)
+    }
+    if (mode === 'verb') {
+      return baseFiltered.filter((w) => w.category === '動詞')
+    }
+    if (mode === 'family') {
+      return baseFiltered.filter((w) => {
+        const e = enrich(w)
+        return e.related.length > 0 || (e.parts?.prefixes.length ?? 0) > 0
+      })
+    }
+    return baseFiltered
+  }, [baseFiltered, mode])
+
   useEffect(() => {
     if (!filtered.some((w) => w.id === selectedId) && filtered[0]) {
       setSelectedId(filtered[0].id)
@@ -262,10 +570,53 @@ export default function App() {
   useEffect(() => {
     setFlashIndex(0)
     setRevealed(false)
-  }, [filtered])
+  }, [filtered, mode])
 
-  const selected = filtered.find((w) => w.id === selectedId) ?? filtered[0]
+  const selectedIndex = Math.max(
+    0,
+    filtered.findIndex((w) => w.id === selectedId),
+  )
+  const selected = filtered[selectedIndex] ?? filtered[0]
   const flashWord = filtered[flashIndex % Math.max(filtered.length, 1)]
+
+  const goBrowse = (delta: number) => {
+    if (!filtered.length) return
+    stopSpeaking()
+    const next =
+      (selectedIndex + delta + filtered.length) % filtered.length
+    setSelectedId(filtered[next].id)
+  }
+
+  const goFlash = (delta: number) => {
+    if (!filtered.length) return
+    stopSpeaking()
+    setRevealed(false)
+    setFlashIndex(
+      (i) => (i + delta + filtered.length * 10) % filtered.length,
+    )
+  }
+
+  useEffect(() => {
+    const onKey = (ev: KeyboardEvent) => {
+      const tag = (ev.target as HTMLElement)?.tagName
+      if (tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA') return
+      if (ev.key === 'ArrowRight' || ev.key === 'j') {
+        ev.preventDefault()
+        if (mode === 'browse') goBrowse(1)
+        else goFlash(1)
+      } else if (ev.key === 'ArrowLeft' || ev.key === 'k') {
+        ev.preventDefault()
+        if (mode === 'browse') goBrowse(-1)
+        else goFlash(-1)
+      } else if (ev.key === ' ' && mode !== 'browse') {
+        ev.preventDefault()
+        setRevealed((r) => !r)
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, filtered, selectedIndex, flashIndex])
 
   const toggleLearned = (id: string) => {
     setLearned((prev) => {
@@ -278,9 +629,7 @@ export default function App() {
 
   const markAndNext = (id: string) => {
     setLearned((prev) => new Set(prev).add(id))
-    stopSpeaking()
-    setRevealed(false)
-    setFlashIndex((i) => i + 1)
+    goFlash(1)
   }
 
   return (
@@ -291,32 +640,31 @@ export default function App() {
         <p className="brand">Wortklang</p>
         <h1>聽得見的德文單字</h1>
         <p className="tagline">
-          完整 A1／A2 單字庫（兩千多詞）：冠詞、例句、發音，依等級學完初級。
+          完整 A1／A2：冠詞、複數規則、字首字根、動詞變化與字族記憶。
         </p>
-        <div className="cta-row">
-          <button
-            type="button"
-            className={mode === 'browse' ? 'primary' : 'ghost'}
-            onClick={() => {
-              stopSpeaking()
-              setMode('browse')
-            }}
-          >
-            單字瀏覽
-          </button>
-          <button
-            type="button"
-            className={mode === 'flash' ? 'primary' : 'ghost'}
-            onClick={() => {
-              stopSpeaking()
-              setMode('flash')
-              setRevealed(false)
-            }}
-          >
-            閃卡練習
-          </button>
+        <div className="cta-row modes">
+          {(Object.keys(MODE_LABEL) as Mode[]).map((m) => (
+            <button
+              key={m}
+              type="button"
+              className={mode === m ? 'primary' : 'ghost'}
+              onClick={() => {
+                stopSpeaking()
+                setMode(m)
+                setRevealed(false)
+                if (m === 'plural') setCategory('全部')
+                if (m === 'verb') setCategory('動詞')
+              }}
+            >
+              {MODE_LABEL[m]}
+            </button>
+          ))}
         </div>
-        {!voiceReady && <p className="voice-hint">正在載入語音引擎…</p>}
+        <p className="voice-hint">
+          快捷鍵：← → 上一個／下一個
+          {mode !== 'browse' ? '，空白鍵顯示答案' : ''}
+          {!voiceReady ? ' · 語音載入中…' : ''}
+        </p>
       </header>
 
       <section className="level-board" aria-label="等級進度">
@@ -356,11 +704,9 @@ export default function App() {
                 aria-valuenow={pct}
                 aria-valuemin={0}
                 aria-valuemax={100}
-                aria-label={`${level} 進度`}
               >
                 <span style={{ width: `${pct}%` }} />
               </div>
-              {pct === 100 && <p className="done-note">{level} 已完成！</p>}
             </div>
           ))}
         </div>
@@ -418,8 +764,7 @@ export default function App() {
             隱藏已學會
           </label>
           <p className="count">
-            {levelFilter === '全部' ? '全部' : levelFilter} · {filtered.length}{' '}
-            個單字
+            {MODE_LABEL[mode]} · {filtered.length} 個
           </p>
         </div>
       </section>
@@ -452,45 +797,36 @@ export default function App() {
               )
             })}
             {!filtered.length && (
-              <p className="empty">
-                {hideLearned
-                  ? '這個等級的單字都學會了！可以取消「隱藏已學會」或切換等級。'
-                  : '找不到符合的單字，試試其他關鍵字。'}
-              </p>
+              <p className="empty">找不到符合的單字。</p>
             )}
           </aside>
           <WordDetail
             word={selected}
             learned={learned.has(selected.id)}
             onToggleLearned={() => toggleLearned(selected.id)}
+            onPrev={() => goBrowse(-1)}
+            onNext={() => goBrowse(1)}
+            positionLabel={`${selectedIndex + 1} / ${filtered.length}`}
           />
         </main>
       )}
 
-      {mode === 'flash' && (
+      {mode !== 'browse' && (
         <main className="flash-wrap">
-          <p className="flash-progress">
-            {filtered.length
-              ? `${(flashIndex % filtered.length) + 1} / ${filtered.length} · ${levelFilter}`
-              : '0 / 0'}
-          </p>
           {filtered.length && flashWord ? (
-            <FlashCard
+            <PracticeCard
+              mode={mode}
               word={flashWord}
               revealed={revealed}
               onReveal={() => setRevealed(true)}
-              onNext={() => {
-                stopSpeaking()
-                setRevealed(false)
-                setFlashIndex((i) => i + 1)
-              }}
-              onMarkLearned={() => markAndNext(flashWord.id)}
+              onPrev={() => goFlash(-1)}
+              onNext={() => goFlash(1)}
+              onMark={() => markAndNext(flashWord.id)}
+              positionLabel={`${(flashIndex % filtered.length) + 1} / ${filtered.length}`}
             />
           ) : (
             <p className="empty">
-              {hideLearned
-                ? '這個篩選條件下沒有未學會的單字了。'
-                : '沒有可練習的單字。'}
+              這個練習模式目前沒有符合條件的單字，試試切換等級或分類。
             </p>
           )}
         </main>
@@ -498,8 +834,8 @@ export default function App() {
 
       <footer className="footer">
         <p>
-          建議先完成 A1，再進入 A2。發音使用瀏覽器德文語音（de-DE），Chrome /
-          Edge 效果較佳。
+          複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議
+          Chrome／Edge 聽發音。
         </p>
       </footer>
     </div>
