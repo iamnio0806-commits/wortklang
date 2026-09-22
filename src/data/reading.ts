@@ -1,7 +1,7 @@
 import raw from './reading.json'
 import type { Level } from './vocabulary'
 
-export type ReadingLevel = Extract<Level, 'A1' | 'A2' | 'B1'>
+export type ReadingLevel = Extract<Level, 'A1' | 'A2' | 'B1' | 'B2'>
 
 export type ReadingKind =
   | 'dialogue'
