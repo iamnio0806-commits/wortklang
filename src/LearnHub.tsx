@@ -33,7 +33,6 @@ import {
   listDueIds,
   reviewCard,
   saveSrsMap,
-  SRS_GRADE_LABEL,
   type SrsCard,
   type SrsGrade,
 } from './lib/srs'
@@ -295,15 +294,34 @@ function TodayReview({
 }) {
   const [idx, setIdx] = useState(0)
   const [revealed, setRevealed] = useState(false)
-  const currentId = dueIds[idx]
+  /** Session skips: look without changing SRS schedule. */
+  const [skipped, setSkipped] = useState<Set<string>>(() => new Set())
+  const activeDue = useMemo(
+    () => dueIds.filter((id) => !skipped.has(id)),
+    [dueIds, skipped],
+  )
+  const currentId = activeDue[idx]
   const word = currentId ? vocabById(currentId) : undefined
   const taskKey = vpTaskId(vpDay.week, vpDay.day)
   const dayDone = vpDone.has(taskKey)
 
   useEffect(() => {
     setRevealed(false)
-    if (idx >= dueIds.length) setIdx(0)
-  }, [idx, dueIds.length])
+    if (idx >= activeDue.length) setIdx(0)
+  }, [idx, activeDue.length])
+
+  function skipCurrent() {
+    if (!currentId) return
+    setSkipped((prev) => new Set(prev).add(currentId))
+    setRevealed(false)
+  }
+
+  function stillLearning() {
+    // Keep due schedule; just show the next card in this pass.
+    setRevealed(false)
+    if (activeDue.length <= 1) return
+    setIdx((i) => (i + 1) % activeDue.length)
+  }
 
   return (
     <div className="learn-panel">
@@ -322,7 +340,7 @@ function TodayReview({
         <p className="exam-card-meta">{vpWeek.focusZh}</p>
         <p className="exam-meta">
           {vpDay.kind === 'learn'
-            ? `今日 ${vocabIds.length} 個字。點進去學；學會了再按「標記已學會（排程複習）」——系統不會自動拿掉。`
+            ? `今日 ${vocabIds.length} 個字。點進去看沒關係；只有你按「我會了」才會排入複習——系統不會自動拿掉。`
             : vpDay.tipZh}
         </p>
         {vocabIds.length > 0 && (
@@ -404,17 +422,22 @@ function TodayReview({
       </article>
 
       <section className="panel">
-        <h3>SRS 到期複習（艾賓浩斯排程）</h3>
+        <h3>SRS 到期複習</h3>
         <p className="panel-note">
-          只有你按「標記已學會」的字才會進複習排程。建議：單字 → 文法／閱讀 →
-          再打到期卡。
+          打開看、顯示意思都不會把字拿掉。只有你按「我會了」才會排下次複習；也可以先跳過，排程不變。
         </p>
         {!word ? (
-          <p className="empty">目前沒有到期單字。學會新字後記得手動標記已學會。</p>
+          <p className="empty">
+            {dueIds.length === 0
+              ? '目前沒有到期單字。學會新字後記得自己按「我會了」。'
+              : '這一輪先跳過的都看完了。重整頁面可再複習，或等下次到期。'}
+          </p>
         ) : (
           <div className="srs-card">
             <p className="exam-meta">
-              {idx + 1} / {dueIds.length} · {formatDueLabel(srsMap[word.id])}
+              {idx + 1} / {activeDue.length}
+              {skipped.size > 0 ? `（已跳過 ${skipped.size}）` : ''} ·{' '}
+              {formatDueLabel(srsMap[word.id])}
             </p>
             <h2 className="lemma">
               {word.article ? `${word.article} ` : ''}
@@ -422,32 +445,44 @@ function TodayReview({
             </h2>
             <SpeakPair text={word.word} normalLabel="聽" slowLabel="慢速" />
             {!revealed ? (
-              <button
-                type="button"
-                className="primary"
-                onClick={() => setRevealed(true)}
-              >
-                顯示意思
-              </button>
+              <div className="srs-grades">
+                <button
+                  type="button"
+                  className="primary"
+                  onClick={() => setRevealed(true)}
+                >
+                  顯示意思
+                </button>
+                <button type="button" className="ghost" onClick={skipCurrent}>
+                  先跳過
+                </button>
+              </div>
             ) : (
               <>
                 <p className="translation">{word.translation}</p>
                 <p className="example-de">{word.example}</p>
                 <p className="example-zh">{word.exampleTranslation}</p>
                 <div className="srs-grades">
-                  {(Object.keys(SRS_GRADE_LABEL) as SrsGrade[]).map((g) => (
-                    <button
-                      key={g}
-                      type="button"
-                      className={g === 'again' ? 'ghost' : 'primary'}
-                      onClick={() => {
-                        onGrade(word.id, g)
-                        setRevealed(false)
-                      }}
-                    >
-                      {SRS_GRADE_LABEL[g]}
-                    </button>
-                  ))}
+                  <button
+                    type="button"
+                    className="ghost"
+                    onClick={stillLearning}
+                  >
+                    還不會
+                  </button>
+                  <button type="button" className="ghost" onClick={skipCurrent}>
+                    先跳過（不改排程）
+                  </button>
+                  <button
+                    type="button"
+                    className="learned-btn on"
+                    onClick={() => {
+                      onGrade(word.id, 'good')
+                      setRevealed(false)
+                    }}
+                  >
+                    我會了
+                  </button>
                 </div>
               </>
             )}
@@ -592,7 +627,7 @@ function VocabPathPanel({
         </label>
         <p className="exam-meta">
           {d.kind === 'learn'
-            ? '清單固定顯示今日字；學會後請自己按「標記已學會」。'
+            ? '清單固定顯示今日字；只有你按「我會了」才會排入複習。'
             : d.tipZh}
         </p>
         {d.vocabIds.length > 0 && (

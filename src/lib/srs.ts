@@ -195,8 +195,8 @@ export function formatDueLabel(card: SrsCard, at = now()): string {
 }
 
 export const SRS_GRADE_LABEL: Record<SrsGrade, string> = {
-  again: '重來',
-  hard: '困難',
-  good: '記得',
-  easy: '簡單',
+  again: '還不會',
+  hard: '有點難',
+  good: '我會了',
+  easy: '太簡單',
 }

@@ -71,13 +71,7 @@ function FormTable({
   )
 }
 
-function QuizPanel({
-  topic,
-  onPass,
-}: {
-  topic: GrammarTopic
-  onPass: () => void
-}) {
+function QuizPanel({ topic }: { topic: GrammarTopic }) {
   const exercises = topic.exercises ?? []
   const [answers, setAnswers] = useState<Record<string, string>>({})
   const [showHint, setShowHint] = useState<Record<string, boolean>>({})
@@ -114,8 +108,6 @@ function QuizPanel({
     }
     setResults(next)
     setChecked(true)
-    const ok = Object.values(next).filter(Boolean).length
-    if (ok === exercises.length && exercises.length > 0) onPass()
   }
 
   if (!exercises.length) return null
@@ -125,8 +117,8 @@ function QuizPanel({
       <h3>確認學會</h3>
       <p className="quiz-lead">
         {beginner
-          ? '初學者：先做選擇題再做填空；不會就按「提示」。全對會自動標記已學會。'
-          : '每單元含選擇題與填空題。全對會自動標記已學會。'}
+          ? '初學者：先做選擇題再做填空；不會就按「提示」。全對後請自己按「標記已學會」。'
+          : '每單元含選擇題與填空題。全對後請自己按「標記已學會」。'}
       </p>
 
       <div className="quiz-block">
@@ -182,7 +174,7 @@ function QuizPanel({
             className={`quiz-score ${score.ok === score.total ? 'pass' : 'fail'}`}
           >
             {score.ok === score.total
-              ? `全對 ${score.ok}/${score.total}！已標記為學會。`
+              ? `全對 ${score.ok}/${score.total}！可以自己按上方「標記已學會」。`
               : `目前 ${score.ok}/${score.total} 題正確，看看提示再試一次。`}
           </p>
         )}
@@ -279,7 +271,6 @@ function TopicDetail({
   topic,
   learned,
   onToggleLearned,
-  onMarkLearned,
   onPrev,
   onNext,
   positionLabel,
@@ -289,7 +280,6 @@ function TopicDetail({
   topic: GrammarTopic
   learned: boolean
   onToggleLearned: () => void
-  onMarkLearned: () => void
   onPrev: () => void
   onNext: () => void
   positionLabel: string
@@ -384,7 +374,7 @@ function TopicDetail({
         </ul>
       </section>
 
-      <QuizPanel topic={topic} onPass={onMarkLearned} />
+      <QuizPanel topic={topic} />
 
       {relatedTopics.length > 0 && (
         <section className="grammar-section">
@@ -529,10 +519,6 @@ export default function GrammarView({
     })
   }
 
-  const markLearned = (id: string) => {
-    setLearned((prev) => new Set(prev).add(id))
-  }
-
   return (
     <>
       <section className="level-board" aria-label="文法等級進度">
@@ -657,7 +643,6 @@ export default function GrammarView({
             topic={selected}
             learned={learned.has(selected.id)}
             onToggleLearned={() => toggleLearned(selected.id)}
-            onMarkLearned={() => markLearned(selected.id)}
             onPrev={() => go(-1)}
             onNext={() => go(1)}
             positionLabel={`${selectedIndex + 1} / ${filtered.length}`}

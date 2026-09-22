@@ -423,7 +423,7 @@ function WordDetail({
           className={learned ? 'learned-btn on' : 'learned-btn'}
           onClick={onToggleLearned}
         >
-          {learned ? '已排入複習 ✓' : '標記已學會（排程複習）'}
+          {learned ? '我會了 ✓' : '我會了'}
         </button>
       </div>
 
@@ -638,11 +638,11 @@ function PracticeCard({
           </button>
         ) : (
           <>
-            <button type="button" className="learned-btn on" onClick={onMark}>
-              排入複習並下一個
-            </button>
-            <button type="button" className="ghost" onClick={onNext}>
+            <button type="button" className="primary" onClick={onNext}>
               下一個
+            </button>
+            <button type="button" className="learned-btn" onClick={onMark}>
+              我會了
             </button>
           </>
         )}
@@ -1152,7 +1152,7 @@ export default function App() {
         <section className="level-board learn-focus-banner">
           <p className="ai-lead-sm">
             路徑單字：目前只顯示 {focusVocabIds.length}{' '}
-            個指定詞。學會了請自己按「標記已學會」。
+            個指定詞。看過不會消失；學會了再按「我會了」。
           </p>
           <button
             type="button"
@@ -1279,7 +1279,7 @@ export default function App() {
               checked={hideLearned}
               onChange={(e) => setHideLearned(e.target.checked)}
             />
-            隱藏已學會
+            隱藏已按「我會了」
           </label>
           <p className="count">
             {MODE_LABEL[mode]} · {filtered.length} 個
@@ -1382,7 +1382,7 @@ export default function App() {
                     ? '分級閱讀（德檢取向）：練習＋A1～B2 各 85 篇。點德文可跳單字。'
                     : section === 'exam'
                       ? '德檢模擬：練習版綜合卷＋考場版分 Teil。建議 Chrome／Edge 聽聽力腳本。'
-                      : '「標記已學會」會排入 SRS（約 1→3→7 天複習）。建議 Chrome／Edge 聽發音。'}
+                      : '只有你自己按「我會了」才會排入 SRS（約 1→3→7 天複習）。打開看不會自動拿掉。建議 Chrome／Edge 聽發音。'}
         </p>
       </footer>
     </div>

@@ -404,36 +404,17 @@ export type ResolvedVocabDay = {
 }
 
 /**
- * Build today's list: skip ids already learned (in `knownIds`),
- * walk forward on the pipeline until `targetCount` fresh words.
+ * Prefer fixed day.vocabIds. Kept for API compatibility — never auto-skips.
  */
 export function resolveVocabDay(
   day: VocabPathDay,
   knownIds: Set<string> | ReadonlySet<string>,
 ): ResolvedVocabDay {
-  if (day.kind === 'review') {
-    const enrolled = day.vocabIds.filter((id) => knownIds.has(id))
-    const ids = enrolled.length ? enrolled : day.vocabIds
-    return { ids, skippedIds: [], shortfall: 0 }
-  }
-
-  const ids: string[] = []
-  const skippedIds: string[] = []
-  let i = day.startIndex
-  const pipe = VOCAB_PATH_PIPELINE
-  while (ids.length < day.targetCount && i < pipe.length) {
-    const id = pipe[i]
-    i += 1
-    if (knownIds.has(id)) {
-      skippedIds.push(id)
-      continue
-    }
-    ids.push(id)
-  }
+  void knownIds
   return {
-    ids,
-    skippedIds,
-    shortfall: Math.max(0, day.targetCount - ids.length),
+    ids: [...day.vocabIds],
+    skippedIds: [],
+    shortfall: Math.max(0, day.targetCount - day.vocabIds.length),
   }
 }
 '''
