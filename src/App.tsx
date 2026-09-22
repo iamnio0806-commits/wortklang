@@ -19,6 +19,7 @@ import './App.css'
 
 type Mode = 'browse' | 'flash' | 'plural' | 'verb' | 'family'
 type LevelFilter = Level | '全部'
+type WordTypeFilter = '全部' | '名詞' | '動詞' | '形容詞'
 
 const LEARNED_KEY = 'wortklang-learned'
 
@@ -567,6 +568,7 @@ export default function App() {
   const [gender, setGender] = useState<'全部' | 'der' | 'die' | 'das' | '無冠詞'>(
     '全部',
   )
+  const [wordType, setWordType] = useState<WordTypeFilter>('全部')
   const [selectedId, setSelectedId] = useState(vocabulary[0]?.id ?? '')
   const [mode, setMode] = useState<Mode>('browse')
   const [flashIndex, setFlashIndex] = useState(0)
@@ -605,6 +607,9 @@ export default function App() {
       if (levelFilter !== '全部' && w.level !== levelFilter) return false
       if (hideLearned && learned.has(w.id)) return false
       if (category !== '全部' && w.category !== category) return false
+      if (wordType === '動詞' && w.category !== '動詞') return false
+      if (wordType === '形容詞' && w.category !== '形容詞') return false
+      if (wordType === '名詞' && !w.article) return false
       if (gender === 'der' || gender === 'die' || gender === 'das') {
         if (w.article !== gender) return false
       } else if (gender === '無冠詞' && w.article !== null) {
@@ -619,12 +624,13 @@ export default function App() {
         w.exampleTranslation,
         w.plural ?? '',
         w.level,
+        w.category,
       ]
         .join(' ')
         .toLowerCase()
       return hay.includes(q)
     })
-  }, [query, category, gender, levelFilter, hideLearned, learned])
+  }, [query, category, gender, levelFilter, hideLearned, learned, wordType])
 
   // Mode-specific pool
   const filtered = useMemo(() => {
@@ -734,8 +740,14 @@ export default function App() {
                 stopSpeaking()
                 setMode(m)
                 setRevealed(false)
-                if (m === 'plural') setCategory('全部')
-                if (m === 'verb') setCategory('動詞')
+                if (m === 'plural') {
+                  setCategory('全部')
+                  setWordType('名詞')
+                }
+                if (m === 'verb') {
+                  setCategory('全部')
+                  setWordType('動詞')
+                }
               }}
             >
               {MODE_LABEL[m]}
@@ -804,6 +816,25 @@ export default function App() {
             type="search"
           />
         </label>
+
+        <div className="word-type-tabs" role="tablist" aria-label="詞性">
+          {(['全部', '名詞', '動詞', '形容詞'] as WordTypeFilter[]).map((t) => (
+            <button
+              key={t}
+              type="button"
+              role="tab"
+              aria-selected={wordType === t}
+              className={`word-type-tab ${wordType === t ? 'active' : ''} ${t === '動詞' ? 'tab-verb' : ''}`}
+              onClick={() => {
+                stopSpeaking()
+                setWordType(t)
+                if (t === '動詞') setCategory('全部')
+              }}
+            >
+              {t === '全部' ? '全部詞性' : t}
+            </button>
+          ))}
+        </div>
 
         <div className="filters">
           <select

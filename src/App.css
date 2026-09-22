@@ -543,6 +543,34 @@ select {
   gap: 0.7rem;
 }
 
+.word-type-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.word-type-tab {
+  border: 1px solid rgba(15, 58, 44, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--fir-deep);
+  padding: 0.48rem 0.85rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.word-type-tab.active {
+  background: var(--fir-deep);
+  color: #f4faf6;
+  border-color: transparent;
+}
+
+.word-type-tab.tab-verb:not(.active) {
+  border-color: rgba(184, 106, 47, 0.45);
+  color: var(--copper);
+}
+
 .count {
   margin: 0;
   color: var(--ink-soft);
