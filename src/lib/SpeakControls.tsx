@@ -56,7 +56,7 @@ export function SpeakPair({
   text,
   normalLabel = '聽',
   slowLabel = '慢速',
-  nativeLabel = '母語速',
+  nativeLabel = '母語人士',
   normalizeNewlines = false,
   showNative = true,
 }: {

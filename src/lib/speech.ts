@@ -7,8 +7,8 @@ export const SPEECH_RATE_NORMAL = 0.88
  * so beginners can catch word boundaries.
  */
 export const SPEECH_RATE_SLOW = 0.5
-/** Near native conversational tempo (browser TTS default ≈ 1.0). */
-export const SPEECH_RATE_NATIVE = 1.05
+/** Near native conversational tempo (clearly faster than learner pace). */
+export const SPEECH_RATE_NATIVE = 1.12
 
 export type SpeechPace = 'normal' | 'slow' | 'native'
 
