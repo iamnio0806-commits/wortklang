@@ -1,5 +1,6 @@
 import type { Gender, VocabWord } from '../data/vocabulary'
 import { vocabulary } from '../data/vocabulary'
+import { lookupPrefix, lookupSuffix } from '../data/affixes'
 
 export type PluralPattern =
   | '-e'
@@ -547,10 +548,18 @@ function analyzeParts(word: string): WordParts {
 
   const noteParts: string[] = []
   if (prefixes.length) {
-    noteParts.push(`字首 ${prefixes.map((p) => p + '-').join(' + ')}`)
+    const withMeaning = prefixes.map((p) => {
+      const m = lookupPrefix(p)
+      return m ? `${p}-（${m.zh}）` : `${p}-`
+    })
+    noteParts.push(`字首 ${withMeaning.join(' + ')}`)
   }
   if (suffixes.length) {
-    noteParts.push(`字尾 ${suffixes.map((s) => '-' + s).join(' + ')}`)
+    const withMeaning = suffixes.map((s) => {
+      const m = lookupSuffix(s)
+      return m ? `-${s}（${m.zh}）` : `-${s}`
+    })
+    noteParts.push(`字尾 ${withMeaning.join(' + ')}`)
   }
 
   return {

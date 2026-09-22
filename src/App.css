@@ -487,6 +487,141 @@ select {
   font-size: 0.92rem;
 }
 
+.chip-mean {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  opacity: 0.85;
+  font-family: var(--font-sans, var(--font-ui, inherit));
+}
+
+.chip.chip-prefix,
+.chip.chip-suffix,
+.chip.chip-root {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.05rem;
+  line-height: 1.25;
+}
+
+.af-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+}
+
+.af-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 0.9rem 1rem;
+}
+
+.af-card-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.af-form {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--font-de);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--copper);
+}
+
+.af-kind {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.af-zh {
+  margin: 0.45rem 0 0;
+  font-weight: 700;
+  font-size: 1.02rem;
+}
+
+.af-tip {
+  margin: 0.3rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.af-examples {
+  margin: 0.65rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.af-examples li {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.af-examples strong {
+  font-family: var(--font-de);
+  font-weight: 650;
+}
+
+.af-examples span {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.af-hero-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.85rem 0 0.5rem;
+}
+
+.af-plus,
+.af-eq {
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+.af-result {
+  font-family: var(--font-de);
+  font-size: 1.1rem;
+}
+
+.af-separable .af-form {
+  color: var(--fir);
+}
+
+.af-inseparable .af-form {
+  color: var(--die);
+}
+
+.af-either .af-form {
+  color: var(--copper);
+}
+
+.af-suffix .af-form {
+  color: #3d6b7a;
+}
+
+@media (max-width: 820px) {
+  .af-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .chip-prefix {
   background: rgba(42, 95, 158, 0.12);
   color: var(--der);

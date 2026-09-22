@@ -25,9 +25,11 @@ import type { VocabHit } from './lib/vocabIndex'
 import { ensureVoicesLoaded, speakGerman, stopSpeaking } from './lib/speech'
 import GrammarView from './GrammarView'
 import ArticlesIntro from './ArticlesIntro'
+import AffixesIntro from './AffixesIntro'
+import { lookupPrefix, lookupSuffix } from './data/affixes'
 import './App.css'
 
-type Section = 'vocab' | 'grammar' | 'articles'
+type Section = 'vocab' | 'grammar' | 'articles' | 'affixes'
 type Mode = 'browse' | 'flash' | 'plural' | 'verb' | 'family'
 type LevelFilter = Level | '全部'
 type WordTypeFilter = '全部' | '名詞' | '動詞' | '形容詞'
@@ -155,17 +157,27 @@ function GrammarPanels({ e }: { e: EnrichedWord }) {
         <section className="panel">
           <h3>字首／字根／字尾</h3>
           <div className="parts-row">
-            {e.parts.prefixes.map((p) => (
-              <span key={p} className="chip chip-prefix">
-                {p}-
-              </span>
-            ))}
-            <span className="chip chip-root">{e.parts.root}</span>
-            {e.parts.suffixes.map((s) => (
-              <span key={s} className="chip chip-suffix">
-                -{s}
-              </span>
-            ))}
+            {e.parts.prefixes.map((p) => {
+              const m = lookupPrefix(p)
+              return (
+                <span key={p} className="chip chip-prefix" title={m?.tip}>
+                  {p}-{m ? <small className="chip-mean">{m.zh}</small> : null}
+                </span>
+              )
+            })}
+            <span className="chip chip-root">
+              {e.parts.root}
+              <small className="chip-mean">字根</small>
+            </span>
+            {e.parts.suffixes.map((s) => {
+              const m = lookupSuffix(s)
+              return (
+                <span key={s} className="chip chip-suffix" title={m?.tip}>
+                  -{s}
+                  {m ? <small className="chip-mean">{m.zh}</small> : null}
+                </span>
+              )
+            })}
           </div>
           {e.parts.note && (
             <p className="panel-note">
@@ -621,10 +633,12 @@ export default function App() {
   const [navStack, setNavStack] = useState<NavSnap[]>([])
   const [grammarMounted, setGrammarMounted] = useState(false)
   const [articlesMounted, setArticlesMounted] = useState(false)
+  const [affixesMounted, setAffixesMounted] = useState(false)
 
   useEffect(() => {
     if (section === 'grammar') setGrammarMounted(true)
     if (section === 'articles') setArticlesMounted(true)
+    if (section === 'affixes') setAffixesMounted(true)
   }, [section])
 
   useEffect(() => {
@@ -844,17 +858,25 @@ export default function App() {
             ? '聽得見的德文單字'
             : section === 'grammar'
               ? '聽得見的德文文法'
-              : '冠詞入門'}
+              : section === 'affixes'
+                ? '字首字根字尾'
+                : '冠詞入門'}
         </h1>
         <p className="tagline">
           {section === 'vocab'
             ? '完整 A1→C1：冠詞、複數、字首字根、動詞變化與字族記憶。'
             : section === 'grammar'
               ? '完整 A1→C1 文法：格變、時態、語序、從句、被動與虛擬式。'
-              : 'der／die／das、bin／bist／ist：冠詞與最常用變位一起記。'}
+              : section === 'affixes'
+                ? '可分／不可分字首與常見字尾：每個都有中文意思與例子。'
+                : 'der／die／das、bin／bist／ist：冠詞與最常用變位一起記。'}
         </p>
 
-        <div className="cta-row section-switch" role="tablist" aria-label="單字、冠詞或文法">
+        <div
+          className="cta-row section-switch"
+          role="tablist"
+          aria-label="單字、冠詞、字首或文法"
+        >
           <button
             type="button"
             role="tab"
@@ -878,6 +900,18 @@ export default function App() {
             }}
           >
             冠詞
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={section === 'affixes'}
+            className={section === 'affixes' ? 'primary' : 'ghost'}
+            onClick={() => {
+              stopSpeaking()
+              setSection('affixes')
+            }}
+          >
+            字首
           </button>
           <button
             type="button"
@@ -934,6 +968,11 @@ export default function App() {
       {articlesMounted && (
         <div hidden={section !== 'articles'}>
           <ArticlesIntro />
+        </div>
+      )}
+      {affixesMounted && (
+        <div hidden={section !== 'affixes'}>
+          <AffixesIntro />
         </div>
       )}
       {section === 'vocab' && (
@@ -1148,7 +1187,9 @@ export default function App() {
             ? '文法依 CEFR 分級：先掌握規則與例句，再標記已學會。建議 Chrome／Edge 聽發音。'
             : section === 'articles'
               ? '冠詞與 sein／haben 入門：定冠詞、格變，以及 bin／bist／ist。建議 Chrome／Edge 聽發音。'
-              : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
+              : section === 'affixes'
+                ? '字首字根字尾：可分／不可分與常見字尾都有中文意思。建議 Chrome／Edge 聽發音。'
+                : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
         </p>
       </footer>
     </div>
