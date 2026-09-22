@@ -241,10 +241,10 @@ def ex_place(w, seed) -> tuple[str, str]:
         (f"Kommst du mit in {a} {word}?", f"你要一起去{zh}嗎？"),
         (f"In {d} {word} ist es ruhig.", f"{zh}裡很安靜。"),
         (f"{Art} {word} liegt gleich um die Ecke.", f"{zh}就在轉角。"),
-        (f"Ich räume {a} {word} auf.", f"我在整理{zh}。"),
-        (f"Schlüssel für {a} {word} liegen hier.", f"{zh}的鑰匙在這裡。"),
+        (f"Ich kenne {a} {word} gut.", f"我很熟悉這個{zh}。"),
+        (f"Der Weg zu {d} {word} ist kurz.", f"去{zh}的路很近。"),
         (f"Von {d} {word} aus sieht man den Hof.", f"從{zh}看出去可以看到院子。"),
-        (f"{name} putzt gerade {a} {word}.", f"{name}正在打掃{zh}。"),
+        (f"{name} arbeitet in {d} {word}.", f"{name}在{zh}工作。"),
     ]
     return bank[seed % len(bank)]
 
