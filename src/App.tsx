@@ -14,6 +14,12 @@ import {
   PLURAL_PATTERN_GUIDE,
   type EnrichedWord,
 } from './lib/enrich'
+import {
+  ArticleText,
+  genderClass,
+  PosLabel,
+  RichText,
+} from './lib/richText'
 import { ensureVoicesLoaded, speakGerman, stopSpeaking } from './lib/speech'
 import GrammarView from './GrammarView'
 import './App.css'
@@ -25,32 +31,7 @@ type WordTypeFilter = '全部' | '名詞' | '動詞' | '形容詞'
 
 const LEARNED_KEY = 'wortklang-learned'
 
-const genderClass: Record<NonNullable<Gender>, string> = {
-  der: 'gender-der',
-  die: 'gender-die',
-  das: 'gender-das',
-}
-
 /** Color every der/die/das (any case) inside a text string. */
-function ArticleText({ text }: { text: string }) {
-  const parts = text.split(/(\b(?:der|die|das|Der|Die|Das)\b)/g)
-  return (
-    <>
-      {parts.map((part, i) => {
-        const lower = part.toLowerCase()
-        if (lower === 'der' || lower === 'die' || lower === 'das') {
-          return (
-            <span key={`${part}-${i}`} className={genderClass[lower]}>
-              {part}
-            </span>
-          )
-        }
-        return <span key={`${part}-${i}`}>{part}</span>
-      })}
-    </>
-  )
-}
-
 function ColoredLemma({
   article,
   word,
@@ -312,7 +293,7 @@ function WordDetail({
 
       <div className="detail-top">
         <WordBadge article={word.article} />
-        <span className="type-pill">{e.wordType}</span>
+        <PosLabel type={e.wordType} as="span" />
         <span className={`level-pill level-${word.level}`}>{word.level}</span>
       </div>
 
@@ -342,11 +323,13 @@ function WordDetail({
           </>
         )}
         <dt>詞性</dt>
-        <dd>{e.wordType}</dd>
+        <PosLabel type={e.wordType} as="dd" />
         <dt>等級</dt>
         <dd>{word.level}</dd>
         <dt>分類</dt>
-        <dd>{word.category}</dd>
+        <dd>
+          <RichText text={word.category} />
+        </dd>
       </dl>
 
       <div className="speak-row">
@@ -524,7 +507,7 @@ function PracticeCard({
       <NavButtons onPrev={onPrev} onNext={onNext} label={positionLabel} />
       <div className="flash-front">
         <WordBadge article={word.article} />
-        <span className="type-pill">{e.wordType}</span>
+        <PosLabel type={e.wordType} as="span" />
         <span className={`level-pill level-${word.level}`}>{word.level}</span>
         <p className="flash-prompt">{prompt}</p>
         {mode !== 'flash' ? (
@@ -866,7 +849,7 @@ export default function App() {
               type="button"
               role="tab"
               aria-selected={wordType === t}
-              className={`word-type-tab ${wordType === t ? 'active' : ''} ${t === '動詞' ? 'tab-verb' : ''}`}
+              className={`word-type-tab ${wordType === t ? 'active' : ''} ${t !== '全部' ? `tab-${t}` : ''}`}
               onClick={() => {
                 stopSpeaking()
                 setWordType(t)
@@ -946,7 +929,18 @@ export default function App() {
                     {isLearned ? ' ✓' : ''}
                   </span>
                   <span className="row-zh">
-                    {w.translation} · {w.level}
+                    <PosLabel
+                      type={
+                        w.category === '動詞'
+                          ? '動詞'
+                          : w.category === '形容詞'
+                            ? '形容詞'
+                            : w.article
+                              ? '名詞'
+                              : '其他'
+                      }
+                    />{' '}
+                    · {w.translation} · {w.level}
                   </span>
                 </button>
               )

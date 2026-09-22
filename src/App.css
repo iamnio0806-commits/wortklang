@@ -325,6 +325,108 @@ select {
   color: var(--copper);
 }
 
+.pos-label.pos-noun,
+.pos-noun {
+  color: var(--fir);
+  font-weight: 700;
+}
+
+.pos-label.pos-verb,
+.pos-verb {
+  color: var(--copper);
+  font-weight: 700;
+}
+
+.pos-label.pos-adj,
+.pos-adj {
+  color: var(--die);
+  font-weight: 700;
+}
+
+.pos-label.pos-adv,
+.pos-adv {
+  color: #3d6b7a;
+  font-weight: 700;
+}
+
+.pos-label.pos-prep,
+.pos-prep {
+  color: #7a4e2f;
+  font-weight: 700;
+}
+
+.pos-label.pos-art,
+.pos-art {
+  color: var(--der);
+  font-weight: 700;
+}
+
+.pos-label.pos-pron,
+.pos-pron {
+  color: #4a6a8a;
+  font-weight: 700;
+}
+
+.pos-label.pos-conj,
+.pos-conj {
+  color: #5c6b3a;
+  font-weight: 700;
+}
+
+.pos-label.pos-num,
+.pos-num {
+  color: #6a5a3a;
+  font-weight: 700;
+}
+
+.pos-label.pos-other,
+.pos-other {
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+.type-pill.pos-noun {
+  background: rgba(31, 92, 69, 0.12);
+  color: var(--fir);
+}
+
+.type-pill.pos-verb {
+  background: rgba(184, 106, 47, 0.14);
+  color: var(--copper);
+}
+
+.type-pill.pos-adj {
+  background: rgba(166, 61, 90, 0.12);
+  color: var(--die);
+}
+
+.type-pill.pos-other {
+  background: rgba(20, 32, 28, 0.08);
+  color: var(--ink-soft);
+}
+
+.word-type-tab.tab-名詞:not(.active) {
+  color: var(--fir);
+  border-color: rgba(31, 92, 69, 0.35);
+}
+
+.word-type-tab.tab-動詞:not(.active) {
+  color: var(--copper);
+  border-color: rgba(184, 106, 47, 0.4);
+}
+
+.word-type-tab.tab-形容詞:not(.active) {
+  color: var(--die);
+  border-color: rgba(166, 61, 90, 0.35);
+}
+
+.row-zh .type-pill {
+  display: inline-flex;
+  vertical-align: middle;
+  font-size: 0.68rem;
+  padding: 0.1rem 0.4rem;
+}
+
 .panel {
   margin-top: 1.2rem;
   padding-top: 1rem;
@@ -1041,6 +1143,136 @@ select {
   padding: 0.9rem 1rem;
   border-radius: 14px;
   background: rgba(184, 106, 47, 0.1);
+}
+
+.grammar-section.tips.beginner {
+  background: rgba(31, 92, 69, 0.1);
+  border: 1px solid rgba(31, 92, 69, 0.18);
+}
+
+.quiz-panel {
+  margin-top: 1.5rem;
+  padding: 1rem 1.05rem 1.15rem;
+  border: 1px solid rgba(15, 58, 44, 0.18);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.quiz-lead {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+
+.quiz-block {
+  margin-bottom: 1.15rem;
+}
+
+.quiz-block h4 {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+}
+
+.exercise-card {
+  padding: 0.85rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.7rem;
+}
+
+.exercise-card.ok {
+  border-color: rgba(31, 92, 69, 0.45);
+  background: rgba(31, 92, 69, 0.08);
+}
+
+.exercise-card.bad {
+  border-color: rgba(166, 61, 90, 0.4);
+  background: rgba(166, 61, 90, 0.07);
+}
+
+.exercise-prompt {
+  margin: 0 0 0.65rem;
+  line-height: 1.5;
+}
+
+.exercise-num {
+  font-weight: 700;
+  color: var(--fir-deep);
+}
+
+.exercise-options {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.exercise-option {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  padding: 0.45rem 0.55rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.exercise-option:hover {
+  background: rgba(31, 92, 69, 0.06);
+}
+
+.exercise-fill {
+  width: 100%;
+  border: 1px solid rgba(15, 58, 44, 0.22);
+  border-radius: 12px;
+  padding: 0.65rem 0.8rem;
+  background: #fff;
+  font-family: var(--font-de);
+}
+
+.exercise-foot {
+  margin-top: 0.55rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.hint-btn {
+  justify-self: start;
+  padding: 0.35rem 0.75rem !important;
+  font-size: 0.85rem;
+}
+
+.exercise-hint,
+.exercise-answer {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.exercise-answer {
+  color: var(--fir-deep);
+  font-weight: 600;
+}
+
+.quiz-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.quiz-score {
+  margin: 0;
+  font-weight: 600;
+}
+
+.quiz-score.pass {
+  color: var(--fir);
+}
+
+.quiz-score.fail {
+  color: var(--die);
 }
 
 .related-topics {

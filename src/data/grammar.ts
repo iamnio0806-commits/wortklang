@@ -14,6 +14,26 @@ export interface GrammarFormTable {
   rows: string[][]
 }
 
+export interface GrammarExerciseBase {
+  id: string
+  prompt: string
+  hint: string
+}
+
+export interface GrammarMcq extends GrammarExerciseBase {
+  type: 'mcq'
+  options: string[]
+  answer: string
+}
+
+export interface GrammarFill extends GrammarExerciseBase {
+  type: 'fill'
+  answer: string
+  accept: string[]
+}
+
+export type GrammarExercise = GrammarMcq | GrammarFill
+
 export interface GrammarTopic {
   id: string
   level: GrammarLevel
@@ -26,6 +46,7 @@ export interface GrammarTopic {
   examples: GrammarExample[]
   tips: string[]
   related: string[]
+  exercises: GrammarExercise[]
 }
 
 export const grammarTopics = raw as GrammarTopic[]
@@ -42,4 +63,22 @@ export function countGrammarByLevel(level: GrammarLevel): number {
 
 export function getGrammarTopic(id: string): GrammarTopic | undefined {
   return grammarTopics.find((t) => t.id === id)
+}
+
+export function normalizeFillAnswer(value: string): string {
+  return value.trim().replace(/\s+/g, ' ')
+}
+
+export function checkFillAnswer(
+  exercise: GrammarFill,
+  value: string,
+): boolean {
+  const got = normalizeFillAnswer(value)
+  const candidates = [
+    exercise.answer,
+    ...(exercise.accept ?? []),
+  ].map(normalizeFillAnswer)
+  return candidates.some(
+    (c) => c === got || c.toLowerCase() === got.toLowerCase(),
+  )
 }

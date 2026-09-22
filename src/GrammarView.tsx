@@ -1,12 +1,17 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
+  checkFillAnswer,
   countGrammarByLevel,
   grammarCategories,
   grammarLevels,
   grammarTopics,
+  type GrammarExercise,
+  type GrammarFill,
   type GrammarLevel,
+  type GrammarMcq,
   type GrammarTopic,
 } from './data/grammar'
+import { RichText } from './lib/richText'
 import { speakGerman, stopSpeaking } from './lib/speech'
 
 type LevelFilter = GrammarLevel | '全部'
@@ -56,7 +61,9 @@ function FormTable({
         <thead>
           <tr>
             {headers.map((h) => (
-              <th key={h}>{h}</th>
+              <th key={h}>
+                <RichText text={h} />
+              </th>
             ))}
           </tr>
         </thead>
@@ -64,7 +71,9 @@ function FormTable({
           {rows.map((row, i) => (
             <tr key={`${label}-${i}`}>
               {row.map((cell, j) => (
-                <td key={`${i}-${j}`}>{cell}</td>
+                <td key={`${i}-${j}`}>
+                  <RichText text={cell} />
+                </td>
               ))}
             </tr>
           ))}
@@ -74,10 +83,215 @@ function FormTable({
   )
 }
 
+function QuizPanel({
+  topic,
+  onPass,
+}: {
+  topic: GrammarTopic
+  onPass: () => void
+}) {
+  const exercises = topic.exercises ?? []
+  const [answers, setAnswers] = useState<Record<string, string>>({})
+  const [showHint, setShowHint] = useState<Record<string, boolean>>({})
+  const [checked, setChecked] = useState(false)
+  const [results, setResults] = useState<Record<string, boolean>>({})
+
+  useEffect(() => {
+    setAnswers({})
+    setShowHint({})
+    setChecked(false)
+    setResults({})
+  }, [topic.id])
+
+  const mcqs = exercises.filter((e): e is GrammarMcq => e.type === 'mcq')
+  const fills = exercises.filter((e): e is GrammarFill => e.type === 'fill')
+  const beginner = topic.level === 'A1' || topic.level === 'A2'
+
+  const score = useMemo(() => {
+    const vals = Object.values(results)
+    if (!vals.length) return null
+    const ok = vals.filter(Boolean).length
+    return { ok, total: vals.length }
+  }, [results])
+
+  const grade = () => {
+    const next: Record<string, boolean> = {}
+    for (const ex of exercises) {
+      const raw = answers[ex.id] ?? ''
+      if (ex.type === 'mcq') {
+        next[ex.id] = raw === ex.answer
+      } else {
+        next[ex.id] = checkFillAnswer(ex, raw)
+      }
+    }
+    setResults(next)
+    setChecked(true)
+    const ok = Object.values(next).filter(Boolean).length
+    if (ok === exercises.length && exercises.length > 0) onPass()
+  }
+
+  if (!exercises.length) return null
+
+  return (
+    <section className="grammar-section quiz-panel" aria-label="確認學會">
+      <h3>確認學會</h3>
+      <p className="quiz-lead">
+        {beginner
+          ? '初學者：先做選擇題再做填空；不會就按「提示」。全對會自動標記已學會。'
+          : '每單元含選擇題與填空題。全對會自動標記已學會。'}
+      </p>
+
+      <div className="quiz-block">
+        <h4>選擇題（{mcqs.length}）</h4>
+        {mcqs.map((ex, i) => (
+          <ExerciseCard
+            key={ex.id}
+            index={i + 1}
+            exercise={ex}
+            value={answers[ex.id] ?? ''}
+            showHint={!!showHint[ex.id] || beginner}
+            forcedHint={beginner && !checked}
+            checked={checked}
+            correct={results[ex.id]}
+            onChange={(v) =>
+              setAnswers((prev) => ({ ...prev, [ex.id]: v }))
+            }
+            onToggleHint={() =>
+              setShowHint((prev) => ({ ...prev, [ex.id]: !prev[ex.id] }))
+            }
+          />
+        ))}
+      </div>
+
+      <div className="quiz-block">
+        <h4>填空題（{fills.length}）</h4>
+        {fills.map((ex, i) => (
+          <ExerciseCard
+            key={ex.id}
+            index={i + 1}
+            exercise={ex}
+            value={answers[ex.id] ?? ''}
+            showHint={!!showHint[ex.id] || (beginner && !checked)}
+            forcedHint={false}
+            checked={checked}
+            correct={results[ex.id]}
+            onChange={(v) =>
+              setAnswers((prev) => ({ ...prev, [ex.id]: v }))
+            }
+            onToggleHint={() =>
+              setShowHint((prev) => ({ ...prev, [ex.id]: !prev[ex.id] }))
+            }
+          />
+        ))}
+      </div>
+
+      <div className="quiz-actions">
+        <button type="button" className="primary" onClick={grade}>
+          {checked ? '再檢查一次' : '提交答案'}
+        </button>
+        {checked && score && (
+          <p
+            className={`quiz-score ${score.ok === score.total ? 'pass' : 'fail'}`}
+          >
+            {score.ok === score.total
+              ? `全對 ${score.ok}/${score.total}！已標記為學會。`
+              : `目前 ${score.ok}/${score.total} 題正確，看看提示再試一次。`}
+          </p>
+        )}
+      </div>
+    </section>
+  )
+}
+
+function ExerciseCard({
+  index,
+  exercise,
+  value,
+  showHint,
+  forcedHint,
+  checked,
+  correct,
+  onChange,
+  onToggleHint,
+}: {
+  index: number
+  exercise: GrammarExercise
+  value: string
+  showHint: boolean
+  forcedHint: boolean
+  checked: boolean
+  correct?: boolean
+  onChange: (v: string) => void
+  onToggleHint: () => void
+}) {
+  const status =
+    checked && correct !== undefined ? (correct ? 'ok' : 'bad') : ''
+
+  return (
+    <div className={`exercise-card ${status}`}>
+      <p className="exercise-prompt">
+        <span className="exercise-num">{index}.</span>{' '}
+        <RichText text={exercise.prompt} />
+      </p>
+
+      {exercise.type === 'mcq' ? (
+        <div className="exercise-options" role="radiogroup">
+          {exercise.options.map((opt) => (
+            <label key={opt} className="exercise-option">
+              <input
+                type="radio"
+                name={exercise.id}
+                checked={value === opt}
+                onChange={() => onChange(opt)}
+              />
+              <span>
+                <RichText text={opt} />
+              </span>
+            </label>
+          ))}
+        </div>
+      ) : (
+        <input
+          className="exercise-fill"
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          placeholder="在這裡填空…"
+          autoComplete="off"
+          spellCheck={false}
+        />
+      )}
+
+      <div className="exercise-foot">
+        {!forcedHint && (
+          <button type="button" className="ghost hint-btn" onClick={onToggleHint}>
+            {showHint ? '隱藏提示' : '提示'}
+          </button>
+        )}
+        {(showHint || forcedHint) && (
+          <p className="exercise-hint">
+            <RichText text={exercise.hint} />
+          </p>
+        )}
+        {checked && correct === false && exercise.type === 'fill' && (
+          <p className="exercise-answer">
+            參考答案：<RichText text={exercise.answer} />
+          </p>
+        )}
+        {checked && correct === false && exercise.type === 'mcq' && (
+          <p className="exercise-answer">
+            正確選項：<RichText text={exercise.answer} />
+          </p>
+        )}
+      </div>
+    </div>
+  )
+}
+
 function TopicDetail({
   topic,
   learned,
   onToggleLearned,
+  onMarkLearned,
   onPrev,
   onNext,
   positionLabel,
@@ -86,6 +300,7 @@ function TopicDetail({
   topic: GrammarTopic
   learned: boolean
   onToggleLearned: () => void
+  onMarkLearned: () => void
   onPrev: () => void
   onNext: () => void
   positionLabel: string
@@ -94,6 +309,7 @@ function TopicDetail({
   const relatedTopics = topic.related
     .map((id) => grammarTopics.find((t) => t.id === id))
     .filter(Boolean) as GrammarTopic[]
+  const beginner = topic.level === 'A1' || topic.level === 'A2'
 
   return (
     <article className="detail grammar-detail">
@@ -113,7 +329,9 @@ function TopicDetail({
       <p className="grammar-cat">{topic.category}</p>
       <h2 className="grammar-title">{topic.title}</h2>
       <p className="grammar-title-de">{topic.titleDe}</p>
-      <p className="grammar-summary">{topic.summary}</p>
+      <p className="grammar-summary">
+        <RichText text={topic.summary} />
+      </p>
 
       <div className="detail-actions">
         <SpeakButton label="聽標題" text={topic.titleDe} />
@@ -126,11 +344,24 @@ function TopicDetail({
         </button>
       </div>
 
+      <section className={`grammar-section tips ${beginner ? 'beginner' : ''}`}>
+        <h3>{beginner ? '初學者提示' : '記憶提示'}</h3>
+        <ul className="grammar-points">
+          {topic.tips.map((t) => (
+            <li key={t}>
+              <RichText text={t} />
+            </li>
+          ))}
+        </ul>
+      </section>
+
       <section className="grammar-section">
         <h3>重點</h3>
         <ul className="grammar-points">
           {topic.points.map((p) => (
-            <li key={p}>{p}</li>
+            <li key={p}>
+              <RichText text={p} />
+            </li>
           ))}
         </ul>
       </section>
@@ -145,25 +376,20 @@ function TopicDetail({
           {topic.examples.map((ex) => (
             <li key={ex.de}>
               <div className="ex-row">
-                <p className="ex-de">{ex.de}</p>
+                <p className="ex-de">
+                  <RichText text={ex.de} />
+                </p>
                 <SpeakButton label="聽例句" text={ex.de} />
               </div>
-              <p className="ex-zh">{ex.zh}</p>
+              <p className="ex-zh">
+                <RichText text={ex.zh} />
+              </p>
             </li>
           ))}
         </ul>
       </section>
 
-      {topic.tips.length > 0 && (
-        <section className="grammar-section tips">
-          <h3>記憶提示</h3>
-          <ul className="grammar-points">
-            {topic.tips.map((t) => (
-              <li key={t}>{t}</li>
-            ))}
-          </ul>
-        </section>
-      )}
+      <QuizPanel topic={topic} onPass={onMarkLearned} />
 
       {relatedTopics.length > 0 && (
         <section className="grammar-section">
@@ -227,7 +453,9 @@ export default function GrammarView() {
         t.category,
         t.level,
         ...t.points,
+        ...t.tips,
         ...t.examples.map((e) => `${e.de} ${e.zh}`),
+        ...t.exercises.map((e) => e.prompt),
       ]
         .join(' ')
         .toLowerCase()
@@ -278,6 +506,10 @@ export default function GrammarView() {
       else next.add(id)
       return next
     })
+  }
+
+  const markLearned = (id: string) => {
+    setLearned((prev) => new Set(prev).add(id))
   }
 
   return (
@@ -404,6 +636,7 @@ export default function GrammarView() {
             topic={selected}
             learned={learned.has(selected.id)}
             onToggleLearned={() => toggleLearned(selected.id)}
+            onMarkLearned={() => markLearned(selected.id)}
             onPrev={() => go(-1)}
             onNext={() => go(1)}
             positionLabel={`${selectedIndex + 1} / ${filtered.length}`}

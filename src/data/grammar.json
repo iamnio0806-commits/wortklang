@@ -28,9 +28,78 @@
       }
     ],
     "tips": [
-      "先跟著朗讀短句，比單一背字母更有效。"
+      "先跟著朗讀短句，比單一背字母更有效。",
+      "初學者：先跟著朗讀，不要急著一次記完所有規則。",
+      "聽到不會的音就重播 2～3 次，嘴巴跟著動。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
     ],
-    "related": []
+    "related": [],
+    "exercises": [
+      {
+        "id": "a1-alphabet-pronunciation-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我叫 Anna。」？",
+        "options": [
+          "Ich heiße Anna.",
+          "Guten Tag!",
+          "Wie bitte?",
+          "der"
+        ],
+        "answer": "Ich heiße Anna.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a1-alphabet-pronunciation-pt-0",
+        "type": "mcq",
+        "prompt": "關於「字母與發音要點」，下列何者正確？",
+        "options": [
+          "母音：a e i o u；變母音：ä ö ü；ß 讀如 ss。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "母音：a e i o u；變母音：ä ö ü；ß 讀如 ss。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a1-alphabet-pronunciation-pt-1",
+        "type": "mcq",
+        "prompt": "「字母與發音要點」的另一個要點是？",
+        "options": [
+          "ch 在 i/e 後偏軟（ich），在 a/o/u 後偏喉（auch）。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "ch 在 i/e 後偏軟（ich），在 a/o/u 後偏喉（auch）。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a1-alphabet-pronunciation-exf-0",
+        "type": "fill",
+        "prompt": "填空（我叫 Anna。）：Ich ____ Anna",
+        "answer": "heiße",
+        "accept": [
+          "heiße",
+          "heiße",
+          "Heiße"
+        ],
+        "hint": "對照例句：Ich heiße Anna"
+      },
+      {
+        "id": "a1-alphabet-pronunciation-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Guten ____",
+        "answer": "Tag",
+        "accept": [
+          "Tag",
+          "tag",
+          "Tag"
+        ],
+        "hint": "完整例句：Guten Tag!"
+      }
+    ]
   },
   {
     "id": "a1-articles-nom",
@@ -92,11 +161,77 @@
       }
     ],
     "tips": [
-      "不要只記中文意思，一定記 der/die/das。"
+      "不要只記中文意思，一定記 der/die/das。",
+      "初學者鐵律：每個名詞都要連 der／die／das 一起背。",
+      "先背高頻名詞的冠詞，再慢慢補例外。",
+      "複數定冠詞一律是 die，可先記這個不變的點。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。"
     ],
     "related": [
       "a1-noun-plural",
       "a1-accusative"
+    ],
+    "exercises": [
+      {
+        "id": "a1-art-1",
+        "type": "mcq",
+        "prompt": "陽性「男士」的定冠詞是？",
+        "options": [
+          "der",
+          "die",
+          "das",
+          "den"
+        ],
+        "answer": "der",
+        "hint": "陽性主格定冠詞是 der（藍色）。"
+      },
+      {
+        "id": "a1-art-2",
+        "type": "mcq",
+        "prompt": "陰性「女士」的定冠詞是？",
+        "options": [
+          "die",
+          "der",
+          "das",
+          "den"
+        ],
+        "answer": "die",
+        "hint": "陰性主格定冠詞是 die（紅色）。"
+      },
+      {
+        "id": "a1-art-3",
+        "type": "mcq",
+        "prompt": "中性「孩子 Kind」的定冠詞是？",
+        "options": [
+          "das",
+          "der",
+          "die",
+          "dem"
+        ],
+        "answer": "das",
+        "hint": "das Kind：中性用 das（綠色）。"
+      },
+      {
+        "id": "a1-art-4",
+        "type": "fill",
+        "prompt": "填空：___ Mann kommt.（那位男士來了）",
+        "answer": "Der",
+        "accept": [
+          "Der",
+          "der"
+        ],
+        "hint": "句首大寫；陽性主格 der。"
+      },
+      {
+        "id": "a1-art-5",
+        "type": "fill",
+        "prompt": "填空：不定冠詞陰性：___ Frau",
+        "answer": "eine",
+        "accept": [
+          "eine"
+        ],
+        "hint": "陰性不定冠詞是 eine。"
+      }
     ]
   },
   {
@@ -132,10 +267,79 @@
       }
     ],
     "tips": [
-      "單字卡上同時寫複數，例如 der Tag – die Tage。"
+      "單字卡上同時寫複數，例如 der Tag – die Tage。",
+      "初學者鐵律：每個名詞都要連 der／die／das 一起背。",
+      "先背高頻名詞的冠詞，再慢慢補例外。",
+      "複數定冠詞一律是 die，可先記這個不變的點。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。"
     ],
     "related": [
       "a1-articles-nom"
+    ],
+    "exercises": [
+      {
+        "id": "a1-noun-plural-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「日子們」？",
+        "options": [
+          "die Tage",
+          "die Kinder",
+          "die Frauen",
+          "die Autos"
+        ],
+        "answer": "die Tage",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a1-noun-plural-pt-0",
+        "type": "mcq",
+        "prompt": "關於「名詞複數常見型」，下列何者正確？",
+        "options": [
+          "常見：-e（Tag→Tage）、-er（Kind→Kinder）、-n/-en（Frau→Frauen）。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "常見：-e（Tag→Tage）、-er（Kind→Kinder）、-n/-en（Frau→Frauen）。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a1-noun-plural-pt-1",
+        "type": "mcq",
+        "prompt": "「名詞複數常見型」的另一個要點是？",
+        "options": [
+          "有些加母音變音：Buch→Bücher、Vater→Väter。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "有些加母音變音：Buch→Bücher、Vater→Väter。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a1-noun-plural-exf-0",
+        "type": "fill",
+        "prompt": "填空（日子們）：die ____",
+        "answer": "Tage",
+        "accept": [
+          "Tage",
+          "tage",
+          "Tage"
+        ],
+        "hint": "對照例句：die Tage"
+      },
+      {
+        "id": "a1-noun-plural-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：die ____",
+        "answer": "Kinder",
+        "accept": [
+          "Kinder",
+          "kinder",
+          "Kinder"
+        ],
+        "hint": "完整例句：die Kinder"
+      }
     ]
   },
   {
@@ -195,8 +399,76 @@
         "zh": "我們學德文。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "把 ich/du/er 跟動詞變化綁在一起背，比較不容易忘。",
+      "Sie（您）要大寫；跟 sie（她／他們）靠上下文分辨。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a1-personal-pronouns-fm-0",
+        "type": "mcq",
+        "prompt": "【主格人稱代詞】ich 我 的「複數」是？",
+        "options": [
+          "wir 我們",
+          "ihr 你們",
+          "sie 他們",
+          "Sie 您們"
+        ],
+        "answer": "wir 我們",
+        "hint": "看表格「主格人稱代詞」中 ich 我 這一列。"
+      },
+      {
+        "id": "a1-personal-pronouns-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我是學生。」？",
+        "options": [
+          "Ich bin Student.",
+          "Du bist nett.",
+          "Sie sind Lehrer.",
+          "Wir lernen Deutsch."
+        ],
+        "answer": "Ich bin Student.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a1-personal-pronouns-pt-0",
+        "type": "mcq",
+        "prompt": "關於「人稱代詞主格」，下列何者正確？",
+        "options": [
+          "正式「您」寫 Sie（大寫），動詞用第三人稱複數形。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "正式「您」寫 Sie（大寫），動詞用第三人稱複數形。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a1-personal-pronouns-ff-0",
+        "type": "fill",
+        "prompt": "填空：ich 我 → 複數 = ____",
+        "answer": "wir 我們",
+        "accept": [
+          "wir 我們"
+        ],
+        "hint": "提示：表格「主格人稱代詞」。"
+      },
+      {
+        "id": "a1-personal-pronouns-exf-0",
+        "type": "fill",
+        "prompt": "填空（我是學生。）：Ich ____ Student",
+        "answer": "bin",
+        "accept": [
+          "bin",
+          "bin",
+          "Bin"
+        ],
+        "hint": "對照例句：Ich bin Student"
+      }
+    ]
   },
   {
     "id": "a1-sein-haben",
@@ -270,9 +542,76 @@
         "zh": "你有時間嗎？"
       }
     ],
-    "tips": [],
+    "tips": [
+      "陳述句：變位動詞固定在第二位——先數位置再寫句子。",
+      "先熟 ich／du／er 三種，再說 wir／ihr／sie。",
+      "看到可分動詞（auf-/an-…），記得前綴常跑到句末。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a1-prasens-regular"
+    ],
+    "exercises": [
+      {
+        "id": "a1-sh-1",
+        "type": "mcq",
+        "prompt": "ich + sein = ?",
+        "options": [
+          "bin",
+          "bist",
+          "ist",
+          "habe"
+        ],
+        "answer": "bin",
+        "hint": "ich bin。"
+      },
+      {
+        "id": "a1-sh-2",
+        "type": "mcq",
+        "prompt": "er + haben = ?",
+        "options": [
+          "hat",
+          "habe",
+          "hast",
+          "ist"
+        ],
+        "answer": "hat",
+        "hint": "er/sie/es hat。"
+      },
+      {
+        "id": "a1-sh-3",
+        "type": "mcq",
+        "prompt": "「我累了」怎麼說？",
+        "options": [
+          "Ich bin müde.",
+          "Ich habe müde.",
+          "Ich ist müde.",
+          "Ich bist müde."
+        ],
+        "answer": "Ich bin müde.",
+        "hint": "狀態用 sein。"
+      },
+      {
+        "id": "a1-sh-4",
+        "type": "fill",
+        "prompt": "填空：Du ___ (sein) nett.",
+        "answer": "bist",
+        "accept": [
+          "bist"
+        ],
+        "hint": "du → bist。"
+      },
+      {
+        "id": "a1-sh-5",
+        "type": "fill",
+        "prompt": "填空：Wir ___ (haben) Zeit.",
+        "answer": "haben",
+        "accept": [
+          "haben"
+        ],
+        "hint": "wir haben。"
+      }
     ]
   },
   {
@@ -340,10 +679,77 @@
         "zh": "我們踢足球。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "陳述句：變位動詞固定在第二位——先數位置再寫句子。",
+      "先熟 ich／du／er 三種，再說 wir／ihr／sie。",
+      "看到可分動詞（auf-/an-…），記得前綴常跑到句末。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a1-word-order",
       "a1-sein-haben"
+    ],
+    "exercises": [
+      {
+        "id": "a1-pr-1",
+        "type": "mcq",
+        "prompt": "du + lernen = ?",
+        "options": [
+          "lernst",
+          "lerne",
+          "lernt",
+          "lernen"
+        ],
+        "answer": "lernst",
+        "hint": "du 加 -st。"
+      },
+      {
+        "id": "a1-pr-2",
+        "type": "mcq",
+        "prompt": "er + wohnen = ?",
+        "options": [
+          "wohnt",
+          "wohne",
+          "wohnst",
+          "wohnen"
+        ],
+        "answer": "wohnt",
+        "hint": "er/sie/es 加 -t。"
+      },
+      {
+        "id": "a1-pr-3",
+        "type": "mcq",
+        "prompt": "wir + spielen = ?",
+        "options": [
+          "spielen",
+          "spielt",
+          "spiele",
+          "spielst"
+        ],
+        "answer": "spielen",
+        "hint": "wir 與不定式相同。"
+      },
+      {
+        "id": "a1-pr-4",
+        "type": "fill",
+        "prompt": "填空：Ich ___ Deutsch.（lernen）",
+        "answer": "lerne",
+        "accept": [
+          "lerne"
+        ],
+        "hint": "ich → -e。"
+      },
+      {
+        "id": "a1-pr-5",
+        "type": "fill",
+        "prompt": "填空：Ihr ___ viel.（arbeiten）",
+        "answer": "arbeitet",
+        "accept": [
+          "arbeitet"
+        ],
+        "hint": "字幹 -t 時加 e：arbeitet。"
+      }
     ]
   },
   {
@@ -429,8 +835,77 @@
         "zh": "她還在睡。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "陳述句：變位動詞固定在第二位——先數位置再寫句子。",
+      "先熟 ich／du／er 三種，再說 wir／ihr／sie。",
+      "看到可分動詞（auf-/an-…），記得前綴常跑到句末。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a1-prasens-irregular-fm-0",
+        "type": "mcq",
+        "prompt": "【常見變化】sprechen 的「du」是？",
+        "options": [
+          "sprichst",
+          "liest",
+          "siehst",
+          "fährst"
+        ],
+        "answer": "sprichst",
+        "hint": "看表格「常見變化」中 sprechen 這一列。"
+      },
+      {
+        "id": "a1-prasens-irregular-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「你說什麼語言？」？",
+        "options": [
+          "Was sprichst du?",
+          "Er liest ein Buch.",
+          "Wann fährst du?",
+          "Sie schläft noch."
+        ],
+        "answer": "Was sprichst du?",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a1-prasens-irregular-pt-0",
+        "type": "mcq",
+        "prompt": "關於「常見不規則現在時（母音變化）」，下列何者正確？",
+        "options": [
+          "e→i：sprechen → du sprichst, er spricht。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "e→i：sprechen → du sprichst, er spricht。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a1-prasens-irregular-ff-0",
+        "type": "fill",
+        "prompt": "填空：sprechen → du = ____",
+        "answer": "sprichst",
+        "accept": [
+          "sprichst"
+        ],
+        "hint": "提示：表格「常見變化」。"
+      },
+      {
+        "id": "a1-prasens-irregular-exf-0",
+        "type": "fill",
+        "prompt": "填空（你說什麼語言？）：Was ____ du?",
+        "answer": "sprichst",
+        "accept": [
+          "sprichst",
+          "sprichst",
+          "Sprichst"
+        ],
+        "hint": "對照例句：Was sprichst du?"
+      }
+    ]
   },
   {
     "id": "a1-word-order",
@@ -460,10 +935,75 @@
       }
     ],
     "tips": [
-      "把「動詞第二位」當成鐵律先練熟。"
+      "把「動詞第二位」當成鐵律先練熟。",
+      "是非問句：動詞開頭；W 問句：疑問詞開頭、動詞第二。",
+      "把短句唸順，比一次寫長句更有效。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
     ],
     "related": [
       "a1-questions"
+    ],
+    "exercises": [
+      {
+        "id": "a1-wo-1",
+        "type": "mcq",
+        "prompt": "陳述句裡，變位動詞在第幾位？",
+        "options": [
+          "第二位",
+          "第一位",
+          "最後一位",
+          "第三位"
+        ],
+        "answer": "第二位",
+        "hint": "德文鐵律：動詞第二位。"
+      },
+      {
+        "id": "a1-wo-2",
+        "type": "mcq",
+        "prompt": "哪句正確？",
+        "options": [
+          "Heute gehe ich ins Kino.",
+          "Heute ich gehe ins Kino.",
+          "Gehe heute ich ins Kino.",
+          "Ich heute gehe ins Kino."
+        ],
+        "answer": "Heute gehe ich ins Kino.",
+        "hint": "時間提前時，動詞仍第二，主語在後。"
+      },
+      {
+        "id": "a1-wo-3",
+        "type": "mcq",
+        "prompt": "Ich ___ heute Deutsch.（lernen）",
+        "options": [
+          "lerne",
+          "lernen",
+          "lernst",
+          "lernt"
+        ],
+        "answer": "lerne",
+        "hint": "ich lerne；動詞在第二位。"
+      },
+      {
+        "id": "a1-wo-4",
+        "type": "fill",
+        "prompt": "把動詞放對：Heute ___ ich Deutsch.（lernen 變位）",
+        "answer": "lerne",
+        "accept": [
+          "lerne"
+        ],
+        "hint": "Heute(1) lerne(2) ich…"
+      },
+      {
+        "id": "a1-wo-5",
+        "type": "fill",
+        "prompt": "填空：In Berlin ___ ich.（wohnen 變位，ich）",
+        "answer": "wohne",
+        "accept": [
+          "wohne"
+        ],
+        "hint": "地點提前，動詞仍第二：wohne。"
+      }
     ]
   },
   {
@@ -497,9 +1037,77 @@
         "zh": "你叫什麼名字？"
       }
     ],
-    "tips": [],
+    "tips": [
+      "是非問句：動詞開頭；W 問句：疑問詞開頭、動詞第二。",
+      "把短句唸順，比一次寫長句更有效。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a1-word-order"
+    ],
+    "exercises": [
+      {
+        "id": "a1-q-1",
+        "type": "mcq",
+        "prompt": "是非問句通常怎麼開始？",
+        "options": [
+          "動詞開頭",
+          "主語開頭",
+          "問號開頭",
+          "nicht 開頭"
+        ],
+        "answer": "動詞開頭",
+        "hint": "Kommst du mit?"
+      },
+      {
+        "id": "a1-q-2",
+        "type": "mcq",
+        "prompt": "問「在哪裡」用？",
+        "options": [
+          "wo",
+          "wohin",
+          "woher",
+          "wann"
+        ],
+        "answer": "wo",
+        "hint": "wo＝在哪；wohin＝去哪。"
+      },
+      {
+        "id": "a1-q-3",
+        "type": "mcq",
+        "prompt": "問名字：___ heißt du?",
+        "options": [
+          "Wie",
+          "Was",
+          "Wo",
+          "Wer"
+        ],
+        "answer": "Wie",
+        "hint": "Wie heißt du?"
+      },
+      {
+        "id": "a1-q-4",
+        "type": "fill",
+        "prompt": "填空：___ wohnst du?（在哪裡）",
+        "answer": "Wo",
+        "accept": [
+          "Wo",
+          "wo"
+        ],
+        "hint": "Wo＝位置。"
+      },
+      {
+        "id": "a1-q-5",
+        "type": "fill",
+        "prompt": "填空：___ gehst du?（去哪裡）",
+        "answer": "Wohin",
+        "accept": [
+          "Wohin",
+          "wohin"
+        ],
+        "hint": "Wohin＝方向。"
+      }
     ]
   },
   {
@@ -533,10 +1141,76 @@
         "zh": "我們沒有時間。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "kein 用來否定「一個／某個名詞」；nicht 否定動詞或形容詞。",
+      "不要說 nicht ein Auto，要說 kein Auto。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a1-articles-nom",
       "a1-accusative"
+    ],
+    "exercises": [
+      {
+        "id": "a1-neg-1",
+        "type": "mcq",
+        "prompt": "「我沒有車」正確說法？",
+        "options": [
+          "Ich habe kein Auto.",
+          "Ich habe nicht ein Auto.",
+          "Ich habe nicht Auto.",
+          "Ich habe keine Auto."
+        ],
+        "answer": "Ich habe kein Auto.",
+        "hint": "否定名詞用 kein，不是 nicht ein。"
+      },
+      {
+        "id": "a1-neg-2",
+        "type": "mcq",
+        "prompt": "否定形容詞常用？",
+        "options": [
+          "nicht",
+          "kein",
+          "ohne",
+          "nie"
+        ],
+        "answer": "nicht",
+        "hint": "Das ist nicht teuer。"
+      },
+      {
+        "id": "a1-neg-3",
+        "type": "mcq",
+        "prompt": "Ich trinke ___ Kaffee.（否定）",
+        "options": [
+          "keinen",
+          "nicht",
+          "kein",
+          "keine"
+        ],
+        "answer": "keinen",
+        "hint": "陽性第四格：keinen。"
+      },
+      {
+        "id": "a1-neg-4",
+        "type": "fill",
+        "prompt": "填空：Er kommt heute ___.（他不來）",
+        "answer": "nicht",
+        "accept": [
+          "nicht"
+        ],
+        "hint": "否定動詞／整句常用 nicht。"
+      },
+      {
+        "id": "a1-neg-5",
+        "type": "fill",
+        "prompt": "填空：Wir haben ___ Zeit.",
+        "answer": "keine",
+        "accept": [
+          "keine"
+        ],
+        "hint": "Zeit 陰性 → keine。"
+      }
     ]
   },
   {
@@ -598,10 +1272,77 @@
         "zh": "我們需要一張桌子。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "先問：這個名詞是「誰做」（主格）還是「承受動作」（第四格）？",
+      "陽性變化最明顯：der→den（第四格）、dem（第三格）。",
+      "先練「我看到 den Mann」這種短句。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a1-articles-nom",
       "a2-dative"
+    ],
+    "exercises": [
+      {
+        "id": "a1-akk-1",
+        "type": "mcq",
+        "prompt": "陽性定冠詞第四格是？",
+        "options": [
+          "den",
+          "der",
+          "dem",
+          "das"
+        ],
+        "answer": "den",
+        "hint": "der → den（第四格）。"
+      },
+      {
+        "id": "a1-akk-2",
+        "type": "mcq",
+        "prompt": "Ich sehe ___ Mann.",
+        "options": [
+          "den",
+          "der",
+          "dem",
+          "des"
+        ],
+        "answer": "den",
+        "hint": "sehen 接第四格。"
+      },
+      {
+        "id": "a1-akk-3",
+        "type": "mcq",
+        "prompt": "陰性第四格定冠詞？",
+        "options": [
+          "die",
+          "der",
+          "den",
+          "das"
+        ],
+        "answer": "die",
+        "hint": "陰性第四格仍是 die。"
+      },
+      {
+        "id": "a1-akk-4",
+        "type": "fill",
+        "prompt": "填空：Hast du ___ Buch?（das 的第四格）",
+        "answer": "das",
+        "accept": [
+          "das"
+        ],
+        "hint": "中性第四格仍是 das。"
+      },
+      {
+        "id": "a1-akk-5",
+        "type": "fill",
+        "prompt": "填空：Wir brauchen ___ Tisch.（ein 陽性第四格）",
+        "answer": "einen",
+        "accept": [
+          "einen"
+        ],
+        "hint": "陽性不定冠詞第四格：einen。"
+      }
     ]
   },
   {
@@ -658,8 +1399,77 @@
         "zh": "這是您的袋子嗎？"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "把 ich/du/er 跟動詞變化綁在一起背，比較不容易忘。",
+      "Sie（您）要大寫；跟 sie（她／他們）靠上下文分辨。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。",
+      "顏色記憶：der 藍、die 紅、das 綠。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a1-possessive-fm-0",
+        "type": "mcq",
+        "prompt": "【mein（主格／第四格）】Nom. 的「陽性」是？",
+        "options": [
+          "mein",
+          "meinen",
+          "der",
+          "die"
+        ],
+        "answer": "mein",
+        "hint": "看表格「mein（主格／第四格）」中 Nom. 這一列。"
+      },
+      {
+        "id": "a1-possessive-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「這是我哥哥／弟弟。」？",
+        "options": [
+          "Das ist mein Bruder.",
+          "Ich rufe meinen Freund an.",
+          "Ist das Ihre Tasche?",
+          "der"
+        ],
+        "answer": "Das ist mein Bruder.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a1-possessive-pt-0",
+        "type": "mcq",
+        "prompt": "關於「所有格冠詞（主格／第四格）」，下列何者正確？",
+        "options": [
+          "主格：mein Vater, meine Mutter, mein Kind。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "主格：mein Vater, meine Mutter, mein Kind。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a1-possessive-ff-0",
+        "type": "fill",
+        "prompt": "填空：Nom. → 陽性 = ____",
+        "answer": "mein",
+        "accept": [
+          "mein"
+        ],
+        "hint": "提示：表格「mein（主格／第四格）」。"
+      },
+      {
+        "id": "a1-possessive-exf-0",
+        "type": "fill",
+        "prompt": "填空（這是我哥哥／弟弟。）：Das ____ mein Bruder",
+        "answer": "ist",
+        "accept": [
+          "ist",
+          "ist",
+          "Ist"
+        ],
+        "hint": "對照例句：Das ist mein Bruder"
+      }
+    ]
   },
   {
     "id": "a1-modal-basic",
@@ -722,9 +1532,75 @@
         "zh": "我想要水，拜託。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "情態動詞要變位，後面的主要動詞用原形放句末。",
+      "Ich kann schwimmen（✓）不是 Ich kann schwimme。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a2-modal-full"
+    ],
+    "exercises": [
+      {
+        "id": "a1-mo-1",
+        "type": "mcq",
+        "prompt": "情態動詞後面的主要動詞要用？",
+        "options": [
+          "原形（不定式）放句末",
+          "一樣變位",
+          "過去分詞",
+          "去掉字尾"
+        ],
+        "answer": "原形（不定式）放句末",
+        "hint": "Ich kann schwimmen。"
+      },
+      {
+        "id": "a1-mo-2",
+        "type": "mcq",
+        "prompt": "ich + können = ?",
+        "options": [
+          "kann",
+          "können",
+          "kannst",
+          "könnt"
+        ],
+        "answer": "kann",
+        "hint": "情態單數常變母音。"
+      },
+      {
+        "id": "a1-mo-3",
+        "type": "mcq",
+        "prompt": "禮貌「想要」常用？",
+        "options": [
+          "möchten",
+          "müssen",
+          "dürfen",
+          "sollen"
+        ],
+        "answer": "möchten",
+        "hint": "Ich möchte einen Kaffee。"
+      },
+      {
+        "id": "a1-mo-4",
+        "type": "fill",
+        "prompt": "填空：Ich ___ Deutsch sprechen.（können）",
+        "answer": "kann",
+        "accept": [
+          "kann"
+        ],
+        "hint": "ich kann。"
+      },
+      {
+        "id": "a1-mo-5",
+        "type": "fill",
+        "prompt": "填空：Wir müssen ___.（走：gehen）",
+        "answer": "gehen",
+        "accept": [
+          "gehen"
+        ],
+        "hint": "主要動詞原形在句末。"
+      }
     ]
   },
   {
@@ -759,9 +1635,78 @@
       }
     ],
     "tips": [
-      "看到 auf-/an-/mit-/aus-/ein- 等，先想是不是可分。"
+      "看到 auf-/an-/mit-/aus-/ein- 等，先想是不是可分。",
+      "陳述句：變位動詞固定在第二位——先數位置再寫句子。",
+      "先熟 ich／du／er 三種，再說 wir／ihr／sie。",
+      "看到可分動詞（auf-/an-…），記得前綴常跑到句末。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。"
     ],
-    "related": []
+    "related": [],
+    "exercises": [
+      {
+        "id": "a1-separable-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我早起。」？",
+        "options": [
+          "Ich stehe früh auf.",
+          "Rufst du mich an?",
+          "Kommst du mit?",
+          "Wir gehen heute aus."
+        ],
+        "answer": "Ich stehe früh auf.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a1-separable-pt-0",
+        "type": "mcq",
+        "prompt": "關於「可分動詞（現在時）」，下列何者正確？",
+        "options": [
+          "Ich stehe um 7 Uhr auf.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Ich stehe um 7 Uhr auf.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a1-separable-pt-1",
+        "type": "mcq",
+        "prompt": "「可分動詞（現在時）」的另一個要點是？",
+        "options": [
+          "疑問：Stehst du früh auf?",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "疑問：Stehst du früh auf?",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a1-separable-exf-0",
+        "type": "fill",
+        "prompt": "填空（我早起。）：Ich ____ früh auf",
+        "answer": "stehe",
+        "accept": [
+          "stehe",
+          "stehe",
+          "Stehe"
+        ],
+        "hint": "對照例句：Ich stehe früh auf"
+      },
+      {
+        "id": "a1-separable-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Rufst du mich ____",
+        "answer": "an",
+        "accept": [
+          "an",
+          "an",
+          "An"
+        ],
+        "hint": "完整例句：Rufst du mich an?"
+      }
+    ]
   },
   {
     "id": "a1-imperative",
@@ -794,8 +1739,78 @@
         "zh": "小心點！"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "是非問句：動詞開頭；W 問句：疑問詞開頭、動詞第二。",
+      "把短句唸順，比一次寫長句更有效。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a1-imperative-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「過來！」？",
+        "options": [
+          "Komm her!",
+          "Macht die Tür zu!",
+          "Kommen Sie bitte rein!",
+          "Sei vorsichtig!"
+        ],
+        "answer": "Komm her!",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a1-imperative-pt-0",
+        "type": "mcq",
+        "prompt": "關於「命令式入門」，下列何者正確？",
+        "options": [
+          "Komm!／Kommt!／Kommen Sie!",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Komm!／Kommt!／Kommen Sie!",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a1-imperative-pt-1",
+        "type": "mcq",
+        "prompt": "「命令式入門」的另一個要點是？",
+        "options": [
+          "sein：Sei still!／Seid ruhig!／Seien Sie bitte…",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "sein：Sei still!／Seid ruhig!／Seien Sie bitte…",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a1-imperative-exf-0",
+        "type": "fill",
+        "prompt": "填空（過來！）：Komm ____",
+        "answer": "her",
+        "accept": [
+          "her",
+          "her",
+          "Her"
+        ],
+        "hint": "對照例句：Komm her!"
+      },
+      {
+        "id": "a1-imperative-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Macht die Tür ____",
+        "answer": "zu",
+        "accept": [
+          "zu",
+          "zu",
+          "Zu"
+        ],
+        "hint": "完整例句：Macht die Tür zu!"
+      }
+    ]
   },
   {
     "id": "a1-time-numbers",
@@ -828,8 +1843,78 @@
         "zh": "我生日是 5 月 5 日。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "問時間：Wie spät ist es?；先會說 … Uhr 就夠用。",
+      "星期用 am（am Montag），月份用 im（im Mai）。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a1-time-numbers-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「現在幾點？」？",
+        "options": [
+          "Wie spät ist es?",
+          "Es ist halb acht.",
+          "Am Freitag habe ich Zeit.",
+          "Mein Geburtstag ist am 5. Mai."
+        ],
+        "answer": "Wie spät ist es?",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a1-time-numbers-pt-0",
+        "type": "mcq",
+        "prompt": "關於「數字、時間與日期」，下列何者正確？",
+        "options": [
+          "Es ist drei Uhr.／Es ist halb vier.（3:30）",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Es ist drei Uhr.／Es ist halb vier.（3:30）",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a1-time-numbers-pt-1",
+        "type": "mcq",
+        "prompt": "「數字、時間與日期」的另一個要點是？",
+        "options": [
+          "星期：am Montag；月份：im Juli。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "星期：am Montag；月份：im Juli。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a1-time-numbers-exf-0",
+        "type": "fill",
+        "prompt": "填空（現在幾點？）：Wie ____ ist es?",
+        "answer": "spät",
+        "accept": [
+          "spät",
+          "spät",
+          "Spät"
+        ],
+        "hint": "對照例句：Wie spät ist es?"
+      },
+      {
+        "id": "a1-time-numbers-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Es ist halb ____",
+        "answer": "acht",
+        "accept": [
+          "acht",
+          "acht",
+          "Acht"
+        ],
+        "hint": "完整例句：Es ist halb acht."
+      }
+    ]
   },
   {
     "id": "a1-local-prep",
@@ -863,9 +1948,79 @@
         "zh": "她在學校。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "先背「介詞＋哪一格」的固定搭配，不要分開記。",
+      "分清 wo（在哪裡）跟 wohin（去哪裡）。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a2-two-way-prep"
+    ],
+    "exercises": [
+      {
+        "id": "a1-local-prep-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我在家。」？",
+        "options": [
+          "Ich bin zu Hause.",
+          "Ich gehe nach Hause.",
+          "Wir fahren nach Deutschland.",
+          "Sie ist in der Schule."
+        ],
+        "answer": "Ich bin zu Hause.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a1-local-prep-pt-0",
+        "type": "mcq",
+        "prompt": "關於「地點介詞入門（in/an/auf/zu…）」，下列何者正確？",
+        "options": [
+          "zu Hause（在家）／nach Hause（回家）。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "zu Hause（在家）／nach Hause（回家）。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a1-local-prep-pt-1",
+        "type": "mcq",
+        "prompt": "「地點介詞入門（in/an/auf/zu…）」的另一個要點是？",
+        "options": [
+          "in die Schule（去學校，陰性第四格方向）。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "in die Schule（去學校，陰性第四格方向）。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a1-local-prep-exf-0",
+        "type": "fill",
+        "prompt": "填空（我在家。）：Ich ____ zu Hause",
+        "answer": "bin",
+        "accept": [
+          "bin",
+          "bin",
+          "Bin"
+        ],
+        "hint": "對照例句：Ich bin zu Hause"
+      },
+      {
+        "id": "a1-local-prep-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Ich gehe nach ____",
+        "answer": "Hause",
+        "accept": [
+          "Hause",
+          "hause",
+          "Hause"
+        ],
+        "hint": "完整例句：Ich gehe nach Hause."
+      }
     ]
   },
   {
@@ -899,9 +2054,79 @@
         "zh": "這樣比較好。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "放在 sein 後面當表語時，形容詞通常不加字尾。",
+      "修飾名詞時才要加字尾，A1 可先少用長名詞片語。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a2-adjective-endings"
+    ],
+    "exercises": [
+      {
+        "id": "a1-adjectives-pred-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「天氣很好。」？",
+        "options": [
+          "Das Wetter ist schön.",
+          "Die Prüfung ist schwer.",
+          "Ich bin müde.",
+          "Das ist besser."
+        ],
+        "answer": "Das Wetter ist schön.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a1-adjectives-pred-pt-0",
+        "type": "mcq",
+        "prompt": "關於「表語形容詞（不加字尾）」，下列何者正確？",
+        "options": [
+          "Das Buch ist interessant.（不是 *interessantes）",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Das Buch ist interessant.（不是 *interessantes）",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a1-adjectives-pred-pt-1",
+        "type": "mcq",
+        "prompt": "「表語形容詞（不加字尾）」的另一個要點是？",
+        "options": [
+          "比較入門：größer, kleiner, besser, mehr…",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "比較入門：größer, kleiner, besser, mehr…",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a1-adjectives-pred-exf-0",
+        "type": "fill",
+        "prompt": "填空（天氣很好。）：Das ____ ist schön",
+        "answer": "Wetter",
+        "accept": [
+          "Wetter",
+          "wetter",
+          "Wetter"
+        ],
+        "hint": "對照例句：Das Wetter ist schön"
+      },
+      {
+        "id": "a1-adjectives-pred-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Die Prüfung ist ____",
+        "answer": "schwer",
+        "accept": [
+          "schwer",
+          "schwer",
+          "Schwer"
+        ],
+        "hint": "完整例句：Die Prüfung ist schwer."
+      }
     ]
   },
   {
@@ -935,9 +2160,79 @@
         "zh": "我不喝啤酒，而是喝葡萄酒。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "看到 weil／dass：從句的動詞要走到句末。",
+      "先寫兩個短句，再練習用 weil 接起來。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a2-weil-dass"
+    ],
+    "exercises": [
+      {
+        "id": "a1-coord-conj-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我喝茶，他喝咖啡。」？",
+        "options": [
+          "Ich trinke Tee und er trinkt Kaffee.",
+          "Kommst du mit oder bleibst du hier?",
+          "Es ist teuer, aber gut.",
+          "Ich trinke nicht Bier, sondern Wein."
+        ],
+        "answer": "Ich trinke Tee und er trinkt Kaffee.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a1-coord-conj-pt-0",
+        "type": "mcq",
+        "prompt": "關於「對等連接詞」，下列何者正確？",
+        "options": [
+          "aber＝但是；sondern＝而是（接在否定後）。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "aber＝但是；sondern＝而是（接在否定後）。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a1-coord-conj-pt-1",
+        "type": "mcq",
+        "prompt": "「對等連接詞」的另一個要點是？",
+        "options": [
+          "denn＝因為（主句語序，不同於 weil）。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "denn＝因為（主句語序，不同於 weil）。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a1-coord-conj-exf-0",
+        "type": "fill",
+        "prompt": "填空（我喝茶，他喝咖啡。）：Ich ____ Tee und er trinkt Kaffee",
+        "answer": "trinke",
+        "accept": [
+          "trinke",
+          "trinke",
+          "Trinke"
+        ],
+        "hint": "對照例句：Ich trinke Tee und er trinkt Kaffee"
+      },
+      {
+        "id": "a1-coord-conj-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Kommst du mit oder bleibst du ____",
+        "answer": "hier",
+        "accept": [
+          "hier",
+          "hier",
+          "Hier"
+        ],
+        "hint": "完整例句：Kommst du mit oder bleibst du hier?"
+      }
     ]
   },
   {
@@ -999,10 +2294,77 @@
         "zh": "我們感謝您。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "先問：這個名詞是「誰做」（主格）還是「承受動作」（第四格）？",
+      "陽性變化最明顯：der→den（第四格）、dem（第三格）。",
+      "先練「我看到 den Mann」這種短句。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a1-accusative",
       "a2-akk-dat-verbs"
+    ],
+    "exercises": [
+      {
+        "id": "a2-dat-1",
+        "type": "mcq",
+        "prompt": "陽性定冠詞第三格是？",
+        "options": [
+          "dem",
+          "den",
+          "der",
+          "das"
+        ],
+        "answer": "dem",
+        "hint": "der → dem。"
+      },
+      {
+        "id": "a2-dat-2",
+        "type": "mcq",
+        "prompt": "Ich helfe ___ Mann.",
+        "options": [
+          "dem",
+          "den",
+          "der",
+          "das"
+        ],
+        "answer": "dem",
+        "hint": "helfen 接第三格。"
+      },
+      {
+        "id": "a2-dat-3",
+        "type": "mcq",
+        "prompt": "陰性第三格定冠詞？",
+        "options": [
+          "der",
+          "die",
+          "dem",
+          "den"
+        ],
+        "answer": "der",
+        "hint": "die → der（第三格）。"
+      },
+      {
+        "id": "a2-dat-4",
+        "type": "fill",
+        "prompt": "填空：Das gehört ___ Frau.（定冠詞）",
+        "answer": "der",
+        "accept": [
+          "der"
+        ],
+        "hint": "gehören + 第三格；陰性 der。"
+      },
+      {
+        "id": "a2-dat-5",
+        "type": "fill",
+        "prompt": "填空：Das gefällt ___.（我：第三格代詞）",
+        "answer": "mir",
+        "accept": [
+          "mir"
+        ],
+        "hint": "mir = 我（第三格）。"
+      }
     ]
   },
   {
@@ -1032,8 +2394,79 @@
         "zh": "你可以給我鹽嗎？"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先問：這個名詞是「誰做」（主格）還是「承受動作」（第四格）？",
+      "陽性變化最明顯：der→den（第四格）、dem（第三格）。",
+      "先練「我看到 den Mann」這種短句。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-akk-dat-verbs-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我把書給你。」？",
+        "options": [
+          "Ich gebe dir das Buch.",
+          "Sie schickt ihm eine E-Mail.",
+          "Kannst du mir das Salz geben?",
+          "der"
+        ],
+        "answer": "Ich gebe dir das Buch.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-akk-dat-verbs-pt-0",
+        "type": "mcq",
+        "prompt": "關於「雙賓動詞：給誰＋什麼」，下列何者正確？",
+        "options": [
+          "順序常是：主語 – 動詞 – 第三格 – 第四格。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "順序常是：主語 – 動詞 – 第三格 – 第四格。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-akk-dat-verbs-pt-1",
+        "type": "mcq",
+        "prompt": "「雙賓動詞：給誰＋什麼」的另一個要點是？",
+        "options": [
+          "若第四格是代詞，代詞常靠前：Ich gebe es dir.",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "若第四格是代詞，代詞常靠前：Ich gebe es dir.",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a2-akk-dat-verbs-exf-0",
+        "type": "fill",
+        "prompt": "填空（我把書給你。）：Ich ____ dir das Buch",
+        "answer": "gebe",
+        "accept": [
+          "gebe",
+          "gebe",
+          "Gebe"
+        ],
+        "hint": "對照例句：Ich gebe dir das Buch"
+      },
+      {
+        "id": "a2-akk-dat-verbs-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Sie schickt ihm eine ____",
+        "answer": "E-Mail",
+        "accept": [
+          "E-Mail",
+          "e-mail",
+          "E-mail"
+        ],
+        "hint": "完整例句：Sie schickt ihm eine E-Mail."
+      }
+    ]
   },
   {
     "id": "a2-dative-prep",
@@ -1066,10 +2499,80 @@
         "zh": "我們去火車站。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "先背「介詞＋哪一格」的固定搭配，不要分開記。",
+      "分清 wo（在哪裡）跟 wohin（去哪裡）。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a2-akk-prep",
       "a2-two-way-prep"
+    ],
+    "exercises": [
+      {
+        "id": "a2-dative-prep-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我搭火車。」？",
+        "options": [
+          "Ich fahre mit dem Zug.",
+          "Sie kommt aus Taiwan.",
+          "Ich wohne bei meiner Tante.",
+          "Wir gehen zum Bahnhof."
+        ],
+        "answer": "Ich fahre mit dem Zug.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-dative-prep-pt-0",
+        "type": "mcq",
+        "prompt": "關於「固定第三格介詞」，下列何者正確？",
+        "options": [
+          "mit dem Bus, zur Arbeit（zu + der → zur）, zum Arzt。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "mit dem Bus, zur Arbeit（zu + der → zur）, zum Arzt。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-dative-prep-pt-1",
+        "type": "mcq",
+        "prompt": "「固定第三格介詞」的另一個要點是？",
+        "options": [
+          "seit einem Jahr；bei meinen Eltern。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "seit einem Jahr；bei meinen Eltern。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a2-dative-prep-exf-0",
+        "type": "fill",
+        "prompt": "填空（我搭火車。）：Ich ____ mit dem Zug",
+        "answer": "fahre",
+        "accept": [
+          "fahre",
+          "fahre",
+          "Fahre"
+        ],
+        "hint": "對照例句：Ich fahre mit dem Zug"
+      },
+      {
+        "id": "a2-dative-prep-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Sie kommt aus ____",
+        "answer": "Taiwan",
+        "accept": [
+          "Taiwan",
+          "taiwan",
+          "Taiwan"
+        ],
+        "hint": "完整例句：Sie kommt aus Taiwan."
+      }
     ]
   },
   {
@@ -1102,8 +2605,78 @@
         "zh": "課程九點開始。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先背「介詞＋哪一格」的固定搭配，不要分開記。",
+      "分清 wo（在哪裡）跟 wohin（去哪裡）。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-akk-prep-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「這禮物是給你的。」？",
+        "options": [
+          "Das Geschenk ist für dich.",
+          "Ohne dich gehe ich nicht.",
+          "Wir gehen durch den Park.",
+          "Der Kurs beginnt um 9 Uhr."
+        ],
+        "answer": "Das Geschenk ist für dich.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-akk-prep-pt-0",
+        "type": "mcq",
+        "prompt": "關於「固定第四格介詞」，下列何者正確？",
+        "options": [
+          "für dich, ohne mich, um 8 Uhr, durch den Park。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "für dich, ohne mich, um 8 Uhr, durch den Park。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-akk-prep-pt-1",
+        "type": "mcq",
+        "prompt": "「固定第四格介詞」的另一個要點是？",
+        "options": [
+          "gegen die Wand；bis nächsten Montag。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "gegen die Wand；bis nächsten Montag。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a2-akk-prep-exf-0",
+        "type": "fill",
+        "prompt": "填空（這禮物是給你的。）：Das ____ ist für dich",
+        "answer": "Geschenk",
+        "accept": [
+          "Geschenk",
+          "geschenk",
+          "Geschenk"
+        ],
+        "hint": "對照例句：Das Geschenk ist für dich"
+      },
+      {
+        "id": "a2-akk-prep-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Ohne dich gehe ich ____",
+        "answer": "nicht",
+        "accept": [
+          "nicht",
+          "nicht",
+          "Nicht"
+        ],
+        "hint": "完整例句：Ohne dich gehe ich nicht."
+      }
+    ]
   },
   {
     "id": "a2-two-way-prep",
@@ -1137,9 +2710,74 @@
       }
     ],
     "tips": [
-      "liegen/stehen/sitzen＝位置；legen/stellen/setzen＝放置方向。"
+      "liegen/stehen/sitzen＝位置；legen/stellen/setzen＝放置方向。",
+      "先背「介詞＋哪一格」的固定搭配，不要分開記。",
+      "分清 wo（在哪裡）跟 wohin（去哪裡）。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
     ],
-    "related": []
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-tw-1",
+        "type": "mcq",
+        "prompt": "問 wo（位置）時，兩用介詞接？",
+        "options": [
+          "第三格",
+          "第四格",
+          "第二格",
+          "不變"
+        ],
+        "answer": "第三格",
+        "hint": "位置→Dativ。"
+      },
+      {
+        "id": "a2-tw-2",
+        "type": "mcq",
+        "prompt": "問 wohin（方向）時接？",
+        "options": [
+          "第四格",
+          "第三格",
+          "主格",
+          "第二格"
+        ],
+        "answer": "第四格",
+        "hint": "方向→Akkusativ。"
+      },
+      {
+        "id": "a2-tw-3",
+        "type": "mcq",
+        "prompt": "Ich bin ___ Zimmer.（in + dem）",
+        "options": [
+          "im",
+          "ins",
+          "am",
+          "ans"
+        ],
+        "answer": "im",
+        "hint": "in dem → im。"
+      },
+      {
+        "id": "a2-tw-4",
+        "type": "fill",
+        "prompt": "填空：Wir gehen ___ Kino.（in + das）",
+        "answer": "ins",
+        "accept": [
+          "ins"
+        ],
+        "hint": "in das → ins。"
+      },
+      {
+        "id": "a2-tw-5",
+        "type": "fill",
+        "prompt": "填空：Das Buch liegt auf ___ Tisch.（dem/den？位置）",
+        "answer": "dem",
+        "accept": [
+          "dem"
+        ],
+        "hint": "位置用第三格 dem。"
+      }
+    ]
   },
   {
     "id": "a2-perfekt",
@@ -1191,10 +2829,76 @@
         "zh": "我們六點起床。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "口語談過去多用 Perfekt：haben／sein + 過去分詞。",
+      "分詞多半在句末；先找助動詞再找分詞。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a2-participle",
       "b1-prateritum"
+    ],
+    "exercises": [
+      {
+        "id": "a2-pf-1",
+        "type": "mcq",
+        "prompt": "口語過去常用哪個時態？",
+        "options": [
+          "Perfekt",
+          "Futur",
+          "只有 Präsens",
+          "只有 Genitiv"
+        ],
+        "answer": "Perfekt",
+        "hint": "haben/sein + 過去分詞。"
+      },
+      {
+        "id": "a2-pf-2",
+        "type": "mcq",
+        "prompt": "gehen 的完成時助動詞多用？",
+        "options": [
+          "sein",
+          "haben",
+          "werden",
+          "können"
+        ],
+        "answer": "sein",
+        "hint": "位移動詞常用 sein。"
+      },
+      {
+        "id": "a2-pf-3",
+        "type": "mcq",
+        "prompt": "machen 的過去分詞？",
+        "options": [
+          "gemacht",
+          "gemachen",
+          "macht",
+          "gemachtet"
+        ],
+        "answer": "gemacht",
+        "hint": "ge- + 字幹 + -t。"
+      },
+      {
+        "id": "a2-pf-4",
+        "type": "fill",
+        "prompt": "填空：Ich ___ gearbeitet.（助動詞）",
+        "answer": "habe",
+        "accept": [
+          "habe"
+        ],
+        "hint": "多數動詞用 haben。"
+      },
+      {
+        "id": "a2-pf-5",
+        "type": "fill",
+        "prompt": "填空：Sie ist nach Hause ___.（gehen 分詞）",
+        "answer": "gegangen",
+        "accept": [
+          "gegangen"
+        ],
+        "hint": "強變化：gegangen。"
+      }
     ]
   },
   {
@@ -1229,8 +2933,78 @@
         "zh": "她念過醫學。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "口語談過去多用 Perfekt：haben／sein + 過去分詞。",
+      "分詞多半在句末；先找助動詞再找分詞。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-participle-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我寫了一封信。」？",
+        "options": [
+          "Ich habe einen Brief geschrieben.",
+          "Er hat das Fenster geöffnet.",
+          "Wir haben das Museum besucht.",
+          "Sie hat Medizin studiert."
+        ],
+        "answer": "Ich habe einen Brief geschrieben.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-participle-pt-0",
+        "type": "mcq",
+        "prompt": "關於「過去分詞構成」，下列何者正確？",
+        "options": [
+          "弱變化：gemacht, gelernt, gekauft。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "弱變化：gemacht, gelernt, gekauft。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-participle-pt-1",
+        "type": "mcq",
+        "prompt": "「過去分詞構成」的另一個要點是？",
+        "options": [
+          "強變化：geschrieben, gelesen, genommen, gegessen。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "強變化：geschrieben, gelesen, genommen, gegessen。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a2-participle-exf-0",
+        "type": "fill",
+        "prompt": "填空（我寫了一封信。）：Ich ____ einen Brief geschrieben",
+        "answer": "habe",
+        "accept": [
+          "habe",
+          "habe",
+          "Habe"
+        ],
+        "hint": "對照例句：Ich habe einen Brief geschrieben"
+      },
+      {
+        "id": "a2-participle-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Er hat das Fenster ____",
+        "answer": "geöffnet",
+        "accept": [
+          "geöffnet",
+          "geöffnet",
+          "Geöffnet"
+        ],
+        "hint": "完整例句：Er hat das Fenster geöffnet."
+      }
+    ]
   },
   {
     "id": "a2-modal-full",
@@ -1311,8 +3085,76 @@
         "zh": "我本來想打給你。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "情態動詞要變位，後面的主要動詞用原形放句末。",
+      "Ich kann schwimmen（✓）不是 Ich kann schwimme。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-modal-full-fm-0",
+        "type": "mcq",
+        "prompt": "【情態動詞現在時（ich/du/er）】können 的「ich」是？",
+        "options": [
+          "kann",
+          "muss",
+          "darf",
+          "soll"
+        ],
+        "answer": "kann",
+        "hint": "看表格「情態動詞現在時（ich/du/er）」中 können 這一列。"
+      },
+      {
+        "id": "a2-modal-full-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「這裡不准吸菸。」？",
+        "options": [
+          "Hier darf man nicht rauchen.",
+          "Du musst nicht kommen.",
+          "Was soll ich tun?",
+          "Ich wollte dich anrufen."
+        ],
+        "answer": "Hier darf man nicht rauchen.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-modal-full-pt-0",
+        "type": "mcq",
+        "prompt": "關於「情態動詞完整變化與用法」，下列何者正確？",
+        "options": [
+          "dürfen＝被允許；müssen＝必須；sollen＝應該（外在要求）。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "dürfen＝被允許；müssen＝必須；sollen＝應該（外在要求）。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-modal-full-ff-0",
+        "type": "fill",
+        "prompt": "填空：können → ich = ____",
+        "answer": "kann",
+        "accept": [
+          "kann"
+        ],
+        "hint": "提示：表格「情態動詞現在時（ich/du/er）」。"
+      },
+      {
+        "id": "a2-modal-full-exf-0",
+        "type": "fill",
+        "prompt": "填空（這裡不准吸菸。）：Hier ____ man nicht rauchen",
+        "answer": "darf",
+        "accept": [
+          "darf",
+          "darf",
+          "Darf"
+        ],
+        "hint": "對照例句：Hier darf man nicht rauchen"
+      }
+    ]
   },
   {
     "id": "a2-weil-dass",
@@ -1341,10 +3183,76 @@
         "zh": "因為下雨，我們搭計程車。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "看到 weil／dass：從句的動詞要走到句末。",
+      "先寫兩個短句，再練習用 weil 接起來。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "a2-wenn-als",
       "b1-relative"
+    ],
+    "exercises": [
+      {
+        "id": "a2-wd-1",
+        "type": "mcq",
+        "prompt": "weil 從句裡，變位動詞在哪？",
+        "options": [
+          "句末",
+          "第二位",
+          "開頭",
+          "可省略"
+        ],
+        "answer": "句末",
+        "hint": "從屬從句：動詞到句末。"
+      },
+      {
+        "id": "a2-wd-2",
+        "type": "mcq",
+        "prompt": "哪句正確？",
+        "options": [
+          "…, weil ich krank bin.",
+          "…, weil ich bin krank.",
+          "…, weil bin ich krank.",
+          "…, weil krank ich bin."
+        ],
+        "answer": "…, weil ich krank bin.",
+        "hint": "weil 從句動詞在末。"
+      },
+      {
+        "id": "a2-wd-3",
+        "type": "mcq",
+        "prompt": "引導「我相信…」常用？",
+        "options": [
+          "dass",
+          "weil",
+          "aber",
+          "oder"
+        ],
+        "answer": "dass",
+        "hint": "Ich glaube, dass…"
+      },
+      {
+        "id": "a2-wd-4",
+        "type": "fill",
+        "prompt": "填空：Ich bleibe zu Hause, weil ich krank ___.（sein）",
+        "answer": "bin",
+        "accept": [
+          "bin"
+        ],
+        "hint": "從句動詞在末：bin。"
+      },
+      {
+        "id": "a2-wd-5",
+        "type": "fill",
+        "prompt": "填空：Sie sagt, ___ sie keine Zeit hat.",
+        "answer": "dass",
+        "accept": [
+          "dass"
+        ],
+        "hint": "dass＝「那／說…」。"
+      }
     ]
   },
   {
@@ -1374,8 +3282,78 @@
         "zh": "如果你願意，我們可以走。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "看到 weil／dass：從句的動詞要走到句末。",
+      "先寫兩個短句，再練習用 weil 接起來。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-wenn-als-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「當我初到柏林時，一切都很新鮮。」？",
+        "options": [
+          "Als ich nach Berlin kam, war alles neu.",
+          "Wenn es kalt ist, trage ich einen Mantel.",
+          "Wenn du willst, können wir gehen.",
+          "der"
+        ],
+        "answer": "Als ich nach Berlin kam, war alles neu.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-wenn-als-pt-0",
+        "type": "mcq",
+        "prompt": "關於「wenn 與 als」，下列何者正確？",
+        "options": [
+          "Als ich Kind war, …（從前那時候）",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Als ich Kind war, …（從前那時候）",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-wenn-als-pt-1",
+        "type": "mcq",
+        "prompt": "「wenn 與 als」的另一個要點是？",
+        "options": [
+          "Wenn ich Zeit habe, …（每當／如果）",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Wenn ich Zeit habe, …（每當／如果）",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a2-wenn-als-exf-0",
+        "type": "fill",
+        "prompt": "填空（當我初到柏林時，一切都很新鮮。）：Als ____ nach Berlin kam, war alles neu",
+        "answer": "ich",
+        "accept": [
+          "ich",
+          "ich",
+          "Ich"
+        ],
+        "hint": "對照例句：Als ich nach Berlin kam, war alles neu"
+      },
+      {
+        "id": "a2-wenn-als-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Wenn es kalt ist, trage ich einen ____",
+        "answer": "Mantel",
+        "accept": [
+          "Mantel",
+          "mantel",
+          "Mantel"
+        ],
+        "hint": "完整例句：Wenn es kalt ist, trage ich einen Mantel."
+      }
+    ]
   },
   {
     "id": "a2-reflexive",
@@ -1408,8 +3386,79 @@
         "zh": "我們記得你。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "陳述句：變位動詞固定在第二位——先數位置再寫句子。",
+      "先熟 ich／du／er 三種，再說 wir／ihr／sie。",
+      "看到可分動詞（auf-/an-…），記得前綴常跑到句末。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-reflexive-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我期待週末。」？",
+        "options": [
+          "Ich freue mich auf das Wochenende.",
+          "Interessierst du dich für Musik?",
+          "Er setzt sich auf den Stuhl.",
+          "Wir erinnern uns an dich."
+        ],
+        "answer": "Ich freue mich auf das Wochenende.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-reflexive-pt-0",
+        "type": "mcq",
+        "prompt": "關於「反身動詞」，下列何者正確？",
+        "options": [
+          "Akkusativ 反身：Ich freue mich.／Setz dich!",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Akkusativ 反身：Ich freue mich.／Setz dich!",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-reflexive-pt-1",
+        "type": "mcq",
+        "prompt": "「反身動詞」的另一個要點是？",
+        "options": [
+          "Dativ 反身：Ich wasche mir die Hände.（身體部位常用第三格反身）",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Dativ 反身：Ich wasche mir die Hände.（身體部位常用第三格反身）",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a2-reflexive-exf-0",
+        "type": "fill",
+        "prompt": "填空（我期待週末。）：Ich ____ mich auf das Wochenende",
+        "answer": "freue",
+        "accept": [
+          "freue",
+          "freue",
+          "Freue"
+        ],
+        "hint": "對照例句：Ich freue mich auf das Wochenende"
+      },
+      {
+        "id": "a2-reflexive-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Interessierst du dich für ____",
+        "answer": "Musik",
+        "accept": [
+          "Musik",
+          "musik",
+          "Musik"
+        ],
+        "hint": "完整例句：Interessierst du dich für Musik?"
+      }
+    ]
   },
   {
     "id": "a2-adjective-endings",
@@ -1476,9 +3525,78 @@
         "zh": "我買了那件貴大衣。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "放在 sein 後面當表語時，形容詞通常不加字尾。",
+      "修飾名詞時才要加字尾，A1 可先少用長名詞片語。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。",
+      "顏色記憶：der 藍、die 紅、das 綠。"
+    ],
     "related": [
       "b1-adjective-endings-full"
+    ],
+    "exercises": [
+      {
+        "id": "a2-adjective-endings-fm-0",
+        "type": "mcq",
+        "prompt": "【定冠詞後（弱變化摘要）】Nom. 的「陽性」是？",
+        "options": [
+          "-e",
+          "-en",
+          "der",
+          "die"
+        ],
+        "answer": "-e",
+        "hint": "看表格「定冠詞後（弱變化摘要）」中 Nom. 這一列。"
+      },
+      {
+        "id": "a2-adjective-endings-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「那位老老師」？",
+        "options": [
+          "der alte Lehrer",
+          "eine kleine Wohnung",
+          "mit dem neuen Auto",
+          "Ich habe den teuren Mantel gekauft."
+        ],
+        "answer": "der alte Lehrer",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-adjective-endings-pt-0",
+        "type": "mcq",
+        "prompt": "關於「形容詞字尾入門（定冠詞後）」，下列何者正確？",
+        "options": [
+          "der gute Mann, die gute Frau, das gute Kind。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "der gute Mann, die gute Frau, das gute Kind。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-adjective-endings-ff-0",
+        "type": "fill",
+        "prompt": "填空：Nom. → 陽性 = ____",
+        "answer": "-e",
+        "accept": [
+          "-e"
+        ],
+        "hint": "提示：表格「定冠詞後（弱變化摘要）」。"
+      },
+      {
+        "id": "a2-adjective-endings-exf-0",
+        "type": "fill",
+        "prompt": "填空（那位老老師）：der ____ Lehrer",
+        "answer": "alte",
+        "accept": [
+          "alte",
+          "alte",
+          "Alte"
+        ],
+        "hint": "對照例句：der alte Lehrer"
+      }
     ]
   },
   {
@@ -1512,8 +3630,78 @@
         "zh": "他是最年長的學生。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "放在 sein 後面當表語時，形容詞通常不加字尾。",
+      "修飾名詞時才要加字尾，A1 可先少用長名詞片語。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-comparative-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「柏林比波恩大。」？",
+        "options": [
+          "Berlin ist größer als Bonn.",
+          "Heute ist es so kalt wie gestern.",
+          "Das ist am besten.",
+          "Er ist der älteste Student."
+        ],
+        "answer": "Berlin ist größer als Bonn.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-comparative-pt-0",
+        "type": "mcq",
+        "prompt": "關於「比較級與最高級」，下列何者正確？",
+        "options": [
+          "groß → größer → am größten／der größte。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "groß → größer → am größten／der größte。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-comparative-pt-1",
+        "type": "mcq",
+        "prompt": "「比較級與最高級」的另一個要點是？",
+        "options": [
+          "常見不規則：gut-besser-am besten；viel-mehr-am meisten。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "常見不規則：gut-besser-am besten；viel-mehr-am meisten。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a2-comparative-exf-0",
+        "type": "fill",
+        "prompt": "填空（柏林比波恩大。）：Berlin ____ größer als Bonn",
+        "answer": "ist",
+        "accept": [
+          "ist",
+          "ist",
+          "Ist"
+        ],
+        "hint": "對照例句：Berlin ist größer als Bonn"
+      },
+      {
+        "id": "a2-comparative-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Heute ist es so kalt wie ____",
+        "answer": "gestern",
+        "accept": [
+          "gestern",
+          "gestern",
+          "Gestern"
+        ],
+        "hint": "完整例句：Heute ist es so kalt wie gestern."
+      }
+    ]
   },
   {
     "id": "a2-pronouns-akk-dat",
@@ -1602,8 +3790,76 @@
         "zh": "我們明天拜訪您。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "把 ich/du/er 跟動詞變化綁在一起背，比較不容易忘。",
+      "Sie（您）要大寫；跟 sie（她／他們）靠上下文分辨。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-pronouns-akk-dat-fm-0",
+        "type": "mcq",
+        "prompt": "【代詞對照】ich 的「Akk.」是？",
+        "options": [
+          "mich",
+          "dich",
+          "ihn",
+          "sie"
+        ],
+        "answer": "mich",
+        "hint": "看表格「代詞對照」中 ich 這一列。"
+      },
+      {
+        "id": "a2-pronouns-akk-dat-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我看見你。」？",
+        "options": [
+          "Ich sehe dich.",
+          "Kannst du mir helfen?",
+          "Ich gebe es ihm.",
+          "Wir besuchen Sie morgen."
+        ],
+        "answer": "Ich sehe dich.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-pronouns-akk-dat-pt-0",
+        "type": "mcq",
+        "prompt": "關於「人稱代詞第三／四格」，下列何者正確？",
+        "options": [
+          "Akk：mich, dich, ihn, sie, es, uns, euch, sie, Sie。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Akk：mich, dich, ihn, sie, es, uns, euch, sie, Sie。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-pronouns-akk-dat-ff-0",
+        "type": "fill",
+        "prompt": "填空：ich → Akk. = ____",
+        "answer": "mich",
+        "accept": [
+          "mich"
+        ],
+        "hint": "提示：表格「代詞對照」。"
+      },
+      {
+        "id": "a2-pronouns-akk-dat-exf-0",
+        "type": "fill",
+        "prompt": "填空（我看見你。）：Ich ____ dich",
+        "answer": "sehe",
+        "accept": [
+          "sehe",
+          "sehe",
+          "Sehe"
+        ],
+        "hint": "對照例句：Ich sehe dich"
+      }
+    ]
   },
   {
     "id": "a2-indefinite",
@@ -1636,8 +3892,78 @@
         "zh": "大家都合口味。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "把 ich/du/er 跟動詞變化綁在一起背，比較不容易忘。",
+      "Sie（您）要大寫；跟 sie（她／他們）靠上下文分辨。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-indefinite-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「這裡很好吃／人們在這吃得好。」？",
+        "options": [
+          "Man kann hier gut essen.",
+          "Ich habe nichts verstanden.",
+          "Hat jemand angerufen?",
+          "Das gefällt allen."
+        ],
+        "answer": "Man kann hier gut essen.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-indefinite-pt-0",
+        "type": "mcq",
+        "prompt": "關於「不定代詞 man / jemand / etwas」，下列何者正確？",
+        "options": [
+          "Man spricht hier Deutsch.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Man spricht hier Deutsch.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-indefinite-pt-1",
+        "type": "mcq",
+        "prompt": "「不定代詞 man / jemand / etwas」的另一個要點是？",
+        "options": [
+          "nichts／niemand 已是否定，不要再加 nicht。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "nichts／niemand 已是否定，不要再加 nicht。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a2-indefinite-exf-0",
+        "type": "fill",
+        "prompt": "填空（這裡很好吃／人們在這吃得好。）：Man ____ hier gut essen",
+        "answer": "kann",
+        "accept": [
+          "kann",
+          "kann",
+          "Kann"
+        ],
+        "hint": "對照例句：Man kann hier gut essen"
+      },
+      {
+        "id": "a2-indefinite-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Ich habe nichts ____",
+        "answer": "verstanden",
+        "accept": [
+          "verstanden",
+          "verstanden",
+          "Verstanden"
+        ],
+        "hint": "完整例句：Ich habe nichts verstanden."
+      }
+    ]
   },
   {
     "id": "a2-future-werden",
@@ -1666,9 +3992,79 @@
         "zh": "你將來想做什麼？"
       }
     ],
-    "tips": [],
+    "tips": [
+      "口語談過去多用 Perfekt：haben／sein + 過去分詞。",
+      "分詞多半在句末；先找助動詞再找分詞。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
     "related": [
       "b1-passive"
+    ],
+    "exercises": [
+      {
+        "id": "a2-future-werden-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我明年要去維也納。」？",
+        "options": [
+          "Ich werde nächstes Jahr nach Wien fahren.",
+          "Es wird spät.",
+          "Was willst du werden?",
+          "der"
+        ],
+        "answer": "Ich werde nächstes Jahr nach Wien fahren.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-future-werden-pt-0",
+        "type": "mcq",
+        "prompt": "關於「未來與 werden」，下列何者正確？",
+        "options": [
+          "Ich werde morgen anrufen.（未來）",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Ich werde morgen anrufen.（未來）",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-future-werden-pt-1",
+        "type": "mcq",
+        "prompt": "「未來與 werden」的另一個要點是？",
+        "options": [
+          "Morgen rufe ich an.（更自然的口語未來）",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Morgen rufe ich an.（更自然的口語未來）",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a2-future-werden-exf-0",
+        "type": "fill",
+        "prompt": "填空（我明年要去維也納。）：Ich ____ nächstes Jahr nach Wien fahren",
+        "answer": "werde",
+        "accept": [
+          "werde",
+          "werde",
+          "Werde"
+        ],
+        "hint": "對照例句：Ich werde nächstes Jahr nach Wien fahren"
+      },
+      {
+        "id": "a2-future-werden-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Es wird ____",
+        "answer": "spät",
+        "accept": [
+          "spät",
+          "spät",
+          "Spät"
+        ],
+        "hint": "完整例句：Es wird spät."
+      }
     ]
   },
   {
@@ -1698,8 +4094,78 @@
         "zh": "請告訴我你叫什麼。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "看到 weil／dass：從句的動詞要走到句末。",
+      "先寫兩個短句，再練習用 weil 接起來。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-indirect-questions-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「你知道火車何時到嗎？」？",
+        "options": [
+          "Weißt du, wann der Zug kommt?",
+          "Ich frage mich, ob das stimmt.",
+          "Sag mir bitte, wie du heißt.",
+          "der"
+        ],
+        "answer": "Weißt du, wann der Zug kommt?",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-indirect-questions-pt-0",
+        "type": "mcq",
+        "prompt": "關於「間接問句」，下列何者正確？",
+        "options": [
+          "Ich weiß nicht, ob er kommt.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Ich weiß nicht, ob er kommt.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-indirect-questions-pt-1",
+        "type": "mcq",
+        "prompt": "「間接問句」的另一個要點是？",
+        "options": [
+          "Kannst du mir sagen, wo der Bahnhof ist?",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Kannst du mir sagen, wo der Bahnhof ist?",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a2-indirect-questions-exf-0",
+        "type": "fill",
+        "prompt": "填空（你知道火車何時到嗎？）：Weißt ____ wann der Zug kommt?",
+        "answer": "du",
+        "accept": [
+          "du",
+          "du",
+          "Du"
+        ],
+        "hint": "對照例句：Weißt du, wann der Zug kommt?"
+      },
+      {
+        "id": "a2-indirect-questions-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Ich frage mich, ob das ____",
+        "answer": "stimmt",
+        "accept": [
+          "stimmt",
+          "stimmt",
+          "Stimmt"
+        ],
+        "hint": "完整例句：Ich frage mich, ob das stimmt."
+      }
+    ]
   },
   {
     "id": "a2-connectors-time",
@@ -1728,8 +4194,78 @@
         "zh": "我們等到你來。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "看到 weil／dass：從句的動詞要走到句末。",
+      "先寫兩個短句，再練習用 weil 接起來。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-connectors-time-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我走之前會打給你。」？",
+        "options": [
+          "Bevor ich gehe, rufe ich dich an.",
+          "Während er kocht, höre ich Musik.",
+          "Wir warten, bis du kommst.",
+          "der"
+        ],
+        "answer": "Bevor ich gehe, rufe ich dich an.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-connectors-time-pt-0",
+        "type": "mcq",
+        "prompt": "關於「時間從句：bevor, nachdem, während…」，下列何者正確？",
+        "options": [
+          "bevor＝在…之前；nachdem＝在…之後（常搭配完成時）。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "bevor＝在…之前；nachdem＝在…之後（常搭配完成時）。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-connectors-time-pt-1",
+        "type": "mcq",
+        "prompt": "「時間從句：bevor, nachdem, während…」的另一個要點是？",
+        "options": [
+          "während＝當…時候／而；seit＝自從；bis＝直到。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "während＝當…時候／而；seit＝自從；bis＝直到。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a2-connectors-time-exf-0",
+        "type": "fill",
+        "prompt": "填空（我走之前會打給你。）：Bevor ____ gehe, rufe ich dich an",
+        "answer": "ich",
+        "accept": [
+          "ich",
+          "ich",
+          "Ich"
+        ],
+        "hint": "對照例句：Bevor ich gehe, rufe ich dich an"
+      },
+      {
+        "id": "a2-connectors-time-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Während er kocht, höre ich ____",
+        "answer": "Musik",
+        "accept": [
+          "Musik",
+          "musik",
+          "Musik"
+        ],
+        "hint": "完整例句：Während er kocht, höre ich Musik."
+      }
+    ]
   },
   {
     "id": "b1-genitive",
@@ -1790,8 +4326,75 @@
         "zh": "這是女上司的辦公室。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先問：這個名詞是「誰做」（主格）還是「承受動作」（第四格）？",
+      "陽性變化最明顯：der→den（第四格）、dem（第三格）。",
+      "先練「我看到 den Mann」這種短句。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-genitive-fm-0",
+        "type": "mcq",
+        "prompt": "【第二格冠詞】定冠詞 的「陽性」是？",
+        "options": [
+          "des",
+          "eines",
+          "der",
+          "die"
+        ],
+        "answer": "des",
+        "hint": "看表格「第二格冠詞」中 定冠詞 這一列。"
+      },
+      {
+        "id": "b1-genitive-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「這是我哥哥的腳踏車。」？",
+        "options": [
+          "Das ist das Fahrrad meines Bruders.",
+          "Trotz des Regens gehen wir spazieren.",
+          "Während der Pause trinke ich Kaffee.",
+          "Das ist das Büro der Chefin."
+        ],
+        "answer": "Das ist das Fahrrad meines Bruders.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-genitive-pt-0",
+        "type": "mcq",
+        "prompt": "關於「第二格（Genitiv）」，下列何者正確？",
+        "options": [
+          "das Auto des Mannes；die Tasche der Frau。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "das Auto des Mannes；die Tasche der Frau。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-genitive-ff-0",
+        "type": "fill",
+        "prompt": "填空：定冠詞 → 陽性 = ____",
+        "answer": "des",
+        "accept": [
+          "des"
+        ],
+        "hint": "提示：表格「第二格冠詞」。"
+      },
+      {
+        "id": "b1-genitive-exf-0",
+        "type": "fill",
+        "prompt": "填空（這是我哥哥的腳踏車。）：Das ____ das Fahrrad meines Bruders",
+        "answer": "ist",
+        "accept": [
+          "ist",
+          "ist",
+          "Ist"
+        ],
+        "hint": "對照例句：Das ist das Fahrrad meines Bruders"
+      }
+    ]
   },
   {
     "id": "b1-n-declension",
@@ -1820,8 +4423,77 @@
         "zh": "客戶的名字寫在這裡。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先問：這個名詞是「誰做」（主格）還是「承受動作」（第四格）？",
+      "陽性變化最明顯：der→den（第四格）、dem（第三格）。",
+      "先練「我看到 den Mann」這種短句。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-n-declension-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我認識那位大學生。」？",
+        "options": [
+          "Ich kenne den Studenten.",
+          "Wir helfen dem Nachbarn.",
+          "Der Name des Kunden steht hier.",
+          "der"
+        ],
+        "answer": "Ich kenne den Studenten.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-n-declension-pt-0",
+        "type": "mcq",
+        "prompt": "關於「陽性弱變化（N-Deklination）」，下列何者正確？",
+        "options": [
+          "常見：Student, Herr, Nachbar, Name, Mensch, Kunde, Kollege, …",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "常見：Student, Herr, Nachbar, Name, Mensch, Kunde, Kollege, …",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-n-declension-pt-1",
+        "type": "mcq",
+        "prompt": "「陽性弱變化（N-Deklination）」的另一個要點是？",
+        "options": [
+          "der Name → den Namen, dem Namen, des Namens（第二格多 -ens）。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "der Name → den Namen, dem Namen, des Namens（第二格多 -ens）。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-n-declension-exf-0",
+        "type": "fill",
+        "prompt": "填空（我認識那位大學生。）：Ich ____ den Studenten",
+        "answer": "kenne",
+        "accept": [
+          "kenne",
+          "kenne",
+          "Kenne"
+        ],
+        "hint": "對照例句：Ich kenne den Studenten"
+      },
+      {
+        "id": "b1-n-declension-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Wir helfen dem ____",
+        "answer": "Nachbarn",
+        "accept": [
+          "Nachbarn",
+          "nachbarn",
+          "Nachbarn"
+        ],
+        "hint": "完整例句：Wir helfen dem Nachbarn."
+      }
+    ]
   },
   {
     "id": "b1-prateritum",
@@ -1854,10 +4526,78 @@
         "zh": "她什麼也沒說。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "口語談過去多用 Perfekt：haben／sein + 過去分詞。",
+      "分詞多半在句末；先找助動詞再找分詞。"
+    ],
     "related": [
       "a2-perfekt",
       "b1-plusquamperfekt"
+    ],
+    "exercises": [
+      {
+        "id": "b1-prateritum-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「昨天我生病了。」？",
+        "options": [
+          "Gestern war ich krank.",
+          "Er hatte keine Zeit.",
+          "Wir gingen nach Hause.",
+          "Sie sagte nichts."
+        ],
+        "answer": "Gestern war ich krank.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-prateritum-pt-0",
+        "type": "mcq",
+        "prompt": "關於「简单過去 Präteritum」，下列何者正確？",
+        "options": [
+          "弱變化：machte, lernte；強變化：ging, kam, sprach。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "弱變化：machte, lernte；強變化：ging, kam, sprach。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-prateritum-pt-1",
+        "type": "mcq",
+        "prompt": "「简单過去 Präteritum」的另一個要點是？",
+        "options": [
+          "war, hatte, konnte, musste… 很常見。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "war, hatte, konnte, musste… 很常見。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-prateritum-exf-0",
+        "type": "fill",
+        "prompt": "填空（昨天我生病了。）：Gestern ____ ich krank",
+        "answer": "war",
+        "accept": [
+          "war",
+          "war",
+          "War"
+        ],
+        "hint": "對照例句：Gestern war ich krank"
+      },
+      {
+        "id": "b1-prateritum-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Er hatte keine ____",
+        "answer": "Zeit",
+        "accept": [
+          "Zeit",
+          "zeit",
+          "Zeit"
+        ],
+        "hint": "完整例句：Er hatte keine Zeit."
+      }
     ]
   },
   {
@@ -1886,8 +4626,76 @@
         "zh": "她以前從未去過那裡。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "口語談過去多用 Perfekt：haben／sein + 過去分詞。",
+      "分詞多半在句末；先找助動詞再找分詞。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-plusquamperfekt-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「他到了之後就打電話。」？",
+        "options": [
+          "Nachdem er angekommen war, rief er an.",
+          "Ich hatte das Buch schon gelesen.",
+          "Sie war vorher noch nie dort gewesen.",
+          "der"
+        ],
+        "answer": "Nachdem er angekommen war, rief er an.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-plusquamperfekt-pt-0",
+        "type": "mcq",
+        "prompt": "關於「過去完成時 Plusquamperfekt」，下列何者正確？",
+        "options": [
+          "Nachdem ich gegessen hatte, ging ich spazieren.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Nachdem ich gegessen hatte, ging ich spazieren.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-plusquamperfekt-pt-1",
+        "type": "mcq",
+        "prompt": "「過去完成時 Plusquamperfekt」的另一個要點是？",
+        "options": [
+          "助動詞用 hatte／war 的简单過去。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "助動詞用 hatte／war 的简单過去。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-plusquamperfekt-exf-0",
+        "type": "fill",
+        "prompt": "填空（他到了之後就打電話。）：Nachdem ____ angekommen war, rief er an",
+        "answer": "er",
+        "accept": [
+          "er",
+          "er",
+          "Er"
+        ],
+        "hint": "對照例句：Nachdem er angekommen war, rief er an"
+      },
+      {
+        "id": "b1-plusquamperfekt-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Ich hatte das Buch schon ____",
+        "answer": "gelesen",
+        "accept": [
+          "gelesen",
+          "gelesen",
+          "Gelesen"
+        ],
+        "hint": "完整例句：Ich hatte das Buch schon gelesen."
+      }
+    ]
   },
   {
     "id": "b1-passive",
@@ -1920,10 +4728,74 @@
         "zh": "約會已被取消。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "被動看 werden／wurde + 過去分詞。",
+      "先會讀「Das Fenster wird geöffnet」再學自己寫。"
+    ],
     "related": [
       "b2-passive-state",
       "b1-passive-alternatives"
+    ],
+    "exercises": [
+      {
+        "id": "b1-pa-1",
+        "type": "mcq",
+        "prompt": "過程被動的基本結構？",
+        "options": [
+          "werden + Partizip II",
+          "sein + zu",
+          "haben + Infinitiv",
+          "nur Partizip"
+        ],
+        "answer": "werden + Partizip II",
+        "hint": "Das Fenster wird geöffnet。"
+      },
+      {
+        "id": "b1-pa-2",
+        "type": "mcq",
+        "prompt": "過去被動常用？",
+        "options": [
+          "wurde gemacht",
+          "wird gemacht",
+          "ist machen",
+          "war machen"
+        ],
+        "answer": "wurde gemacht",
+        "hint": "wurde + 分詞。"
+      },
+      {
+        "id": "b1-pa-3",
+        "type": "mcq",
+        "prompt": "情態＋被動句末是？",
+        "options": [
+          "werden",
+          "worden",
+          "geworden",
+          "wird"
+        ],
+        "answer": "werden",
+        "hint": "muss gemacht werden。"
+      },
+      {
+        "id": "b1-pa-4",
+        "type": "fill",
+        "prompt": "填空：Das Haus ___ gebaut.（現在被動助動詞）",
+        "answer": "wird",
+        "accept": [
+          "wird"
+        ],
+        "hint": "wird + 分詞。"
+      },
+      {
+        "id": "b1-pa-5",
+        "type": "fill",
+        "prompt": "填空：Hier darf nicht geraucht ___.",
+        "answer": "werden",
+        "accept": [
+          "werden"
+        ],
+        "hint": "情態＋被動：… werden。"
+      }
     ]
   },
   {
@@ -1953,8 +4825,76 @@
         "zh": "這篇文章還需要修改。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "被動看 werden／wurde + 過去分詞。",
+      "先會讀「Das Fenster wird geöffnet」再學自己寫。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-passive-alternatives-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「這裡有人說英語。」？",
+        "options": [
+          "Man spricht hier Englisch.",
+          "Die Tür lässt sich nicht öffnen.",
+          "Der Text ist noch zu korrigieren.",
+          "der"
+        ],
+        "answer": "Man spricht hier Englisch.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-passive-alternatives-pt-0",
+        "type": "mcq",
+        "prompt": "關於「被動替代：man / sich lassen」，下列何者正確？",
+        "options": [
+          "Man öffnet die Tür um 9.（≈ Die Tür wird um 9 geöffnet.）",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Man öffnet die Tür um 9.（≈ Die Tür wird um 9 geöffnet.）",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-passive-alternatives-pt-1",
+        "type": "mcq",
+        "prompt": "「被動替代：man / sich lassen」的另一個要點是？",
+        "options": [
+          "Das lässt sich leicht erklären.（這很好解釋）",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Das lässt sich leicht erklären.（這很好解釋）",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-passive-alternatives-exf-0",
+        "type": "fill",
+        "prompt": "填空（這裡有人說英語。）：Man ____ hier Englisch",
+        "answer": "spricht",
+        "accept": [
+          "spricht",
+          "spricht",
+          "Spricht"
+        ],
+        "hint": "對照例句：Man spricht hier Englisch"
+      },
+      {
+        "id": "b1-passive-alternatives-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Die Tür lässt sich nicht ____",
+        "answer": "öffnen",
+        "accept": [
+          "öffnen",
+          "öffnen",
+          "Öffnen"
+        ],
+        "hint": "完整例句：Die Tür lässt sich nicht öffnen."
+      }
+    ]
   },
   {
     "id": "b1-relative",
@@ -2029,8 +4969,72 @@
         "zh": "我住的城市很小。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "看到 weil／dass：從句的動詞要走到句末。",
+      "先寫兩個短句，再練習用 weil 接起來。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-re-1",
+        "type": "mcq",
+        "prompt": "陽性主格關係代詞？",
+        "options": [
+          "der",
+          "den",
+          "dem",
+          "dessen"
+        ],
+        "answer": "der",
+        "hint": "與定冠詞同形。"
+      },
+      {
+        "id": "b1-re-2",
+        "type": "mcq",
+        "prompt": "陽性第四格關係代詞？",
+        "options": [
+          "den",
+          "der",
+          "dem",
+          "die"
+        ],
+        "answer": "den",
+        "hint": "…, den ich sehe。"
+      },
+      {
+        "id": "b1-re-3",
+        "type": "mcq",
+        "prompt": "關係從句動詞在？",
+        "options": [
+          "句末",
+          "第二位",
+          "開頭",
+          "可省略"
+        ],
+        "answer": "句末",
+        "hint": "關係從句也是從句。"
+      },
+      {
+        "id": "b1-re-4",
+        "type": "fill",
+        "prompt": "填空：Das ist die Frau, ___ nebenan wohnt.",
+        "answer": "die",
+        "accept": [
+          "die"
+        ],
+        "hint": "陰性主格 die。"
+      },
+      {
+        "id": "b1-re-5",
+        "type": "fill",
+        "prompt": "填空：Der Mann, ___ ich gedankt habe, ist Lehrer.（第三格）",
+        "answer": "dem",
+        "accept": [
+          "dem"
+        ],
+        "hint": "danken + Dativ → dem。"
+      }
+    ]
   },
   {
     "id": "b1-konjunktiv2-basic",
@@ -2064,9 +5068,73 @@
         "zh": "可以請您再說一次嗎？"
       }
     ],
-    "tips": [],
+    "tips": [
+      "禮貌請求常用 könnte／würde／hätte。",
+      "點餐：Ich hätte gern… 非常實用。"
+    ],
     "related": [
       "b2-konjunktiv2-advanced"
+    ],
+    "exercises": [
+      {
+        "id": "b1-k2-1",
+        "type": "mcq",
+        "prompt": "禮貌請求常用？",
+        "options": [
+          "Könnten Sie…?",
+          "Kannst du mussen?",
+          "Du musst sofort!",
+          "Ich will Sie!"
+        ],
+        "answer": "Könnten Sie…?",
+        "hint": "Konjunktiv II 表禮貌。"
+      },
+      {
+        "id": "b1-k2-2",
+        "type": "mcq",
+        "prompt": "「我很想要咖啡」？",
+        "options": [
+          "Ich hätte gern einen Kaffee.",
+          "Ich habe gern gewesen Kaffee.",
+          "Ich bin Kaffee.",
+          "Ich muss Kaffee bin."
+        ],
+        "answer": "Ich hätte gern einen Kaffee.",
+        "hint": "hätte gern 點餐常用。"
+      },
+      {
+        "id": "b1-k2-3",
+        "type": "mcq",
+        "prompt": "非真實條件常用？",
+        "options": [
+          "würde + 不定式",
+          "nur Perfekt",
+          "nur Akkusativ",
+          "nur Artikel"
+        ],
+        "answer": "würde + 不定式",
+        "hint": "würde kommen。"
+      },
+      {
+        "id": "b1-k2-4",
+        "type": "fill",
+        "prompt": "填空：Ich ___ gern mitkommen.（würde）",
+        "answer": "würde",
+        "accept": [
+          "würde"
+        ],
+        "hint": "würde + 不定式。"
+      },
+      {
+        "id": "b1-k2-5",
+        "type": "fill",
+        "prompt": "填空：Wenn ich Zeit ___, würde ich kommen.（haben K II）",
+        "answer": "hätte",
+        "accept": [
+          "hätte"
+        ],
+        "hint": "hätte＝假如有。"
+      }
     ]
   },
   {
@@ -2101,8 +5169,76 @@
         "zh": "他不學習，反而看電視。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "看到 zu + 動詞，想想前面是「想／試／重要…」這類結構。",
+      "可分動詞：aufstehen → aufzustehen（zu 插在中間）。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-infinitive-zu-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我試著早點起床。」？",
+        "options": [
+          "Ich versuche, früher aufzustehen.",
+          "Es freut mich, dich zu sehen.",
+          "Er geht, ohne sich zu verabschieden.",
+          "Statt zu lernen, schaut er fern."
+        ],
+        "answer": "Ich versuche, früher aufzustehen.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-infinitive-zu-pt-0",
+        "type": "mcq",
+        "prompt": "關於「zu 不定式與 um … zu」，下列何者正確？",
+        "options": [
+          "Es ist wichtig, pünktlich zu sein.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Es ist wichtig, pünktlich zu sein.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-infinitive-zu-pt-1",
+        "type": "mcq",
+        "prompt": "「zu 不定式與 um … zu」的另一個要點是？",
+        "options": [
+          "Ich plane, nächstes Jahr umzuziehen.（可分動詞：umzu-ziehen）",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Ich plane, nächstes Jahr umzuziehen.（可分動詞：umzu-ziehen）",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-infinitive-zu-exf-0",
+        "type": "fill",
+        "prompt": "填空（我試著早點起床。）：Ich ____ früher aufzustehen",
+        "answer": "versuche",
+        "accept": [
+          "versuche",
+          "versuche",
+          "Versuche"
+        ],
+        "hint": "對照例句：Ich versuche, früher aufzustehen"
+      },
+      {
+        "id": "b1-infinitive-zu-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Es freut mich, dich zu ____",
+        "answer": "sehen",
+        "accept": [
+          "sehen",
+          "sehen",
+          "Sehen"
+        ],
+        "hint": "完整例句：Es freut mich, dich zu sehen."
+      }
+    ]
   },
   {
     "id": "b1-verbs-prep",
@@ -2136,8 +5272,76 @@
         "zh": "他怕蜘蛛。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先背「介詞＋哪一格」的固定搭配，不要分開記。",
+      "分清 wo（在哪裡）跟 wohin（去哪裡）。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-verbs-prep-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我期待假期。」？",
+        "options": [
+          "Ich freue mich auf die Ferien.",
+          "Worüber sprecht ihr?",
+          "Sie nimmt an dem Kurs teil.",
+          "Er hat Angst vor Spinnen."
+        ],
+        "answer": "Ich freue mich auf die Ferien.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-verbs-prep-pt-0",
+        "type": "mcq",
+        "prompt": "關於「動詞＋固定介詞」，下列何者正確？",
+        "options": [
+          "sich freuen auf + A（期待）；sich freuen über + A（為已發生的事高興）。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "sich freuen auf + A（期待）；sich freuen über + A（為已發生的事高興）。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-verbs-prep-pt-1",
+        "type": "mcq",
+        "prompt": "「動詞＋固定介詞」的另一個要點是？",
+        "options": [
+          "warten auf + A；denken an + A；sprechen über + A／mit + D。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "warten auf + A；denken an + A；sprechen über + A／mit + D。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-verbs-prep-exf-0",
+        "type": "fill",
+        "prompt": "填空（我期待假期。）：Ich ____ mich auf die Ferien",
+        "answer": "freue",
+        "accept": [
+          "freue",
+          "freue",
+          "Freue"
+        ],
+        "hint": "對照例句：Ich freue mich auf die Ferien"
+      },
+      {
+        "id": "b1-verbs-prep-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Worüber sprecht ____",
+        "answer": "ihr",
+        "accept": [
+          "ihr",
+          "ihr",
+          "Ihr"
+        ],
+        "hint": "完整例句：Worüber sprecht ihr?"
+      }
+    ]
   },
   {
     "id": "b1-adjective-endings-full",
@@ -2172,9 +5376,76 @@
       }
     ],
     "tips": [
-      "先練高頻短語，不要一次背完整張大表。"
+      "先練高頻短語，不要一次背完整張大表。",
+      "放在 sein 後面當表語時，形容詞通常不加字尾。",
+      "修飾名詞時才要加字尾，A1 可先少用長名詞片語。"
     ],
-    "related": []
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-adjective-endings-full-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「新車／新車／新酒」？",
+        "options": [
+          "der neue Wagen / ein neuer Wagen / neuer Wein",
+          "mit großem Interesse",
+          "kalte Milch",
+          "die Meinung netter Kollegen"
+        ],
+        "answer": "der neue Wagen / ein neuer Wagen / neuer Wein",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-adjective-endings-full-pt-0",
+        "type": "mcq",
+        "prompt": "關於「形容詞字尾三種變化」，下列何者正確？",
+        "options": [
+          "定冠詞後：弱變化（多 -e／-en）。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "定冠詞後：弱變化（多 -e／-en）。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-adjective-endings-full-pt-1",
+        "type": "mcq",
+        "prompt": "「形容詞字尾三種變化」的另一個要點是？",
+        "options": [
+          "不定冠詞／所有格後：混合變化（主格陽性 -er、中性 -es 等）。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "不定冠詞／所有格後：混合變化（主格陽性 -er、中性 -es 等）。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-adjective-endings-full-exf-0",
+        "type": "fill",
+        "prompt": "填空（新車／新車／新酒）：der ____ Wagen / ein neuer Wagen / neuer Wein",
+        "answer": "neue",
+        "accept": [
+          "neue",
+          "neue",
+          "Neue"
+        ],
+        "hint": "對照例句：der neue Wagen / ein neuer Wagen / neuer Wein"
+      },
+      {
+        "id": "b1-adjective-endings-full-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：mit großem ____",
+        "answer": "Interesse",
+        "accept": [
+          "Interesse",
+          "interesse",
+          "Interesse"
+        ],
+        "hint": "完整例句：mit großem Interesse"
+      }
+    ]
   },
   {
     "id": "b1-connectors-contrast",
@@ -2208,8 +5479,76 @@
         "zh": "由於天氣差，我們待在家。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "看到 weil／dass：從句的動詞要走到句末。",
+      "先寫兩個短句，再練習用 weil 接起來。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-connectors-contrast-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「雖然下雨，我們仍去散步。」？",
+        "options": [
+          "Obwohl es regnet, gehen wir spazieren.",
+          "Es regnet, trotzdem gehen wir spazieren.",
+          "Ich habe viel gearbeitet, deshalb bin ich müde.",
+          "Da das Wetter schlecht war, blieben wir zu Hause."
+        ],
+        "answer": "Obwohl es regnet, gehen wir spazieren.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-connectors-contrast-pt-0",
+        "type": "mcq",
+        "prompt": "關於「轉折與原因進階連接詞」，下列何者正確？",
+        "options": [
+          "obwohl＝雖然（從句，動詞在末）。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "obwohl＝雖然（從句，動詞在末）。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-connectors-contrast-pt-1",
+        "type": "mcq",
+        "prompt": "「轉折與原因進階連接詞」的另一個要點是？",
+        "options": [
+          "deshalb／deswegen／darum＝因此（副詞，動詞第二）：Ich bin krank, deshalb…",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "deshalb／deswegen／darum＝因此（副詞，動詞第二）：Ich bin krank, deshalb…",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-connectors-contrast-exf-0",
+        "type": "fill",
+        "prompt": "填空（雖然下雨，我們仍去散步。）：Obwohl ____ regnet, gehen wir spazieren",
+        "answer": "es",
+        "accept": [
+          "es",
+          "es",
+          "Es"
+        ],
+        "hint": "對照例句：Obwohl es regnet, gehen wir spazieren"
+      },
+      {
+        "id": "b1-connectors-contrast-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Es regnet, trotzdem gehen wir ____",
+        "answer": "spazieren",
+        "accept": [
+          "spazieren",
+          "spazieren",
+          "Spazieren"
+        ],
+        "hint": "完整例句：Es regnet, trotzdem gehen wir spazieren."
+      }
+    ]
   },
   {
     "id": "b1-word-order-advanced",
@@ -2238,8 +5577,76 @@
         "zh": "她今天沒來上班。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "是非問句：動詞開頭；W 問句：疑問詞開頭、動詞第二。",
+      "把短句唸順，比一次寫長句更有效。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-word-order-advanced-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「他昨天因緊張說得很快。」？",
+        "options": [
+          "Er hat gestern aus Nervosität sehr schnell gesprochen.",
+          "Ich gebe es dir morgen.",
+          "Sie ist heute nicht zur Arbeit gekommen.",
+          "der"
+        ],
+        "answer": "Er hat gestern aus Nervosität sehr schnell gesprochen.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-word-order-advanced-pt-0",
+        "type": "mcq",
+        "prompt": "關於「語序進階：中域與時間－原因－方式－地點」，下列何者正確？",
+        "options": [
+          "Ich fahre morgen wegen des Meetings mit dem Zug nach Berl…",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Ich fahre morgen wegen des Meetings mit dem Zug nach Berl…",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-word-order-advanced-pt-1",
+        "type": "mcq",
+        "prompt": "「語序進階：中域與時間－原因－方式－地點」的另一個要點是？",
+        "options": [
+          "代詞通常比名詞更靠前；第三人稱代詞受詞很靠前。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "代詞通常比名詞更靠前；第三人稱代詞受詞很靠前。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-word-order-advanced-exf-0",
+        "type": "fill",
+        "prompt": "填空（他昨天因緊張說得很快。）：Er ____ gestern aus Nervosität sehr schnell gesprochen",
+        "answer": "hat",
+        "accept": [
+          "hat",
+          "hat",
+          "Hat"
+        ],
+        "hint": "對照例句：Er hat gestern aus Nervosität sehr schnell gesprochen"
+      },
+      {
+        "id": "b1-word-order-advanced-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Ich gebe es dir ____",
+        "answer": "morgen",
+        "accept": [
+          "morgen",
+          "morgen",
+          "Morgen"
+        ],
+        "hint": "完整例句：Ich gebe es dir morgen."
+      }
+    ]
   },
   {
     "id": "b1-local-directional",
@@ -2272,8 +5679,76 @@
         "zh": "那是我不能放棄的。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先背「介詞＋哪一格」的固定搭配，不要分開記。",
+      "分清 wo（在哪裡）跟 wohin（去哪裡）。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-local-directional-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「請把書帶過來。」？",
+        "options": [
+          "Bring das Buch bitte her.",
+          "Ich bin dagegen.",
+          "Worüber ärgerst du dich?",
+          "Darauf kann ich nicht verzichten."
+        ],
+        "answer": "Bring das Buch bitte her.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-local-directional-pt-0",
+        "type": "mcq",
+        "prompt": "關於「地方副詞：hin / her 與 wo-複合」，下列何者正確？",
+        "options": [
+          "Komm her!／Geh hin!",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Komm her!／Geh hin!",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-local-directional-pt-1",
+        "type": "mcq",
+        "prompt": "「地方副詞：hin / her 與 wo-複合」的另一個要點是？",
+        "options": [
+          "Ich freue mich darauf.（不是 *auf es）",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Ich freue mich darauf.（不是 *auf es）",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-local-directional-exf-0",
+        "type": "fill",
+        "prompt": "填空（請把書帶過來。）：Bring ____ Buch bitte her",
+        "answer": "das",
+        "accept": [
+          "das",
+          "das",
+          "Das"
+        ],
+        "hint": "對照例句：Bring das Buch bitte her"
+      },
+      {
+        "id": "b1-local-directional-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Ich bin ____",
+        "answer": "dagegen",
+        "accept": [
+          "dagegen",
+          "dagegen",
+          "Dagegen"
+        ],
+        "hint": "完整例句：Ich bin dagegen."
+      }
+    ]
   },
   {
     "id": "b1-adjective-as-noun",
@@ -2301,8 +5776,76 @@
         "zh": "祝你一切順利。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "放在 sein 後面當表語時，形容詞通常不加字尾。",
+      "修飾名詞時才要加字尾，A1 可先少用長名詞片語。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-adjective-as-noun-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「你有沒有聽到什麼有趣的？」？",
+        "options": [
+          "Hast du etwas Interessantes gehört?",
+          "Die Angestellte ist freundlich.",
+          "Ich wünsche dir alles Gute.",
+          "der"
+        ],
+        "answer": "Hast du etwas Interessantes gehört?",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-adjective-as-noun-pt-0",
+        "type": "mcq",
+        "prompt": "關於「形容詞名詞化」，下列何者正確？",
+        "options": [
+          "der Alte, die Bekannte, etwas Neues, nichts Besonderes。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "der Alte, die Bekannte, etwas Neues, nichts Besonderes。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-adjective-as-noun-pt-1",
+        "type": "mcq",
+        "prompt": "「形容詞名詞化」的另一個要點是？",
+        "options": [
+          "大寫：Alles Gute!／im Allgemeinen。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "大寫：Alles Gute!／im Allgemeinen。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-adjective-as-noun-exf-0",
+        "type": "fill",
+        "prompt": "填空（你有沒有聽到什麼有趣的？）：Hast ____ etwas Interessantes gehört?",
+        "answer": "du",
+        "accept": [
+          "du",
+          "du",
+          "Du"
+        ],
+        "hint": "對照例句：Hast du etwas Interessantes gehört?"
+      },
+      {
+        "id": "b1-adjective-as-noun-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Die Angestellte ist ____",
+        "answer": "freundlich",
+        "accept": [
+          "freundlich",
+          "freundlich",
+          "Freundlich"
+        ],
+        "hint": "完整例句：Die Angestellte ist freundlich."
+      }
+    ]
   },
   {
     "id": "b1-reciprocal",
@@ -2330,8 +5873,76 @@
         "zh": "你們應該多常見面。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "把 ich/du/er 跟動詞變化綁在一起背，比較不容易忘。",
+      "Sie（您）要大寫；跟 sie（她／他們）靠上下文分辨。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-reciprocal-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「鄰居們互相打招呼。」？",
+        "options": [
+          "Die Nachbarn grüßen sich.",
+          "Wir verstehen uns gut.",
+          "Ihr solltet euch öfter sehen.",
+          "der"
+        ],
+        "answer": "Die Nachbarn grüßen sich.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-reciprocal-pt-0",
+        "type": "mcq",
+        "prompt": "關於「互相代詞與相互結構」，下列何者正確？",
+        "options": [
+          "Sie helfen einander.／Wir schreiben uns oft.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Sie helfen einander.／Wir schreiben uns oft.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-reciprocal-pt-1",
+        "type": "mcq",
+        "prompt": "「互相代詞與相互結構」的另一個要點是？",
+        "options": [
+          "miteinander, voneinander, miteinander sprechen。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "miteinander, voneinander, miteinander sprechen。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-reciprocal-exf-0",
+        "type": "fill",
+        "prompt": "填空（鄰居們互相打招呼。）：Die ____ grüßen sich",
+        "answer": "Nachbarn",
+        "accept": [
+          "Nachbarn",
+          "nachbarn",
+          "Nachbarn"
+        ],
+        "hint": "對照例句：Die Nachbarn grüßen sich"
+      },
+      {
+        "id": "b1-reciprocal-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Wir verstehen uns ____",
+        "answer": "gut",
+        "accept": [
+          "gut",
+          "gut",
+          "Gut"
+        ],
+        "hint": "完整例句：Wir verstehen uns gut."
+      }
+    ]
   },
   {
     "id": "b2-konjunktiv1",
@@ -2361,9 +5972,73 @@
         "zh": "他們表示當時不知情。"
       }
     ],
-    "tips": [],
+    "tips": [
+      "禮貌請求常用 könnte／würde／hätte。",
+      "點餐：Ich hätte gern… 非常實用。"
+    ],
     "related": [
       "b1-konjunktiv2-basic"
+    ],
+    "exercises": [
+      {
+        "id": "b2-k1-1",
+        "type": "mcq",
+        "prompt": "Konjunktiv I 主要用於？",
+        "options": [
+          "間接引語／轉述",
+          "點餐",
+          "問時間",
+          "複數構成"
+        ],
+        "answer": "間接引語／轉述",
+        "hint": "新聞常用。"
+      },
+      {
+        "id": "b2-k1-2",
+        "type": "mcq",
+        "prompt": "er + haben（K I）常見？",
+        "options": [
+          "habe",
+          "hat",
+          "hätte",
+          "hast"
+        ],
+        "answer": "habe",
+        "hint": "er habe…"
+      },
+      {
+        "id": "b2-k1-3",
+        "type": "mcq",
+        "prompt": "與直陳式同形時改用？",
+        "options": [
+          "Konjunktiv II",
+          "只有被動",
+          "刪除動詞",
+          "改成英文"
+        ],
+        "answer": "Konjunktiv II",
+        "hint": "避免歧義。"
+      },
+      {
+        "id": "b2-k1-4",
+        "type": "fill",
+        "prompt": "填空：Er sagt, er ___ keine Zeit.（haben K I）",
+        "answer": "habe",
+        "accept": [
+          "habe"
+        ],
+        "hint": "轉述：er habe。"
+      },
+      {
+        "id": "b2-k1-5",
+        "type": "fill",
+        "prompt": "填空：Sie ___ zufrieden.（sein K I 複數）",
+        "answer": "seien",
+        "accept": [
+          "seien"
+        ],
+        "hint": "sie seien。"
+      }
     ]
   },
   {
@@ -2393,8 +6068,76 @@
         "zh": "我要是有更多時間就好了！"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "禮貌請求常用 könnte／würde／hätte。",
+      "點餐：Ich hätte gern… 非常實用。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-konjunktiv2-advanced-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我要是知道，就會早點來。」？",
+        "options": [
+          "Wenn ich das gewusst hätte, wäre ich früher gekommen.",
+          "Es wäre besser, wenn wir jetzt gingen.",
+          "Hätte ich nur mehr Zeit!",
+          "der"
+        ],
+        "answer": "Wenn ich das gewusst hätte, wäre ich früher gekommen.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-konjunktiv2-advanced-pt-0",
+        "type": "mcq",
+        "prompt": "關於「第二虛擬式進階：非真實與禮貌」，下列何者正確？",
+        "options": [
+          "Wenn du gekommen wärst, hätten wir das gefeiert.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Wenn du gekommen wärst, hätten wir das gefeiert.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-konjunktiv2-advanced-pt-1",
+        "type": "mcq",
+        "prompt": "「第二虛擬式進階：非真實與禮貌」的另一個要點是？",
+        "options": [
+          "An deiner Stelle würde ich …",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "An deiner Stelle würde ich …",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-konjunktiv2-advanced-exf-0",
+        "type": "fill",
+        "prompt": "填空（我要是知道，就會早點來。）：Wenn ____ das gewusst hätte, wäre ich früher gekommen",
+        "answer": "ich",
+        "accept": [
+          "ich",
+          "ich",
+          "Ich"
+        ],
+        "hint": "對照例句：Wenn ich das gewusst hätte, wäre ich früher gekommen"
+      },
+      {
+        "id": "b2-konjunktiv2-advanced-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Es wäre besser, wenn wir jetzt ____",
+        "answer": "gingen",
+        "accept": [
+          "gingen",
+          "gingen",
+          "Gingen"
+        ],
+        "hint": "完整例句：Es wäre besser, wenn wir jetzt gingen."
+      }
+    ]
   },
   {
     "id": "b2-passive-state",
@@ -2423,8 +6166,76 @@
         "zh": "信已經寫好了。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "被動看 werden／wurde + 過去分詞。",
+      "先會讀「Das Fenster wird geöffnet」再學自己寫。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-passive-state-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「窗戶是開著的。」？",
+        "options": [
+          "Das Fenster ist geöffnet.",
+          "Die Geschäfte sind sonntags geschlossen.",
+          "Der Brief ist schon geschrieben.",
+          "der"
+        ],
+        "answer": "Das Fenster ist geöffnet.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-passive-state-pt-0",
+        "type": "mcq",
+        "prompt": "關於「狀態被動：sein + Partizip II」，下列何者正確？",
+        "options": [
+          "Vorgang：wird geöffnet（正在被開）；Zustand：ist geöffnet（開著）。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Vorgang：wird geöffnet（正在被開）；Zustand：ist geöffnet（開著）。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-passive-state-pt-1",
+        "type": "mcq",
+        "prompt": "「狀態被動：sein + Partizip II」的另一個要點是？",
+        "options": [
+          "常見：geschlossen, geöffnet, verletzt, geboren, geschrieben。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "常見：geschlossen, geöffnet, verletzt, geboren, geschrieben。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-passive-state-exf-0",
+        "type": "fill",
+        "prompt": "填空（窗戶是開著的。）：Das ____ ist geöffnet",
+        "answer": "Fenster",
+        "accept": [
+          "Fenster",
+          "fenster",
+          "Fenster"
+        ],
+        "hint": "對照例句：Das Fenster ist geöffnet"
+      },
+      {
+        "id": "b2-passive-state-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Die Geschäfte sind sonntags ____",
+        "answer": "geschlossen",
+        "accept": [
+          "geschlossen",
+          "geschlossen",
+          "Geschlossen"
+        ],
+        "hint": "完整例句：Die Geschäfte sind sonntags geschlossen."
+      }
+    ]
   },
   {
     "id": "b2-nominalization",
@@ -2453,8 +6264,76 @@
         "zh": "大雨時學校關閉。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先理解意思與語氣，再模仿例句改寫成自己的句子。",
+      "正式書面用詞可先會認，口語不必一次全用上。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-nominalization-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「專案結束後我們慶祝。」？",
+        "options": [
+          "Nach Abschluss des Projekts feiern wir.",
+          "Die Einführung neuer Regeln führte zu Protesten.",
+          "Bei starkem Regen bleibt die Schule geschlossen.",
+          "der"
+        ],
+        "answer": "Nach Abschluss des Projekts feiern wir.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-nominalization-pt-0",
+        "type": "mcq",
+        "prompt": "關於「名詞化（Nominalisierung）」，下列何者正確？",
+        "options": [
+          "prüfen → die Prüfung；entscheiden → die Entscheidung。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "prüfen → die Prüfung；entscheiden → die Entscheidung。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-nominalization-pt-1",
+        "type": "mcq",
+        "prompt": "「名詞化（Nominalisierung）」的另一個要點是？",
+        "options": [
+          "nach dem Essen；bei der Ankunft；trotz wiederholter Warnung…",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "nach dem Essen；bei der Ankunft；trotz wiederholter Warnung…",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-nominalization-exf-0",
+        "type": "fill",
+        "prompt": "填空（專案結束後我們慶祝。）：Nach ____ des Projekts feiern wir",
+        "answer": "Abschluss",
+        "accept": [
+          "Abschluss",
+          "abschluss",
+          "Abschluss"
+        ],
+        "hint": "對照例句：Nach Abschluss des Projekts feiern wir"
+      },
+      {
+        "id": "b2-nominalization-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Die Einführung neuer Regeln führte zu ____",
+        "answer": "Protesten",
+        "accept": [
+          "Protesten",
+          "protesten",
+          "Protesten"
+        ],
+        "hint": "完整例句：Die Einführung neuer Regeln führte zu Protesten."
+      }
+    ]
   },
   {
     "id": "b2-participle-clauses",
@@ -2483,8 +6362,76 @@
         "zh": "因時間關係取消，會議沒舉行。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "看到 zu + 動詞，想想前面是「想／試／重要…」這類結構。",
+      "可分動詞：aufstehen → aufzustehen（zu 插在中間）。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-participle-clauses-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「在公園玩的孩子們很吵。」？",
+        "options": [
+          "Die im Park spielenden Kinder sind laut.",
+          "Das von ihm geschriebene Buch ist berühmt.",
+          "Aus Zeitgründen abgesagt, fand das Meeting nicht statt.",
+          "der"
+        ],
+        "answer": "Die im Park spielenden Kinder sind laut.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-participle-clauses-pt-0",
+        "type": "mcq",
+        "prompt": "關於「分詞作形容詞與分詞短語」，下列何者正確？",
+        "options": [
+          "die lachenden Kinder；ein geschriebenes Wort。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "die lachenden Kinder；ein geschriebenes Wort。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-participle-clauses-pt-1",
+        "type": "mcq",
+        "prompt": "「分詞作形容詞與分詞短語」的另一個要點是？",
+        "options": [
+          "die gestern angekommenen Gäste（分詞短語在名詞前）。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "die gestern angekommenen Gäste（分詞短語在名詞前）。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-participle-clauses-exf-0",
+        "type": "fill",
+        "prompt": "填空（在公園玩的孩子們很吵。）：Die ____ Park spielenden Kinder sind laut",
+        "answer": "im",
+        "accept": [
+          "im",
+          "im",
+          "Im"
+        ],
+        "hint": "對照例句：Die im Park spielenden Kinder sind laut"
+      },
+      {
+        "id": "b2-participle-clauses-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Das von ihm geschriebene Buch ist ____",
+        "answer": "berühmt",
+        "accept": [
+          "berühmt",
+          "berühmt",
+          "Berühmt"
+        ],
+        "hint": "完整例句：Das von ihm geschriebene Buch ist berühmt."
+      }
+    ]
   },
   {
     "id": "b2-connectors-advanced",
@@ -2518,8 +6465,76 @@
         "zh": "他待在家，尤其因為他病了。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "看到 weil／dass：從句的動詞要走到句末。",
+      "先寫兩個短句，再練習用 weil 接起來。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-connectors-advanced-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「人藉由練習來學習。」？",
+        "options": [
+          "Man lernt, indem man übt.",
+          "Je mehr man liest, desto besser wird man.",
+          "Sofern es nicht regnet, findet das Fest statt.",
+          "Er blieb zu Hause, zumal er krank war."
+        ],
+        "answer": "Man lernt, indem man übt.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-connectors-advanced-pt-0",
+        "type": "mcq",
+        "prompt": "關於「進階連接：indem, wodurch, sofern, zumal…」，下列何者正確？",
+        "options": [
+          "indem＝藉由…（從句）；dadurch, dass…",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "indem＝藉由…（從句）；dadurch, dass…",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-connectors-advanced-pt-1",
+        "type": "mcq",
+        "prompt": "「進階連接：indem, wodurch, sofern, zumal…」的另一個要點是？",
+        "options": [
+          "wodurch／weshalb 關係性連接。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "wodurch／weshalb 關係性連接。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-connectors-advanced-exf-0",
+        "type": "fill",
+        "prompt": "填空（人藉由練習來學習。）：Man ____ indem man übt",
+        "answer": "lernt",
+        "accept": [
+          "lernt",
+          "lernt",
+          "Lernt"
+        ],
+        "hint": "對照例句：Man lernt, indem man übt"
+      },
+      {
+        "id": "b2-connectors-advanced-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Je mehr man liest, desto besser wird ____",
+        "answer": "man",
+        "accept": [
+          "man",
+          "man",
+          "Man"
+        ],
+        "hint": "完整例句：Je mehr man liest, desto besser wird man."
+      }
+    ]
   },
   {
     "id": "b2-futur2",
@@ -2548,8 +6563,76 @@
         "zh": "這大概是對的。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "口語談過去多用 Perfekt：haben／sein + 過去分詞。",
+      "分詞多半在句末；先找助動詞再找分詞。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-futur2-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「到星期五我將已完成工作。」？",
+        "options": [
+          "Bis Freitag werde ich die Arbeit beendet haben.",
+          "Er wird schon angekommen sein.",
+          "Das wird wohl stimmen.",
+          "der"
+        ],
+        "answer": "Bis Freitag werde ich die Arbeit beendet haben.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-futur2-pt-0",
+        "type": "mcq",
+        "prompt": "關於「未來完成 Futur II 與推測」，下列何者正確？",
+        "options": [
+          "Bis morgen werde ich das gelesen haben.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Bis morgen werde ich das gelesen haben.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-futur2-pt-1",
+        "type": "mcq",
+        "prompt": "「未來完成 Futur II 與推測」的另一個要點是？",
+        "options": [
+          "Er wird den Zug verpasst haben.（大概是誤點了）",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Er wird den Zug verpasst haben.（大概是誤點了）",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-futur2-exf-0",
+        "type": "fill",
+        "prompt": "填空（到星期五我將已完成工作。）：Bis ____ werde ich die Arbeit beendet haben",
+        "answer": "Freitag",
+        "accept": [
+          "Freitag",
+          "freitag",
+          "Freitag"
+        ],
+        "hint": "對照例句：Bis Freitag werde ich die Arbeit beendet haben"
+      },
+      {
+        "id": "b2-futur2-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Er wird schon angekommen ____",
+        "answer": "sein",
+        "accept": [
+          "sein",
+          "sein",
+          "Sein"
+        ],
+        "hint": "完整例句：Er wird schon angekommen sein."
+      }
+    ]
   },
   {
     "id": "b2-subjective-modal",
@@ -2582,8 +6665,76 @@
         "zh": "他一定是把鑰匙弄丟了。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "情態動詞要變位，後面的主要動詞用原形放句末。",
+      "Ich kann schwimmen（✓）不是 Ich kann schwimme。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-subjective-modal-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「聽說她有了新工作。」？",
+        "options": [
+          "Sie soll eine neue Stelle haben.",
+          "Er will den Unfall nicht bemerkt haben.",
+          "Das dürfte schwierig werden.",
+          "Er muss den Schlüssel verloren haben."
+        ],
+        "answer": "Sie soll eine neue Stelle haben.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-subjective-modal-pt-0",
+        "type": "mcq",
+        "prompt": "關於「情態動詞的主觀情態（推測／傳聞）」，下列何者正確？",
+        "options": [
+          "soll＝據說：Er soll reich sein.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "soll＝據說：Er soll reich sein.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-subjective-modal-pt-1",
+        "type": "mcq",
+        "prompt": "「情態動詞的主觀情態（推測／傳聞）」的另一個要點是？",
+        "options": [
+          "will＝自稱（常表懷疑）：Er will nichts gesehen haben.",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "will＝自稱（常表懷疑）：Er will nichts gesehen haben.",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-subjective-modal-exf-0",
+        "type": "fill",
+        "prompt": "填空（聽說她有了新工作。）：Sie ____ eine neue Stelle haben",
+        "answer": "soll",
+        "accept": [
+          "soll",
+          "soll",
+          "Soll"
+        ],
+        "hint": "對照例句：Sie soll eine neue Stelle haben"
+      },
+      {
+        "id": "b2-subjective-modal-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Er will den Unfall nicht bemerkt ____",
+        "answer": "haben",
+        "accept": [
+          "haben",
+          "haben",
+          "Haben"
+        ],
+        "hint": "完整例句：Er will den Unfall nicht bemerkt haben."
+      }
+    ]
   },
   {
     "id": "b2-fixed-akk-dat",
@@ -2616,8 +6767,77 @@
         "zh": "她很重視準時。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先問：這個名詞是「誰做」（主格）還是「承受動作」（第四格）？",
+      "陽性變化最明顯：der→den（第四格）、dem（第三格）。",
+      "先練「我看到 den Mann」這種短句。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-fixed-akk-dat-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「有很多理由。」？",
+        "options": [
+          "Es gibt viele Gründe.",
+          "Das tut mir Leid.",
+          "Das geht mir auf die Nerven.",
+          "Sie legt Wert auf Pünktlichkeit."
+        ],
+        "answer": "Es gibt viele Gründe.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-fixed-akk-dat-pt-0",
+        "type": "mcq",
+        "prompt": "關於「固定片語中的格」，下列何者正確？",
+        "options": [
+          "es gibt + A；Spaß machen；Leid tun + D。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "es gibt + A；Spaß machen；Leid tun + D。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-fixed-akk-dat-pt-1",
+        "type": "mcq",
+        "prompt": "「固定片語中的格」的另一個要點是？",
+        "options": [
+          "jemandem auf die Nerven gehen；imstande sein。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "jemandem auf die Nerven gehen；imstande sein。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-fixed-akk-dat-exf-0",
+        "type": "fill",
+        "prompt": "填空（有很多理由。）：Es ____ viele Gründe",
+        "answer": "gibt",
+        "accept": [
+          "gibt",
+          "gibt",
+          "Gibt"
+        ],
+        "hint": "對照例句：Es gibt viele Gründe"
+      },
+      {
+        "id": "b2-fixed-akk-dat-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Das tut mir ____",
+        "answer": "Leid",
+        "accept": [
+          "Leid",
+          "leid",
+          "Leid"
+        ],
+        "hint": "完整例句：Das tut mir Leid."
+      }
+    ]
   },
   {
     "id": "b2-prepositional-adverbs",
@@ -2650,8 +6870,76 @@
         "zh": "他對此抱怨。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先背「介詞＋哪一格」的固定搭配，不要分開記。",
+      "分清 wo（在哪裡）跟 wohin（去哪裡）。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-prepositional-adverbs-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我贊成。」？",
+        "options": [
+          "Ich bin dafür.",
+          "Darüber müssen wir noch sprechen.",
+          "Womit kann ich Ihnen helfen?",
+          "Er hat sich darüber beschwert."
+        ],
+        "answer": "Ich bin dafür.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-prepositional-adverbs-pt-0",
+        "type": "mcq",
+        "prompt": "關於「介詞副詞與 da(r)-／wo(r)-」，下列何者正確？",
+        "options": [
+          "Ich warte auf den Bus. → Ich warte darauf.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Ich warte auf den Bus. → Ich warte darauf.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-prepositional-adverbs-pt-1",
+        "type": "mcq",
+        "prompt": "「介詞副詞與 da(r)-／wo(r)-」的另一個要點是？",
+        "options": [
+          "Ich warte auf dich.（人，不能 *darauf）",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Ich warte auf dich.（人，不能 *darauf）",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-prepositional-adverbs-exf-0",
+        "type": "fill",
+        "prompt": "填空（我贊成。）：Ich ____ dafür",
+        "answer": "bin",
+        "accept": [
+          "bin",
+          "bin",
+          "Bin"
+        ],
+        "hint": "對照例句：Ich bin dafür"
+      },
+      {
+        "id": "b2-prepositional-adverbs-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Darüber müssen wir noch ____",
+        "answer": "sprechen",
+        "accept": [
+          "sprechen",
+          "sprechen",
+          "Sprechen"
+        ],
+        "hint": "完整例句：Darüber müssen wir noch sprechen."
+      }
+    ]
   },
   {
     "id": "b2-passive-modal",
@@ -2680,8 +6968,76 @@
         "zh": "此處禁止拍照。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "被動看 werden／wurde + 過去分詞。",
+      "先會讀「Das Fenster wird geöffnet」再學自己寫。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-passive-modal-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「申請應於星期一前提出。」？",
+        "options": [
+          "Der Antrag soll bis Montag gestellt werden.",
+          "Das Problem konnte rasch gelöst werden.",
+          "Hier darf nicht fotografiert werden.",
+          "der"
+        ],
+        "answer": "Der Antrag soll bis Montag gestellt werden.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-passive-modal-pt-0",
+        "type": "mcq",
+        "prompt": "關於「情態動詞＋被動」，下列何者正確？",
+        "options": [
+          "Das Formular muss ausgefüllt werden.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Das Formular muss ausgefüllt werden.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-passive-modal-pt-1",
+        "type": "mcq",
+        "prompt": "「情態動詞＋被動」的另一個要點是？",
+        "options": [
+          "過去：musste … werden；完成：hat … werden müssen（注意語序）。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "過去：musste … werden；完成：hat … werden müssen（注意語序）。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-passive-modal-exf-0",
+        "type": "fill",
+        "prompt": "填空（申請應於星期一前提出。）：Der ____ soll bis Montag gestellt werden",
+        "answer": "Antrag",
+        "accept": [
+          "Antrag",
+          "antrag",
+          "Antrag"
+        ],
+        "hint": "對照例句：Der Antrag soll bis Montag gestellt werden"
+      },
+      {
+        "id": "b2-passive-modal-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Das Problem konnte rasch gelöst ____",
+        "answer": "werden",
+        "accept": [
+          "werden",
+          "werden",
+          "Werden"
+        ],
+        "hint": "完整例句：Das Problem konnte rasch gelöst werden."
+      }
+    ]
   },
   {
     "id": "b2-reported-questions",
@@ -2706,8 +7062,76 @@
         "zh": "我明白他所說的很重要。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "看到 weil／dass：從句的動詞要走到句末。",
+      "先寫兩個短句，再練習用 weil 接起來。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-reported-questions-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「她問我是否知道火車何時開。」？",
+        "options": [
+          "Sie fragte, ob ich wüsste, wann der Zug abfahre.",
+          "Mir ist klar, dass das, was er sagt, wichtig ist.",
+          "der",
+          "die"
+        ],
+        "answer": "Sie fragte, ob ich wüsste, wann der Zug abfahre.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-reported-questions-pt-0",
+        "type": "mcq",
+        "prompt": "關於「複雜轉述與嵌入從句」，下列何者正確？",
+        "options": [
+          "Er sagte, dass er nicht wisse, ob sie komme.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Er sagte, dass er nicht wisse, ob sie komme.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-reported-questions-pt-1",
+        "type": "mcq",
+        "prompt": "「複雜轉述與嵌入從句」的另一個要點是？",
+        "options": [
+          "書面可混用 Konjunktiv I。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "書面可混用 Konjunktiv I。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-reported-questions-exf-0",
+        "type": "fill",
+        "prompt": "填空（她問我是否知道火車何時開。）：Sie ____ ob ich wüsste, wann der Zug abfahre",
+        "answer": "fragte",
+        "accept": [
+          "fragte",
+          "fragte",
+          "Fragte"
+        ],
+        "hint": "對照例句：Sie fragte, ob ich wüsste, wann der Zug abfahre"
+      },
+      {
+        "id": "b2-reported-questions-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Mir ist klar, dass das, was er sagt, wichtig ____",
+        "answer": "ist",
+        "accept": [
+          "ist",
+          "ist",
+          "Ist"
+        ],
+        "hint": "完整例句：Mir ist klar, dass das, was er sagt, wichtig ist."
+      }
+    ]
   },
   {
     "id": "b2-stylistic-inversion",
@@ -2736,8 +7160,76 @@
         "zh": "不只是他，她也是對的。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "是非問句：動詞開頭；W 問句：疑問詞開頭、動詞第二。",
+      "把短句唸順，比一次寫長句更有效。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-stylistic-inversion-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「他的解釋仍然難懂。」？",
+        "options": [
+          "Schwer verständlich blieb seine Erklärung.",
+          "Es freut mich, dass Sie gekommen sind.",
+          "Nicht nur er, sondern auch sie hat recht.",
+          "der"
+        ],
+        "answer": "Schwer verständlich blieb seine Erklärung.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-stylistic-inversion-pt-0",
+        "type": "mcq",
+        "prompt": "關於「強調與倒裝」，下列何者正確？",
+        "options": [
+          "Besonders wichtig ist die Vorbereitung.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Besonders wichtig ist die Vorbereitung.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-stylistic-inversion-pt-1",
+        "type": "mcq",
+        "prompt": "「強調與倒裝」的另一個要點是？",
+        "options": [
+          "Es ist wichtig, dass…／Es gibt…",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Es ist wichtig, dass…／Es gibt…",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-stylistic-inversion-exf-0",
+        "type": "fill",
+        "prompt": "填空（他的解釋仍然難懂。）：Schwer ____ blieb seine Erklärung",
+        "answer": "verständlich",
+        "accept": [
+          "verständlich",
+          "verständlich",
+          "Verständlich"
+        ],
+        "hint": "對照例句：Schwer verständlich blieb seine Erklärung"
+      },
+      {
+        "id": "b2-stylistic-inversion-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Es freut mich, dass Sie gekommen ____",
+        "answer": "sind",
+        "accept": [
+          "sind",
+          "sind",
+          "Sind"
+        ],
+        "hint": "完整例句：Es freut mich, dass Sie gekommen sind."
+      }
+    ]
   },
   {
     "id": "c1-register",
@@ -2766,8 +7258,76 @@
         "zh": "特此確認已收到您的訊息。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先理解意思與語氣，再模仿例句改寫成自己的句子。",
+      "正式書面用詞可先會認，口語不必一次全用上。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-register-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我昨天就做了。」？",
+        "options": [
+          "Hab ich gestern schon gemacht.（口語）",
+          "Die Arbeiten wurden gestern abgeschlossen.（書面）",
+          "Hiermit bestätigen wir den Eingang Ihrer Nachricht.",
+          "der"
+        ],
+        "answer": "Hab ich gestern schon gemacht.（口語）",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-register-pt-0",
+        "type": "mcq",
+        "prompt": "關於「語域：口語、中性、書面」，下列何者正確？",
+        "options": [
+          "口語：Perfekt、短句、man、doch/mal/halt。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "口語：Perfekt、短句、man、doch/mal/halt。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-register-pt-1",
+        "type": "mcq",
+        "prompt": "「語域：口語、中性、書面」的另一個要點是？",
+        "options": [
+          "書面：Präteritum、名詞化、被動、Konjunktiv I。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "書面：Präteritum、名詞化、被動、Konjunktiv I。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-register-exf-0",
+        "type": "fill",
+        "prompt": "填空（我昨天就做了。）：Hab ____ gestern schon gemacht.（口語）",
+        "answer": "ich",
+        "accept": [
+          "ich",
+          "ich",
+          "Ich"
+        ],
+        "hint": "對照例句：Hab ich gestern schon gemacht.（口語）"
+      },
+      {
+        "id": "c1-register-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Die Arbeiten wurden gestern ____",
+        "answer": "abgeschlossen.（書面）",
+        "accept": [
+          "abgeschlossen.（書面）",
+          "abgeschlossen.（書面）",
+          "Abgeschlossen.（書面）"
+        ],
+        "hint": "完整例句：Die Arbeiten wurden gestern abgeschlossen.（書面）"
+      }
+    ]
   },
   {
     "id": "c1-complex-connectors",
@@ -2797,8 +7357,76 @@
         "zh": "一方面省時，另一方面省錢。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "看到 weil／dass：從句的動詞要走到句末。",
+      "先寫兩個短句，再練習用 weil 接起來。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-complex-connectors-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「該論點之所以有問題，是因為…」？",
+        "options": [
+          "Die These ist insofern problematisch, als sie…",
+          "Gleichwohl bleibt die Frage offen.",
+          "Zum einen spart man Zeit, zum anderen Geld.",
+          "der"
+        ],
+        "answer": "Die These ist insofern problematisch, als sie…",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-complex-connectors-pt-0",
+        "type": "mcq",
+        "prompt": "關於「學術／正式連接手段」，下列何者正確？",
+        "options": [
+          "insofern／insoweit＝在此範圍內。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "insofern／insoweit＝在此範圍內。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-complex-connectors-pt-1",
+        "type": "mcq",
+        "prompt": "「學術／正式連接手段」的另一個要點是？",
+        "options": [
+          "gleichwohl／dennoch＝儘管如此（書面）。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "gleichwohl／dennoch＝儘管如此（書面）。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-complex-connectors-exf-0",
+        "type": "fill",
+        "prompt": "填空（該論點之所以有問題，是因為…）：Die ____ ist insofern problematisch, als sie…",
+        "answer": "These",
+        "accept": [
+          "These",
+          "these",
+          "These"
+        ],
+        "hint": "對照例句：Die These ist insofern problematisch, als sie…"
+      },
+      {
+        "id": "c1-complex-connectors-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Gleichwohl bleibt die Frage ____",
+        "answer": "offen",
+        "accept": [
+          "offen",
+          "offen",
+          "Offen"
+        ],
+        "hint": "完整例句：Gleichwohl bleibt die Frage offen."
+      }
+    ]
   },
   {
     "id": "c1-konjunktiv-mix",
@@ -2827,8 +7455,76 @@
         "zh": "需要指出的是…"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "禮貌請求常用 könnte／würde／hätte。",
+      "點餐：Ich hätte gern… 非常實用。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-konjunktiv-mix-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「若早點反應，損失會較小。」？",
+        "options": [
+          "Hätte man früher reagiert, wäre der Schaden geringer gewesen.",
+          "Der Sprecher betonte, man werde die Lage prüfen.",
+          "Es sei darauf hingewiesen, dass…",
+          "der"
+        ],
+        "answer": "Hätte man früher reagiert, wäre der Schaden geringer gewesen.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-konjunktiv-mix-pt-0",
+        "type": "mcq",
+        "prompt": "關於「虛擬式綜合運用」，下列何者正確？",
+        "options": [
+          "新聞：Konjunktiv I；同形時改 II。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "新聞：Konjunktiv I；同形時改 II。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-konjunktiv-mix-pt-1",
+        "type": "mcq",
+        "prompt": "「虛擬式綜合運用」的另一個要點是？",
+        "options": [
+          "評注：wie es heißt／angeblich／mutmaßlich 可輔助。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "評注：wie es heißt／angeblich／mutmaßlich 可輔助。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-konjunktiv-mix-exf-0",
+        "type": "fill",
+        "prompt": "填空（若早點反應，損失會較小。）：Hätte ____ früher reagiert, wäre der Schaden geringer gewesen",
+        "answer": "man",
+        "accept": [
+          "man",
+          "man",
+          "Man"
+        ],
+        "hint": "對照例句：Hätte man früher reagiert, wäre der Schaden geringer gewesen"
+      },
+      {
+        "id": "c1-konjunktiv-mix-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Der Sprecher betonte, man werde die Lage ____",
+        "answer": "prüfen",
+        "accept": [
+          "prüfen",
+          "prüfen",
+          "Prüfen"
+        ],
+        "hint": "完整例句：Der Sprecher betonte, man werde die Lage prüfen."
+      }
+    ]
   },
   {
     "id": "c1-passive-advanced",
@@ -2861,8 +7557,76 @@
         "zh": "這篇文章很難翻譯。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "被動看 werden／wurde + 過去分詞。",
+      "先會讀「Das Fenster wird geöffnet」再學自己寫。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-passive-advanced-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「今晚有派對／有人慶祝。」？",
+        "options": [
+          "Heute Abend wird gefeiert.",
+          "Ihm wurde geholfen.",
+          "Sie bekam die Unterlagen zugeschickt.",
+          "Der Text lässt sich schwer übersetzen."
+        ],
+        "answer": "Heute Abend wird gefeiert.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-passive-advanced-pt-0",
+        "type": "mcq",
+        "prompt": "關於「被動進階與無人稱被動」，下列何者正確？",
+        "options": [
+          "及物與不及物都可形成被動（視語義）。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "及物與不及物都可形成被動（視語義）。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-passive-advanced-pt-1",
+        "type": "mcq",
+        "prompt": "「被動進階與無人稱被動」的另一個要點是？",
+        "options": [
+          "bekommen／kriegen + Partizip（口語受惠被動）：Sie bekam das Paket z…",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "bekommen／kriegen + Partizip（口語受惠被動）：Sie bekam das Paket z…",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-passive-advanced-exf-0",
+        "type": "fill",
+        "prompt": "填空（今晚有派對／有人慶祝。）：Heute ____ wird gefeiert",
+        "answer": "Abend",
+        "accept": [
+          "Abend",
+          "abend",
+          "Abend"
+        ],
+        "hint": "對照例句：Heute Abend wird gefeiert"
+      },
+      {
+        "id": "c1-passive-advanced-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Ihm wurde ____",
+        "answer": "geholfen",
+        "accept": [
+          "geholfen",
+          "geholfen",
+          "Geholfen"
+        ],
+        "hint": "完整例句：Ihm wurde geholfen."
+      }
+    ]
   },
   {
     "id": "c1-nominal-style",
@@ -2891,8 +7655,76 @@
         "zh": "在考慮所有因素的情況下…"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先理解意思與語氣，再模仿例句改寫成自己的句子。",
+      "正式書面用詞可先會認，口語不必一次全用上。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-nominal-style-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「漲價引發抗議。」？",
+        "options": [
+          "Die Erhöhung der Preise führte zu Protesten.",
+          "Dass die Preise erhöht wurden, führte zu Protesten.",
+          "Unter Berücksichtigung aller Faktoren…",
+          "der"
+        ],
+        "answer": "Die Erhöhung der Preise führte zu Protesten.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-nominal-style-pt-0",
+        "type": "mcq",
+        "prompt": "關於「名詞風格與動詞風格改寫」，下列何者正確？",
+        "options": [
+          "Verbal：Nachdem das Gesetz beschlossen worden war, …",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Verbal：Nachdem das Gesetz beschlossen worden war, …",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-nominal-style-pt-1",
+        "type": "mcq",
+        "prompt": "「名詞風格與動詞風格改寫」的另一個要點是？",
+        "options": [
+          "Nominal：Nach der Beschlussfassung des Gesetzes …",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Nominal：Nach der Beschlussfassung des Gesetzes …",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-nominal-style-exf-0",
+        "type": "fill",
+        "prompt": "填空（漲價引發抗議。）：Die ____ der Preise führte zu Protesten",
+        "answer": "Erhöhung",
+        "accept": [
+          "Erhöhung",
+          "erhöhung",
+          "Erhöhung"
+        ],
+        "hint": "對照例句：Die Erhöhung der Preise führte zu Protesten"
+      },
+      {
+        "id": "c1-nominal-style-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Dass die Preise erhöht wurden, führte zu ____",
+        "answer": "Protesten",
+        "accept": [
+          "Protesten",
+          "protesten",
+          "Protesten"
+        ],
+        "hint": "完整例句：Dass die Preise erhöht wurden, führte zu Protesten."
+      }
+    ]
   },
   {
     "id": "c1-text-cohesion",
@@ -2921,8 +7753,76 @@
         "zh": "首先…此外…最後…"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先理解意思與語氣，再模仿例句改寫成自己的句子。",
+      "正式書面用詞可先會認，口語不必一次全用上。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-text-cohesion-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「改革通過了。因此規則改變。」？",
+        "options": [
+          "Die Reform wurde beschlossen. Dadurch veränderten sich die Regeln.",
+          "Er vergaß den Termin, was unangenehm war.",
+          "Zuerst … . Darüber hinaus … . Abschließend …",
+          "der"
+        ],
+        "answer": "Die Reform wurde beschlossen. Dadurch veränderten sich die Regeln.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-text-cohesion-pt-0",
+        "type": "mcq",
+        "prompt": "關於「篇章銜接：指代與主題推進」，下列何者正確？",
+        "options": [
+          "dies／jenes／ersterer／letzterer（書面）。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "dies／jenes／ersterer／letzterer（書面）。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-text-cohesion-pt-1",
+        "type": "mcq",
+        "prompt": "「篇章銜接：指代與主題推進」的另一個要點是？",
+        "options": [
+          "was 關係句指整句：Er kam zu spät, was alle ärgerte.",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "was 關係句指整句：Er kam zu spät, was alle ärgerte.",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-text-cohesion-exf-0",
+        "type": "fill",
+        "prompt": "填空（改革通過了。因此規則改變。）：Die ____ wurde beschlossen. Dadurch veränderten sich die Regeln",
+        "answer": "Reform",
+        "accept": [
+          "Reform",
+          "reform",
+          "Reform"
+        ],
+        "hint": "對照例句：Die Reform wurde beschlossen. Dadurch veränderten sich die Regeln"
+      },
+      {
+        "id": "c1-text-cohesion-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Er vergaß den Termin, was unangenehm ____",
+        "answer": "war",
+        "accept": [
+          "war",
+          "war",
+          "War"
+        ],
+        "hint": "完整例句：Er vergaß den Termin, was unangenehm war."
+      }
+    ]
   },
   {
     "id": "c1-verbs-fixed",
@@ -2951,8 +7851,76 @@
         "zh": "結果出人意料地顯現。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先理解意思與語氣，再模仿例句改寫成自己的句子。",
+      "正式書面用詞可先會認，口語不必一次全用上。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-verbs-fixed-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「這使該方法受到質疑。」？",
+        "options": [
+          "Das stellt die Methode in Frage.",
+          "Wir nehmen Ihr Angebot gerne in Anspruch.",
+          "Die Ergebnisse kamen überraschend zum Vorschein.",
+          "der"
+        ],
+        "answer": "Das stellt die Methode in Frage.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-verbs-fixed-pt-0",
+        "type": "mcq",
+        "prompt": "關於「功能動詞結構（Funktionsverbgefüge）」，下列何者正確？",
+        "options": [
+          "zur Entscheidung kommen ≈ entscheiden；in Frage stellen；un…",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "zur Entscheidung kommen ≈ entscheiden；in Frage stellen；un…",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-verbs-fixed-pt-1",
+        "type": "mcq",
+        "prompt": "「功能動詞結構（Funktionsverbgefüge）」的另一個要點是？",
+        "options": [
+          "eine Rolle spielen；Abschied nehmen；in Anspruch nehmen。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "eine Rolle spielen；Abschied nehmen；in Anspruch nehmen。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-verbs-fixed-exf-0",
+        "type": "fill",
+        "prompt": "填空（這使該方法受到質疑。）：Das ____ die Methode in Frage",
+        "answer": "stellt",
+        "accept": [
+          "stellt",
+          "stellt",
+          "Stellt"
+        ],
+        "hint": "對照例句：Das stellt die Methode in Frage"
+      },
+      {
+        "id": "c1-verbs-fixed-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Wir nehmen Ihr Angebot gerne in ____",
+        "answer": "Anspruch",
+        "accept": [
+          "Anspruch",
+          "anspruch",
+          "Anspruch"
+        ],
+        "hint": "完整例句：Wir nehmen Ihr Angebot gerne in Anspruch."
+      }
+    ]
   },
   {
     "id": "c1-subjunctive-wishes",
@@ -2981,8 +7949,76 @@
         "zh": "無論如何，我們必須做決定。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "禮貌請求常用 könnte／würde／hätte。",
+      "點餐：Ich hätte gern… 非常實用。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-subjunctive-wishes-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我要是待在家就好了！」？",
+        "options": [
+          "Wäre ich doch zu Hause geblieben!",
+          "Sei es Regen oder Schnee, wir fahren.",
+          "Wie dem auch sei, wir müssen entscheiden.",
+          "der"
+        ],
+        "answer": "Wäre ich doch zu Hause geblieben!",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-subjunctive-wishes-pt-0",
+        "type": "mcq",
+        "prompt": "關於「願望句、條件省略與固定套語」，下列何者正確？",
+        "options": [
+          "Käme er doch endlich!／Wenn er doch käme!",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Käme er doch endlich!／Wenn er doch käme!",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-subjunctive-wishes-pt-1",
+        "type": "mcq",
+        "prompt": "「願望句、條件省略與固定套語」的另一個要點是？",
+        "options": [
+          "Es lebe …／Gott sei Dank／dem sei, wie es wolle。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Es lebe …／Gott sei Dank／dem sei, wie es wolle。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-subjunctive-wishes-exf-0",
+        "type": "fill",
+        "prompt": "填空（我要是待在家就好了！）：Wäre ____ doch zu Hause geblieben!",
+        "answer": "ich",
+        "accept": [
+          "ich",
+          "ich",
+          "Ich"
+        ],
+        "hint": "對照例句：Wäre ich doch zu Hause geblieben!"
+      },
+      {
+        "id": "c1-subjunctive-wishes-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Sei es Regen oder Schnee, wir ____",
+        "answer": "fahren",
+        "accept": [
+          "fahren",
+          "fahren",
+          "Fahren"
+        ],
+        "hint": "完整例句：Sei es Regen oder Schnee, wir fahren."
+      }
+    ]
   },
   {
     "id": "c1-adjective-advanced",
@@ -3011,8 +8047,76 @@
         "zh": "持續多年的討論"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "放在 sein 後面當表語時，形容詞通常不加字尾。",
+      "修飾名詞時才要加字尾，A1 可先少用長名詞片語。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-adjective-advanced-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「部會提出的方案」？",
+        "options": [
+          "die vom Ministerium vorgeschlagene Lösung",
+          "ein nicht zu unterschätzendes Risiko",
+          "die seit Jahren andauernde Diskussion",
+          "der"
+        ],
+        "answer": "die vom Ministerium vorgeschlagene Lösung",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-adjective-advanced-pt-0",
+        "type": "mcq",
+        "prompt": "關於「分詞形容詞與複合修飾」，下列何者正確？",
+        "options": [
+          "讀法：從冠詞跳到名詞，再回頭看分詞短語。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "讀法：從冠詞跳到名詞，再回頭看分詞短語。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-adjective-advanced-pt-1",
+        "type": "mcq",
+        "prompt": "「分詞形容詞與複合修飾」的另一個要點是？",
+        "options": [
+          "die von der Kommission gestern verabschiedete Richtlinie。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "die von der Kommission gestern verabschiedete Richtlinie。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-adjective-advanced-exf-0",
+        "type": "fill",
+        "prompt": "填空（部會提出的方案）：die ____ Ministerium vorgeschlagene Lösung",
+        "answer": "vom",
+        "accept": [
+          "vom",
+          "vom",
+          "Vom"
+        ],
+        "hint": "對照例句：die vom Ministerium vorgeschlagene Lösung"
+      },
+      {
+        "id": "c1-adjective-advanced-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：ein nicht zu unterschätzendes ____",
+        "answer": "Risiko",
+        "accept": [
+          "Risiko",
+          "risiko",
+          "Risiko"
+        ],
+        "hint": "完整例句：ein nicht zu unterschätzendes Risiko"
+      }
+    ]
   },
   {
     "id": "c1-prepositions-formal",
@@ -3041,8 +8145,76 @@
         "zh": "因暴風雨而停電。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先背「介詞＋哪一格」的固定搭配，不要分開記。",
+      "分清 wo（在哪裡）跟 wohin（去哪裡）。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-prepositions-formal-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「關於成本存在疑慮。」？",
+        "options": [
+          "Hinsichtlich der Kosten bestehen Bedenken.",
+          "Anhand der Daten lässt sich das zeigen.",
+          "Infolge des Sturms fiel der Strom aus.",
+          "der"
+        ],
+        "answer": "Hinsichtlich der Kosten bestehen Bedenken.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-prepositions-formal-pt-0",
+        "type": "mcq",
+        "prompt": "關於「正式介詞與介詞短語」，下列何者正確？",
+        "options": [
+          "多數接第二格：hinsichtlich des Problems。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "多數接第二格：hinsichtlich des Problems。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-prepositions-formal-pt-1",
+        "type": "mcq",
+        "prompt": "「正式介詞與介詞短語」的另一個要點是？",
+        "options": [
+          "infolge＋Gen；aufgrund＋Gen；anhand＋Gen。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "infolge＋Gen；aufgrund＋Gen；anhand＋Gen。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-prepositions-formal-exf-0",
+        "type": "fill",
+        "prompt": "填空（關於成本存在疑慮。）：Hinsichtlich ____ Kosten bestehen Bedenken",
+        "answer": "der",
+        "accept": [
+          "der",
+          "der",
+          "Der"
+        ],
+        "hint": "對照例句：Hinsichtlich der Kosten bestehen Bedenken"
+      },
+      {
+        "id": "c1-prepositions-formal-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Anhand der Daten lässt sich das ____",
+        "answer": "zeigen",
+        "accept": [
+          "zeigen",
+          "zeigen",
+          "Zeigen"
+        ],
+        "hint": "完整例句：Anhand der Daten lässt sich das zeigen."
+      }
+    ]
   },
   {
     "id": "c1-speech-acts",
@@ -3071,8 +8243,76 @@
         "zh": "對此可以反駁說…"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先理解意思與語氣，再模仿例句改寫成自己的句子。",
+      "正式書面用詞可先會認，口語不必一次全用上。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-speech-acts-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「這論點我覺得不那麼有說服力。」？",
+        "options": [
+          "Das Argument scheint mir nicht ganz überzeugend.",
+          "Es wäre zu überlegen, ob…",
+          "Dagegen ließe sich einwenden, dass…",
+          "der"
+        ],
+        "answer": "Das Argument scheint mir nicht ganz überzeugend.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-speech-acts-pt-0",
+        "type": "mcq",
+        "prompt": "關於「言語行為與緩和策略」，下列何者正確？",
+        "options": [
+          "Ich würde sagen…／Es scheint mir…／Man könnte einwenden…",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Ich würde sagen…／Es scheint mir…／Man könnte einwenden…",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-speech-acts-pt-1",
+        "type": "mcq",
+        "prompt": "「言語行為與緩和策略」的另一個要點是？",
+        "options": [
+          "双重緩和：Es dürfte nicht ganz unproblematisch sein…",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "双重緩和：Es dürfte nicht ganz unproblematisch sein…",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-speech-acts-exf-0",
+        "type": "fill",
+        "prompt": "填空（這論點我覺得不那麼有說服力。）：Das ____ scheint mir nicht ganz überzeugend",
+        "answer": "Argument",
+        "accept": [
+          "Argument",
+          "argument",
+          "Argument"
+        ],
+        "hint": "對照例句：Das Argument scheint mir nicht ganz überzeugend"
+      },
+      {
+        "id": "c1-speech-acts-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Es wäre zu überlegen, ____",
+        "answer": "ob…",
+        "accept": [
+          "ob…",
+          "ob…",
+          "Ob…"
+        ],
+        "hint": "完整例句：Es wäre zu überlegen, ob…"
+      }
+    ]
   },
   {
     "id": "c1-tense-aspect-discourse",
@@ -3101,8 +8341,76 @@
         "zh": "突然門開了…"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "口語談過去多用 Perfekt：haben／sein + 過去分詞。",
+      "分詞多半在句末；先找助動詞再找分詞。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-tense-aspect-discourse-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「數據分析後顯示…」？",
+        "options": [
+          "Nachdem die Daten ausgewertet worden waren, zeigte sich…",
+          "Die Studie zeigt, dass…",
+          "Plötzlich öffnet sich die Tür…（歷史現在時）",
+          "der"
+        ],
+        "answer": "Nachdem die Daten ausgewertet worden waren, zeigte sich…",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-tense-aspect-discourse-pt-0",
+        "type": "mcq",
+        "prompt": "關於「時態在篇章中的選擇」，下列何者正確？",
+        "options": [
+          "背景：Plusquamperfekt／Präteritum；主線：Präteritum；評論：Präsens。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "背景：Plusquamperfekt／Präteritum；主線：Präteritum；評論：Präsens。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-tense-aspect-discourse-pt-1",
+        "type": "mcq",
+        "prompt": "「時態在篇章中的選擇」的另一個要點是？",
+        "options": [
+          "學術摘要常用現在時表「通則」。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "學術摘要常用現在時表「通則」。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-tense-aspect-discourse-exf-0",
+        "type": "fill",
+        "prompt": "填空（數據分析後顯示…）：Nachdem ____ Daten ausgewertet worden waren, zeigte sich…",
+        "answer": "die",
+        "accept": [
+          "die",
+          "die",
+          "Die"
+        ],
+        "hint": "對照例句：Nachdem die Daten ausgewertet worden waren, zeigte sich…"
+      },
+      {
+        "id": "c1-tense-aspect-discourse-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Die Studie zeigt, ____",
+        "answer": "dass…",
+        "accept": [
+          "dass…",
+          "dass…",
+          "Dass…"
+        ],
+        "hint": "完整例句：Die Studie zeigt, dass…"
+      }
+    ]
   },
   {
     "id": "c1-relative-advanced",
@@ -3131,8 +8439,76 @@
         "zh": "這就是我們爭論的原因。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "看到 weil／dass：從句的動詞要走到句末。",
+      "先寫兩個短句，再練習用 weil 接起來。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-relative-advanced-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「敢嘗試的人會贏。」？",
+        "options": [
+          "Wer wagt, gewinnt.",
+          "Alles, was er sagte, war falsch.",
+          "Das ist der Punkt, weswegen wir streiten.",
+          "der"
+        ],
+        "answer": "Wer wagt, gewinnt.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-relative-advanced-pt-0",
+        "type": "mcq",
+        "prompt": "關於「進階關係句：was, wer, wo, weswegen」，下列何者正確？",
+        "options": [
+          "wer …, (der) …；was …, (das) …",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "wer …, (der) …；was …, (das) …",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-relative-advanced-pt-1",
+        "type": "mcq",
+        "prompt": "「進階關係句：was, wer, wo, weswegen」的另一個要點是？",
+        "options": [
+          "wo／wohin 可關係地點；weshalb／weswegen 表原因。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "wo／wohin 可關係地點；weshalb／weswegen 表原因。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-relative-advanced-exf-0",
+        "type": "fill",
+        "prompt": "填空（敢嘗試的人會贏。）：Wer ____ gewinnt",
+        "answer": "wagt",
+        "accept": [
+          "wagt",
+          "wagt",
+          "Wagt"
+        ],
+        "hint": "對照例句：Wer wagt, gewinnt"
+      },
+      {
+        "id": "c1-relative-advanced-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Alles, was er sagte, war ____",
+        "answer": "falsch",
+        "accept": [
+          "falsch",
+          "falsch",
+          "Falsch"
+        ],
+        "hint": "完整例句：Alles, was er sagte, war falsch."
+      }
+    ]
   },
   {
     "id": "c1-negation-advanced",
@@ -3165,8 +8541,76 @@
         "zh": "沒有努力就沒有收穫。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "kein 用來否定「一個／某個名詞」；nicht 否定動詞或形容詞。",
+      "不要說 nicht ein Auto，要說 kein Auto。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-negation-advanced-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「這絕不清楚。」？",
+        "options": [
+          "Das ist keineswegs klar.",
+          "Er hat nicht einmal angerufen.",
+          "Die Lösung ist alles andere als einfach.",
+          "Ohne Fleiß kein Preis."
+        ],
+        "answer": "Das ist keineswegs klar.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "c1-negation-advanced-pt-0",
+        "type": "mcq",
+        "prompt": "關於「否定進階與多重否定語義」，下列何者正確？",
+        "options": [
+          "keineswegs／überhaupt nicht 加強否定。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "keineswegs／überhaupt nicht 加強否定。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "c1-negation-advanced-pt-1",
+        "type": "mcq",
+        "prompt": "「否定進階與多重否定語義」的另一個要點是？",
+        "options": [
+          "nicht einmal＝連…都不。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "nicht einmal＝連…都不。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "c1-negation-advanced-exf-0",
+        "type": "fill",
+        "prompt": "填空（這絕不清楚。）：Das ____ keineswegs klar",
+        "answer": "ist",
+        "accept": [
+          "ist",
+          "ist",
+          "Ist"
+        ],
+        "hint": "對照例句：Das ist keineswegs klar"
+      },
+      {
+        "id": "c1-negation-advanced-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Er hat nicht einmal ____",
+        "answer": "angerufen",
+        "accept": [
+          "angerufen",
+          "angerufen",
+          "Angerufen"
+        ],
+        "hint": "完整例句：Er hat nicht einmal angerufen."
+      }
+    ]
   },
   {
     "id": "a1-greeting-intro",
@@ -3195,8 +8639,78 @@
         "zh": "很高興認識您。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "是非問句：動詞開頭；W 問句：疑問詞開頭、動詞第二。",
+      "把短句唸順，比一次寫長句更有效。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a1-greeting-intro-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「你好，我叫 Lin。」？",
+        "options": [
+          "Guten Tag, ich heiße Lin.",
+          "Ich komme aus Taiwan und wohne in München.",
+          "Freut mich, Sie kennenzulernen.",
+          "der"
+        ],
+        "answer": "Guten Tag, ich heiße Lin.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a1-greeting-intro-pt-0",
+        "type": "mcq",
+        "prompt": "關於「打招呼與自我介紹句型」，下列何者正確？",
+        "options": [
+          "Guten Morgen／Tag／Abend；Hallo（非正式）。",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Guten Morgen／Tag／Abend；Hallo（非正式）。",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a1-greeting-intro-pt-1",
+        "type": "mcq",
+        "prompt": "「打招呼與自我介紹句型」的另一個要點是？",
+        "options": [
+          "Ich heiße…／Mein Name ist…／Ich komme aus…",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Ich heiße…／Mein Name ist…／Ich komme aus…",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a1-greeting-intro-exf-0",
+        "type": "fill",
+        "prompt": "填空（你好，我叫 Lin。）：Guten ____ ich heiße Lin",
+        "answer": "Tag",
+        "accept": [
+          "Tag",
+          "tag",
+          "Tag"
+        ],
+        "hint": "對照例句：Guten Tag, ich heiße Lin"
+      },
+      {
+        "id": "a1-greeting-intro-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Ich komme aus Taiwan und wohne in ____",
+        "answer": "München",
+        "accept": [
+          "München",
+          "münchen",
+          "München"
+        ],
+        "hint": "完整例句：Ich komme aus Taiwan und wohne in München."
+      }
+    ]
   },
   {
     "id": "a2-lassen",
@@ -3225,8 +8739,79 @@
         "zh": "我把鑰匙放哪了？"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "陳述句：變位動詞固定在第二位——先數位置再寫句子。",
+      "先熟 ich／du／er 三種，再說 wir／ihr／sie。",
+      "看到可分動詞（auf-/an-…），記得前綴常跑到句末。",
+      "看完重點後先做下面的選擇題，不會就點「提示」。",
+      "填空題大小寫要正確；不確定時先看提示再作答。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "a2-lassen-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「我去理髮（請人剪）。」？",
+        "options": [
+          "Ich lasse mir die Haare schneiden.",
+          "Lass uns morgen lernen.",
+          "Wo habe ich meinen Schlüssel gelassen?",
+          "der"
+        ],
+        "answer": "Ich lasse mir die Haare schneiden.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "a2-lassen-pt-0",
+        "type": "mcq",
+        "prompt": "關於「lassen 的基本用法」，下列何者正確？",
+        "options": [
+          "Ich lasse das Auto reparieren.（請人修車）",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Ich lasse das Auto reparieren.（請人修車）",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "a2-lassen-pt-1",
+        "type": "mcq",
+        "prompt": "「lassen 的基本用法」的另一個要點是？",
+        "options": [
+          "Lass uns gehen!（我們走吧）",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "Lass uns gehen!（我們走吧）",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "a2-lassen-exf-0",
+        "type": "fill",
+        "prompt": "填空（我去理髮（請人剪）。）：Ich ____ mir die Haare schneiden",
+        "answer": "lasse",
+        "accept": [
+          "lasse",
+          "lasse",
+          "Lasse"
+        ],
+        "hint": "對照例句：Ich lasse mir die Haare schneiden"
+      },
+      {
+        "id": "a2-lassen-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Lass uns morgen ____",
+        "answer": "lernen",
+        "accept": [
+          "lernen",
+          "lernen",
+          "Lernen"
+        ],
+        "hint": "完整例句：Lass uns morgen lernen."
+      }
+    ]
   },
   {
     "id": "b1-als-wenn-ob",
@@ -3250,8 +8835,76 @@
         "zh": "看起來好像下過雨。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "禮貌請求常用 könnte／würde／hätte。",
+      "點餐：Ich hätte gern… 非常實用。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b1-als-wenn-ob-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「她裝作若無其事。」？",
+        "options": [
+          "Sie tut so, als ob nichts wäre.",
+          "Es sieht aus, als hätte es geregnet.",
+          "der",
+          "die"
+        ],
+        "answer": "Sie tut so, als ob nichts wäre.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b1-als-wenn-ob-pt-0",
+        "type": "mcq",
+        "prompt": "關於「als ob / als wenn 虛擬比較」，下列何者正確？",
+        "options": [
+          "Er spricht, als ob er Experte wäre.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Er spricht, als ob er Experte wäre.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b1-als-wenn-ob-pt-1",
+        "type": "mcq",
+        "prompt": "「als ob / als wenn 虛擬比較」的另一個要點是？",
+        "options": [
+          "也可：als wäre er Experte（省略 ob，動詞提前）。",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "也可：als wäre er Experte（省略 ob，動詞提前）。",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b1-als-wenn-ob-exf-0",
+        "type": "fill",
+        "prompt": "填空（她裝作若無其事。）：Sie ____ so, als ob nichts wäre",
+        "answer": "tut",
+        "accept": [
+          "tut",
+          "tut",
+          "Tut"
+        ],
+        "hint": "對照例句：Sie tut so, als ob nichts wäre"
+      },
+      {
+        "id": "b1-als-wenn-ob-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Es sieht aus, als hätte es ____",
+        "answer": "geregnet",
+        "accept": [
+          "geregnet",
+          "geregnet",
+          "Geregnet"
+        ],
+        "hint": "完整例句：Es sieht aus, als hätte es geregnet."
+      }
+    ]
   },
   {
     "id": "b2-double-infinitive",
@@ -3280,8 +8933,76 @@
         "zh": "他說他當時必須留在家。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "情態動詞要變位，後面的主要動詞用原形放句末。",
+      "Ich kann schwimmen（✓）不是 Ich kann schwimme。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "b2-double-infinitive-exm-0",
+        "type": "mcq",
+        "prompt": "哪一句意思是「她不得不等很久。」？",
+        "options": [
+          "Sie hat lange warten müssen.",
+          "Ich habe ihn kommen sehen.",
+          "Er sagt, dass er hat zu Hause bleiben müssen.",
+          "der"
+        ],
+        "answer": "Sie hat lange warten müssen.",
+        "hint": "先看中文再對德文關鍵詞。"
+      },
+      {
+        "id": "b2-double-infinitive-pt-0",
+        "type": "mcq",
+        "prompt": "關於「雙不定式與情態完成時」，下列何者正確？",
+        "options": [
+          "Ich habe gestern arbeiten müssen.",
+          "動詞永遠放在句首",
+          "德文沒有冠詞",
+          "名詞都不用記性別"
+        ],
+        "answer": "Ich habe gestern arbeiten müssen.",
+        "hint": "對照本單元「重點」第一條。"
+      },
+      {
+        "id": "b2-double-infinitive-pt-1",
+        "type": "mcq",
+        "prompt": "「雙不定式與情態完成時」的另一個要點是？",
+        "options": [
+          "從句：…, dass ich habe arbeiten müssen.（助動詞在兩個不定式前）",
+          "一律只用主格",
+          "從句動詞一定在第二位",
+          "kein 等於 und"
+        ],
+        "answer": "從句：…, dass ich habe arbeiten müssen.（助動詞在兩個不定式前）",
+        "hint": "對照本單元「重點」第二條。"
+      },
+      {
+        "id": "b2-double-infinitive-exf-0",
+        "type": "fill",
+        "prompt": "填空（她不得不等很久。）：Sie ____ lange warten müssen",
+        "answer": "hat",
+        "accept": [
+          "hat",
+          "hat",
+          "Hat"
+        ],
+        "hint": "對照例句：Sie hat lange warten müssen"
+      },
+      {
+        "id": "b2-double-infinitive-g-fill-1",
+        "type": "fill",
+        "prompt": "填空：Ich habe ihn kommen ____",
+        "answer": "sehen",
+        "accept": [
+          "sehen",
+          "sehen",
+          "Sehen"
+        ],
+        "hint": "完整例句：Ich habe ihn kommen sehen."
+      }
+    ]
   },
   {
     "id": "c1-irony-particles",
@@ -3314,7 +9035,71 @@
         "zh": "會沒事的。"
       }
     ],
-    "tips": [],
-    "related": []
+    "tips": [
+      "先理解意思與語氣，再模仿例句改寫成自己的句子。",
+      "正式書面用詞可先會認，口語不必一次全用上。"
+    ],
+    "related": [],
+    "exercises": [
+      {
+        "id": "c1-mp-1",
+        "type": "mcq",
+        "prompt": "Modalpartikeln 主要改什麼？",
+        "options": [
+          "語氣",
+          "性別",
+          "複數",
+          "定冠詞顏色"
+        ],
+        "answer": "語氣",
+        "hint": "不改基本命題。"
+      },
+      {
+        "id": "c1-mp-2",
+        "type": "mcq",
+        "prompt": "「你過來一下嘛」常用小品詞？",
+        "options": [
+          "mal / doch",
+          "der",
+          "worden",
+          "dessen"
+        ],
+        "answer": "mal / doch",
+        "hint": "Komm doch mal her!"
+      },
+      {
+        "id": "c1-mp-3",
+        "type": "mcq",
+        "prompt": "halt／eben 常帶什麼語氣？",
+        "options": [
+          "無奈接受",
+          "命令被動",
+          "第二格",
+          "未來完成"
+        ],
+        "answer": "無奈接受",
+        "hint": "Dann ist es halt so。"
+      },
+      {
+        "id": "c1-mp-4",
+        "type": "fill",
+        "prompt": "填空：Das ist ___ einfach!（顯而易見）",
+        "answer": "ja",
+        "accept": [
+          "ja"
+        ],
+        "hint": "Das ist ja einfach!"
+      },
+      {
+        "id": "c1-mp-5",
+        "type": "fill",
+        "prompt": "填空：Das wird ___ gut gehen.（安撫）",
+        "answer": "schon",
+        "accept": [
+          "schon"
+        ],
+        "hint": "wird schon…"
+      }
+    ]
   }
 ]
