@@ -28,6 +28,47 @@ const genderClass: Record<NonNullable<Gender>, string> = {
   das: 'gender-das',
 }
 
+/** Color every der/die/das (any case) inside a text string. */
+function ArticleText({ text }: { text: string }) {
+  const parts = text.split(/(\b(?:der|die|das|Der|Die|Das)\b)/g)
+  return (
+    <>
+      {parts.map((part, i) => {
+        const lower = part.toLowerCase()
+        if (lower === 'der' || lower === 'die' || lower === 'das') {
+          return (
+            <span key={`${part}-${i}`} className={genderClass[lower]}>
+              {part}
+            </span>
+          )
+        }
+        return <span key={`${part}-${i}`}>{part}</span>
+      })}
+    </>
+  )
+}
+
+function ColoredLemma({
+  article,
+  word,
+  as: Tag = 'span',
+}: {
+  article?: Gender | null
+  word: string
+  as?: 'span' | 'strong'
+}) {
+  return (
+    <Tag>
+      {article ? (
+        <>
+          <span className={genderClass[article]}>{article}</span>{' '}
+        </>
+      ) : null}
+      {word}
+    </Tag>
+  )
+}
+
 const MODE_LABEL: Record<Mode, string> = {
   browse: '單字瀏覽',
   flash: '閃卡意思',
@@ -117,7 +158,11 @@ function GrammarPanels({ e }: { e: EnrichedWord }) {
               </span>
             ))}
           </div>
-          {e.parts.note && <p className="panel-note">{e.parts.note}</p>}
+          {e.parts.note && (
+            <p className="panel-note">
+              <ArticleText text={e.parts.note} />
+            </p>
+          )}
         </section>
       )}
 
@@ -127,10 +172,9 @@ function GrammarPanels({ e }: { e: EnrichedWord }) {
           <p className="panel-lead">
             {e.plural ? (
               <>
-                <strong>
-                  {e.article} {e.word}
-                </strong>{' '}
-                → <strong>die {e.plural}</strong>
+                <ColoredLemma article={e.article} word={e.word} as="strong" />{' '}
+                →{' '}
+                <ColoredLemma article="die" word={e.plural} as="strong" />
                 {e.pluralPattern && (
                   <span className="pattern-tag">{e.pluralPattern}</span>
                 )}
@@ -139,11 +183,16 @@ function GrammarPanels({ e }: { e: EnrichedWord }) {
               '此詞複數較少用或不規則，先記單數＋冠詞。'
             )}
           </p>
-          {e.pluralHint && <p className="panel-note">{e.pluralHint}</p>}
+          {e.pluralHint && (
+            <p className="panel-note">
+              <ArticleText text={e.pluralHint} />
+            </p>
+          )}
           <ul className="guide-list">
             {PLURAL_PATTERN_GUIDE.slice(0, 5).map((g) => (
               <li key={g.pattern}>
-                <strong>{g.pattern}</strong>：{g.likeEnglish}（例 {g.example}）
+                <strong>{g.pattern}</strong>：{g.likeEnglish}（例{' '}
+                <ArticleText text={g.example} />）
               </li>
             ))}
           </ul>
@@ -159,7 +208,9 @@ function GrammarPanels({ e }: { e: EnrichedWord }) {
               <span className="pattern-tag">可分：{e.verb.separable}-</span>
             )}
           </p>
-          <p className="panel-note">{e.verb.usage}</p>
+          <p className="panel-note">
+            <ArticleText text={e.verb.usage} />
+          </p>
           <div className="conj-grid">
             <div>
               <span>ich</span>
@@ -211,8 +262,7 @@ function GrammarPanels({ e }: { e: EnrichedWord }) {
               <li key={`${r.relation}-${r.word}`}>
                 <span className="related-rel">{r.relation}</span>
                 <strong>
-                  {r.article ? `${r.article} ` : ''}
-                  {r.word}
+                  <ColoredLemma article={r.article} word={r.word} />
                 </strong>
                 <span className="related-zh">{r.translation}</span>
               </li>
@@ -225,7 +275,9 @@ function GrammarPanels({ e }: { e: EnrichedWord }) {
         <h3>記憶法</h3>
         <ul>
           {e.memoryTips.map((t) => (
-            <li key={t}>{t}</li>
+            <li key={t}>
+              <ArticleText text={t} />
+            </li>
           ))}
         </ul>
       </section>
@@ -262,7 +314,9 @@ function WordDetail({
       </div>
 
       <h2 className="lemma">
-        {word.article && <span className="article">{word.article}</span>}
+        {word.article && (
+          <span className={genderClass[word.article]}>{word.article}</span>
+        )}
         <span className="word">{word.word}</span>
       </h2>
 
@@ -279,7 +333,9 @@ function WordDetail({
         {word.plural && (
           <>
             <dt>複數</dt>
-            <dd>die {word.plural}</dd>
+            <dd>
+              <ColoredLemma article="die" word={word.plural} />
+            </dd>
           </>
         )}
         <dt>詞性</dt>
@@ -307,8 +363,12 @@ function WordDetail({
 
       <section className="example">
         <h3>例句</h3>
-        <p className="example-de">{word.example}</p>
-        <p className="example-zh">{word.exampleTranslation}</p>
+        <p className="example-de">
+          <ArticleText text={word.example} />
+        </p>
+        <p className="example-zh">
+          <ArticleText text={word.exampleTranslation} />
+        </p>
         <div className="speak-row">
           <SpeakButton label="聽例句" text={word.example} />
           <SpeakButton label="慢速例句" text={word.example} slow />
@@ -350,18 +410,25 @@ function PracticeCard({
     prompt = '複數是什麼？屬於哪種變化？'
     frontExtra = (
       <p className="flash-sub">
-        {word.article} {word.word}
+        <ColoredLemma article={word.article} word={word.word} />
       </p>
     )
     backExtra = (
       <>
         <p className="translation">
-          die {word.plural ?? '（少用／無）'}
+          <ColoredLemma
+            article="die"
+            word={word.plural ?? '（少用／無）'}
+          />
         </p>
         {e.pluralPattern && (
           <p className="pattern-tag">{e.pluralPattern}</p>
         )}
-        {e.pluralHint && <p className="example-zh">{e.pluralHint}</p>}
+        {e.pluralHint && (
+          <p className="example-zh">
+            <ArticleText text={e.pluralHint} />
+          </p>
+        )}
       </>
     )
   } else if (mode === 'verb') {
@@ -387,26 +454,35 @@ function PracticeCard({
         <p className="example-zh">
           {e.verb.class} · {e.verb.preterite} / {e.verb.participle}
         </p>
-        <p className="panel-note">{e.verb.usage}</p>
+        <p className="panel-note">
+          <ArticleText text={e.verb.usage} />
+        </p>
       </>
     ) : (
       <p className="translation">{word.translation}</p>
     )
   } else if (mode === 'family') {
     prompt = '有哪些相關詞／字族？'
-    frontExtra = <p className="flash-sub">{lemma}</p>
+    frontExtra = (
+      <p className="flash-sub">
+        <ColoredLemma article={word.article} word={word.word} />
+      </p>
+    )
     backExtra = (
       <>
         <p className="translation">{word.translation}</p>
-        {e.parts?.note && <p className="panel-note">{e.parts.note}</p>}
+        {e.parts?.note && (
+          <p className="panel-note">
+            <ArticleText text={e.parts.note} />
+          </p>
+        )}
         <ul className="related-list">
           {e.related.length ? (
             e.related.map((r) => (
               <li key={r.word + r.relation}>
                 <span className="related-rel">{r.relation}</span>
                 <strong>
-                  {r.article ? `${r.article} ` : ''}
-                  {r.word}
+                  <ColoredLemma article={r.article} word={r.word} />
                 </strong>
                 <span className="related-zh">{r.translation}</span>
               </li>
@@ -421,15 +497,21 @@ function PracticeCard({
     // flash meaning
     frontExtra = (
       <h2 className="lemma">
-        {word.article && <span className="article">{word.article}</span>}
+        {word.article && (
+          <span className={genderClass[word.article]}>{word.article}</span>
+        )}
         <span className="word">{word.word}</span>
       </h2>
     )
     backExtra = (
       <>
         <p className="translation">{word.translation}</p>
-        <p className="example-de">{word.example}</p>
-        <p className="example-zh">{word.exampleTranslation}</p>
+        <p className="example-de">
+          <ArticleText text={word.example} />
+        </p>
+        <p className="example-zh">
+          <ArticleText text={word.exampleTranslation} />
+        </p>
       </>
     )
   }
@@ -445,7 +527,7 @@ function PracticeCard({
         {mode !== 'flash' ? (
           <h2 className="lemma">
             {word.article && mode !== 'verb' && (
-              <span className="article">{word.article}</span>
+              <span className={genderClass[word.article]}>{word.article}</span>
             )}
             <span className="word">{word.word}</span>
           </h2>

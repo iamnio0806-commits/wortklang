@@ -637,6 +637,7 @@ select {
 }
 
 .article {
+  /* kept for legacy; prefer .gender-der/die/das */
   color: var(--fir);
   font-weight: 500;
 }
@@ -675,18 +676,30 @@ select {
 }
 
 .meta dd.gender-der,
-.badge.gender-der {
+.badge.gender-der,
+.gender-der {
   color: var(--der);
+  font-weight: 700;
 }
 
 .meta dd.gender-die,
-.badge.gender-die {
+.badge.gender-die,
+.gender-die {
   color: var(--die);
+  font-weight: 700;
 }
 
 .meta dd.gender-das,
-.badge.gender-das {
+.badge.gender-das,
+.gender-das {
   color: var(--das);
+  font-weight: 700;
+}
+
+.lemma .gender-der,
+.lemma .gender-die,
+.lemma .gender-das {
+  font-weight: 500;
 }
 
 .badge {
