@@ -13,6 +13,7 @@ import {
 } from './data/grammar'
 import { RichText } from './lib/richText'
 import { LinkedGermanText } from './lib/LinkedGermanText'
+import { scoreTextFields } from './lib/search'
 import type { VocabHit } from './lib/vocabIndex'
 import { speakGerman, stopSpeaking } from './lib/speech'
 
@@ -453,27 +454,29 @@ export default function GrammarView({
   }, [learned])
 
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase()
-    return grammarTopics.filter((t) => {
+    const q = query.trim()
+    const pool = grammarTopics.filter((t) => {
       if (levelFilter !== '全部' && t.level !== levelFilter) return false
       if (category !== '全部' && t.category !== category) return false
       if (hideLearned && learned.has(t.id)) return false
-      if (!q) return true
-      const hay = [
-        t.title,
-        t.titleDe,
-        t.summary,
-        t.category,
-        t.level,
-        ...t.points,
-        ...t.tips,
-        ...t.examples.map((e) => `${e.de} ${e.zh}`),
-        ...t.exercises.map((e) => e.prompt),
-      ]
-        .join(' ')
-        .toLowerCase()
-      return hay.includes(q)
+      return true
     })
+    if (!q) return pool
+    return pool
+      .map((t) => ({
+        t,
+        score: scoreTextFields(q, {
+          primary: [t.title, t.titleDe, t.id],
+          secondary: [t.summary, t.category, ...t.points, ...t.tips],
+          weak: [
+            ...t.examples.map((e) => `${e.de} ${e.zh}`),
+            ...t.exercises.map((e) => e.prompt),
+          ],
+        }),
+      }))
+      .filter((x) => x.score > 0)
+      .sort((a, b) => b.score - a.score || a.t.title.localeCompare(b.t.title, 'zh-Hant'))
+      .map((x) => x.t)
   }, [levelFilter, category, query, hideLearned, learned])
 
   useEffect(() => {
@@ -580,7 +583,7 @@ export default function GrammarView({
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="搜尋文法主題、規則或例句…"
+            placeholder="搜尋主題名稱或德文標題…"
             type="search"
           />
         </label>

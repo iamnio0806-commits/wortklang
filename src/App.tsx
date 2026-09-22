@@ -22,6 +22,7 @@ import {
 } from './lib/richText'
 import { LinkedGermanText } from './lib/LinkedGermanText'
 import type { VocabHit } from './lib/vocabIndex'
+import { searchVocabulary } from './lib/search'
 import { ensureVoicesLoaded, speakGerman, stopSpeaking } from './lib/speech'
 import GrammarView from './GrammarView'
 import ArticlesIntro from './ArticlesIntro'
@@ -666,8 +667,8 @@ export default function App() {
   }, [learned])
 
   const baseFiltered = useMemo(() => {
-    const q = query.trim().toLowerCase()
-    return vocabulary.filter((w) => {
+    const q = query.trim()
+    const pool = vocabulary.filter((w) => {
       if (levelFilter !== '全部' && w.level !== levelFilter) return false
       if (hideLearned && learned.has(w.id)) return false
       if (category !== '全部' && w.category !== category) return false
@@ -679,21 +680,9 @@ export default function App() {
       } else if (gender === '無冠詞' && w.article !== null) {
         return false
       }
-      if (!q) return true
-      const hay = [
-        w.word,
-        w.article ?? '',
-        w.translation,
-        w.example,
-        w.exampleTranslation,
-        w.plural ?? '',
-        w.level,
-        w.category,
-      ]
-        .join(' ')
-        .toLowerCase()
-      return hay.includes(q)
+      return true
     })
+    return searchVocabulary(pool, q)
   }, [query, category, gender, levelFilter, hideLearned, learned, wordType])
 
   // Mode-specific pool
@@ -1030,7 +1019,7 @@ export default function App() {
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="搜尋德文、中文或例句…"
+            placeholder="搜單字：Haus、das Haus、房子、wohnen…"
             type="search"
           />
         </label>
