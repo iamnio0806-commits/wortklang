@@ -12,6 +12,8 @@ import {
   type GrammarTopic,
 } from './data/grammar'
 import { RichText } from './lib/richText'
+import { LinkedGermanText } from './lib/LinkedGermanText'
+import type { VocabHit } from './lib/vocabIndex'
 import { speakGerman, stopSpeaking } from './lib/speech'
 
 type LevelFilter = GrammarLevel | '全部'
@@ -296,6 +298,7 @@ function TopicDetail({
   onNext,
   positionLabel,
   onOpenRelated,
+  onOpenWord,
 }: {
   topic: GrammarTopic
   learned: boolean
@@ -305,6 +308,7 @@ function TopicDetail({
   onNext: () => void
   positionLabel: string
   onOpenRelated: (id: string) => void
+  onOpenWord: (hit: VocabHit) => void
 }) {
   const relatedTopics = topic.related
     .map((id) => grammarTopics.find((t) => t.id === id))
@@ -372,12 +376,17 @@ function TopicDetail({
 
       <section className="grammar-section">
         <h3>例句</h3>
+        <p className="example-hint">點德文詞可跳到單字頁</p>
         <ul className="grammar-examples">
           {topic.examples.map((ex) => (
             <li key={ex.de}>
               <div className="ex-row">
                 <p className="ex-de">
-                  <RichText text={ex.de} />
+                  <LinkedGermanText
+                    text={ex.de}
+                    preferLevel={topic.level}
+                    onOpenWord={onOpenWord}
+                  />
                 </p>
                 <SpeakButton label="聽例句" text={ex.de} />
               </div>
@@ -412,7 +421,11 @@ function TopicDetail({
   )
 }
 
-export default function GrammarView() {
+export default function GrammarView({
+  onOpenWord,
+}: {
+  onOpenWord: (hit: VocabHit) => void
+}) {
   const [levelFilter, setLevelFilter] = useState<LevelFilter>('A1')
   const [category, setCategory] = useState<string>('全部')
   const [query, setQuery] = useState('')
@@ -640,6 +653,7 @@ export default function GrammarView() {
             onPrev={() => go(-1)}
             onNext={() => go(1)}
             positionLabel={`${selectedIndex + 1} / ${filtered.length}`}
+            onOpenWord={onOpenWord}
             onOpenRelated={(id) => {
               stopSpeaking()
               const topic = grammarTopics.find((t) => t.id === id)

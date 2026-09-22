@@ -20,6 +20,8 @@ import {
   PosLabel,
   RichText,
 } from './lib/richText'
+import { LinkedGermanText } from './lib/LinkedGermanText'
+import type { VocabHit } from './lib/vocabIndex'
 import { ensureVoicesLoaded, speakGerman, stopSpeaking } from './lib/speech'
 import GrammarView from './GrammarView'
 import './App.css'
@@ -276,6 +278,7 @@ function WordDetail({
   onPrev,
   onNext,
   positionLabel,
+  onOpenWord,
 }: {
   word: VocabWord
   learned: boolean
@@ -283,6 +286,7 @@ function WordDetail({
   onPrev: () => void
   onNext: () => void
   positionLabel: string
+  onOpenWord: (hit: VocabHit) => void
 }) {
   const e = enrich(word)
   const lemma = word.article ? `${word.article} ${word.word}` : word.word
@@ -349,8 +353,15 @@ function WordDetail({
 
       <section className="example">
         <h3>例句</h3>
+        <p className="example-hint">點德文詞可跳到該單字</p>
         <p className="example-de">
-          <ArticleText text={word.example} />
+          <LinkedGermanText
+            text={word.example}
+            preferLevel={word.level}
+            preferId={word.id}
+            currentId={word.id}
+            onOpenWord={onOpenWord}
+          />
         </p>
         <p className="example-zh">
           <ArticleText text={word.exampleTranslation} />
@@ -375,6 +386,7 @@ function PracticeCard({
   onNext,
   onMark,
   positionLabel,
+  onOpenWord,
 }: {
   mode: Mode
   word: VocabWord
@@ -384,6 +396,7 @@ function PracticeCard({
   onNext: () => void
   onMark: () => void
   positionLabel: string
+  onOpenWord: (hit: VocabHit) => void
 }) {
   const e = enrich(word)
   const lemma = word.article ? `${word.article} ${word.word}` : word.word
@@ -493,7 +506,13 @@ function PracticeCard({
       <>
         <p className="translation">{word.translation}</p>
         <p className="example-de">
-          <ArticleText text={word.example} />
+          <LinkedGermanText
+            text={word.example}
+            preferLevel={word.level}
+            preferId={word.id}
+            currentId={word.id}
+            onOpenWord={onOpenWord}
+          />
         </p>
         <p className="example-zh">
           <ArticleText text={word.exampleTranslation} />
@@ -707,6 +726,26 @@ export default function App() {
     goFlash(1)
   }
 
+  const openWordFromLink = (hit: VocabHit) => {
+    stopSpeaking()
+    setSection('vocab')
+    setMode('browse')
+    setLevelFilter(hit.level)
+    setCategory('全部')
+    setWordType('全部')
+    setGender('全部')
+    setQuery('')
+    setHideLearned(false)
+    setSelectedId(hit.id)
+    // scroll detail into view after paint
+    requestAnimationFrame(() => {
+      document.querySelector('.detail')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    })
+  }
+
   return (
     <div className="app">
       <div className="atmosphere" aria-hidden />
@@ -781,7 +820,7 @@ export default function App() {
       </header>
 
       {section === 'grammar' ? (
-        <GrammarView />
+        <GrammarView onOpenWord={openWordFromLink} />
       ) : (
       <>
       <section className="level-board" aria-label="等級進度">
@@ -956,6 +995,7 @@ export default function App() {
             onPrev={() => goBrowse(-1)}
             onNext={() => goBrowse(1)}
             positionLabel={`${selectedIndex + 1} / ${filtered.length}`}
+            onOpenWord={openWordFromLink}
           />
         </main>
       )}
@@ -972,6 +1012,7 @@ export default function App() {
               onNext={() => goFlash(1)}
               onMark={() => markAndNext(flashWord.id)}
               positionLabel={`${(flashIndex % filtered.length) + 1} / ${filtered.length}`}
+              onOpenWord={openWordFromLink}
             />
           ) : (
             <p className="empty">
