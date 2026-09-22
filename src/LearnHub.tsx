@@ -12,7 +12,6 @@ import {
 import {
   getVocabPathDay,
   getVocabPathWeek,
-  resolveVocabDay,
   VOCAB_PATH_META,
   VOCAB_PATH_NOTE,
   VOCAB_PATH_PHASES,
@@ -30,7 +29,6 @@ import {
 } from './data/stories'
 import {
   countDue,
-  enrollCard,
   formatDueLabel,
   listDueIds,
   reviewCard,
@@ -126,16 +124,12 @@ export default function LearnHub({
 
   const dueIds = useMemo(() => listDueIds(srsMap), [srsMap])
   const dueCount = countDue(srsMap)
-  const knownIds = useMemo(() => new Set(Object.keys(srsMap)), [srsMap])
   const todayVp =
     getVocabPathDay(vpWeek, vpDay) ??
     getVocabPathDay(1, 1) ??
     VOCAB_PATH_WEEKS[0].days[0]
   const todayWeek = getVocabPathWeek(vpWeek) ?? VOCAB_PATH_WEEKS[0]
-  const todayResolved = useMemo(
-    () => resolveVocabDay(todayVp, knownIds),
-    [todayVp, knownIds],
-  )
+  const todayVocabIds = todayVp.vocabIds
 
   const vpProgress = useMemo(() => {
     const totalDays = VOCAB_PATH_META.weeks * 7
@@ -170,13 +164,6 @@ export default function LearnHub({
     const next = reviewCard(srsMap, id, grade)
     setSrsMap(next)
     saveSrsMap(next)
-  }
-
-  function enrollMany(ids: string[]) {
-    let map = srsMap
-    for (const id of ids) map = enrollCard(map, id)
-    setSrsMap(map)
-    saveSrsMap(map)
   }
 
   function goNextVpDay() {
@@ -228,9 +215,7 @@ export default function LearnHub({
           srsMap={srsMap}
           vpDay={todayVp}
           vpWeek={todayWeek}
-          resolvedIds={todayResolved.ids}
-          skippedCount={todayResolved.skippedIds.length}
-          shortfall={todayResolved.shortfall}
+          vocabIds={todayVocabIds}
           vpDone={vpDone}
           onGrade={gradeDue}
           onOpenVocabIds={onOpenVocabIds}
@@ -238,7 +223,6 @@ export default function LearnHub({
           onOpenReading={onOpenReading}
           onGoVocabPath={() => setTab('vocabPath')}
           onToggleVp={() => toggleVpDone(vpWeek, vpDay)}
-          onEnroll={enrollMany}
           onNextDay={goNextVpDay}
         />
       )}
@@ -249,12 +233,10 @@ export default function LearnHub({
           day={vpDay}
           setDay={setVpDay}
           done={vpDone}
-          knownIds={knownIds}
           onToggle={toggleVpDone}
           onOpenVocabIds={onOpenVocabIds}
           onOpenGrammar={onOpenGrammar}
           onOpenReading={onOpenReading}
-          onEnroll={enrollMany}
           progress={vpProgress}
         />
       )}
@@ -274,7 +256,6 @@ export default function LearnHub({
             )
             setTab('stories')
           }}
-          onEnroll={enrollMany}
         />
       )}
       {tab === 'stories' && <StoriesPanel onOpenWord={onOpenWord} />}
@@ -288,9 +269,7 @@ function TodayReview({
   srsMap,
   vpDay,
   vpWeek,
-  resolvedIds,
-  skippedCount,
-  shortfall,
+  vocabIds,
   vpDone,
   onGrade,
   onOpenVocabIds,
@@ -298,16 +277,13 @@ function TodayReview({
   onOpenReading,
   onGoVocabPath,
   onToggleVp,
-  onEnroll,
   onNextDay,
 }: {
   dueIds: string[]
   srsMap: Record<string, SrsCard>
   vpDay: VocabPathDay
   vpWeek: VocabPathWeek
-  resolvedIds: string[]
-  skippedCount: number
-  shortfall: number
+  vocabIds: string[]
   vpDone: Set<string>
   onGrade: (id: string, g: SrsGrade) => void
   onOpenVocabIds: (ids: string[]) => void
@@ -315,7 +291,6 @@ function TodayReview({
   onOpenReading: (id: string) => void
   onGoVocabPath: () => void
   onToggleVp: () => void
-  onEnroll: (ids: string[]) => void
   onNextDay: () => void
 }) {
   const [idx, setIdx] = useState(0)
@@ -345,24 +320,22 @@ function TodayReview({
           {vpDay.kind === 'review' ? '今日：複習日' : `今日新字：${vpDay.titleZh}`}
         </h2>
         <p className="exam-card-meta">{vpWeek.focusZh}</p>
-        <p className="exam-meta">{vpDay.tipZh}</p>
-        {skippedCount > 0 && (
-          <p className="exam-meta">
-            已自動跳過 {skippedCount} 個已學會的字，並往後補齊。
-          </p>
-        )}
-        {shortfall > 0 && (
-          <p className="exam-meta">路徑尾端生字不足 {shortfall} 個（幾乎學完了）。</p>
-        )}
-        {resolvedIds.length > 0 && (
+        <p className="exam-meta">
+          {vpDay.kind === 'learn'
+            ? `今日 ${vocabIds.length} 個字。點進去學；學會了再按「標記已學會（排程複習）」——系統不會自動拿掉。`
+            : vpDay.tipZh}
+        </p>
+        {vocabIds.length > 0 && (
           <ul className="learn-vocab-preview">
-            {resolvedIds.map((id) => {
+            {vocabIds.map((id) => {
               const w = vocabById(id)
+              const learned = Boolean(srsMap[id])
               return (
                 <li key={id}>
                   {w
                     ? `${w.article ? w.article + ' ' : ''}${w.word} — ${w.translation}`
                     : id}
+                  {learned ? ' ✓' : ''}
                 </li>
               )
             })}
@@ -372,15 +345,12 @@ function TodayReview({
           <button
             type="button"
             className="primary"
-            disabled={!resolvedIds.length}
-            onClick={() => {
-              onEnroll(resolvedIds)
-              onOpenVocabIds(resolvedIds)
-            }}
+            disabled={!vocabIds.length}
+            onClick={() => onOpenVocabIds(vocabIds)}
           >
             {vpDay.kind === 'learn'
-              ? `① 去學這 ${resolvedIds.length} 個字`
-              : `① 單字複習（${resolvedIds.length}）`}
+              ? `① 去學這 ${vocabIds.length} 個字`
+              : `① 單字複習（${vocabIds.length}）`}
           </button>
           {vpDay.grammarId && (
             <button
@@ -436,10 +406,11 @@ function TodayReview({
       <section className="panel">
         <h3>SRS 到期複習（艾賓浩斯排程）</h3>
         <p className="panel-note">
-          建議順序：單字 → 文法／閱讀 → 再打到期卡。
+          只有你按「標記已學會」的字才會進複習排程。建議：單字 → 文法／閱讀 →
+          再打到期卡。
         </p>
         {!word ? (
-          <p className="empty">目前沒有到期單字。去學今日新字並標記已學會吧。</p>
+          <p className="empty">目前沒有到期單字。學會新字後記得手動標記已學會。</p>
         ) : (
           <div className="srs-card">
             <p className="exam-meta">
@@ -493,12 +464,10 @@ function VocabPathPanel({
   day,
   setDay,
   done,
-  knownIds,
   onToggle,
   onOpenVocabIds,
   onOpenGrammar,
   onOpenReading,
-  onEnroll,
   progress,
 }: {
   week: number
@@ -506,17 +475,14 @@ function VocabPathPanel({
   day: number
   setDay: (n: number) => void
   done: Set<string>
-  knownIds: Set<string>
   onToggle: (week: number, day: number) => void
   onOpenVocabIds: (ids: string[]) => void
   onOpenGrammar: (id: string) => void
   onOpenReading: (id: string) => void
-  onEnroll: (ids: string[]) => void
   progress: { doneDays: number; totalDays: number; pct: number; enrolled: number }
 }) {
   const w = getVocabPathWeek(week) ?? VOCAB_PATH_WEEKS[0]
   const d = w.days.find((x) => x.day === day) ?? w.days[0]
-  const resolved = useMemo(() => resolveVocabDay(d, knownIds), [d, knownIds])
   const weekDone = w.days.filter((x) => done.has(vpTaskId(w.week, x.day))).length
 
   return (
@@ -624,15 +590,14 @@ function VocabPathPanel({
             </strong>
           </span>
         </label>
-        <p className="exam-meta">{d.tipZh}</p>
-        {resolved.skippedIds.length > 0 && (
-          <p className="exam-meta">
-            已跳過 {resolved.skippedIds.length} 個已學會，改補後面的生字。
-          </p>
-        )}
-        {resolved.ids.length > 0 && (
+        <p className="exam-meta">
+          {d.kind === 'learn'
+            ? '清單固定顯示今日字；學會後請自己按「標記已學會」。'
+            : d.tipZh}
+        </p>
+        {d.vocabIds.length > 0 && (
           <ul className="learn-vocab-preview">
-            {resolved.ids.map((id) => {
+            {d.vocabIds.map((id) => {
               const word = vocabById(id)
               return (
                 <li key={id}>
@@ -648,15 +613,12 @@ function VocabPathPanel({
           <button
             type="button"
             className="primary"
-            disabled={!resolved.ids.length}
-            onClick={() => {
-              onEnroll(resolved.ids)
-              onOpenVocabIds(resolved.ids)
-            }}
+            disabled={!d.vocabIds.length}
+            onClick={() => onOpenVocabIds(d.vocabIds)}
           >
             {d.kind === 'learn'
-              ? `① 單字 SRS（${resolved.ids.length}）`
-              : `① 單字複習（${resolved.ids.length}）`}
+              ? `① 去學這 ${d.vocabIds.length} 個字`
+              : `① 單字複習（${d.vocabIds.length}）`}
           </button>
           {d.grammarId && (
             <button
@@ -770,7 +732,6 @@ function RoadmapPanel({
   onOpenGrammar,
   onOpenReading,
   onOpenStory,
-  onEnroll,
 }: {
   day: number
   setDay: (n: number) => void
@@ -780,7 +741,6 @@ function RoadmapPanel({
   onOpenGrammar: (id: string) => void
   onOpenReading: (id: string) => void
   onOpenStory: (seriesId: string, chapterId: string) => void
-  onEnroll: (ids: string[]) => void
 }) {
   const d = ROADMAP_DAYS.find((x) => x.day === day) ?? ROADMAP_DAYS[0]
   const doneCount = d.tasks.filter((t) => done.has(t.id)).length
@@ -852,10 +812,7 @@ function RoadmapPanel({
             )}
             <TaskActions
               task={t}
-              onOpenVocabIds={(ids) => {
-                onEnroll(ids)
-                onOpenVocabIds(ids)
-              }}
+              onOpenVocabIds={onOpenVocabIds}
               onOpenGrammar={onOpenGrammar}
               onOpenReading={onOpenReading}
               onOpenStory={onOpenStory}

@@ -1,5 +1,5 @@
 {
-  "note": "兩年路徑：單字為主（A1–A2 每天 8；B1 起 12；B2 每天 16，約 500 多天達 B2），學習日另配 1 篇閱讀；週一／三／五再加 1 則文法。已學會單字會自動跳過並往後補。第 7 天複習 SRS＋本週文法／閱讀。",
+  "note": "兩年路徑：單字為主（A1–A2 每天 8；B1 起 12；B2 每天 16，約 500 多天達 B2），學習日另配 1 篇閱讀；週一／三／五再加 1 則文法。單字清單不會自動消失——學會了請自己按「標記已學會」才進 SRS。第 7 天複習到期卡＋本週文法／閱讀。",
   "meta": {
     "weeks": 104,
     "studyDaysPerWeek": 6,
@@ -6759,7 +6759,7 @@
             "bruder",
             "schwester"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-alphabet-pronunciation",
           "grammarTitleZh": "字母與發音要點",
           "readingId": "uebung-01",
@@ -6783,7 +6783,7 @@
             "junge",
             "maedchen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-02",
           "readingTitleZh": "早安對話"
         },
@@ -6805,7 +6805,7 @@
             "sein",
             "haben"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-articles-nom",
           "grammarTitleZh": "定冠詞與不定冠詞（主格）",
           "readingId": "uebung-03",
@@ -6829,7 +6829,7 @@
             "duerfen",
             "sollen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-04",
           "readingTitleZh": "Mia 的訊息"
         },
@@ -6851,7 +6851,7 @@
             "verstehen",
             "wohnen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-noun-plural",
           "grammarTitleZh": "名詞複數常見型",
           "readingId": "uebung-05",
@@ -6875,7 +6875,7 @@
             "tuer",
             "fenster"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-06",
           "readingTitleZh": "在超市"
         },
@@ -6982,7 +6982,7 @@
             "handy",
             "telefon"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-personal-pronouns",
           "grammarTitleZh": "人稱代詞主格",
           "readingId": "uebung-07",
@@ -7006,7 +7006,7 @@
             "dorf",
             "land"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-08",
           "readingTitleZh": "現在幾點？"
         },
@@ -7028,7 +7028,7 @@
             "weg",
             "park"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-sein-haben",
           "grammarTitleZh": "sein 與 haben（現在時）",
           "readingId": "uebung-09",
@@ -7052,7 +7052,7 @@
             "kaffee",
             "tee"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-10",
           "readingTitleZh": "公車站牌"
         },
@@ -7074,7 +7074,7 @@
             "kaese",
             "ei"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-prasens-regular",
           "grammarTitleZh": "規則動詞現在時",
           "readingId": "uebung-11",
@@ -7098,7 +7098,7 @@
             "abendessen",
             "restaurant"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-12",
           "readingTitleZh": "我的一天"
         },
@@ -7205,7 +7205,7 @@
             "fahrkarte",
             "bahnhof"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-prasens-irregular",
           "grammarTitleZh": "常見不規則現在時（母音變化）",
           "readingId": "uebung-13",
@@ -7229,7 +7229,7 @@
             "jahr",
             "uhr"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-14",
           "readingTitleZh": "我生病了"
         },
@@ -7251,7 +7251,7 @@
             "termin_2",
             "eins"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-word-order",
           "grammarTitleZh": "陳述句語序：動詞第二位",
           "readingId": "uebung-15",
@@ -7275,7 +7275,7 @@
             "acht",
             "neun"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-16",
           "readingTitleZh": "問路"
         },
@@ -7297,7 +7297,7 @@
             "euro",
             "cent"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-questions",
           "grammarTitleZh": "是非問句與 W 問句",
           "readingId": "uebung-17",
@@ -7321,7 +7321,7 @@
             "sehen",
             "fragen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-18",
           "readingTitleZh": "多少錢？"
         },
@@ -7428,7 +7428,7 @@
             "geben",
             "nehmen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-negation",
           "grammarTitleZh": "nicht 與 kein",
           "readingId": "uebung-19",
@@ -7452,7 +7452,7 @@
             "schlafen",
             "aufstehen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-20",
           "readingTitleZh": "我的公寓"
         },
@@ -7474,7 +7474,7 @@
             "klein",
             "neu"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-accusative",
           "grammarTitleZh": "第四格（Akkusativ）入門",
           "readingId": "uebung-21",
@@ -7498,7 +7498,7 @@
             "blau",
             "gruen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-22",
           "readingTitleZh": "候診室"
         },
@@ -7520,7 +7520,7 @@
             "muede",
             "krank"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-possessive",
           "grammarTitleZh": "所有格冠詞（主格／第四格）",
           "readingId": "uebung-23",
@@ -7544,7 +7544,7 @@
             "billig",
             "richtig"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-24",
           "readingTitleZh": "我晚點到"
         },
@@ -7651,7 +7651,7 @@
             "grossmutter",
             "grossvater"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-modal-basic",
           "grammarTitleZh": "情態動詞入門",
           "readingId": "uebung-25",
@@ -7675,7 +7675,7 @@
             "fraeulein",
             "nachbar"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-26",
           "readingTitleZh": "打電話"
         },
@@ -7697,7 +7697,7 @@
             "geburtstag",
             "hochzeit"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-separable",
           "grammarTitleZh": "可分動詞（現在時）",
           "readingId": "uebung-27",
@@ -7721,7 +7721,7 @@
             "schlafzimmer",
             "wohnzimmer"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-28",
           "readingTitleZh": "週末"
         },
@@ -7743,7 +7743,7 @@
             "keller",
             "dachboden"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-imperative",
           "grammarTitleZh": "命令式入門",
           "readingId": "uebung-29",
@@ -7767,7 +7767,7 @@
             "boden",
             "decke"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-30",
           "readingTitleZh": "道謝"
         },
@@ -7874,7 +7874,7 @@
             "postleitzahl",
             "gegend"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-time-numbers",
           "grammarTitleZh": "數字、時間與日期",
           "readingId": "uebung-31",
@@ -7898,7 +7898,7 @@
             "spiegel",
             "bild"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-32",
           "readingTitleZh": "早餐"
         },
@@ -7920,7 +7920,7 @@
             "radio",
             "stereoanlage"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-local-prep",
           "grammarTitleZh": "地點介詞入門（in/an/auf/zu…）",
           "readingId": "uebung-33",
@@ -7944,7 +7944,7 @@
             "zahnbuerste",
             "zahncreme"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-34",
           "readingTitleZh": "你叫什麼？"
         },
@@ -7966,7 +7966,7 @@
             "kopf",
             "gesicht"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-adjectives-pred",
           "grammarTitleZh": "表語形容詞（不加字尾）",
           "readingId": "uebung-35",
@@ -7990,7 +7990,7 @@
             "hals",
             "schulter"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-36",
           "readingTitleZh": "語言"
         },
@@ -8097,7 +8097,7 @@
             "ruecken",
             "herz"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-coord-conj",
           "grammarTitleZh": "對等連接詞",
           "readingId": "uebung-37",
@@ -8121,7 +8121,7 @@
             "medizin",
             "tablette"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-38",
           "readingTitleZh": "廁所標示"
         },
@@ -8143,7 +8143,7 @@
             "jacke",
             "mantel"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-greeting-intro",
           "grammarTitleZh": "打招呼與自我介紹句型",
           "readingId": "uebung-39",
@@ -8167,7 +8167,7 @@
             "socke",
             "strumpf"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-40",
           "readingTitleZh": "今天下午"
         },
@@ -8189,7 +8189,7 @@
             "rucksack",
             "groesse"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-alphabet-pronunciation",
           "grammarTitleZh": "字母與發音要點",
           "readingId": "uebung-41",
@@ -8213,7 +8213,7 @@
             "text",
             "wort"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-42",
           "readingTitleZh": "你幾歲？"
         },
@@ -8320,7 +8320,7 @@
             "bank",
             "post"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-articles-nom",
           "grammarTitleZh": "定冠詞與不定冠詞（主格）",
           "readingId": "uebung-43",
@@ -8344,7 +8344,7 @@
             "nirgends",
             "links"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-44",
           "readingTitleZh": "這裡有人嗎？"
         },
@@ -8366,7 +8366,7 @@
             "drin",
             "draussen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-noun-plural",
           "grammarTitleZh": "名詞複數常見型",
           "readingId": "uebung-45",
@@ -8390,7 +8390,7 @@
             "alles",
             "nichts"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-46",
           "readingTitleZh": "照片"
         },
@@ -8412,7 +8412,7 @@
             "kreditkarte",
             "angebot"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-personal-pronouns",
           "grammarTitleZh": "人稱代詞主格",
           "readingId": "uebung-47",
@@ -8436,7 +8436,7 @@
             "hobby",
             "sport"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-48",
           "readingTitleZh": "垃圾分類"
         },
@@ -8543,7 +8543,7 @@
             "musik",
             "lied"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-sein-haben",
           "grammarTitleZh": "sein 與 haben（現在時）",
           "readingId": "a1-49",
@@ -8567,7 +8567,7 @@
             "internet",
             "e_mail"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-50",
           "readingTitleZh": "我在德國的日常"
         },
@@ -8589,7 +8589,7 @@
             "spanien",
             "england"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-prasens-regular",
           "grammarTitleZh": "規則動詞現在時",
           "readingId": "a1-51",
@@ -8613,7 +8613,7 @@
             "berlin",
             "muenchen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-52",
           "readingTitleZh": "在藥局"
         },
@@ -8635,7 +8635,7 @@
             "franzoesisch",
             "spanisch"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-prasens-irregular",
           "grammarTitleZh": "常見不規則現在時（母音變化）",
           "readingId": "a1-53",
@@ -8659,7 +8659,7 @@
             "kommode",
             "nachttisch"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-54",
           "readingTitleZh": "健身房公告"
         },
@@ -8766,7 +8766,7 @@
             "kerze",
             "streichholz"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-word-order",
           "grammarTitleZh": "陳述句語序：動詞第二位",
           "readingId": "a1-55",
@@ -8790,7 +8790,7 @@
             "muellbeutel",
             "roman"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-56",
           "readingTitleZh": "德文課詢問"
         },
@@ -8812,7 +8812,7 @@
             "marke",
             "absender"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-questions",
           "grammarTitleZh": "是非問句與 W 問句",
           "readingId": "a1-57",
@@ -8836,7 +8836,7 @@
             "langeweile",
             "witz"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-58",
           "readingTitleZh": "洗衣房規則"
         },
@@ -8858,7 +8858,7 @@
             "sache",
             "ding"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-negation",
           "grammarTitleZh": "nicht 與 kein",
           "readingId": "a1-59",
@@ -8882,7 +8882,7 @@
             "liste",
             "plan_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-60",
           "readingTitleZh": "請一天假"
         },
@@ -8989,7 +8989,7 @@
             "thema",
             "meinung_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-accusative",
           "grammarTitleZh": "第四格（Akkusativ）入門",
           "readingId": "a1-61",
@@ -9013,7 +9013,7 @@
             "information_2",
             "erklaerung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-62",
           "readingTitleZh": "宿舍廚房輪值"
         },
@@ -9035,7 +9035,7 @@
             "quadrat",
             "dreieck"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-possessive",
           "grammarTitleZh": "所有格冠詞（主格／第四格）",
           "readingId": "a1-63",
@@ -9059,7 +9059,7 @@
             "fantasie",
             "realitaet"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-64",
           "readingTitleZh": "報名城市導覽"
         },
@@ -9081,7 +9081,7 @@
             "hunger",
             "durst"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-modal-basic",
           "grammarTitleZh": "情態動詞入門",
           "readingId": "a1-65",
@@ -9105,7 +9105,7 @@
             "schwein",
             "rind"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-66",
           "readingTitleZh": "印表機故障"
         },
@@ -9212,7 +9212,7 @@
             "traube",
             "erdbeere"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-separable",
           "grammarTitleZh": "可分動詞（現在時）",
           "readingId": "a1-67",
@@ -9236,7 +9236,7 @@
             "zwiebel",
             "knoblauch"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-68",
           "readingTitleZh": "延長借期"
         },
@@ -9258,7 +9258,7 @@
             "salz",
             "pfeffer"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-imperative",
           "grammarTitleZh": "命令式入門",
           "readingId": "a1-69",
@@ -9282,7 +9282,7 @@
             "kuchen",
             "torte"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-70",
           "readingTitleZh": "歡迎帶狗"
         },
@@ -9304,7 +9304,7 @@
             "cola",
             "mineralwasser"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-time-numbers",
           "grammarTitleZh": "數字、時間與日期",
           "readingId": "a1-71",
@@ -9328,7 +9328,7 @@
             "gabel",
             "loeffel"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-72",
           "readingTitleZh": "換尺寸"
         },
@@ -9435,7 +9435,7 @@
             "gramm",
             "liter"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-local-prep",
           "grammarTitleZh": "地點介詞入門（in/an/auf/zu…）",
           "readingId": "a1-73",
@@ -9459,7 +9459,7 @@
             "kellner",
             "kellnerin"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-74",
           "readingTitleZh": "游泳池公告"
         },
@@ -9481,7 +9481,7 @@
             "nachmittag",
             "sekunde"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-adjectives-pred",
           "grammarTitleZh": "表語形容詞（不加字尾）",
           "readingId": "a1-75",
@@ -9505,7 +9505,7 @@
             "donnerstag",
             "freitag"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-76",
           "readingTitleZh": "缺交作業"
         },
@@ -9527,7 +9527,7 @@
             "mai",
             "juni"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-coord-conj",
           "grammarTitleZh": "對等連接詞",
           "readingId": "a1-77",
@@ -9551,7 +9551,7 @@
             "heute",
             "morgen_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-78",
           "readingTitleZh": "停車場關閉"
         },
@@ -9658,7 +9658,7 @@
             "immer",
             "oft"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-greeting-intro",
           "grammarTitleZh": "打招呼與自我介紹句型",
           "readingId": "a1-79",
@@ -9682,7 +9682,7 @@
             "moment",
             "zukunft"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-80",
           "readingTitleZh": "聚會取消"
         },
@@ -9704,7 +9704,7 @@
             "weihnachten",
             "ostern"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-alphabet-pronunciation",
           "grammarTitleZh": "字母與發音要點",
           "readingId": "a1-81",
@@ -9728,7 +9728,7 @@
             "siebzehn",
             "achtzehn"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-82",
           "readingTitleZh": "影印價格"
         },
@@ -9750,7 +9750,7 @@
             "achtzig",
             "neunzig"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-articles-nom",
           "grammarTitleZh": "定冠詞與不定冠詞（主格）",
           "readingId": "a1-83",
@@ -9774,7 +9774,7 @@
             "letzte",
             "laufen_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a1-84",
           "readingTitleZh": "預約 3A 會議室"
         },
@@ -9881,7 +9881,7 @@
             "steigen",
             "umsteigen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-noun-plural",
           "grammarTitleZh": "名詞複數常見型",
           "readingId": "a1-85",
@@ -9905,7 +9905,7 @@
             "waschen",
             "duschen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-01",
           "readingTitleZh": "哈囉，我是 Anna"
         },
@@ -9927,7 +9927,7 @@
             "sagen",
             "erzaehlen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-personal-pronouns",
           "grammarTitleZh": "人稱代詞主格",
           "readingId": "uebung-02",
@@ -9951,7 +9951,7 @@
             "stellen",
             "setzen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-03",
           "readingTitleZh": "在咖啡廳"
         },
@@ -9973,7 +9973,7 @@
             "wissen",
             "kennen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-sein-haben",
           "grammarTitleZh": "sein 與 haben（現在時）",
           "readingId": "uebung-04",
@@ -9997,7 +9997,7 @@
             "singen",
             "malen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-05",
           "readingTitleZh": "營業時間"
         },
@@ -10104,7 +10104,7 @@
             "einkaufen",
             "probieren"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-prasens-regular",
           "grammarTitleZh": "規則動詞現在時",
           "readingId": "uebung-06",
@@ -10128,7 +10128,7 @@
             "rufen",
             "telefonieren"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-07",
           "readingTitleZh": "我的家庭"
         },
@@ -10150,7 +10150,7 @@
             "fehlen",
             "weh_tun"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-prasens-irregular",
           "grammarTitleZh": "常見不規則現在時（母音變化）",
           "readingId": "uebung-08",
@@ -10174,7 +10174,7 @@
             "bitten",
             "wuenschen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-09",
           "readingTitleZh": "碰面"
         },
@@ -10196,7 +10196,7 @@
             "buchstabieren",
             "rechnen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-word-order",
           "grammarTitleZh": "陳述句語序：動詞第二位",
           "readingId": "uebung-10",
@@ -10220,7 +10220,7 @@
             "bauen",
             "parken"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-11",
           "readingTitleZh": "在餐廳"
         },
@@ -10327,7 +10327,7 @@
             "aussehen",
             "baden"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-questions",
           "grammarTitleZh": "是非問句與 W 問句",
           "readingId": "uebung-12",
@@ -10351,7 +10351,7 @@
             "decken",
             "empfangen_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-13",
           "readingTitleZh": "天氣"
         },
@@ -10373,7 +10373,7 @@
             "fuehlen_2",
             "fuehren"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-negation",
           "grammarTitleZh": "nicht 與 kein",
           "readingId": "uebung-14",
@@ -10397,7 +10397,7 @@
             "heben",
             "heiraten_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-15",
           "readingTitleZh": "注意告示"
         },
@@ -10419,7 +10419,7 @@
             "lassen",
             "leihen_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-accusative",
           "grammarTitleZh": "第四格（Akkusativ）入門",
           "readingId": "uebung-16",
@@ -10443,7 +10443,7 @@
             "ordnen",
             "packen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-17",
           "readingTitleZh": "我喜歡什麼？"
         },
@@ -10550,7 +10550,7 @@
             "reden",
             "reisen_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-possessive",
           "grammarTitleZh": "所有格冠詞（主格／第四格）",
           "readingId": "uebung-18",
@@ -10574,7 +10574,7 @@
             "schicken_2",
             "schieben"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-19",
           "readingTitleZh": "派對邀請"
         },
@@ -10596,7 +10596,7 @@
             "sinken_2",
             "sparen_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-modal-basic",
           "grammarTitleZh": "情態動詞入門",
           "readingId": "uebung-20",
@@ -10620,7 +10620,7 @@
             "streiten",
             "teilen_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-21",
           "readingTitleZh": "在課堂"
         },
@@ -10642,7 +10642,7 @@
             "umsehen",
             "unterschreiben_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-separable",
           "grammarTitleZh": "可分動詞（現在時）",
           "readingId": "uebung-22",
@@ -10666,7 +10666,7 @@
             "verlassen",
             "verlieren_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-23",
           "readingTitleZh": "外套"
         },
@@ -10773,7 +10773,7 @@
             "vorbereiten_2",
             "vorschlagen_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-imperative",
           "grammarTitleZh": "命令式入門",
           "readingId": "uebung-24",
@@ -10797,7 +10797,7 @@
             "wenden",
             "werfen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-25",
           "readingTitleZh": "職業"
         },
@@ -10819,7 +10819,7 @@
             "zusagen",
             "zusammenarbeiten"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-time-numbers",
           "grammarTitleZh": "數字、時間與日期",
           "readingId": "uebung-26",
@@ -10843,7 +10843,7 @@
             "bunt",
             "haesslich"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-27",
           "readingTitleZh": "圖書館"
         },
@@ -10865,7 +10865,7 @@
             "dick",
             "duenn"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-local-prep",
           "grammarTitleZh": "地點介詞入門（in/an/auf/zu…）",
           "readingId": "uebung-28",
@@ -10889,7 +10889,7 @@
             "voll",
             "leer"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-29",
           "readingTitleZh": "幫忙"
         },
@@ -10996,7 +10996,7 @@
             "froh",
             "gluecklich"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-adjectives-pred",
           "grammarTitleZh": "表語形容詞（不加字尾）",
           "readingId": "uebung-30",
@@ -11020,7 +11020,7 @@
             "geoeffnet",
             "geschlossen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-31",
           "readingTitleZh": "什麼顏色？"
         },
@@ -11042,7 +11042,7 @@
             "lieb",
             "liebe"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-coord-conj",
           "grammarTitleZh": "對等連接詞",
           "readingId": "uebung-32",
@@ -11066,7 +11066,7 @@
             "beide",
             "jeder"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-33",
           "readingTitleZh": "電梯"
         },
@@ -11088,7 +11088,7 @@
             "rechte",
             "starke"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-greeting-intro",
           "grammarTitleZh": "打招呼與自我介紹句型",
           "readingId": "uebung-34",
@@ -11112,7 +11112,7 @@
             "salzige",
             "saure"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-35",
           "readingTitleZh": "清楚嗎？"
         },
@@ -11219,7 +11219,7 @@
             "oeffentliche",
             "private"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-alphabet-pronunciation",
           "grammarTitleZh": "字母與發音要點",
           "readingId": "uebung-36",
@@ -11243,7 +11243,7 @@
             "schiff",
             "station"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-37",
           "readingTitleZh": "在飯店"
         },
@@ -11265,7 +11265,7 @@
             "rezeption",
             "einzelzimmer"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-articles-nom",
           "grammarTitleZh": "定冠詞與不定冠詞（主格）",
           "readingId": "uebung-38",
@@ -11289,7 +11289,7 @@
             "hauptstadt",
             "strand"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-39",
           "readingTitleZh": "你感覺如何？"
         },
@@ -11311,7 +11311,7 @@
             "bruecke",
             "ausflug_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-noun-plural",
           "grammarTitleZh": "名詞複數常見型",
           "readingId": "uebung-40",
@@ -11335,7 +11335,7 @@
             "schuelerin",
             "hochschule"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-41",
           "readingTitleZh": "別忘了"
         },
@@ -11442,7 +11442,7 @@
             "unterricht",
             "pause"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-personal-pronouns",
           "grammarTitleZh": "人稱代詞主格",
           "readingId": "uebung-42",
@@ -11466,7 +11466,7 @@
             "kollegin",
             "chef"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-43",
           "readingTitleZh": "停車場"
         },
@@ -11488,7 +11488,7 @@
             "verkaeuferin",
             "koch"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-sein-haben",
           "grammarTitleZh": "sein 與 haben（現在時）",
           "readingId": "uebung-44",
@@ -11512,7 +11512,7 @@
             "feuerwehr",
             "brieftraeger"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-45",
           "readingTitleZh": "季節"
         },
@@ -11534,7 +11534,7 @@
             "kreide",
             "meer"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a1-prasens-regular",
           "grammarTitleZh": "規則動詞現在時",
           "readingId": "uebung-46",
@@ -11558,7 +11558,7 @@
             "sonne",
             "mond"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "uebung-47",
           "readingTitleZh": "再說一次"
         },
@@ -11665,7 +11665,7 @@
             "gewitter",
             "nebel"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-dative",
           "grammarTitleZh": "第三格（Dativ）",
           "readingId": "a2-01",
@@ -11689,7 +11689,7 @@
             "vogel",
             "pferd"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-02",
           "readingTitleZh": "實習申請信"
         },
@@ -11711,7 +11711,7 @@
             "heissen_2",
             "stuhl_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-akk-dat-verbs",
           "grammarTitleZh": "雙賓動詞：給誰＋什麼",
           "readingId": "a2-03",
@@ -11735,7 +11735,7 @@
             "finden_2",
             "oeffnen_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-04",
           "readingTitleZh": "市民局登記公告"
         },
@@ -11757,7 +11757,7 @@
             "wichtig_2",
             "teuer_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-dative-prep",
           "grammarTitleZh": "固定第三格介詞",
           "readingId": "a2-05",
@@ -11781,7 +11781,7 @@
             "miete",
             "nebenkosten"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-06",
           "readingTitleZh": "看完運動醫生之後"
         },
@@ -11888,7 +11888,7 @@
             "wohngemeinschaft",
             "wg_zimmer"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-akk-prep",
           "grammarTitleZh": "固定第四格介詞",
           "readingId": "a2-07",
@@ -11912,7 +11912,7 @@
             "erwachsene",
             "gastgeber"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-08",
           "readingTitleZh": "考試準備"
         },
@@ -11934,7 +11934,7 @@
             "heizung",
             "klimaanlage"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-two-way-prep",
           "grammarTitleZh": "位置／方向兩用介詞（Wechselpräpositionen）",
           "readingId": "a2-09",
@@ -11958,7 +11958,7 @@
             "app",
             "chat"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-10",
           "readingTitleZh": "店內申訴"
         },
@@ -11980,7 +11980,7 @@
             "kalender",
             "plan"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-perfekt",
           "grammarTitleZh": "現在完成時 Perfekt",
           "readingId": "a2-11",
@@ -12004,7 +12004,7 @@
             "grund",
             "ergebnis"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-12",
           "readingTitleZh": "延期繳交申請"
         },
@@ -12111,7 +12111,7 @@
             "freiheit",
             "frieden"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-participle",
           "grammarTitleZh": "過去分詞構成",
           "readingId": "a2-13",
@@ -12135,7 +12135,7 @@
             "sprache",
             "bedeutung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-14",
           "readingTitleZh": "在家上班規定"
         },
@@ -12157,7 +12157,7 @@
             "arzttermin",
             "krankenkasse"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-modal-full",
           "grammarTitleZh": "情態動詞完整變化與用法",
           "readingId": "a2-15",
@@ -12181,7 +12181,7 @@
             "feuer",
             "rauch"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-16",
           "readingTitleZh": "動物收容所志工"
         },
@@ -12203,7 +12203,7 @@
             "kundin",
             "beschwerde"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-weil-dass",
           "grammarTitleZh": "weil / dass 從句：動詞到句末",
           "readingId": "a2-17",
@@ -12227,7 +12227,7 @@
             "fahrstuhl",
             "etage"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-18",
           "readingTitleZh": "辨識假訊息"
         },
@@ -12334,7 +12334,7 @@
             "wettkampf",
             "sieg"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-wenn-als",
           "grammarTitleZh": "wenn 與 als",
           "readingId": "a2-19",
@@ -12358,7 +12358,7 @@
             "buehne",
             "schauspieler"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-20",
           "readingTitleZh": "鄰里節"
         },
@@ -12380,7 +12380,7 @@
             "verein",
             "veranstaltung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-reflexive",
           "grammarTitleZh": "反身動詞",
           "readingId": "a2-21",
@@ -12404,7 +12404,7 @@
             "interview",
             "sendung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-22",
           "readingTitleZh": "二次催問"
         },
@@ -12426,7 +12426,7 @@
             "verbindung",
             "signal"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-adjective-endings",
           "grammarTitleZh": "形容詞字尾入門（定冠詞後）",
           "readingId": "a2-23",
@@ -12450,7 +12450,7 @@
             "lautsprecher",
             "kopfhoerer"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-24",
           "readingTitleZh": "不同的準時觀"
         },
@@ -12557,7 +12557,7 @@
             "trotzdem",
             "dennoch"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-comparative",
           "grammarTitleZh": "比較級與最高級",
           "readingId": "a2-25",
@@ -12581,7 +12581,7 @@
             "weil",
             "denn"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-26",
           "readingTitleZh": "每月預算"
         },
@@ -12603,7 +12603,7 @@
             "seit",
             "damit"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-pronouns-akk-dat",
           "grammarTitleZh": "人稱代詞第三／四格",
           "readingId": "a2-27",
@@ -12627,7 +12627,7 @@
             "sowohl",
             "je"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-28",
           "readingTitleZh": "租車損傷"
         },
@@ -12649,7 +12649,7 @@
             "physik",
             "geschichte"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-indefinite",
           "grammarTitleZh": "不定代詞 man / jemand / etwas",
           "readingId": "a2-29",
@@ -12673,7 +12673,7 @@
             "freude",
             "trauer"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-30",
           "readingTitleZh": "圖書館規則（進階）"
         },
@@ -12780,7 +12780,7 @@
             "stress",
             "ruhe"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-future-werden",
           "grammarTitleZh": "未來與 werden",
           "readingId": "a2-31",
@@ -12804,7 +12804,7 @@
             "zweck",
             "sinn"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-32",
           "readingTitleZh": "損害通報"
         },
@@ -12826,7 +12826,7 @@
             "begeisterung",
             "behandlung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-indirect-questions",
           "grammarTitleZh": "間接問句",
           "readingId": "a2-33",
@@ -12850,7 +12850,7 @@
             "funktion",
             "geduld"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-34",
           "readingTitleZh": "協助祖父母"
         },
@@ -12872,7 +12872,7 @@
             "identitaet",
             "kennzeichnung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-connectors-time",
           "grammarTitleZh": "時間從句：bevor, nachdem, während…",
           "readingId": "a2-35",
@@ -12896,7 +12896,7 @@
             "ordnung",
             "persoenlichkeit"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-36",
           "readingTitleZh": "語言交換聚會"
         },
@@ -13003,7 +13003,7 @@
             "sorgfalt",
             "spannung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-lassen",
           "grammarTitleZh": "lassen 的基本用法",
           "readingId": "a2-37",
@@ -13027,7 +13027,7 @@
             "verletzung",
             "verstaerkung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-38",
           "readingTitleZh": "帳號被鎖"
         },
@@ -13049,7 +13049,7 @@
             "zuverlaessigkeit",
             "abschnitt"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-dative",
           "grammarTitleZh": "第三格（Dativ）",
           "readingId": "a2-39",
@@ -13073,7 +13073,7 @@
             "ausgleich",
             "bau"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-40",
           "readingTitleZh": "遠距離友誼"
         },
@@ -13095,7 +13095,7 @@
             "charakter",
             "druck"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-akk-dat-verbs",
           "grammarTitleZh": "雙賓動詞：給誰＋什麼",
           "readingId": "a2-41",
@@ -13119,7 +13119,7 @@
             "geruch",
             "hintergrund"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-42",
           "readingTitleZh": "噪音紀錄"
         },
@@ -13226,7 +13226,7 @@
             "mangel",
             "nutzen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-dative-prep",
           "grammarTitleZh": "固定第三格介詞",
           "readingId": "a2-43",
@@ -13250,7 +13250,7 @@
             "streit",
             "ton"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-44",
           "readingTitleZh": "市區速限"
         },
@@ -13272,7 +13272,7 @@
             "wandel",
             "wunsch"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-akk-prep",
           "grammarTitleZh": "固定第四格介詞",
           "readingId": "a2-45",
@@ -13296,7 +13296,7 @@
             "verhalten",
             "verhaeltnis"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-46",
           "readingTitleZh": "察覺過載"
         },
@@ -13318,7 +13318,7 @@
             "wunder",
             "zeichen_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-two-way-prep",
           "grammarTitleZh": "位置／方向兩用介詞（Wechselpräpositionen）",
           "readingId": "a2-47",
@@ -13342,7 +13342,7 @@
             "topf",
             "vorspeise"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-48",
           "readingTitleZh": "外國人管理局預約"
         },
@@ -13449,7 +13449,7 @@
             "zutat",
             "rezept"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-perfekt",
           "grammarTitleZh": "現在完成時 Perfekt",
           "readingId": "a2-49",
@@ -13473,7 +13473,7 @@
             "feiertag_2",
             "urlaubstag"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-50",
           "readingTitleZh": "B1 階段我怎麼學"
         },
@@ -13495,7 +13495,7 @@
             "viertel",
             "erklaeren_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-participle",
           "grammarTitleZh": "過去分詞構成",
           "readingId": "a2-51",
@@ -13519,7 +13519,7 @@
             "schaffen",
             "erreichen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-52",
           "readingTitleZh": "送錯貨"
         },
@@ -13541,7 +13541,7 @@
             "entwickeln",
             "entdecken"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-modal-full",
           "grammarTitleZh": "情態動詞完整變化與用法",
           "readingId": "a2-53",
@@ -13565,7 +13565,7 @@
             "umziehen",
             "bestellen_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-54",
           "readingTitleZh": "庭院施工噪音"
         },
@@ -13672,7 +13672,7 @@
             "stornieren",
             "parken_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-weil-dass",
           "grammarTitleZh": "weil / dass 從句：動詞到句末",
           "readingId": "a2-55",
@@ -13696,7 +13696,7 @@
             "vorschlagen",
             "zustimmen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-56",
           "readingTitleZh": "改約診時間"
         },
@@ -13718,7 +13718,7 @@
             "erwarten",
             "planen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-wenn-als",
           "grammarTitleZh": "wenn 與 als",
           "readingId": "a2-57",
@@ -13742,7 +13742,7 @@
             "speichern",
             "herunterladen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-58",
           "readingTitleZh": "市立圖書館整修"
         },
@@ -13764,7 +13764,7 @@
             "schmecken_2",
             "riechen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-reflexive",
           "grammarTitleZh": "反身動詞",
           "readingId": "a2-59",
@@ -13788,7 +13788,7 @@
             "heiraten",
             "unterstuetzen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-60",
           "readingTitleZh": "健身會員諮詢"
         },
@@ -13895,7 +13895,7 @@
             "vergleichen",
             "waehlen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-adjective-endings",
           "grammarTitleZh": "形容詞字尾入門（定冠詞後）",
           "readingId": "a2-61",
@@ -13919,7 +13919,7 @@
             "trainieren",
             "sichruhen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-62",
           "readingTitleZh": "社區菜園報名"
         },
@@ -13941,7 +13941,7 @@
             "sich_streiten",
             "sich_treffen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-comparative",
           "grammarTitleZh": "比較級與最高級",
           "readingId": "a2-63",
@@ -13965,7 +13965,7 @@
             "sich_sorgen",
             "sich_freuen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-64",
           "readingTitleZh": "申請信用卡"
         },
@@ -13987,7 +13987,7 @@
             "sich_waschen",
             "mitbringen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-pronouns-akk-dat",
           "grammarTitleZh": "人稱代詞第三／四格",
           "readingId": "a2-65",
@@ -14011,7 +14011,7 @@
             "aufgeben",
             "anfangen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-66",
           "readingTitleZh": "垃圾清運變更"
         },
@@ -14118,7 +14118,7 @@
             "naehen",
             "schneiden"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-indefinite",
           "grammarTitleZh": "不定代詞 man / jemand / etwas",
           "readingId": "a2-67",
@@ -14142,7 +14142,7 @@
             "rechnen_2",
             "zaehlen_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-68",
           "readingTitleZh": "看房對話"
         },
@@ -14164,7 +14164,7 @@
             "sammeln",
             "tauschen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-future-werden",
           "grammarTitleZh": "未來與 werden",
           "readingId": "a2-69",
@@ -14188,7 +14188,7 @@
             "abschicken",
             "ankuendigen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-70",
           "readingTitleZh": "消防演習"
         },
@@ -14210,7 +14210,7 @@
             "bitten_2",
             "anbieten"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-indirect-questions",
           "grammarTitleZh": "間接問句",
           "readingId": "a2-71",
@@ -14234,7 +14234,7 @@
             "laden_2",
             "starten_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-72",
           "readingTitleZh": "更換手機螢幕"
         },
@@ -14341,7 +14341,7 @@
             "bedeuten",
             "nennen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-connectors-time",
           "grammarTitleZh": "時間從句：bevor, nachdem, während…",
           "readingId": "a2-73",
@@ -14365,7 +14365,7 @@
             "atmen",
             "husten_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-74",
           "readingTitleZh": "電梯停用公告"
         },
@@ -14387,7 +14387,7 @@
             "bemerken",
             "beobachten"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-lassen",
           "grammarTitleZh": "lassen 的基本用法",
           "readingId": "a2-75",
@@ -14411,7 +14411,7 @@
             "abgeben",
             "abhaengen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-76",
           "readingTitleZh": "牙科診所預約"
         },
@@ -14433,7 +14433,7 @@
             "anmelden",
             "anpassen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-dative",
           "grammarTitleZh": "第三格（Dativ）",
           "readingId": "a2-77",
@@ -14457,7 +14457,7 @@
             "ausdruecken",
             "ausfallen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-78",
           "readingTitleZh": "攝影社招員"
         },
@@ -14564,7 +14564,7 @@
             "beantragen",
             "bearbeiten"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-akk-dat-verbs",
           "grammarTitleZh": "雙賓動詞：給誰＋什麼",
           "readingId": "a2-79",
@@ -14588,7 +14588,7 @@
             "begleiten",
             "behalten"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-80",
           "readingTitleZh": "檢查煞車"
         },
@@ -14610,7 +14610,7 @@
             "bemuehen",
             "benoetigen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-dative-prep",
           "grammarTitleZh": "固定第三格介詞",
           "readingId": "a2-81",
@@ -14634,7 +14634,7 @@
             "beschraenken",
             "beseitigen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-82",
           "readingTitleZh": "垃圾桶錯誤投放"
         },
@@ -14656,7 +14656,7 @@
             "betragen",
             "betreffen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-akk-prep",
           "grammarTitleZh": "固定第四格介詞",
           "readingId": "a2-83",
@@ -14680,7 +14680,7 @@
             "bewundern",
             "bezeichnen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "a2-84",
           "readingTitleZh": "看房"
         },
@@ -14787,7 +14787,7 @@
             "brennen",
             "daemmen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-two-way-prep",
           "grammarTitleZh": "位置／方向兩用介詞（Wechselpräpositionen）",
           "readingId": "a2-85",
@@ -14811,7 +14811,7 @@
             "denken_2",
             "diskutieren"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-01",
           "readingTitleZh": "家中看不見的勞動"
         },
@@ -14833,7 +14833,7 @@
             "einfallen",
             "einfuehren"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-perfekt",
           "grammarTitleZh": "現在完成時 Perfekt",
           "readingId": "b2-02",
@@ -14857,7 +14857,7 @@
             "einnehmen",
             "einrichten"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-03",
           "readingTitleZh": "便利的代價"
         },
@@ -14879,7 +14879,7 @@
             "einwirken",
             "empfinden_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-participle",
           "grammarTitleZh": "過去分詞構成",
           "readingId": "b2-04",
@@ -14903,7 +14903,7 @@
             "entlassen",
             "entschliessen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-05",
           "readingTitleZh": "分數、表現與動機"
         },
@@ -15010,7 +15010,7 @@
             "erbeuten",
             "erfassen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-modal-full",
           "grammarTitleZh": "情態動詞完整變化與用法",
           "readingId": "b2-06",
@@ -15034,7 +15034,7 @@
             "erheben",
             "erholen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-07",
           "readingTitleZh": "永續消費：理想與日常"
         },
@@ -15056,7 +15056,7 @@
             "ernstnehmen",
             "erobern"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-weil-dass",
           "grammarTitleZh": "weil / dass 從句：動詞到句末",
           "readingId": "b2-08",
@@ -15080,7 +15080,7 @@
             "erwerben",
             "erzeugen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-09",
           "readingTitleZh": "文化近用與票價"
         },
@@ -15102,7 +15102,7 @@
             "fallen_2",
             "falten"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-wenn-als",
           "grammarTitleZh": "wenn 與 als",
           "readingId": "b2-10",
@@ -15126,7 +15126,7 @@
             "filmen",
             "finanzieren"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-11",
           "readingTitleZh": "缺工與勞動條件"
         },
@@ -15233,7 +15233,7 @@
             "fotografieren_2",
             "freilassen"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-reflexive",
           "grammarTitleZh": "反身動詞",
           "readingId": "b2-12",
@@ -15257,7 +15257,7 @@
             "fuettern",
             "noetig"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-13",
           "readingTitleZh": "住房、租金與社會混居"
         },
@@ -15279,7 +15279,7 @@
             "entspannend",
             "aufregend"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-adjective-endings",
           "grammarTitleZh": "形容詞字尾入門（定冠詞後）",
           "readingId": "b2-14",
@@ -15303,7 +15303,7 @@
             "frisch",
             "lecker"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-15",
           "readingTitleZh": "地方媒體的意見多元"
         },
@@ -15325,7 +15325,7 @@
             "zufrieden",
             "enttaeuscht"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-comparative",
           "grammarTitleZh": "比較級與最高級",
           "readingId": "b2-16",
@@ -15349,7 +15349,7 @@
             "ungeduldig",
             "ehrlich"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-17",
           "readingTitleZh": "職場心理負荷"
         },
@@ -15456,7 +15456,7 @@
             "aussergewoehnlich",
             "einfach"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-pronouns-akk-dat",
           "grammarTitleZh": "人稱代詞第三／四格",
           "readingId": "b2-18",
@@ -15480,7 +15480,7 @@
             "beruflich",
             "persoenlich"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-19",
           "readingTitleZh": "變動中的語言"
         },
@@ -15502,7 +15502,7 @@
             "endlich",
             "ziemlich"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-indefinite",
           "grammarTitleZh": "不定代詞 man / jemand / etwas",
           "readingId": "b2-20",
@@ -15526,7 +15526,7 @@
             "fast",
             "kaum"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-21",
           "readingTitleZh": "專案停擺聲明"
         },
@@ -15548,7 +15548,7 @@
             "weiter",
             "zurueck"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-future-werden",
           "grammarTitleZh": "未來與 werden",
           "readingId": "b2-22",
@@ -15572,7 +15572,7 @@
             "bekannt",
             "unbekannt"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-23",
           "readingTitleZh": "瑕疵配送申訴"
         },
@@ -15679,7 +15679,7 @@
             "nutzlos",
             "sinnvoll"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-indirect-questions",
           "grammarTitleZh": "間接問句",
           "readingId": "b2-24",
@@ -15703,7 +15703,7 @@
             "ueberfluessig",
             "dringend"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-25",
           "readingTitleZh": "企業交通改善建議"
         },
@@ -15725,7 +15725,7 @@
             "besetzt_2",
             "frei_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-connectors-time",
           "grammarTitleZh": "時間從句：bevor, nachdem, während…",
           "readingId": "b2-26",
@@ -15749,7 +15749,7 @@
             "puenktlich",
             "verspaetet"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-27",
           "readingTitleZh": "對導入 AI 工具的聲明"
         },
@@ -15771,7 +15771,7 @@
             "arm_2",
             "guenstig"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-lassen",
           "grammarTitleZh": "lassen 的基本用法",
           "readingId": "b2-28",
@@ -15795,7 +15795,7 @@
             "ausgeschlafen",
             "wach"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-29",
           "readingTitleZh": "致大學的合作詢問"
         },
@@ -15902,7 +15902,7 @@
             "froehlich",
             "wuetend_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-dative",
           "grammarTitleZh": "第三格（Dativ）",
           "readingId": "b2-30",
@@ -15926,7 +15926,7 @@
             "absolut",
             "aktiv"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-31",
           "readingTitleZh": "對工地動線的異議"
         },
@@ -15948,7 +15948,7 @@
             "ansaessig",
             "ansteckend"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-akk-dat-verbs",
           "grammarTitleZh": "雙賓動詞：給誰＋什麼",
           "readingId": "b2-32",
@@ -15972,7 +15972,7 @@
             "verrueckt",
             "verschieden_2"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-33",
           "readingTitleZh": "企業資料處理說明"
         },
@@ -15994,7 +15994,7 @@
             "warmherzig",
             "wechselhaft"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-dative-prep",
           "grammarTitleZh": "固定第三格介詞",
           "readingId": "b2-34",
@@ -16018,7 +16018,7 @@
             "willkommen",
             "wirklich"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-35",
           "readingTitleZh": "縣市熱傷害協助公告"
         },
@@ -16125,7 +16125,7 @@
             "zufaellig",
             "zugaenglich"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-akk-prep",
           "grammarTitleZh": "固定第四格介詞",
           "readingId": "b2-36",
@@ -16149,7 +16149,7 @@
             "zuverlaessig",
             "zweckmaessig"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-37",
           "readingTitleZh": "居家辦公企業協議（節錄）"
         },
@@ -16171,7 +16171,7 @@
             "uebertreiben",
             "uebrig"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-two-way-prep",
           "grammarTitleZh": "位置／方向兩用介詞（Wechselpräpositionen）",
           "readingId": "b2-38",
@@ -16195,7 +16195,7 @@
             "gepaeck",
             "handgepaeck"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-39",
           "readingTitleZh": "時刻表變更公告"
         },
@@ -16217,7 +16217,7 @@
             "gang",
             "ausflug"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-perfekt",
           "grammarTitleZh": "現在完成時 Perfekt",
           "readingId": "b2-40",
@@ -16241,7 +16241,7 @@
             "altstadt",
             "zentrum"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-41",
           "readingTitleZh": "公民對話公告"
         },
@@ -16348,7 +16348,7 @@
             "autobahn",
             "benzin"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-participle",
           "grammarTitleZh": "過去分詞構成",
           "readingId": "b2-42",
@@ -16372,7 +16372,7 @@
             "konsulat",
             "unterkunft"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-43",
           "readingTitleZh": "報告面談"
         },
@@ -16394,7 +16394,7 @@
             "eintritt",
             "region"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-modal-full",
           "grammarTitleZh": "情態動詞完整變化與用法",
           "readingId": "b2-44",
@@ -16418,7 +16418,7 @@
             "bewerbung",
             "vorstellungsgespraech"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-45",
           "readingTitleZh": "地方新聞訪談"
         },
@@ -16440,7 +16440,7 @@
             "meeting",
             "besprechung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-weil-dass",
           "grammarTitleZh": "weil / dass 從句：動詞到句末",
           "readingId": "b2-46",
@@ -16464,7 +16464,7 @@
             "erfahrung",
             "faehigkeit"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-47",
           "readingTitleZh": "家庭醫師診所對談"
         },
@@ -16571,7 +16571,7 @@
             "abmeldung",
             "steuererklaerung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-wenn-als",
           "grammarTitleZh": "wenn 與 als",
           "readingId": "b2-48",
@@ -16595,7 +16595,7 @@
             "stelle",
             "vollzeit"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-49",
           "readingTitleZh": "數位學校家長會"
         },
@@ -16617,7 +16617,7 @@
             "zahnaerztin",
             "patient"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-reflexive",
           "grammarTitleZh": "反身動詞",
           "readingId": "b2-50",
@@ -16641,7 +16641,7 @@
             "ordner",
             "mappe"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-51",
           "readingTitleZh": "在宅辦公的界線"
         },
@@ -16663,7 +16663,7 @@
             "anwesenheit",
             "bedingung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-adjective-endings",
           "grammarTitleZh": "形容詞字尾入門（定冠詞後）",
           "readingId": "b2-52",
@@ -16687,7 +16687,7 @@
             "entwicklung",
             "erfindung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-53",
           "readingTitleZh": "交通轉型公聽"
         },
@@ -16794,7 +16794,7 @@
             "grundlage",
             "herstellung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-comparative",
           "grammarTitleZh": "比較級與最高級",
           "readingId": "b2-54",
@@ -16818,7 +16818,7 @@
             "planung",
             "position"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-55",
           "readingTitleZh": "呼籲之外的可負擔住房"
         },
@@ -16840,7 +16840,7 @@
             "verpflichtung",
             "verteilung"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-pronouns-akk-dat",
           "grammarTitleZh": "人稱代詞第三／四格",
           "readingId": "b2-56",
@@ -16864,7 +16864,7 @@
             "zusammenfassung",
             "abschluss"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-57",
           "readingTitleZh": "職場心理負荷"
         },
@@ -16886,7 +16886,7 @@
             "beitrag",
             "bereich"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "a2-indefinite",
           "grammarTitleZh": "不定代詞 man / jemand / etwas",
           "readingId": "b2-58",
@@ -16910,7 +16910,7 @@
             "gewinn",
             "grundsatz"
           ],
-          "tipZh": "今日 8 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 8 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-59",
           "readingTitleZh": "翻譯作為文化決定"
         },
@@ -17021,7 +17021,7 @@
             "vortrag",
             "verfahren"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-genitive",
           "grammarTitleZh": "第二格（Genitiv）",
           "readingId": "b1-01",
@@ -17049,7 +17049,7 @@
             "blitz",
             "donner"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-02",
           "readingTitleZh": "專案停擺聲明"
         },
@@ -17075,7 +17075,7 @@
             "beziehung_b1",
             "erwachsene_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-n-declension",
           "grammarTitleZh": "陽性弱變化（N-Deklination）",
           "readingId": "b1-03",
@@ -17103,7 +17103,7 @@
             "abbacken_b1",
             "abbauen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-04",
           "readingTitleZh": "同溫層"
         },
@@ -17129,7 +17129,7 @@
             "abdenken_b1",
             "abdrehen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-prateritum",
           "grammarTitleZh": "简单過去 Präteritum",
           "readingId": "b1-05",
@@ -17157,7 +17157,7 @@
             "abfallen_b1",
             "abfangen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-06",
           "readingTitleZh": "便利的代價"
         },
@@ -17292,7 +17292,7 @@
             "abhalten_b1",
             "abhelen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-plusquamperfekt",
           "grammarTitleZh": "過去完成時 Plusquamperfekt",
           "readingId": "b1-07",
@@ -17320,7 +17320,7 @@
             "abkosten_b1",
             "ablachen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-08",
           "readingTitleZh": "自動化決策"
         },
@@ -17346,7 +17346,7 @@
             "ablohnen_b1",
             "abmachen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-passive",
           "grammarTitleZh": "過程被動：werden + Partizip II",
           "readingId": "b1-09",
@@ -17374,7 +17374,7 @@
             "abreisen_b1",
             "abreparieren_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-10",
           "readingTitleZh": "AI 工具使用準則"
         },
@@ -17400,7 +17400,7 @@
             "abschulden_b1",
             "absehen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-passive-alternatives",
           "grammarTitleZh": "被動替代：man / sich lassen",
           "readingId": "b1-11",
@@ -17428,7 +17428,7 @@
             "abstossen_b1",
             "absuchen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-12",
           "readingTitleZh": "請釐清權責"
         },
@@ -17563,7 +17563,7 @@
             "abvorbereiten_b1",
             "abwachen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-relative",
           "grammarTitleZh": "關係從句",
           "readingId": "b1-13",
@@ -17591,7 +17591,7 @@
             "abzeigen_b1",
             "abziehen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-14",
           "readingTitleZh": "告知說明會談"
         },
@@ -17617,7 +17617,7 @@
             "anbekommen_b1",
             "anbenutzen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-konjunktiv2-basic",
           "grammarTitleZh": "第二虛擬式入門（禮貌／虛擬）",
           "readingId": "b1-15",
@@ -17645,7 +17645,7 @@
             "anenden_b1",
             "anentscheiden_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-16",
           "readingTitleZh": "誰擁有公共空間？"
         },
@@ -17671,7 +17671,7 @@
             "anfeieren_b1",
             "anfinden_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-infinitive-zu",
           "grammarTitleZh": "zu 不定式與 um … zu",
           "readingId": "b1-17",
@@ -17699,7 +17699,7 @@
             "anhoffen_b1",
             "anholen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-18",
           "readingTitleZh": "升級到專責單位"
         },
@@ -17834,7 +17834,7 @@
             "anlachen_b1",
             "anladen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-verbs-prep",
           "grammarTitleZh": "動詞＋固定介詞",
           "readingId": "b1-19",
@@ -17862,7 +17862,7 @@
             "anmalen_b1",
             "anmerken_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-20",
           "readingTitleZh": "加班提示"
         },
@@ -17888,7 +17888,7 @@
             "anreparieren_b1",
             "anriechen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-adjective-endings-full",
           "grammarTitleZh": "形容詞字尾三種變化",
           "readingId": "b1-21",
@@ -17916,7 +17916,7 @@
             "ansehen_b1",
             "ansetzen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-22",
           "readingTitleZh": "條款再協商"
         },
@@ -17942,7 +17942,7 @@
             "ansuchen_b1",
             "antanzen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-connectors-contrast",
           "grammarTitleZh": "轉折與原因進階連接詞",
           "readingId": "b1-23",
@@ -17970,7 +17970,7 @@
             "anwachen_b1",
             "anwarten_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-24",
           "readingTitleZh": "當藝術變成品牌"
         },
@@ -18105,7 +18105,7 @@
             "anziehen_b1",
             "anzaehlen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-word-order-advanced",
           "grammarTitleZh": "語序進階：中域與時間－原因－方式－地點",
           "readingId": "b1-25",
@@ -18133,7 +18133,7 @@
             "aufbenutzen_b1",
             "aufbestellen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-26",
           "readingTitleZh": "早期支持、少事後補救"
         },
@@ -18159,7 +18159,7 @@
             "aufentscheiden_b1",
             "aufentwickelen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-local-directional",
           "grammarTitleZh": "地方副詞：hin / her 與 wo-複合",
           "readingId": "b1-27",
@@ -18187,7 +18187,7 @@
             "auffliegen_b1",
             "auffluesteren_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-28",
           "readingTitleZh": "消防指示更新"
         },
@@ -18213,7 +18213,7 @@
             "aufhaengen_b1",
             "aufhoeren_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-adjective-as-noun",
           "grammarTitleZh": "形容詞名詞化",
           "readingId": "b1-29",
@@ -18241,7 +18241,7 @@
             "auflaufen_b1",
             "aufleeren_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-30",
           "readingTitleZh": "給經營層的短報"
         },
@@ -18376,7 +18376,7 @@
             "aufnehmen_b1",
             "auforganisen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-reciprocal",
           "grammarTitleZh": "互相代詞與相互結構",
           "readingId": "b1-31",
@@ -18404,7 +18404,7 @@
             "aufschaffen_b1",
             "aufschlafen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-32",
           "readingTitleZh": "與住戶協調"
         },
@@ -18430,7 +18430,7 @@
             "aufsparen_b1",
             "aufspielen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-als-wenn-ob",
           "grammarTitleZh": "als ob / als wenn 虛擬比較",
           "readingId": "b1-33",
@@ -18458,7 +18458,7 @@
             "aufverbesseren_b1",
             "aufverdienen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-34",
           "readingTitleZh": "審查意見短評"
         },
@@ -18484,7 +18484,7 @@
             "aufwerfen_b1",
             "aufwiederholen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-genitive",
           "grammarTitleZh": "第二格（Genitiv）",
           "readingId": "b1-35",
@@ -18512,7 +18512,7 @@
             "aufueben_b1",
             "ausantworten_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-36",
           "readingTitleZh": "一次性杯子押金"
         },
@@ -18647,7 +18647,7 @@
             "ausbezahlen_b1",
             "ausbleiben_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-n-declension",
           "grammarTitleZh": "陽性弱變化（N-Deklination）",
           "readingId": "b1-37",
@@ -18675,7 +18675,7 @@
             "auserreichen_b1",
             "auserzaehlen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-38",
           "readingTitleZh": "品質下滑與對策"
         },
@@ -18701,7 +18701,7 @@
             "ausfuellen_b1",
             "ausgeben_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-prateritum",
           "grammarTitleZh": "简单過去 Präteritum",
           "readingId": "b1-39",
@@ -18729,7 +18729,7 @@
             "ausklingen_b1",
             "auskochen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-40",
           "readingTitleZh": "在地過度觀光"
         },
@@ -18755,7 +18755,7 @@
             "auslernen_b1",
             "auslesen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-plusquamperfekt",
           "grammarTitleZh": "過去完成時 Plusquamperfekt",
           "readingId": "b1-41",
@@ -18783,7 +18783,7 @@
             "auspruefen_b1",
             "ausputzen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-42",
           "readingTitleZh": "重新思考照護"
         },
@@ -18918,7 +18918,7 @@
             "ausschmecken_b1",
             "ausschreiben_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-passive",
           "grammarTitleZh": "過程被動：werden + Partizip II",
           "readingId": "b1-43",
@@ -18946,7 +18946,7 @@
             "ausstehen_b1",
             "aussteigen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-44",
           "readingTitleZh": "萊茵河橋封閉"
         },
@@ -18972,7 +18972,7 @@
             "ausverlassen_b1",
             "ausversuchen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-passive-alternatives",
           "grammarTitleZh": "被動替代：man / sich lassen",
           "readingId": "b1-45",
@@ -19000,7 +19000,7 @@
             "auswohnen_b1",
             "auswuenschen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-46",
           "readingTitleZh": "教育贊助詢問"
         },
@@ -19026,7 +19026,7 @@
             "bearbeiten_b1",
             "beausgeben_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-relative",
           "grammarTitleZh": "關係從句",
           "readingId": "b1-47",
@@ -19054,7 +19054,7 @@
             "bebrauchen_b1",
             "bebringen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-48",
           "readingTitleZh": "當季飲食即政治"
         },
@@ -19189,7 +19189,7 @@
             "beerreichen_b1",
             "beerzaehlen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-konjunktiv2-basic",
           "grammarTitleZh": "第二虛擬式入門（禮貌／虛擬）",
           "readingId": "b1-49",
@@ -19217,7 +19217,7 @@
             "befuellen_b1",
             "befuerchten_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-50",
           "readingTitleZh": "B2 與 B1 差在哪"
         },
@@ -19243,7 +19243,7 @@
             "behoffen_b1",
             "beholen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-infinitive-zu",
           "grammarTitleZh": "zu 不定式與 um … zu",
           "readingId": "b1-51",
@@ -19271,7 +19271,7 @@
             "belachen_b1",
             "beladen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-52",
           "readingTitleZh": "區權人大會邀請"
         },
@@ -19297,7 +19297,7 @@
             "bemalen_b1",
             "bemerken_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-verbs-prep",
           "grammarTitleZh": "動詞＋固定介詞",
           "readingId": "b1-53",
@@ -19325,7 +19325,7 @@
             "berechnen_b1",
             "bereisen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-54",
           "readingTitleZh": "尋求第二意見"
         },
@@ -19460,7 +19460,7 @@
             "beschleunigen_b1",
             "beschliessen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-adjective-endings-full",
           "grammarTitleZh": "形容詞字尾三種變化",
           "readingId": "b1-55",
@@ -19488,7 +19488,7 @@
             "besitzen_b1",
             "besparen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-56",
           "readingTitleZh": "更新個資告知"
         },
@@ -19514,7 +19514,7 @@
             "betanzen_b1",
             "betrachten_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-connectors-contrast",
           "grammarTitleZh": "轉折與原因進階連接詞",
           "readingId": "b1-57",
@@ -19542,7 +19542,7 @@
             "bevorbereiten_b1",
             "bewachen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-58",
           "readingTitleZh": "回饋面談"
         },
@@ -19568,7 +19568,7 @@
             "bewuenschen_b1",
             "bezahlen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-word-order-advanced",
           "grammarTitleZh": "語序進階：中域與時間－原因－方式－地點",
           "readingId": "b1-59",
@@ -19596,7 +19596,7 @@
             "durchfuehren_b1",
             "durchsetzen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-60",
           "readingTitleZh": "校園無線網路使用規範"
         },
@@ -19731,7 +19731,7 @@
             "einbewegen_b1",
             "einbezahlen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-local-directional",
           "grammarTitleZh": "地方副詞：hin / her 與 wo-複合",
           "readingId": "b1-61",
@@ -19759,7 +19759,7 @@
             "einerinneren_b1",
             "einerklaeren_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-62",
           "readingTitleZh": "志工班次請假"
         },
@@ -19785,7 +19785,7 @@
             "einfragen_b1",
             "einfuehlen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-adjective-as-noun",
           "grammarTitleZh": "形容詞名詞化",
           "readingId": "b1-63",
@@ -19813,7 +19813,7 @@
             "einhoeren_b1",
             "eininformen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-64",
           "readingTitleZh": "租約終止諮詢"
         },
@@ -19839,7 +19839,7 @@
             "einleeren_b1",
             "einlegen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-reciprocal",
           "grammarTitleZh": "互相代詞與相互結構",
           "readingId": "b1-65",
@@ -19867,7 +19867,7 @@
             "einorganisen_b1",
             "einplanen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-66",
           "readingTitleZh": "線上購物撤回"
         },
@@ -20002,7 +20002,7 @@
             "einschaffen_b1",
             "einschlafen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-als-wenn-ob",
           "grammarTitleZh": "als ob / als wenn 虛擬比較",
           "readingId": "b1-67",
@@ -20030,7 +20030,7 @@
             "einsitzen_b1",
             "einsparen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-68",
           "readingTitleZh": "專案啟動會議"
         },
@@ -20056,7 +20056,7 @@
             "eintreten_b1",
             "eintrinken_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-genitive",
           "grammarTitleZh": "第二格（Genitiv）",
           "readingId": "b1-69",
@@ -20084,7 +20084,7 @@
             "einwaschen_b1",
             "einweinen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-70",
           "readingTitleZh": "向編輯部請求更正說明"
         },
@@ -20110,7 +20110,7 @@
             "einaenderen_b1",
             "einoeffnen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-n-declension",
           "grammarTitleZh": "陽性弱變化（N-Deklination）",
           "readingId": "b1-71",
@@ -20138,7 +20138,7 @@
             "entbenutzen_b1",
             "entbestellen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-72",
           "readingTitleZh": "無線網升級維護窗"
         },
@@ -20273,7 +20273,7 @@
             "ententscheiden_b1",
             "ententwickelen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-prateritum",
           "grammarTitleZh": "简单過去 Präteritum",
           "readingId": "b1-73",
@@ -20301,7 +20301,7 @@
             "entfinden_b1",
             "entfliegen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-74",
           "readingTitleZh": "學習諮詢對話"
         },
@@ -20327,7 +20327,7 @@
             "entholen_b1",
             "enthaengen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-plusquamperfekt",
           "grammarTitleZh": "過去完成時 Plusquamperfekt",
           "readingId": "b1-75",
@@ -20355,7 +20355,7 @@
             "entlassen_b1",
             "entlaufen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-76",
           "readingTitleZh": "辦公室高溫措施"
         },
@@ -20381,7 +20381,7 @@
             "entmessen_b1",
             "entnehmen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-passive",
           "grammarTitleZh": "過程被動：werden + Partizip II",
           "readingId": "b1-77",
@@ -20409,7 +20409,7 @@
             "entraeumen_b1",
             "entschaffen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-78",
           "readingTitleZh": "客服投訴"
         },
@@ -20544,7 +20544,7 @@
             "entsingen_b1",
             "entsitzen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-passive-alternatives",
           "grammarTitleZh": "被動替代：man / sich lassen",
           "readingId": "b1-79",
@@ -20572,7 +20572,7 @@
             "entsuchen_b1",
             "enttanzen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-80",
           "readingTitleZh": "車棚改建"
         },
@@ -20598,7 +20598,7 @@
             "entvorbereiten_b1",
             "entwachen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-relative",
           "grammarTitleZh": "關係從句",
           "readingId": "b1-81",
@@ -20626,7 +20626,7 @@
             "entzeichnen_b1",
             "entzeigen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-82",
           "readingTitleZh": "朗讀會場地租借"
         },
@@ -20652,7 +20652,7 @@
             "erbeginnen_b1",
             "erbekommen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-konjunktiv2-basic",
           "grammarTitleZh": "第二虛擬式入門（禮貌／虛擬）",
           "readingId": "b1-83",
@@ -20680,7 +20680,7 @@
             "erdruecken_b1",
             "erenden_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-84",
           "readingTitleZh": "出院說明"
         },
@@ -20815,7 +20815,7 @@
             "erfassen_b1",
             "erfeieren_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-infinitive-zu",
           "grammarTitleZh": "zu 不定式與 um … zu",
           "readingId": "b1-85",
@@ -20843,7 +20843,7 @@
             "ergaenzen_b1",
             "erhalten_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-01",
           "readingTitleZh": "家中看不見的勞動"
         },
@@ -20869,7 +20869,7 @@
             "erklaeren_b1",
             "erkochen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-verbs-prep",
           "grammarTitleZh": "動詞＋固定介詞",
           "readingId": "b2-02",
@@ -20897,7 +20897,7 @@
             "erleeren_b1",
             "erlegen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-03",
           "readingTitleZh": "便利的代價"
         },
@@ -20923,7 +20923,7 @@
             "ernehmen_b1",
             "ernaehren_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-adjective-endings-full",
           "grammarTitleZh": "形容詞字尾三種變化",
           "readingId": "b2-04",
@@ -20951,7 +20951,7 @@
             "errufen_b1",
             "erraeumen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-05",
           "readingTitleZh": "分數、表現與動機"
         },
@@ -21086,7 +21086,7 @@
             "ersetzen_b1",
             "ersingen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-connectors-contrast",
           "grammarTitleZh": "轉折與原因進階連接詞",
           "readingId": "b2-06",
@@ -21114,7 +21114,7 @@
             "ertanzen_b1",
             "ertreffen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-07",
           "readingTitleZh": "永續消費：理想與日常"
         },
@@ -21140,7 +21140,7 @@
             "erwarten_b1",
             "erwaschen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-word-order-advanced",
           "grammarTitleZh": "語序進階：中域與時間－原因－方式－地點",
           "readingId": "b2-08",
@@ -21168,7 +21168,7 @@
             "erzeigen_b1",
             "erzeugen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-09",
           "readingTitleZh": "文化近用與票價"
         },
@@ -21194,7 +21194,7 @@
             "fordern_b1",
             "forschen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-local-directional",
           "grammarTitleZh": "地方副詞：hin / her 與 wo-複合",
           "readingId": "b2-10",
@@ -21222,7 +21222,7 @@
             "hinweisen_b1",
             "identifizieren_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-11",
           "readingTitleZh": "缺工與勞動條件"
         },
@@ -21357,7 +21357,7 @@
             "loesen_b1",
             "mitantworten_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-adjective-as-noun",
           "grammarTitleZh": "形容詞名詞化",
           "readingId": "b2-12",
@@ -21385,7 +21385,7 @@
             "mitbezahlen_b1",
             "mitbleiben_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-13",
           "readingTitleZh": "住房、租金與社會混居"
         },
@@ -21411,7 +21411,7 @@
             "miterreichen_b1",
             "miterzaehlen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-reciprocal",
           "grammarTitleZh": "互相代詞與相互結構",
           "readingId": "b2-14",
@@ -21439,7 +21439,7 @@
             "mitfuellen_b1",
             "mitgeben_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-15",
           "readingTitleZh": "地方媒體的意見多元"
         },
@@ -21465,7 +21465,7 @@
             "mitklingen_b1",
             "mitkochen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-als-wenn-ob",
           "grammarTitleZh": "als ob / als wenn 虛擬比較",
           "readingId": "b2-16",
@@ -21493,7 +21493,7 @@
             "mitlernen_b1",
             "mitlesen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-17",
           "readingTitleZh": "職場心理負荷"
         },
@@ -21628,7 +21628,7 @@
             "mitpruefen_b1",
             "mitputzen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-genitive",
           "grammarTitleZh": "第二格（Genitiv）",
           "readingId": "b2-18",
@@ -21656,7 +21656,7 @@
             "mitschmecken_b1",
             "mitschreiben_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-19",
           "readingTitleZh": "變動中的語言"
         },
@@ -21682,7 +21682,7 @@
             "mitstehen_b1",
             "mitsteigen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-n-declension",
           "grammarTitleZh": "陽性弱變化（N-Deklination）",
           "readingId": "b2-20",
@@ -21710,7 +21710,7 @@
             "mitverlassen_b1",
             "mitversuchen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-21",
           "readingTitleZh": "專案停擺聲明"
         },
@@ -21736,7 +21736,7 @@
             "mitwuenschen_b1",
             "mitzahlen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b1-prateritum",
           "grammarTitleZh": "简单過去 Präteritum",
           "readingId": "b2-22",
@@ -21764,7 +21764,7 @@
             "nachbacken_b1",
             "nachbauen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-23",
           "readingTitleZh": "瑕疵配送申訴"
         },
@@ -21903,7 +21903,7 @@
             "nachentscheiden_b1",
             "nachentwickelen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-konjunktiv1",
           "grammarTitleZh": "第一虛擬式：間接引語",
           "readingId": "b2-01",
@@ -21935,7 +21935,7 @@
             "nachfuellen_b1",
             "nachgeben_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-02",
           "readingTitleZh": "同溫層與公共辯論"
         },
@@ -21965,7 +21965,7 @@
             "nachkosten_b1",
             "nachlachen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-konjunktiv2-advanced",
           "grammarTitleZh": "第二虛擬式進階：非真實與禮貌",
           "readingId": "b2-03",
@@ -21997,7 +21997,7 @@
             "nachnehmen_b1",
             "nachorganisen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-04",
           "readingTitleZh": "呼籲之外的預防"
         },
@@ -22027,7 +22027,7 @@
             "nachschmecken_b1",
             "nachschreiben_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-passive-state",
           "grammarTitleZh": "狀態被動：sein + Partizip II",
           "readingId": "b2-05",
@@ -22059,7 +22059,7 @@
             "nachsuchen_b1",
             "nachtanzen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-06",
           "readingTitleZh": "居家辦公與新常態"
         },
@@ -22222,7 +22222,7 @@
             "nachwerfen_b1",
             "nachwiederholen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-nominalization",
           "grammarTitleZh": "名詞化（Nominalisierung）",
           "readingId": "b2-07",
@@ -22254,7 +22254,7 @@
             "verbacken_b1",
             "verbauen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-08",
           "readingTitleZh": "選舉之外的公民參與"
         },
@@ -22284,7 +22284,7 @@
             "verentscheiden_b1",
             "verentwickelen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-participle-clauses",
           "grammarTitleZh": "分詞作形容詞與分詞短語",
           "readingId": "b2-09",
@@ -22316,7 +22316,7 @@
             "verfuellen_b1",
             "vergeben_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-10",
           "readingTitleZh": "交通：汽車友善與氣候目標之間"
         },
@@ -22346,7 +22346,7 @@
             "verkosten_b1",
             "verlachen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-connectors-advanced",
           "grammarTitleZh": "進階連接：indem, wodurch, sofern, zumal…",
           "readingId": "b2-11",
@@ -22378,7 +22378,7 @@
             "vermessen_b1",
             "vermissen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-12",
           "readingTitleZh": "辦公室日常中的人工智慧"
         },
@@ -22541,7 +22541,7 @@
             "verschlagen_b1",
             "verschliessen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-futur2",
           "grammarTitleZh": "未來完成 Futur II 與推測",
           "readingId": "b2-13",
@@ -22573,7 +22573,7 @@
             "verstellen_b1",
             "verstossen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-14",
           "readingTitleZh": "語言、工作與安頓"
         },
@@ -22603,7 +22603,7 @@
             "verwaschen_b1",
             "verweinen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-subjective-modal",
           "grammarTitleZh": "情態動詞的主觀情態（推測／傳聞）",
           "readingId": "b2-15",
@@ -22635,7 +22635,7 @@
             "verueben_b1",
             "vorantworten_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-16",
           "readingTitleZh": "數位學校：機會與過載之間"
         },
@@ -22665,7 +22665,7 @@
             "vorbringen_b1",
             "vordenken_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-fixed-akk-dat",
           "grammarTitleZh": "固定片語中的格",
           "readingId": "b2-17",
@@ -22697,7 +22697,7 @@
             "vorfinden_b1",
             "vorfliegen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-18",
           "readingTitleZh": "城市裡的熱"
         },
@@ -22860,7 +22860,7 @@
             "vorkaufen_b1",
             "vorklingen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-prepositional-adverbs",
           "grammarTitleZh": "介詞副詞與 da(r)-／wo(r)-",
           "readingId": "b2-19",
@@ -22892,7 +22892,7 @@
             "vorlohnen_b1",
             "vormachen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-20",
           "readingTitleZh": "公共空間的監控"
         },
@@ -22922,7 +22922,7 @@
             "vorraeumen_b1",
             "vorschaffen_b1"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-passive-modal",
           "grammarTitleZh": "情態動詞＋被動",
           "readingId": "b2-21",
@@ -22954,7 +22954,7 @@
             "bekraeftigen_b2",
             "bemaengeln_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-22",
           "readingTitleZh": "申請延長繳交期限"
         },
@@ -22984,7 +22984,7 @@
             "diskutieren_b2",
             "durchantworten_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-reported-questions",
           "grammarTitleZh": "複雜轉述與嵌入從句",
           "readingId": "b2-23",
@@ -23016,7 +23016,7 @@
             "durchhelen_b2",
             "durchhoffen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-24",
           "readingTitleZh": "對實習證明的回饋"
         },
@@ -23179,7 +23179,7 @@
             "durchsuchen_b2",
             "durchtreffen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-stylistic-inversion",
           "grammarTitleZh": "強調與倒裝",
           "readingId": "b2-25",
@@ -23211,7 +23211,7 @@
             "erarbeiten_b2",
             "erfahren_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-26",
           "readingTitleZh": "危害評估邀請"
         },
@@ -23241,7 +23241,7 @@
             "erzeugen_b2",
             "evaluieren_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-double-infinitive",
           "grammarTitleZh": "雙不定式與情態完成時",
           "readingId": "b2-27",
@@ -23273,7 +23273,7 @@
             "glauben_b2",
             "hervorheben_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-28",
           "readingTitleZh": "致物業管理函"
         },
@@ -23303,7 +23303,7 @@
             "hinterglauben_b2",
             "hinterhelen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-konjunktiv1",
           "grammarTitleZh": "第一虛擬式：間接引語",
           "readingId": "b2-29",
@@ -23335,7 +23335,7 @@
             "hintersuchen_b2",
             "hintertreffen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-30",
           "readingTitleZh": "致編輯部的更正聲明"
         },
@@ -23498,7 +23498,7 @@
             "integrieren_b2",
             "interpretieren_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-konjunktiv2-advanced",
           "grammarTitleZh": "第二虛擬式進階：非真實與禮貌",
           "readingId": "b2-31",
@@ -23530,7 +23530,7 @@
             "missbringen_b2",
             "missdenken_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-32",
           "readingTitleZh": "附理由的報價婉拒"
         },
@@ -23560,7 +23560,7 @@
             "misslesen_b2",
             "missmachen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-passive-state",
           "grammarTitleZh": "狀態被動：sein + Partizip II",
           "readingId": "b2-33",
@@ -23592,7 +23592,7 @@
             "missoeffnen_b2",
             "nachweisen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-34",
           "readingTitleZh": "退考準則"
         },
@@ -23622,7 +23622,7 @@
             "schildern_b2",
             "schliessen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-nominalization",
           "grammarTitleZh": "名詞化（Nominalisierung）",
           "readingId": "b2-35",
@@ -23654,7 +23654,7 @@
             "sich_glauben_b2",
             "sich_hoffen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-36",
           "readingTitleZh": "市立展覽準則"
         },
@@ -23817,7 +23817,7 @@
             "sich_wohnen_b2",
             "sich_wuenschen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-participle-clauses",
           "grammarTitleZh": "分詞作形容詞與分詞短語",
           "readingId": "b2-37",
@@ -23849,7 +23849,7 @@
             "thematisieren_b2",
             "umantworten_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-38",
           "readingTitleZh": "撤回權告知（範例節錄）"
         },
@@ -23879,7 +23879,7 @@
             "umhelen_b2",
             "umhoffen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-connectors-advanced",
           "grammarTitleZh": "進階連接：indem, wodurch, sofern, zumal…",
           "readingId": "b2-39",
@@ -23911,7 +23911,7 @@
             "umsuchen_b2",
             "umtreffen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-40",
           "readingTitleZh": "企業疫苗活動公告"
         },
@@ -23941,7 +23941,7 @@
             "unterfahren_b2",
             "unterfinden_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-futur2",
           "grammarTitleZh": "未來完成 Futur II 與推測",
           "readingId": "b2-41",
@@ -23973,7 +23973,7 @@
             "unterprobieren_b2",
             "unterscheiden_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-42",
           "readingTitleZh": "獎學金計畫公告"
         },
@@ -24136,7 +24136,7 @@
             "verallgemeinern_b2",
             "veranschaulichen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-subjective-modal",
           "grammarTitleZh": "情態動詞的主觀情態（推測／傳聞）",
           "readingId": "b2-43",
@@ -24168,7 +24168,7 @@
             "verteidigen_b2",
             "vertiefen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-44",
           "readingTitleZh": "年度發展面談"
         },
@@ -24198,7 +24198,7 @@
             "vollfragen_b2",
             "vollfuehlen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-fixed-akk-dat",
           "grammarTitleZh": "固定片語中的格",
           "readingId": "b2-45",
@@ -24230,7 +24230,7 @@
             "vollsehen_b2",
             "vollspielen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-46",
           "readingTitleZh": "交通轉型座談"
         },
@@ -24260,7 +24260,7 @@
             "weiterentwickeln_b2",
             "widerantworten_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-prepositional-adverbs",
           "grammarTitleZh": "介詞副詞與 da(r)-／wo(r)-",
           "readingId": "b2-47",
@@ -24292,7 +24292,7 @@
             "widerhelen_b2",
             "widerhoffen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-48",
           "readingTitleZh": "租屋協會諮詢"
         },
@@ -24455,7 +24455,7 @@
             "widertreffen_b2",
             "widerverkaufen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-passive-modal",
           "grammarTitleZh": "情態動詞＋被動",
           "readingId": "b2-49",
@@ -24487,7 +24487,7 @@
             "zerbrauchen_b2",
             "zerbringen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-50",
           "readingTitleZh": "策展人訪談"
         },
@@ -24517,7 +24517,7 @@
             "zerlernen_b2",
             "zerlesen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-reported-questions",
           "grammarTitleZh": "複雜轉述與嵌入從句",
           "readingId": "b2-51",
@@ -24549,7 +24549,7 @@
             "zerzeigen_b2",
             "zeroeffnen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-52",
           "readingTitleZh": "對考試組織提出申訴"
         },
@@ -24579,7 +24579,7 @@
             "ueberfinden_b2",
             "ueberfliegen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-stylistic-inversion",
           "grammarTitleZh": "強調與倒裝",
           "readingId": "b2-53",
@@ -24611,7 +24611,7 @@
             "ueberpruefen_b2",
             "ueberraschen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-54",
           "readingTitleZh": "訪談：平台責任"
         },
@@ -24774,7 +24774,7 @@
             "ueberzeugen_b2",
             "ueberoeffnen_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-double-infinitive",
           "grammarTitleZh": "雙不定式與情態完成時",
           "readingId": "b2-55",
@@ -24806,7 +24806,7 @@
             "argument_b2",
             "aspekt_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-56",
           "readingTitleZh": "紀錄衝突面談"
         },
@@ -24836,7 +24836,7 @@
             "beschwerde_b2",
             "bestandteil_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-konjunktiv1",
           "grammarTitleZh": "第一虛擬式：間接引語",
           "readingId": "b2-57",
@@ -24868,7 +24868,7 @@
             "bildungskraft_b2",
             "bildungslage_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-58",
           "readingTitleZh": "吹哨者保護提示"
         },
@@ -24898,7 +24898,7 @@
             "braucher_b2",
             "brauchheit_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-konjunktiv2-advanced",
           "grammarTitleZh": "第二虛擬式進階：非真實與禮貌",
           "readingId": "b2-59",
@@ -24930,7 +24930,7 @@
             "durstigkeit_b2",
             "egoismus_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-60",
           "readingTitleZh": "論壇：供應鏈與責任"
         },
@@ -25093,7 +25093,7 @@
             "erwartung_b2",
             "fahrer_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-passive-state",
           "grammarTitleZh": "狀態被動：sein + Partizip II",
           "readingId": "b2-61",
@@ -25125,7 +25125,7 @@
             "familienlage_b2",
             "familienmittel_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-62",
           "readingTitleZh": "請求後履行（瑕疵補救）"
         },
@@ -25155,7 +25155,7 @@
             "fertigkeit_b2",
             "finder_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-nominalization",
           "grammarTitleZh": "名詞化（Nominalisierung）",
           "readingId": "b2-63",
@@ -25187,7 +25187,7 @@
             "freizeitbereich_b2",
             "freizeitdienst_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-64",
           "readingTitleZh": "開放資料與權力不對稱"
         },
@@ -25217,7 +25217,7 @@
             "freizeitrecht_b2",
             "freizeitschutz_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-participle-clauses",
           "grammarTitleZh": "分詞作形容詞與分詞短語",
           "readingId": "b2-65",
@@ -25249,7 +25249,7 @@
             "gefaehrlichkeit_b2",
             "gegensatz_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-66",
           "readingTitleZh": "回收率與真正循環"
         },
@@ -25412,7 +25412,7 @@
             "gluecklichkeit_b2",
             "grundrecht_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-connectors-advanced",
           "grammarTitleZh": "進階連接：indem, wodurch, sofern, zumal…",
           "readingId": "b2-67",
@@ -25444,7 +25444,7 @@
             "hungrigkeit_b2",
             "haesslichkeit_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-68",
           "readingTitleZh": "沒有走過場的公民參與"
         },
@@ -25474,7 +25474,7 @@
             "informationsfreiheit_b2",
             "informationsgrad_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-futur2",
           "grammarTitleZh": "未來完成 Futur II 與推測",
           "readingId": "b2-69",
@@ -25506,7 +25506,7 @@
             "informationsweg_b2",
             "informationswert_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-70",
           "readingTitleZh": "作為商業模式的假訊"
         },
@@ -25536,7 +25536,7 @@
             "kommunikationsdienst_b2",
             "kommunikationsform_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "b2-subjective-modal",
           "grammarTitleZh": "情態動詞的主觀情態（推測／傳聞）",
           "readingId": "b2-71",
@@ -25568,7 +25568,7 @@
             "kommunikationsschutz_b2",
             "kommunikationssystem_b2"
           ],
-          "tipZh": "今日 16 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 16 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-72",
           "readingTitleZh": "針對抄襲指控之說明"
         },
@@ -25727,7 +25727,7 @@
             "konzentration_b2",
             "kreis_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-register",
           "grammarTitleZh": "語域：口語、中性、書面",
           "readingId": "b2-01",
@@ -25755,7 +25755,7 @@
             "kulturlage_b2",
             "kulturmittel_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-02",
           "readingTitleZh": "同溫層與公共辯論"
         },
@@ -25781,7 +25781,7 @@
             "kulturwert_b2",
             "kulturzeit_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-complex-connectors",
           "grammarTitleZh": "學術／正式連接手段",
           "readingId": "b2-03",
@@ -25809,7 +25809,7 @@
             "leser_b2",
             "lesheit_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-04",
           "readingTitleZh": "呼籲之外的預防"
         },
@@ -25835,7 +25835,7 @@
             "massstab_b2",
             "medienkompetenz_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-konjunktiv-mix",
           "grammarTitleZh": "虛擬式綜合運用",
           "readingId": "b2-05",
@@ -25863,7 +25863,7 @@
             "moeglichkeit_b2",
             "nachlaessigkeit_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-06",
           "readingTitleZh": "居家辦公與新常態"
         },
@@ -25998,7 +25998,7 @@
             "optimismus_b2",
             "orientierung_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-passive-advanced",
           "grammarTitleZh": "被動進階與無人稱被動",
           "readingId": "b2-07",
@@ -26026,7 +26026,7 @@
             "realismus_b2",
             "rechtfertigung_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-08",
           "readingTitleZh": "選舉之外的公民參與"
         },
@@ -26052,7 +26052,7 @@
             "schliessheit_b2",
             "schliessung_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-nominal-style",
           "grammarTitleZh": "名詞風格與動詞風格改寫",
           "readingId": "b2-09",
@@ -26080,7 +26080,7 @@
             "seltsamkeit_b2",
             "sensibilitaet_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-10",
           "readingTitleZh": "交通：汽車友善與氣候目標之間"
         },
@@ -26106,7 +26106,7 @@
             "sozialgrad_b2",
             "sozialhilfe_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-text-cohesion",
           "grammarTitleZh": "篇章銜接：指代與主題推進",
           "readingId": "b2-11",
@@ -26134,7 +26134,7 @@
             "sozialschutz_b2",
             "sozialsystem_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-12",
           "readingTitleZh": "辦公室日常中的人工智慧"
         },
@@ -26269,7 +26269,7 @@
             "sportbereich_b2",
             "sportdienst_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-verbs-fixed",
           "grammarTitleZh": "功能動詞結構（Funktionsverbgefüge）",
           "readingId": "b2-13",
@@ -26297,7 +26297,7 @@
             "sportplan_b2",
             "sportplatz_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-14",
           "readingTitleZh": "語言、工作與安頓"
         },
@@ -26323,7 +26323,7 @@
             "sprechheit_b2",
             "sprechschaft_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-subjunctive-wishes",
           "grammarTitleZh": "願望句、條件省略與固定套語",
           "readingId": "b2-15",
@@ -26351,7 +26351,7 @@
             "stadtkraft_b2",
             "stadtlage_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-16",
           "readingTitleZh": "數位學校：機會與過載之間"
         },
@@ -26377,7 +26377,7 @@
             "stadtweg_b2",
             "stadtwert_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-adjective-advanced",
           "grammarTitleZh": "分詞形容詞與複合修飾",
           "readingId": "b2-17",
@@ -26405,7 +26405,7 @@
             "suchschaft_b2",
             "suchung_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-18",
           "readingTitleZh": "城市裡的熱"
         },
@@ -26540,7 +26540,7 @@
             "unsicherheit_b2",
             "unterbrechung_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-prepositions-formal",
           "grammarTitleZh": "正式介詞與介詞短語",
           "readingId": "b2-19",
@@ -26568,7 +26568,7 @@
             "verkaufer_b2",
             "verkaufheit_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-20",
           "readingTitleZh": "公共空間的監控"
         },
@@ -26594,7 +26594,7 @@
             "verwirklichung_b2",
             "veraenderung_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-speech-acts",
           "grammarTitleZh": "言語行為與緩和策略",
           "readingId": "b2-21",
@@ -26622,7 +26622,7 @@
             "wahrscheinlichkeit_b2",
             "wandel_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-22",
           "readingTitleZh": "申請延長繳交期限"
         },
@@ -26648,7 +26648,7 @@
             "wirtschaftsfreiheit_b2",
             "wirtschaftsgrad_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-tense-aspect-discourse",
           "grammarTitleZh": "時態在篇章中的選擇",
           "readingId": "b2-23",
@@ -26676,7 +26676,7 @@
             "wirtschaftsrecht_b2",
             "wirtschaftsschutz_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-24",
           "readingTitleZh": "對實習證明的回饋"
         },
@@ -26811,7 +26811,7 @@
             "wuenscher_b2",
             "wuenschheit_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-relative-advanced",
           "grammarTitleZh": "進階關係句：was, wer, wo, weswegen",
           "readingId": "b2-25",
@@ -26839,7 +26839,7 @@
             "zustimmung_b2",
             "zuverlaessigkeit_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-26",
           "readingTitleZh": "危害評估邀請"
         },
@@ -26865,7 +26865,7 @@
             "ueberraschung_b2",
             "ueberzeugung_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-negation-advanced",
           "grammarTitleZh": "否定進階與多重否定語義",
           "readingId": "b2-27",
@@ -26893,7 +26893,7 @@
             "antrag_b2",
             "arbeitsmarkt_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-28",
           "readingTitleZh": "致物業管理函"
         },
@@ -26919,7 +26919,7 @@
             "bericht_b2",
             "beschleunigung_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-irony-particles",
           "grammarTitleZh": "語氣小品詞（Modalpartikeln）",
           "readingId": "b2-29",
@@ -26947,7 +26947,7 @@
             "differenzierung_b2",
             "durchfuehrung_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-30",
           "readingTitleZh": "致編輯部的更正聲明"
         },
@@ -27082,7 +27082,7 @@
             "erkenntnis_b2",
             "erkenntnisgewinn_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-register",
           "grammarTitleZh": "語域：口語、中性、書面",
           "readingId": "b2-31",
@@ -27110,7 +27110,7 @@
             "gesamtbewertung_b2",
             "gutachten_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-32",
           "readingTitleZh": "附理由的報價婉拒"
         },
@@ -27136,7 +27136,7 @@
             "konjunktur_b2",
             "konkurrenz_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-complex-connectors",
           "grammarTitleZh": "學術／正式連接手段",
           "readingId": "b2-33",
@@ -27164,7 +27164,7 @@
             "leistungsfaehigkeit_b2",
             "leitgedanke_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-34",
           "readingTitleZh": "退考準則"
         },
@@ -27190,7 +27190,7 @@
             "professionalitaet_b2",
             "profil_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-konjunktiv-mix",
           "grammarTitleZh": "虛擬式綜合運用",
           "readingId": "b2-35",
@@ -27218,7 +27218,7 @@
             "schwerpunkt_b2",
             "selbststaendigkeit_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-36",
           "readingTitleZh": "市立展覽準則"
         },
@@ -27353,7 +27353,7 @@
             "umsetzung_b2",
             "verfahren_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-passive-advanced",
           "grammarTitleZh": "被動進階與無人稱被動",
           "readingId": "b2-37",
@@ -27381,7 +27381,7 @@
             "wettbewerb_b2",
             "wettbewerbsfaehigkeit_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-38",
           "readingTitleZh": "撤回權告知（範例節錄）"
         },
@@ -27407,7 +27407,7 @@
             "klimaschutz_b2",
             "klimaveraenderung_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-nominal-style",
           "grammarTitleZh": "名詞風格與動詞風格改寫",
           "readingId": "b2-39",
@@ -27435,7 +27435,7 @@
             "angemessen_b2",
             "anschliessend_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-40",
           "readingTitleZh": "企業疫苗活動公告"
         },
@@ -27461,7 +27461,7 @@
             "ausserordentlich_b2",
             "bedeutsam_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-text-cohesion",
           "grammarTitleZh": "篇章銜接：指代與主題推進",
           "readingId": "b2-41",
@@ -27489,7 +27489,7 @@
             "bewusst_b2",
             "brauchbar_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-42",
           "readingTitleZh": "獎學金計畫公告"
         },
@@ -27624,7 +27624,7 @@
             "durchgreifend_b2",
             "durstigerweise_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-verbs-fixed",
           "grammarTitleZh": "功能動詞結構（Funktionsverbgefüge）",
           "readingId": "b2-43",
@@ -27652,7 +27652,7 @@
             "entscheidend_b2",
             "entsprechend_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-44",
           "readingTitleZh": "年度發展面談"
         },
@@ -27678,7 +27678,7 @@
             "fahrlich_b2",
             "faktisch_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-subjunctive-wishes",
           "grammarTitleZh": "願望句、條件省略與固定套語",
           "readingId": "b2-45",
@@ -27706,7 +27706,7 @@
             "freundlicherweise_b2",
             "fundamental_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-46",
           "readingTitleZh": "交通轉型座談"
         },
@@ -27732,7 +27732,7 @@
             "genau_b2",
             "gerechtfertigt_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-adjective-advanced",
           "grammarTitleZh": "分詞形容詞與複合修飾",
           "readingId": "b2-47",
@@ -27760,7 +27760,7 @@
             "hintenerweise_b2",
             "hoffbar_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-48",
           "readingTitleZh": "租屋協會諮詢"
         },
@@ -27895,7 +27895,7 @@
             "idealerweise_b2",
             "identisch_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-prepositions-formal",
           "grammarTitleZh": "正式介詞與介詞短語",
           "readingId": "b2-49",
@@ -27923,7 +27923,7 @@
             "interessant_b2",
             "interessanterweise_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-50",
           "readingTitleZh": "策展人訪談"
         },
@@ -27949,7 +27949,7 @@
             "konkret_b2",
             "konsequent_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-speech-acts",
           "grammarTitleZh": "言語行為與緩和策略",
           "readingId": "b2-51",
@@ -27977,7 +27977,7 @@
             "legalerweise_b2",
             "leichterweise_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-52",
           "readingTitleZh": "對考試組織提出申訴"
         },
@@ -28003,7 +28003,7 @@
             "methodisch_b2",
             "modernerweise_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-tense-aspect-discourse",
           "grammarTitleZh": "時態在篇章中的選擇",
           "readingId": "b2-53",
@@ -28031,7 +28031,7 @@
             "nutzloserweise_b2",
             "noetigerweise_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-54",
           "readingTitleZh": "訪談：平台責任"
         },
@@ -28166,7 +28166,7 @@
             "perfekterweise_b2",
             "persoenlich_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-relative-advanced",
           "grammarTitleZh": "進階關係句：was, wer, wo, weswegen",
           "readingId": "b2-55",
@@ -28194,7 +28194,7 @@
             "professionell_b2",
             "progressiv_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-56",
           "readingTitleZh": "紀錄衝突面談"
         },
@@ -28220,7 +28220,7 @@
             "ressourcenorientiert_b2",
             "richtigerweise_b2"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-negation-advanced",
           "grammarTitleZh": "否定進階與多重否定語義",
           "readingId": "b2-57",
@@ -28248,7 +28248,7 @@
             "analysieren_c1",
             "analysierenen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-58",
           "readingTitleZh": "吹哨者保護提示"
         },
@@ -28274,7 +28274,7 @@
             "begrifflichen_c1",
             "begruenden_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-irony-particles",
           "grammarTitleZh": "語氣小品詞（Modalpartikeln）",
           "readingId": "b2-59",
@@ -28302,7 +28302,7 @@
             "deduzierenen_c1",
             "dekonstruieren_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-60",
           "readingTitleZh": "論壇：供應鏈與責任"
         },
@@ -28437,7 +28437,7 @@
             "einordnen_c1",
             "einwenden_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-register",
           "grammarTitleZh": "語域：口語、中性、書面",
           "readingId": "b2-61",
@@ -28465,7 +28465,7 @@
             "erwidernen_c1",
             "eroertern_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-62",
           "readingTitleZh": "請求後履行（瑕疵補救）"
         },
@@ -28491,7 +28491,7 @@
             "fundieren_c1",
             "fundierenen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-complex-connectors",
           "grammarTitleZh": "學術／正式連接手段",
           "readingId": "b2-63",
@@ -28519,7 +28519,7 @@
             "historisieren_c1",
             "historisierenen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-64",
           "readingTitleZh": "開放資料與權力不對稱"
         },
@@ -28545,7 +28545,7 @@
             "inkohaerenten_c1",
             "institutionalisieren_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-konjunktiv-mix",
           "grammarTitleZh": "虛擬式綜合運用",
           "readingId": "b2-65",
@@ -28573,7 +28573,7 @@
             "konkretisieren_c1",
             "konkretisierenen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-66",
           "readingTitleZh": "回收率與真正循環"
         },
@@ -28708,7 +28708,7 @@
             "kritisieren_c1",
             "legitimieren_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-passive-advanced",
           "grammarTitleZh": "被動進階與無人稱被動",
           "readingId": "b2-67",
@@ -28736,7 +28736,7 @@
             "nuancierenen_c1",
             "operationalisieren_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-68",
           "readingTitleZh": "沒有走過場的公民參與"
         },
@@ -28762,7 +28762,7 @@
             "problematisierenen_c1",
             "prognostizieren_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-nominal-style",
           "grammarTitleZh": "名詞風格與動詞風格改寫",
           "readingId": "b2-69",
@@ -28790,7 +28790,7 @@
             "rekonstruierenen_c1",
             "relativieren_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-70",
           "readingTitleZh": "作為商業模式的假訊"
         },
@@ -28816,7 +28816,7 @@
             "sich_ambivalenten_c1",
             "sich_analogen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-text-cohesion",
           "grammarTitleZh": "篇章銜接：指代與主題推進",
           "readingId": "b2-71",
@@ -28844,7 +28844,7 @@
             "sich_deduzierenen_c1",
             "sich_dekonstruierenen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-72",
           "readingTitleZh": "針對抄襲指控之說明"
         },
@@ -28979,7 +28979,7 @@
             "sich_erwidernen_c1",
             "sich_evaluierenen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-verbs-fixed",
           "grammarTitleZh": "功能動詞結構（Funktionsverbgefüge）",
           "readingId": "b2-73",
@@ -29007,7 +29007,7 @@
             "sich_hervorhebenen_c1",
             "sich_hinterfragenen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-74",
           "readingTitleZh": "論壇：深偽與責任"
         },
@@ -29033,7 +29033,7 @@
             "sich_internationalisierenen_c1",
             "sich_interpretativen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-subjunctive-wishes",
           "grammarTitleZh": "願望句、條件省略與固定套語",
           "readingId": "b2-75",
@@ -29061,7 +29061,7 @@
             "sich_lokalisierenen_c1",
             "sich_methodischen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-76",
           "readingTitleZh": "撤回契約前之期限設定"
         },
@@ -29087,7 +29087,7 @@
             "sich_problematisierenen_c1",
             "sich_prognostizierenen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-adjective-advanced",
           "grammarTitleZh": "分詞形容詞與複合修飾",
           "readingId": "b2-77",
@@ -29115,7 +29115,7 @@
             "sich_stabilisierenen_c1",
             "sich_standardisierenen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-78",
           "readingTitleZh": "臨時行人區－交通試驗"
         },
@@ -29250,7 +29250,7 @@
             "sich_zuspitzenen_c1",
             "sich_oekonomisierenen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-prepositions-formal",
           "grammarTitleZh": "正式介詞與介詞短語",
           "readingId": "b2-79",
@@ -29278,7 +29278,7 @@
             "systematisieren_c1",
             "systematisierenen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-80",
           "readingTitleZh": "針對不利輪班實務之申訴"
         },
@@ -29304,7 +29304,7 @@
             "verallgemeinernen_c1",
             "verdeutlichen_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-speech-acts",
           "grammarTitleZh": "言語行為與緩和策略",
           "readingId": "b2-81",
@@ -29332,7 +29332,7 @@
             "widersprechen_c1",
             "zentrieren_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-82",
           "readingTitleZh": "外國學歷認證作為瓶頸"
         },
@@ -29358,7 +29358,7 @@
             "ueberdenken_c1",
             "abbild_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-tense-aspect-discourse",
           "grammarTitleZh": "時態在篇章中的選擇",
           "readingId": "b2-83",
@@ -29386,7 +29386,7 @@
             "akzentuierenschaft_c1",
             "akzentuierenung_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b2-84",
           "readingTitleZh": "博物館關閉與注意力經濟"
         },
@@ -29521,7 +29521,7 @@
             "analysierenheit_c1",
             "analysierenschaft_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-relative-advanced",
           "grammarTitleZh": "進階關係句：was, wer, wo, weswegen",
           "readingId": "b2-85",
@@ -29549,7 +29549,7 @@
             "argumentierenheit_c1",
             "argumentierenschaft_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-01",
           "readingTitleZh": "家中看不見的勞動"
         },
@@ -29575,7 +29575,7 @@
             "begrifflichung_c1",
             "bekraeftigener_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-negation-advanced",
           "grammarTitleZh": "否定進階與多重否定語義",
           "readingId": "b1-02",
@@ -29603,7 +29603,7 @@
             "belegenung_c1",
             "betrachtungsweise_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-03",
           "readingTitleZh": "個資規定提示"
         },
@@ -29629,7 +29629,7 @@
             "deduzierenung_c1",
             "dekonstruierener_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-irony-particles",
           "grammarTitleZh": "語氣小品詞（Modalpartikeln）",
           "readingId": "b1-04",
@@ -29657,7 +29657,7 @@
             "destabilisierenung_c1",
             "differenzierener_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-05",
           "readingTitleZh": "報告面談"
         },
@@ -29792,7 +29792,7 @@
             "diskursivheit_c1",
             "diskursivschaft_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-register",
           "grammarTitleZh": "語域：口語、中性、書面",
           "readingId": "b1-06",
@@ -29820,7 +29820,7 @@
             "elaborierenung_c1",
             "empirischer_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-07",
           "readingTitleZh": "對行政處分提出異議"
         },
@@ -29846,7 +29846,7 @@
             "epistemischung_c1",
             "erwiderner_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-complex-connectors",
           "grammarTitleZh": "學術／正式連接手段",
           "readingId": "b1-08",
@@ -29874,7 +29874,7 @@
             "evidentschaft_c1",
             "evidentung_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-09",
           "readingTitleZh": "薪資與發展"
         },
@@ -29900,7 +29900,7 @@
             "exzerpierenschaft_c1",
             "exzerpierenung_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-konjunktiv-mix",
           "grammarTitleZh": "虛擬式綜合運用",
           "readingId": "b1-10",
@@ -29928,7 +29928,7 @@
             "fundiertschaft_c1",
             "fundiertung_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-11",
           "readingTitleZh": "調適而不只減緩"
         },
@@ -30063,7 +30063,7 @@
             "globalisierenung_c1",
             "hermeneutischer_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-passive-advanced",
           "grammarTitleZh": "被動進階與無人稱被動",
           "readingId": "b1-12",
@@ -30091,7 +30091,7 @@
             "hinterfragenung_c1",
             "historisierener_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-13",
           "readingTitleZh": "帶病硬撐上班"
         },
@@ -30117,7 +30117,7 @@
             "implizierenung_c1",
             "impliziter_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-nominal-style",
           "grammarTitleZh": "名詞風格與動詞風格改寫",
           "readingId": "b1-14",
@@ -30145,7 +30145,7 @@
             "induzierenung_c1",
             "inferierener_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-15",
           "readingTitleZh": "投資商品風險提示"
         },
@@ -30171,7 +30171,7 @@
             "institutionalisierenung_c1",
             "interdependenz_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-text-cohesion",
           "grammarTitleZh": "篇章銜接：指代與主題推進",
           "readingId": "b1-16",
@@ -30199,7 +30199,7 @@
             "interpretativschaft_c1",
             "interpretativung_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-17",
           "readingTitleZh": "資料使用詢問"
         },
@@ -30334,7 +30334,7 @@
             "kohaerenter_c1",
             "kohaerentheit_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-verbs-fixed",
           "grammarTitleZh": "功能動詞結構（Funktionsverbgefüge）",
           "readingId": "b1-18",
@@ -30362,7 +30362,7 @@
             "konsistentung_c1",
             "kontextualisierener_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-19",
           "readingTitleZh": "多語作為資源"
         },
@@ -30388,7 +30388,7 @@
             "konzedierenschaft_c1",
             "konzedierenung_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-subjunctive-wishes",
           "grammarTitleZh": "願望句、條件省略與固定套語",
           "readingId": "b1-20",
@@ -30416,7 +30416,7 @@
             "lokalisierener_c1",
             "lokalisierenheit_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-21",
           "readingTitleZh": "分階段到達"
         },
@@ -30442,7 +30442,7 @@
             "nachvollziehbarschaft_c1",
             "nachvollziehbarung_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-adjective-advanced",
           "grammarTitleZh": "分詞形容詞與複合修飾",
           "readingId": "b1-22",
@@ -30470,7 +30470,7 @@
             "nuancierener_c1",
             "nuancierenheit_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-23",
           "readingTitleZh": "不同立場"
         },
@@ -30605,7 +30605,7 @@
             "paradoxung_c1",
             "paraphrasierener_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-prepositions-formal",
           "grammarTitleZh": "正式介詞與介詞短語",
           "readingId": "b1-24",
@@ -30633,7 +30633,7 @@
             "plausibelheit_c1",
             "plausibelschaft_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-25",
           "readingTitleZh": "事故後說明"
         },
@@ -30659,7 +30659,7 @@
             "problematisierenung_c1",
             "prognostizierener_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-speech-acts",
           "grammarTitleZh": "言語行為與緩和策略",
           "readingId": "b1-26",
@@ -30687,7 +30687,7 @@
             "praesuppositionalung_c1",
             "rationalitaet_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-27",
           "readingTitleZh": "研究成果訪談"
         },
@@ -30713,7 +30713,7 @@
             "regionalisierenschaft_c1",
             "regionalisierenung_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-tense-aspect-discourse",
           "grammarTitleZh": "時態在篇章中的選擇",
           "readingId": "b1-28",
@@ -30741,7 +30741,7 @@
             "resuemierener_c1",
             "resuemierenheit_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-29",
           "readingTitleZh": "選擇悖論"
         },
@@ -30876,7 +30876,7 @@
             "sinnstiftung_c1",
             "sozialisation_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-relative-advanced",
           "grammarTitleZh": "進階關係句：was, wer, wo, weswegen",
           "readingId": "b1-30",
@@ -30904,7 +30904,7 @@
             "standardisierener_c1",
             "standardisierenheit_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-31",
           "readingTitleZh": "語言與可見度"
         },
@@ -30930,7 +30930,7 @@
             "systematisierenschaft_c1",
             "systematisierenung_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-negation-advanced",
           "grammarTitleZh": "否定進階與多重否定語義",
           "readingId": "b1-32",
@@ -30958,7 +30958,7 @@
             "unschaerfe_c1",
             "untermauerner_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-33",
           "readingTitleZh": "點擊勞動與尊嚴"
         },
@@ -30984,7 +30984,7 @@
             "verallgemeinernschaft_c1",
             "verallgemeinernung_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-irony-particles",
           "grammarTitleZh": "語氣小品詞（Modalpartikeln）",
           "readingId": "b1-34",
@@ -31012,7 +31012,7 @@
             "wirkmaechtigkeit_c1",
             "zentrierener_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-35",
           "readingTitleZh": "設定界線"
         },
@@ -31147,7 +31147,7 @@
             "zuspitzenschaft_c1",
             "zuspitzenung_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-register",
           "grammarTitleZh": "語域：口語、中性、書面",
           "readingId": "b1-36",
@@ -31175,7 +31175,7 @@
             "annahme_c1",
             "ansatzpunkt_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-37",
           "readingTitleZh": "我們如何記憶"
         },
@@ -31201,7 +31201,7 @@
             "beweisfuehrung_c1",
             "datenlage_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-complex-connectors",
           "grammarTitleZh": "學術／正式連接手段",
           "readingId": "b1-38",
@@ -31229,7 +31229,7 @@
             "einwand_c1",
             "emergenz_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-39",
           "readingTitleZh": "和解會談"
         },
@@ -31255,7 +31255,7 @@
             "gegenargument_c1",
             "gegenentwurf_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-konjunktiv-mix",
           "grammarTitleZh": "虛擬式綜合運用",
           "readingId": "b1-40",
@@ -31283,7 +31283,7 @@
             "indikator_c1",
             "induktion_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-41",
           "readingTitleZh": "機密通報"
         },
@@ -31418,7 +31418,7 @@
             "klassifikation_c1",
             "kohaerenz_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-passive-advanced",
           "grammarTitleZh": "被動進階與無人稱被動",
           "readingId": "b1-42",
@@ -31446,7 +31446,7 @@
             "kriterium_c1",
             "kritikfaehigkeit_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-43",
           "readingTitleZh": "可用性測試"
         },
@@ -31472,7 +31472,7 @@
             "nuancierung_c1",
             "objektivitaet_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-nominal-style",
           "grammarTitleZh": "名詞風格與動詞風格改寫",
           "readingId": "b1-44",
@@ -31500,7 +31500,7 @@
             "praemisse_c1",
             "praesupposition_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-45",
           "readingTitleZh": "第二語言中的反諷"
         },
@@ -31526,7 +31526,7 @@
             "standard_c1",
             "stichhaltigkeit_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-text-cohesion",
           "grammarTitleZh": "篇章銜接：指代與主題推進",
           "readingId": "b1-46",
@@ -31554,7 +31554,7 @@
             "these_c1",
             "transformation_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-47",
           "readingTitleZh": "情勢簡報"
         },
@@ -31689,7 +31689,7 @@
             "abschwaechenbar_c1",
             "abschwaechenlich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-verbs-fixed",
           "grammarTitleZh": "功能動詞結構（Funktionsverbgefüge）",
           "readingId": "b1-48",
@@ -31717,7 +31717,7 @@
             "analoglich_c1",
             "analysierenbar_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-49",
           "readingTitleZh": "展覽準則"
         },
@@ -31743,7 +31743,7 @@
             "artikulierenbar_c1",
             "artikulierenlich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-subjunctive-wishes",
           "grammarTitleZh": "願望句、條件省略與固定套語",
           "readingId": "b1-50",
@@ -31771,7 +31771,7 @@
             "belegenbar_c1",
             "belegenlich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-51",
           "readingTitleZh": "工時紀錄詢問"
         },
@@ -31797,7 +31797,7 @@
             "destabilisierenbar_c1",
             "destabilisierenlich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-adjective-advanced",
           "grammarTitleZh": "分詞形容詞與複合修飾",
           "readingId": "b1-52",
@@ -31825,7 +31825,7 @@
             "eigenstaendig_c1",
             "einwendenbar_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-53",
           "readingTitleZh": "鏡頭開還是關？"
         },
@@ -31960,7 +31960,7 @@
             "epistemischbar_c1",
             "epistemischlich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-prepositions-formal",
           "grammarTitleZh": "正式介詞與介詞短語",
           "readingId": "b1-54",
@@ -31988,7 +31988,7 @@
             "explizierenlich_c1",
             "explizit_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-55",
           "readingTitleZh": "申請更換模組課程"
         },
@@ -32014,7 +32014,7 @@
             "fundierenlich_c1",
             "fundiert_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-speech-acts",
           "grammarTitleZh": "言語行為與緩和策略",
           "readingId": "b1-56",
@@ -32042,7 +32042,7 @@
             "hervorhebenbar_c1",
             "hervorhebenlich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-57",
           "readingTitleZh": "共享不一定比較便宜"
         },
@@ -32068,7 +32068,7 @@
             "implizierenbar_c1",
             "implizierenlich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-tense-aspect-discourse",
           "grammarTitleZh": "時態在篇章中的選擇",
           "readingId": "b1-58",
@@ -32096,7 +32096,7 @@
             "inkohaerent_c1",
             "inkohaerentbar_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-59",
           "readingTitleZh": "對拒賠提出異議"
         },
@@ -32231,7 +32231,7 @@
             "interpretativlich_c1",
             "interpretierenbar_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-relative-advanced",
           "grammarTitleZh": "進階關係句：was, wer, wo, weswegen",
           "readingId": "b1-60",
@@ -32259,7 +32259,7 @@
             "konkretisierenlich_c1",
             "konsistent_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-61",
           "readingTitleZh": "討論市區通行費"
         },
@@ -32285,7 +32285,7 @@
             "konzedierenbar_c1",
             "konzedierenlich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-negation-advanced",
           "grammarTitleZh": "否定進階與多重否定語義",
           "readingId": "b1-62",
@@ -32313,7 +32313,7 @@
             "nachvollziehbar_c1",
             "nachvollziehbarbar_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-63",
           "readingTitleZh": "路面電車噪音整治"
         },
@@ -32339,7 +32339,7 @@
             "operationalisierenbar_c1",
             "operationalisierenlich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-irony-particles",
           "grammarTitleZh": "語氣小品詞（Modalpartikeln）",
           "readingId": "b1-64",
@@ -32367,7 +32367,7 @@
             "politisierenbar_c1",
             "politisierenlich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-65",
           "readingTitleZh": "自動化履歷篩選"
         },
@@ -32502,7 +32502,7 @@
             "praesuppositionalbar_c1",
             "praesuppositionallich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-register",
           "grammarTitleZh": "語域：口語、中性、書面",
           "readingId": "b1-66",
@@ -32530,7 +32530,7 @@
             "rekonstruierenlich_c1",
             "relational_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-67",
           "readingTitleZh": "社區接種活動"
         },
@@ -32556,7 +32556,7 @@
             "spezifizierenbar_c1",
             "spezifizierenlich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-complex-connectors",
           "grammarTitleZh": "學術／正式連接手段",
           "readingId": "b1-68",
@@ -32584,7 +32584,7 @@
             "synthetisierenlich_c1",
             "systematisch_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-69",
           "readingTitleZh": "托育時間與輪班"
         },
@@ -32610,7 +32610,7 @@
             "umfassend_c1",
             "unhintergehbar_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-konjunktiv-mix",
           "grammarTitleZh": "虛擬式綜合運用",
           "readingId": "b1-70",
@@ -32638,7 +32638,7 @@
             "widerlegenlich_c1",
             "widerspruechlich_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-71",
           "readingTitleZh": "申請彈性工時"
         },
@@ -32773,7 +32773,7 @@
             "oekonomisierenlich_c1",
             "ueberzeugend_c1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-passive-advanced",
           "grammarTitleZh": "被動進階與無人稱被動",
           "readingId": "b1-72",
@@ -32801,7 +32801,7 @@
             "vorsitzen_b1",
             "vorsparen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-73",
           "readingTitleZh": "室友廚房爭執"
         },
@@ -32827,7 +32827,7 @@
             "vortrinken_b1",
             "vorverbesseren_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-nominal-style",
           "grammarTitleZh": "名詞風格與動詞風格改寫",
           "readingId": "b1-74",
@@ -32855,7 +32855,7 @@
             "vorweinen_b1",
             "vorwerfen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-75",
           "readingTitleZh": "黴菌處理提醒"
         },
@@ -32881,7 +32881,7 @@
             "voroeffnen_b1",
             "vorueben_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-text-cohesion",
           "grammarTitleZh": "篇章銜接：指代與主題推進",
           "readingId": "b1-76",
@@ -32909,7 +32909,7 @@
             "zuantworten_b1",
             "zuarbeiten_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-77",
           "readingTitleZh": "修理代替丟棄"
         },
@@ -33044,7 +33044,7 @@
             "zubleiben_b1",
             "zubrauchen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-verbs-fixed",
           "grammarTitleZh": "功能動詞結構（Funktionsverbgefüge）",
           "readingId": "b1-78",
@@ -33072,7 +33072,7 @@
             "zuerzaehlen_b1",
             "zuessen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-79",
           "readingTitleZh": "社團出遊報銷"
         },
@@ -33098,7 +33098,7 @@
             "zugeben_b1",
             "zugehen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-subjunctive-wishes",
           "grammarTitleZh": "願望句、條件省略與固定套語",
           "readingId": "b1-80",
@@ -33126,7 +33126,7 @@
             "zukochen_b1",
             "zukommen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-81",
           "readingTitleZh": "線上面試"
         },
@@ -33152,7 +33152,7 @@
             "zulesen_b1",
             "zuliegen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。另學 1 則文法。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀＋文法。學會了請自己按「標記已學會」。",
           "grammarId": "c1-adjective-advanced",
           "grammarTitleZh": "分詞形容詞與複合修飾",
           "readingId": "b1-82",
@@ -33180,7 +33180,7 @@
             "zuputzen_b1",
             "zurechnen_b1"
           ],
-          "tipZh": "今日 12 個生字（已學會自動跳過補下一個）。再讀 1 篇短文。",
+          "tipZh": "今日 12 個字＋閱讀。學會了請自己按「標記已學會」。",
           "readingId": "b1-83",
           "readingTitleZh": "求職資料保存"
         },

@@ -1152,7 +1152,7 @@ export default function App() {
         <section className="level-board learn-focus-banner">
           <p className="ai-lead-sm">
             路徑單字：目前只顯示 {focusVocabIds.length}{' '}
-            個指定詞（已自動排入 SRS）。
+            個指定詞。學會了請自己按「標記已學會」。
           </p>
           <button
             type="button"
