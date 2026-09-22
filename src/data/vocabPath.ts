@@ -89,17 +89,12 @@ export type ResolvedVocabDay = {
 }
 
 /**
- * Build today's list: skip ids already learned (in `knownIds`),
- * walk forward on the pipeline until `targetCount` fresh words.
- *
- * @deprecated Prefer fixed `day.vocabIds`. Auto-skip made words vanish
- * when opened/enrolled; keep for scripts only — UI must not call this.
+ * Prefer fixed day.vocabIds. Kept for API compatibility — never auto-skips.
  */
 export function resolveVocabDay(
   day: VocabPathDay,
   knownIds: Set<string> | ReadonlySet<string>,
 ): ResolvedVocabDay {
-  // Always return the fixed list — never auto-skip / auto-filter.
   void knownIds
   return {
     ids: [...day.vocabIds],
