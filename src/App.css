@@ -2226,3 +2226,112 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+/* —— Learn hub (SRS / roadmap / stories / tutor) —— */
+.learn-hub {
+  margin-top: 0.5rem;
+  animation: rise 0.55s ease both;
+}
+
+.learn-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-top: 0.75rem;
+}
+
+.learn-focus-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.learn-task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.learn-task-list > li,
+.learn-task {
+  padding: 0.85rem 1rem;
+  border-left: 3px solid rgba(31, 92, 69, 0.35);
+  background: linear-gradient(
+    105deg,
+    rgba(255, 255, 255, 0.55),
+    rgba(232, 242, 236, 0.35)
+  );
+}
+
+.learn-task-list label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.55rem;
+  cursor: pointer;
+}
+
+.learn-vocab-preview {
+  margin: 0.45rem 0 0.55rem;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  font-family: var(--font-de);
+}
+
+.roadmap-day-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.4rem 0 0.75rem;
+}
+
+.roadmap-day-tabs .level-tab {
+  min-width: 2.2rem;
+  padding: 0.35rem 0.45rem;
+  font-size: 0.82rem;
+}
+
+.srs-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1rem 0 0.25rem;
+}
+
+.srs-grades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.35rem;
+}
+
+.learn-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0.55rem 0;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.learn-field input,
+.learn-field textarea,
+.learn-field select {
+  font: inherit;
+  color: var(--ink);
+  padding: 0.55rem 0.7rem;
+  border: 1px solid rgba(31, 92, 69, 0.28);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.learn-field textarea {
+  resize: vertical;
+  min-height: 4rem;
+  font-family: var(--font-de);
+}

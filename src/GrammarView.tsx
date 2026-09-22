@@ -409,8 +409,10 @@ function TopicDetail({
 
 export default function GrammarView({
   onOpenWord,
+  focusId,
 }: {
   onOpenWord: (hit: VocabHit) => void
+  focusId?: string
 }) {
   const [levelFilter, setLevelFilter] = useState<LevelFilter>('A1')
   const [category, setCategory] = useState<string>('全部')
@@ -422,6 +424,24 @@ export default function GrammarView({
   useEffect(() => {
     localStorage.setItem(LEARNED_KEY, JSON.stringify([...learned]))
   }, [learned])
+
+  useEffect(() => {
+    if (!focusId) return
+    const id = focusId.split('#')[0]
+    const topic = grammarTopics.find((t) => t.id === id)
+    if (!topic) return
+    setLevelFilter(topic.level)
+    setCategory('全部')
+    setQuery('')
+    setHideLearned(false)
+    setSelectedId(id)
+    requestAnimationFrame(() => {
+      document.querySelector('.grammar-detail, .detail')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    })
+  }, [focusId])
 
   const progress = useMemo(() => {
     return grammarLevels.map((level) => {

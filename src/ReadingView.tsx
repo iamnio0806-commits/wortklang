@@ -195,8 +195,10 @@ function ReadingDetail({
 
 export default function ReadingView({
   onOpenWord,
+  focusId,
 }: {
   onOpenWord: (hit: VocabHit) => void
+  focusId?: string
 }) {
   const [levelFilter, setLevelFilter] = useState<LevelFilter>('練習')
   const [topic, setTopic] = useState('全部')
@@ -209,6 +211,25 @@ export default function ReadingView({
   useEffect(() => {
     localStorage.setItem(LEARNED_KEY, JSON.stringify([...learned]))
   }, [learned])
+
+  useEffect(() => {
+    if (!focusId) return
+    const id = focusId.split('#')[0]
+    const item = readingItems.find((i) => i.id === id)
+    if (!item) return
+    setLevelFilter(item.level)
+    setTopic('全部')
+    setKind('全部')
+    setQuery('')
+    setHideLearned(false)
+    setSelectedId(id)
+    requestAnimationFrame(() => {
+      document.querySelector('.reading-detail, .detail')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    })
+  }, [focusId])
 
   const topics = useMemo(() => readingTopicsFor(levelFilter), [levelFilter])
 

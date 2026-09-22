@@ -78,3 +78,7 @@ export function readingTopicsFor(level: ReadingLevel | '全部'): string[] {
       : readingItems.filter((i) => i.level === level)
   return [...new Set(pool.map((i) => i.topic))]
 }
+
+export function getReadingById(id: string): ReadingItem | undefined {
+  return readingItems.find((i) => i.id === id)
+}

@@ -30,10 +30,28 @@ import ArticlesIntro from './ArticlesIntro'
 import AffixesIntro from './AffixesIntro'
 import ReadingView from './ReadingView'
 import ExamView from './ExamView'
+import LearnHub from './LearnHub'
 import { lookupPrefix, lookupSuffix } from './data/affixes'
+import { getGrammarTopic } from './data/grammar'
+import { getReadingById } from './data/reading'
+import {
+  countDue,
+  enrollCard,
+  loadSrsMap,
+  saveSrsMap,
+  unenrollCard,
+  type SrsCard,
+} from './lib/srs'
 import './App.css'
 
-type Section = 'vocab' | 'grammar' | 'articles' | 'affixes' | 'reading' | 'exam'
+type Section =
+  | 'learn'
+  | 'vocab'
+  | 'grammar'
+  | 'articles'
+  | 'affixes'
+  | 'reading'
+  | 'exam'
 type Mode = 'browse' | 'flash' | 'plural' | 'verb' | 'family'
 type LevelFilter = Level | '全部'
 type WordTypeFilter = '全部' | '名詞' | '動詞' | '形容詞'
@@ -49,9 +67,8 @@ type NavSnap = {
   query: string
   hideLearned: boolean
   flashIndex: number
+  focusVocabIds: string[] | null
 }
-
-const LEARNED_KEY = 'wortklang-learned'
 
 /** Color every der/die/das (any case) inside a text string. */
 function ColoredLemma({
@@ -81,17 +98,6 @@ const MODE_LABEL: Record<Mode, string> = {
   plural: '複數記憶',
   verb: '動詞變化',
   family: '字族聯想',
-}
-
-function loadLearned(): Set<string> {
-  try {
-    const raw = localStorage.getItem(LEARNED_KEY)
-    if (!raw) return new Set()
-    const parsed = JSON.parse(raw) as string[]
-    return new Set(Array.isArray(parsed) ? parsed : [])
-  } catch {
-    return new Set()
-  }
 }
 
 function WordBadge({ article }: { article: Gender }) {
@@ -417,7 +423,7 @@ function WordDetail({
           className={learned ? 'learned-btn on' : 'learned-btn'}
           onClick={onToggleLearned}
         >
-          {learned ? '已學會 ✓' : '標記已學會'}
+          {learned ? '已排入複習 ✓' : '標記已學會（排程複習）'}
         </button>
       </div>
 
@@ -633,7 +639,7 @@ function PracticeCard({
         ) : (
           <>
             <button type="button" className="learned-btn on" onClick={onMark}>
-              標記已學會並下一個
+              排入複習並下一個
             </button>
             <button type="button" className="ghost" onClick={onNext}>
               下一個
@@ -646,7 +652,7 @@ function PracticeCard({
 }
 
 export default function App() {
-  const [section, setSection] = useState<Section>('vocab')
+  const [section, setSection] = useState<Section>('learn')
   const [query, setQuery] = useState('')
   const [levelFilter, setLevelFilter] = useState<LevelFilter>('A1')
   const [category, setCategory] = useState<Category | '全部'>('全部')
@@ -659,16 +665,25 @@ export default function App() {
   const [flashIndex, setFlashIndex] = useState(0)
   const [revealed, setRevealed] = useState(false)
   const [voiceReady, setVoiceReady] = useState(false)
-  const [learned, setLearned] = useState<Set<string>>(() => loadLearned())
+  const [srsMap, setSrsMap] = useState<Record<string, SrsCard>>(() =>
+    loadSrsMap(),
+  )
+  const learned = useMemo(() => new Set(Object.keys(srsMap)), [srsMap])
+  const dueCount = useMemo(() => countDue(srsMap), [srsMap])
   const [hideLearned, setHideLearned] = useState(false)
+  const [focusVocabIds, setFocusVocabIds] = useState<string[] | null>(null)
   const [navStack, setNavStack] = useState<NavSnap[]>([])
+  const [learnMounted, setLearnMounted] = useState(true)
   const [grammarMounted, setGrammarMounted] = useState(false)
   const [articlesMounted, setArticlesMounted] = useState(false)
   const [affixesMounted, setAffixesMounted] = useState(false)
   const [readingMounted, setReadingMounted] = useState(false)
   const [examMounted, setExamMounted] = useState(false)
+  const [grammarFocusId, setGrammarFocusId] = useState<string | undefined>()
+  const [readingFocusId, setReadingFocusId] = useState<string | undefined>()
 
   useEffect(() => {
+    if (section === 'learn') setLearnMounted(true)
     if (section === 'grammar') setGrammarMounted(true)
     if (section === 'articles') setArticlesMounted(true)
     if (section === 'affixes') setAffixesMounted(true)
@@ -682,8 +697,8 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    localStorage.setItem(LEARNED_KEY, JSON.stringify([...learned]))
-  }, [learned])
+    saveSrsMap(srsMap)
+  }, [srsMap])
 
   const progress = useMemo(() => {
     return levels.map((level) => {
@@ -701,6 +716,12 @@ export default function App() {
   }, [learned])
 
   const baseFiltered = useMemo(() => {
+    if (focusVocabIds?.length) {
+      const order = new Map(focusVocabIds.map((id, i) => [id, i]))
+      return vocabulary
+        .filter((w) => order.has(w.id))
+        .sort((a, b) => (order.get(a.id)! - order.get(b.id)!))
+    }
     const q = query.trim()
     const pool = vocabulary.filter((w) => {
       if (levelFilter !== '全部' && w.level !== levelFilter) return false
@@ -717,7 +738,16 @@ export default function App() {
       return true
     })
     return searchVocabulary(pool, q)
-  }, [query, category, gender, levelFilter, hideLearned, learned, wordType])
+  }, [
+    query,
+    category,
+    gender,
+    levelFilter,
+    hideLearned,
+    learned,
+    wordType,
+    focusVocabIds,
+  ])
 
   // Mode-specific pool
   const filtered = useMemo(() => {
@@ -795,20 +825,57 @@ export default function App() {
   }, [section, mode, filtered, selectedIndex, flashIndex])
 
   const toggleLearned = (id: string) => {
-    setLearned((prev) => {
-      const next = new Set(prev)
-      if (next.has(id)) next.delete(id)
-      else next.add(id)
-      return next
+    setSrsMap((prev) => {
+      if (prev[id]) return unenrollCard(prev, id)
+      return enrollCard(prev, id)
     })
   }
 
   const markAndNext = (id: string) => {
-    setLearned((prev) => new Set(prev).add(id))
+    setSrsMap((prev) => enrollCard(prev, id))
     goFlash(1)
   }
 
   const clearNavStack = () => setNavStack([])
+
+  const openVocabIdsFromLearn = (ids: string[]) => {
+    stopSpeaking()
+    clearNavStack()
+    setFocusVocabIds(ids)
+    setSection('vocab')
+    setMode('browse')
+    setLevelFilter('全部')
+    setCategory('全部')
+    setWordType('全部')
+    setGender('全部')
+    setQuery('')
+    setHideLearned(false)
+    if (ids[0]) setSelectedId(ids[0])
+    requestAnimationFrame(() => {
+      document.querySelector('.detail')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    })
+  }
+
+  const openGrammarFromLearn = (topicId: string) => {
+    stopSpeaking()
+    const topic = getGrammarTopic(topicId)
+    if (topic) setGrammarFocusId(`${topicId}#${Date.now()}`)
+    else setGrammarFocusId(topicId)
+    setGrammarMounted(true)
+    setSection('grammar')
+  }
+
+  const openReadingFromLearn = (readingId: string) => {
+    stopSpeaking()
+    const item = getReadingById(readingId)
+    if (item) setReadingFocusId(`${readingId}#${Date.now()}`)
+    else setReadingFocusId(readingId)
+    setReadingMounted(true)
+    setSection('reading')
+  }
 
   const openWordFromLink = (hit: VocabHit) => {
     stopSpeaking()
@@ -825,8 +892,10 @@ export default function App() {
         query,
         hideLearned,
         flashIndex,
+        focusVocabIds,
       },
     ])
+    setFocusVocabIds(null)
     setSection('vocab')
     setMode('browse')
     setLevelFilter(hit.level)
@@ -857,13 +926,16 @@ export default function App() {
     setQuery(snap.query)
     setHideLearned(snap.hideLearned)
     setFlashIndex(snap.flashIndex)
+    setFocusVocabIds(snap.focusVocabIds)
     setSelectedId(snap.selectedId)
     setRevealed(false)
     requestAnimationFrame(() => {
       const target =
         snap.section === 'grammar'
           ? document.querySelector('.grammar-app, .grammar-layout, .layout')
-          : document.querySelector('.detail, .flash')
+          : snap.section === 'learn'
+            ? document.querySelector('.learn-hub')
+            : document.querySelector('.detail, .flash')
       target?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     })
   }
@@ -877,37 +949,53 @@ export default function App() {
       <header className="hero">
         <p className="brand">Wortklang</p>
         <h1>
-          {section === 'vocab'
-            ? '聽得見的德文單字'
-            : section === 'grammar'
-              ? '聽得見的德文文法'
-              : section === 'affixes'
-                ? '字首字根字尾'
-                : section === 'reading'
-                  ? '分級閱讀'
-                  : section === 'exam'
-                    ? '德檢模擬測驗'
-                    : '冠詞入門'}
+          {section === 'learn'
+            ? '自學路徑與複習'
+            : section === 'vocab'
+              ? '聽得見的德文單字'
+              : section === 'grammar'
+                ? '聽得見的德文文法'
+                : section === 'affixes'
+                  ? '字首字根字尾'
+                  : section === 'reading'
+                    ? '分級閱讀'
+                    : section === 'exam'
+                      ? '德檢模擬測驗'
+                      : '冠詞入門'}
         </h1>
         <p className="tagline">
-          {section === 'vocab'
-            ? '完整 A1→C1：冠詞、複數、字首字根、動詞變化與字族記憶。'
-            : section === 'grammar'
-              ? '完整 A1→C1 文法：格變、時態、語序、從句、被動與虛擬式。'
-              : section === 'affixes'
-                ? '可分／不可分字首與常見字尾：每個都有中文意思與例子。'
-                : section === 'reading'
-                  ? '對齊德檢：練習熱身 → A1／A2／B1／B2 考場長度閱讀，含註解與句型。'
-                  : section === 'exam'
-                    ? '練習版＋考場版（Goethe 分 Teil）：A1–B2 各多回；聽力 TTS、寫作範文、口說選練。'
-                    : 'der／die／das、bin／bist／ist：冠詞與最常用變位一起記。'}
+          {section === 'learn'
+            ? 'Day 1–30 闖關、SRS 自動複習、故事泛讀，以及可接 API 的寫作／口說批改。'
+            : section === 'vocab'
+              ? '完整 A1→C1：冠詞、複數、字首字根、動詞變化與字族記憶。'
+              : section === 'grammar'
+                ? '完整 A1→C1 文法：格變、時態、語序、從句、被動與虛擬式。'
+                : section === 'affixes'
+                  ? '可分／不可分字首與常見字尾：每個都有中文意思與例子。'
+                  : section === 'reading'
+                    ? '對齊德檢：練習熱身 → A1／A2／B1／B2 考場長度閱讀，含註解與句型。'
+                    : section === 'exam'
+                      ? '練習版＋考場版（Goethe 分 Teil）：A1–B2 各多回；聽力 TTS、寫作範文、口說選練。'
+                      : 'der／die／das、bin／bist／ist：冠詞與最常用變位一起記。'}
         </p>
 
         <div
           className="cta-row section-switch"
           role="tablist"
-          aria-label="單字、冠詞、字首、閱讀、測驗或文法"
+          aria-label="自學、單字、冠詞、字首、閱讀、測驗或文法"
         >
+          <button
+            type="button"
+            role="tab"
+            aria-selected={section === 'learn'}
+            className={section === 'learn' ? 'primary' : 'ghost'}
+            onClick={() => {
+              stopSpeaking()
+              setSection('learn')
+            }}
+          >
+            自學{dueCount > 0 ? ` ${dueCount}` : ''}
+          </button>
           <button
             type="button"
             role="tab"
@@ -1015,9 +1103,24 @@ export default function App() {
         </p>
       </header>
 
+      {learnMounted && (
+        <div hidden={section !== 'learn'}>
+          <LearnHub
+            onOpenWord={openWordFromLink}
+            onOpenVocabIds={openVocabIdsFromLearn}
+            onOpenGrammar={openGrammarFromLearn}
+            onOpenReading={openReadingFromLearn}
+            srsMap={srsMap}
+            setSrsMap={setSrsMap}
+          />
+        </div>
+      )}
       {grammarMounted && (
         <div hidden={section !== 'grammar'}>
-          <GrammarView onOpenWord={openWordFromLink} />
+          <GrammarView
+            onOpenWord={openWordFromLink}
+            focusId={grammarFocusId}
+          />
         </div>
       )}
       {articlesMounted && (
@@ -1032,7 +1135,10 @@ export default function App() {
       )}
       {readingMounted && (
         <div hidden={section !== 'reading'}>
-          <ReadingView onOpenWord={openWordFromLink} />
+          <ReadingView
+            onOpenWord={openWordFromLink}
+            focusId={readingFocusId}
+          />
         </div>
       )}
       {examMounted && (
@@ -1042,6 +1148,21 @@ export default function App() {
       )}
       {section === 'vocab' && (
       <>
+      {focusVocabIds && (
+        <section className="level-board learn-focus-banner">
+          <p className="ai-lead-sm">
+            路徑單字：目前只顯示 {focusVocabIds.length}{' '}
+            個指定詞（已自動排入 SRS）。
+          </p>
+          <button
+            type="button"
+            className="ghost"
+            onClick={() => setFocusVocabIds(null)}
+          >
+            清除篩選，回到一般瀏覽
+          </button>
+        </section>
+      )}
       <section className="level-board" aria-label="等級進度">
         <div className="level-tabs" role="tablist" aria-label="選擇等級">
           {(['A1', 'A2', 'B1', 'B2', 'C1', '全部'] as LevelFilter[]).map(
@@ -1054,6 +1175,7 @@ export default function App() {
                 className={`level-tab ${levelFilter === lv ? 'active' : ''}`}
                 onClick={() => {
                   stopSpeaking()
+                  setFocusVocabIds(null)
                   setLevelFilter(lv)
                 }}
               >
@@ -1248,17 +1370,19 @@ export default function App() {
 
       <footer className="footer">
         <p>
-          {section === 'grammar'
-            ? '文法依 CEFR 分級：先掌握規則與例句，再標記已學會。建議 Chrome／Edge 聽發音。'
-            : section === 'articles'
-              ? '冠詞與 sein／haben 入門：定冠詞、格變，以及 bin／bist／ist。建議 Chrome／Edge 聽發音。'
-              : section === 'affixes'
-                ? '字首字根字尾：可分／不可分與常見字尾都有中文意思。建議 Chrome／Edge 聽發音。'
-                : section === 'reading'
-                  ? '分級閱讀（德檢取向）：練習＋A1～B2 各 85 篇。點德文可跳單字。'
-                  : section === 'exam'
-                    ? '德檢模擬：練習版綜合卷＋考場版分 Teil。建議 Chrome／Edge 聽聽力腳本。'
-                    : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
+          {section === 'learn'
+            ? '自學建議：先走路徑 → 消化 SRS 到期卡 → 故事泛讀 → 有 Key 再練寫作／口說批改。'
+            : section === 'grammar'
+              ? '文法依 CEFR 分級：先掌握規則與例句，再標記已學會。建議 Chrome／Edge 聽發音。'
+              : section === 'articles'
+                ? '冠詞與 sein／haben 入門：定冠詞、格變，以及 bin／bist／ist。建議 Chrome／Edge 聽發音。'
+                : section === 'affixes'
+                  ? '字首字根字尾：可分／不可分與常見字尾都有中文意思。建議 Chrome／Edge 聽發音。'
+                  : section === 'reading'
+                    ? '分級閱讀（德檢取向）：練習＋A1～B2 各 85 篇。點德文可跳單字。'
+                    : section === 'exam'
+                      ? '德檢模擬：練習版綜合卷＋考場版分 Teil。建議 Chrome／Edge 聽聽力腳本。'
+                      : '「標記已學會」會排入 SRS（約 1→3→7 天複習）。建議 Chrome／Edge 聽發音。'}
         </p>
       </footer>
     </div>
