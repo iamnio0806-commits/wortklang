@@ -291,7 +291,7 @@ export default function App() {
         <p className="brand">Wortklang</p>
         <h1>聽得見的德文單字</h1>
         <p className="tagline">
-          850+ 個 A1／A2 單字：冠詞、例句、發音，依等級一步步學完。
+          完整 A1／A2 單字庫（兩千多詞）：冠詞、例句、發音，依等級學完初級。
         </p>
         <div className="cta-row">
           <button
