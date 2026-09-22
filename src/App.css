@@ -1269,6 +1269,9 @@ select {
   font: inherit;
   font-weight: 700;
 }
+
+.example-de .vocab-link,
+.ex-de .vocab-link {
   line-height: inherit;
 }
 
