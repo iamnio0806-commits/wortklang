@@ -194,9 +194,9 @@ export default function LearnHub({
     <div className="learn-hub">
       <section className="level-board">
         <p className="ai-lead-sm reading-banner">
-          兩年單字優先（目標 B2→C1）：每天 8
-          個新字＋SRS 到期複習。進度 {vpProgress.pct}% · 已排入複習{' '}
-          {vpProgress.enrolled} 字。
+          兩年單字：A1–A2 每天 8 字；B1 起 12 字、B2 每天 16
+          字（約第 76 週／500 多天達 B2 詞量），其後衝 C1。進度{' '}
+          {vpProgress.pct}% · 已排入複習 {vpProgress.enrolled} 字。
         </p>
         <div className="level-tabs" role="tablist" aria-label="自學分區">
           {(

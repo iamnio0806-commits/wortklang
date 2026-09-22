@@ -45,6 +45,8 @@ type File = {
     weeks: number
     studyDaysPerWeek: number
     totalNew: number
+    b2TargetWeek: number
+    b2TargetDaysApprox: number
     newPerDayByPhase: Record<string, number>
     phases: VocabPathPhase[]
   }
@@ -87,7 +89,6 @@ export function resolveVocabDay(
   knownIds: Set<string> | ReadonlySet<string>,
 ): ResolvedVocabDay {
   if (day.kind === 'review') {
-    // Review: prefer words already enrolled; fall back to scheduled list.
     const enrolled = day.vocabIds.filter((id) => knownIds.has(id))
     const ids = enrolled.length ? enrolled : day.vocabIds
     return { ids, skippedIds: [], shortfall: 0 }
