@@ -3,9 +3,14 @@
 """
 Generate a 2-year vocabulary path for Wortklang self-study.
 
-Goal: solid B2, stretch toward C1 in ~104 weeks.
-Pace: 8 new words × 6 study days / week (= 48 new/week), day 7 = review.
-Total new lemmas ≈ 4,992 — covers all A1+A2, core B1/B2, C1 starter.
+Pace (study days Mon–Sat; day 7 = review):
+  A1–B1:  8 new / day
+  B2:    12 new / day
+  C1:    14 new / day
+
+Goal: cover all A1+A2, large B1/B2, and most C1 within 104 weeks.
+Runtime skip of already-learned words is handled in vocabPath.ts
+using pipeline + startIndex.
 """
 from __future__ import annotations
 
@@ -18,13 +23,26 @@ VOCAB = DATA / "vocabulary.json"
 OUT_JSON = DATA / "vocabPath.json"
 OUT_TS = DATA / "vocabPath.ts"
 
-NEW_PER_DAY = 8
 STUDY_DAYS = 6
 WEEKS = 104
-WORDS_PER_WEEK = NEW_PER_DAY * STUDY_DAYS  # 48
-TOTAL = WORDS_PER_WEEK * WEEKS  # 4992
 
-# B1+ within-level category preference (A1/A2 keep vocabulary.json beginner order).
+# (fromWeek, toWeek, level, titleZh, focusZh, newPerDay)
+PHASES = [
+    (1, 22, "A1", "基礎扎根", "生活核心詞：人／家／食／行／高頻動詞", 8),
+    (23, 46, "A2", "擴充輸出", "描述日常、計畫、意見與常見情境", 8),
+    (47, 74, "B1", "獨立運用", "抽象詞、連接、工作學習與社會話題", 8),
+    (75, 92, "B2", "流暢論述", "論點、細膩形容、正式場合用詞（加量）", 12),
+    (93, 104, "C1", "精準表達", "學術／專業向進階詞（加量衝刺）", 14),
+]
+
+LEVEL_QUOTA = {
+    "A1": 1078,
+    "A2": 1162,
+    "B1": 1500,
+    "B2": 1300,
+    "C1": 1200,
+}
+
 CAT_ORDER = [
     "家庭",
     "動詞",
@@ -38,33 +56,23 @@ CAT_ORDER = [
     "形容詞",
 ]
 
-# How many lemmas to pull from each level (priority fill).
-LEVEL_QUOTA = {
-    "A1": 1078,  # all — file order (beginner-friendly)
-    "A2": 1162,  # all — file order
-    "B1": 1500,  # core slice by category
-    "B2": 1000,  # core slice by category
-    "C1": 252,  # starter (~5 weeks)
-}
 
-PHASES = [
-    (1, 22, "A1", "基礎扎根", "生活核心詞：人／家／食／行／高頻動詞"),
-    (23, 46, "A2", "擴充輸出", "描述日常、計畫、意見與常見情境"),
-    (47, 77, "B1", "獨立運用", "抽象詞、連接、工作學習與社會話題"),
-    (78, 98, "B2", "流暢論述", "論點、細膩形容、正式場合用詞"),
-    (99, 104, "C1", "精準表達", "學術／專業向進階詞（先打底）"),
-]
-
-
-def phase_for(week: int) -> tuple[str, str, str]:
-    for a, b, level, title, focus in PHASES:
+def phase_for(week: int) -> tuple[str, str, str, int]:
+    for a, b, level, title, focus, n in PHASES:
         if a <= week <= b:
-            return level, title, focus
-    return "C1", "精準表達", "進階詞"
+            return level, title, focus, n
+    return "C1", "精準表達", "進階詞", 14
+
+
+def words_needed() -> int:
+    total = 0
+    for a, b, _lv, _t, _f, n in PHASES:
+        weeks = b - a + 1
+        total += weeks * n * STUDY_DAYS
+    return total
 
 
 def order_level(words: list[dict], level: str) -> list[dict]:
-    """A1/A2: keep JSON order. B1+: category preference."""
     if level in ("A1", "A2"):
         return list(words)
 
@@ -81,6 +89,7 @@ def order_level(words: list[dict], level: str) -> list[dict]:
 
 
 def main() -> None:
+    needed = words_needed()
     vocab = json.loads(VOCAB.read_text(encoding="utf-8"))
     by_level: dict[str, list[dict]] = {lv: [] for lv in LEVEL_QUOTA}
     for w in vocab:
@@ -88,41 +97,40 @@ def main() -> None:
         if lv in by_level:
             by_level[lv].append(w)
 
-    pipeline: list[dict] = []
+    pipeline_words: list[dict] = []
     for lv, quota in LEVEL_QUOTA.items():
         ordered = order_level(by_level[lv], lv)
-        take = ordered[:quota]
-        pipeline.extend(take)
+        pipeline_words.extend(ordered[:quota])
 
-    if len(pipeline) < TOTAL:
-        # top up from remaining B1→C1 not yet taken
-        taken = {w["id"] for w in pipeline}
+    taken = {w["id"] for w in pipeline_words}
+    if len(pipeline_words) < needed:
         for lv in ("B1", "B2", "C1"):
             for w in order_level(by_level[lv], lv):
                 if w["id"] in taken:
                     continue
-                pipeline.append(w)
+                pipeline_words.append(w)
                 taken.add(w["id"])
-                if len(pipeline) >= TOTAL:
+                if len(pipeline_words) >= needed:
                     break
-            if len(pipeline) >= TOTAL:
+            if len(pipeline_words) >= needed:
                 break
 
-    pipeline = pipeline[:TOTAL]
-    assert len(pipeline) == TOTAL, len(pipeline)
+    pipeline_words = pipeline_words[:needed]
+    assert len(pipeline_words) == needed, (len(pipeline_words), needed)
+    pipeline_ids = [w["id"] for w in pipeline_words]
 
     weeks = []
     idx = 0
     for week in range(1, WEEKS + 1):
-        level, phase_title, phase_focus = phase_for(week)
-        week_words = pipeline[idx : idx + WORDS_PER_WEEK]
-        idx += WORDS_PER_WEEK
+        level, phase_title, phase_focus, new_per_day = phase_for(week)
+        week_count = new_per_day * STUDY_DAYS
+        week_slice = pipeline_words[idx : idx + week_count]
+        week_start = idx
         days = []
         for d in range(1, 8):
             if d <= STUDY_DAYS:
-                chunk = week_words[(d - 1) * NEW_PER_DAY : d * NEW_PER_DAY]
-                ids = [w["id"] for w in chunk]
-                # title from dominant category
+                start = week_start + (d - 1) * new_per_day
+                chunk = pipeline_words[start : start + new_per_day]
                 cats = [w.get("category") or "單字" for w in chunk]
                 top = max(set(cats), key=cats.count) if cats else "單字"
                 days.append(
@@ -132,12 +140,16 @@ def main() -> None:
                         "kind": "learn",
                         "level": chunk[0]["level"] if chunk else level,
                         "titleZh": f"新字 · {top}",
-                        "vocabIds": ids,
-                        "tipZh": "每個名詞連冠詞一起記；標記已學會會進入 SRS（1→3→7 天複習）。",
+                        "startIndex": start,
+                        "targetCount": new_per_day,
+                        "vocabIds": [w["id"] for w in chunk],
+                        "tipZh": (
+                            f"今日目標 {new_per_day} 個生字（已學會會自動跳過並往後補）。"
+                            "名詞連冠詞記；標記已學會進入 SRS。"
+                        ),
                     }
                 )
             else:
-                ids = [w["id"] for w in week_words]
                 days.append(
                     {
                         "week": week,
@@ -145,12 +157,13 @@ def main() -> None:
                         "kind": "review",
                         "level": level,
                         "titleZh": "本週複習日",
-                        "vocabIds": ids,
-                        "tipZh": "不要學新字：打開 SRS 到期卡，並把本週 48 字快速過一輪。",
+                        "startIndex": week_start,
+                        "targetCount": week_count,
+                        "vocabIds": [w["id"] for w in week_slice],
+                        "tipZh": "不學新字：先打 SRS 到期卡，再把本週字快速過一輪。",
                     }
                 )
 
-        # week title from first learn day categories
         weeks.append(
             {
                 "week": week,
@@ -158,26 +171,35 @@ def main() -> None:
                 "phaseZh": phase_title,
                 "titleZh": f"第 {week} 週 · {phase_title}",
                 "focusZh": phase_focus,
-                "newCount": len(week_words),
+                "newPerDay": new_per_day,
+                "newCount": len(week_slice),
+                "startIndex": week_start,
                 "days": days,
             }
         )
+        idx += week_count
+
+    assert idx == needed, (idx, needed)
 
     note = (
-        "兩年單字路徑（目標 B2，衝刺 C1）：每週 6 天×8 個新字＝48 字，"
-        "第 7 天只複習。順序 A1 全 → A2 全 → B1 核心 → B2 核心 → C1 打底。"
-        "務必搭配 SRS：學會的字會自動回來重測。文法／閱讀之後再疊加，"
-        "這一階段先把詞彙量與冠詞記牢。"
+        "兩年單字路徑（目標 C1）：A1–B1 每天 8 字；B2 起每天 12 字；C1 每天 14 字"
+        "（一週 6 天新字＋1 天複習）。已學會的字輪到時會自動跳過並往後補。"
+        "請搭配 SRS 標記已學會。文法／閱讀之後再疊加。"
     )
 
     payload = {
         "note": note,
         "meta": {
             "weeks": WEEKS,
-            "newPerDay": NEW_PER_DAY,
             "studyDaysPerWeek": STUDY_DAYS,
-            "wordsPerWeek": WORDS_PER_WEEK,
-            "totalNew": TOTAL,
+            "totalNew": needed,
+            "newPerDayByPhase": {
+                "A1": 8,
+                "A2": 8,
+                "B1": 8,
+                "B2": 12,
+                "C1": 14,
+            },
             "phases": [
                 {
                     "fromWeek": a,
@@ -185,10 +207,12 @@ def main() -> None:
                     "level": lv,
                     "titleZh": t,
                     "focusZh": f,
+                    "newPerDay": n,
                 }
-                for a, b, lv, t, f in PHASES
+                for a, b, lv, t, f, n in PHASES
             ],
         },
+        "pipeline": pipeline_ids,
         "weeks": weeks,
     }
 
@@ -209,6 +233,11 @@ export type VocabPathDay = {
   kind: VocabPathDayKind
   level: string
   titleZh: string
+  /** Index into VOCAB_PATH_PIPELINE for this day's scheduled start. */
+  startIndex: number
+  /** How many *new* (not-yet-learned) words to collect today. */
+  targetCount: number
+  /** Default slice (before skip/backfill). */
   vocabIds: string[]
   tipZh: string
 }
@@ -219,7 +248,9 @@ export type VocabPathWeek = {
   phaseZh: string
   titleZh: string
   focusZh: string
+  newPerDay: number
   newCount: number
+  startIndex: number
   days: VocabPathDay[]
 }
 
@@ -229,18 +260,19 @@ export type VocabPathPhase = {
   level: string
   titleZh: string
   focusZh: string
+  newPerDay: number
 }
 
 type File = {
   note: string
   meta: {
     weeks: number
-    newPerDay: number
     studyDaysPerWeek: number
-    wordsPerWeek: number
     totalNew: number
+    newPerDayByPhase: Record<string, number>
     phases: VocabPathPhase[]
   }
+  pipeline: string[]
   weeks: VocabPathWeek[]
 }
 
@@ -250,6 +282,7 @@ export const VOCAB_PATH_NOTE = data.note
 export const VOCAB_PATH_META = data.meta
 export const VOCAB_PATH_WEEKS: VocabPathWeek[] = data.weeks
 export const VOCAB_PATH_PHASES: VocabPathPhase[] = data.meta.phases
+export const VOCAB_PATH_PIPELINE: string[] = data.pipeline
 
 export function getVocabPathWeek(week: number): VocabPathWeek | undefined {
   return VOCAB_PATH_WEEKS.find((w) => w.week === week)
@@ -261,17 +294,59 @@ export function getVocabPathDay(
 ): VocabPathDay | undefined {
   return getVocabPathWeek(week)?.days.find((d) => d.day === day)
 }
+
+export type ResolvedVocabDay = {
+  ids: string[]
+  skippedIds: string[]
+  /** True if pipeline ran out before filling targetCount. */
+  shortfall: number
+}
+
+/**
+ * Build today's list: skip ids already learned (in `knownIds`),
+ * walk forward on the pipeline until `targetCount` fresh words.
+ */
+export function resolveVocabDay(
+  day: VocabPathDay,
+  knownIds: Set<string> | ReadonlySet<string>,
+): ResolvedVocabDay {
+  if (day.kind === 'review') {
+    // Review: prefer words already enrolled; fall back to scheduled list.
+    const enrolled = day.vocabIds.filter((id) => knownIds.has(id))
+    const ids = enrolled.length ? enrolled : day.vocabIds
+    return { ids, skippedIds: [], shortfall: 0 }
+  }
+
+  const ids: string[] = []
+  const skippedIds: string[] = []
+  let i = day.startIndex
+  const pipe = VOCAB_PATH_PIPELINE
+  while (ids.length < day.targetCount && i < pipe.length) {
+    const id = pipe[i]
+    i += 1
+    if (knownIds.has(id)) {
+      skippedIds.push(id)
+      continue
+    }
+    ids.push(id)
+  }
+  return {
+    ids,
+    skippedIds,
+    shortfall: Math.max(0, day.targetCount - ids.length),
+  }
+}
 """,
         encoding="utf-8",
     )
 
-    # summary
     from collections import Counter
 
-    lv = Counter(w["level"] for w in pipeline)
-    print("generated", TOTAL, "words across", WEEKS, "weeks")
-    print("by level:", dict(lv))
-    print("wrote", OUT_JSON, OUT_TS)
+    print("needed", needed, "pipeline", len(pipeline_ids))
+    print("by level", dict(Counter(w["level"] for w in pipeline_words)))
+    for a, b, lv, _t, _f, n in PHASES:
+        print(f"  W{a}-{b} {lv}: {n}/day → {(b-a+1)*n*STUDY_DAYS} words")
+    print("wrote", OUT_JSON.name, OUT_TS.name)
 
 
 if __name__ == "__main__":

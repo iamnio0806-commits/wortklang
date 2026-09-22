@@ -12,6 +12,7 @@ import {
 import {
   getVocabPathDay,
   getVocabPathWeek,
+  resolveVocabDay,
   VOCAB_PATH_META,
   VOCAB_PATH_NOTE,
   VOCAB_PATH_PHASES,
@@ -125,11 +126,16 @@ export default function LearnHub({
 
   const dueIds = useMemo(() => listDueIds(srsMap), [srsMap])
   const dueCount = countDue(srsMap)
+  const knownIds = useMemo(() => new Set(Object.keys(srsMap)), [srsMap])
   const todayVp =
     getVocabPathDay(vpWeek, vpDay) ??
     getVocabPathDay(1, 1) ??
     VOCAB_PATH_WEEKS[0].days[0]
   const todayWeek = getVocabPathWeek(vpWeek) ?? VOCAB_PATH_WEEKS[0]
+  const todayResolved = useMemo(
+    () => resolveVocabDay(todayVp, knownIds),
+    [todayVp, knownIds],
+  )
 
   const vpProgress = useMemo(() => {
     const totalDays = VOCAB_PATH_META.weeks * 7
@@ -222,6 +228,9 @@ export default function LearnHub({
           srsMap={srsMap}
           vpDay={todayVp}
           vpWeek={todayWeek}
+          resolvedIds={todayResolved.ids}
+          skippedCount={todayResolved.skippedIds.length}
+          shortfall={todayResolved.shortfall}
           vpDone={vpDone}
           onGrade={gradeDue}
           onOpenVocabIds={onOpenVocabIds}
@@ -238,6 +247,7 @@ export default function LearnHub({
           day={vpDay}
           setDay={setVpDay}
           done={vpDone}
+          knownIds={knownIds}
           onToggle={toggleVpDone}
           onOpenVocabIds={onOpenVocabIds}
           onEnroll={enrollMany}
@@ -274,6 +284,9 @@ function TodayReview({
   srsMap,
   vpDay,
   vpWeek,
+  resolvedIds,
+  skippedCount,
+  shortfall,
   vpDone,
   onGrade,
   onOpenVocabIds,
@@ -286,6 +299,9 @@ function TodayReview({
   srsMap: Record<string, SrsCard>
   vpDay: VocabPathDay
   vpWeek: VocabPathWeek
+  resolvedIds: string[]
+  skippedCount: number
+  shortfall: number
   vpDone: Set<string>
   onGrade: (id: string, g: SrsGrade) => void
   onOpenVocabIds: (ids: string[]) => void
@@ -315,15 +331,24 @@ function TodayReview({
             第 {vpDay.week} 週 · 第 {vpDay.day} 天
           </span>
           <span className="type-pill">{vpWeek.phaseZh}</span>
+          <span className="type-pill">{vpDay.targetCount} 字／天</span>
         </div>
         <h2 className="grammar-title">
           {vpDay.kind === 'review' ? '今日：複習日' : `今日新字：${vpDay.titleZh}`}
         </h2>
         <p className="exam-card-meta">{vpWeek.focusZh}</p>
         <p className="exam-meta">{vpDay.tipZh}</p>
-        {vpDay.vocabIds.length > 0 && vpDay.kind === 'learn' && (
+        {skippedCount > 0 && (
+          <p className="exam-meta">
+            已自動跳過 {skippedCount} 個已學會的字，並往後補齊。
+          </p>
+        )}
+        {shortfall > 0 && (
+          <p className="exam-meta">路徑尾端生字不足 {shortfall} 個（幾乎學完了）。</p>
+        )}
+        {resolvedIds.length > 0 && (
           <ul className="learn-vocab-preview">
-            {vpDay.vocabIds.map((id) => {
+            {resolvedIds.map((id) => {
               const w = vocabById(id)
               return (
                 <li key={id}>
@@ -339,18 +364,15 @@ function TodayReview({
           <button
             type="button"
             className="primary"
+            disabled={!resolvedIds.length}
             onClick={() => {
-              onEnroll(vpDay.vocabIds)
-              onOpenVocabIds(
-                vpDay.kind === 'learn'
-                  ? vpDay.vocabIds
-                  : vpDay.vocabIds.slice(0, 16),
-              )
+              onEnroll(resolvedIds)
+              onOpenVocabIds(resolvedIds)
             }}
           >
             {vpDay.kind === 'learn'
-              ? `去學這 ${vpDay.vocabIds.length} 個字`
-              : '打開本週單字（抽樣）'}
+              ? `去學這 ${resolvedIds.length} 個字`
+              : `打開複習（${resolvedIds.length}）`}
           </button>
           <button type="button" className="ghost" onClick={onGoVocabPath}>
             單字路徑總覽
@@ -428,6 +450,7 @@ function VocabPathPanel({
   day,
   setDay,
   done,
+  knownIds,
   onToggle,
   onOpenVocabIds,
   onEnroll,
@@ -438,6 +461,7 @@ function VocabPathPanel({
   day: number
   setDay: (n: number) => void
   done: Set<string>
+  knownIds: Set<string>
   onToggle: (week: number, day: number) => void
   onOpenVocabIds: (ids: string[]) => void
   onEnroll: (ids: string[]) => void
@@ -445,6 +469,7 @@ function VocabPathPanel({
 }) {
   const w = getVocabPathWeek(week) ?? VOCAB_PATH_WEEKS[0]
   const d = w.days.find((x) => x.day === day) ?? w.days[0]
+  const resolved = useMemo(() => resolveVocabDay(d, knownIds), [d, knownIds])
   const weekDone = w.days.filter((x) => done.has(vpTaskId(w.week, x.day))).length
 
   return (
@@ -476,7 +501,7 @@ function VocabPathPanel({
               setDay(1)
             }}
           >
-            {p.level} {p.titleZh}
+            {p.level} · {p.newPerDay}字/天
           </button>
         ))}
       </div>
@@ -516,7 +541,7 @@ function VocabPathPanel({
         <div className="detail-top">
           <span className={`level-pill level-${w.level}`}>{w.level}</span>
           <span className="type-pill">
-            {weekDone}/7 天完成 · 本週新字 {w.newCount}
+            {weekDone}/7 天 · 本週計畫 {w.newCount} 新字 · {w.newPerDay}/天
           </span>
         </div>
         <h2 className="grammar-title">{w.titleZh}</h2>
@@ -552,9 +577,14 @@ function VocabPathPanel({
           </span>
         </label>
         <p className="exam-meta">{d.tipZh}</p>
-        {d.kind === 'learn' && (
+        {resolved.skippedIds.length > 0 && (
+          <p className="exam-meta">
+            已跳過 {resolved.skippedIds.length} 個已學會，改補後面的生字。
+          </p>
+        )}
+        {resolved.ids.length > 0 && (
           <ul className="learn-vocab-preview">
-            {d.vocabIds.map((id) => {
+            {resolved.ids.map((id) => {
               const word = vocabById(id)
               return (
                 <li key={id}>
@@ -569,16 +599,15 @@ function VocabPathPanel({
         <button
           type="button"
           className="primary"
+          disabled={!resolved.ids.length}
           onClick={() => {
-            onEnroll(d.vocabIds)
-            onOpenVocabIds(
-              d.kind === 'learn' ? d.vocabIds : d.vocabIds.slice(0, 16),
-            )
+            onEnroll(resolved.ids)
+            onOpenVocabIds(resolved.ids)
           }}
         >
           {d.kind === 'learn'
-            ? `去學並排入 SRS（${d.vocabIds.length}）`
-            : '打開本週單字複習'}
+            ? `去學並排入 SRS（${resolved.ids.length}）`
+            : `打開複習（${resolved.ids.length}）`}
         </button>
       </div>
     </div>

@@ -9,6 +9,11 @@ export type VocabPathDay = {
   kind: VocabPathDayKind
   level: string
   titleZh: string
+  /** Index into VOCAB_PATH_PIPELINE for this day's scheduled start. */
+  startIndex: number
+  /** How many *new* (not-yet-learned) words to collect today. */
+  targetCount: number
+  /** Default slice (before skip/backfill). */
   vocabIds: string[]
   tipZh: string
 }
@@ -19,7 +24,9 @@ export type VocabPathWeek = {
   phaseZh: string
   titleZh: string
   focusZh: string
+  newPerDay: number
   newCount: number
+  startIndex: number
   days: VocabPathDay[]
 }
 
@@ -29,18 +36,19 @@ export type VocabPathPhase = {
   level: string
   titleZh: string
   focusZh: string
+  newPerDay: number
 }
 
 type File = {
   note: string
   meta: {
     weeks: number
-    newPerDay: number
     studyDaysPerWeek: number
-    wordsPerWeek: number
     totalNew: number
+    newPerDayByPhase: Record<string, number>
     phases: VocabPathPhase[]
   }
+  pipeline: string[]
   weeks: VocabPathWeek[]
 }
 
@@ -50,6 +58,7 @@ export const VOCAB_PATH_NOTE = data.note
 export const VOCAB_PATH_META = data.meta
 export const VOCAB_PATH_WEEKS: VocabPathWeek[] = data.weeks
 export const VOCAB_PATH_PHASES: VocabPathPhase[] = data.meta.phases
+export const VOCAB_PATH_PIPELINE: string[] = data.pipeline
 
 export function getVocabPathWeek(week: number): VocabPathWeek | undefined {
   return VOCAB_PATH_WEEKS.find((w) => w.week === week)
@@ -60,4 +69,46 @@ export function getVocabPathDay(
   day: number,
 ): VocabPathDay | undefined {
   return getVocabPathWeek(week)?.days.find((d) => d.day === day)
+}
+
+export type ResolvedVocabDay = {
+  ids: string[]
+  skippedIds: string[]
+  /** True if pipeline ran out before filling targetCount. */
+  shortfall: number
+}
+
+/**
+ * Build today's list: skip ids already learned (in `knownIds`),
+ * walk forward on the pipeline until `targetCount` fresh words.
+ */
+export function resolveVocabDay(
+  day: VocabPathDay,
+  knownIds: Set<string> | ReadonlySet<string>,
+): ResolvedVocabDay {
+  if (day.kind === 'review') {
+    // Review: prefer words already enrolled; fall back to scheduled list.
+    const enrolled = day.vocabIds.filter((id) => knownIds.has(id))
+    const ids = enrolled.length ? enrolled : day.vocabIds
+    return { ids, skippedIds: [], shortfall: 0 }
+  }
+
+  const ids: string[] = []
+  const skippedIds: string[] = []
+  let i = day.startIndex
+  const pipe = VOCAB_PATH_PIPELINE
+  while (ids.length < day.targetCount && i < pipe.length) {
+    const id = pipe[i]
+    i += 1
+    if (knownIds.has(id)) {
+      skippedIds.push(id)
+      continue
+    }
+    ids.push(id)
+  }
+  return {
+    ids,
+    skippedIds,
+    shortfall: Math.max(0, day.targetCount - ids.length),
+  }
 }
