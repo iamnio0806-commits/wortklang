@@ -871,7 +871,7 @@ export default function App() {
                 : section === 'reading'
                   ? '對齊德檢：練習熱身 → A1／A2／B1／B2 考場長度閱讀，含註解與句型。'
                   : section === 'exam'
-                    ? 'A1–B2 各兩回：閱讀、聽力（TTS）、語法詞彙、寫作；口說選練不計分。'
+                    ? '練習版＋考場版（Goethe 分 Teil）：A1–B2 各多回；聽力 TTS、寫作範文、口說選練。'
                     : 'der／die／das、bin／bist／ist：冠詞與最常用變位一起記。'}
         </p>
 
@@ -1229,7 +1229,7 @@ export default function App() {
                 : section === 'reading'
                   ? '分級閱讀（德檢取向）：練習＋A1～B2 各 50 篇。點德文可跳單字。'
                   : section === 'exam'
-                    ? '德檢模擬：閱讀／聽力／語法自動計分；寫作對照範文；口說選練。建議 Chrome／Edge。'
+                    ? '德檢模擬：練習版綜合卷＋考場版分 Teil。建議 Chrome／Edge 聽聽力腳本。'
                     : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
         </p>
       </footer>
