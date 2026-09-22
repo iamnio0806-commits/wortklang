@@ -1,0 +1,4784 @@
+{
+  "levels": [
+    "A1",
+    "A2"
+  ],
+  "note": "A1：短句／對話／告示；A2：段落／郵件／公告。先完成前面等級。",
+  "items": [
+    {
+      "id": "a1-01",
+      "level": "A1",
+      "kind": "card",
+      "topic": "自我介紹",
+      "title": "Hallo, ich bin Anna",
+      "titleZh": "哈囉，我是 Anna",
+      "text": "Hallo!\nIch bin Anna.\nIch komme aus Taiwan.\nIch wohne in Berlin.\nIch lerne Deutsch.",
+      "textZh": "哈囉！\n我是 Anna。\n我來自台灣。\n我住在柏林。\n我在學德文。",
+      "notes": [
+        {
+          "span": "Hallo",
+          "zh": "哈囉／你好",
+          "tip": "很常用的打招呼。"
+        },
+        {
+          "span": "Ich bin",
+          "zh": "我是",
+          "tip": "自我介紹用 sein。"
+        },
+        {
+          "span": "komme aus",
+          "zh": "來自",
+          "tip": "kommen aus + 地方。"
+        },
+        {
+          "span": "wohne in",
+          "zh": "住在",
+          "tip": "wohnen in + 城市。"
+        },
+        {
+          "span": "lerne",
+          "zh": "學習",
+          "tip": "lernen + 科目。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich bin + 名字／職業",
+          "zh": "自我介紹",
+          "example": "Ich bin Anna.／Ich bin Studentin."
+        },
+        {
+          "pattern": "Ich komme aus + 地方",
+          "zh": "說明出身",
+          "example": "Ich komme aus Taiwan."
+        },
+        {
+          "pattern": "Ich wohne in + 城市",
+          "zh": "說明住所",
+          "example": "Ich wohne in Berlin."
+        }
+      ],
+      "tips": [
+        "先大聲念五句，再遮住中文自己說。",
+        "把名字換成你的名字練習。"
+      ],
+      "focus": [
+        "sein",
+        "kommen aus",
+        "wohnen"
+      ]
+    },
+    {
+      "id": "a1-02",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "打招呼",
+      "title": "Guten Morgen",
+      "titleZh": "早安對話",
+      "text": "Tom: Guten Morgen, Lisa!\nLisa: Guten Morgen, Tom!\nTom: Wie geht's?\nLisa: Gut, danke. Und dir?\nTom: Auch gut!",
+      "textZh": "Tom：早安，Lisa！\nLisa：早安，Tom！\nTom：你好嗎？\nLisa：很好，謝謝。你呢？\nTom：也很好！",
+      "notes": [
+        {
+          "span": "Guten Morgen",
+          "zh": "早安",
+          "tip": "早上用；中午 Guten Tag，晚上 Guten Abend。"
+        },
+        {
+          "span": "Wie geht's?",
+          "zh": "你好嗎？",
+          "tip": "口語＝Wie geht es dir?"
+        },
+        {
+          "span": "danke",
+          "zh": "謝謝"
+        },
+        {
+          "span": "Und dir?",
+          "zh": "你呢？",
+          "tip": "對 du 用 dir。"
+        },
+        {
+          "span": "Auch gut",
+          "zh": "也很好"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Guten Morgen / Tag / Abend",
+          "zh": "依時段打招呼",
+          "example": "Guten Tag, Frau Müller!"
+        },
+        {
+          "pattern": "Wie geht's? — Gut, danke.",
+          "zh": "寒暄問答",
+          "example": "Gut, danke. Und dir?"
+        }
+      ],
+      "tips": [
+        "跟著角色分兩次念。",
+        "記住：問完別人，記得問回來 Und dir?"
+      ],
+      "focus": [
+        "打招呼",
+        "寒暄"
+      ]
+    },
+    {
+      "id": "a1-03",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "咖啡廳",
+      "title": "Im Café",
+      "titleZh": "在咖啡廳",
+      "text": "Kellner: Hallo! Was möchten Sie?\nAnna: Einen Kaffee, bitte.\nKellner: Mit Milch?\nAnna: Ja, bitte.\nKellner: Das macht 3 Euro.",
+      "textZh": "服務生：您好！您想要什麼？\nAnna：一杯咖啡，麻煩。\n服務生：要加牛奶嗎？\nAnna：好，麻煩。\n服務生：一共 3 歐元。",
+      "notes": [
+        {
+          "span": "Was möchten Sie?",
+          "zh": "您想要什麼？",
+          "tip": "對陌生人或服務場合用 Sie。"
+        },
+        {
+          "span": "Einen Kaffee",
+          "zh": "一杯咖啡",
+          "tip": "陽性第四格：ein→einen。"
+        },
+        {
+          "span": "bitte",
+          "zh": "請／麻煩",
+          "tip": "點餐、拜託都常用。"
+        },
+        {
+          "span": "Das macht … Euro",
+          "zh": "一共……歐元",
+          "tip": "結帳句型。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Einen / Eine / Ein + 名詞, bitte",
+          "zh": "點東西",
+          "example": "Einen Tee, bitte."
+        },
+        {
+          "pattern": "Das macht + 價錢",
+          "zh": "說金額",
+          "example": "Das macht 5 Euro."
+        }
+      ],
+      "tips": [
+        "注意 Einen（不是 Ein）Kaffee。",
+        "練習把咖啡換成 Tee、Wasser。"
+      ],
+      "focus": [
+        "Akkusativ",
+        "Sie",
+        "點餐"
+      ]
+    },
+    {
+      "id": "a1-04",
+      "level": "A1",
+      "kind": "message",
+      "topic": "簡訊",
+      "title": "WhatsApp von Mia",
+      "titleZh": "Mia 的訊息",
+      "text": "Hi Paul!\nBist du heute da?\nIch bin um 5 Uhr frei.\nBis später!\nMia",
+      "textZh": "嗨 Paul！\n你今天在嗎？\n我五點有空。\n待會見！\nMia",
+      "notes": [
+        {
+          "span": "Bist du …?",
+          "zh": "你是……嗎？",
+          "tip": "sein 的 du 變位。"
+        },
+        {
+          "span": "heute",
+          "zh": "今天"
+        },
+        {
+          "span": "um 5 Uhr",
+          "zh": "五點整",
+          "tip": "鐘點：um + 數字 + Uhr。"
+        },
+        {
+          "span": "frei",
+          "zh": "有空／自由的"
+        },
+        {
+          "span": "Bis später",
+          "zh": "待會見",
+          "tip": "口語道別。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bist du + 形容詞／地方?",
+          "zh": "問對方狀態",
+          "example": "Bist du müde?／Bist du zu Hause?"
+        },
+        {
+          "pattern": "Ich bin um … Uhr + 形容詞",
+          "zh": "說時間狀態",
+          "example": "Ich bin um 8 Uhr fertig."
+        },
+        {
+          "pattern": "Bis später / Bis morgen",
+          "zh": "道別",
+          "example": "Bis morgen!"
+        }
+      ],
+      "tips": [
+        "簡訊很短，適合先當朗讀練習。",
+        "回覆可以寫：Ja, ich bin da!"
+      ],
+      "focus": [
+        "sein",
+        "時間"
+      ]
+    },
+    {
+      "id": "a1-05",
+      "level": "A1",
+      "kind": "sign",
+      "topic": "告示",
+      "title": "Öffnungszeiten",
+      "titleZh": "營業時間",
+      "text": "Bäckerei Sonne\nMo–Fr: 7–18 Uhr\nSa: 8–14 Uhr\nSo: geschlossen",
+      "textZh": "陽光麵包店\n週一至週五：7–18 點\n週六：8–14 點\n週日：公休",
+      "notes": [
+        {
+          "span": "Mo–Fr",
+          "zh": "週一到週五",
+          "tip": "Montag bis Freitag。"
+        },
+        {
+          "span": "Sa",
+          "zh": "週六",
+          "tip": "Samstag。"
+        },
+        {
+          "span": "So",
+          "zh": "週日",
+          "tip": "Sonntag。"
+        },
+        {
+          "span": "geschlossen",
+          "zh": "關閉／公休",
+          "tip": "反義：geöffnet＝營業中。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Mo–Fr: … Uhr",
+          "zh": "平日時間",
+          "example": "Mo–Fr: 9–17 Uhr"
+        },
+        {
+          "pattern": "… : geschlossen",
+          "zh": "公休／關閉",
+          "example": "Heute geschlossen."
+        }
+      ],
+      "tips": [
+        "看告示先找今天是星期幾。",
+        "geschlossen 超常見，一定要認得。"
+      ],
+      "focus": [
+        "時間",
+        "告示"
+      ]
+    },
+    {
+      "id": "a1-06",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "購物",
+      "title": "Im Supermarkt",
+      "titleZh": "在超市",
+      "text": "Verkäuferin: Kann ich Ihnen helfen?\nJonas: Ja. Wo ist die Milch?\nVerkäuferin: Dort links.\nJonas: Danke!\nVerkäuferin: Bitte!",
+      "textZh": "店員：需要幫忙嗎？\nJonas：好。牛奶在哪？\n店員：那邊左邊。\nJonas：謝謝！\n店員：不客氣！",
+      "notes": [
+        {
+          "span": "Kann ich Ihnen helfen?",
+          "zh": "需要我幫您嗎？",
+          "tip": "Ihnen＝對 Sie 的第三格。"
+        },
+        {
+          "span": "Wo ist …?",
+          "zh": "……在哪？"
+        },
+        {
+          "span": "Dort links",
+          "zh": "那邊左邊"
+        },
+        {
+          "span": "Bitte!",
+          "zh": "不客氣／請"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wo ist + der/die/das + 名詞?",
+          "zh": "問路／找東西",
+          "example": "Wo ist der Ausgang?"
+        },
+        {
+          "pattern": "Dort links / rechts / geradeaus",
+          "zh": "指示方向",
+          "example": "Dort rechts."
+        }
+      ],
+      "tips": [
+        "Bitte 可當「請」也可當「不客氣」。"
+      ],
+      "focus": [
+        "方向",
+        "購物"
+      ]
+    },
+    {
+      "id": "a1-07",
+      "level": "A1",
+      "kind": "card",
+      "topic": "家庭",
+      "title": "Meine Familie",
+      "titleZh": "我的家庭",
+      "text": "Das ist meine Familie.\nDas ist mein Vater.\nDas ist meine Mutter.\nDas sind meine Geschwister.\nWir wohnen zusammen.",
+      "textZh": "這是我的家庭。\n這是我爸爸。\n這是我媽媽。\n這些是我的兄弟姐妹。\n我們住在一起。",
+      "notes": [
+        {
+          "span": "meine / mein",
+          "zh": "我的",
+          "tip": "陰性 meine，陽性／中性 mein。"
+        },
+        {
+          "span": "Das ist",
+          "zh": "這是（單數）"
+        },
+        {
+          "span": "Das sind",
+          "zh": "這些是（複數）"
+        },
+        {
+          "span": "Geschwister",
+          "zh": "兄弟姐妹",
+          "tip": "只用複數。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Das ist mein / meine + 家人",
+          "zh": "介紹家人",
+          "example": "Das ist meine Schwester."
+        },
+        {
+          "pattern": "Das sind + 複數",
+          "zh": "介紹複數",
+          "example": "Das sind meine Freunde."
+        }
+      ],
+      "tips": [
+        "先分清 Das ist／Das sind。"
+      ],
+      "focus": [
+        "所有格",
+        "家庭"
+      ]
+    },
+    {
+      "id": "a1-08",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "時間",
+      "title": "Wie spät ist es?",
+      "titleZh": "現在幾點？",
+      "text": "Sara: Entschuldigung, wie spät ist es?\nLeo: Es ist zehn Uhr.\nSara: Danke schön!\nLeo: Kein Problem.",
+      "textZh": "Sara：不好意思，現在幾點？\nLeo：十點。\nSara：謝謝！\nLeo：沒問題。",
+      "notes": [
+        {
+          "span": "Entschuldigung",
+          "zh": "不好意思／對不起"
+        },
+        {
+          "span": "wie spät ist es?",
+          "zh": "現在幾點？"
+        },
+        {
+          "span": "Es ist … Uhr",
+          "zh": "現在……點"
+        },
+        {
+          "span": "Kein Problem",
+          "zh": "沒問題"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wie spät ist es?",
+          "zh": "問時間",
+          "example": "Wie spät ist es?"
+        },
+        {
+          "pattern": "Es ist + 數字 + Uhr",
+          "zh": "回答時間",
+          "example": "Es ist drei Uhr."
+        }
+      ],
+      "tips": [
+        "問時間很實用，整句背起來。"
+      ],
+      "focus": [
+        "時間"
+      ]
+    },
+    {
+      "id": "a1-09",
+      "level": "A1",
+      "kind": "message",
+      "topic": "約會",
+      "title": "Treffen",
+      "titleZh": "碰面",
+      "text": "Nina: Treffen wir uns um 6?\nMax: Ja, gerne.\nNina: Am Bahnhof?\nMax: Super. Bis dann!",
+      "textZh": "Nina：我們六點碰面嗎？\nMax：好，很樂意。\nNina：在火車站？\nMax：太好了。到時見！",
+      "notes": [
+        {
+          "span": "Treffen wir uns …?",
+          "zh": "我們碰面嗎？",
+          "tip": "sich treffen＝碰面。"
+        },
+        {
+          "span": "gerne",
+          "zh": "樂意／喜歡"
+        },
+        {
+          "span": "Am Bahnhof",
+          "zh": "在火車站",
+          "tip": "an dem→am。"
+        },
+        {
+          "span": "Bis dann",
+          "zh": "到時見"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Treffen wir uns um …?",
+          "zh": "約時間",
+          "example": "Treffen wir uns um 7?"
+        },
+        {
+          "pattern": "Am / Im / Bei + 地點",
+          "zh": "約地點",
+          "example": "Im Café?"
+        }
+      ],
+      "tips": [
+        "uns 是「我們自己」，見面常用。"
+      ],
+      "focus": [
+        "sich treffen",
+        "收縮介系詞"
+      ]
+    },
+    {
+      "id": "a1-10",
+      "level": "A1",
+      "kind": "sign",
+      "topic": "交通",
+      "title": "Haltestelle",
+      "titleZh": "公車站牌",
+      "text": "Bus 12 → Zentrum\nab: 10:05, 10:25, 10:45\nBitte Einstieg nur vorne.",
+      "textZh": "12 路公車 → 市中心\n發車：10:05、10:25、10:45\n請只從前面上車。",
+      "notes": [
+        {
+          "span": "ab",
+          "zh": "從……出發／起"
+        },
+        {
+          "span": "Zentrum",
+          "zh": "市中心"
+        },
+        {
+          "span": "Einstieg",
+          "zh": "上車處"
+        },
+        {
+          "span": "nur vorne",
+          "zh": "只在前面"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bus / Bahn + 號碼 → 地方",
+          "zh": "看路線",
+          "example": "Bus 5 → Flughafen"
+        },
+        {
+          "pattern": "ab: + 時間",
+          "zh": "出發時刻",
+          "example": "ab: 9:30"
+        }
+      ],
+      "tips": [
+        "站牌先看箭頭方向與時間。"
+      ],
+      "focus": [
+        "交通"
+      ]
+    },
+    {
+      "id": "a1-11",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "餐廳",
+      "title": "Im Restaurant",
+      "titleZh": "在餐廳",
+      "text": "Kellner: Bitte sehr.\nPaul: Die Speisekarte, bitte.\nKellner: Hier.\nPaul: Ich hätte gerne die Suppe.\nKellner: Noch etwas?\nPaul: Nein, danke.",
+      "textZh": "服務生：請（這邊請）。\nPaul：菜單，麻煩。\n服務生：這裡。\nPaul：我想要湯。\n服務生：還要別的嗎？\nPaul：不用，謝謝。",
+      "notes": [
+        {
+          "span": "Speisekarte",
+          "zh": "菜單"
+        },
+        {
+          "span": "Ich hätte gerne …",
+          "zh": "我想要……",
+          "tip": "禮貌點餐，比 Ich will 客氣。"
+        },
+        {
+          "span": "Noch etwas?",
+          "zh": "還要別的嗎？"
+        },
+        {
+          "span": "Nein, danke",
+          "zh": "不用，謝謝"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich hätte gerne + 第四格",
+          "zh": "禮貌點餐",
+          "example": "Ich hätte gerne einen Salat."
+        },
+        {
+          "pattern": "Noch etwas? — Nein, danke.",
+          "zh": "結束點餐",
+          "example": "Noch etwas? — Ja, Wasser."
+        }
+      ],
+      "tips": [
+        "Ich hätte gerne 是 A1 超實用客氣句。"
+      ],
+      "focus": [
+        "點餐",
+        "客氣"
+      ]
+    },
+    {
+      "id": "a1-12",
+      "level": "A1",
+      "kind": "card",
+      "topic": "日常",
+      "title": "Mein Tag",
+      "titleZh": "我的一天",
+      "text": "Ich stehe um 7 Uhr auf.\nIch frühstücke.\nIch gehe zur Arbeit.\nAm Abend lese ich.\nIch schlafe um 11 Uhr.",
+      "textZh": "我七點起床。\n我吃早餐。\n我去上班。\n晚上我看書。\n我十一點睡覺。",
+      "notes": [
+        {
+          "span": "stehe … auf",
+          "zh": "起床",
+          "tip": "aufstehen 可分動詞，字首到句尾。"
+        },
+        {
+          "span": "frühstücke",
+          "zh": "吃早餐"
+        },
+        {
+          "span": "zur Arbeit",
+          "zh": "去上班",
+          "tip": "zu der→zur。"
+        },
+        {
+          "span": "Am Abend",
+          "zh": "在晚上"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich stehe um … Uhr auf",
+          "zh": "說起床時間",
+          "example": "Ich stehe um 6 Uhr auf."
+        },
+        {
+          "pattern": "Am Morgen / Nachmittag / Abend",
+          "zh": "時段",
+          "example": "Am Morgen trinke ich Kaffee."
+        }
+      ],
+      "tips": [
+        "可分動詞：現在時字首飛到後面。"
+      ],
+      "focus": [
+        "可分動詞",
+        "日常"
+      ]
+    },
+    {
+      "id": "a1-13",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "天氣",
+      "title": "Das Wetter",
+      "titleZh": "天氣",
+      "text": "Mia: Wie ist das Wetter heute?\nJonas: Es ist sonnig und warm.\nMia: Super! Gehen wir spazieren?\nJonas: Ja, gerne!",
+      "textZh": "Mia：今天天氣怎麼樣？\nJonas：晴朗又溫暖。\nMia：太好了！我們去散步嗎？\nJonas：好啊！",
+      "notes": [
+        {
+          "span": "Wie ist das Wetter?",
+          "zh": "天氣怎麼樣？"
+        },
+        {
+          "span": "sonnig",
+          "zh": "晴朗的"
+        },
+        {
+          "span": "warm",
+          "zh": "溫暖的"
+        },
+        {
+          "span": "spazieren gehen",
+          "zh": "去散步"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wie ist das Wetter heute?",
+          "zh": "問天氣",
+          "example": "Wie ist das Wetter?"
+        },
+        {
+          "pattern": "Es ist + 形容詞",
+          "zh": "描述天氣",
+          "example": "Es ist kalt.／Es ist windig."
+        }
+      ],
+      "tips": [
+        "天氣形容詞：kalt、warm、regnerisch、sonnig。"
+      ],
+      "focus": [
+        "天氣"
+      ]
+    },
+    {
+      "id": "a1-14",
+      "level": "A1",
+      "kind": "message",
+      "topic": "請假",
+      "title": "Ich bin krank",
+      "titleZh": "我生病了",
+      "text": "Hallo Frau Berger,\nich bin heute krank.\nIch komme nicht zur Arbeit.\nViele Grüße\nTom",
+      "textZh": "Berger 女士您好，\n我今天生病了。\n我今天不來上班。\n問候\nTom",
+      "notes": [
+        {
+          "span": "krank",
+          "zh": "生病的"
+        },
+        {
+          "span": "komme nicht",
+          "zh": "不來",
+          "tip": "nicht 否定動詞。"
+        },
+        {
+          "span": "Viele Grüße",
+          "zh": "多多問候",
+          "tip": "郵件／訊息結尾常見。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich bin krank",
+          "zh": "說生病",
+          "example": "Ich bin heute krank."
+        },
+        {
+          "pattern": "Ich komme nicht + 地方",
+          "zh": "說明不去",
+          "example": "Ich komme nicht zur Schule."
+        }
+      ],
+      "tips": [
+        "簡短請假訊息：原因＋結果即可。"
+      ],
+      "focus": [
+        "否定",
+        "郵件"
+      ]
+    },
+    {
+      "id": "a1-15",
+      "level": "A1",
+      "kind": "sign",
+      "topic": "禁止",
+      "title": "Hinweis",
+      "titleZh": "注意告示",
+      "text": "Bitte nicht rauchen!\nHandy aus!\nRuhe, bitte.",
+      "textZh": "請勿吸菸！\n手機關機！\n請安靜。",
+      "notes": [
+        {
+          "span": "Bitte nicht + 動詞",
+          "zh": "請不要……",
+          "tip": "告示常用不定式。"
+        },
+        {
+          "span": "Handy aus",
+          "zh": "手機關機",
+          "tip": "口語短句。"
+        },
+        {
+          "span": "Ruhe",
+          "zh": "安靜"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bitte nicht + 不定式!",
+          "zh": "禁止／請求",
+          "example": "Bitte nicht fotografieren!"
+        },
+        {
+          "pattern": "… aus!",
+          "zh": "關掉",
+          "example": "Licht aus!"
+        }
+      ],
+      "tips": [
+        "告示常省略主語，只留動詞原形。"
+      ],
+      "focus": [
+        "告示",
+        "否定"
+      ]
+    },
+    {
+      "id": "a1-16",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "問路",
+      "title": "Der Weg",
+      "titleZh": "問路",
+      "text": "Tourist: Entschuldigung, wo ist der Bahnhof?\nFrau: Geradeaus, dann links.\nTourist: Ist es weit?\nFrau: Nein, fünf Minuten.\nTourist: Vielen Dank!",
+      "textZh": "觀光客：不好意思，火車站在哪？\n女士：直走，然後左轉。\n觀光客：遠嗎？\n女士：不遠，五分鐘。\n觀光客：非常感謝！",
+      "notes": [
+        {
+          "span": "Geradeaus",
+          "zh": "直走"
+        },
+        {
+          "span": "dann links",
+          "zh": "然後左轉"
+        },
+        {
+          "span": "Ist es weit?",
+          "zh": "遠嗎？"
+        },
+        {
+          "span": "fünf Minuten",
+          "zh": "五分鐘"
+        },
+        {
+          "span": "Vielen Dank",
+          "zh": "非常感謝"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wo ist + der/die/das …?",
+          "zh": "問路",
+          "example": "Wo ist die Toilette?"
+        },
+        {
+          "pattern": "Geradeaus, dann links / rechts",
+          "zh": "指路",
+          "example": "Geradeaus, dann rechts."
+        }
+      ],
+      "tips": [
+        "問路三件套：Wo ist…?／遠嗎？／謝謝。"
+      ],
+      "focus": [
+        "方向"
+      ]
+    },
+    {
+      "id": "a1-17",
+      "level": "A1",
+      "kind": "card",
+      "topic": "喜好",
+      "title": "Was mag ich?",
+      "titleZh": "我喜歡什麼？",
+      "text": "Ich mag Pizza.\nIch mag Fußball.\nIch mag meine Freunde.\nIch mag keinen Fisch.\nUnd du?",
+      "textZh": "我喜歡披薩。\n我喜歡足球。\n我喜歡我的朋友。\n我不喜歡魚。\n你呢？",
+      "notes": [
+        {
+          "span": "Ich mag",
+          "zh": "我喜歡",
+          "tip": "mögen 的 ich 變位。"
+        },
+        {
+          "span": "keinen Fisch",
+          "zh": "不喜歡魚",
+          "tip": "kein 否定名詞；陽性第四格 keinen。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich mag + 名詞",
+          "zh": "說喜好",
+          "example": "Ich mag Schokolade."
+        },
+        {
+          "pattern": "Ich mag keinen / keine / kein …",
+          "zh": "說不喜歡",
+          "example": "Ich mag keine Milch."
+        }
+      ],
+      "tips": [
+        "喜歡用 mag，不喜歡用 kein，不要說 nicht ein。"
+      ],
+      "focus": [
+        "mögen",
+        "kein"
+      ]
+    },
+    {
+      "id": "a1-18",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "數字價錢",
+      "title": "Was kostet das?",
+      "titleZh": "多少錢？",
+      "text": "Kunde: Was kostet das Brot?\nVerkäufer: Das kostet 2 Euro 50.\nKunde: Okay, ich nehme es.\nVerkäufer: Sonst noch etwas?\nKunde: Nein, das ist alles.",
+      "textZh": "顧客：這麵包多少錢？\n店員：2 歐 50。\n顧客：好，我要這個。\n店員：還要別的嗎？\n顧客：不用，就這些。",
+      "notes": [
+        {
+          "span": "Was kostet …?",
+          "zh": "……多少錢？"
+        },
+        {
+          "span": "ich nehme es",
+          "zh": "我要這個／我拿它"
+        },
+        {
+          "span": "Sonst noch etwas?",
+          "zh": "還要別的嗎？"
+        },
+        {
+          "span": "das ist alles",
+          "zh": "就這些"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Was kostet + der/die/das …?",
+          "zh": "問價錢",
+          "example": "Was kostet die Jacke?"
+        },
+        {
+          "pattern": "Ich nehme …",
+          "zh": "決定買",
+          "example": "Ich nehme das hier."
+        }
+      ],
+      "tips": [
+        "付錢場合把兩句問答背起來。"
+      ],
+      "focus": [
+        "購物",
+        "數字"
+      ]
+    },
+    {
+      "id": "a1-19",
+      "level": "A1",
+      "kind": "message",
+      "topic": "邀請",
+      "title": "Party",
+      "titleZh": "派對邀請",
+      "text": "Hey!\nAm Samstag habe ich eine Party.\nKommst du?\nAb 20 Uhr bei mir.\nBitte antworte bald!\n— Lisa",
+      "textZh": "嘿！\n星期六我有派對。\n你來嗎？\n從 20 點在我家。\n請快回覆！\n— Lisa",
+      "notes": [
+        {
+          "span": "Am Samstag",
+          "zh": "在星期六",
+          "tip": "星期用 am。"
+        },
+        {
+          "span": "Kommst du?",
+          "zh": "你來嗎？"
+        },
+        {
+          "span": "Ab 20 Uhr",
+          "zh": "從 20 點起"
+        },
+        {
+          "span": "bei mir",
+          "zh": "在我家／我這邊"
+        },
+        {
+          "span": "antworte",
+          "zh": "回覆（命令式）"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Am + 星期",
+          "zh": "說星期",
+          "example": "Am Freitag habe ich Zeit."
+        },
+        {
+          "pattern": "Kommst du?",
+          "zh": "邀請",
+          "example": "Kommst du mit?"
+        }
+      ],
+      "tips": [
+        "回覆：Ja, gerne! 或 Leider nein."
+      ],
+      "focus": [
+        "時間介系詞",
+        "邀請"
+      ]
+    },
+    {
+      "id": "a1-20",
+      "level": "A1",
+      "kind": "card",
+      "topic": "住處",
+      "title": "Meine Wohnung",
+      "titleZh": "我的公寓",
+      "text": "Ich habe eine Wohnung.\nDie Wohnung ist klein, aber hell.\nEs gibt eine Küche und ein Bad.\nMein Zimmer ist ruhig.",
+      "textZh": "我有一間公寓。\n公寓小但明亮。\n有廚房和浴室。\n我的房間很安靜。",
+      "notes": [
+        {
+          "span": "Es gibt",
+          "zh": "有……",
+          "tip": "後面常用第四格。"
+        },
+        {
+          "span": "hell",
+          "zh": "明亮的"
+        },
+        {
+          "span": "ruhig",
+          "zh": "安靜的"
+        },
+        {
+          "span": "aber",
+          "zh": "但是"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich habe + 第四格",
+          "zh": "說擁有",
+          "example": "Ich habe ein Auto."
+        },
+        {
+          "pattern": "Es gibt + 第四格",
+          "zh": "描述存在",
+          "example": "Es gibt einen Balkon."
+        }
+      ],
+      "tips": [
+        "Es gibt 後面：einen／eine／ein。"
+      ],
+      "focus": [
+        "haben",
+        "Es gibt"
+      ]
+    },
+    {
+      "id": "a1-21",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "學習",
+      "title": "Im Kurs",
+      "titleZh": "在課堂",
+      "text": "Lehrerin: Öffnet bitte die Bücher.\nSeite 12.\nStudent: Entschuldigung, was bedeutet „heute“?\nLehrerin: „Heute“ heißt: this day.\nStudent: Ah, danke!",
+      "textZh": "老師：請打開書。\n第 12 頁。\n學生：不好意思，「heute」是什麼意思？\n老師：「Heute」意思是今天。\n學生：啊，謝謝！",
+      "notes": [
+        {
+          "span": "Öffnet bitte",
+          "zh": "請打開（你們）",
+          "tip": "對你們用命令式 -t。"
+        },
+        {
+          "span": "was bedeutet …?",
+          "zh": "……是什麼意思？"
+        },
+        {
+          "span": "heißt",
+          "zh": "意思是／名叫"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Was bedeutet „…“?",
+          "zh": "問單字意思",
+          "example": "Was bedeutet „Arbeit“?"
+        },
+        {
+          "pattern": "… heißt …",
+          "zh": "解釋意思",
+          "example": "„Danke“ heißt thank you."
+        }
+      ],
+      "tips": [
+        "課堂救命句：Was bedeutet …?"
+      ],
+      "focus": [
+        "課堂"
+      ]
+    },
+    {
+      "id": "a1-22",
+      "level": "A1",
+      "kind": "sign",
+      "topic": "醫院",
+      "title": "Wartezimmer",
+      "titleZh": "候診室",
+      "text": "Bitte warten.\nNummer 24 ist dran.\nKeine Handys.",
+      "textZh": "請等候。\n叫到 24 號。\n禁止使用手機。",
+      "notes": [
+        {
+          "span": "Bitte warten",
+          "zh": "請等候"
+        },
+        {
+          "span": "ist dran",
+          "zh": "輪到了"
+        },
+        {
+          "span": "Keine Handys",
+          "zh": "禁止手機"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bitte + 不定式",
+          "zh": "告示請求",
+          "example": "Bitte Platz nehmen."
+        },
+        {
+          "pattern": "Nummer … ist dran",
+          "zh": "叫號",
+          "example": "Nummer 10 ist dran."
+        }
+      ],
+      "tips": [
+        "公共場合短句，認字即可。"
+      ],
+      "focus": [
+        "告示"
+      ]
+    },
+    {
+      "id": "a1-23",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "衣服",
+      "title": "Die Jacke",
+      "titleZh": "外套",
+      "text": "Verkäuferin: Suchen Sie etwas?\nKunde: Ja, eine Jacke.\nVerkäuferin: Welche Größe?\nKunde: Größe M.\nVerkäuferin: Die ist blau und warm.",
+      "textZh": "店員：在找什麼嗎？\n顧客：對，一件外套。\n店員：什麼尺寸？\n顧客：M。\n店員：這件藍又暖。",
+      "notes": [
+        {
+          "span": "Suchen Sie etwas?",
+          "zh": "您在找什麼嗎？"
+        },
+        {
+          "span": "Welche Größe?",
+          "zh": "什麼尺寸？"
+        },
+        {
+          "span": "warm",
+          "zh": "保暖的／溫暖的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich suche + 第四格",
+          "zh": "說在找什麼",
+          "example": "Ich suche eine Hose."
+        },
+        {
+          "pattern": "Welche Größe?",
+          "zh": "問尺寸",
+          "example": "Welche Größe haben Sie?"
+        }
+      ],
+      "tips": [
+        "購物兩句：Ich suche…／Welche Größe?"
+      ],
+      "focus": [
+        "購物"
+      ]
+    },
+    {
+      "id": "a1-24",
+      "level": "A1",
+      "kind": "message",
+      "topic": "延遲",
+      "title": "Ich komme später",
+      "titleZh": "我晚點到",
+      "text": "Hi!\nDer Bus hat Verspätung.\nIch komme 10 Minuten später.\nSorry!\n— Anna",
+      "textZh": "嗨！\n公車誤點。\n我晚十分鐘到。\n抱歉！\n— Anna",
+      "notes": [
+        {
+          "span": "hat Verspätung",
+          "zh": "誤點／延遲"
+        },
+        {
+          "span": "später",
+          "zh": "較晚"
+        },
+        {
+          "span": "Minuten",
+          "zh": "分鐘（複數）"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich komme … später",
+          "zh": "說遲到",
+          "example": "Ich komme etwas später."
+        },
+        {
+          "pattern": "Der Zug / Bus hat Verspätung",
+          "zh": "說誤點",
+          "example": "Der Zug hat Verspätung."
+        }
+      ],
+      "tips": [
+        "真實生活超常用，整段可背。"
+      ],
+      "focus": [
+        "交通",
+        "道歉"
+      ]
+    },
+    {
+      "id": "a1-25",
+      "level": "A1",
+      "kind": "card",
+      "topic": "職業",
+      "title": "Beruf",
+      "titleZh": "職業",
+      "text": "Ich bin Lehrer.\nMeine Frau ist Ärztin.\nMein Bruder ist Student.\nWir arbeiten viel.\nAber wir sind glücklich.",
+      "textZh": "我是老師。\n我太太是醫生。\n我弟弟是學生。\n我們工作很多。\n但我們很幸福。",
+      "notes": [
+        {
+          "span": "Lehrer / Ärztin / Student",
+          "zh": "職業名詞",
+          "tip": "女性常加 -in：Lehrerin。"
+        },
+        {
+          "span": "arbeiten",
+          "zh": "工作"
+        },
+        {
+          "span": "glücklich",
+          "zh": "幸福的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich bin + 職業",
+          "zh": "說職業",
+          "example": "Ich bin Koch."
+        },
+        {
+          "pattern": "Wir sind + 形容詞",
+          "zh": "說狀態",
+          "example": "Wir sind müde."
+        }
+      ],
+      "tips": [
+        "職業不加冠詞：Ich bin Lehrer（不是 ein Lehrer，也可說）。A1 兩種都會聽到。"
+      ],
+      "focus": [
+        "sein",
+        "職業"
+      ]
+    },
+    {
+      "id": "a1-26",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "電話",
+      "title": "Am Telefon",
+      "titleZh": "打電話",
+      "text": "A: Hallo, hier ist Mark.\nB: Hallo Mark! Ist Anna da?\nA: Moment, bitte.\nA: Anna, Telefon für dich!\nAnna: Ja, ich komme.",
+      "textZh": "A：哈囉，我是 Mark。\nB：哈囉 Mark！Anna 在嗎？\nA：請稍等。\nA：Anna，你的電話！\nAnna：好，我來了。",
+      "notes": [
+        {
+          "span": "hier ist …",
+          "zh": "我是……（電話）"
+        },
+        {
+          "span": "Ist … da?",
+          "zh": "……在嗎？"
+        },
+        {
+          "span": "Moment, bitte",
+          "zh": "請稍等"
+        },
+        {
+          "span": "für dich",
+          "zh": "給你的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Hallo, hier ist + 名字",
+          "zh": "電話自我介紹",
+          "example": "Hier ist Lisa."
+        },
+        {
+          "pattern": "Ist + 名字 + da?",
+          "zh": "找人",
+          "example": "Ist Herr Lang da?"
+        }
+      ],
+      "tips": [
+        "電話開場固定句，先背。"
+      ],
+      "focus": [
+        "電話"
+      ]
+    },
+    {
+      "id": "a1-27",
+      "level": "A1",
+      "kind": "sign",
+      "topic": "圖書館",
+      "title": "Bibliothek",
+      "titleZh": "圖書館",
+      "text": "Öffnungszeiten: 9–20 Uhr\nBitte leise sprechen.\nEssen und Trinken: nein.",
+      "textZh": "開放時間：9–20 點\n請小聲說話。\n禁止飲食。",
+      "notes": [
+        {
+          "span": "leise sprechen",
+          "zh": "小聲說話"
+        },
+        {
+          "span": "Essen und Trinken",
+          "zh": "飲食"
+        },
+        {
+          "span": "nein",
+          "zh": "不行／禁止（告示）"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bitte leise + 動詞",
+          "zh": "請安靜做某事",
+          "example": "Bitte leise gehen."
+        },
+        {
+          "pattern": "…: nein / verboten",
+          "zh": "禁止",
+          "example": "Fotografieren: nein."
+        }
+      ],
+      "tips": [
+        "公共守則短句夠用。"
+      ],
+      "focus": [
+        "告示"
+      ]
+    },
+    {
+      "id": "a1-28",
+      "level": "A1",
+      "kind": "card",
+      "topic": "週末",
+      "title": "Am Wochenende",
+      "titleZh": "週末",
+      "text": "Am Samstag kaufe ich ein.\nAm Sonntag besuche ich meine Eltern.\nWir essen zusammen.\nDas ist schön.",
+      "textZh": "星期六我去採買。\n星期天我探望父母。\n我們一起吃飯。\n這很好。",
+      "notes": [
+        {
+          "span": "kaufe … ein",
+          "zh": "採買",
+          "tip": "einkaufen 可分。"
+        },
+        {
+          "span": "besuche",
+          "zh": "拜訪"
+        },
+        {
+          "span": "zusammen",
+          "zh": "一起"
+        },
+        {
+          "span": "schön",
+          "zh": "美好的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Am Samstag / Sonntag + 句子",
+          "zh": "說週末計畫",
+          "example": "Am Samstag schlafe ich länger."
+        },
+        {
+          "pattern": "Das ist schön / toll / super",
+          "zh": "評價",
+          "example": "Das ist toll!"
+        }
+      ],
+      "tips": [
+        "用兩個日子各寫一句你的週末。"
+      ],
+      "focus": [
+        "週末",
+        "可分動詞"
+      ]
+    },
+    {
+      "id": "a1-29",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "幫忙",
+      "title": "Hilfe",
+      "titleZh": "幫忙",
+      "text": "Kind: Kannst du mir helfen?\nVater: Natürlich. Was ist los?\nKind: Ich finde meinen Stift nicht.\nVater: Hier, unter dem Buch.",
+      "textZh": "孩子：你可以幫我嗎？\n爸爸：當然。怎麼了？\n孩子：我找不到我的筆。\n爸爸：在這裡，在書下面。",
+      "notes": [
+        {
+          "span": "Kannst du mir helfen?",
+          "zh": "你可以幫我嗎？",
+          "tip": "helfen + 第三格。"
+        },
+        {
+          "span": "Was ist los?",
+          "zh": "怎麼了？"
+        },
+        {
+          "span": "finde … nicht",
+          "zh": "找不到"
+        },
+        {
+          "span": "unter dem Buch",
+          "zh": "在書下面",
+          "tip": "unter + 第三格（靜態）。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Kannst du mir helfen?",
+          "zh": "求助",
+          "example": "Kannst du mir bitte helfen?"
+        },
+        {
+          "pattern": "Was ist los?",
+          "zh": "詢問狀況",
+          "example": "Was ist los?"
+        }
+      ],
+      "tips": [
+        "helfen 要記：mir／dir／ihm。"
+      ],
+      "focus": [
+        "Dativ",
+        "求助"
+      ]
+    },
+    {
+      "id": "a1-30",
+      "level": "A1",
+      "kind": "message",
+      "topic": "感謝",
+      "title": "Danke",
+      "titleZh": "道謝",
+      "text": "Liebe Anna,\ndanke für deine Hilfe!\nDu bist sehr nett.\nBis bald\nPaul",
+      "textZh": "親愛的 Anna，\n謝謝你的幫忙！\n你人很好。\n待會見\nPaul",
+      "notes": [
+        {
+          "span": "danke für",
+          "zh": "為……謝謝",
+          "tip": "für + 第四格。"
+        },
+        {
+          "span": "nett",
+          "zh": "好／親切的"
+        },
+        {
+          "span": "Bis bald",
+          "zh": "待會見"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Danke für + 第四格",
+          "zh": "道謝",
+          "example": "Danke für den Kaffee."
+        },
+        {
+          "pattern": "Du bist sehr + 形容詞",
+          "zh": "稱讚",
+          "example": "Du bist sehr freundlich."
+        }
+      ],
+      "tips": [
+        "短訊息也能很有禮貌。"
+      ],
+      "focus": [
+        "道謝"
+      ]
+    },
+    {
+      "id": "a1-31",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "顏色",
+      "title": "Welche Farbe?",
+      "titleZh": "什麼顏色？",
+      "text": "A: Welche Farbe möchtest du?\nB: Rot, bitte.\nA: Hier ist ein roter Stift.\nB: Perfekt, danke!",
+      "textZh": "A：你想要什麼顏色？\nB：紅色，麻煩。\nA：這是一支紅色的筆。\nB：完美，謝謝！",
+      "notes": [
+        {
+          "span": "Welche Farbe?",
+          "zh": "什麼顏色？"
+        },
+        {
+          "span": "roter Stift",
+          "zh": "紅色的筆",
+          "tip": "陽性主格形容詞 -er。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Welche Farbe möchtest du?",
+          "zh": "問顏色喜好",
+          "example": "Welche Farbe magst du?"
+        },
+        {
+          "pattern": "Hier ist + 名詞",
+          "zh": "遞東西",
+          "example": "Hier ist dein Buch."
+        }
+      ],
+      "tips": [
+        "顏色：rot、blau、grün、gelb、schwarz、weiß。"
+      ],
+      "focus": [
+        "顏色"
+      ]
+    },
+    {
+      "id": "a1-32",
+      "level": "A1",
+      "kind": "card",
+      "topic": "食物",
+      "title": "Frühstück",
+      "titleZh": "早餐",
+      "text": "Zum Frühstück esse ich Brot.\nIch trinke Kaffee.\nManchmal esse ich Obst.\nDas schmeckt gut.",
+      "textZh": "早餐我吃麵包。\n我喝咖啡。\n有時我吃水果。\n很好吃。",
+      "notes": [
+        {
+          "span": "Zum Frühstück",
+          "zh": "作為早餐"
+        },
+        {
+          "span": "Manchmal",
+          "zh": "有時候"
+        },
+        {
+          "span": "schmeckt gut",
+          "zh": "好吃／味道好"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Zum Frühstück / Mittagessen esse ich …",
+          "zh": "說餐點",
+          "example": "Zum Abendessen esse ich Reis."
+        },
+        {
+          "pattern": "Das schmeckt gut",
+          "zh": "說好吃",
+          "example": "Mmm, das schmeckt gut!"
+        }
+      ],
+      "tips": [
+        "essen／trinken 是飲食基本動詞。"
+      ],
+      "focus": [
+        "飲食"
+      ]
+    },
+    {
+      "id": "a1-33",
+      "level": "A1",
+      "kind": "sign",
+      "topic": "電梯",
+      "title": "Aufzug",
+      "titleZh": "電梯",
+      "text": "Aufzug\nMax. 6 Personen\nBei Feuer: Treppe benutzen!",
+      "textZh": "電梯\n最多 6 人\n火災時：請走樓梯！",
+      "notes": [
+        {
+          "span": "Max.",
+          "zh": "最多",
+          "tip": "Maximum。"
+        },
+        {
+          "span": "Personen",
+          "zh": "人（複數）"
+        },
+        {
+          "span": "Bei Feuer",
+          "zh": "發生火災時"
+        },
+        {
+          "span": "Treppe benutzen",
+          "zh": "使用樓梯"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bei + 情況: + 指令",
+          "zh": "緊急指示",
+          "example": "Bei Gefahr: Ausgang!"
+        },
+        {
+          "pattern": "… benutzen",
+          "zh": "使用",
+          "example": "Bitte den Eingang benutzen."
+        }
+      ],
+      "tips": [
+        "公共標示常混德英縮寫。"
+      ],
+      "focus": [
+        "告示"
+      ]
+    },
+    {
+      "id": "a1-34",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "名字",
+      "title": "Wie heißt du?",
+      "titleZh": "你叫什麼？",
+      "text": "A: Hallo, wie heißt du?\nB: Ich heiße Sara. Und du?\nA: Ich heiße Ben.\nB: Freut mich!\nA: Mich auch!",
+      "textZh": "A：哈囉，你叫什麼名字？\nB：我叫 Sara。你呢？\nA：我叫 Ben。\nB：很高興認識你！\nA：我也是！",
+      "notes": [
+        {
+          "span": "Wie heißt du?",
+          "zh": "你叫什麼？"
+        },
+        {
+          "span": "Ich heiße",
+          "zh": "我叫"
+        },
+        {
+          "span": "Freut mich!",
+          "zh": "很高興（認識你）"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wie heißt du? — Ich heiße …",
+          "zh": "問名字",
+          "example": "Wie heißt er? — Er heißt Tom."
+        },
+        {
+          "pattern": "Freut mich!",
+          "zh": "初次見面",
+          "example": "Freut mich, Sie kennenzulernen!"
+        }
+      ],
+      "tips": [
+        "A1 第一週就會用到。"
+      ],
+      "focus": [
+        "heißen"
+      ]
+    },
+    {
+      "id": "a1-35",
+      "level": "A1",
+      "kind": "message",
+      "topic": "確認",
+      "title": "Alles klar?",
+      "titleZh": "清楚嗎？",
+      "text": "Paul: Treffpunkt ist um 4 am Tor.\nAlles klar?\nMia: Ja, alles klar.\nIch bin pünktlich.",
+      "textZh": "Paul：集合點是四點在大門。\n清楚嗎？\nMia：嗯，清楚。\n我會準時。",
+      "notes": [
+        {
+          "span": "Treffpunkt",
+          "zh": "集合點"
+        },
+        {
+          "span": "Alles klar?",
+          "zh": "清楚嗎／沒問題吧？"
+        },
+        {
+          "span": "pünktlich",
+          "zh": "準時的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Alles klar?",
+          "zh": "確認理解",
+          "example": "Alles klar so?"
+        },
+        {
+          "pattern": "Ich bin pünktlich",
+          "zh": "保證準時",
+          "example": "Sei bitte pünktlich!"
+        }
+      ],
+      "tips": [
+        "口語確認：Alles klar?／Okay?"
+      ],
+      "focus": [
+        "約定"
+      ]
+    },
+    {
+      "id": "a1-36",
+      "level": "A1",
+      "kind": "card",
+      "topic": "國家語言",
+      "title": "Sprachen",
+      "titleZh": "語言",
+      "text": "Ich spreche Chinesisch.\nIch spreche ein bisschen Englisch.\nIch lerne Deutsch.\nDeutsch ist interessant, aber schwer.",
+      "textZh": "我說中文。\n我說一點英文。\n我在學德文。\n德文有趣但難。",
+      "notes": [
+        {
+          "span": "spreche",
+          "zh": "說（語言）"
+        },
+        {
+          "span": "ein bisschen",
+          "zh": "一點點"
+        },
+        {
+          "span": "interessant",
+          "zh": "有趣的"
+        },
+        {
+          "span": "schwer",
+          "zh": "難的／重的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich spreche + 語言",
+          "zh": "說會的語言",
+          "example": "Ich spreche Deutsch."
+        },
+        {
+          "pattern": "… ist interessant, aber schwer",
+          "zh": "評價",
+          "example": "Mathe ist wichtig, aber schwer."
+        }
+      ],
+      "tips": [
+        "語言名稱多半大寫：Deutsch、Englisch。"
+      ],
+      "focus": [
+        "語言"
+      ]
+    },
+    {
+      "id": "a1-37",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "酒店",
+      "title": "Im Hotel",
+      "titleZh": "在飯店",
+      "text": "Rezeption: Guten Tag! Haben Sie eine Reservierung?\nGast: Ja, auf den Namen Li.\nRezeption: Zimmer 12. Hier ist der Schlüssel.\nGast: Danke!",
+      "textZh": "櫃台：您好！您有預約嗎？\n客人：有，名字是 Li。\n櫃台：12 號房。這是鑰匙。\n客人：謝謝！",
+      "notes": [
+        {
+          "span": "Reservierung",
+          "zh": "預約"
+        },
+        {
+          "span": "auf den Namen …",
+          "zh": "以……的名字"
+        },
+        {
+          "span": "Schlüssel",
+          "zh": "鑰匙（der）"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Haben Sie eine Reservierung?",
+          "zh": "問是否預約",
+          "example": "Ich habe eine Reservierung."
+        },
+        {
+          "pattern": "auf den Namen + 名字",
+          "zh": "報名",
+          "example": "Auf den Namen Wang, bitte."
+        }
+      ],
+      "tips": [
+        "旅行第一句很實用。"
+      ],
+      "focus": [
+        "旅行"
+      ]
+    },
+    {
+      "id": "a1-38",
+      "level": "A1",
+      "kind": "sign",
+      "topic": "廁所",
+      "title": "Toilette",
+      "titleZh": "廁所標示",
+      "text": "Toilette\nDamen | Herren\nBitte sauber lassen!",
+      "textZh": "廁所\n女｜男\n請保持清潔！",
+      "notes": [
+        {
+          "span": "Damen",
+          "zh": "女廁／女士"
+        },
+        {
+          "span": "Herren",
+          "zh": "男廁／男士"
+        },
+        {
+          "span": "sauber lassen",
+          "zh": "保持乾淨"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bitte … lassen",
+          "zh": "請讓……保持",
+          "example": "Bitte die Tür zu lassen."
+        },
+        {
+          "pattern": "Damen / Herren",
+          "zh": "性別標示",
+          "example": "Damen — rechts"
+        }
+      ],
+      "tips": [
+        "認得即可，出國超常用。"
+      ],
+      "focus": [
+        "告示"
+      ]
+    },
+    {
+      "id": "a1-39",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "感覺",
+      "title": "Wie fühlst du dich?",
+      "titleZh": "你感覺如何？",
+      "text": "A: Wie fühlst du dich?\nB: Ich bin müde.\nA: Warum?\nB: Ich habe schlecht geschlafen.\nA: Oh, dann ruh dich aus!",
+      "textZh": "A：你感覺如何？\nB：我好累。\nA：為什麼？\nB：我睡得不好。\nA：噢，那休息一下！",
+      "notes": [
+        {
+          "span": "müde",
+          "zh": "累的"
+        },
+        {
+          "span": "Warum?",
+          "zh": "為什麼？"
+        },
+        {
+          "span": "schlecht geschlafen",
+          "zh": "睡得不好",
+          "tip": "A1 可先當整塊記。"
+        },
+        {
+          "span": "ruh dich aus",
+          "zh": "休息一下",
+          "tip": "sich ausruhen 可分命令式。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich bin müde / hungrig / durstig",
+          "zh": "說身體感覺",
+          "example": "Ich bin hungrig."
+        },
+        {
+          "pattern": "Warum? — Weil … / 簡單句",
+          "zh": "問原因",
+          "example": "Warum? — Ich arbeite viel."
+        }
+      ],
+      "tips": [
+        "感覺形容詞超實用。"
+      ],
+      "focus": [
+        "形容詞"
+      ]
+    },
+    {
+      "id": "a1-40",
+      "level": "A1",
+      "kind": "card",
+      "topic": "計劃",
+      "title": "Heute Nachmittag",
+      "titleZh": "今天下午",
+      "text": "Heute Nachmittag habe ich Zeit.\nIch möchte Sport machen.\nDann koche ich.\nAm Abend sehe ich fern.",
+      "textZh": "今天下午我有空。\n我想運動。\n然後我煮飯。\n晚上我看電視。",
+      "notes": [
+        {
+          "span": "möchte",
+          "zh": "想要",
+          "tip": "möchten 客氣形式。"
+        },
+        {
+          "span": "Sport machen",
+          "zh": "做運動"
+        },
+        {
+          "span": "sehe … fern",
+          "zh": "看電視",
+          "tip": "fernsehen 可分。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich möchte + 動詞原形",
+          "zh": "說想做",
+          "example": "Ich möchte schlafen."
+        },
+        {
+          "pattern": "Dann … / Am Abend …",
+          "zh": "排列活動",
+          "example": "Dann lerne ich."
+        }
+      ],
+      "tips": [
+        "möchte 後面用原形：möchte gehen。"
+      ],
+      "focus": [
+        "情態",
+        "計劃"
+      ]
+    },
+    {
+      "id": "a1-41",
+      "level": "A1",
+      "kind": "message",
+      "topic": "提醒",
+      "title": "Nicht vergessen",
+      "titleZh": "別忘了",
+      "text": "Mama: Nicht vergessen!\nMilch und Brot kaufen.\nSchlüssel mitnehmen.\nIch liebe dich!",
+      "textZh": "媽媽：別忘了！\n買牛奶和麵包。\n帶鑰匙。\n我愛你！",
+      "notes": [
+        {
+          "span": "Nicht vergessen",
+          "zh": "別忘記"
+        },
+        {
+          "span": "mitnehmen",
+          "zh": "帶走",
+          "tip": "可分。"
+        },
+        {
+          "span": "Ich liebe dich",
+          "zh": "我愛你"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Nicht vergessen: + 不定式",
+          "zh": "提醒清單",
+          "example": "Nicht vergessen: anrufen!"
+        },
+        {
+          "pattern": "… mitnehmen / mitbringen",
+          "zh": "帶去／帶來",
+          "example": "Bring bitte Kuchen mit!"
+        }
+      ],
+      "tips": [
+        "清單式訊息常用原形動詞。"
+      ],
+      "focus": [
+        "提醒"
+      ]
+    },
+    {
+      "id": "a1-42",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "年齡",
+      "title": "Wie alt bist du?",
+      "titleZh": "你幾歲？",
+      "text": "A: Wie alt bist du?\nB: Ich bin 20 Jahre alt.\nA: Wirklich? Du siehst jung aus!\nB: Danke!",
+      "textZh": "A：你幾歲？\nB：我 20 歲。\nA：真的嗎？你看起來好年輕！\nB：謝謝！",
+      "notes": [
+        {
+          "span": "Wie alt bist du?",
+          "zh": "你幾歲？"
+        },
+        {
+          "span": "Jahre alt",
+          "zh": "……歲"
+        },
+        {
+          "span": "siehst … aus",
+          "zh": "看起來",
+          "tip": "aussehen 可分。"
+        },
+        {
+          "span": "jung",
+          "zh": "年輕的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich bin … Jahre alt",
+          "zh": "說年齡",
+          "example": "Ich bin 18 Jahre alt."
+        },
+        {
+          "pattern": "Du siehst … aus",
+          "zh": "評價外表",
+          "example": "Du siehst müde aus."
+        }
+      ],
+      "tips": [
+        "年齡句型固定，整句背。"
+      ],
+      "focus": [
+        "數字",
+        "aussehen"
+      ]
+    },
+    {
+      "id": "a1-43",
+      "level": "A1",
+      "kind": "sign",
+      "topic": "停車場",
+      "title": "Parkplatz",
+      "titleZh": "停車場",
+      "text": "Parkplatz\nKosten: 2 € / Stunde\nNur für Kunden\nFrei: 3 Plätze",
+      "textZh": "停車場\n費用：每小時 2 歐\n僅供顧客\n空位：3 個",
+      "notes": [
+        {
+          "span": "Kosten",
+          "zh": "費用"
+        },
+        {
+          "span": "Stunde",
+          "zh": "小時"
+        },
+        {
+          "span": "Nur für Kunden",
+          "zh": "僅供顧客"
+        },
+        {
+          "span": "Frei",
+          "zh": "空的／有位子"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "… € / Stunde",
+          "zh": "按小時計價",
+          "example": "1,50 € / Stunde"
+        },
+        {
+          "pattern": "Nur für + 複數／族群",
+          "zh": "限制使用",
+          "example": "Nur für Personal"
+        }
+      ],
+      "tips": [
+        "看標示抓關鍵數字即可。"
+      ],
+      "focus": [
+        "告示"
+      ]
+    },
+    {
+      "id": "a1-44",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "座位",
+      "title": "Ist hier frei?",
+      "titleZh": "這裡有人嗎？",
+      "text": "A: Entschuldigung, ist hier frei?\nB: Ja, bitte!\nA: Danke. Ist das Ihr Platz?\nB: Nein, alles gut.",
+      "textZh": "A：不好意思，這裡有空嗎？\nB：有，請坐！\nA：謝謝。這是您的位子嗎？\nB：不是，沒關係。",
+      "notes": [
+        {
+          "span": "Ist hier frei?",
+          "zh": "這裡空著嗎？"
+        },
+        {
+          "span": "Ihr Platz",
+          "zh": "您的位子",
+          "tip": "Ihr＝您的。"
+        },
+        {
+          "span": "alles gut",
+          "zh": "沒問題／沒事"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ist hier frei?",
+          "zh": "問座位",
+          "example": "Ist dieser Platz frei?"
+        },
+        {
+          "pattern": "Ist das Ihr / dein …?",
+          "zh": "確認所屬",
+          "example": "Ist das Ihre Tasche?"
+        }
+      ],
+      "tips": [
+        "公共交通超常用。"
+      ],
+      "focus": [
+        "禮貌"
+      ]
+    },
+    {
+      "id": "a1-45",
+      "level": "A1",
+      "kind": "card",
+      "topic": "季節",
+      "title": "Die Jahreszeiten",
+      "titleZh": "季節",
+      "text": "Im Frühling ist es warm.\nIm Sommer schwimme ich.\nIm Herbst fallen die Blätter.\nIm Winter schneit es oft.",
+      "textZh": "春天天氣暖。\n夏天我游泳。\n秋天葉子落下。\n冬天常常下雪。",
+      "notes": [
+        {
+          "span": "Im Frühling / Sommer / Herbst / Winter",
+          "zh": "在……季",
+          "tip": "in dem→im。"
+        },
+        {
+          "span": "fallen",
+          "zh": "落下"
+        },
+        {
+          "span": "schneit",
+          "zh": "下雪",
+          "tip": "es schneit。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Im + 季節 + 句子",
+          "zh": "談季節",
+          "example": "Im Sommer ist es heiß."
+        },
+        {
+          "pattern": "Es schneit / regnet",
+          "zh": "天氣動詞",
+          "example": "Es regnet heute."
+        }
+      ],
+      "tips": [
+        "四季介系詞幾乎都用 im。"
+      ],
+      "focus": [
+        "季節",
+        "天氣"
+      ]
+    },
+    {
+      "id": "a1-46",
+      "level": "A1",
+      "kind": "message",
+      "topic": "分享照片",
+      "title": "Foto",
+      "titleZh": "照片",
+      "text": "Schau!\nDas ist mein Hund.\nEr heißt Milo.\nEr ist klein und süß.\n❤️",
+      "textZh": "你看！\n這是我的狗。\n他叫 Milo。\n他又小又可愛。\n❤️",
+      "notes": [
+        {
+          "span": "Schau!",
+          "zh": "你看！",
+          "tip": "對 du 的命令式。"
+        },
+        {
+          "span": "Hund",
+          "zh": "狗（der）"
+        },
+        {
+          "span": "süß",
+          "zh": "可愛／甜的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Das ist mein / meine …",
+          "zh": "分享照片",
+          "example": "Das ist meine Katze."
+        },
+        {
+          "pattern": "Er / Sie ist + 形容詞",
+          "zh": "描述",
+          "example": "Sie ist groß und schnell."
+        }
+      ],
+      "tips": [
+        "社群訊息風格，短句即可。"
+      ],
+      "focus": [
+        "所有格"
+      ]
+    },
+    {
+      "id": "a1-47",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "重複",
+      "title": "Noch einmal",
+      "titleZh": "再說一次",
+      "text": "Student: Wie bitte?\nLehrerin: Das Wort ist „Fenster“.\nStudent: Können Sie das bitte wiederholen?\nLehrerin: Fen-ster.\nStudent: Fenster. Okay!",
+      "textZh": "學生：請問您說什麼？\n老師：這個詞是「Fenster」。\n學生：可以請您再說一次嗎？\n老師：Fen-ster。\n學生：Fenster。好！",
+      "notes": [
+        {
+          "span": "Wie bitte?",
+          "zh": "請問你說什麼？",
+          "tip": "沒聽清時用。"
+        },
+        {
+          "span": "wiederholen",
+          "zh": "重複"
+        },
+        {
+          "span": "Können Sie …?",
+          "zh": "您可以……嗎？"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wie bitte?",
+          "zh": "請對方再說",
+          "example": "Wie bitte? Ich verstehe nicht."
+        },
+        {
+          "pattern": "Können Sie das bitte wiederholen?",
+          "zh": "請重複",
+          "example": "Bitte langsam wiederholen!"
+        }
+      ],
+      "tips": [
+        "聽不懂三寶：Wie bitte?／wiederholen／langsam。"
+      ],
+      "focus": [
+        "課堂",
+        "禮貌"
+      ]
+    },
+    {
+      "id": "a1-48",
+      "level": "A1",
+      "kind": "sign",
+      "topic": "垃圾",
+      "title": "Müll",
+      "titleZh": "垃圾分類",
+      "text": "Mülltrennung\nPapier → blau\nGlas → grün\nRestmüll → schwarz",
+      "textZh": "垃圾分類\n紙 → 藍\n玻璃 → 綠\n一般垃圾 → 黑",
+      "notes": [
+        {
+          "span": "Mülltrennung",
+          "zh": "垃圾分類"
+        },
+        {
+          "span": "Papier",
+          "zh": "紙"
+        },
+        {
+          "span": "Glas",
+          "zh": "玻璃"
+        },
+        {
+          "span": "Restmüll",
+          "zh": "一般／剩餘垃圾"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "… → 顏色／桶",
+          "zh": "分類指示",
+          "example": "Bio → braun"
+        },
+        {
+          "pattern": "Bitte trennen!",
+          "zh": "請分類",
+          "example": "Bitte Müll trennen!"
+        }
+      ],
+      "tips": [
+        "德國生活必看標示。"
+      ],
+      "focus": [
+        "生活"
+      ]
+    },
+    {
+      "id": "a1-49",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "告別",
+      "title": "Tschüss",
+      "titleZh": "再見",
+      "text": "A: Ich muss gehen.\nB: Schon?\nA: Ja, es ist spät.\nB: Okay. Tschüss!\nA: Tschüss, bis morgen!",
+      "textZh": "A：我得走了。\nB：這麼快？\nA：對，很晚了。\nB：好。掰！\nA：掰，明天見！",
+      "notes": [
+        {
+          "span": "Ich muss gehen",
+          "zh": "我必須走了"
+        },
+        {
+          "span": "Schon?",
+          "zh": "這麼快／已經？"
+        },
+        {
+          "span": "spät",
+          "zh": "晚的"
+        },
+        {
+          "span": "Tschüss",
+          "zh": "掰／再見（口語）"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich muss gehen",
+          "zh": "告辭",
+          "example": "Sorry, ich muss gehen."
+        },
+        {
+          "pattern": "Tschüss! / Bis morgen!",
+          "zh": "道別",
+          "example": "Bis bald!"
+        }
+      ],
+      "tips": [
+        "正式場合多用 Auf Wiedersehen。"
+      ],
+      "focus": [
+        "道別"
+      ]
+    },
+    {
+      "id": "a1-50",
+      "level": "A1",
+      "kind": "card",
+      "topic": "複習短文",
+      "title": "Das bin ich",
+      "titleZh": "這就是我",
+      "text": "Mein Name ist Alex.\nIch bin 22.\nIch komme aus München.\nIch studiere Medizin.\nIch mag Sport und Musik.\nFreut mich!",
+      "textZh": "我的名字是 Alex。\n我 22 歲。\n我來自慕尼黑。\n我唸醫學。\n我喜歡運動和音樂。\n很高興認識你！",
+      "notes": [
+        {
+          "span": "Mein Name ist",
+          "zh": "我的名字是",
+          "tip": "比 Ich heiße 稍正式。"
+        },
+        {
+          "span": "studiere",
+          "zh": "就讀（大學）"
+        },
+        {
+          "span": "Medizin",
+          "zh": "醫學"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Mein Name ist …",
+          "zh": "正式自介",
+          "example": "Mein Name ist Frau Koch."
+        },
+        {
+          "pattern": "Ich studiere + 科系",
+          "zh": "說大學科系",
+          "example": "Ich studiere Informatik."
+        }
+      ],
+      "tips": [
+        "把這六句改成你的版本，就是完整自介。"
+      ],
+      "focus": [
+        "自我介紹",
+        "複習"
+      ]
+    },
+    {
+      "id": "a2-01",
+      "level": "A2",
+      "kind": "email",
+      "topic": "工作",
+      "title": "Krankmeldung",
+      "titleZh": "請假信",
+      "text": "Betreff: Krankmeldung\n\nLiebe Frau Schulz,\n\nleider bin ich heute krank und kann nicht zur Arbeit kommen.\nIch habe Fieber und bleibe zu Hause.\nMorgen gehe ich zum Arzt.\n\nViele Grüße\nMarkus Weber",
+      "textZh": "主旨：病假通知\n\n親愛的 Schulz 女士：\n\n很抱歉，我今天生病了，無法來上班。\n我發燒，留在家裡。\n明天我會去看醫生。\n\n問候\nMarkus Weber",
+      "notes": [
+        {
+          "span": "Betreff",
+          "zh": "主旨"
+        },
+        {
+          "span": "leider",
+          "zh": "遺憾地／很抱歉"
+        },
+        {
+          "span": "kann nicht … kommen",
+          "zh": "無法來",
+          "tip": "情態動詞 + 原形。"
+        },
+        {
+          "span": "Fieber haben",
+          "zh": "發燒"
+        },
+        {
+          "span": "zum Arzt",
+          "zh": "去看醫生",
+          "tip": "zu dem→zum。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "leider + 句子",
+          "zh": "委婉說明壞消息",
+          "example": "Leider habe ich keine Zeit."
+        },
+        {
+          "pattern": "Ich kann nicht + 原形",
+          "zh": "說不能做",
+          "example": "Ich kann nicht kommen."
+        },
+        {
+          "pattern": "Viele Grüße / Mit freundlichen Grüßen",
+          "zh": "信件結尾",
+          "example": "Viele Grüße"
+        }
+      ],
+      "tips": [
+        "A2 郵件：主旨＋稱呼＋原因＋計畫＋結尾。",
+        "比 A1 多了完整段落與連貫。"
+      ],
+      "focus": [
+        "郵件",
+        "情態動詞"
+      ]
+    },
+    {
+      "id": "a2-02",
+      "level": "A2",
+      "kind": "story",
+      "topic": "日常",
+      "title": "Ein normaler Montag",
+      "titleZh": "普通的星期一",
+      "text": "Am Montag stehe ich um halb sieben auf.\nNach dem Frühstück fahre ich mit dem Bus zur Schule.\nDer Unterricht beginnt um acht.\nNach der Schule treffe ich meine Freundin im Café.\nWir trinken etwas und sprechen über die Hausaufgaben.\nAbends bin ich müde, aber zufrieden.",
+      "textZh": "星期一我六點半起床。\n早餐後我搭公車去學校。\n課程八點開始。\n放學後我跟朋友在咖啡廳碰面。\n我們喝點東西，討論作業。\n晚上我很累，但很滿足。",
+      "notes": [
+        {
+          "span": "um halb sieben",
+          "zh": "六點半",
+          "tip": "halb sieben＝6:30。"
+        },
+        {
+          "span": "Nach dem Frühstück",
+          "zh": "早餐之後",
+          "tip": "nach + 第三格。"
+        },
+        {
+          "span": "fahre … mit dem Bus",
+          "zh": "搭公車"
+        },
+        {
+          "span": "beginnt",
+          "zh": "開始"
+        },
+        {
+          "span": "sprechen über",
+          "zh": "談論……",
+          "tip": "über + 第四格。"
+        },
+        {
+          "span": "zufrieden",
+          "zh": "滿足的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Nach + 第三格 …",
+          "zh": "在……之後",
+          "example": "Nach dem Essen gehe ich spazieren."
+        },
+        {
+          "pattern": "mit dem Bus / der Bahn fahren",
+          "zh": "搭交通工具",
+          "example": "Ich fahre mit der Bahn."
+        },
+        {
+          "pattern": "sprechen über + 第四格",
+          "zh": "談論主題",
+          "example": "Wir sprechen über den Film."
+        }
+      ],
+      "tips": [
+        "注意時間表達 halb。",
+        "練習把學校改成 Arbeit。"
+      ],
+      "focus": [
+        "時間",
+        "介系詞",
+        "日常"
+      ]
+    },
+    {
+      "id": "a2-03",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "公寓",
+      "title": "Wohnungsanzeige",
+      "titleZh": "租屋廣告",
+      "text": "Helle 2-Zimmer-Wohnung in der Stadtmitte\n65 m², Balkon, Einbauküche\nMiete: 850 € + 150 € Nebenkosten\nFrei ab 1. Mai\nNicht rauchen. Keine großen Haustiere.\nKontakt: wohnen@beispiel.de",
+      "textZh": "市中心明亮兩房公寓\n65 平方、陽台、系統廚具\n租金：850 歐 + 150 歐雜費\n5 月 1 日起可入住\n禁菸。不可養大型寵物。\n聯絡：wohnen@beispiel.de",
+      "notes": [
+        {
+          "span": "2-Zimmer-Wohnung",
+          "zh": "兩房公寓"
+        },
+        {
+          "span": "Stadtmitte",
+          "zh": "市中心"
+        },
+        {
+          "span": "Miete",
+          "zh": "租金"
+        },
+        {
+          "span": "Nebenkosten",
+          "zh": "雜費（水電管理等）"
+        },
+        {
+          "span": "Frei ab",
+          "zh": "從……起可入住"
+        },
+        {
+          "span": "Haustiere",
+          "zh": "寵物"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Frei ab + 日期",
+          "zh": "可入住日期",
+          "example": "Frei ab sofort"
+        },
+        {
+          "pattern": "Miete: … € + … € Nebenkosten",
+          "zh": "租金結構",
+          "example": "Kaltmiete / Warmmiete"
+        },
+        {
+          "pattern": "Keine + 複數",
+          "zh": "禁止條款",
+          "example": "Keine Partys"
+        }
+      ],
+      "tips": [
+        "看房租要分清 Miete 與 Nebenkosten。"
+      ],
+      "focus": [
+        "生活",
+        "廣告"
+      ]
+    },
+    {
+      "id": "a2-04",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "旅行",
+      "title": "Fahrkarten",
+      "titleZh": "買票",
+      "text": "Mitarbeiter: Wohin möchten Sie fahren?\nReisende: Nach Hamburg, bitte. Einmal hin und zurück.\nMitarbeiter: Wann fahren Sie?\nReisende: Heute Nachmittag, und am Sonntag zurück.\nMitarbeiter: Mit dem ICE kostet das 79 Euro.\nReisende: Gut, ich nehme das Ticket.",
+      "textZh": "職員：您要去哪裡？\n旅客：去漢堡，麻煩。來回票。\n職員：您什麼時候走？\n旅客：今天下午去，星期天回。\n職員：搭 ICE 要 79 歐。\n旅客：好，我買這張票。",
+      "notes": [
+        {
+          "span": "Wohin …?",
+          "zh": "去哪裡？",
+          "tip": "問方向用 wohin。"
+        },
+        {
+          "span": "hin und zurück",
+          "zh": "來回"
+        },
+        {
+          "span": "Wann?",
+          "zh": "什麼時候？"
+        },
+        {
+          "span": "ICE",
+          "zh": "德國高鐵車種"
+        },
+        {
+          "span": "Ticket",
+          "zh": "票"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wohin möchten Sie fahren?",
+          "zh": "問目的地",
+          "example": "Wohin gehst du?"
+        },
+        {
+          "pattern": "Einmal hin und zurück",
+          "zh": "買來回票",
+          "example": "Nur hin, bitte."
+        },
+        {
+          "pattern": "Ich nehme das Ticket",
+          "zh": "決定購買",
+          "example": "Ich nehme die Karte."
+        }
+      ],
+      "tips": [
+        "Wo?＝在哪；Wohin?＝去哪。A2 要分清。"
+      ],
+      "focus": [
+        "旅行",
+        "疑問副詞"
+      ]
+    },
+    {
+      "id": "a2-05",
+      "level": "A2",
+      "kind": "email",
+      "topic": "邀請",
+      "title": "Einladung zum Abendessen",
+      "titleZh": "晚餐邀請",
+      "text": "Hallo Julia,\n\nhast du am Freitag Abend Zeit?\nIch koche Pasta und salat.\nKommst du um 19 Uhr zu mir?\nBring gerne etwas zu trinken mit.\n\nLiebe Grüße\nSam",
+      "textZh": "嗨 Julia，\n\n你星期五晚上有空嗎？\n我煮義大利麵和沙拉。\n你十九點來我家嗎？\n可以的話帶點喝的。\n\n問候\nSam",
+      "notes": [
+        {
+          "span": "hast du … Zeit?",
+          "zh": "你有空嗎？"
+        },
+        {
+          "span": "koche",
+          "zh": "煮"
+        },
+        {
+          "span": "Bring … mit",
+          "zh": "帶來",
+          "tip": "mitbringen 命令式。"
+        },
+        {
+          "span": "etwas zu trinken",
+          "zh": "一些喝的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Hast du am … Zeit?",
+          "zh": "約時間",
+          "example": "Hast du am Wochenende Zeit?"
+        },
+        {
+          "pattern": "Kommst du … zu mir?",
+          "zh": "邀來家裡",
+          "example": "Kommst du heute zu mir?"
+        },
+        {
+          "pattern": "Bring bitte … mit",
+          "zh": "請帶來",
+          "example": "Bring einen Kuchen mit!"
+        }
+      ],
+      "tips": [
+        "邀請信比 A1 簡訊多了細節與請求。"
+      ],
+      "focus": [
+        "邀請",
+        "可分動詞"
+      ]
+    },
+    {
+      "id": "a2-06",
+      "level": "A2",
+      "kind": "story",
+      "topic": "購物",
+      "title": "Im Einkaufszentrum",
+      "titleZh": "在購物中心",
+      "text": "Gestern war ich im Einkaufszentrum.\nZuerst habe ich eine Jeans anprobiert.\nSie hat mir gut gepasst und war nicht teuer.\nDanach habe ich noch ein T-Shirt gekauft.\nZum Schluss habe ich einen Kaffee getrunken.\nEs war ein erfolgreicher Nachmittag.",
+      "textZh": "昨天我去了購物中心。\n先試穿了一條牛仔褲。\n很合身而且不貴。\n之後又買了一件 T 恤。\n最後喝了杯咖啡。\n那是個成功的下午。",
+      "notes": [
+        {
+          "span": "Zuerst / Danach / Zum Schluss",
+          "zh": "首先／然後／最後",
+          "tip": "順序連接詞。"
+        },
+        {
+          "span": "anprobiert",
+          "zh": "試穿（完成式）",
+          "tip": "A2 開始常見完成式。"
+        },
+        {
+          "span": "gepasst",
+          "zh": "合身"
+        },
+        {
+          "span": "erfolgreich",
+          "zh": "成功的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Zuerst … Danach … Zum Schluss …",
+          "zh": "敘述順序",
+          "example": "Zuerst lerne ich, danach spiele ich."
+        },
+        {
+          "pattern": "Perfekt: haben/sein + Partizip",
+          "zh": "說過去經歷",
+          "example": "Ich habe gekauft."
+        }
+      ],
+      "tips": [
+        "A2 短文常用完成式說『昨天做了什麼』。"
+      ],
+      "focus": [
+        "完成式",
+        "順序"
+      ]
+    },
+    {
+      "id": "a2-07",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "學校",
+      "title": "Aushang in der Schule",
+      "titleZh": "學校公告",
+      "text": "Wichtige Information\nAm Donnerstag entfällt der Sportunterricht.\nStattdessen gibt es eine Doppelstunde Mathe.\nBitte bringt eure Bücher mit.\nFragen an: herr.beck@schule.de",
+      "textZh": "重要通知\n星期四體育課停上。\n改上兩堂數學。\n請帶課本。\n問題請寄：herr.lee@schule.de",
+      "notes": [
+        {
+          "span": "entfällt",
+          "zh": "取消／停課"
+        },
+        {
+          "span": "Stattdessen",
+          "zh": "取而代之"
+        },
+        {
+          "span": "Doppelstunde",
+          "zh": "連堂／兩堂"
+        },
+        {
+          "span": "bringt … mit",
+          "zh": "帶來（你們）"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "… entfällt",
+          "zh": "宣布取消",
+          "example": "Der Kurs entfällt heute."
+        },
+        {
+          "pattern": "Stattdessen + 句子",
+          "zh": "改為……",
+          "example": "Stattdessen bleiben wir hier."
+        },
+        {
+          "pattern": "Bitte bringt … mit",
+          "zh": "對群體的請求",
+          "example": "Bitte bringt Geld mit."
+        }
+      ],
+      "tips": [
+        "公告語氣直接，動詞常命令式。"
+      ],
+      "focus": [
+        "學校",
+        "公告"
+      ]
+    },
+    {
+      "id": "a2-08",
+      "level": "A2",
+      "kind": "email",
+      "topic": "客訴",
+      "title": "Problem mit der Bestellung",
+      "titleZh": "訂單問題",
+      "text": "Guten Tag,\n\nich habe vor drei Tagen ein Buch bestellt.\nLeider ist es noch nicht angekommen.\nKönnen Sie bitte nachschauen?\nMeine Bestellnummer ist 45821.\n\nMit freundlichen Grüßen\nLina Chen",
+      "textZh": "您好，\n\n我三天前訂了一本書。\n遺憾的是還沒送到。\n可以請您查一下嗎？\n我的訂單編號是 45821。\n\n此致問候\nLina Chen",
+      "notes": [
+        {
+          "span": "bestellt",
+          "zh": "訂購（完成式）"
+        },
+        {
+          "span": "angekommen",
+          "zh": "抵達",
+          "tip": "ankommen 完成式用 sein。"
+        },
+        {
+          "span": "nachschauen",
+          "zh": "查看"
+        },
+        {
+          "span": "Bestellnummer",
+          "zh": "訂單編號"
+        },
+        {
+          "span": "Mit freundlichen Grüßen",
+          "zh": "正式信件結尾"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich habe … bestellt",
+          "zh": "說明已訂購",
+          "example": "Ich habe gestern bestellt."
+        },
+        {
+          "pattern": "Können Sie bitte …?",
+          "zh": "禮貌請求",
+          "example": "Können Sie mir helfen?"
+        },
+        {
+          "pattern": "Mit freundlichen Grüßen",
+          "zh": "正式結尾",
+          "example": "Mit freundlichen Grüßen"
+        }
+      ],
+      "tips": [
+        "正式信比 Viele Grüße 更客氣。"
+      ],
+      "focus": [
+        "郵件",
+        "完成式"
+      ]
+    },
+    {
+      "id": "a2-09",
+      "level": "A2",
+      "kind": "story",
+      "topic": "天氣計劃",
+      "title": "Bei schlechtem Wetter",
+      "titleZh": "壞天氣",
+      "text": "Heute regnet es den ganzen Tag.\nDeshalb bleiben wir zu Hause.\nWir kochen zusammen und sehen einen Film.\nWenn es morgen besser wird, gehen wir spazieren.\nIch hoffe auf Sonne!",
+      "textZh": "今天下了一整天的雨。\n所以我們留在家。\n我們一起煮飯、看電影。\n如果明天好轉，我們就去散步。\n我希望出太陽！",
+      "notes": [
+        {
+          "span": "den ganzen Tag",
+          "zh": "一整天"
+        },
+        {
+          "span": "Deshalb",
+          "zh": "所以"
+        },
+        {
+          "span": "Wenn …, …",
+          "zh": "如果……，就……",
+          "tip": "A2 條件句入門。"
+        },
+        {
+          "span": "hoffe auf",
+          "zh": "期待／希望有……"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Deshalb + 句子",
+          "zh": "說明結果",
+          "example": "Ich bin müde. Deshalb gehe ich früh schlafen."
+        },
+        {
+          "pattern": "Wenn + 現在式, + 現在式",
+          "zh": "簡單條件",
+          "example": "Wenn es regnet, bleibe ich hier."
+        }
+      ],
+      "tips": [
+        "Wenn 子句動詞在句尾（更完整規則後面再細學）。此處先看懂意思。"
+      ],
+      "focus": [
+        "連接詞",
+        "條件"
+      ]
+    },
+    {
+      "id": "a2-10",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "醫生",
+      "title": "Beim Arzt",
+      "titleZh": "看醫生",
+      "text": "Arzt: Was fehlt Ihnen?\nPatientin: Ich habe Halsschmerzen und Husten.\nArzt: Seit wann?\nPatientin: Seit zwei Tagen.\nArzt: Dann verschreibe ich Ihnen etwas.\nBitte trinken Sie viel Tee und ruhen Sie sich aus.",
+      "textZh": "醫生：您哪裡不舒服？\n病人：我喉嚨痛而且咳嗽。\n醫生：從什麼時候開始？\n病人：兩天了。\n醫生：那我幫您開一點藥。\n請多喝茶，並好好休息。",
+      "notes": [
+        {
+          "span": "Was fehlt Ihnen?",
+          "zh": "您哪裡不適？",
+          "tip": "fehlen + 第三格。"
+        },
+        {
+          "span": "Halsschmerzen",
+          "zh": "喉嚨痛"
+        },
+        {
+          "span": "Seit wann?",
+          "zh": "從何時起？"
+        },
+        {
+          "span": "verschreibe",
+          "zh": "開處方"
+        },
+        {
+          "span": "ruhen Sie sich aus",
+          "zh": "請休息"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Was fehlt Ihnen? / Was tut weh?",
+          "zh": "問症狀",
+          "example": "Mir ist schlecht."
+        },
+        {
+          "pattern": "Seit + 時間",
+          "zh": "持續多久",
+          "example": "Seit gestern."
+        },
+        {
+          "pattern": "Ruhen Sie sich aus",
+          "zh": "醫囑休息",
+          "example": "Bleiben Sie im Bett."
+        }
+      ],
+      "tips": [
+        "看診對話：症狀＋時間＋醫囑。"
+      ],
+      "focus": [
+        "健康",
+        "Dativ"
+      ]
+    },
+    {
+      "id": "a2-11",
+      "level": "A2",
+      "kind": "story",
+      "topic": "朋友",
+      "title": "Ein Besuch",
+      "titleZh": "探訪朋友",
+      "text": "Am Samstag habe ich meinen Freund Tim besucht.\nEr wohnt nicht weit von mir.\nWir haben Karten gespielt und Pizza bestellt.\nSpäter sind wir noch kurz spazieren gegangen.\nEs war entspannt und lustig.\nNächstes Wochenende kommt er zu mir.",
+      "textZh": "星期六我去探望朋友 Tim。\n他住得離我不遠。\n我們玩牌，還點了披薩。\n之後又出去稍微走走。\n很輕鬆很好玩。\n下週末他來我家。",
+      "notes": [
+        {
+          "span": "besucht",
+          "zh": "探望"
+        },
+        {
+          "span": "nicht weit von",
+          "zh": "離……不遠"
+        },
+        {
+          "span": "bestellt",
+          "zh": "點餐／訂購"
+        },
+        {
+          "span": "entspannt",
+          "zh": "輕鬆的"
+        },
+        {
+          "span": "Nächstes Wochenende",
+          "zh": "下週末"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich habe + 人 + besucht",
+          "zh": "說探訪",
+          "example": "Ich habe meine Oma besucht."
+        },
+        {
+          "pattern": "Nächstes Wochenende / Nächste Woche",
+          "zh": "未來計劃",
+          "example": "Nächste Woche lerne ich mehr."
+        }
+      ],
+      "tips": [
+        "完成式敘事＋一句未來計劃。"
+      ],
+      "focus": [
+        "社交",
+        "完成式"
+      ]
+    },
+    {
+      "id": "a2-12",
+      "level": "A2",
+      "kind": "email",
+      "topic": "學校",
+      "title": "Frage zur Hausaufgabe",
+      "titleZh": "作業相關詢問",
+      "text": "Hallo Herr Braun,\n\nich war gestern krank und habe die Hausaufgabe nicht verstanden.\nKönnten Sie mir bitte kurz erklären, was wir machen sollen?\nIch schicke die Arbeit dann bis Montag.\n\nDanke und viele Grüße\nSofia",
+      "textZh": "Braun 老師您好，\n\n我昨天生病了，作業沒看懂。\n可以請您簡短說明我們該做什麼嗎？\n我會在星期一前交。\n\n謝謝，問候\nSofia",
+      "notes": [
+        {
+          "span": "Könnten Sie …?",
+          "zh": "您可不可以……？",
+          "tip": "比 Können Sie 更客氣。"
+        },
+        {
+          "span": "erklären",
+          "zh": "解釋"
+        },
+        {
+          "span": "schicke",
+          "zh": "寄送"
+        },
+        {
+          "span": "bis Montag",
+          "zh": "在星期一前"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Könnten Sie bitte …?",
+          "zh": "超客氣請求",
+          "example": "Könnten Sie mir helfen?"
+        },
+        {
+          "pattern": "bis + 時間",
+          "zh": "截止",
+          "example": "bis Freitag"
+        }
+      ],
+      "tips": [
+        "寫給老師：客氣＋說明原因＋你的計畫。"
+      ],
+      "focus": [
+        "郵件",
+        "客氣"
+      ]
+    },
+    {
+      "id": "a2-13",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "活動",
+      "title": "Flohmarkt",
+      "titleZh": "跳蚤市場",
+      "text": "Flohmarkt im Stadtpark\nSonntag, 10–16 Uhr\nVerkauf von Kleidung, Büchern und Spielsachen\nTische: 10 € pro Tag\nBei Regen findet der Markt trotzdem statt.\nAlle sind willkommen!",
+      "textZh": "市政公園跳蚤市場\n星期天 10–16 點\n販售衣物、書籍與玩具\n攤位桌：每天 10 歐\n下雨照常舉行。\n歡迎大家！",
+      "notes": [
+        {
+          "span": "Flohmarkt",
+          "zh": "跳蚤市場"
+        },
+        {
+          "span": "pro Tag",
+          "zh": "每天"
+        },
+        {
+          "span": "findet … statt",
+          "zh": "舉行",
+          "tip": "stattfinden 可分。"
+        },
+        {
+          "span": "trotzdem",
+          "zh": "儘管如此"
+        },
+        {
+          "span": "willkommen",
+          "zh": "受歡迎的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "findet … statt",
+          "zh": "活動舉行",
+          "example": "Das Konzert findet um 8 Uhr statt."
+        },
+        {
+          "pattern": "Bei Regen / Schnee …",
+          "zh": "天氣條件",
+          "example": "Bei Regen bleiben wir innen."
+        },
+        {
+          "pattern": "Alle sind willkommen",
+          "zh": "歡迎參加",
+          "example": "Jeder ist willkommen."
+        }
+      ],
+      "tips": [
+        "看活動海報抓：時間、地點、費用、雨天是否取消。"
+      ],
+      "focus": [
+        "活動"
+      ]
+    },
+    {
+      "id": "a2-14",
+      "level": "A2",
+      "kind": "story",
+      "topic": "交通",
+      "title": "Verspätung",
+      "titleZh": "誤點",
+      "text": "Heute Morgen hatte mein Zug zehn Minuten Verspätung.\nDeshalb bin ich zu spät zum Meeting gekommen.\nIch habe dem Chef eine kurze Nachricht geschrieben.\nGlücklicherweise hat er verstanden.\nNächstes Mal fahre ich früher los.",
+      "textZh": "今天早上我的火車誤點十分鐘。\n所以我開會遲到了。\n我傳了簡訊給主管。\n幸好他表示理解。\n下次我會早點出發。",
+      "notes": [
+        {
+          "span": "zu spät kommen",
+          "zh": "遲到"
+        },
+        {
+          "span": "Glücklicherweise",
+          "zh": "幸好"
+        },
+        {
+          "span": "verstanden",
+          "zh": "理解（完成式）"
+        },
+        {
+          "span": "früher losfahren",
+          "zh": "早點出發"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Deshalb bin ich zu spät gekommen",
+          "zh": "說明遲到",
+          "example": "Deshalb konnte ich nicht kommen."
+        },
+        {
+          "pattern": "Nächstes Mal + 句子",
+          "zh": "下次改進",
+          "example": "Nächstes Mal bin ich pünktlich."
+        }
+      ],
+      "tips": [
+        "問題→原因→處理→改進，是 A2 敘事好架構。"
+      ],
+      "focus": [
+        "交通",
+        "連接詞"
+      ]
+    },
+    {
+      "id": "a2-15",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "住房",
+      "title": "Nebenkosten",
+      "titleZh": "雜費說明",
+      "text": "Vermieter: Die Miete beträgt 700 Euro.\nMieterin: Sind die Nebenkosten inklusive?\nVermieter: Nein, sie sind extra: etwa 120 Euro.\nMieterin: Und die Kaution?\nVermieter: Drei Monatsmieten.\nMieterin: Okay, ich überlege es mir bis morgen.",
+      "textZh": "房東：租金是 700 歐。\n房客：雜費含在內嗎？\n房東：不含，另外大約 120 歐。\n房客：那押金呢？\n房東：三個月租金。\n房客：好，我考慮到明天。",
+      "notes": [
+        {
+          "span": "beträgt",
+          "zh": "為……（金額）"
+        },
+        {
+          "span": "inklusive",
+          "zh": "包含在內"
+        },
+        {
+          "span": "extra",
+          "zh": "另外"
+        },
+        {
+          "span": "Kaution",
+          "zh": "押金"
+        },
+        {
+          "span": "überlege es mir",
+          "zh": "考慮一下",
+          "tip": "sich überlegen。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Sind … inklusive?",
+          "zh": "問是否含在內",
+          "example": "Ist Frühstück inklusive?"
+        },
+        {
+          "pattern": "Ich überlege es mir bis …",
+          "zh": "暫緩決定",
+          "example": "Ich überlege es mir."
+        }
+      ],
+      "tips": [
+        "租屋關鍵詞：Miete、Nebenkosten、Kaution。"
+      ],
+      "focus": [
+        "住房"
+      ]
+    },
+    {
+      "id": "a2-16",
+      "level": "A2",
+      "kind": "story",
+      "topic": "運動",
+      "title": "Fit bleiben",
+      "titleZh": "保持健康",
+      "text": "Dreimal pro Woche gehe ich joggen.\nManchmal gehe ich auch ins Fitnessstudio.\nDanach dusche ich und trinke Wasser.\nSport hilft mir gegen Stress.\nWenn ich keine Zeit habe, mache ich Übungen zu Hause.",
+      "textZh": "我一週跑步三次。\n有時也去健身房。\n之後洗澡喝水。\n運動幫我對抗壓力。\n沒時間時就在家做操。",
+      "notes": [
+        {
+          "span": "Dreimal pro Woche",
+          "zh": "一週三次"
+        },
+        {
+          "span": "Fitnessstudio",
+          "zh": "健身房"
+        },
+        {
+          "span": "gegen Stress",
+          "zh": "對抗壓力"
+        },
+        {
+          "span": "Übungen",
+          "zh": "練習／運動動作"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "…-mal pro Woche",
+          "zh": "每週頻率",
+          "example": "Zweimal pro Woche lerne ich Deutsch."
+        },
+        {
+          "pattern": "helfen gegen",
+          "zh": "有助於對抗",
+          "example": "Tee hilft gegen Husten."
+        }
+      ],
+      "tips": [
+        "把頻率詞換成你的運動習慣。"
+      ],
+      "focus": [
+        "健康"
+      ]
+    },
+    {
+      "id": "a2-17",
+      "level": "A2",
+      "kind": "email",
+      "topic": "租屋",
+      "title": "Besichtigung",
+      "titleZh": "看房預約",
+      "text": "Guten Tag Frau Keller,\n\nich interessiere mich für Ihre Wohnung.\nKönnte ich sie am Samstag um 11 Uhr besichtigen?\nIch arbeite in der Nähe und suche etwas Ruhiges.\n\nMit freundlichen Grüßen\nDavid Huang",
+      "textZh": "Keller 女士您好，\n\n我對您的公寓有興趣。\n可以星期六 11 點去看房嗎？\n我在附近工作，想找安靜一點的。\n\n此致問候\nDavid Huang",
+      "notes": [
+        {
+          "span": "interessiere mich für",
+          "zh": "對……有興趣"
+        },
+        {
+          "span": "besichtigen",
+          "zh": "參觀／看房"
+        },
+        {
+          "span": "in der Nähe",
+          "zh": "在附近"
+        },
+        {
+          "span": "etwas Ruhiges",
+          "zh": "安靜一點的東西"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich interessiere mich für + 第四格",
+          "zh": "表達興趣",
+          "example": "Ich interessiere mich für den Kurs."
+        },
+        {
+          "pattern": "Könnte ich …?",
+          "zh": "客氣請求許可",
+          "example": "Könnte ich morgen kommen?"
+        }
+      ],
+      "tips": [
+        "看房信：興趣＋提議時間＋簡短自我背景。"
+      ],
+      "focus": [
+        "住房",
+        "郵件"
+      ]
+    },
+    {
+      "id": "a2-18",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "工作",
+      "title": "Praktikum",
+      "titleZh": "實習公告",
+      "text": "Praktikum im Büro (3 Monate)\nAufgaben: E-Mails schreiben, Termine planen, Telefon annehmen\nVoraussetzungen: gute Deutschkenntnisse, Teamfähigkeit\nBeginn: 1. September\nBitte Lebenslauf senden an jobs@firma.de",
+      "textZh": "辦公室實習（3 個月）\n工作：寫郵件、安排行程、接電話\n條件：德語良好、具備團隊能力\n開始：9 月 1 日\n請寄履歷至 jobs@firma.de",
+      "notes": [
+        {
+          "span": "Praktikum",
+          "zh": "實習"
+        },
+        {
+          "span": "Aufgaben",
+          "zh": "工作內容"
+        },
+        {
+          "span": "Voraussetzungen",
+          "zh": "條件／前提"
+        },
+        {
+          "span": "Lebenslauf",
+          "zh": "履歷"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Aufgaben: + 不定式列表",
+          "zh": "列工作",
+          "example": "Aufräumen, Kochen, Einkaufen"
+        },
+        {
+          "pattern": "Bitte … senden an",
+          "zh": "投遞指示",
+          "example": "Bitte Foto senden an …"
+        }
+      ],
+      "tips": [
+        "讀職缺先抓：時間、任務、條件、聯絡。"
+      ],
+      "focus": [
+        "工作"
+      ]
+    },
+    {
+      "id": "a2-19",
+      "level": "A2",
+      "kind": "story",
+      "topic": "節日",
+      "title": "Geburtstag",
+      "titleZh": "生日",
+      "text": "Letzte Woche hatte meine Schwester Geburtstag.\nWir haben einen Kuchen gebacken und Gäste eingeladen.\nAm Abend haben wir gesungen und Fotos gemacht.\nSie hat sich sehr gefreut.\nIch schenke ihr nächstes Jahr etwas Besonderes.",
+      "textZh": "上週我妹妹過生日。\n我們烤了蛋糕並邀請客人。\n晚上我們唱歌拍照。\n她非常開心。\n明年我會送她特別一點的禮物。",
+      "notes": [
+        {
+          "span": "hatte … Geburtstag",
+          "zh": "過生日"
+        },
+        {
+          "span": "eingebacken/gebacken",
+          "zh": "烤"
+        },
+        {
+          "span": "eingeladen",
+          "zh": "邀請"
+        },
+        {
+          "span": "hat sich gefreut",
+          "zh": "感到高興"
+        },
+        {
+          "span": "etwas Besonderes",
+          "zh": "特別的東西"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Jemanden einladen",
+          "zh": "邀請某人",
+          "example": "Wir haben Freunde eingeladen."
+        },
+        {
+          "pattern": "sich freuen",
+          "zh": "感到高興",
+          "example": "Ich freue mich auf morgen."
+        }
+      ],
+      "tips": [
+        "完成式描述活動很常見。"
+      ],
+      "focus": [
+        "慶祝",
+        "完成式"
+      ]
+    },
+    {
+      "id": "a2-20",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "銀行",
+      "title": "Konto",
+      "titleZh": "開戶對話",
+      "text": "Berater: Möchten Sie ein Girokonto eröffnen?\nKundin: Ja, bitte. Welche Unterlagen brauche ich?\nBerater: Personalausweis und eine Meldebescheinigung.\nKundin: Okay, die habe ich dabei.\nBerater: Dann können wir gleich starten.",
+      "textZh": "行員：您想開立往來帳戶嗎？\n顧客：好的。我需要哪些文件？\n行員：身分證與戶籍登記證明。\n顧客：好，我帶了。\n行員：那我們可以馬上開始。",
+      "notes": [
+        {
+          "span": "Girokonto",
+          "zh": "往來帳戶"
+        },
+        {
+          "span": "eröffnen",
+          "zh": "開立"
+        },
+        {
+          "span": "Unterlagen",
+          "zh": "文件資料"
+        },
+        {
+          "span": "Personalausweis",
+          "zh": "身分證"
+        },
+        {
+          "span": "dabei haben",
+          "zh": "隨身帶著"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Welche … brauche ich?",
+          "zh": "問需要什麼",
+          "example": "Welche Dokumente brauche ich?"
+        },
+        {
+          "pattern": "Ich habe … dabei",
+          "zh": "說有帶",
+          "example": "Ich habe Geld dabei."
+        }
+      ],
+      "tips": [
+        "行政對話：需求＋文件＋下一步。"
+      ],
+      "focus": [
+        "行政"
+      ]
+    },
+    {
+      "id": "a2-21",
+      "level": "A2",
+      "kind": "story",
+      "topic": "媒體",
+      "title": "Nachrichten",
+      "titleZh": "看新聞",
+      "text": "Jeden Abend schaue ich kurz Nachrichten.\nIch verstehe noch nicht alles, aber ich lerne Wörter.\nManchmal lese ich auch einfache Texte online.\nSo bleibe ich über das Wetter und den Verkehr informiert.\nDeutsch lernen geht auch mit Medien.",
+      "textZh": "每天晚上我看一下新聞。\n我還不能全懂，但能學單字。\n有時也在網路上讀簡單文章。\n這樣我能知道天氣與交通資訊。\n用媒體也能學德文。",
+      "notes": [
+        {
+          "span": "Nachrichten",
+          "zh": "新聞"
+        },
+        {
+          "span": "noch nicht alles",
+          "zh": "還不能全部"
+        },
+        {
+          "span": "informiert bleiben",
+          "zh": "保持知情"
+        },
+        {
+          "span": "Verkehr",
+          "zh": "交通"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich verstehe noch nicht alles, aber …",
+          "zh": "程度說明",
+          "example": "Ich spreche noch nicht perfekt, aber ich übe."
+        },
+        {
+          "pattern": "über … informiert",
+          "zh": "知情於……",
+          "example": "über die Schule informiert"
+        }
+      ],
+      "tips": [
+        "真實學習策略短文。"
+      ],
+      "focus": [
+        "媒體",
+        "學習"
+      ]
+    },
+    {
+      "id": "a2-22",
+      "level": "A2",
+      "kind": "email",
+      "topic": "抱怨",
+      "title": "Zu laute Nachbarn",
+      "titleZh": "太吵的鄰居",
+      "text": "Guten Tag,\n\nseit einer Woche ist es abends sehr laut bei meinen Nachbarn.\nIch muss früh aufstehen und kann nicht gut schlafen.\nKönnten Sie bitte mit ihnen sprechen?\n\nVielen Dank\nHerr Braun (Wohnung 4)",
+      "textZh": "您好，\n\n一週以來鄰居晚上都很吵。\n我必須早起，睡不好。\n可以請您跟他們談談嗎？\n\n謝謝\nBraun 先生（4 號房）",
+      "notes": [
+        {
+          "span": "seit einer Woche",
+          "zh": "一週以來"
+        },
+        {
+          "span": "laut",
+          "zh": "大聲的"
+        },
+        {
+          "span": "aufstehen",
+          "zh": "起床"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "seit + 時間",
+          "zh": "從……以來",
+          "example": "seit zwei Tagen"
+        },
+        {
+          "pattern": "Könnten Sie bitte …?",
+          "zh": "客氣請求",
+          "example": "Könnten Sie das prüfen?"
+        }
+      ],
+      "tips": [
+        "投訴信保持禮貌與事實。"
+      ],
+      "focus": [
+        "郵件",
+        "生活"
+      ]
+    },
+    {
+      "id": "a2-23",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "安全",
+      "title": "Feuerübung",
+      "titleZh": "消防演習",
+      "text": "Achtung: Feuerübung morgen um 10 Uhr\nBitte verlassen Sie das Gebäude ruhig über die Treppen.\nNicht den Aufzug benutzen!\nTreffpunkt: Parkplatz vor dem Haus.",
+      "textZh": "注意：明天 10 點消防演習\n請冷靜走樓梯離開大樓。\n不要使用電梯！\n集合點：屋前停車場。",
+      "notes": [
+        {
+          "span": "Achtung",
+          "zh": "注意"
+        },
+        {
+          "span": "verlassen",
+          "zh": "離開"
+        },
+        {
+          "span": "Treppen",
+          "zh": "樓梯（複數）"
+        },
+        {
+          "span": "Treffpunkt",
+          "zh": "集合點"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bitte verlassen Sie …",
+          "zh": "正式指示",
+          "example": "Bitte warten Sie hier."
+        },
+        {
+          "pattern": "Nicht + 名詞 + benutzen",
+          "zh": "禁止使用",
+          "example": "Nicht das Handy benutzen!"
+        }
+      ],
+      "tips": [
+        "安全指示：動詞命令＋集合點。"
+      ],
+      "focus": [
+        "安全"
+      ]
+    },
+    {
+      "id": "a2-24",
+      "level": "A2",
+      "kind": "story",
+      "topic": "食物",
+      "title": "Neues Rezept",
+      "titleZh": "新食譜",
+      "text": "Gestern habe ich zum ersten Mal Lasagne gemacht.\nZuerst habe ich die Zutaten gekauft.\nDann habe ich alles Schritt für Schritt zubereitet.\nEs hat länger gedauert als gedacht.\nAber meine Freunde fanden es lecker.",
+      "textZh": "昨天我第一次做千層麵。\n先買了材料。\n再一步步料理。\n花的時間比想的久。\n但朋友們覺得很好吃。",
+      "notes": [
+        {
+          "span": "zum ersten Mal",
+          "zh": "第一次"
+        },
+        {
+          "span": "Zutaten",
+          "zh": "材料"
+        },
+        {
+          "span": "Schritt für Schritt",
+          "zh": "一步步"
+        },
+        {
+          "span": "zubereiten",
+          "zh": "料理準備"
+        },
+        {
+          "span": "länger als gedacht",
+          "zh": "比想的更久"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "zum ersten Mal + 完成式",
+          "zh": "第一次做某事",
+          "example": "Zum ersten Mal bin ich geflogen."
+        },
+        {
+          "pattern": "länger / teurer als gedacht",
+          "zh": "超出預期",
+          "example": "Es war teurer als gedacht."
+        }
+      ],
+      "tips": [
+        "敘事含比較：als gedacht。"
+      ],
+      "focus": [
+        "飲食",
+        "比較"
+      ]
+    },
+    {
+      "id": "a2-25",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "數位",
+      "title": "WLAN-Passwort",
+      "titleZh": "Wi‑Fi 密碼",
+      "text": "Gast: Haben Sie WLAN?\nHost: Ja, klar. Das Passwort steht auf der Karte.\nGast: Ich finde die Karte nicht.\nHost: Moment, ich schreibe es Ihnen auf.\nGast: Super, jetzt bin ich online.",
+      "textZh": "客人：有 Wi‑Fi 嗎？\n主人：有啊。密碼寫在卡片上。\n客人：我找不到卡片。\n主人：稍等，我寫給您。\n客人：太好了，我現在上網了。",
+      "notes": [
+        {
+          "span": "Passwort",
+          "zh": "密碼"
+        },
+        {
+          "span": "steht auf",
+          "zh": "寫在……上面"
+        },
+        {
+          "span": "schreibe … auf",
+          "zh": "寫下來"
+        },
+        {
+          "span": "online",
+          "zh": "在線上"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Haben Sie WLAN?",
+          "zh": "問網路",
+          "example": "Gibt es WLAN?"
+        },
+        {
+          "pattern": "auf die Karte schreiben",
+          "zh": "寫在卡片",
+          "example": "Ich schreibe es auf."
+        }
+      ],
+      "tips": [
+        "旅行住宿超常見對話。"
+      ],
+      "focus": [
+        "旅行",
+        "數位"
+      ]
+    },
+    {
+      "id": "a2-26",
+      "level": "A2",
+      "kind": "story",
+      "topic": "環境",
+      "title": "Müll trennen",
+      "titleZh": "垃圾分類",
+      "text": "In Deutschland trennt man den Müll.\nPapier kommt in die blaue Tonne.\nGlas bringt man zum Container.\nBioabfall hat eine eigene Tonne.\nAm Anfang ist das kompliziert, aber man gewöhnt sich daran.",
+      "textZh": "在德國要分垃圾。\n紙類進藍色桶。\n玻璃拿到回收桶。\n廚餘有專用桶。\n一開始很複雜，但會習慣。",
+      "notes": [
+        {
+          "span": "trennt",
+          "zh": "分類"
+        },
+        {
+          "span": "Tonne",
+          "zh": "垃圾桶"
+        },
+        {
+          "span": "Bioabfall",
+          "zh": "廚餘"
+        },
+        {
+          "span": "gewöhnt sich daran",
+          "zh": "習慣這件事"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "man + 動詞",
+          "zh": "一般人／人們",
+          "example": "Man spricht hier Deutsch."
+        },
+        {
+          "pattern": "sich an etwas gewöhnen",
+          "zh": "習慣某事",
+          "example": "Ich gewöhne mich an den Lärm."
+        }
+      ],
+      "tips": [
+        "文化短文：說明規則＋個人感受。"
+      ],
+      "focus": [
+        "文化",
+        "生活"
+      ]
+    },
+    {
+      "id": "a2-27",
+      "level": "A2",
+      "kind": "email",
+      "topic": "課程",
+      "title": "Anmeldung zum Kurs",
+      "titleZh": "報名課程",
+      "text": "Hallo,\n\nich möchte mich für den A2-Kurs am Abend anmelden.\nIst noch ein Platz frei?\nIch kann dienstags und donnerstags.\n\nFreundliche Grüße\nNora",
+      "textZh": "您好，\n\n我想報名晚上的 A2 課程。\n還有位子嗎？\n我星期二、四可以。\n\n問候\nNora",
+      "notes": [
+        {
+          "span": "mich … anmelden",
+          "zh": "報名",
+          "tip": "sich anmelden für。"
+        },
+        {
+          "span": "Platz frei",
+          "zh": "有空位"
+        },
+        {
+          "span": "dienstags",
+          "zh": "每逢週二"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich möchte mich für … anmelden",
+          "zh": "報名",
+          "example": "Ich melde mich für den Kurs an."
+        },
+        {
+          "pattern": "dienstags / mittwochs",
+          "zh": "每週固定日",
+          "example": "Ich arbeite montags."
+        }
+      ],
+      "tips": [
+        "報名信短而清楚：想要什麼＋時間條件。"
+      ],
+      "focus": [
+        "學習",
+        "郵件"
+      ]
+    },
+    {
+      "id": "a2-28",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "交通",
+      "title": "Baustelle",
+      "titleZh": "施工",
+      "text": "Baustelle: 12.–20. März\nDie Hauptstraße ist teilweise gesperrt.\nBitte benutzen Sie die Umleitung über die Parkstraße.\nMit dem Bus rechnen Sie mit 10 Minuten mehr.",
+      "textZh": "施工：3 月 12–20 日\n主街部分封閉。\n請改走經 Parkstraße 的改道。\n搭公車請預多 10 分鐘。",
+      "notes": [
+        {
+          "span": "Baustelle",
+          "zh": "工地"
+        },
+        {
+          "span": "gesperrt",
+          "zh": "封閉的"
+        },
+        {
+          "span": "Umleitung",
+          "zh": "改道"
+        },
+        {
+          "span": "rechnen mit",
+          "zh": "預計會有……"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "ist gesperrt",
+          "zh": "宣布封閉",
+          "example": "Die Brücke ist gesperrt."
+        },
+        {
+          "pattern": "rechnen mit + 第三格",
+          "zh": "預估",
+          "example": "Rechnen Sie mit Regen."
+        }
+      ],
+      "tips": [
+        "交通公告抓：日期、改道、多花時間。"
+      ],
+      "focus": [
+        "交通"
+      ]
+    },
+    {
+      "id": "a2-29",
+      "level": "A2",
+      "kind": "story",
+      "topic": "感情",
+      "title": "Streit und Entschuldigung",
+      "titleZh": "吵架與道歉",
+      "text": "Gestern hatte ich Streit mit meinem Mitbewohner.\nWir haben beide laut gesprochen.\nSpäter habe ich mich entschuldigt.\nEr auch.\nJetzt ist wieder alles okay.\nGutes Reden hilft.",
+      "textZh": "昨天我和室友吵架了。\n我們都大聲說話。\n後來我道歉了。\n他也是。\n現在又沒事了。\n好好說話有幫助。",
+      "notes": [
+        {
+          "span": "Streit haben",
+          "zh": "吵架"
+        },
+        {
+          "span": "Mitbewohner",
+          "zh": "室友"
+        },
+        {
+          "span": "mich entschuldigt",
+          "zh": "道歉",
+          "tip": "sich entschuldigen。"
+        },
+        {
+          "span": "wieder alles okay",
+          "zh": "又沒事了"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "sich entschuldigen",
+          "zh": "道歉",
+          "example": "Ich entschuldige mich."
+        },
+        {
+          "pattern": "Jetzt ist wieder alles okay",
+          "zh": "和好",
+          "example": "Alles wieder gut."
+        }
+      ],
+      "tips": [
+        "A2 可談簡單人際衝突與和解。"
+      ],
+      "focus": [
+        "社交"
+      ]
+    },
+    {
+      "id": "a2-30",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "郵局",
+      "title": "Paket",
+      "titleZh": "寄包裹",
+      "text": "Mitarbeiterin: Möchten Sie das Paket ins Inland oder ins Ausland schicken?\nKunde: Ins Inland, bitte.\nMitarbeiterin: Mit Tracking kostet das 5,99 Euro.\nKunde: Gut. Wann kommt es an?\nMitarbeiterin: In der Regel in zwei Tagen.",
+      "textZh": "職員：您要寄國內還是國外？\n顧客：國內，麻煩。\n職員：含追蹤是 5.99 歐。\n顧客：好。什麼時候到？\n職員：通常兩天內。",
+      "notes": [
+        {
+          "span": "ins Inland / Ausland",
+          "zh": "國內／國外"
+        },
+        {
+          "span": "Tracking",
+          "zh": "追蹤"
+        },
+        {
+          "span": "Wann kommt es an?",
+          "zh": "什麼時候到？"
+        },
+        {
+          "span": "In der Regel",
+          "zh": "通常"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "ins Inland / Ausland schicken",
+          "zh": "寄送範圍",
+          "example": "Nach Österreich schicken"
+        },
+        {
+          "pattern": "In der Regel + 時間",
+          "zh": "一般情況",
+          "example": "In der Regel um 9 Uhr"
+        }
+      ],
+      "tips": [
+        "服務場合問清楚費用與時間。"
+      ],
+      "focus": [
+        "服務"
+      ]
+    },
+    {
+      "id": "a2-31",
+      "level": "A2",
+      "kind": "story",
+      "topic": "科技",
+      "title": "Zu viel Handy",
+      "titleZh": "太多手機",
+      "text": "Viele Leute schauen zu oft aufs Handy.\nAuch ich mache das manchmal.\nDeshalb lege ich abends das Handy in ein anderes Zimmer.\nSo schlafe ich besser.\nKleine Regeln helfen im Alltag.",
+      "textZh": "很多人太常看手機。\n我也有時這樣。\n所以晚上我把手機放到另一間房。\n這樣我睡得比較好。\n小規則有助於日常生活。",
+      "notes": [
+        {
+          "span": "aufs Handy",
+          "zh": "看著手機",
+          "tip": "auf das。"
+        },
+        {
+          "span": "lege",
+          "zh": "放置"
+        },
+        {
+          "span": "So + 句子",
+          "zh": "這樣一來"
+        },
+        {
+          "span": "im Alltag",
+          "zh": "在日常生活中"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Deshalb + 改變習慣",
+          "zh": "因果",
+          "example": "Deshalb stehe ich früher auf."
+        },
+        {
+          "pattern": "So + 結果",
+          "zh": "因而",
+          "example": "So spare ich Zeit."
+        }
+      ],
+      "tips": [
+        "議題短文：問題→作法→效果。"
+      ],
+      "focus": [
+        "生活",
+        "論點"
+      ]
+    },
+    {
+      "id": "a2-32",
+      "level": "A2",
+      "kind": "email",
+      "topic": "感謝",
+      "title": "Danke für die Hilfe",
+      "titleZh": "感謝信",
+      "text": "Liebe Frau Nguyen,\n\nvielen Dank für Ihre Hilfe gestern.\nOhne Sie hätte ich den Formular-Fehler nicht gefunden.\nIch habe alles korrigiert und abgeschickt.\n\nHerzliche Grüße\nOmar",
+      "textZh": "親愛的 Nguyen 女士，\n\n非常感謝您昨天的幫忙。\n沒有您我找不到表格錯誤。\n我已全部改正並寄出。\n\n誠摯問候\nOmar",
+      "notes": [
+        {
+          "span": "Ohne Sie",
+          "zh": "沒有您"
+        },
+        {
+          "span": "Formular",
+          "zh": "表格"
+        },
+        {
+          "span": "korrigiert",
+          "zh": "改正"
+        },
+        {
+          "span": "abgeschickt",
+          "zh": "寄出"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Vielen Dank für + 第四格",
+          "zh": "感謝",
+          "example": "Vielen Dank für Ihre Zeit."
+        },
+        {
+          "pattern": "Ich habe … korrigiert",
+          "zh": "說明已處理",
+          "example": "Ich habe die E-Mail geschickt."
+        }
+      ],
+      "tips": [
+        "感謝信：謝什麼＋結果。"
+      ],
+      "focus": [
+        "郵件"
+      ]
+    },
+    {
+      "id": "a2-33",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "健身",
+      "title": "Studio-Regeln",
+      "titleZh": "健身房規定",
+      "text": "Studio-Regeln\n1. Handtuch benutzen\n2. Geräte nach dem Training reinigen\n3. Keine laute Musik ohne Kopfhörer\nBei Fragen: Rezeption",
+      "textZh": "健身房規定\n1. 使用毛巾\n2. 訓練後清潔器材\n3. 無耳機勿放大聲音樂\n問題請洽櫃台",
+      "notes": [
+        {
+          "span": "Handtuch",
+          "zh": "毛巾"
+        },
+        {
+          "span": "Geräte",
+          "zh": "器材"
+        },
+        {
+          "span": "reinigen",
+          "zh": "清潔"
+        },
+        {
+          "span": "Rezeption",
+          "zh": "櫃台"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Nummerierte Regeln",
+          "zh": "條列規定",
+          "example": "1. … 2. …"
+        },
+        {
+          "pattern": "Bei Fragen: + 單位",
+          "zh": "洽詢",
+          "example": "Bei Fragen: Info-Punkt"
+        }
+      ],
+      "tips": [
+        "條列閱讀是 A2 必備能力。"
+      ],
+      "focus": [
+        "規定"
+      ]
+    },
+    {
+      "id": "a2-34",
+      "level": "A2",
+      "kind": "story",
+      "topic": "假期",
+      "title": "Kurzer Trip",
+      "titleZh": "短旅行",
+      "text": "Am langen Wochenende war ich in Leipzig.\nIch habe Museen besucht und viel zu Fuß entdeckt.\nDas Hostel war günstig und sauber.\nNur das Wetter war schlecht.\nTrotzdem war die Reise toll.",
+      "textZh": "連假我去了萊比錫。\n我參觀博物館，步行探索很多。\n旅舍便宜又乾淨。\n只是天氣不好。\n儘管如此旅行很棒。",
+      "notes": [
+        {
+          "span": "langes Wochenende",
+          "zh": "連假"
+        },
+        {
+          "span": "zu Fuß",
+          "zh": "步行"
+        },
+        {
+          "span": "entdeckt",
+          "zh": "探索發現"
+        },
+        {
+          "span": "Trotzdem",
+          "zh": "儘管如此"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Nur …",
+          "zh": "唯一缺點",
+          "example": "Nur der Preis war hoch."
+        },
+        {
+          "pattern": "Trotzdem + 正面評價",
+          "zh": "轉折",
+          "example": "Trotzdem bleibe ich."
+        }
+      ],
+      "tips": [
+        "短評結構：整體＋細節＋轉折。"
+      ],
+      "focus": [
+        "旅行"
+      ]
+    },
+    {
+      "id": "a2-35",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "保險",
+      "title": "Versicherung",
+      "titleZh": "保險諮詢",
+      "text": "Beraterin: Haben Sie schon eine Haftpflichtversicherung?\nKunde: Nein, noch nicht. Brauche ich die?\nBeraterin: Ja, sie ist in Deutschland sehr wichtig.\nKunde: Was kostet sie ungefähr?\nBeraterin: Oft zwischen 50 und 70 Euro im Jahr.",
+      "textZh": "顧問：您有責任險了嗎？\n顧客：還沒。我需要嗎？\n顧問：需要，在德國很重要。\n顧客：大概多少錢？\n顧問：常常一年 50 到 70 歐。",
+      "notes": [
+        {
+          "span": "Haftpflichtversicherung",
+          "zh": "責任險"
+        },
+        {
+          "span": "ungefähr",
+          "zh": "大約"
+        },
+        {
+          "span": "im Jahr",
+          "zh": "每年"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Brauche ich …?",
+          "zh": "問是否需要",
+          "example": "Brauche ich einen Termin?"
+        },
+        {
+          "pattern": "zwischen … und …",
+          "zh": "範圍",
+          "example": "zwischen 10 und 20"
+        }
+      ],
+      "tips": [
+        "行政／保險詞彙 A2 開始出現。"
+      ],
+      "focus": [
+        "行政"
+      ]
+    },
+    {
+      "id": "a2-36",
+      "level": "A2",
+      "kind": "story",
+      "topic": "學習策略",
+      "title": "Besser lernen",
+      "titleZh": "更好學習",
+      "text": "Ich lerne jeden Tag 20 Minuten Deutsch.\nIch schreibe neue Wörter in ein Heft.\nDann mache ich zwei Beispielsätze.\nEinmal pro Woche wiederhole ich alles.\nSo vergesse ich weniger.",
+      "textZh": "我每天學 20 分鐘德文。\n我把新單字寫進筆記本。\n再造兩個例句。\n每週複習一次全部。\n這樣忘得比較少。",
+      "notes": [
+        {
+          "span": "Heft",
+          "zh": "筆記本"
+        },
+        {
+          "span": "Beispielsätze",
+          "zh": "例句"
+        },
+        {
+          "span": "wiederhole",
+          "zh": "複習"
+        },
+        {
+          "span": "weniger",
+          "zh": "比較少"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "jeden Tag + 時間量",
+          "zh": "習慣",
+          "example": "Jeden Tag lese ich 10 Minuten."
+        },
+        {
+          "pattern": "So + 比較級結果",
+          "zh": "方法成效",
+          "example": "So lerne ich schneller."
+        }
+      ],
+      "tips": [
+        "學習方法短文，可直接套用。"
+      ],
+      "focus": [
+        "學習"
+      ]
+    },
+    {
+      "id": "a2-37",
+      "level": "A2",
+      "kind": "email",
+      "topic": "改期",
+      "title": "Termin verschieben",
+      "titleZh": "改期",
+      "text": "Hallo Herr Vogt,\n\nleider kann ich den Termin am Mittwoch nicht einhalten.\nKönnten wir auf Donnerstag 15 Uhr verschieben?\nBitte sagen Sie mir kurz Bescheid.\n\nViele Grüße\nElena",
+      "textZh": "Vogt 先生您好，\n\n很抱歉我無法趕上星期三的預約。\n可以改到星期四 15 點嗎？\n請簡短回覆我。\n\n問候\nElena",
+      "notes": [
+        {
+          "span": "einhalten",
+          "zh": "遵守／趕上（約定）"
+        },
+        {
+          "span": "verschieben",
+          "zh": "延期／改期"
+        },
+        {
+          "span": "Bescheid sagen",
+          "zh": "告知結果"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "leider kann ich … nicht",
+          "zh": "委婉拒絕／改期",
+          "example": "Leider kann ich nicht kommen."
+        },
+        {
+          "pattern": "auf + 時間 + verschieben",
+          "zh": "改到……",
+          "example": "auf Montag verschieben"
+        },
+        {
+          "pattern": "Bescheid sagen",
+          "zh": "請回覆",
+          "example": "Sagen Sie bitte Bescheid."
+        }
+      ],
+      "tips": [
+        "改期信三句就夠。"
+      ],
+      "focus": [
+        "郵件",
+        "約定"
+      ]
+    },
+    {
+      "id": "a2-38",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "宿舍",
+      "title": "Waschküche",
+      "titleZh": "洗衣房",
+      "text": "Waschküche\nÖffnung: 7–22 Uhr\nWaschmaschine: 2 €\nBitte Wäsche danach sofort abholen.\nName auf Waschmittel schreiben.",
+      "textZh": "洗衣房\n開放：7–22 點\n洗衣機：2 歐\n洗完請立即取走衣物。\n清潔劑上請寫名字。",
+      "notes": [
+        {
+          "span": "Waschküche",
+          "zh": "洗衣房"
+        },
+        {
+          "span": "Wäsche",
+          "zh": "待洗衣物"
+        },
+        {
+          "span": "abholen",
+          "zh": "取走"
+        },
+        {
+          "span": "Waschmittel",
+          "zh": "洗衣精／粉"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "bitte … danach …",
+          "zh": "先後順序規則",
+          "example": "Bitte danach aufräumen."
+        },
+        {
+          "pattern": "Name auf … schreiben",
+          "zh": "標名",
+          "example": "Namen auf die Box schreiben"
+        }
+      ],
+      "tips": [
+        "宿舍生活實用閱讀。"
+      ],
+      "focus": [
+        "生活"
+      ]
+    },
+    {
+      "id": "a2-39",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "餐廳抱怨",
+      "title": "Das Essen ist kalt",
+      "titleZh": "餐點是冷的",
+      "text": "Gast: Entschuldigung, das Essen ist kalt.\nKellner: Oh, das tut mir leid. Ich bringe Ihnen sofort ein neues.\nGast: Danke, und bitte ohne Zwiebeln.\nKellner: Natürlich. Einen Moment.",
+      "textZh": "客人：不好意思，餐點是冷的。\n服務生：噢，抱歉。我立刻幫您換一份。\n客人：謝謝，另外請不要洋蔥。\n服務生：當然。請稍候。",
+      "notes": [
+        {
+          "span": "das tut mir leid",
+          "zh": "我很抱歉"
+        },
+        {
+          "span": "sofort",
+          "zh": "立刻"
+        },
+        {
+          "span": "ohne + 名詞",
+          "zh": "不要……"
+        },
+        {
+          "span": "Einen Moment",
+          "zh": "請稍候"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Das Essen ist kalt / falsch",
+          "zh": "禮貌投訴",
+          "example": "Die Suppe ist zu salzig."
+        },
+        {
+          "pattern": "bitte ohne …",
+          "zh": "排除配料",
+          "example": "bitte ohne Milch"
+        }
+      ],
+      "tips": [
+        "投訴＋解決＋額外需求。"
+      ],
+      "focus": [
+        "餐廳",
+        "禮貌"
+      ]
+    },
+    {
+      "id": "a2-40",
+      "level": "A2",
+      "kind": "story",
+      "topic": "搬家",
+      "title": "Umzug",
+      "titleZh": "搬家",
+      "text": "Am Samstag bin ich umgezogen.\nFreunde haben mir geholfen, die Kartons zu tragen.\nDie neue Wohnung ist kleiner, aber näher an der Uni.\nAm Abend waren wir alle erschöpft.\nTrotzdem haben wir Pizza gefeiert.",
+      "textZh": "星期六我搬家了。\n朋友幫我搬紙箱。\n新公寓比較小，但離大學更近。\n晚上大家都累壞了。\n儘管如此我們還是用披薩慶祝。",
+      "notes": [
+        {
+          "span": "umgezogen",
+          "zh": "搬家（完成式）"
+        },
+        {
+          "span": "Kartons",
+          "zh": "紙箱"
+        },
+        {
+          "span": "näher an",
+          "zh": "更靠近"
+        },
+        {
+          "span": "erschöpft",
+          "zh": "筋疲力盡"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "jemandem helfen, zu + 不定式",
+          "zh": "幫忙做",
+          "example": "Sie hilft mir zu lernen."
+        },
+        {
+          "pattern": "kleiner, aber näher",
+          "zh": "比較級對照",
+          "example": "teurer, aber besser"
+        }
+      ],
+      "tips": [
+        "搬家故事含比較級。"
+      ],
+      "focus": [
+        "生活",
+        "比較級"
+      ]
+    },
+    {
+      "id": "a2-41",
+      "level": "A2",
+      "kind": "email",
+      "topic": "推薦",
+      "title": "Restauranttipp",
+      "titleZh": "餐廳推薦",
+      "text": "Hi Lea,\n\nfalls du ein gutes Restaurant suchst: Probier „Olive“!\nEs ist nicht teuer und die Pasta ist fantastisch.\nAm besten reservierst du am Wochenende.\n\nBis bald\nChris",
+      "textZh": "嗨 Lea，\n\n如果你在找好餐廳：試試「Olive」！\n不貴，義大利麵超棒。\n週末最好先訂位。\n\n待會見\nChris",
+      "notes": [
+        {
+          "span": "falls",
+          "zh": "如果／倘若"
+        },
+        {
+          "span": "Probier",
+          "zh": "試試（命令式）"
+        },
+        {
+          "span": "Am besten",
+          "zh": "最好"
+        },
+        {
+          "span": "reservierst",
+          "zh": "預約"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "falls du … suchst",
+          "zh": "條件推薦",
+          "example": "Falls du Zeit hast, komm vorbei."
+        },
+        {
+          "pattern": "Am besten + 句子",
+          "zh": "給建議",
+          "example": "Am besten gehst du früh."
+        }
+      ],
+      "tips": [
+        "口語郵件可用 falls／Am besten。"
+      ],
+      "focus": [
+        "推薦"
+      ]
+    },
+    {
+      "id": "a2-42",
+      "level": "A2",
+      "kind": "story",
+      "topic": "志願",
+      "title": "Ehrenamt",
+      "titleZh": "志工",
+      "text": "Einmal im Monat helfe ich in einer Bibliothek.\nIch sortiere Bücher und erkläre Besuchern das System.\nManchmal lese ich auch Kindern vor.\nEs macht mir Spaß und ich treffe neue Leute.\nEhrenamt bringt Erfahrung.",
+      "textZh": "我每個月在圖書館幫忙一次。\n我整理書籍並向訪客說明系統。\n有時也朗讀給孩子聽。\n我覺得很有趣，也能認識新朋友。\n做志工能累積經驗。",
+      "notes": [
+        {
+          "span": "Einmal im Monat",
+          "zh": "每月一次"
+        },
+        {
+          "span": "sortiere",
+          "zh": "分類整理"
+        },
+        {
+          "span": "vorlesen",
+          "zh": "朗讀"
+        },
+        {
+          "span": "Ehrenamt",
+          "zh": "志工／榮譽職"
+        },
+        {
+          "span": "Erfahrung",
+          "zh": "經驗"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Einmal im Monat / in der Woche",
+          "zh": "頻率",
+          "example": "Zweimal im Jahr"
+        },
+        {
+          "pattern": "Es macht mir Spaß",
+          "zh": "覺得有趣",
+          "example": "Deutsch macht mir Spaß."
+        }
+      ],
+      "tips": [
+        "談興趣與社會參與。"
+      ],
+      "focus": [
+        "社交",
+        "學習"
+      ]
+    },
+    {
+      "id": "a2-43",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "大學",
+      "title": "Sprechstunde",
+      "titleZh": "老師面談時間",
+      "text": "Sprechstunde Prof. Adler\nDienstag 13–14 Uhr, Raum 2.17\nBitte per E-Mail anmelden.\nThemen: Hausarbeit, Prüfung, Praktikum\nOhne Anmeldung nur kurze Fragen.",
+      "textZh": "Adler 教授面談時間\n週二 13–14 點，2.17 室\n請先用電子郵件預約。\n主題：作業、考試、實習\n未預約僅接受簡短問題。",
+      "notes": [
+        {
+          "span": "Sprechstunde",
+          "zh": "辦公室面談時間"
+        },
+        {
+          "span": "anmelden",
+          "zh": "登記預約"
+        },
+        {
+          "span": "Hausarbeit",
+          "zh": "書面作業"
+        },
+        {
+          "span": "Ohne Anmeldung",
+          "zh": "未預約"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bitte per E-Mail anmelden",
+          "zh": "預約方式",
+          "example": "Bitte telefonisch anmelden."
+        },
+        {
+          "pattern": "Ohne … nur …",
+          "zh": "限制條件",
+          "example": "Ohne Ticket nur Stehplätze"
+        }
+      ],
+      "tips": [
+        "大學生活必讀告示。"
+      ],
+      "focus": [
+        "學校"
+      ]
+    },
+    {
+      "id": "a2-44",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "天氣計劃改變",
+      "title": "Picknick verschieben",
+      "titleZh": "野餐改期",
+      "text": "A: Sollen wir das Picknick auf Sonntag verschieben?\nB: Warum?\nA: Der Wetterbericht sagt Regen für Samstag.\nB: Gut Idee. Sonntag passt bei mir.\nA: Super, ich schreibe es in die Gruppe.",
+      "textZh": "A：我們要把野餐改到星期天嗎？\nB：為什麼？\nA：氣象報告說星期六會下雨。\nB：好主意。星期天我可以。\nA：太好了，我寫到群組裡。",
+      "notes": [
+        {
+          "span": "Sollen wir …?",
+          "zh": "我們要不要……？"
+        },
+        {
+          "span": "Wetterbericht",
+          "zh": "氣象報告"
+        },
+        {
+          "span": "passt bei mir",
+          "zh": "我方便／合適"
+        },
+        {
+          "span": "Gruppe",
+          "zh": "群組"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Sollen wir …?",
+          "zh": "提議",
+          "example": "Sollen wir später treffen?"
+        },
+        {
+          "pattern": "passt bei mir / mir",
+          "zh": "時間合適",
+          "example": "Donnerstag passt mir."
+        }
+      ],
+      "tips": [
+        "計劃變更的自然對話。"
+      ],
+      "focus": [
+        "計劃",
+        "天氣"
+      ]
+    },
+    {
+      "id": "a2-45",
+      "level": "A2",
+      "kind": "story",
+      "topic": "消費",
+      "title": "Zu impulsiv",
+      "titleZh": "太衝動",
+      "text": "Online sehe ich oft Rabatte.\nLetzte Woche habe ich zu schnell etwas gekauft.\nDas T-Shirt gefällt mir gar nicht.\nJetzt schreibe ich eine Liste, bevor ich bestelle.\nSo spare ich Geld.",
+      "textZh": "我常在網上看見折扣。\n上週我太快下單。\n那件 T 恤我一點都不喜歡。\n現在我會先列清單再下單。\n這樣能省錢。",
+      "notes": [
+        {
+          "span": "Rabatte",
+          "zh": "折扣"
+        },
+        {
+          "span": "gefällt mir gar nicht",
+          "zh": "一點都不喜歡"
+        },
+        {
+          "span": "bevor",
+          "zh": "在……之前"
+        },
+        {
+          "span": "spare",
+          "zh": "節省"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "bevor + 句子",
+          "zh": "在……之前",
+          "example": "Bevor ich kaufe, vergleiche ich Preise."
+        },
+        {
+          "pattern": "So spare ich …",
+          "zh": "因此節省",
+          "example": "So spare ich Zeit."
+        }
+      ],
+      "tips": [
+        "反思消費，A2 議題短文。"
+      ],
+      "focus": [
+        "生活",
+        "連接詞"
+      ]
+    },
+    {
+      "id": "a2-46",
+      "level": "A2",
+      "kind": "email",
+      "topic": "詢問",
+      "title": "Öffnungszeiten fragen",
+      "titleZh": "詢問營業時間",
+      "text": "Guten Tag,\n\nhaben Sie auch sonntags geöffnet?\nIch möchte am Sonntag Vormittag vorbeikommen.\nBitte um kurze Rückmeldung.\n\nMit freundlichen Grüßen\nTanja Meister",
+      "textZh": "您好，\n\n您們星期天也有營業嗎？\n我想星期天早上去一趟。\n請簡短回覆。\n\n此致問候\nTanja Meister",
+      "notes": [
+        {
+          "span": "sonntags",
+          "zh": "每逢周日"
+        },
+        {
+          "span": "geöffnet",
+          "zh": "營業中"
+        },
+        {
+          "span": "vorbeikommen",
+          "zh": "過來一趟"
+        },
+        {
+          "span": "Rückmeldung",
+          "zh": "回覆"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Haben Sie … geöffnet?",
+          "zh": "問是否營業",
+          "example": "Haben Sie heute geöffnet?"
+        },
+        {
+          "pattern": "Bitte um kurze Rückmeldung",
+          "zh": "請回覆",
+          "example": "Ich bitte um Rückmeldung."
+        }
+      ],
+      "tips": [
+        "服務業詢問信範本。"
+      ],
+      "focus": [
+        "郵件",
+        "服務"
+      ]
+    },
+    {
+      "id": "a2-47",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "健康",
+      "title": "Impfaktion",
+      "titleZh": "接種活動",
+      "text": "Impfaktion im Gesundheitsamt\nFreitag 9–15 Uhr\nBitte Versichertenkarte mitbringen.\nWartezeit möglich.\nKinder nur mit Eltern.",
+      "textZh": "衛生局接種活動\n星期五 9–15 點\n請攜帶保險卡。\n可能需要等候。\n兒童須由家長陪同。",
+      "notes": [
+        {
+          "span": "Impfaktion",
+          "zh": "接種活動"
+        },
+        {
+          "span": "Gesundheitsamt",
+          "zh": "衛生局"
+        },
+        {
+          "span": "Versichertenkarte",
+          "zh": "保險卡"
+        },
+        {
+          "span": "Wartezeit",
+          "zh": "等候時間"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bitte … mitbringen",
+          "zh": "請攜帶",
+          "example": "Bitte Ausweis mitbringen."
+        },
+        {
+          "pattern": "… nur mit …",
+          "zh": "附帶條件",
+          "example": "Eintritt nur mit Ticket"
+        }
+      ],
+      "tips": [
+        "公共服務告示閱讀。"
+      ],
+      "focus": [
+        "健康",
+        "行政"
+      ]
+    },
+    {
+      "id": "a2-48",
+      "level": "A2",
+      "kind": "story",
+      "topic": "文化",
+      "title": "Erstes Konzert",
+      "titleZh": "第一場演唱會",
+      "text": "Am Freitag war ich zum ersten Mal in einem Konzert.\nEs gab viele Leute und laute Musik.\nAm Anfang war ich nervös, dann habe ich mitgesungen.\nNach dem Konzert habe ich ein Poster gekauft.\nEin schöner Abend!",
+      "textZh": "星期五我第一次去演唱會。\n人很多，音樂很吵。\n一開始我很緊張，後來跟著唱。\n演唱會後我買了海報。\n美好的夜晚！",
+      "notes": [
+        {
+          "span": "Es gab",
+          "zh": "有"
+        },
+        {
+          "span": "nervös",
+          "zh": "緊張的"
+        },
+        {
+          "span": "mitgesungen",
+          "zh": "跟著唱"
+        },
+        {
+          "span": "Poster",
+          "zh": "海報"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Am Anfang …, dann …",
+          "zh": "過程轉折",
+          "example": "Am Anfang war es schwer, dann besser."
+        },
+        {
+          "pattern": "Ein schöner Abend!",
+          "zh": "短評收尾",
+          "example": "Ein toller Tag!"
+        }
+      ],
+      "tips": [
+        "文化體驗短敘事。"
+      ],
+      "focus": [
+        "文化"
+      ]
+    },
+    {
+      "id": "a2-49",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "共用廚房",
+      "title": "Küchenplan",
+      "titleZh": "廚房值日",
+      "text": "A: Wer putzt diese Woche die Küche?\nB: Ich bin dran, oder?\nA: Ja. Und ich kaufe Spülmittel.\nB: Super. Wann machst du es?\nA: Morgen Abend nach der Arbeit.",
+      "textZh": "A：這週誰清廚房？\nB：輪到我了吧？\nA：對。我去買洗碗精。\nB：太好了。你什麼時候做？\nA：明天晚上下班後。",
+      "notes": [
+        {
+          "span": "Wer …?",
+          "zh": "誰？"
+        },
+        {
+          "span": "Ich bin dran",
+          "zh": "輪到我"
+        },
+        {
+          "span": "Spülmittel",
+          "zh": "洗碗精"
+        },
+        {
+          "span": "nach der Arbeit",
+          "zh": "下班後"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wer ist dran?",
+          "zh": "問輪值",
+          "example": "Du bist dran."
+        },
+        {
+          "pattern": "nach der Arbeit / dem Unterricht",
+          "zh": "在……之後",
+          "example": "nach dem Sport"
+        }
+      ],
+      "tips": [
+        "室友生活對話。"
+      ],
+      "focus": [
+        "生活",
+        "社交"
+      ]
+    },
+    {
+      "id": "a2-50",
+      "level": "A2",
+      "kind": "story",
+      "topic": "複習長文",
+      "title": "Mein Alltag in Deutschland",
+      "titleZh": "我在德國的日常",
+      "text": "Ich wohne seit einem Jahr in Deutschland.\nMorgens fahre ich mit dem Rad zur Uni.\nNachmittags lerne ich in der Bibliothek oder treffe Freunde.\nDeutsch ist manchmal schwer, besonders die Artikel.\nAber ich werde besser.\nAm Wochenende entdecke ich die Stadt.\nIch bin froh, dass ich hier bin.",
+      "textZh": "我在德國住一年了。\n早上騎腳踏車去大學。\n下午在圖書館學習或見朋友。\n德文有時很難，尤其是冠詞。\n但我愈來愈好。\n週末探索城市。\n我很高興自己在這裡。",
+      "notes": [
+        {
+          "span": "seit einem Jahr",
+          "zh": "一年以來"
+        },
+        {
+          "span": "mit dem Rad",
+          "zh": "騎腳踏車"
+        },
+        {
+          "span": "besonders",
+          "zh": "尤其"
+        },
+        {
+          "span": "werde besser",
+          "zh": "變得更好"
+        },
+        {
+          "span": "froh, dass",
+          "zh": "高興……"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "seit + 時間量",
+          "zh": "持續到現在",
+          "example": "seit drei Monaten"
+        },
+        {
+          "pattern": "besonders + 名詞",
+          "zh": "強調難點",
+          "example": "besonders die Grammatik"
+        },
+        {
+          "pattern": "Ich bin froh, dass …",
+          "zh": "情感＋dass",
+          "example": "Ich bin froh, dass du kommst."
+        }
+      ],
+      "tips": [
+        "A2 總複習：日常＋學習感受＋dass 入門。",
+        "長度比 A1 明顯更長，註解也更多。"
+      ],
+      "focus": [
+        "複習",
+        "生活",
+        "dass"
+      ]
+    }
+  ]
+}

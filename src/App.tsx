@@ -27,10 +27,11 @@ import { ensureVoicesLoaded, speakGerman, stopSpeaking } from './lib/speech'
 import GrammarView from './GrammarView'
 import ArticlesIntro from './ArticlesIntro'
 import AffixesIntro from './AffixesIntro'
+import ReadingView from './ReadingView'
 import { lookupPrefix, lookupSuffix } from './data/affixes'
 import './App.css'
 
-type Section = 'vocab' | 'grammar' | 'articles' | 'affixes'
+type Section = 'vocab' | 'grammar' | 'articles' | 'affixes' | 'reading'
 type Mode = 'browse' | 'flash' | 'plural' | 'verb' | 'family'
 type LevelFilter = Level | '全部'
 type WordTypeFilter = '全部' | '名詞' | '動詞' | '形容詞'
@@ -635,11 +636,13 @@ export default function App() {
   const [grammarMounted, setGrammarMounted] = useState(false)
   const [articlesMounted, setArticlesMounted] = useState(false)
   const [affixesMounted, setAffixesMounted] = useState(false)
+  const [readingMounted, setReadingMounted] = useState(false)
 
   useEffect(() => {
     if (section === 'grammar') setGrammarMounted(true)
     if (section === 'articles') setArticlesMounted(true)
     if (section === 'affixes') setAffixesMounted(true)
+    if (section === 'reading') setReadingMounted(true)
   }, [section])
 
   useEffect(() => {
@@ -849,7 +852,9 @@ export default function App() {
               ? '聽得見的德文文法'
               : section === 'affixes'
                 ? '字首字根字尾'
-                : '冠詞入門'}
+                : section === 'reading'
+                  ? '分級閱讀'
+                  : '冠詞入門'}
         </h1>
         <p className="tagline">
           {section === 'vocab'
@@ -858,13 +863,15 @@ export default function App() {
               ? '完整 A1→C1 文法：格變、時態、語序、從句、被動與虛擬式。'
               : section === 'affixes'
                 ? '可分／不可分字首與常見字尾：每個都有中文意思與例子。'
-                : 'der／die／das、bin／bist／ist：冠詞與最常用變位一起記。'}
+                : section === 'reading'
+                  ? 'A1 短句對話告示、A2 段落郵件公告：註解、句型與學習引導。'
+                  : 'der／die／das、bin／bist／ist：冠詞與最常用變位一起記。'}
         </p>
 
         <div
           className="cta-row section-switch"
           role="tablist"
-          aria-label="單字、冠詞、字首或文法"
+          aria-label="單字、冠詞、字首、閱讀或文法"
         >
           <button
             type="button"
@@ -901,6 +908,18 @@ export default function App() {
             }}
           >
             字首
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={section === 'reading'}
+            className={section === 'reading' ? 'primary' : 'ghost'}
+            onClick={() => {
+              stopSpeaking()
+              setSection('reading')
+            }}
+          >
+            閱讀
           </button>
           <button
             type="button"
@@ -962,6 +981,11 @@ export default function App() {
       {affixesMounted && (
         <div hidden={section !== 'affixes'}>
           <AffixesIntro />
+        </div>
+      )}
+      {readingMounted && (
+        <div hidden={section !== 'reading'}>
+          <ReadingView onOpenWord={openWordFromLink} />
         </div>
       )}
       {section === 'vocab' && (
@@ -1178,7 +1202,9 @@ export default function App() {
               ? '冠詞與 sein／haben 入門：定冠詞、格變，以及 bin／bist／ist。建議 Chrome／Edge 聽發音。'
               : section === 'affixes'
                 ? '字首字根字尾：可分／不可分與常見字尾都有中文意思。建議 Chrome／Edge 聽發音。'
-                : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
+                : section === 'reading'
+                  ? '分級閱讀：A1／A2 各 50 篇，含註解、句型與引導。點德文可跳單字。'
+                  : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
         </p>
       </footer>
     </div>
