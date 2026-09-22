@@ -207,12 +207,13 @@ def main() -> None:
                     week_reading_ids.append(reading["id"])
 
                 tip_parts = [
-                    f"今日 {new_per_day} 個生字（已學會自動跳過補下一個）。",
+                    f"今日 {new_per_day} 個字",
                 ]
-                if grammar:
-                    tip_parts.append("另學 1 則文法。")
                 if reading:
-                    tip_parts.append("再讀 1 篇短文。")
+                    tip_parts.append("＋閱讀")
+                if grammar:
+                    tip_parts.append("＋文法")
+                tip_parts.append("。學會了請自己按「標記已學會」。")
 
                 day_obj: dict = {
                     "week": week,
