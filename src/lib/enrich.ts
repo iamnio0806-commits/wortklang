@@ -1,6 +1,11 @@
 import type { Gender, VocabWord } from '../data/vocabulary'
 import { vocabulary } from '../data/vocabulary'
-import { lookupPrefix, lookupSuffix } from '../data/affixes'
+import {
+  lookupPrefix,
+  lookupSuffix,
+  PREFIX_MATCH_FORMS,
+  SUFFIX_MATCH_FORMS,
+} from '../data/affixes'
 
 export type PluralPattern =
   | '-e'
@@ -57,81 +62,9 @@ export interface EnrichedWord extends VocabWord {
   memoryTips: string[]
 }
 
-const PREFIXES = [
-  'auseinander',
-  'entgegen',
-  'gegenüber',
-  'zusammen',
-  'herunter',
-  'herunter',
-  'hinein',
-  'heraus',
-  'hinauf',
-  'hinunter',
-  'zurück',
-  'vorbei',
-  'weiter',
-  'wieder',
-  'entlang',
-  'herum',
-  'durch',
-  'über',
-  'unter',
-  'hinter',
-  'zwischen',
-  'ent',
-  'emp',
-  'miss',
-  'zer',
-  'ver',
-  'be',
-  'er',
-  'ge',
-  'un',
-  'ur',
-  'aus',
-  'auf',
-  'ein',
-  'an',
-  'ab',
-  'zu',
-  'um',
-  'mit',
-  'nach',
-  'vor',
-  'weg',
-  'los',
-  'fest',
-  'teil',
-  'statt',
-]
+const PREFIXES = PREFIX_MATCH_FORMS
 
-const SUFFIXES = [
-  'schaft',
-  'igkeit',
-  'heit',
-  'keit',
-  'ung',
-  'tion',
-  'ismus',
-  'chen',
-  'lein',
-  'chen',
-  'bar',
-  'lich',
-  'isch',
-  'ig',
-  'sam',
-  'haft',
-  'los',
-  'voll',
-  'tum',
-  'nis',
-  'sal',
-  'er',
-  'in',
-  'e',
-]
+const SUFFIXES = SUFFIX_MATCH_FORMS
 
 /** Strong / irregular / modal verb stems (present du/er, preterite, participle, aux) */
 const STRONG: Record<
