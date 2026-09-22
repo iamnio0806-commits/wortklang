@@ -15,8 +15,10 @@ import {
   type EnrichedWord,
 } from './lib/enrich'
 import { ensureVoicesLoaded, speakGerman, stopSpeaking } from './lib/speech'
+import GrammarView from './GrammarView'
 import './App.css'
 
+type Section = 'vocab' | 'grammar'
 type Mode = 'browse' | 'flash' | 'plural' | 'verb' | 'family'
 type LevelFilter = Level | '全部'
 type WordTypeFilter = '全部' | '名詞' | '動詞' | '形容詞'
@@ -562,6 +564,7 @@ function PracticeCard({
 }
 
 export default function App() {
+  const [section, setSection] = useState<Section>('vocab')
   const [query, setQuery] = useState('')
   const [levelFilter, setLevelFilter] = useState<LevelFilter>('A1')
   const [category, setCategory] = useState<Category | '全部'>('全部')
@@ -685,6 +688,7 @@ export default function App() {
   }
 
   useEffect(() => {
+    if (section !== 'vocab') return
     const onKey = (ev: KeyboardEvent) => {
       const tag = (ev.target as HTMLElement)?.tagName
       if (tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA') return
@@ -704,7 +708,7 @@ export default function App() {
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mode, filtered, selectedIndex, flashIndex])
+  }, [section, mode, filtered, selectedIndex, flashIndex])
 
   const toggleLearned = (id: string) => {
     setLearned((prev) => {
@@ -726,41 +730,77 @@ export default function App() {
 
       <header className="hero">
         <p className="brand">Wortklang</p>
-        <h1>聽得見的德文單字</h1>
+        <h1>{section === 'vocab' ? '聽得見的德文單字' : '聽得見的德文文法'}</h1>
         <p className="tagline">
-          完整 A1→C1：冠詞、複數、字首字根、動詞變化與字族記憶。
+          {section === 'vocab'
+            ? '完整 A1→C1：冠詞、複數、字首字根、動詞變化與字族記憶。'
+            : '完整 A1→C1 文法：格變、時態、語序、從句、被動與虛擬式。'}
         </p>
-        <div className="cta-row modes">
-          {(Object.keys(MODE_LABEL) as Mode[]).map((m) => (
-            <button
-              key={m}
-              type="button"
-              className={mode === m ? 'primary' : 'ghost'}
-              onClick={() => {
-                stopSpeaking()
-                setMode(m)
-                setRevealed(false)
-                if (m === 'plural') {
-                  setCategory('全部')
-                  setWordType('名詞')
-                }
-                if (m === 'verb') {
-                  setCategory('全部')
-                  setWordType('動詞')
-                }
-              }}
-            >
-              {MODE_LABEL[m]}
-            </button>
-          ))}
+
+        <div className="cta-row section-switch" role="tablist" aria-label="單字或文法">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={section === 'vocab'}
+            className={section === 'vocab' ? 'primary' : 'ghost'}
+            onClick={() => {
+              stopSpeaking()
+              setSection('vocab')
+            }}
+          >
+            單字
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={section === 'grammar'}
+            className={section === 'grammar' ? 'primary' : 'ghost'}
+            onClick={() => {
+              stopSpeaking()
+              setSection('grammar')
+            }}
+          >
+            文法
+          </button>
         </div>
+
+        {section === 'vocab' && (
+          <div className="cta-row modes">
+            {(Object.keys(MODE_LABEL) as Mode[]).map((m) => (
+              <button
+                key={m}
+                type="button"
+                className={mode === m ? 'primary' : 'ghost'}
+                onClick={() => {
+                  stopSpeaking()
+                  setMode(m)
+                  setRevealed(false)
+                  if (m === 'plural') {
+                    setCategory('全部')
+                    setWordType('名詞')
+                  }
+                  if (m === 'verb') {
+                    setCategory('全部')
+                    setWordType('動詞')
+                  }
+                }}
+              >
+                {MODE_LABEL[m]}
+              </button>
+            ))}
+          </div>
+        )}
         <p className="voice-hint">
           快捷鍵：← → 上一個／下一個
-          {mode !== 'browse' ? '，空白鍵顯示答案' : ''}
+          {section === 'vocab' && mode !== 'browse' ? '，空白鍵顯示答案' : ''}
           {!voiceReady ? ' · 語音載入中…' : ''}
         </p>
       </header>
 
+      {section === 'grammar' ? (
+        <GrammarView />
+      ) : (
+      <>
       <section className="level-board" aria-label="等級進度">
         <div className="level-tabs" role="tablist" aria-label="選擇等級">
           {(['A1', 'A2', 'B1', 'B2', 'C1', '全部'] as LevelFilter[]).map(
@@ -946,11 +986,14 @@ export default function App() {
           )}
         </main>
       )}
+      </>
+      )}
 
       <footer className="footer">
         <p>
-          複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議
-          Chrome／Edge 聽發音。
+          {section === 'grammar'
+            ? '文法依 CEFR 分級：先掌握規則與例句，再標記已學會。建議 Chrome／Edge 聽發音。'
+            : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
         </p>
       </footer>
     </div>
