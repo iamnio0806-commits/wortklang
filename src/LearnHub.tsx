@@ -194,9 +194,9 @@ export default function LearnHub({
     <div className="learn-hub">
       <section className="level-board">
         <p className="ai-lead-sm reading-banner">
-          兩年單字：A1–A2 每天 8 字；B1 起 12 字、B2 每天 16
-          字（約第 76 週／500 多天達 B2 詞量），其後衝 C1。進度{' '}
-          {vpProgress.pct}% · 已排入複習 {vpProgress.enrolled} 字。
+          兩年路徑：單字＋閱讀（每天）＋文法（週一／三／五）。B1 起加量，約
+          500 多天達 B2 詞量。進度 {vpProgress.pct}% · 已排入複習{' '}
+          {vpProgress.enrolled} 字。
         </p>
         <div className="level-tabs" role="tablist" aria-label="自學分區">
           {(
@@ -234,6 +234,8 @@ export default function LearnHub({
           vpDone={vpDone}
           onGrade={gradeDue}
           onOpenVocabIds={onOpenVocabIds}
+          onOpenGrammar={onOpenGrammar}
+          onOpenReading={onOpenReading}
           onGoVocabPath={() => setTab('vocabPath')}
           onToggleVp={() => toggleVpDone(vpWeek, vpDay)}
           onEnroll={enrollMany}
@@ -250,6 +252,8 @@ export default function LearnHub({
           knownIds={knownIds}
           onToggle={toggleVpDone}
           onOpenVocabIds={onOpenVocabIds}
+          onOpenGrammar={onOpenGrammar}
+          onOpenReading={onOpenReading}
           onEnroll={enrollMany}
           progress={vpProgress}
         />
@@ -290,6 +294,8 @@ function TodayReview({
   vpDone,
   onGrade,
   onOpenVocabIds,
+  onOpenGrammar,
+  onOpenReading,
   onGoVocabPath,
   onToggleVp,
   onEnroll,
@@ -305,6 +311,8 @@ function TodayReview({
   vpDone: Set<string>
   onGrade: (id: string, g: SrsGrade) => void
   onOpenVocabIds: (ids: string[]) => void
+  onOpenGrammar: (id: string) => void
+  onOpenReading: (id: string) => void
   onGoVocabPath: () => void
   onToggleVp: () => void
   onEnroll: (ids: string[]) => void
@@ -371,11 +379,47 @@ function TodayReview({
             }}
           >
             {vpDay.kind === 'learn'
-              ? `去學這 ${resolvedIds.length} 個字`
-              : `打開複習（${resolvedIds.length}）`}
+              ? `① 去學這 ${resolvedIds.length} 個字`
+              : `① 單字複習（${resolvedIds.length}）`}
           </button>
+          {vpDay.grammarId && (
+            <button
+              type="button"
+              className="ghost"
+              onClick={() => onOpenGrammar(vpDay.grammarId!)}
+            >
+              ② 文法：{vpDay.grammarTitleZh ?? vpDay.grammarId}
+            </button>
+          )}
+          {vpDay.readingId && (
+            <button
+              type="button"
+              className="ghost"
+              onClick={() => onOpenReading(vpDay.readingId!)}
+            >
+              ③ 閱讀：{vpDay.readingTitleZh ?? vpDay.readingId}
+            </button>
+          )}
+          {vpDay.kind === 'review' && (vpDay.grammarIds?.length || 0) > 0 && (
+            <button
+              type="button"
+              className="ghost"
+              onClick={() => onOpenGrammar(vpDay.grammarIds![0])}
+            >
+              複習本週文法（{vpDay.grammarIds!.length}）
+            </button>
+          )}
+          {vpDay.kind === 'review' && (vpDay.readingIds?.length || 0) > 0 && (
+            <button
+              type="button"
+              className="ghost"
+              onClick={() => onOpenReading(vpDay.readingIds![0])}
+            >
+              重讀本週短文
+            </button>
+          )}
           <button type="button" className="ghost" onClick={onGoVocabPath}>
-            單字路徑總覽
+            路徑總覽
           </button>
           <label className="check">
             <input type="checkbox" checked={dayDone} onChange={onToggleVp} />
@@ -392,8 +436,7 @@ function TodayReview({
       <section className="panel">
         <h3>SRS 到期複習（艾賓浩斯排程）</h3>
         <p className="panel-note">
-          先做上方今日新字，再消化到期卡。按記得程度排下次複習（約
-          1→3→7→14 天）。
+          建議順序：單字 → 文法／閱讀 → 再打到期卡。
         </p>
         {!word ? (
           <p className="empty">目前沒有到期單字。去學今日新字並標記已學會吧。</p>
@@ -453,6 +496,8 @@ function VocabPathPanel({
   knownIds,
   onToggle,
   onOpenVocabIds,
+  onOpenGrammar,
+  onOpenReading,
   onEnroll,
   progress,
 }: {
@@ -464,6 +509,8 @@ function VocabPathPanel({
   knownIds: Set<string>
   onToggle: (week: number, day: number) => void
   onOpenVocabIds: (ids: string[]) => void
+  onOpenGrammar: (id: string) => void
+  onOpenReading: (id: string) => void
   onEnroll: (ids: string[]) => void
   progress: { doneDays: number; totalDays: number; pct: number; enrolled: number }
 }) {
@@ -559,6 +606,7 @@ function VocabPathPanel({
             D{xd.day}
             {done.has(vpTaskId(w.week, xd.day)) ? '✓' : ''}
             {xd.kind === 'review' ? ' 複' : ''}
+            {xd.grammarId ? '·文' : ''}
           </button>
         ))}
       </div>
@@ -596,19 +644,57 @@ function VocabPathPanel({
             })}
           </ul>
         )}
-        <button
-          type="button"
-          className="primary"
-          disabled={!resolved.ids.length}
-          onClick={() => {
-            onEnroll(resolved.ids)
-            onOpenVocabIds(resolved.ids)
-          }}
-        >
-          {d.kind === 'learn'
-            ? `去學並排入 SRS（${resolved.ids.length}）`
-            : `打開複習（${resolved.ids.length}）`}
-        </button>
+        <div className="speak-row">
+          <button
+            type="button"
+            className="primary"
+            disabled={!resolved.ids.length}
+            onClick={() => {
+              onEnroll(resolved.ids)
+              onOpenVocabIds(resolved.ids)
+            }}
+          >
+            {d.kind === 'learn'
+              ? `① 單字 SRS（${resolved.ids.length}）`
+              : `① 單字複習（${resolved.ids.length}）`}
+          </button>
+          {d.grammarId && (
+            <button
+              type="button"
+              className="ghost"
+              onClick={() => onOpenGrammar(d.grammarId!)}
+            >
+              ② 文法：{d.grammarTitleZh}
+            </button>
+          )}
+          {d.readingId && (
+            <button
+              type="button"
+              className="ghost"
+              onClick={() => onOpenReading(d.readingId!)}
+            >
+              ③ 閱讀：{d.readingTitleZh}
+            </button>
+          )}
+          {d.kind === 'review' && d.grammarIds?.[0] && (
+            <button
+              type="button"
+              className="ghost"
+              onClick={() => onOpenGrammar(d.grammarIds![0])}
+            >
+              複習文法
+            </button>
+          )}
+          {d.kind === 'review' && d.readingIds?.[0] && (
+            <button
+              type="button"
+              className="ghost"
+              onClick={() => onOpenReading(d.readingIds![0])}
+            >
+              重讀短文
+            </button>
+          )}
+        </div>
       </div>
     </div>
   )

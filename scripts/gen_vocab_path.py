@@ -132,6 +132,55 @@ def main() -> None:
     pipeline_words = pipeline_words[:needed]
     pipeline_ids = [w["id"] for w in pipeline_words]
 
+    grammar_topics = json.loads((DATA / "grammar.json").read_text(encoding="utf-8"))
+    reading_file = json.loads((DATA / "reading.json").read_text(encoding="utf-8"))
+    reading_items = reading_file["items"]
+
+    grammar_by_level: dict[str, list[dict]] = {}
+    for t in grammar_topics:
+        grammar_by_level.setdefault(t["level"], []).append(t)
+
+    reading_by_level: dict[str, list[dict]] = {}
+    for it in reading_items:
+        reading_by_level.setdefault(it["level"], []).append(it)
+
+    def reading_queue_for_phase(phase_level: str, week: int) -> list[dict]:
+        """Pick graded readings for the phase (C1 reuses B2; A1 early uses 練習)."""
+        if phase_level == "A1":
+            if week <= 8:
+                return reading_by_level.get("練習", []) + reading_by_level.get("A1", [])
+            return reading_by_level.get("A1", []) + reading_by_level.get("練習", [])
+        if phase_level == "C1":
+            return reading_by_level.get("B2", []) + reading_by_level.get("B1", [])
+        return reading_by_level.get(phase_level, []) + reading_by_level.get("B2", [])
+
+    # Round-robin cursors per level key
+    grammar_cursor: dict[str, int] = {}
+    reading_cursor: dict[str, int] = {}
+
+    def next_grammar(phase_level: str) -> dict | None:
+        # C1 phase still studies C1 grammar topics
+        key = phase_level if phase_level in grammar_by_level else "B2"
+        pool = grammar_by_level.get(key) or grammar_by_level.get("B2") or []
+        if not pool:
+            return None
+        i = grammar_cursor.get(key, 0)
+        topic = pool[i % len(pool)]
+        grammar_cursor[key] = i + 1
+        return topic
+
+    def next_reading(phase_level: str, week: int) -> dict | None:
+        pool = reading_queue_for_phase(phase_level, week)
+        if not pool:
+            return None
+        key = f"{phase_level}:{week // 10}"  # soft bucket so early A1 prefers 練習
+        # Use phase_level as cursor key for stable advance
+        ckey = phase_level
+        i = reading_cursor.get(ckey, 0)
+        item = pool[i % len(pool)]
+        reading_cursor[ckey] = i + 1
+        return item
+
     weeks = []
     idx = 0
     for week in range(1, WEEKS + 1):
@@ -140,28 +189,51 @@ def main() -> None:
         week_slice = pipeline_words[idx : idx + week_count]
         week_start = idx
         days = []
+        week_grammar_ids: list[str] = []
+        week_reading_ids: list[str] = []
         for d in range(1, 8):
             if d <= STUDY_DAYS:
                 start = week_start + (d - 1) * new_per_day
                 chunk = pipeline_words[start : start + new_per_day]
                 cats = [w.get("category") or "單字" for w in chunk]
                 top = max(set(cats), key=cats.count) if cats else "單字"
-                days.append(
-                    {
-                        "week": week,
-                        "day": d,
-                        "kind": "learn",
-                        "level": chunk[0]["level"] if chunk else level,
-                        "titleZh": f"新字 · {top}",
-                        "startIndex": start,
-                        "targetCount": new_per_day,
-                        "vocabIds": [w["id"] for w in chunk],
-                        "tipZh": (
-                            f"今日目標 {new_per_day} 個生字（已學會會自動跳過並往後補）。"
-                            "名詞連冠詞記；標記已學會進入 SRS。"
-                        ),
-                    }
-                )
+
+                # Reading every study day; grammar on Mon/Wed/Fri (1/3/5)
+                reading = next_reading(level, week)
+                grammar = next_grammar(level) if d in (1, 3, 5) else None
+                if grammar:
+                    week_grammar_ids.append(grammar["id"])
+                if reading:
+                    week_reading_ids.append(reading["id"])
+
+                tip_parts = [
+                    f"今日 {new_per_day} 個生字（已學會自動跳過補下一個）。",
+                ]
+                if grammar:
+                    tip_parts.append("另學 1 則文法。")
+                if reading:
+                    tip_parts.append("再讀 1 篇短文。")
+
+                day_obj: dict = {
+                    "week": week,
+                    "day": d,
+                    "kind": "learn",
+                    "level": chunk[0]["level"] if chunk else level,
+                    "titleZh": f"新字 · {top}",
+                    "startIndex": start,
+                    "targetCount": new_per_day,
+                    "vocabIds": [w["id"] for w in chunk],
+                    "tipZh": "".join(tip_parts),
+                }
+                if grammar:
+                    day_obj["grammarId"] = grammar["id"]
+                    day_obj["grammarTitleZh"] = grammar.get("title") or grammar["id"]
+                if reading:
+                    day_obj["readingId"] = reading["id"]
+                    day_obj["readingTitleZh"] = (
+                        reading.get("titleZh") or reading.get("title") or reading["id"]
+                    )
+                days.append(day_obj)
             else:
                 days.append(
                     {
@@ -173,7 +245,9 @@ def main() -> None:
                         "startIndex": week_start,
                         "targetCount": week_count,
                         "vocabIds": [w["id"] for w in week_slice],
-                        "tipZh": "不學新字：先打 SRS 到期卡，再把本週字快速過一輪。",
+                        "grammarIds": week_grammar_ids,
+                        "readingIds": week_reading_ids,
+                        "tipZh": "不學新字：SRS 到期卡 → 快速過本週單字 → 重看本週文法／閱讀。",
                     }
                 )
 
@@ -195,9 +269,9 @@ def main() -> None:
     assert idx == needed, (idx, needed)
 
     note = (
-        "兩年單字路徑：A1–A2 每天 8 字；從 B1 起加量（12 字），B2 每天 16 字，"
-        "約第 76 週（≈500 多天）完成 B2 詞彙；其後 C1 每天 12 字繼續推進。"
-        "已學會的字會自動跳過並往後補。請搭配 SRS。"
+        "兩年路徑：單字為主（A1–A2 每天 8；B1 起 12；B2 每天 16，約 500 多天達 B2），"
+        "學習日另配 1 篇閱讀；週一／三／五再加 1 則文法。已學會單字會自動跳過並往後補。"
+        "第 7 天複習 SRS＋本週文法／閱讀。"
     )
 
     payload = {
@@ -236,15 +310,8 @@ def main() -> None:
         encoding="utf-8",
     )
 
-    # Keep TS wrapper in sync (same as previous version + meta fields)
-    OUT_TS.write_text(
-        Path(__file__).read_text(encoding="utf-8").split("OUT_TS.write_text(")[0]
-        and ""  # placeholder — write full TS below
-        ,
-        encoding="utf-8",
-    )
-
-    ts = '''/** Auto-generated by scripts/gen_vocab_path.py — 2-year vocab path. */
+    # Keep TS wrapper in sync
+    ts = '''/** Auto-generated by scripts/gen_vocab_path.py — 2-year study path. */
 import raw from './vocabPath.json'
 
 export type VocabPathDayKind = 'learn' | 'review'
@@ -262,6 +329,14 @@ export type VocabPathDay = {
   /** Default slice (before skip/backfill). */
   vocabIds: string[]
   tipZh: string
+  grammarId?: string
+  grammarTitleZh?: string
+  readingId?: string
+  readingTitleZh?: string
+  /** Review day: grammar touched this week */
+  grammarIds?: string[]
+  /** Review day: readings touched this week */
+  readingIds?: string[]
 }
 
 export type VocabPathWeek = {
@@ -368,9 +443,11 @@ export function resolveVocabDay(
     print("by level", dict(Counter(w["level"] for w in pipeline_words)))
     for a, b, lv, _t, _f, n in PHASES:
         words = (b - a + 1) * n * STUDY_DAYS
-        days = b * 7
-        print(f"  W{a}-{b} {lv}: {n}/day → {words} words (end ~day {days})")
-    print("B2 done by week", 76, f"(~{76*7} days)")
+        print(f"  W{a}-{b} {lv}: {n}/day → {words} words (end ~day {b * 7})")
+    # sample day 1
+    d1 = weeks[0]["days"][0]
+    print("sample W1D1", {k: d1.get(k) for k in ("vocabIds", "grammarId", "grammarTitleZh", "readingId", "readingTitleZh")})
+    print("B2 done by week 76 (~532 days)")
     print("wrote", OUT_JSON.name, OUT_TS.name)
 
 
