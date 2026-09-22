@@ -3,12 +3,13 @@ import type { Level } from '../data/vocabulary'
 import {
   ARTICLE_TOKEN_RE,
   classForArticle,
+  findFollowingNounGender,
 } from './articleColor'
 import { lookupVocabToken, type VocabHit } from './vocabIndex'
 
 /**
  * Render German text with:
- * - der/die/das colors (by following noun gender when known)
+ * - article colors from the **following noun's gender** (not surface der/die/das alone)
  * - clickable links for tokens found in the vocabulary
  */
 export function LinkedGermanText({
@@ -25,26 +26,11 @@ export function LinkedGermanText({
   currentId?: string
   onOpenWord?: (hit: VocabHit) => void
 }): ReactNode {
-  // Split into words / whitespace / punctuation, keep delimiters
   const parts = text.split(/([A-Za-zÄÖÜäöüß]+)/)
 
-  function followingNounGender(fromIndex: number): VocabHit['article'] {
-    for (let j = fromIndex + 1; j < parts.length; j++) {
-      const p = parts[j]
-      if (!p) continue
-      if (!/^[A-Za-zÄÖÜäöüß]+$/.test(p)) {
-        // skip pure whitespace; stop on punctuation that ends the NP
-        if (p.trim() === '') continue
-        if (/^[.,;:!?\-–—"'«»()[\]{}]+$/.test(p.trim())) break
-        continue
-      }
-      if (ARTICLE_TOKEN_RE.test(p)) continue
-      const hit = lookupVocabToken(p, { preferLevel, preferId })
-      if (hit?.article) return hit.article
-      // First content word without gender — stop so we don't pick a later noun
-      break
-    }
-    return null
+  const lookupNounGender = (token: string) => {
+    const hit = lookupVocabToken(token, { preferLevel, preferId })
+    return hit?.article ?? null
   }
 
   return (
@@ -52,13 +38,12 @@ export function LinkedGermanText({
       {parts.map((part, i) => {
         if (!part) return null
 
-        // whitespace / punctuation
         if (!/^[A-Za-zÄÖÜäöüß]+$/.test(part)) {
           return <span key={`${i}-t`}>{part}</span>
         }
 
         if (ARTICLE_TOKEN_RE.test(part)) {
-          const g = followingNounGender(i)
+          const g = findFollowingNounGender(parts, i, lookupNounGender)
           const aClass = classForArticle(part, g)
           return (
             <span key={`${i}-a`} className={aClass ?? undefined}>

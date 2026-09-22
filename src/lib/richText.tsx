@@ -1,5 +1,10 @@
 import type { ReactNode } from 'react'
-import { classForArticle } from './articleColor'
+import {
+  ARTICLE_TOKEN_RE,
+  classForArticle,
+  findFollowingNounGender,
+} from './articleColor'
+import { lookupVocabToken } from './vocabIndex'
 
 export { genderClass } from './articleColor'
 
@@ -25,18 +30,15 @@ const ARTICLE_RE =
 const POS_RE =
   /(情態動詞|助動詞|名詞|動詞|形容詞|副詞|介詞|冠詞|代詞|連接詞|數詞)/g
 
+function lookupNounGender(token: string) {
+  return lookupVocabToken(token)?.article ?? null
+}
+
 /**
- * Color der/die/das (and common case forms) plus Chinese POS labels in text.
- * When a noun follows an article, prefer that noun's lemma gender for color
- * (requires optional resolveGender callback from vocab index).
+ * Color der/die/das (and case forms) by the following noun's gender when known.
+ * Also colors Chinese POS labels.
  */
-export function RichText({
-  text,
-  resolveGender,
-}: {
-  text: string
-  resolveGender?: (nounToken: string) => 'der' | 'die' | 'das' | null
-}): ReactNode {
+export function RichText({ text }: { text: string }): ReactNode {
   const combined = new RegExp(
     `${ARTICLE_RE.source}|${POS_RE.source}`,
     'g',
@@ -47,33 +49,11 @@ export function RichText({
     <>
       {parts.map((part, i) => {
         if (!part) return null
-        const a = classForArticle(part)
-        if (a) {
-          let cls = a
-          if (resolveGender) {
-            // look ahead for next alphabetic German-looking token
-            for (let j = i + 1; j < parts.length; j++) {
-              const nxt = parts[j]
-              if (!nxt) continue
-              if (
-                /^(情態動詞|助動詞|名詞|動詞|形容詞|副詞|介詞|冠詞|代詞|連接詞|數詞)$/.test(
-                  nxt,
-                )
-              ) {
-                break
-              }
-              if (/^[A-Za-zÄÖÜäöüß]+$/.test(nxt)) {
-                if (classForArticle(nxt)) continue
-                const g = resolveGender(nxt)
-                const better = classForArticle(part, g)
-                if (better) cls = better
-                break
-              }
-              if (nxt.trim()) break
-            }
-          }
+        if (ARTICLE_TOKEN_RE.test(part)) {
+          const g = findFollowingNounGender(parts, i, lookupNounGender)
+          const cls = classForArticle(part, g)
           return (
-            <span key={`${i}-${part}`} className={cls}>
+            <span key={`${i}-${part}`} className={cls ?? undefined}>
               {part}
             </span>
           )
