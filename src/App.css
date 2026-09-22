@@ -1075,6 +1075,16 @@ select {
   background: rgba(42, 95, 158, 0.14);
 }
 
+.speak-btn-native {
+  border-color: rgba(166, 61, 90, 0.35);
+  color: var(--die);
+  background: rgba(166, 61, 90, 0.08);
+}
+
+.speak-btn-native:hover {
+  background: rgba(166, 61, 90, 0.14);
+}
+
 .reading-note-speak {
   margin-bottom: 0.25rem;
 }

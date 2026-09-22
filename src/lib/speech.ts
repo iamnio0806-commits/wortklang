@@ -1,12 +1,22 @@
 let preferredVoice: SpeechSynthesisVoice | null = null
 
-/** Normal playback (slightly under 1.0 for learners). */
+/** Learner-friendly default (slightly under 1.0). */
 export const SPEECH_RATE_NORMAL = 0.88
 /**
  * Slow playback — deliberately slower than the old ~0.7 “慢速”
  * so beginners can catch word boundaries.
  */
 export const SPEECH_RATE_SLOW = 0.5
+/** Near native conversational tempo (browser TTS default ≈ 1.0). */
+export const SPEECH_RATE_NATIVE = 1.05
+
+export type SpeechPace = 'normal' | 'slow' | 'native'
+
+export const SPEECH_RATE_BY_PACE: Record<SpeechPace, number> = {
+  normal: SPEECH_RATE_NORMAL,
+  slow: SPEECH_RATE_SLOW,
+  native: SPEECH_RATE_NATIVE,
+}
 
 function pickGermanVoice(): SpeechSynthesisVoice | null {
   if (typeof window === 'undefined' || !window.speechSynthesis) return null
@@ -59,8 +69,16 @@ export function speakGerman(
   window.speechSynthesis.speak(utterance)
 }
 
+export function speakGermanPace(text: string, pace: SpeechPace): void {
+  speakGerman(text, SPEECH_RATE_BY_PACE[pace])
+}
+
 export function speakGermanSlow(text: string): void {
   speakGerman(text, SPEECH_RATE_SLOW)
+}
+
+export function speakGermanNative(text: string): void {
+  speakGerman(text, SPEECH_RATE_NATIVE)
 }
 
 export function stopSpeaking(): void {

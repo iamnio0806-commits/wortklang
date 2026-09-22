@@ -1,6 +1,6 @@
 import {
-  SPEECH_RATE_NORMAL,
-  SPEECH_RATE_SLOW,
+  SPEECH_RATE_BY_PACE,
+  type SpeechPace,
   speakGerman,
 } from './speech'
 
@@ -8,27 +8,37 @@ function prepareText(text: string, normalizeNewlines: boolean): string {
   return normalizeNewlines ? text.replace(/\n/g, '. ') : text
 }
 
-/** Single speak button — pass `slow` for the slower rate. */
+const PACE_CLASS: Record<SpeechPace, string> = {
+  normal: '',
+  slow: 'speak-btn-slow',
+  native: 'speak-btn-native',
+}
+
+/** Single speak button for a given pace. */
 export function SpeakButton({
   label,
   text,
+  pace = 'normal',
+  /** @deprecated use pace="slow" */
   slow = false,
   normalizeNewlines = false,
 }: {
   label: string
   text: string
+  pace?: SpeechPace
   slow?: boolean
   /** Turn newlines into pauses (reading / listening scripts). */
   normalizeNewlines?: boolean
 }) {
+  const resolved: SpeechPace = slow ? 'slow' : pace
   return (
     <button
       type="button"
-      className={`speak-btn ${slow ? 'speak-btn-slow' : ''}`}
+      className={`speak-btn ${PACE_CLASS[resolved]}`.trim()}
       onClick={() =>
         speakGerman(
           prepareText(text, normalizeNewlines),
-          slow ? SPEECH_RATE_SLOW : SPEECH_RATE_NORMAL,
+          SPEECH_RATE_BY_PACE[resolved],
         )
       }
       aria-label={label}
@@ -41,31 +51,44 @@ export function SpeakButton({
   )
 }
 
-/** Normal + slow pair for every playback surface. */
+/** Slow + learner + native pace for every playback surface. */
 export function SpeakPair({
   text,
   normalLabel = '聽',
   slowLabel = '慢速',
+  nativeLabel = '母語速',
   normalizeNewlines = false,
+  showNative = true,
 }: {
   text: string
   normalLabel?: string
   slowLabel?: string
+  nativeLabel?: string
   normalizeNewlines?: boolean
+  showNative?: boolean
 }) {
   return (
     <>
       <SpeakButton
-        label={normalLabel}
+        label={slowLabel}
         text={text}
+        pace="slow"
         normalizeNewlines={normalizeNewlines}
       />
       <SpeakButton
-        label={slowLabel}
+        label={normalLabel}
         text={text}
-        slow
+        pace="normal"
         normalizeNewlines={normalizeNewlines}
       />
+      {showNative && (
+        <SpeakButton
+          label={nativeLabel}
+          text={text}
+          pace="native"
+          normalizeNewlines={normalizeNewlines}
+        />
+      )}
     </>
   )
 }
