@@ -1928,7 +1928,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "eltern",
-    article: 'None',
+    article: null,
     word: "Eltern",
     translation: "父母",
     phonetic: "ˈɛltɐn",
@@ -2690,7 +2690,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "heute",
-    article: 'None',
+    article: null,
     word: "heute",
     translation: "今天",
     phonetic: "ˈhɔʏtə",
@@ -2701,7 +2701,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "morgen_adv",
-    article: 'None',
+    article: null,
     word: "morgen",
     translation: "明天",
     phonetic: "ˈmɔʁɡn̩",
@@ -2712,7 +2712,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "gestern",
-    article: 'None',
+    article: null,
     word: "gestern",
     translation: "昨天",
     phonetic: "ˈɡɛstɐn",
@@ -2951,7 +2951,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "rot",
-    article: 'None',
+    article: null,
     word: "rot",
     translation: "紅色的",
     phonetic: "ʁoːt",
@@ -2962,7 +2962,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "blau",
-    article: 'None',
+    article: null,
     word: "blau",
     translation: "藍色的",
     phonetic: "blaʊ",
@@ -2973,7 +2973,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "gruen",
-    article: 'None',
+    article: null,
     word: "grün",
     translation: "綠色的",
     phonetic: "ɡʁyːn",
@@ -2984,7 +2984,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "gelb",
-    article: 'None',
+    article: null,
     word: "gelb",
     translation: "黃色的",
     phonetic: "ɡɛlp",
@@ -2995,7 +2995,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "schwarz",
-    article: 'None',
+    article: null,
     word: "schwarz",
     translation: "黑色的",
     phonetic: "ʃvaʁts",
@@ -3006,7 +3006,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "weiss",
-    article: 'None',
+    article: null,
     word: "weiß",
     translation: "白色的",
     phonetic: "vaɪs",
@@ -3017,7 +3017,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "braun",
-    article: 'None',
+    article: null,
     word: "braun",
     translation: "棕色的",
     phonetic: "bʁaʊn",
@@ -3028,7 +3028,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "grau",
-    article: 'None',
+    article: null,
     word: "grau",
     translation: "灰色的",
     phonetic: "ɡʁaʊ",
@@ -3039,7 +3039,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "orange_adj",
-    article: 'None',
+    article: null,
     word: "orange",
     translation: "橘色的",
     phonetic: "oˈʁɑ̃ːʒ",
@@ -3050,7 +3050,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "pink",
-    article: 'None',
+    article: null,
     word: "pink",
     translation: "粉紅色的",
     phonetic: "pɪŋk",
@@ -6239,7 +6239,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "nebenkosten",
-    article: 'None',
+    article: null,
     word: "Nebenkosten",
     translation: "雜費",
     phonetic: "ˈneːbn̩kɔstn̩",
@@ -6510,7 +6510,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "ueberstunden",
-    article: 'None',
+    article: null,
     word: "Überstunden",
     translation: "加班",
     phonetic: "ˈyːbɐʃtʊndn̩",
@@ -7112,7 +7112,7 @@ export const vocabulary: VocabWord[] = [
   },
   {
     id: "ferien",
-    article: 'None',
+    article: null,
     word: "Ferien",
     translation: "假期（學校）",
     phonetic: "ˈfeːʁiən",
