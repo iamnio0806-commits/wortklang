@@ -1227,7 +1227,7 @@ export default function App() {
               : section === 'affixes'
                 ? '字首字根字尾：可分／不可分與常見字尾都有中文意思。建議 Chrome／Edge 聽發音。'
                 : section === 'reading'
-                  ? '分級閱讀（德檢取向）：練習＋A1～B2 各 50 篇。點德文可跳單字。'
+                  ? '分級閱讀（德檢取向）：練習＋A1～B2 各 70 篇。點德文可跳單字。'
                   : section === 'exam'
                     ? '德檢模擬：練習版綜合卷＋考場版分 Teil。建議 Chrome／Edge 聽聽力腳本。'
                     : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}

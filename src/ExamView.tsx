@@ -6,6 +6,7 @@ import {
   examNote,
   examPapers,
   getPaper,
+  paperDifficultyLabel,
   paperFormatLabel,
   papersForLevel,
   sectionTabLabel,
@@ -500,6 +501,9 @@ export default function ExamView() {
               <div className="detail-top">
                 <span className={`level-pill level-${p.level}`}>{p.level}</span>
                 <span className="type-pill">{paperFormatLabel(p)}</span>
+                {paperDifficultyLabel(p) && (
+                  <span className="type-pill">{paperDifficultyLabel(p)}</span>
+                )}
                 <span className="type-pill">第 {p.round} 回</span>
               </div>
               <h2 className="grammar-title">{p.titleZh}</h2>
@@ -529,8 +533,7 @@ export default function ExamView() {
         </div>
 
         <p className="exam-footnote">
-          共 {examPapers.length} 份。練習版＝綜合訓練；考場版＝依 Goethe 分
-          Teil（Lesen／Hören／Schreiben／Sprechen）。聽力以瀏覽器德文語音朗讀腳本；口說選練不計分。
+          共 {examPapers.length} 份。練習版＝綜合訓練；考場版＝Goethe 分 Teil（含稍易／標準／稍難，難度差不大）。聽力以瀏覽器德文語音朗讀；口說選練不計分。
         </p>
       </div>
     )

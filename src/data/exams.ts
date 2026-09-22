@@ -123,6 +123,10 @@ export function papersForLevel(level: ExamLevel): ExamPaper[] {
       const fa = a.format === 'goethe' ? 1 : 0
       const fb = b.format === 'goethe' ? 1 : 0
       if (fa !== fb) return fa - fb
+      const diffRank = (d?: ExamDifficulty) =>
+        d === 'leichter' ? 0 : d === 'etwas_schwerer' ? 2 : 1
+      const dr = diffRank(a.difficulty) - diffRank(b.difficulty)
+      if (dr !== 0) return dr
       return a.round - b.round
     })
 }
