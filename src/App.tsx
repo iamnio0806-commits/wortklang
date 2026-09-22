@@ -864,7 +864,7 @@ export default function App() {
               : section === 'affixes'
                 ? '可分／不可分字首與常見字尾：每個都有中文意思與例子。'
                 : section === 'reading'
-                  ? 'A1 短句、A2 段落、B1／B2 較長文章：註解、句型與學習引導。'
+                  ? '對齊德檢：練習熱身 → A1／A2／B1／B2 考場長度閱讀，含註解與句型。'
                   : 'der／die／das、bin／bist／ist：冠詞與最常用變位一起記。'}
         </p>
 
@@ -1203,7 +1203,7 @@ export default function App() {
               : section === 'affixes'
                 ? '字首字根字尾：可分／不可分與常見字尾都有中文意思。建議 Chrome／Edge 聽發音。'
                 : section === 'reading'
-                  ? '分級閱讀：A1～B2 各 50 篇，含註解、句型與引導。點德文可跳單字。'
+                  ? '分級閱讀（德檢取向）：練習＋A1～B2 各 50 篇。點德文可跳單字。'
                   : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
         </p>
       </footer>

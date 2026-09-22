@@ -221,6 +221,11 @@ select {
   letter-spacing: 0.04em;
 }
 
+.level-pill.level-練習 {
+  background: rgba(90, 110, 88, 0.14);
+  color: #3d5240;
+}
+
 .level-pill.level-A1 {
   background: rgba(42, 95, 158, 0.12);
   color: var(--der);

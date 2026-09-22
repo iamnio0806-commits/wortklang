@@ -1,7 +1,13 @@
 import raw from './reading.json'
 import type { Level } from './vocabulary'
 
-export type ReadingLevel = Extract<Level, 'A1' | 'A2' | 'B1' | 'B2'>
+/** 練習 = warm-up below A1; A1–B2 aligned to Goethe/ÖSD reading difficulty. */
+export type ReadingLevel = '練習' | 'A1' | 'A2' | 'B1' | 'B2'
+
+/** Map reading tier → vocab lookup preference (練習 has no vocab CEFR). */
+export function readingPreferVocabLevel(level: ReadingLevel): Level {
+  return level === '練習' ? 'A1' : level
+}
 
 export type ReadingKind =
   | 'dialogue'

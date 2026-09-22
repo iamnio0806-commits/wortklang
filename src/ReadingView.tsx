@@ -5,6 +5,7 @@ import {
   readingItems,
   readingLevels,
   readingNote,
+  readingPreferVocabLevel,
   readingTopicsFor,
   type ReadingItem,
   type ReadingKind,
@@ -121,7 +122,7 @@ function ReadingDetail({
               {line ? (
                 <LinkedGermanText
                   text={line}
-                  preferLevel={item.level}
+                  preferLevel={readingPreferVocabLevel(item.level)}
                   onOpenWord={onOpenWord}
                 />
               ) : (
@@ -169,7 +170,7 @@ function ReadingDetail({
                 例：
                 <LinkedGermanText
                   text={pat.example}
-                  preferLevel={item.level}
+                  preferLevel={readingPreferVocabLevel(item.level)}
                   onOpenWord={onOpenWord}
                 />
               </p>
@@ -178,7 +179,7 @@ function ReadingDetail({
         </ul>
       </section>
 
-      <section className={`grammar-section tips ${item.level === 'A1' ? 'beginner' : ''}`}>
+      <section className={`grammar-section tips ${item.level === '練習' || item.level === 'A1' ? 'beginner' : ''}`}>
         <h3>學習引導</h3>
         <ul className="grammar-points">
           {item.tips.map((tip) => (
@@ -207,7 +208,7 @@ export default function ReadingView({
 }: {
   onOpenWord: (hit: VocabHit) => void
 }) {
-  const [levelFilter, setLevelFilter] = useState<LevelFilter>('A1')
+  const [levelFilter, setLevelFilter] = useState<LevelFilter>('練習')
   const [topic, setTopic] = useState('全部')
   const [kind, setKind] = useState<ReadingKind | '全部'>('全部')
   const [query, setQuery] = useState('')
