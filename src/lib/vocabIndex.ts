@@ -1,4 +1,5 @@
 import { vocabulary, type Level, type VocabWord } from '../data/vocabulary'
+import { buildVerb } from './enrich'
 
 export type VocabHit = {
   id: string
@@ -149,6 +150,32 @@ function addForm(map: Map<string, IndexBucket>, form: string, hit: VocabHit) {
   if (!bucket.some((h) => h.id === hit.id)) bucket.push(hit)
 }
 
+function addVerbForms(map: Map<string, IndexBucket>, hit: VocabHit, lemma: string) {
+  const verb = buildVerb(lemma)
+  if (!verb) return
+  const forms = [
+    verb.infinitive,
+    verb.present.ich,
+    verb.present.du,
+    verb.present.er,
+    verb.present.wir,
+    verb.present.ihr,
+    verb.present.sie,
+    verb.preterite,
+    verb.participle,
+  ]
+  for (const form of forms) {
+    // "stehe auf" / "dankte (an)" → index full + first token
+    const cleaned = form.replace(/\([^)]*\)/g, '').trim()
+    if (!cleaned) continue
+    addForm(map, cleaned, hit)
+    for (const token of cleaned.split(/\s+/)) {
+      addForm(map, token, hit)
+    }
+  }
+  if (verb.separable) addForm(map, verb.separable, hit)
+}
+
 function buildIndex(): Map<string, IndexBucket> {
   const map = new Map<string, IndexBucket>()
   for (const w of vocabulary) {
@@ -161,6 +188,7 @@ function buildIndex(): Map<string, IndexBucket> {
     }
     addForm(map, w.word, hit)
     if (w.plural) addForm(map, w.plural, hit)
+    if (w.category === '動詞') addVerbForms(map, hit, w.word)
   }
   return map
 }

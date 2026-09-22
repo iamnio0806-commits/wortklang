@@ -595,7 +595,7 @@ function weakConjugate(inf: string): VerbForms['present'] {
   }
 }
 
-function buildVerb(infRaw: string): VerbForms | undefined {
+export function buildVerb(infRaw: string): VerbForms | undefined {
   const inf = infRaw.replace(/^sich\s+/, '').trim()
   if (!inf || inf.includes(' ')) {
     // multi-word like "weh tun" — skip structured table

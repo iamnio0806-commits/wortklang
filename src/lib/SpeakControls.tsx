@@ -1,8 +1,4 @@
-import {
-  SPEECH_RATE_BY_PACE,
-  type SpeechPace,
-  speakGerman,
-} from './speech'
+import { type SpeechPace, speakGermanPace } from './speech'
 
 function prepareText(text: string, normalizeNewlines: boolean): string {
   return normalizeNewlines ? text.replace(/\n/g, '. ') : text
@@ -36,10 +32,7 @@ export function SpeakButton({
       type="button"
       className={`speak-btn ${PACE_CLASS[resolved]}`.trim()}
       onClick={() =>
-        speakGerman(
-          prepareText(text, normalizeNewlines),
-          SPEECH_RATE_BY_PACE[resolved],
-        )
+        speakGermanPace(prepareText(text, normalizeNewlines), resolved)
       }
       aria-label={label}
     >

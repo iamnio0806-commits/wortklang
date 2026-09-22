@@ -130,7 +130,36 @@ function NavButtons({
   )
 }
 
-function GrammarPanels({ e }: { e: EnrichedWord }) {
+function GrammarPanels({
+  e,
+  onOpenWord,
+}: {
+  e: EnrichedWord
+  onOpenWord: (hit: VocabHit) => void
+}) {
+  const selfHit: VocabHit = {
+    id: e.id,
+    word: e.word,
+    article: e.article,
+    level: e.level,
+    translation: e.translation,
+  }
+
+  const FormLink = ({ form }: { form: string }) => (
+    <button
+      type="button"
+      className="vocab-link"
+      title={`查看：${e.article ? e.article + ' ' : ''}${e.word}（${e.translation}）`}
+      onClick={(ev) => {
+        ev.preventDefault()
+        ev.stopPropagation()
+        onOpenWord(selfHit)
+      }}
+    >
+      {form}
+    </button>
+  )
+
   return (
     <>
       {e.parts && (e.parts.prefixes.length > 0 || e.parts.suffixes.length > 0) && (
@@ -212,38 +241,53 @@ function GrammarPanels({ e }: { e: EnrichedWord }) {
           <p className="panel-note">
             <ArticleText text={e.verb.usage} />
           </p>
+          <p className="example-hint">點變化形可回到此動詞原形單字</p>
           <div className="conj-grid">
             <div>
               <span>ich</span>
-              <strong>{e.verb.present.ich}</strong>
+              <strong>
+                <FormLink form={e.verb.present.ich} />
+              </strong>
             </div>
             <div>
               <span>du</span>
-              <strong>{e.verb.present.du}</strong>
+              <strong>
+                <FormLink form={e.verb.present.du} />
+              </strong>
             </div>
             <div>
               <span>er/sie/es</span>
-              <strong>{e.verb.present.er}</strong>
+              <strong>
+                <FormLink form={e.verb.present.er} />
+              </strong>
             </div>
             <div>
               <span>wir</span>
-              <strong>{e.verb.present.wir}</strong>
+              <strong>
+                <FormLink form={e.verb.present.wir} />
+              </strong>
             </div>
             <div>
               <span>ihr</span>
-              <strong>{e.verb.present.ihr}</strong>
+              <strong>
+                <FormLink form={e.verb.present.ihr} />
+              </strong>
             </div>
             <div>
               <span>Sie/sie</span>
-              <strong>{e.verb.present.sie}</strong>
+              <strong>
+                <FormLink form={e.verb.present.sie} />
+              </strong>
             </div>
           </div>
           <dl className="meta compact">
             <dt>過去式</dt>
-            <dd>{e.verb.preterite}</dd>
+            <dd>
+              <FormLink form={e.verb.preterite} />
+            </dd>
             <dt>過去分詞</dt>
             <dd>
-              {e.verb.auxiliary} + {e.verb.participle}
+              {e.verb.auxiliary} + <FormLink form={e.verb.participle} />
             </dd>
           </dl>
           <div className="speak-row">
@@ -401,7 +445,7 @@ function WordDetail({
         </div>
       </section>
 
-      <GrammarPanels e={e} />
+      <GrammarPanels e={e} onOpenWord={onOpenWord} />
     </article>
   )
 }

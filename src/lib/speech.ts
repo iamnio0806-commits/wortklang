@@ -3,11 +3,13 @@ let preferredVoice: SpeechSynthesisVoice | null = null
 /** Learner-friendly default (slightly under 1.0). */
 export const SPEECH_RATE_NORMAL = 0.88
 /**
- * Slow playback — deliberately slower than the old ~0.7 “慢速”
- * so beginners can catch word boundaries.
+ * Slow body rate — slower than before (was 0.5).
+ * The opening words use SPEECH_RATE_SLOW_START for an even slower lead-in.
  */
-export const SPEECH_RATE_SLOW = 0.5
-/** Near native conversational tempo (clearly faster than learner pace). */
+export const SPEECH_RATE_SLOW = 0.36
+/** Extra-slow lead-in for the first words of slow playback. */
+export const SPEECH_RATE_SLOW_START = 0.26
+/** Near native conversational tempo. */
 export const SPEECH_RATE_NATIVE = 1.12
 
 export type SpeechPace = 'normal' | 'slow' | 'native'
@@ -27,6 +29,16 @@ function pickGermanVoice(): SpeechSynthesisVoice | null {
     de.find((v) => /google|microsoft|anna|helena|katja|petra/i.test(v.name)) ??
     de[0]
   )
+}
+
+function applyVoice(utterance: SpeechSynthesisUtterance): void {
+  utterance.lang = 'de-DE'
+  utterance.pitch = 1
+  const voice = preferredVoice ?? pickGermanVoice()
+  if (voice) {
+    preferredVoice = voice
+    utterance.voice = voice
+  }
 }
 
 export function ensureVoicesLoaded(): Promise<SpeechSynthesisVoice | null> {
@@ -51,30 +63,65 @@ export function ensureVoicesLoaded(): Promise<SpeechSynthesisVoice | null> {
   })
 }
 
+/** Split so the first 1–2 content words play extra-slow, then the rest. */
+function splitSlowLead(text: string): { head: string; tail: string } {
+  const tokens = text.split(/(\s+)/)
+  let words = 0
+  let splitAt = tokens.length
+  for (let i = 0; i < tokens.length; i++) {
+    if (/[A-Za-zÄÖÜäöüß0-9]/.test(tokens[i])) {
+      words += 1
+      if (words >= 2) {
+        splitAt = i + 1
+        break
+      }
+    }
+  }
+  if (words === 0) return { head: text, tail: '' }
+  if (words === 1) splitAt = tokens.length
+  return {
+    head: tokens.slice(0, splitAt).join(''),
+    tail: tokens.slice(splitAt).join(''),
+  }
+}
+
+function enqueue(text: string, rate: number): void {
+  if (!text.trim()) return
+  const utterance = new SpeechSynthesisUtterance(text)
+  utterance.rate = rate
+  applyVoice(utterance)
+  window.speechSynthesis.speak(utterance)
+}
+
+/** Slow playback with a clearly slower opening. */
+export function speakGermanSlow(text: string): void {
+  if (typeof window === 'undefined' || !window.speechSynthesis) return
+  window.speechSynthesis.cancel()
+  const { head, tail } = splitSlowLead(text)
+  enqueue(head, SPEECH_RATE_SLOW_START)
+  if (tail.trim()) enqueue(tail, SPEECH_RATE_SLOW)
+}
+
 export function speakGerman(
   text: string,
   rate: number = SPEECH_RATE_NORMAL,
 ): void {
   if (typeof window === 'undefined' || !window.speechSynthesis) return
-  window.speechSynthesis.cancel()
-  const utterance = new SpeechSynthesisUtterance(text)
-  utterance.lang = 'de-DE'
-  utterance.rate = rate
-  utterance.pitch = 1
-  const voice = preferredVoice ?? pickGermanVoice()
-  if (voice) {
-    preferredVoice = voice
-    utterance.voice = voice
+  // Route dedicated slow calls through the ramped player
+  if (rate <= SPEECH_RATE_SLOW + 0.02) {
+    speakGermanSlow(text)
+    return
   }
-  window.speechSynthesis.speak(utterance)
+  window.speechSynthesis.cancel()
+  enqueue(text, rate)
 }
 
 export function speakGermanPace(text: string, pace: SpeechPace): void {
+  if (pace === 'slow') {
+    speakGermanSlow(text)
+    return
+  }
   speakGerman(text, SPEECH_RATE_BY_PACE[pace])
-}
-
-export function speakGermanSlow(text: string): void {
-  speakGerman(text, SPEECH_RATE_SLOW)
 }
 
 export function speakGermanNative(text: string): void {

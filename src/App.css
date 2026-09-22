@@ -1260,8 +1260,15 @@ select {
   font-weight: 650;
 }
 
-.example-de .vocab-link,
-.ex-de .vocab-link {
+.conj-grid .vocab-link {
+  font: inherit;
+  font-weight: 700;
+}
+
+.meta.compact .vocab-link {
+  font: inherit;
+  font-weight: 700;
+}
   line-height: inherit;
 }
 
