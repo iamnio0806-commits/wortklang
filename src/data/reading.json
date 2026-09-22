@@ -6,7 +6,7 @@
     "B1",
     "B2"
   ],
-  "note": "對齊德檢（Goethe／ÖSD）閱讀難度：練習＝熱身短文；A1／A2／B1 循序銜接；B2＝考場長度論述／正式郵件／公告與訪談，含反論、名詞化與複合句。",
+  "note": "對齊德檢（Goethe／ÖSD）閱讀難度：練習＝熱身短文；A1／A2／B1 循序銜接；B2＝考場長度論述／正式郵件／公告與訪談，含反論、名詞化與複合句。各級各 70 篇（練習＋A1–B2），共 350 篇分級閱讀。",
   "items": [
     {
       "id": "uebung-01",
@@ -13875,6 +13875,5856 @@
         "對話",
         "文化",
         "倫理"
+      ]
+    },
+    {
+      "id": "uebung-51",
+      "level": "練習",
+      "kind": "card",
+      "topic": "顏色",
+      "title": "Meine Lieblingsfarbe",
+      "titleZh": "我最愛的顏色",
+      "text": "Hallo!\nIch heiße Mina.\nMeine Lieblingsfarbe ist Blau.\nIch mag auch Grün.\nUnd deine Farbe?",
+      "textZh": "哈囉！\n我叫 Mina。\n我最愛的顏色是藍色。\n我也喜歡綠色。\n你喜歡什麼顏色？",
+      "notes": [
+        {
+          "span": "heiße",
+          "zh": "名叫",
+          "tip": "heißen：名字是……"
+        },
+        {
+          "span": "Lieblingsfarbe",
+          "zh": "最愛的顏色"
+        },
+        {
+          "span": "Blau",
+          "zh": "藍色"
+        },
+        {
+          "span": "mag auch",
+          "zh": "也喜歡"
+        },
+        {
+          "span": "Und deine",
+          "zh": "你的呢？"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Meine Lieblings… ist …",
+          "zh": "說喜好",
+          "example": "Meine Lieblingsspeise ist Pizza."
+        },
+        {
+          "pattern": "Und deine?",
+          "zh": "反問對方",
+          "example": "Und deins?"
+        }
+      ],
+      "tips": [
+        "把顏色換成 Rot、Grün 再說一次。",
+        "練習：Lieblings- + 名詞。"
+      ],
+      "focus": [
+        "顏色",
+        "喜好"
+      ]
+    },
+    {
+      "id": "uebung-52",
+      "level": "練習",
+      "kind": "dialogue",
+      "topic": "數字",
+      "title": "Wie alt bist du?",
+      "titleZh": "你幾歲？",
+      "text": "Leo: Wie alt bist du?\nMia: Ich bin 19 Jahre alt.\nLeo: Ich bin 21.\nMia: Cool! Wir sind jung.",
+      "textZh": "Leo：你幾歲？\nMia：我 19 歲。\nLeo：我 21 歲。\nMia：酷！我們還年輕。",
+      "notes": [
+        {
+          "span": "Wie alt",
+          "zh": "幾歲",
+          "tip": "alt＝年齡。"
+        },
+        {
+          "span": "Jahre alt",
+          "zh": "……歲"
+        },
+        {
+          "span": "Ich bin + 數字",
+          "zh": "回答年齡"
+        },
+        {
+          "span": "jung",
+          "zh": "年輕的"
+        },
+        {
+          "span": "Cool",
+          "zh": "酷"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wie alt bist du?",
+          "zh": "問年齡",
+          "example": "Wie alt ist er?"
+        },
+        {
+          "pattern": "Ich bin + Zahl",
+          "zh": "回答年齡",
+          "example": "Ich bin zwanzig."
+        }
+      ],
+      "tips": [
+        "數字 1–30 先練熟再談年齡。",
+        "對正式場合用 Sie：Wie alt sind Sie?"
+      ],
+      "focus": [
+        "數字",
+        "年齡"
+      ]
+    },
+    {
+      "id": "uebung-53",
+      "level": "練習",
+      "kind": "sign",
+      "topic": "開門時間",
+      "title": "Öffnungszeiten",
+      "titleZh": "營業時間",
+      "text": "Bibliothek\nMo–Fr: 9–18 Uhr\nSa: 10–14 Uhr\nSo: geschlossen\nBitte leise sein!",
+      "textZh": "圖書館\n週一至五：9–18 點\n週六：10–14 點\n週日：休息\n請保持安靜！",
+      "notes": [
+        {
+          "span": "Bibliothek",
+          "zh": "圖書館"
+        },
+        {
+          "span": "Mo–Fr",
+          "zh": "週一到週五"
+        },
+        {
+          "span": "geschlossen",
+          "zh": "關閉"
+        },
+        {
+          "span": "Bitte leise sein",
+          "zh": "請保持安靜"
+        },
+        {
+          "span": "Sa",
+          "zh": "週六"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Mo–Fr: … Uhr",
+          "zh": "平日時間",
+          "example": "Di–Do: 8–16 Uhr"
+        },
+        {
+          "pattern": "…: geschlossen",
+          "zh": "休息公告",
+          "example": "Heute geschlossen"
+        }
+      ],
+      "tips": [
+        "告示常縮寫星期：Mo Di Mi Do Fr Sa So。",
+        "geschlossen＝不營業。"
+      ],
+      "focus": [
+        "告示",
+        "時間"
+      ]
+    },
+    {
+      "id": "uebung-54",
+      "level": "練習",
+      "kind": "message",
+      "topic": "遲到",
+      "title": "Ich komme später",
+      "titleZh": "我會晚點到",
+      "text": "Hi Tom,\nich komme 10 Minuten später.\nDer Bus hat Verspätung.\nSorry!\nBis gleich\nNora",
+      "textZh": "嗨 Tom，\n我會晚 10 分鐘到。\n公車延誤了。\n抱歉！\n待會見\nNora",
+      "notes": [
+        {
+          "span": "komme … später",
+          "zh": "晚點到"
+        },
+        {
+          "span": "Minuten",
+          "zh": "分鐘"
+        },
+        {
+          "span": "Verspätung",
+          "zh": "延誤"
+        },
+        {
+          "span": "Sorry",
+          "zh": "抱歉"
+        },
+        {
+          "span": "Bis gleich",
+          "zh": "待會見"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich komme + 時間 + später",
+          "zh": "說會晚到",
+          "example": "Ich komme eine Stunde später."
+        },
+        {
+          "pattern": "Bis gleich",
+          "zh": "很快再見",
+          "example": "Bis später!"
+        }
+      ],
+      "tips": [
+        "簡訊：原因可短、先道歉。",
+        "數字＋Minuten 很常用。"
+      ],
+      "focus": [
+        "時間",
+        "道歉"
+      ]
+    },
+    {
+      "id": "uebung-55",
+      "level": "練習",
+      "kind": "card",
+      "topic": "寵物",
+      "title": "Mein Hund",
+      "titleZh": "我的狗",
+      "text": "Das ist mein Hund.\nEr heißt Bruno.\nEr ist klein und braun.\nEr mag Bälle.",
+      "textZh": "這是我的狗。\n他叫 Bruno。\n他又小又棕色。\n他喜歡球。",
+      "notes": [
+        {
+          "span": "Hund",
+          "zh": "狗"
+        },
+        {
+          "span": "Er heißt",
+          "zh": "他叫"
+        },
+        {
+          "span": "klein und braun",
+          "zh": "小而棕色"
+        },
+        {
+          "span": "mag",
+          "zh": "喜歡",
+          "tip": "mögen 現在時。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Das ist mein / meine + 名詞",
+          "zh": "介紹所有物",
+          "example": "Das ist meine Katze."
+        },
+        {
+          "pattern": "Er mag + 複數／第四格",
+          "zh": "說喜好",
+          "example": "Er mag Äpfel."
+        }
+      ],
+      "tips": [
+        "動物用 er／sie，看名詞性別。",
+        "換：Katze、Vogel。"
+      ],
+      "focus": [
+        "寵物",
+        "形容詞"
+      ]
+    },
+    {
+      "id": "uebung-56",
+      "level": "練習",
+      "kind": "dialogue",
+      "topic": "飲料",
+      "title": "Was trinkst du?",
+      "titleZh": "你喝什麼？",
+      "text": "A: Was trinkst du gerne?\nB: Wasser, bitte.\nA: Mit Eis oder ohne?\nB: Ohne Eis, danke.",
+      "textZh": "A：你喜歡喝什麼？\nB：水，麻煩。\nA：加冰還是不加？\nB：不加冰，謝謝。",
+      "notes": [
+        {
+          "span": "Was trinkst du",
+          "zh": "你喝什麼"
+        },
+        {
+          "span": "gerne",
+          "zh": "喜歡／樂意"
+        },
+        {
+          "span": "Mit Eis",
+          "zh": "加冰"
+        },
+        {
+          "span": "oder ohne",
+          "zh": "還是不加"
+        },
+        {
+          "span": "danke",
+          "zh": "謝謝"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Was trinkst / möchten Sie?",
+          "zh": "點飲料",
+          "example": "Ich trinke Tee."
+        },
+        {
+          "pattern": "Nein, danke.／Ja, bitte.",
+          "zh": "禮貌回應",
+          "example": "Ja, bitte."
+        }
+      ],
+      "tips": [
+        "點餐短句先背熟。",
+        "bitte／danke 成對練。"
+      ],
+      "focus": [
+        "飲料",
+        "點餐"
+      ]
+    },
+    {
+      "id": "uebung-57",
+      "level": "練習",
+      "kind": "sign",
+      "topic": "洗手間",
+      "title": "WC",
+      "titleZh": "洗手間指示",
+      "text": "WC → links\nDamen / Herren\nBitte sauber halten!\nSeife und Papier sind da.",
+      "textZh": "洗手間 → 左邊\n女廁／男廁\n請保持清潔！\n有肥皂與衛生紙。",
+      "notes": [
+        {
+          "span": "links",
+          "zh": "左邊"
+        },
+        {
+          "span": "Damen",
+          "zh": "女廁"
+        },
+        {
+          "span": "Herren",
+          "zh": "男廁"
+        },
+        {
+          "span": "sauber halten",
+          "zh": "保持清潔"
+        },
+        {
+          "span": "Seife",
+          "zh": "肥皂"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "→ links / rechts",
+          "zh": "方向指示",
+          "example": "Ausgang → rechts"
+        },
+        {
+          "pattern": "Bitte + 動詞原形",
+          "zh": "簡短要求",
+          "example": "Bitte warten!"
+        }
+      ],
+      "tips": [
+        "公共標誌多是短命令句。",
+        "halten＝保持。"
+      ],
+      "focus": [
+        "方向",
+        "標誌"
+      ]
+    },
+    {
+      "id": "uebung-58",
+      "level": "練習",
+      "kind": "message",
+      "topic": "祝福",
+      "title": "Alles Gute!",
+      "titleZh": "祝一切順利",
+      "text": "Liebe Sara,\nalles Gute zur Prüfung!\nDu schaffst das bestimmt.\nSchreib mir danach.\nKüsse\nBen",
+      "textZh": "親愛的 Sara，\n考試一切順利！\n你一定做得到。\n考完寫信給我。\n親親\nBen",
+      "notes": [
+        {
+          "span": "Alles Gute",
+          "zh": "一切順利"
+        },
+        {
+          "span": "zur Prüfung",
+          "zh": "祝考試"
+        },
+        {
+          "span": "Du schaffst das",
+          "zh": "你做得到"
+        },
+        {
+          "span": "bestimmt",
+          "zh": "一定"
+        },
+        {
+          "span": "danach",
+          "zh": "之後"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Alles Gute zu + 場合",
+          "zh": "祝福",
+          "example": "Alles Gute zum Geburtstag!"
+        },
+        {
+          "pattern": "Du schaffst das.",
+          "zh": "加油鼓勵",
+          "example": "Wir schaffen das."
+        }
+      ],
+      "tips": [
+        "祝福短訊：場合＋鼓勵。",
+        "正式可寫 Viel Erfolg!"
+      ],
+      "focus": [
+        "祝福",
+        "考試"
+      ]
+    },
+    {
+      "id": "uebung-59",
+      "level": "練習",
+      "kind": "card",
+      "topic": "星期",
+      "title": "Mein Wochenplan",
+      "titleZh": "我的一週計畫",
+      "text": "Montag: Sport um 18 Uhr\nDienstag: Deutschkurs\nFreitag: Kino mit Freunden\nSonntag: Pause und Schlaf",
+      "textZh": "星期一：18 點運動\n星期二：德文課\n星期五：和朋友看電影\n星期日：休息睡覺",
+      "notes": [
+        {
+          "span": "Montag",
+          "zh": "星期一"
+        },
+        {
+          "span": "um 18 Uhr",
+          "zh": "在 18 點"
+        },
+        {
+          "span": "Deutschkurs",
+          "zh": "德文課"
+        },
+        {
+          "span": "mit Freunden",
+          "zh": "和朋友"
+        },
+        {
+          "span": "Pause",
+          "zh": "休息"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "星期: + 活動",
+          "zh": "簡易行程",
+          "example": "Mittwoch: Arbeit"
+        },
+        {
+          "pattern": "…: Pause",
+          "zh": "排休息",
+          "example": "Samstag: Pause"
+        }
+      ],
+      "tips": [
+        "先背七個星期名稱。",
+        "可改成你的真實行程。"
+      ],
+      "focus": [
+        "星期",
+        "行程"
+      ]
+    },
+    {
+      "id": "uebung-60",
+      "level": "練習",
+      "kind": "dialogue",
+      "topic": "名字拼寫",
+      "title": "Wie schreibt man das?",
+      "titleZh": "怎麼拼？",
+      "text": "A: Wie heißt du bitte?\nB: Yusuf.\nA: Wie schreibt man das?\nB: Y-U-S-U-F. Genau!",
+      "textZh": "A：請問你叫什麼？\nB：Yusuf。\nA：怎麼拼？\nB：Y-U-S-U-F。沒錯！",
+      "notes": [
+        {
+          "span": "Wie heißt du",
+          "zh": "你叫什麼"
+        },
+        {
+          "span": "bitte",
+          "zh": "請／禮貌"
+        },
+        {
+          "span": "Wie schreibt man",
+          "zh": "怎麼拼"
+        },
+        {
+          "span": "Genau",
+          "zh": "沒錯／正確"
+        },
+        {
+          "span": "schreibt",
+          "zh": "書寫"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wie schreibt man …?",
+          "zh": "問拼法",
+          "example": "Wie schreibt man Ihren Namen?"
+        },
+        {
+          "pattern": "字母逐個念",
+          "zh": "拼名字",
+          "example": "A-N-N-A"
+        }
+      ],
+      "tips": [
+        "德文字母表先練。",
+        "電話裡常要拼名字。"
+      ],
+      "focus": [
+        "字母",
+        "名字"
+      ]
+    },
+    {
+      "id": "uebung-61",
+      "level": "練習",
+      "kind": "sign",
+      "topic": "禁止吸菸",
+      "title": "Rauchen verboten",
+      "titleZh": "禁止吸菸",
+      "text": "Rauchen verboten!\nAuch E-Zigaretten und Shisha.\nBußgeld möglich.\nVielen Dank.",
+      "textZh": "禁止吸菸！\n電子菸與水菸也不行。\n可能開罰單。\n謝謝配合。",
+      "notes": [
+        {
+          "span": "Rauchen verboten",
+          "zh": "禁止吸菸"
+        },
+        {
+          "span": "Auch",
+          "zh": "也"
+        },
+        {
+          "span": "E-Zigaretten",
+          "zh": "電子菸"
+        },
+        {
+          "span": "Bußgeld",
+          "zh": "罰鍰"
+        },
+        {
+          "span": "Vielen Dank",
+          "zh": "謝謝"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "… verboten",
+          "zh": "禁止標誌",
+          "example": "Parken verboten"
+        },
+        {
+          "pattern": "Auch + 名詞",
+          "zh": "範圍擴充",
+          "example": "Auch Hunde"
+        }
+      ],
+      "tips": [
+        "verboten＝禁止，很常見。",
+        "標誌語氣短而硬。"
+      ],
+      "focus": [
+        "禁止",
+        "標誌"
+      ]
+    },
+    {
+      "id": "uebung-62",
+      "level": "練習",
+      "kind": "message",
+      "topic": "到站",
+      "title": "Ich bin da",
+      "titleZh": "我到了",
+      "text": "Hi!\nIch bin am Bahnhof, Ausgang Ost.\nWo bist du gerade?\nRuf mich bitte an!",
+      "textZh": "嗨！\n我在火車站東出口。\n你現在在哪？\n請打電話給我！",
+      "notes": [
+        {
+          "span": "am Bahnhof",
+          "zh": "在火車站"
+        },
+        {
+          "span": "Ausgang Ost",
+          "zh": "東出口"
+        },
+        {
+          "span": "Wo bist du",
+          "zh": "你在哪"
+        },
+        {
+          "span": "gerade",
+          "zh": "現在／此刻"
+        },
+        {
+          "span": "Ruf mich an",
+          "zh": "打電話給我"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich bin am / in + 地點",
+          "zh": "報位置",
+          "example": "Ich bin im Café."
+        },
+        {
+          "pattern": "Ruf mich an!",
+          "zh": "要求來電",
+          "example": "Schreib mir!"
+        }
+      ],
+      "tips": [
+        "會合簡訊：位置＋問對方。",
+        "可分動詞：anrufen → Ruf … an。"
+      ],
+      "focus": [
+        "地點",
+        "會合"
+      ]
+    },
+    {
+      "id": "uebung-63",
+      "level": "練習",
+      "kind": "card",
+      "topic": "職業",
+      "title": "Ich bin Koch",
+      "titleZh": "我是廚師",
+      "text": "Ich bin Koch.\nIch arbeite in einem Restaurant.\nHeute koche ich Pasta.\nIch mag meinen Job.",
+      "textZh": "我是廚師。\n我在一家餐廳工作。\n今天我煮義大利麵。\n我喜歡我的工作。",
+      "notes": [
+        {
+          "span": "Koch",
+          "zh": "廚師"
+        },
+        {
+          "span": "arbeite in",
+          "zh": "在……工作"
+        },
+        {
+          "span": "Restaurant",
+          "zh": "餐廳"
+        },
+        {
+          "span": "koche",
+          "zh": "烹煮"
+        },
+        {
+          "span": "Job",
+          "zh": "工作"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich bin + 職業",
+          "zh": "說職業",
+          "example": "Ich bin Lehrerin."
+        },
+        {
+          "pattern": "Ich arbeite in + 第三格",
+          "zh": "工作地點",
+          "example": "Ich arbeite in einer Firma."
+        }
+      ],
+      "tips": [
+        "職業名詞注意陰陽。",
+        "mag meinen Job：第四格。"
+      ],
+      "focus": [
+        "職業",
+        "sein"
+      ]
+    },
+    {
+      "id": "uebung-64",
+      "level": "練習",
+      "kind": "dialogue",
+      "topic": "價錢",
+      "title": "Was kostet das?",
+      "titleZh": "這個多少錢？",
+      "text": "Kundin: Was kostet das Brot?\nVerkäufer: 4 Euro 50.\nKundin: Okay, ich nehme zwei.",
+      "textZh": "顧客：這個麵包多少錢？\n店員：4 歐元 50。\n顧客：好，我要兩個。",
+      "notes": [
+        {
+          "span": "Was kostet",
+          "zh": "多少錢"
+        },
+        {
+          "span": "Brot",
+          "zh": "麵包"
+        },
+        {
+          "span": "Euro",
+          "zh": "歐元"
+        },
+        {
+          "span": "ich nehme",
+          "zh": "我要／買"
+        },
+        {
+          "span": "zwei",
+          "zh": "兩個"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Was kostet …?",
+          "zh": "問價錢",
+          "example": "Was kostet die Fahrkarte?"
+        },
+        {
+          "pattern": "Ich nehme …",
+          "zh": "決定購買",
+          "example": "Ich nehme das Brot."
+        }
+      ],
+      "tips": [
+        "價錢：Zahl + Euro。",
+        "購物三句就夠用。"
+      ],
+      "focus": [
+        "購物",
+        "價錢"
+      ]
+    },
+    {
+      "id": "uebung-65",
+      "level": "練習",
+      "kind": "message",
+      "topic": "照片",
+      "title": "Schönes Foto!",
+      "titleZh": "好美的照片！",
+      "text": "Wow, schönes Foto vom See!\nWo war das genau?\nSieht richtig toll aus.\n❤️ Lea",
+      "textZh": "哇，湖邊的照片好美！\n那是在哪裡拍的？\n看起來真的很棒。\n❤️ Lea",
+      "notes": [
+        {
+          "span": "schönes Foto",
+          "zh": "美麗的照片"
+        },
+        {
+          "span": "See",
+          "zh": "湖"
+        },
+        {
+          "span": "Wo war das",
+          "zh": "那是在哪"
+        },
+        {
+          "span": "genau",
+          "zh": "確切地"
+        },
+        {
+          "span": "toll aus",
+          "zh": "看起來很棒"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "schönes / tolles + 名詞",
+          "zh": "稱讚",
+          "example": "Tolles Bild!"
+        },
+        {
+          "pattern": "Sieht … aus",
+          "zh": "外觀評價",
+          "example": "Es sieht gut aus."
+        }
+      ],
+      "tips": [
+        "社群短評：稱讚＋問地點。",
+        "aussehen：看著像……。"
+      ],
+      "focus": [
+        "稱讚",
+        "社群"
+      ]
+    },
+    {
+      "id": "uebung-66",
+      "level": "練習",
+      "kind": "sign",
+      "topic": "電梯",
+      "title": "Aufzug außer Betrieb",
+      "titleZh": "電梯故障",
+      "text": "Aufzug außer Betrieb\nBitte die Treppe benutzen.\nWartung bis Freitag.\nEntschuldigung!",
+      "textZh": "電梯暫停使用\n請走樓梯。\n維修至星期五。\n抱歉！",
+      "notes": [
+        {
+          "span": "Aufzug",
+          "zh": "電梯"
+        },
+        {
+          "span": "außer Betrieb",
+          "zh": "停止運作"
+        },
+        {
+          "span": "Treppe benutzen",
+          "zh": "使用樓梯"
+        },
+        {
+          "span": "Wartung",
+          "zh": "維修"
+        },
+        {
+          "span": "Entschuldigung",
+          "zh": "抱歉"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "… außer Betrieb",
+          "zh": "故障告示",
+          "example": "Automat außer Betrieb"
+        },
+        {
+          "pattern": "Bitte + 名詞 + benutzen",
+          "zh": "改用建議",
+          "example": "Bitte Ausgang B benutzen"
+        }
+      ],
+      "tips": [
+        "公共場所常見 außer Betrieb。",
+        "Entschuldigung 緩和語氣。"
+      ],
+      "focus": [
+        "故障",
+        "告示"
+      ]
+    },
+    {
+      "id": "uebung-67",
+      "level": "練習",
+      "kind": "dialogue",
+      "topic": "感覺",
+      "title": "Mir ist kalt",
+      "titleZh": "我覺得冷",
+      "text": "A: Alles okay bei dir?\nB: Mir ist kalt heute.\nA: Hier, nimm meine Jacke.\nB: Danke schön!",
+      "textZh": "A：你還好嗎？\nB：我今天覺得冷。\nA：給，穿我的外套。\nB：謝謝你！",
+      "notes": [
+        {
+          "span": "Alles okay",
+          "zh": "還好嗎"
+        },
+        {
+          "span": "Mir ist kalt",
+          "zh": "我覺得冷"
+        },
+        {
+          "span": "Nimm",
+          "zh": "拿／穿",
+          "tip": "nehmen 命令式。"
+        },
+        {
+          "span": "Jacke",
+          "zh": "外套"
+        },
+        {
+          "span": "Danke schön",
+          "zh": "謝謝"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Mir ist + 形容詞",
+          "zh": "身體感覺",
+          "example": "Mir ist warm.／Mir ist schlecht."
+        },
+        {
+          "pattern": "Hier, + 名詞",
+          "zh": "遞東西",
+          "example": "Hier, dein Tee."
+        }
+      ],
+      "tips": [
+        "感覺常用第三格：mir／dir。",
+        "不是 Ich bin kalt（那是「我這人冷漠」）。"
+      ],
+      "focus": [
+        "感覺",
+        "第三格"
+      ]
+    },
+    {
+      "id": "uebung-68",
+      "level": "練習",
+      "kind": "card",
+      "topic": "國家語言",
+      "title": "Sprachen",
+      "titleZh": "語言",
+      "text": "Ich komme aus Japan.\nIch spreche Japanisch und Englisch.\nJetzt lerne ich Deutsch in Berlin.",
+      "textZh": "我來自日本。\n我說日語和英語。\n現在我在柏林學德文。",
+      "notes": [
+        {
+          "span": "komme aus",
+          "zh": "來自"
+        },
+        {
+          "span": "spreche",
+          "zh": "說"
+        },
+        {
+          "span": "Japanisch",
+          "zh": "日語"
+        },
+        {
+          "span": "Englisch",
+          "zh": "英語"
+        },
+        {
+          "span": "in Berlin",
+          "zh": "在柏林"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich spreche + 語言",
+          "zh": "語言能力",
+          "example": "Ich spreche Englisch."
+        },
+        {
+          "pattern": "Jetzt lerne ich …",
+          "zh": "目前學習",
+          "example": "Jetzt lerne ich Kochen."
+        }
+      ],
+      "tips": [
+        "國家／語言詞常相似但不同：Japan／Japanisch。",
+        "換你的母語練習。"
+      ],
+      "focus": [
+        "語言",
+        "出身"
+      ]
+    },
+    {
+      "id": "uebung-69",
+      "level": "練習",
+      "kind": "message",
+      "topic": "生日",
+      "title": "Herzlichen Glückwunsch",
+      "titleZh": "生日快樂",
+      "text": "Lieber Omar,\nherzlichen Glückwunsch zum Geburtstag!\nFeier schön!\nDeine Lara",
+      "textZh": "親愛的 Omar，\n生日快樂！\n好好慶祝！\n你的 Lara",
+      "notes": [
+        {
+          "span": "herzlichen Glückwunsch",
+          "zh": "誠摯祝賀"
+        },
+        {
+          "span": "zum Geburtstag",
+          "zh": "生日"
+        },
+        {
+          "span": "Feier schön",
+          "zh": "好好慶祝"
+        },
+        {
+          "span": "Deine",
+          "zh": "你的（女性署名）"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Herzlichen Glückwunsch zu …",
+          "zh": "祝賀公式",
+          "example": "Herzlichen Glückwunsch zur Hochzeit!"
+        },
+        {
+          "pattern": "Feier schön!",
+          "zh": "祝福玩得開心",
+          "example": "Genieß den Tag!"
+        }
+      ],
+      "tips": [
+        "生日訊息公式很固定。",
+        "署名：Dein／Deine + 名字。"
+      ],
+      "focus": [
+        "生日",
+        "祝賀"
+      ]
+    },
+    {
+      "id": "uebung-70",
+      "level": "練習",
+      "kind": "dialogue",
+      "topic": "再見",
+      "title": "Tschüss und bis morgen",
+      "titleZh": "掰掰，明天見",
+      "text": "A: Ich muss jetzt gehen.\nB: Okay. Tschüss und bis morgen!\nA: Bis dann, gute Nacht!\nB: Bis dann!",
+      "textZh": "A：我現在得走了。\nB：好。掰掰，明天見！\nA：到時見，晚安！\nB：到時見！",
+      "notes": [
+        {
+          "span": "muss … gehen",
+          "zh": "必須離開"
+        },
+        {
+          "span": "jetzt",
+          "zh": "現在"
+        },
+        {
+          "span": "Tschüss",
+          "zh": "掰"
+        },
+        {
+          "span": "Bis morgen",
+          "zh": "明天見"
+        },
+        {
+          "span": "gute Nacht",
+          "zh": "晚安"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich muss + 原形",
+          "zh": "說必須",
+          "example": "Ich muss arbeiten."
+        },
+        {
+          "pattern": "Bis + 時間",
+          "zh": "約再見",
+          "example": "Bis Freitag!"
+        }
+      ],
+      "tips": [
+        "道別可疊：Tschüss + Bis …。",
+        "正式用 Auf Wiedersehen。"
+      ],
+      "focus": [
+        "道別",
+        "müssen"
+      ]
+    },
+    {
+      "id": "a1-51",
+      "level": "A1",
+      "kind": "email",
+      "topic": "鄰居",
+      "title": "Paket für Nachbarn",
+      "titleZh": "幫鄰居收包裹",
+      "text": "Betreff: Paket für Sie\n\nHallo Frau Berg,\n\nheute kam ein Paket für Sie.\nIch habe es angenommen und in meine Wohnung gelegt.\nSie können es heute Abend bei mir abholen, ab 18 Uhr.\n\nViele Grüße\nKenji",
+      "textZh": "主旨：您的包裹\n\nBerg 女士您好，\n\n今天有您的包裹送來。\n我代收了，放在我家。\n您今晚 18 點後可以來拿。\n\n問候\nKenji",
+      "notes": [
+        {
+          "span": "Paket",
+          "zh": "包裹"
+        },
+        {
+          "span": "angenommen",
+          "zh": "代收／收下",
+          "tip": "annehmen。"
+        },
+        {
+          "span": "abholen",
+          "zh": "來取"
+        },
+        {
+          "span": "heute Abend",
+          "zh": "今晚"
+        },
+        {
+          "span": "bei mir",
+          "zh": "在我家"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich habe es angenommen.",
+          "zh": "說明代收",
+          "example": "Können Sie das Paket annehmen?"
+        },
+        {
+          "pattern": "Sie können … abholen",
+          "zh": "說明可取件",
+          "example": "Abholen ab 18 Uhr."
+        }
+      ],
+      "tips": [
+        "鄰居郵件：事件＋行動＋取件時間。",
+        "Viele Grüße 適合半正式。"
+      ],
+      "focus": [
+        "郵件",
+        "鄰居"
+      ]
+    },
+    {
+      "id": "a1-52",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "藥局",
+      "title": "In der Apotheke",
+      "titleZh": "在藥局",
+      "text": "Apothekerin: Guten Tag. Was kann ich für Sie tun?\nKunde: Ich habe Kopfschmerzen. Haben Sie etwas dagegen?\nApothekerin: Ja, diese Tabletten. Dreimal täglich.\nKunde: Danke. Was kostet das?\nApothekerin: 6 Euro 90.",
+      "textZh": "藥師：您好。有什麼可以幫您？\n顧客：我頭痛。有什麼藥嗎？\n藥師：有，這些錠劑。一天三次。\n顧客：謝謝。多少錢？\n藥師：6 歐元 90。",
+      "notes": [
+        {
+          "span": "Apotheke",
+          "zh": "藥局"
+        },
+        {
+          "span": "Kopfschmerzen",
+          "zh": "頭痛",
+          "tip": "複數。"
+        },
+        {
+          "span": "dagegen",
+          "zh": "針對這個"
+        },
+        {
+          "span": "Tabletten",
+          "zh": "錠劑"
+        },
+        {
+          "span": "Dreimal täglich",
+          "zh": "一天三次"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Haben Sie etwas gegen …?",
+          "zh": "問有無對症藥",
+          "example": "Haben Sie etwas gegen Husten?"
+        },
+        {
+          "pattern": "…-mal täglich",
+          "zh": "服藥頻率",
+          "example": "Zweimal täglich"
+        }
+      ],
+      "tips": [
+        "藥局對話：症狀→建議→劑量→價錢。",
+        "täglich＝每天。"
+      ],
+      "focus": [
+        "健康",
+        "購物"
+      ]
+    },
+    {
+      "id": "a1-53",
+      "level": "A1",
+      "kind": "story",
+      "topic": "週末計畫",
+      "title": "Am Wochenende",
+      "titleZh": "這個週末",
+      "text": "Am Samstag gehe ich mit Freunden ins Museum.\nDanach trinken wir Kaffee.\nAm Sonntag bleibe ich zu Hause und lerne Deutsch.\nAbends schaue ich einen Film.\nIch freue mich auf das Wochenende!",
+      "textZh": "星期六我和朋友去博物館。\n之後我們喝咖啡。\n星期天我待在家學德文。\n晚上我看電影。\n我很期待這個週末！",
+      "notes": [
+        {
+          "span": "Am Samstag",
+          "zh": "在星期六",
+          "tip": "am + 星期。"
+        },
+        {
+          "span": "ins Museum",
+          "zh": "去博物館",
+          "tip": "in das。"
+        },
+        {
+          "span": "Danach",
+          "zh": "之後"
+        },
+        {
+          "span": "bleibe … zu Hause",
+          "zh": "待在家"
+        },
+        {
+          "span": "Ich freue mich auf",
+          "zh": "我期待……"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Am + 星期 + gehe ich …",
+          "zh": "週末行程",
+          "example": "Am Freitag gehe ich tanzen."
+        },
+        {
+          "pattern": "Ich freue mich auf + 第四格",
+          "zh": "期待",
+          "example": "Ich freue mich auf die Reise."
+        }
+      ],
+      "tips": [
+        "用 Am／Danach／Abends 串時間。",
+        "freue mich auf＝期待尚未發生的事。"
+      ],
+      "focus": [
+        "時間",
+        "計畫"
+      ]
+    },
+    {
+      "id": "a1-54",
+      "level": "A1",
+      "kind": "notice",
+      "topic": "健身房",
+      "title": "Aushang Fitnessstudio",
+      "titleZh": "健身房公告",
+      "text": "Liebe Mitglieder,\nab Montag ist die Sauna wegen Reparatur geschlossen.\nDas Fitnessstudio bleibt geöffnet.\nBitte Handtücher mitbringen.\nDanke für Ihr Verständnis.\nDie Leitung",
+      "textZh": "親愛的會員們，\n自星期一起，三溫暖因維修關閉。\n健身房照常開放。\n請自備毛巾。\n感謝理解。\n管理單位",
+      "notes": [
+        {
+          "span": "Mitglieder",
+          "zh": "會員"
+        },
+        {
+          "span": "wegen Reparatur",
+          "zh": "因維修",
+          "tip": "wegen + 第二格。"
+        },
+        {
+          "span": "bleibt geöffnet",
+          "zh": "維持開放"
+        },
+        {
+          "span": "Handtücher",
+          "zh": "毛巾"
+        },
+        {
+          "span": "Verständnis",
+          "zh": "理解"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "wegen + 第二格",
+          "zh": "說明原因",
+          "example": "wegen Bauarbeiten"
+        },
+        {
+          "pattern": "bleibt geöffnet / geschlossen",
+          "zh": "狀態說明",
+          "example": "Die Bibliothek bleibt geöffnet."
+        }
+      ],
+      "tips": [
+        "公告：關什麼／開什麼／請自備。",
+        "Danke für Ihr Verständnis 很常用。"
+      ],
+      "focus": [
+        "公告",
+        "設施"
+      ]
+    },
+    {
+      "id": "a1-55",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "郵局",
+      "title": "Paket schicken",
+      "titleZh": "寄包裹",
+      "text": "Mitarbeiter: Wohin soll das Paket?\nKundin: Nach Österreich.\nMitarbeiter: Luft oder Landweg?\nKundin: Landweg, bitte. Wie lange dauert das?\nMitarbeiter: Etwa vier Tage.\nKundin: Gut, dann so.",
+      "textZh": "職員：包裹要寄去哪？\n顧客：奧地利。\n職員：空運還是陸運？\n顧客：陸運。要多久？\n職員：大約四天。\n顧客：好，那就這樣。",
+      "notes": [
+        {
+          "span": "Wohin",
+          "zh": "去哪裡"
+        },
+        {
+          "span": "Nach Österreich",
+          "zh": "寄到奧地利",
+          "tip": "國家多用 nach。"
+        },
+        {
+          "span": "Landweg",
+          "zh": "陸運"
+        },
+        {
+          "span": "Wie lange dauert",
+          "zh": "要多久"
+        },
+        {
+          "span": "Etwa",
+          "zh": "大約"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wohin soll …?",
+          "zh": "問目的地",
+          "example": "Wohin soll die Karte?"
+        },
+        {
+          "pattern": "Wie lange dauert das?",
+          "zh": "問耗時",
+          "example": "Es dauert zwei Stunden."
+        }
+      ],
+      "tips": [
+        "郵局：目的地→方式→時間→決定。",
+        "Luft＝空運。"
+      ],
+      "focus": [
+        "郵局",
+        "旅行"
+      ]
+    },
+    {
+      "id": "a1-56",
+      "level": "A1",
+      "kind": "email",
+      "topic": "課程",
+      "title": "Frage zum Deutschkurs",
+      "titleZh": "德文課詢問",
+      "text": "Betreff: Kurs am Abend\n\nGuten Tag,\n\nich möchte einen Abendkurs besuchen.\nGibt es noch freie Plätze im A1-Kurs?\nWann beginnt der Kurs?\n\nMit freundlichen Grüßen\nYuna Park",
+      "textZh": "主旨：晚間課程\n\n您好，\n\n我想上晚間課。\nA1 班還有空位嗎？\n課程何時開始？\n\n此致問候\nYuna Park",
+      "notes": [
+        {
+          "span": "Abendkurs",
+          "zh": "晚間課程"
+        },
+        {
+          "span": "besuchen",
+          "zh": "參加／上（課）"
+        },
+        {
+          "span": "freie Plätze",
+          "zh": "空位"
+        },
+        {
+          "span": "Wann beginnt",
+          "zh": "何時開始"
+        },
+        {
+          "span": "Mit freundlichen Grüßen",
+          "zh": "正式結尾"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Gibt es noch …?",
+          "zh": "問是否還有",
+          "example": "Gibt es noch Tickets?"
+        },
+        {
+          "pattern": "Wann beginnt …?",
+          "zh": "問開始時間",
+          "example": "Wann beginnt der Film?"
+        }
+      ],
+      "tips": [
+        "詢問郵件：意圖＋問題＋正式結尾。",
+        "freie Plätze＝名額。"
+      ],
+      "focus": [
+        "學校",
+        "郵件"
+      ]
+    },
+    {
+      "id": "a1-57",
+      "level": "A1",
+      "kind": "story",
+      "topic": "搬家日",
+      "title": "Umzug",
+      "titleZh": "搬家",
+      "text": "Heute ziehe ich um.\nFreunde helfen mir mit den Kartons.\nDer Aufzug ist klein, deshalb tragen wir viel über die Treppe.\nAm Abend sind wir müde, aber glücklich.\nDie neue Wohnung ist hell und ruhig.",
+      "textZh": "今天我搬家。\n朋友幫我搬紙箱。\n電梯很小，所以我們很多東西走樓梯搬。\n晚上我們很累，但很開心。\n新公寓明亮又安靜。",
+      "notes": [
+        {
+          "span": "ziehe … um",
+          "zh": "搬家",
+          "tip": "umziehen。"
+        },
+        {
+          "span": "Kartons",
+          "zh": "紙箱"
+        },
+        {
+          "span": "deshalb",
+          "zh": "所以"
+        },
+        {
+          "span": "tragen",
+          "zh": "搬／提"
+        },
+        {
+          "span": "hell und ruhig",
+          "zh": "明亮又安靜"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Deshalb + 句子",
+          "zh": "說明結果",
+          "example": "Es regnet, deshalb bleibe ich zu Hause."
+        },
+        {
+          "pattern": "müde, aber glücklich",
+          "zh": "對比形容",
+          "example": "teuer, aber gut"
+        }
+      ],
+      "tips": [
+        "umziehen：注意字首分離。",
+        "用 deshalb 連接因果。"
+      ],
+      "focus": [
+        "搬家",
+        "日常"
+      ]
+    },
+    {
+      "id": "a1-58",
+      "level": "A1",
+      "kind": "notice",
+      "topic": "洗衣機",
+      "title": "Waschküche",
+      "titleZh": "洗衣房規則",
+      "text": "Waschküche – Regeln\n1. Bitte Termin im Kalender eintragen.\n2. Nach dem Waschen Maschine säubern.\n3. Wäsche am gleichen Tag abholen.\n4. Bei Problemen Hausmeister anrufen.",
+      "textZh": "洗衣房－規則\n1. 請在日曆登記時段。\n2. 洗完請清理洗衣機。\n3. 衣物須當日取走。\n4. 有問題請打給管理員。",
+      "notes": [
+        {
+          "span": "Waschküche",
+          "zh": "洗衣房"
+        },
+        {
+          "span": "eintragen",
+          "zh": "登記／填寫"
+        },
+        {
+          "span": "säubern",
+          "zh": "清理"
+        },
+        {
+          "span": "am gleichen Tag",
+          "zh": "同一天"
+        },
+        {
+          "span": "Hausmeister",
+          "zh": "管理員"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bitte + 動詞原形",
+          "zh": "規則語氣",
+          "example": "Bitte Tür schließen."
+        },
+        {
+          "pattern": "Nach dem + 名詞化",
+          "zh": "之後",
+          "example": "Nach dem Kochen spülen."
+        }
+      ],
+      "tips": [
+        "規則公告常編號。",
+        "am gleichen Tag＝當天。"
+      ],
+      "focus": [
+        "住房",
+        "規則"
+      ]
+    },
+    {
+      "id": "a1-59",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "火車站",
+      "title": "Verspätung",
+      "titleZh": "列車延誤",
+      "text": "Ansager: Der Zug nach Hamburg hat 20 Minuten Verspätung.\nFahrgast: Oh nein. Kommt er auf Gleis 3?\nAnsager: Ja, Gleis 3.\nFahrgast: Danke für die Info.\nAnsager: Bitte schön.",
+      "textZh": "廣播：開往漢堡的列車延誤 20 分鐘。\n旅客：喔不。還是 3 月台嗎？\n廣播：是，3 月台。\n旅客：謝謝告知。\n廣播：不客氣。",
+      "notes": [
+        {
+          "span": "Verspätung",
+          "zh": "延誤"
+        },
+        {
+          "span": "Zug nach …",
+          "zh": "開往……的列車"
+        },
+        {
+          "span": "Gleis",
+          "zh": "月台／股道"
+        },
+        {
+          "span": "Info",
+          "zh": "資訊",
+          "tip": "口語＝Information。"
+        },
+        {
+          "span": "Bitte schön",
+          "zh": "不客氣"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "hat … Verspätung",
+          "zh": "說延誤",
+          "example": "Der Bus hat Verspätung."
+        },
+        {
+          "pattern": "auf Gleis + 數字",
+          "zh": "月台",
+          "example": "Der Zug kommt auf Gleis 7."
+        }
+      ],
+      "tips": [
+        "交通：目的地＋延誤＋月台。",
+        "Verspätung 是名詞。"
+      ],
+      "focus": [
+        "交通",
+        "旅行"
+      ]
+    },
+    {
+      "id": "a1-60",
+      "level": "A1",
+      "kind": "email",
+      "topic": "請假一天",
+      "title": "Einen Tag frei",
+      "titleZh": "請一天假",
+      "text": "Betreff: Freier Tag am Donnerstag\n\nLiebe Frau Klein,\n\nkann ich am Donnerstag frei nehmen?\nIch muss zum Amt.\nAm Freitag bin ich wieder da.\n\nLiebe Grüße\nSamir",
+      "textZh": "主旨：星期四請假\n\nKlein 女士您好，\n\n星期四我可以請假嗎？\n我得去辦事處。\n星期五我會回來。\n\n問候\nSamir",
+      "notes": [
+        {
+          "span": "frei nehmen",
+          "zh": "請假"
+        },
+        {
+          "span": "zum Amt",
+          "zh": "去辦事處",
+          "tip": "Amt＝公家機關。"
+        },
+        {
+          "span": "wieder da",
+          "zh": "又在（回來）"
+        },
+        {
+          "span": "Am Freitag",
+          "zh": "星期五"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Kann ich … frei nehmen?",
+          "zh": "請求請假",
+          "example": "Darf ich morgen frei nehmen?"
+        },
+        {
+          "pattern": "Ich muss zu + 第三格",
+          "zh": "必須去某處",
+          "example": "Ich muss zum Arzt."
+        }
+      ],
+      "tips": [
+        "請假：日期＋原因＋何時回來。",
+        "Liebe Grüße 比 Mit freundlichen Grüßen 稍軟。"
+      ],
+      "focus": [
+        "工作",
+        "請假"
+      ]
+    },
+    {
+      "id": "a1-61",
+      "level": "A1",
+      "kind": "story",
+      "topic": "市場購物",
+      "title": "Auf dem Markt",
+      "titleZh": "在市集",
+      "text": "Samstagmorgen gehe ich auf den Markt.\nIch kaufe Äpfel, Käse und Brot.\nDie Verkäuferin ist freundlich und gibt mir ein Rezept.\nZu Hause koche ich eine Suppe.\nSie schmeckt sehr gut.",
+      "textZh": "星期六早上我去市集。\n我買蘋果、起司和麵包。\n女店員很親切，還給我一份食譜。\n回家後我煮湯。\n湯很好喝。",
+      "notes": [
+        {
+          "span": "auf den Markt",
+          "zh": "去市集",
+          "tip": "auf + 第四格＝方向。"
+        },
+        {
+          "span": "kaufe",
+          "zh": "購買"
+        },
+        {
+          "span": "Rezept",
+          "zh": "食譜／處方"
+        },
+        {
+          "span": "Zu Hause",
+          "zh": "在家"
+        },
+        {
+          "span": "schmeckt",
+          "zh": "味道……"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich kaufe A, B und C.",
+          "zh": "列購物清單",
+          "example": "Ich kaufe Milch und Eier."
+        },
+        {
+          "pattern": "Es schmeckt gut.",
+          "zh": "評價味道",
+          "example": "Die Suppe schmeckt salzig."
+        }
+      ],
+      "tips": [
+        "市集故事：去→買→做→評價。",
+        "Rezept 也有「藥方」意思。"
+      ],
+      "focus": [
+        "購物",
+        "食物"
+      ]
+    },
+    {
+      "id": "a1-62",
+      "level": "A1",
+      "kind": "notice",
+      "topic": "宿舍廚房",
+      "title": "Küchenplan Wohnheim",
+      "titleZh": "宿舍廚房輪值",
+      "text": "Küchenplan – Woche 12\nMo/Di: Zimmer 3\nMi/Do: Zimmer 5\nFr/Sa: Zimmer 1\nBitte Spüle und Herd nach dem Kochen reinigen.\nMüll am Sonntag rausbringen.\nDanke fürs Mitmachen!",
+      "textZh": "廚房輪值－第 12 週\n一／二：3 號房\n三／四：5 號房\n五／六：1 號房\n煮完請清理水槽與爐具。\n星期日請倒垃圾。\n謝謝大家配合！",
+      "notes": [
+        {
+          "span": "Küchenplan",
+          "zh": "廚房輪值表"
+        },
+        {
+          "span": "Spüle",
+          "zh": "水槽"
+        },
+        {
+          "span": "Herd",
+          "zh": "爐具"
+        },
+        {
+          "span": "reinigen",
+          "zh": "清潔"
+        },
+        {
+          "span": "Müll … rausbringen",
+          "zh": "倒垃圾"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bitte … reinigen",
+          "zh": "清潔要求",
+          "example": "Bitte Kühlschrank reinigen."
+        },
+        {
+          "pattern": "Müll rausbringen",
+          "zh": "倒垃圾",
+          "example": "Bitte Glas und Papier trennen."
+        }
+      ],
+      "tips": [
+        "輪值表：誰＋哪天＋清潔項目。",
+        "rausbringen＝拿出去。"
+      ],
+      "focus": [
+        "宿舍",
+        "家務"
+      ]
+    },
+    {
+      "id": "a1-63",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "租腳踏車",
+      "title": "Fahrrad leihen",
+      "titleZh": "租腳踏車",
+      "text": "Angestellte: Möchten Sie ein Rad für einen Tag?\nGast: Ja. Was kostet das?\nAngestellte: 12 Euro, Helm inklusive.\nGast: Brauche ich einen Ausweis?\nAngestellte: Ja, bitte. Hier ist der Schlüssel.",
+      "textZh": "職員：您要租一天的車嗎？\n客人：好。多少錢？\n職員：12 歐元，含安全帽。\n客人：需要證件嗎？\n職員：要的。鑰匙在這裡。",
+      "notes": [
+        {
+          "span": "Rad leihen",
+          "zh": "租車",
+          "tip": "leihen＝借入。"
+        },
+        {
+          "span": "für einen Tag",
+          "zh": "租一天"
+        },
+        {
+          "span": "inklusive",
+          "zh": "包含"
+        },
+        {
+          "span": "Ausweis",
+          "zh": "證件"
+        },
+        {
+          "span": "Schlüssel",
+          "zh": "鑰匙"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "für + 時間",
+          "zh": "租用時長",
+          "example": "für zwei Stunden"
+        },
+        {
+          "pattern": "… inklusive",
+          "zh": "費用含……",
+          "example": "Frühstück inklusive"
+        }
+      ],
+      "tips": [
+        "租借：時長→價錢→文件→取物。",
+        "leihen／mieten 都可表租。"
+      ],
+      "focus": [
+        "交通",
+        "服務"
+      ]
+    },
+    {
+      "id": "a1-64",
+      "level": "A1",
+      "kind": "email",
+      "topic": "活動報名",
+      "title": "Anmeldung Stadtführung",
+      "titleZh": "報名城市導覽",
+      "text": "Betreff: Anmeldung Stadtführung\n\nHallo,\n\nich möchte mich für die Stadtführung am Sonntag anmelden.\nWir sind zwei Personen.\nTreffpunkt ist am Rathaus, richtig?\n\nViele Grüße\nElena",
+      "textZh": "主旨：城市導覽報名\n\n您好，\n\n我想報名星期天的城市導覽。\n我們兩人。\n集合點是市政廳，對嗎？\n\n問候\nElena",
+      "notes": [
+        {
+          "span": "mich … anmelden",
+          "zh": "報名",
+          "tip": "sich anmelden。"
+        },
+        {
+          "span": "Personen",
+          "zh": "人數"
+        },
+        {
+          "span": "Treffpunkt",
+          "zh": "集合點"
+        },
+        {
+          "span": "Rathaus",
+          "zh": "市政廳"
+        },
+        {
+          "span": "richtig?",
+          "zh": "對嗎？"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich möchte mich für … anmelden.",
+          "zh": "報名",
+          "example": "Ich melde mich für den Kurs an."
+        },
+        {
+          "pattern": "Treffpunkt ist …",
+          "zh": "確認集合",
+          "example": "Treffpunkt vor dem Museum"
+        }
+      ],
+      "tips": [
+        "報名：活動＋人數＋確認地點。",
+        "sich anmelden 要有反身代詞。"
+      ],
+      "focus": [
+        "活動",
+        "城市"
+      ]
+    },
+    {
+      "id": "a1-65",
+      "level": "A1",
+      "kind": "story",
+      "topic": "第一次下雪",
+      "title": "Erster Schnee",
+      "titleZh": "第一場雪",
+      "text": "Heute schneit es zum ersten Mal in diesem Winter.\nDie Straßen sind weiß und ruhig.\nKinder bauen einen Schneemann.\nIch mache ein Foto und schicke es an meine Familie.\nEs ist kalt, aber schön.",
+      "textZh": "今天是這個冬天第一場雪。\n街道又白又安靜。\n孩子們堆雪人。\n我拍照傳給家人。\n很冷，但很美。",
+      "notes": [
+        {
+          "span": "schneit",
+          "zh": "下雪",
+          "tip": "es schneit。"
+        },
+        {
+          "span": "zum ersten Mal",
+          "zh": "第一次"
+        },
+        {
+          "span": "Schneemann",
+          "zh": "雪人"
+        },
+        {
+          "span": "schicke … an",
+          "zh": "傳給……"
+        },
+        {
+          "span": "kalt, aber schön",
+          "zh": "冷但美"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Es schneit / regnet.",
+          "zh": "天氣無人稱",
+          "example": "Es ist windig."
+        },
+        {
+          "pattern": "zum ersten Mal",
+          "zh": "第一次經驗",
+          "example": "Ich fahre zum ersten Mal Ski."
+        }
+      ],
+      "tips": [
+        "天氣動詞常用 es。",
+        "對比：kalt, aber schön。"
+      ],
+      "focus": [
+        "天氣",
+        "季節"
+      ]
+    },
+    {
+      "id": "a1-66",
+      "level": "A1",
+      "kind": "notice",
+      "topic": "影印室",
+      "title": "Drucker außer Betrieb",
+      "titleZh": "印表機故障",
+      "text": "Achtung!\nDer Drucker im 2. Stock ist defekt.\nBitte nutzen Sie den Copyshop gegenüber.\nKopien für den Kurs bitte bis 16 Uhr fertig machen.\nTechnik-Team",
+      "textZh": "注意！\n二樓印表機故障。\n請使用對面的影印店。\n課程用影印請於 16 點前完成。\n技術組",
+      "notes": [
+        {
+          "span": "Achtung",
+          "zh": "注意"
+        },
+        {
+          "span": "defekt",
+          "zh": "故障的"
+        },
+        {
+          "span": "nutzen",
+          "zh": "使用"
+        },
+        {
+          "span": "gegenüber",
+          "zh": "對面"
+        },
+        {
+          "span": "fertig machen",
+          "zh": "完成"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bitte nutzen Sie …",
+          "zh": "改用建議",
+          "example": "Bitte nutzen Sie den Nebeneingang."
+        },
+        {
+          "pattern": "bis + 時間",
+          "zh": "截止",
+          "example": "bis Freitag"
+        }
+      ],
+      "tips": [
+        "故障公告：問題＋替代＋期限。",
+        "defekt ≈ außer Betrieb。"
+      ],
+      "focus": [
+        "學校",
+        "公告"
+      ]
+    },
+    {
+      "id": "a1-67",
+      "level": "A1",
+      "kind": "dialogue",
+      "topic": "點甜點",
+      "title": "Zum Dessert",
+      "titleZh": "點甜點",
+      "text": "Kellner: Möchten Sie noch ein Dessert?\nGast: Was empfehlen Sie?\nKellner: Den Apfelkuchen. Er ist frisch.\nGast: Dann nehme ich den, bitte.\nKellner: Mit Sahne?\nGast: Ja, gerne.",
+      "textZh": "服務生：還要甜點嗎？\n客人：您推薦什麼？\n服務生：蘋果派。很新鮮。\n客人：那就來這個。\n服務生：要加鮮奶油嗎？\n客人：好，麻煩。",
+      "notes": [
+        {
+          "span": "Dessert",
+          "zh": "甜點"
+        },
+        {
+          "span": "empfehlen",
+          "zh": "推薦"
+        },
+        {
+          "span": "Apfelkuchen",
+          "zh": "蘋果派"
+        },
+        {
+          "span": "frisch",
+          "zh": "新鮮"
+        },
+        {
+          "span": "Sahne",
+          "zh": "鮮奶油"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Was empfehlen Sie?",
+          "zh": "請人推薦",
+          "example": "Welche Suppe empfehlen Sie?"
+        },
+        {
+          "pattern": "Dann nehme ich …",
+          "zh": "接受推薦",
+          "example": "Dann nehme ich die Tagessuppe."
+        }
+      ],
+      "tips": [
+        "餐廳：問推薦→選→加料。",
+        "gerne＝樂意。"
+      ],
+      "focus": [
+        "餐廳",
+        "食物"
+      ]
+    },
+    {
+      "id": "a1-68",
+      "level": "A1",
+      "kind": "email",
+      "topic": "還書延期",
+      "title": "Frist verlängern",
+      "titleZh": "延長借期",
+      "text": "Betreff: Buch verlängern\n\nGuten Tag,\n\nkann ich das Buch „Einfach Deutsch“ verlängern?\nDie Frist endet morgen.\nEine Online-Verlängerung funktioniert leider nicht.\n\nVielen Dank\nOmar",
+      "textZh": "主旨：續借圖書\n\n您好，\n\n《Einfach Deutsch》這本書可以續借嗎？\n期限明天截止。\n線上續借無法使用。\n\n謝謝\nOmar",
+      "notes": [
+        {
+          "span": "verlängern",
+          "zh": "延長／續借"
+        },
+        {
+          "span": "Frist",
+          "zh": "期限"
+        },
+        {
+          "span": "endet",
+          "zh": "結束"
+        },
+        {
+          "span": "funktioniert … nicht",
+          "zh": "無法運作"
+        },
+        {
+          "span": "leider",
+          "zh": "可惜／遺憾"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Kann ich … verlängern?",
+          "zh": "請求延期",
+          "example": "Kann ich den Termin verlängern?"
+        },
+        {
+          "pattern": "Die Frist endet …",
+          "zh": "說明期限",
+          "example": "Die Frist endet am Montag."
+        }
+      ],
+      "tips": [
+        "圖書館郵件：書名＋期限＋問題。",
+        "Frist＝截止日期。"
+      ],
+      "focus": [
+        "圖書館",
+        "請求"
+      ]
+    },
+    {
+      "id": "a1-69",
+      "level": "A1",
+      "kind": "story",
+      "topic": "新同事",
+      "title": "Der erste Tag",
+      "titleZh": "第一天上班",
+      "text": "Heute ist mein erster Tag in der Firma.\nMeine Kollegin zeigt mir das Büro und die Kaffeemaschine.\nUm 12 Uhr essen wir zusammen in der Kantine.\nAlle sind nett zu mir.\nIch bin noch nervös, aber es geht gut.",
+      "textZh": "今天是我在公司的第一天。\n女同事帶我看辦公室和咖啡機。\n12 點我們一起在員工餐廳吃飯。\n大家對我都很好。\n我還是緊張，但進行順利。",
+      "notes": [
+        {
+          "span": "erster Tag",
+          "zh": "第一天"
+        },
+        {
+          "span": "Kollegin",
+          "zh": "女同事"
+        },
+        {
+          "span": "zeigt mir",
+          "zh": "指給我看",
+          "tip": "zeigen + 第三格。"
+        },
+        {
+          "span": "Kantine",
+          "zh": "員工餐廳"
+        },
+        {
+          "span": "nervös",
+          "zh": "緊張的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "zeigt mir + 第四格",
+          "zh": "帶人熟悉環境",
+          "example": "Sie zeigt mir den Weg."
+        },
+        {
+          "pattern": "nett zu mir",
+          "zh": "對我友好",
+          "example": "freundlich zu den Gästen"
+        }
+      ],
+      "tips": [
+        "職場第一天：介紹→午餐→感受。",
+        "es geht gut＝狀況不錯。"
+      ],
+      "focus": [
+        "工作",
+        "日常"
+      ]
+    },
+    {
+      "id": "a1-70",
+      "level": "A1",
+      "kind": "notice",
+      "topic": "寵物日",
+      "title": "Hunde willkommen",
+      "titleZh": "歡迎帶狗",
+      "text": "Info für Gäste\nKleine Hunde sind im Café willkommen.\nBitte an der Leine führen.\nNicht auf Stühle setzen.\nWasser für Hunde gibt es kostenlos an der Theke.\nWir freuen uns auf Ihren Besuch!",
+      "textZh": "旅客須知\n小型犬歡迎進入咖啡廳。\n請繫繩牽好。\n請勿放上椅子。\n櫃台免費提供狗用水。\n期待您的光臨！",
+      "notes": [
+        {
+          "span": "willkommen",
+          "zh": "受歡迎"
+        },
+        {
+          "span": "an der Leine",
+          "zh": "用牽繩"
+        },
+        {
+          "span": "führen",
+          "zh": "牽／帶領"
+        },
+        {
+          "span": "kostenlos",
+          "zh": "免費"
+        },
+        {
+          "span": "Theke",
+          "zh": "櫃台"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "… sind willkommen",
+          "zh": "歡迎對象",
+          "example": "Kinder sind willkommen."
+        },
+        {
+          "pattern": "Bitte … führen / setzen",
+          "zh": "行為規則",
+          "example": "Bitte draußen warten."
+        }
+      ],
+      "tips": [
+        "場所規則：允許＋限制＋服務。",
+        "an der Leine＝繫繩。"
+      ],
+      "focus": [
+        "服務",
+        "規則"
+      ]
+    },
+    {
+      "id": "a2-51",
+      "level": "A2",
+      "kind": "email",
+      "topic": "保險理賠",
+      "title": "Schadensmeldung Fahrrad",
+      "titleZh": "腳踏車理賠申請",
+      "text": "Betreff: Diebstahl meines Fahrrads\n\nSehr geehrte Damen und Herren,\n\nam 3. März wurde mein Fahrrad vor dem Bahnhof gestohlen.\nIch habe am selben Tag Anzeige bei der Polizei erstattet.\nAnbei sende ich die Anzeigenummer und Fotos des Schlosses.\nBitte teilen Sie mir mit, welche Unterlagen Sie noch benötigen.\n\nMit freundlichen Grüßen\nJonas Weber",
+      "textZh": "主旨：腳踏車失竊\n\n敬啟者：\n\n3 月 3 日我的腳踏車在火車站前被偷。\n當天我已向警方報案。\n附件寄上報案編號與車鎖照片。\n請告知還需要哪些資料。\n\n此致問候\nJonas Weber",
+      "notes": [
+        {
+          "span": "Diebstahl",
+          "zh": "竊盜"
+        },
+        {
+          "span": "Anzeige … erstattet",
+          "zh": "報案",
+          "tip": "Anzeige erstatten。"
+        },
+        {
+          "span": "Anbei",
+          "zh": "隨信附上"
+        },
+        {
+          "span": "Unterlagen",
+          "zh": "文件資料"
+        },
+        {
+          "span": "benötigen",
+          "zh": "需要"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "am selben Tag",
+          "zh": "同一天",
+          "example": "Am selben Abend habe ich angerufen."
+        },
+        {
+          "pattern": "Bitte teilen Sie mir mit, …",
+          "zh": "正式請求回覆",
+          "example": "Bitte teilen Sie uns die Frist mit."
+        },
+        {
+          "pattern": "Anbei sende ich …",
+          "zh": "附件說明",
+          "example": "Anbei finden Sie die Rechnung."
+        }
+      ],
+      "tips": [
+        "保險郵件：事件＋已採取步驟＋附件＋提問。",
+        "Anzeige erstatten＝報案固定搭配。"
+      ],
+      "focus": [
+        "保險",
+        "正式郵件"
+      ]
+    },
+    {
+      "id": "a2-52",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "客服通話",
+      "title": "Falsche Lieferung",
+      "titleZh": "送錯貨",
+      "text": "Kundin: Hallo, ich habe eine Bestellung erhalten, aber die Größe stimmt nicht.\nService: Wie lautet Ihre Bestellnummer?\nKundin: 88421. Ich möchte umtauschen.\nService: Kein Problem. Sie können das Paket kostenlos zurückschicken.\nKundin: Wie lange dauert der Umtausch?\nService: In der Regel fünf Werktage, sobald das Paket bei uns ist.",
+      "textZh": "顧客：您好，我收到訂單，但尺寸不對。\n客服：您的訂單編號是？\n顧客：88421。我想換貨。\n客服：沒問題。您可以免費退回包裹。\n顧客：換貨要多久？\n客服：包裹到我們這邊後，通常五個工作天。",
+      "notes": [
+        {
+          "span": "Bestellung",
+          "zh": "訂單"
+        },
+        {
+          "span": "stimmt nicht",
+          "zh": "不對／不符"
+        },
+        {
+          "span": "umtauschen",
+          "zh": "換貨"
+        },
+        {
+          "span": "zurückschicken",
+          "zh": "寄回"
+        },
+        {
+          "span": "Werktage",
+          "zh": "工作日"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Die Größe stimmt nicht.",
+          "zh": "說明瑕疵",
+          "example": "Die Farbe stimmt nicht."
+        },
+        {
+          "pattern": "sobald + 句子",
+          "zh": "一……就……",
+          "example": "Sobald ich weiß, schreibe ich."
+        },
+        {
+          "pattern": "In der Regel …",
+          "zh": "一般情況",
+          "example": "In der Regel antworten wir in 24 Stunden."
+        }
+      ],
+      "tips": [
+        "客服：問題→編號→解決→時程。",
+        "Werktage 不含假日。"
+      ],
+      "focus": [
+        "客服",
+        "購物"
+      ]
+    },
+    {
+      "id": "a2-53",
+      "level": "A2",
+      "kind": "story",
+      "topic": "志工經驗",
+      "title": "Ehrenamt im Tierheim",
+      "titleZh": "動物收容所志工",
+      "text": "Seit drei Monaten helfe ich samstags im Tierheim.\nIch füttere die Katzen und gehe mit den Hunden spazieren.\nAm Anfang war ich unsicher, aber die Mitarbeiter erklären alles geduldig.\nDurch die Arbeit lerne ich Verantwortung und werde ruhiger.\nNächsten Monat organisiere ich mit zwei Freunden eine Spendenaktion.",
+      "textZh": "三個月來我每週六在動物收容所幫忙。\n我餵貓、遛狗。\n一開始沒把握，但員工會耐心說明。\n透過這份工作我學會負責，也變得較沉穩。\n下個月我和兩位朋友一起辦募款活動。",
+      "notes": [
+        {
+          "span": "Ehrenamt",
+          "zh": "志工／公益服務"
+        },
+        {
+          "span": "Tierheim",
+          "zh": "動物收容所"
+        },
+        {
+          "span": "unsicher",
+          "zh": "沒把握的"
+        },
+        {
+          "span": "geduldig",
+          "zh": "耐心的"
+        },
+        {
+          "span": "Spendenaktion",
+          "zh": "募款活動"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Seit + 時間dauer",
+          "zh": "從……以來",
+          "example": "Seit zwei Jahren wohne ich hier."
+        },
+        {
+          "pattern": "Am Anfang …, aber …",
+          "zh": "前後對比",
+          "example": "Am Anfang war es schwer, aber jetzt geht es."
+        },
+        {
+          "pattern": "Durch + 第四格",
+          "zh": "透過……",
+          "example": "Durch Sport werde ich fitter."
+        }
+      ],
+      "tips": [
+        "經驗文：時間→任務→轉變→下一步。",
+        "Ehrenamt 是名詞，做志工可說 ehrenamtlich helfen。"
+      ],
+      "focus": [
+        "社會",
+        "經歷"
+      ]
+    },
+    {
+      "id": "a2-54",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "大樓施工",
+      "title": "Baulärm im Hof",
+      "titleZh": "庭院施工噪音",
+      "text": "Information der Hausverwaltung\nVom 12. bis 16. April finden im Innenhof Arbeiten statt.\nMit erhöhtem Lärm ist zwischen 8 und 16 Uhr zu rechnen.\nDie Waschküche bleibt in dieser Zeit geschlossen.\nBei dringenden Fragen wenden Sie sich bitte an Frau Lange (Zi. 12).\nVielen Dank für Ihre Geduld.",
+      "textZh": "管委會通知\n4 月 12 至 16 日內院將進行施工。\n8 至 16 點請預期噪音較大。\n此期間洗衣房關閉。\n緊急問題請洽 Lange 女士（12 室）。\n感謝您的耐心。",
+      "notes": [
+        {
+          "span": "Hausverwaltung",
+          "zh": "管委會／物業管理"
+        },
+        {
+          "span": "finden … statt",
+          "zh": "舉行／進行",
+          "tip": "stattfinden。"
+        },
+        {
+          "span": "Mit … ist zu rechnen",
+          "zh": "須預期……"
+        },
+        {
+          "span": "dringenden",
+          "zh": "緊急的"
+        },
+        {
+          "span": "wenden Sie sich an",
+          "zh": "請聯絡……"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Vom … bis … finden … statt",
+          "zh": "公告時段",
+          "example": "Vom Montag bis Mittwoch finden Prüfungen statt."
+        },
+        {
+          "pattern": "Mit … ist zu rechnen",
+          "zh": "預期後果",
+          "example": "Mit Verzögerungen ist zu rechnen."
+        },
+        {
+          "pattern": "wenden Sie sich bitte an …",
+          "zh": "正式聯絡指引",
+          "example": "Wenden Sie sich an den Support."
+        }
+      ],
+      "tips": [
+        "施工公告：時段＋影響＋聯絡窗口。",
+        "ist zu rechnen＝應預估到。"
+      ],
+      "focus": [
+        "住房",
+        "公告"
+      ]
+    },
+    {
+      "id": "a2-55",
+      "level": "A2",
+      "kind": "email",
+      "topic": "大學宿舍",
+      "title": "Bewerbung Wohnheim",
+      "titleZh": "申請宿舍",
+      "text": "Betreff: Bewerbung um einen Wohnheimplatz\n\nSehr geehrte Damen und Herren,\n\nich beginne im Oktober ein Studium an Ihrer Universität und bewerbe mich um ein Zimmer im Wohnheim.\nIch bin Nichtraucher und wünsche mir möglichst ein ruhiges Zimmer.\nAnbei finden Sie Immatrikulationsbescheinigung und Einkommensnachweis.\nÜber eine positive Rückmeldung würde ich mich freuen.\n\nMit freundlichen Grüßen\nMinh Tran",
+      "textZh": "主旨：申請宿舍床位\n\n敬啟者：\n\n我將於十月於貴校開始就讀，特此申請宿舍房間。\n我不抽菸，希望盡可能安靜的房間。\n附件為註冊證明與收入證明。\n若能獲正面回覆將不勝感激。\n\n此致問候\nMinh Tran",
+      "notes": [
+        {
+          "span": "bewerbe mich um",
+          "zh": "申請……",
+          "tip": "sich bewerben um。"
+        },
+        {
+          "span": "Wohnheim",
+          "zh": "宿舍"
+        },
+        {
+          "span": "Nichtraucher",
+          "zh": "不抽菸者"
+        },
+        {
+          "span": "Immatrikulationsbescheinigung",
+          "zh": "註冊證明"
+        },
+        {
+          "span": "Rückmeldung",
+          "zh": "回覆"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "ich bewerbe mich um …",
+          "zh": "正式申請",
+          "example": "Ich bewerbe mich um ein Praktikum."
+        },
+        {
+          "pattern": "möglichst + 形容詞",
+          "zh": "盡可能……",
+          "example": "möglichst zentral"
+        },
+        {
+          "pattern": "Über … würde ich mich freuen",
+          "zh": "客氣期待回覆",
+          "example": "Über eine Einladung würde ich mich freuen."
+        }
+      ],
+      "tips": [
+        "申請信：目的＋偏好＋附件＋收尾。",
+        "sich bewerben um + 第四格。"
+      ],
+      "focus": [
+        "大學",
+        "住房"
+      ]
+    },
+    {
+      "id": "a2-56",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "診所預約改期",
+      "title": "Termin verschieben",
+      "titleZh": "改約診時間",
+      "text": "Patient: Guten Tag, ich habe morgen um 9 Uhr einen Termin. Kann ich ihn verschieben?\nEmpfang: Welchen Grund gibt es?\nPatient: Ich muss unerwartet arbeiten.\nEmpfang: Wir hätten Freitag um 11 oder Montag um 15 Uhr.\nPatient: Montag passt besser.\nEmpfang: Gut, ich trage das ein. Bitte kommen Sie zehn Minuten früher.",
+      "textZh": "病人：您好，我明天 9 點有約診。可以改期嗎？\n櫃台：什麼原因呢？\n病人：我臨時必須加班。\n櫃台：我們週五 11 點或週一 15 點有空。\n病人：週一比較適合。\n櫃台：好，我幫您登記。請提早十分鐘到。",
+      "notes": [
+        {
+          "span": "verschieben",
+          "zh": "改期／延後"
+        },
+        {
+          "span": "unerwartet",
+          "zh": "出乎意料地"
+        },
+        {
+          "span": "Wir hätten …",
+          "zh": "我們可以……",
+          "tip": "虛擬式客氣提議。"
+        },
+        {
+          "span": "passt besser",
+          "zh": "比較適合"
+        },
+        {
+          "span": "trage … ein",
+          "zh": "登記",
+          "tip": "eintragen。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Kann ich … verschieben?",
+          "zh": "請求改期",
+          "example": "Kann ich den Flug verschieben?"
+        },
+        {
+          "pattern": "Wir hätten A oder B.",
+          "zh": "提供選項",
+          "example": "Wir hätten noch zwei Plätze."
+        },
+        {
+          "pattern": "… passt besser",
+          "zh": "選擇較佳方案",
+          "example": "Donnerstag passt besser."
+        }
+      ],
+      "tips": [
+        "改約：原時間→原因→選項→確認。",
+        "hätten 使提議較客氣。"
+      ],
+      "focus": [
+        "醫療",
+        "預約"
+      ]
+    },
+    {
+      "id": "a2-57",
+      "level": "A2",
+      "kind": "story",
+      "topic": "語言交換",
+      "title": "Sprachpartner gesucht",
+      "titleZh": "尋找語言交換夥伴",
+      "text": "Über eine App habe ich eine Sprachpartnerin gefunden.\nEinmal pro Woche sprechen wir 30 Minuten Deutsch und 30 Minuten Koreanisch.\nManchmal korrigieren wir uns, manchmal erzählen wir einfach aus dem Alltag.\nSo vergesse ich Vokabeln weniger und habe weniger Angst vorm Sprechen.\nNächste Woche treffen wir uns zum ersten Mal persönlich in einem Café.",
+      "textZh": "我透過 App 找到一位語言交換夥伴。\n每週一次，我們各說 30 分鐘德文與韓文。\n有時互相糾正，有時只聊日常。\n這樣單字比較記得住，說話也比較不害怕。\n下週我們第一次在咖啡廳見面。",
+      "notes": [
+        {
+          "span": "Sprachpartnerin",
+          "zh": "語言交換女夥伴"
+        },
+        {
+          "span": "Einmal pro Woche",
+          "zh": "每週一次"
+        },
+        {
+          "span": "korrigieren",
+          "zh": "糾正"
+        },
+        {
+          "span": "vorm Sprechen",
+          "zh": "面對開口說話",
+          "tip": "vor dem。"
+        },
+        {
+          "span": "persönlich",
+          "zh": "親自／當面"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Einmal pro Woche …",
+          "zh": "頻率",
+          "example": "Zweimal pro Monat treffe ich sie."
+        },
+        {
+          "pattern": "Manchmal …, manchmal …",
+          "zh": "並列情況",
+          "example": "Manchmal früh, manchmal spät."
+        },
+        {
+          "pattern": "Angst vor + 第三格",
+          "zh": "害怕……",
+          "example": "Angst vor Prüfungen"
+        }
+      ],
+      "tips": [
+        "學習文：工具→節奏→好處→下一步。",
+        "pro Woche＝每週。"
+      ],
+      "focus": [
+        "學習",
+        "社交"
+      ]
+    },
+    {
+      "id": "a2-58",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "圖書館閉館",
+      "title": "Umbau der Stadtbibliothek",
+      "titleZh": "市立圖書館整修",
+      "text": "Wichtige Information\nDie Stadtbibliothek bleibt vom 1. bis 20. Mai wegen Umbaus geschlossen.\nOnline-Verlängerungen sind weiterhin möglich.\nVorbestellte Medien können am Seiteneingang abgeholt werden (Mo–Fr 10–13 Uhr).\nFragen bitte an info@stadtbibliothek.example.\nWir bitten um Verständnis.",
+      "textZh": "重要通知\n市立圖書館因整修，5 月 1 至 20 日關閉。\n線上續借仍可使用。\n預約資料可於側門領取（週一至五 10–13 點）。\n問題請寄 info@stadtbibliothek.example。\n敬請見諒。",
+      "notes": [
+        {
+          "span": "Umbau",
+          "zh": "整修／改建"
+        },
+        {
+          "span": "weiterhin",
+          "zh": "仍然"
+        },
+        {
+          "span": "Vorbestellte Medien",
+          "zh": "預約的媒體資料"
+        },
+        {
+          "span": "Seiteneingang",
+          "zh": "側門"
+        },
+        {
+          "span": "Wir bitten um Verständnis",
+          "zh": "敬請見諒"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "bleibt … geschlossen",
+          "zh": "關閉狀態",
+          "example": "Die Straße bleibt gesperrt."
+        },
+        {
+          "pattern": "sind weiterhin möglich",
+          "zh": "服務仍可用",
+          "example": "Rückgaben sind weiterhin möglich."
+        },
+        {
+          "pattern": "Wir bitten um …",
+          "zh": "正式請求體諒",
+          "example": "Wir bitten um Geduld."
+        }
+      ],
+      "tips": [
+        "閉館公告：期間＋仍可服務＋替代取件。",
+        "Medien＝書籍／影音等館藏。"
+      ],
+      "focus": [
+        "圖書館",
+        "公告"
+      ]
+    },
+    {
+      "id": "a2-59",
+      "level": "A2",
+      "kind": "email",
+      "topic": "實習週報",
+      "title": "Kurzbericht Praktikum",
+      "titleZh": "實習短報告",
+      "text": "Betreff: Wochenbericht KW 14\n\nLiebe Frau Schneider,\n\ndiese Woche habe ich bei der Kundenaufnahme geholfen und zwei Präsentationen vorbereitet.\nBesonders interessant war das Gespräch mit dem Marketingteam.\nNächste Woche werde ich bei der Messe am Stand mitarbeiten.\nBitte sagen Sie mir, ob der Bericht so ausführlich genug ist.\n\nViele Grüße\nLeila",
+      "textZh": "主旨：第 14 週週報\n\nSchneider 女士您好，\n\n本週我協助接待客戶，並準備兩份簡報。\n與行銷團隊的談話特別有意思。\n下週我將在展覽攤位協助。\n請告訴我這份報告是否夠詳細。\n\n問候\nLeila",
+      "notes": [
+        {
+          "span": "Wochenbericht",
+          "zh": "週報"
+        },
+        {
+          "span": "Kundenaufnahme",
+          "zh": "客戶接待"
+        },
+        {
+          "span": "Präsentationen",
+          "zh": "簡報"
+        },
+        {
+          "span": "Messe",
+          "zh": "展覽／商展"
+        },
+        {
+          "span": "ausführlich genug",
+          "zh": "夠詳細"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "diese Woche habe ich …",
+          "zh": "報告本週工作",
+          "example": "Diese Woche habe ich telefoniert."
+        },
+        {
+          "pattern": "Besonders interessant war …",
+          "zh": "突出重點",
+          "example": "Besonders hilfreich war das Feedback."
+        },
+        {
+          "pattern": "ob … genug ist",
+          "zh": "詢問是否足夠",
+          "example": "Ob der Text klar genug ist?"
+        }
+      ],
+      "tips": [
+        "實習報告：本週→亮點→下週→請回饋。",
+        "KW＝Kalenderwoche 行事曆週次。"
+      ],
+      "focus": [
+        "職場",
+        "實習"
+      ]
+    },
+    {
+      "id": "a2-60",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "健身房入會",
+      "title": "Mitgliedschaft Fitness",
+      "titleZh": "健身會員諮詢",
+      "text": "Berater: Suchen Sie eine Monats- oder Jahreskarte?\nKundin: Erstmal monatlich. Kann ich jederzeit kündigen?\nBerater: Ja, mit einer Frist von 14 Tagen.\nKundin: Gibt es Kursangebote?\nBerater: Ja, Yoga und Rückenfitness sind inklusive.\nKundin: Gut, dann schaue ich mir den Vertrag in Ruhe an.",
+      "textZh": "顧問：您要月卡還是年卡？\n顧客：先月繳。可以隨時解約嗎？\n顧問：可以，需提前 14 天。\n顧客：有團課嗎？\n顧問：有，瑜伽與背部健身包含在內。\n顧客：好，那我先慢慢看合約。",
+      "notes": [
+        {
+          "span": "Mitgliedschaft",
+          "zh": "會員資格"
+        },
+        {
+          "span": "kündigen",
+          "zh": "解約"
+        },
+        {
+          "span": "Frist von … Tagen",
+          "zh": "……天期限"
+        },
+        {
+          "span": "inklusive",
+          "zh": "包含在內"
+        },
+        {
+          "span": "in Ruhe",
+          "zh": "慢慢地／從容地"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Kann ich jederzeit kündigen?",
+          "zh": "問解約彈性",
+          "example": "Kann ich den Vertrag verlängern?"
+        },
+        {
+          "pattern": "mit einer Frist von …",
+          "zh": "解約預告期",
+          "example": "mit einer Frist von einem Monat"
+        },
+        {
+          "pattern": "in Ruhe anschauen",
+          "zh": "不急著決定",
+          "example": "Ich lese das in Ruhe."
+        }
+      ],
+      "tips": [
+        "服務對話：方案→解約→內容→暫緩簽約。",
+        "Frist＝預告期。"
+      ],
+      "focus": [
+        "消費",
+        "合約"
+      ]
+    },
+    {
+      "id": "a2-61",
+      "level": "A2",
+      "kind": "story",
+      "topic": "共乘上班",
+      "title": "Mitfahrgelegenheit",
+      "titleZh": "共乘上班",
+      "text": "Seit Januar fahre ich mit zwei Kollegen zur Arbeit.\nWir wechseln uns ab: jede Woche fährt jemand anderes.\nSo sparen wir Benzin und kommen trotzdem pünktlich an.\nManchmal gibt es Stau, aber dann hören wir Podcasts.\nNächsten Monat wollen wir noch eine Person aus der Nachbarabteilung mitnehmen.",
+      "textZh": "從一月起我和兩位同事共乘上班。\n我們輪流：每週換人開車。\n這樣省油，卻仍能準時到。\n有時塞車，但我們就聽 Podcast。\n下個月還想再載鄰近部門的一個人。",
+      "notes": [
+        {
+          "span": "Mitfahrgelegenheit",
+          "zh": "共乘機會"
+        },
+        {
+          "span": "wechseln uns ab",
+          "zh": "互相輪替",
+          "tip": "sich abwechseln。"
+        },
+        {
+          "span": "Benzin",
+          "zh": "汽油"
+        },
+        {
+          "span": "pünktlich",
+          "zh": "準時"
+        },
+        {
+          "span": "Nachbarabteilung",
+          "zh": "鄰近部門"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wir wechseln uns ab.",
+          "zh": "輪流制度",
+          "example": "Wir wechseln uns mit dem Kochen ab."
+        },
+        {
+          "pattern": "trotzdem",
+          "zh": "儘管如此仍……",
+          "example": "Es regnet, trotzdem gehe ich."
+        },
+        {
+          "pattern": "noch eine Person mitnehmen",
+          "zh": "再載一人",
+          "example": "Können wir noch jemanden mitnehmen?"
+        }
+      ],
+      "tips": [
+        "共乘故事：制度→好處→小問題→擴充。",
+        "sich abwechseln＝輪流。"
+      ],
+      "focus": [
+        "交通",
+        "職場"
+      ]
+    },
+    {
+      "id": "a2-62",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "社區菜園",
+      "title": "Gemeinschaftsgarten",
+      "titleZh": "社區菜園報名",
+      "text": "Aushang: Gemeinschaftsgarten\nAb Mai können Bewohnerinnen und Bewohner Beete pachten.\nKosten: 20 Euro pro Saison inkl. Wasser und Werkzeug.\nEinführungstermin: 28. April, 17 Uhr am Hinterhof.\nBitte bis 20. April per E-Mail an garten@haus.example melden.\nKinder sind willkommen, wenn eine Aufsichtsperson dabei ist.",
+      "textZh": "公告：社區菜園\n自五月起住戶可承租菜圃。\n費用：每季 20 歐元，含水與工具。\n說明會：4 月 28 日 17 點，後院。\n請於 4 月 20 日前寄信至 garten@haus.example 報名。\n歡迎兒童，但須有監護人陪同。",
+      "notes": [
+        {
+          "span": "Gemeinschaftsgarten",
+          "zh": "社區菜園"
+        },
+        {
+          "span": "Beete pachten",
+          "zh": "承租菜圃"
+        },
+        {
+          "span": "inkl.",
+          "zh": "包含",
+          "tip": "inklusive。"
+        },
+        {
+          "span": "Einführungstermin",
+          "zh": "說明會時段"
+        },
+        {
+          "span": "Aufsichtsperson",
+          "zh": "監護人"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ab + 月份 können …",
+          "zh": "自某時起可……",
+          "example": "Ab Juni können Sie buchen."
+        },
+        {
+          "pattern": "inkl. A und B",
+          "zh": "費用含……",
+          "example": "inkl. Frühstück"
+        },
+        {
+          "pattern": "wenn eine … dabei ist",
+          "zh": "條件附句",
+          "example": "wenn ein Erwachsener dabei ist"
+        }
+      ],
+      "tips": [
+        "社區活動：資格＋費用＋說明會＋條件。",
+        "pachten＝承租（土地等）。"
+      ],
+      "focus": [
+        "社區",
+        "活動"
+      ]
+    },
+    {
+      "id": "a2-63",
+      "level": "A2",
+      "kind": "email",
+      "topic": "旅行投訴",
+      "title": "Beschwerde Hotelzimmer",
+      "titleZh": "飯店房間投訴",
+      "text": "Betreff: Beschwerde zu Zimmer 412\n\nSehr geehrte Damen und Herren,\n\nleider war unser Zimmer bei der Ankunft nicht gereinigt und die Klimaanlage defekt.\nNach zwei Stunden bekamen wir ein anderes Zimmer, das in Ordnung war.\nDennoch erwarte ich eine teilweise Erstattung für den ersten Abend.\nAnbei die Buchungsnummer und Fotos.\n\nMit freundlichen Grüßen\nCarla Mendes",
+      "textZh": "主旨：412 房投訴\n\n敬啟者：\n\n很遺憾，抵達時房間未清掃且空調故障。\n兩小時後我們換到另一間狀況正常的房間。\n儘管如此，我仍希望第一晚能獲部分退款。\n附件為訂房編號與照片。\n\n此致問候\nCarla Mendes",
+      "notes": [
+        {
+          "span": "leider",
+          "zh": "遺憾地"
+        },
+        {
+          "span": "bei der Ankunft",
+          "zh": "抵達時"
+        },
+        {
+          "span": "defekt",
+          "zh": "故障的"
+        },
+        {
+          "span": "Dennoch",
+          "zh": "儘管如此"
+        },
+        {
+          "span": "teilweise Erstattung",
+          "zh": "部分退款"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "leider war … nicht …",
+          "zh": "禮貌陳述問題",
+          "example": "Leider war das Essen kalt."
+        },
+        {
+          "pattern": "Dennoch erwarte ich …",
+          "zh": "堅持請求",
+          "example": "Dennoch bitte ich um Klärung."
+        },
+        {
+          "pattern": "Anbei …",
+          "zh": "附件",
+          "example": "Anbei die Rechnung."
+        }
+      ],
+      "tips": [
+        "投訴：問題→已處理→仍要補償→附件。",
+        "Dennoch 轉折後提出要求。"
+      ],
+      "focus": [
+        "旅行",
+        "投訴"
+      ]
+    },
+    {
+      "id": "a2-64",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "銀行辦卡",
+      "title": "Kreditkarte beantragen",
+      "titleZh": "申請信用卡",
+      "text": "Beraterin: Möchten Sie eine Kreditkarte zu Ihrem Girokonto?\nKunde: Ja, aber mit niedrigem Limit, bitte.\nBeraterin: Haben Sie eine feste Anstellung und eine Meldebescheinigung?\nKunde: Ja, beides. Wie hoch sind die Jahresgebühren?\nBeraterin: Im ersten Jahr kostenlos, danach 30 Euro.\nKunde: Okay, ich nehme das Angebot.",
+      "textZh": "行員：您要為往來帳戶加辦信用卡嗎？\n顧客：要，但請給較低額度。\n行員：您有正職與戶籍登記證明嗎？\n顧客：都有。年費多少？\n行員：第一年免費，之後 30 歐元。\n顧客：好，我接受這個方案。",
+      "notes": [
+        {
+          "span": "Kreditkarte",
+          "zh": "信用卡"
+        },
+        {
+          "span": "niedrigem Limit",
+          "zh": "較低額度"
+        },
+        {
+          "span": "feste Anstellung",
+          "zh": "正職／穩定聘僱"
+        },
+        {
+          "span": "Jahresgebühren",
+          "zh": "年費"
+        },
+        {
+          "span": "Im ersten Jahr",
+          "zh": "第一年"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "mit niedrigem / hohem Limit",
+          "zh": "額度偏好",
+          "example": "mit flexiblem Limit"
+        },
+        {
+          "pattern": "Im ersten Jahr …, danach …",
+          "zh": "費用時程",
+          "example": "Im ersten Monat gratis, danach 10 Euro."
+        },
+        {
+          "pattern": "Ich nehme das Angebot.",
+          "zh": "接受方案",
+          "example": "Ich nehme den Tarif Basic."
+        }
+      ],
+      "tips": [
+        "銀行：產品→條件→費用→決定。",
+        "Meldebescheinigung＝戶籍登記證明。"
+      ],
+      "focus": [
+        "銀行",
+        "行政"
+      ]
+    },
+    {
+      "id": "a2-65",
+      "level": "A2",
+      "kind": "story",
+      "topic": "夜班體驗",
+      "title": "Eine Woche Nachtschicht",
+      "titleZh": "一週夜班",
+      "text": "Letzte Woche habe ich zum ersten Mal Nachtschicht gearbeitet.\nTagsüber konnte ich kaum schlafen, weil es draußen hell und laut war.\nMeine Kolleginnen haben mir Tipps gegeben: dunkle Vorhänge und feste Zeiten.\nAb dem dritten Tag ging es besser.\nTrotzdem weiß ich jetzt, dass ich Dauer-Nachtarbeit nicht möchte.",
+      "textZh": "上週我第一次上夜班。\n白天幾乎睡不著，因為外面又亮又吵。\n女同事給我建議：遮光窗簾與固定作息。\n從第三天起好多了。\n不過我現在知道自己不想長期做夜班。",
+      "notes": [
+        {
+          "span": "Nachtschicht",
+          "zh": "夜班"
+        },
+        {
+          "span": "Tagsüber",
+          "zh": "白天"
+        },
+        {
+          "span": "kaum",
+          "zh": "幾乎不"
+        },
+        {
+          "span": "feste Zeiten",
+          "zh": "固定時段"
+        },
+        {
+          "span": "Dauer-Nachtarbeit",
+          "zh": "長期夜班工作"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "zum ersten Mal …",
+          "zh": "第一次經驗",
+          "example": "Zum ersten Mal bin ich allein gereist."
+        },
+        {
+          "pattern": "Ab dem … Tag",
+          "zh": "從第……天起",
+          "example": "Ab dem zweiten Monat"
+        },
+        {
+          "pattern": "Trotzdem weiß ich jetzt, dass …",
+          "zh": "經驗結論",
+          "example": "Trotzdem weiß ich, dass ich Hilfe brauche."
+        }
+      ],
+      "tips": [
+        "經驗敘事：困難→建議→改善→結論。",
+        "kaum＝幾乎不。"
+      ],
+      "focus": [
+        "職場",
+        "健康"
+      ]
+    },
+    {
+      "id": "a2-66",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "回收日變更",
+      "title": "Änderung der Müllabfuhr",
+      "titleZh": "垃圾清運變更",
+      "text": "Bekanntmachung\nWegen eines Feiertags verschiebt sich die gelbe Tonne vom Mittwoch auf Donnerstag.\nDie Biotonne bleibt am Dienstag wie gewohnt.\nBitte stellen Sie die Tonnen erst ab 19 Uhr am Vorabend heraus.\nFalsch befüllte Tonnen werden nicht geleert.\nFragen bitte an 0800 123 456 (Mo–Fr 9–15 Uhr).",
+      "textZh": "公告\n因國定假日，黃色資源回收桶由週三改為週四清運。\n廚餘桶仍依往常於週二清運。\n請於前一晚 19 點後再推出去。\n分類錯誤的桶將不予清空。\n詢問請打 0800 123 456（週一至五 9–15 點）。",
+      "notes": [
+        {
+          "span": "Müllabfuhr",
+          "zh": "垃圾清運"
+        },
+        {
+          "span": "verschiebt sich",
+          "zh": "改期／挪動"
+        },
+        {
+          "span": "gelbe Tonne",
+          "zh": "黃色資源桶"
+        },
+        {
+          "span": "Vorabend",
+          "zh": "前一晚"
+        },
+        {
+          "span": "Falsch befüllte",
+          "zh": "裝填錯誤的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wegen … verschiebt sich …",
+          "zh": "因故改期",
+          "example": "Wegen Streiks verschiebt sich der Zug."
+        },
+        {
+          "pattern": "bleibt am …",
+          "zh": "維持原日",
+          "example": "Die Abholung bleibt am Freitag."
+        },
+        {
+          "pattern": "werden nicht …",
+          "zh": "不予……",
+          "example": "werden nicht angenommen"
+        }
+      ],
+      "tips": [
+        "市政公告：哪種桶＋新日期＋放置規則。",
+        "Tonne＝垃圾桶。"
+      ],
+      "focus": [
+        "市政",
+        "公告"
+      ]
+    },
+    {
+      "id": "a2-67",
+      "level": "A2",
+      "kind": "email",
+      "topic": "課程請假",
+      "title": "Fehlzeiten Kurs",
+      "titleZh": "課程缺席說明",
+      "text": "Betreff: Abwesenheit am 8. und 9. Mai\n\nLiebe Kursleitung,\n\nleider kann ich am 8. und 9. Mai nicht am Unterricht teilnehmen, weil ich eine Prüfung an der Universität habe.\nDie Hausaufgabe schicke ich per E-Mail.\nKönnten Sie mir bitte die Materialien der beiden Tage nachreichen?\n\nVielen Dank und freundliche Grüße\nSofia",
+      "textZh": "主旨：5 月 8、9 日缺席\n\n課程負責老師您好，\n\n很遺憾 5 月 8、9 日無法上課，因為我有大學考試。\n作業會用電子郵件交。\n能否請您補寄這兩天的教材？\n\n謝謝並致問候\nSofia",
+      "notes": [
+        {
+          "span": "Abwesenheit",
+          "zh": "缺席"
+        },
+        {
+          "span": "teilnehmen",
+          "zh": "參加"
+        },
+        {
+          "span": "Hausaufgabe",
+          "zh": "作業"
+        },
+        {
+          "span": "nachreichen",
+          "zh": "事後補交／補寄"
+        },
+        {
+          "span": "Könnten Sie …",
+          "zh": "能否請您……",
+          "tip": "虛擬式客氣請求。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "leider kann ich nicht …, weil …",
+          "zh": "請假原因",
+          "example": "Leider kann ich nicht kommen, weil ich krank bin."
+        },
+        {
+          "pattern": "Könnten Sie mir bitte …?",
+          "zh": "客氣請求",
+          "example": "Könnten Sie das wiederholen?"
+        },
+        {
+          "pattern": "per E-Mail",
+          "zh": "以郵件方式",
+          "example": "per Post / per Telefon"
+        }
+      ],
+      "tips": [
+        "缺席信：日期＋原因＋已盡義務＋請求。",
+        "nachreichen＝補上。"
+      ],
+      "focus": [
+        "學校",
+        "郵件"
+      ]
+    },
+    {
+      "id": "a2-68",
+      "level": "A2",
+      "kind": "dialogue",
+      "topic": "租屋看房",
+      "title": "Wohnungsbesichtigung",
+      "titleZh": "看房對話",
+      "text": "Vermieterin: Die Wohnung hat 48 Quadratmeter und einen Balkon.\nInteressentin: Sind Nebenkosten in der Miete enthalten?\nVermieterin: Nein, zusätzlich etwa 120 Euro.\nInteressentin: Darf man die Wände streichen?\nVermieterin: Ja, in hellen Farben. Vor dem Auszug bitte zurückstreichen.\nInteressentin: Ich melde mich bis Freitag.",
+      "textZh": "房東：公寓 48 平方公尺，有陽台。\n看房者：租金含不含雜費？\n房東：不含，大約另加 120 歐元。\n看房者：可以粉刷牆壁嗎？\n房東：可以，用淺色。退租前請漆回原色。\n看房者：我週五前回覆。",
+      "notes": [
+        {
+          "span": "Quadratmeter",
+          "zh": "平方公尺"
+        },
+        {
+          "span": "Nebenkosten",
+          "zh": "雜費"
+        },
+        {
+          "span": "enthalten",
+          "zh": "包含在內"
+        },
+        {
+          "span": "streichen",
+          "zh": "粉刷"
+        },
+        {
+          "span": "Auszug",
+          "zh": "遷出"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Sind … in der Miete enthalten?",
+          "zh": "問是否含在租金",
+          "example": "Ist Internet enthalten?"
+        },
+        {
+          "pattern": "Darf man …?",
+          "zh": "問是否允許",
+          "example": "Darf man Haustiere halten?"
+        },
+        {
+          "pattern": "Ich melde mich bis …",
+          "zh": "承諾回覆期限",
+          "example": "Ich melde mich bis morgen."
+        }
+      ],
+      "tips": [
+        "看房：面積→費用→規則→回覆期限。",
+        "Nebenkosten 常含水電等。"
+      ],
+      "focus": [
+        "租屋",
+        "住房"
+      ]
+    },
+    {
+      "id": "a2-69",
+      "level": "A2",
+      "kind": "story",
+      "topic": "數位斷食",
+      "title": "Ein Wochenende ohne Smartphone",
+      "titleZh": "無手機的週末",
+      "text": "Am letzten Wochenende habe ich mein Smartphone ausgeschaltet.\nZuerst war es ungewohnt: Ich wollte ständig Nachrichten checken.\nSpäter habe ich ein Buch gelesen und lange mit meiner Mitbewohnerin gesprochen.\nSonntagabend war ich überrascht, wie ruhig ich mich fühlte.\nVielleicht mache ich das einmal im Monat wieder.",
+      "textZh": "上週末我把智慧型手機關掉。\n一開始很不習慣：一直想查看訊息。\n後來我讀了書，也和室友長談。\n星期天晚上我很驚訝自己竟然這麼平靜。\n也許我會每個月再做一次。",
+      "notes": [
+        {
+          "span": "ausgeschaltet",
+          "zh": "關掉",
+          "tip": "ausschalten。"
+        },
+        {
+          "span": "ungewohnt",
+          "zh": "不習慣的"
+        },
+        {
+          "span": "ständig",
+          "zh": "不斷地"
+        },
+        {
+          "span": "Mitbewohnerin",
+          "zh": "女室友"
+        },
+        {
+          "span": "überrascht",
+          "zh": "驚訝的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Zuerst … Später …",
+          "zh": "時間順序",
+          "example": "Zuerst war es schwer. Später wurde es leichter."
+        },
+        {
+          "pattern": "wie + 形容詞 + sich fühlen",
+          "zh": "感受",
+          "example": "Wie müde ich mich fühlte!"
+        },
+        {
+          "pattern": "einmal im Monat",
+          "zh": "每月一次",
+          "example": "zweimal im Jahr"
+        }
+      ],
+      "tips": [
+        "體驗文：決定→不適→替代活動→收穫。",
+        "ständig＝一直。"
+      ],
+      "focus": [
+        "數位",
+        "生活"
+      ]
+    },
+    {
+      "id": "a2-70",
+      "level": "A2",
+      "kind": "notice",
+      "topic": "公司防災演習",
+      "title": "Brandschutzübung",
+      "titleZh": "消防演習",
+      "text": "Interne Mitteilung\nAm Donnerstag, 10 Uhr, findet eine Brandschutzübung statt.\nBitte verlassen Sie bei Alarm ruhig das Gebäude über die Treppenhäuser.\nFahrstühle dürfen nicht benutzt werden.\nSammeln Sie sich auf dem Parkplatz Süd und warten Sie auf die Freigabe.\nDie Übung dauert voraussichtlich 20 Minuten. Vielen Dank.",
+      "textZh": "內部通知\n週四 10 點將舉行消防演習。\n警報響起時請經由樓梯間冷靜離開大樓。\n禁止使用電梯。\n請在南停車場集合並等候解除訊號。\n演習預計約 20 分鐘。謝謝配合。",
+      "notes": [
+        {
+          "span": "Brandschutzübung",
+          "zh": "消防演習"
+        },
+        {
+          "span": "bei Alarm",
+          "zh": "警報響起時"
+        },
+        {
+          "span": "Treppenhäuser",
+          "zh": "樓梯間"
+        },
+        {
+          "span": "dürfen nicht",
+          "zh": "不得"
+        },
+        {
+          "span": "voraussichtlich",
+          "zh": "預計／大概"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "findet … statt",
+          "zh": "舉行",
+          "example": "Die Sitzung findet online statt."
+        },
+        {
+          "pattern": "dürfen nicht + Partizip II",
+          "zh": "禁止被動",
+          "example": "dürfen nicht geöffnet werden"
+        },
+        {
+          "pattern": "voraussichtlich + 時間",
+          "zh": "預估時長",
+          "example": "voraussichtlich eine Stunde"
+        }
+      ],
+      "tips": [
+        "演習公告：時間＋逃生＋禁止＋集合點。",
+        "Treppenhaus＝樓梯間。"
+      ],
+      "focus": [
+        "職場",
+        "安全"
+      ]
+    },
+    {
+      "id": "b1-51",
+      "level": "B1",
+      "kind": "email",
+      "topic": "工會／工時",
+      "title": "Anfrage zur Arbeitszeiterfassung",
+      "titleZh": "工時紀錄詢問",
+      "text": "Betreff: Klärung der Zeiterfassung im Homeoffice\n\nSehr geehrte Frau Richter,\n\nseit der Einführung der digitalen Stempeluhr entstehen Unklarheiten, wann Pausenzeiten zu buchen sind.\nMehrere Kolleginnen berichten, dass kurze Unterbrechungen automatisch als Pause gewertet werden.\nKönnten Sie bitte erläutern, welche Regeln verbindlich gelten und wo Ausnahmen dokumentiert werden?\nEine kurze schriftliche Übersicht wäre für das Team sehr hilfreich.\n\nMit freundlichen Grüßen\nArmin Keller\nPersonalrat",
+      "textZh": "主旨：釐清在家宅辦的工時紀錄\n\nRichter 女士您好，\n\n自從導入數位打卡鐘後，何時應登記休息時間出現不清楚之處。\n多位同事反映，短暫中斷會被自動算作休息。\n能否請您說明哪些規則具拘束力、例外應如何記錄？\n一份簡短書面整理對團隊會很有幫助。\n\n此致問候\nArmin Keller\n員工代表會",
+      "notes": [
+        {
+          "span": "Zeiterfassung",
+          "zh": "工時紀錄"
+        },
+        {
+          "span": "Unklarheiten",
+          "zh": "不清楚之處"
+        },
+        {
+          "span": "verbindlich gelten",
+          "zh": "具拘束力地適用"
+        },
+        {
+          "span": "Ausnahmen dokumentiert",
+          "zh": "例外被記錄"
+        },
+        {
+          "span": "Personalrat",
+          "zh": "員工代表會"
+        },
+        {
+          "span": "wäre … hilfreich",
+          "zh": "會很有幫助",
+          "tip": "虛擬式客氣。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "seit der Einführung …",
+          "zh": "自實施以來",
+          "example": "Seit der Einführung der App …"
+        },
+        {
+          "pattern": "Könnten Sie bitte erläutern, …",
+          "zh": "正式請求說明",
+          "example": "Könnten Sie bitte bestätigen, …"
+        },
+        {
+          "pattern": "Eine … Übersicht wäre hilfreich",
+          "zh": "客氣建議",
+          "example": "Eine Checkliste wäre hilfreich."
+        }
+      ],
+      "tips": [
+        "職場正式信：問題現象→影響→具體請求。",
+        "verbindlich＝有拘束力。",
+        "Personalrat＝員工代表組織。"
+      ],
+      "focus": [
+        "職場",
+        "正式郵件",
+        "工時"
+      ]
+    },
+    {
+      "id": "b1-52",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "租戶大會",
+      "title": "Einladung zur Eigentümerversammlung",
+      "titleZh": "區權人大會邀請",
+      "text": "Einladung\nZur ordentlichen Eigentümerversammlung am 18. Juni, 19 Uhr, im Gemeinschaftsraum.\nTagesordnung: 1) Jahresabrechnung 2) Dachsanierung 3) Hausordnung zu Fahrrädern.\nVollmachten sind schriftlich bis 16. Juni beim Verwalter einzureichen.\nUnterlagen liegen ab 1. Juni im Hausflur zur Einsicht aus.\nEine Beschlussfähigkeit ist bei Anwesenheit von mindestens 50 Prozent der Anteile gegeben.",
+      "textZh": "邀請\n例行區權人大會：6 月 18 日 19 點，交誼廳。\n議程：1) 年度結算 2) 屋頂整修 3) 腳踏車相關住戶公約。\n委託書須於 6 月 16 日前書面提交物業管理人。\n資料自 6 月 1 日起置於門廳供閱。\n出席份額至少達 50% 始具決議能力。",
+      "notes": [
+        {
+          "span": "Eigentümerversammlung",
+          "zh": "區權人大會"
+        },
+        {
+          "span": "Tagesordnung",
+          "zh": "議程"
+        },
+        {
+          "span": "Vollmachten",
+          "zh": "委託書／授權"
+        },
+        {
+          "span": "einzureichen",
+          "zh": "須提交",
+          "tip": "zu 不定式義務。"
+        },
+        {
+          "span": "Beschlussfähigkeit",
+          "zh": "決議能力"
+        },
+        {
+          "span": "Anteile",
+          "zh": "（所有權）份額"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "sind … einzureichen",
+          "zh": "須提交",
+          "example": "sind schriftlich zu bestätigen"
+        },
+        {
+          "pattern": "liegen … aus",
+          "zh": "陳列供閱",
+          "example": "Die Liste liegt im Büro aus."
+        },
+        {
+          "pattern": "bei Anwesenheit von …",
+          "zh": "出席條件",
+          "example": "bei Anwesenheit der Hälfte"
+        }
+      ],
+      "tips": [
+        "住戶公告：時間地點→議程→文件→法定門檻。",
+        "einzureichen＝有義務提交。"
+      ],
+      "focus": [
+        "住房",
+        "法規",
+        "公告"
+      ]
+    },
+    {
+      "id": "b1-53",
+      "level": "B1",
+      "kind": "story",
+      "topic": "遠距會議文化",
+      "title": "Kameras an oder aus?",
+      "titleZh": "鏡頭開還是關？",
+      "text": "In vielen Teams ist unklar, ob man in Online-Meetings die Kamera einschalten sollte.\nManche argumentieren, sichtbare Gesichter fördern Aufmerksamkeit und Vertrauen.\nAndere betonen, dass ständige Sichtbarkeit ermüdend wirkt und Privatsphäre verletzt.\nEine pragmatische Lösung könnte sein, Kameras bei Entscheidungsrunden ein-, bei reinen Info-Calls auszuschalten.\nEntscheidend ist, dass die Regel gemeinsam vereinbart und nicht stillschweigend erwartet wird.",
+      "textZh": "許多團隊不清楚線上會議是否該開鏡頭。\n有人主張看得見臉有助專注與信任。\n也有人強調持續被看見令人疲乏，也侵擾隱私。\n務實做法或許是：決策會議開鏡頭，純資訊會議可關。\n關鍵在於規則要共同約定，而非默默期待。",
+      "notes": [
+        {
+          "span": "einschalten",
+          "zh": "開啟"
+        },
+        {
+          "span": "fördern",
+          "zh": "促進"
+        },
+        {
+          "span": "ermüdend wirkt",
+          "zh": "產生令人疲乏的效果"
+        },
+        {
+          "span": "Privatsphäre",
+          "zh": "隱私"
+        },
+        {
+          "span": "stillschweigend",
+          "zh": "默默地／心照不宣地"
+        },
+        {
+          "span": "vereinbart",
+          "zh": "約定"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Manche … Andere …",
+          "zh": "對立觀點",
+          "example": "Manche loben es. Andere kritisieren es."
+        },
+        {
+          "pattern": "Eine pragmatische Lösung könnte sein, …",
+          "zh": "提出折衷",
+          "example": "Eine Lösung könnte sein, früher zu starten."
+        },
+        {
+          "pattern": "nicht stillschweigend erwartet wird",
+          "zh": "反對默認期待",
+          "example": "sollte klar kommuniziert werden"
+        }
+      ],
+      "tips": [
+        "論述短文：正反→折衷→結論條件。",
+        "stillschweigend＝未明說。"
+      ],
+      "focus": [
+        "職場",
+        "數位",
+        "論述"
+      ]
+    },
+    {
+      "id": "b1-54",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "醫療第二意見",
+      "title": "Zweitmeinung einholen",
+      "titleZh": "尋求第二意見",
+      "text": "Arzt: Die Operation wäre möglich, ist aber nicht dringend.\nPatientin: Darf ich eine Zweitmeinung einholen, bevor ich entscheide?\nArzt: Selbstverständlich. Ich stelle Ihnen gerne die Befunde zusammen.\nPatientin: Wird das von der Krankenkasse übernommen?\nArzt: In vielen Fällen ja; klären Sie das bitte vorab telefonisch.\nPatientin: Gut. Ich melde mich in zehn Tagen mit meiner Entscheidung.",
+      "textZh": "醫師：手術可行，但並不急迫。\n病患：做決定前我可以尋求第二意見嗎？\n醫師：當然。我很樂意幫您整理檢查結果。\n病患：健保會給付嗎？\n醫師：很多情況會；請事先電話確認。\n病患：好。十天內回覆我的決定。",
+      "notes": [
+        {
+          "span": "Zweitmeinung",
+          "zh": "第二意見"
+        },
+        {
+          "span": "einholen",
+          "zh": "取得／徵詢"
+        },
+        {
+          "span": "Befunde",
+          "zh": "檢查結果／病歷發現"
+        },
+        {
+          "span": "übernommen",
+          "zh": "被承擔／給付",
+          "tip": "übernehmen。"
+        },
+        {
+          "span": "vorab",
+          "zh": "事先"
+        },
+        {
+          "span": "Selbstverständlich",
+          "zh": "當然"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Darf ich …, bevor ich …?",
+          "zh": "決策前請求",
+          "example": "Darf ich nachfragen, bevor ich unterschreibe?"
+        },
+        {
+          "pattern": "Wird das von … übernommen?",
+          "zh": "問費用承擔",
+          "example": "Wird das von der Firma übernommen?"
+        },
+        {
+          "pattern": "vorab + 副詞／動詞",
+          "zh": "事先",
+          "example": "vorab klären"
+        }
+      ],
+      "tips": [
+        "醫療對話：選項→權利→文件→費用→期限。",
+        "Zweitmeinung 在德檢健康主題常見。"
+      ],
+      "focus": [
+        "醫療",
+        "決策",
+        "對話"
+      ]
+    },
+    {
+      "id": "b1-55",
+      "level": "B1",
+      "kind": "email",
+      "topic": "大學換課",
+      "title": "Antrag auf Modulwechsel",
+      "titleZh": "申請更換模組課程",
+      "text": "Betreff: Antrag auf Wechsel des Wahlmoduls\n\nSehr geehrte Prüfungsausschussmitglieder,\n\nhiermit beantrage ich den Wechsel vom Modul „Statistik I“ zum Modul „Qualitative Methoden“.\nGrund ist eine Überschneidung mit meinem Pflichtpraktikum an zwei Wochentagen.\nBeide Dozierenden haben dem Wechsel bereits per E-Mail zugestimmt; die Nachrichten sind angehängt.\nIch bitte um zeitnahe Entscheidung, da die Anmeldefrist in zehn Tagen endet.\n\nMit freundlichen Grüßen\nNadine Vogt\nMatrikelnummer 308821",
+      "textZh": "主旨：申請更換選修模組\n\n考試委員會委員您好，\n\n謹此申請由「統計 I」改修「質性方法」。\n原因是與必修實習在兩個平日撞課。\n兩位授課教師已透過郵件同意；信件附上。\n因報名十天後截止，懇請儘速裁定。\n\n此致問候\nNadine Vogt\n學號 308821",
+      "notes": [
+        {
+          "span": "hiermit beantrage ich",
+          "zh": "謹此申請"
+        },
+        {
+          "span": "Wahlmodul",
+          "zh": "選修模組"
+        },
+        {
+          "span": "Überschneidung",
+          "zh": "時間衝突"
+        },
+        {
+          "span": "zugestimmt",
+          "zh": "同意"
+        },
+        {
+          "span": "zeitnahe Entscheidung",
+          "zh": "儘速決定"
+        },
+        {
+          "span": "Matrikelnummer",
+          "zh": "學號"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "hiermit beantrage ich …",
+          "zh": "正式申請開頭",
+          "example": "Hiermit beantrage ich Urlaub."
+        },
+        {
+          "pattern": "Grund ist …",
+          "zh": "陳述理由",
+          "example": "Grund ist eine Erkrankung."
+        },
+        {
+          "pattern": "Ich bitte um zeitnahe …",
+          "zh": "懇請盡快",
+          "example": "Ich bitte um zeitnahe Rückmeldung."
+        }
+      ],
+      "tips": [
+        "大學申請：請求＋理由＋佐證＋時限。",
+        "hiermit 是公文套語。"
+      ],
+      "focus": [
+        "大學",
+        "行政",
+        "正式郵件"
+      ]
+    },
+    {
+      "id": "b1-56",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "資料保護更新",
+      "title": "Aktualisierte Datenschutzhinweise",
+      "titleZh": "更新個資告知",
+      "text": "Hinweis zur Datenverarbeitung\nAb dem 1. Juli werden Bestelldaten länger gespeichert, um Garantieansprüche nachvollziehen zu können.\nEine Weitergabe an Partner erfolgt nur, soweit dies zur Vertragserfüllung erforderlich ist.\nSie können der Nutzung für Werbung jederzeit widersprechen, ohne dass die Bestellung davon betroffen ist.\nDetails und Kontaktdaten der Datenschutzbeauftragten finden Sie unter /datenschutz.\nDiese Hinweise ersetzen die Fassung vom März.",
+      "textZh": "資料處理提示\n自 7 月 1 日起，訂單資料將保存更久，以便追蹤保固請求。\n僅在履行契約所需範圍內才會提供給合作夥伴。\n您可隨時拒絕用於行銷，且不影響訂單本身。\n細節與個資保護負責人聯絡方式見 /datenschutz。\n本提示取代三月版本。",
+      "notes": [
+        {
+          "span": "Datenverarbeitung",
+          "zh": "資料處理"
+        },
+        {
+          "span": "nachvollziehen",
+          "zh": "追溯／理解過程"
+        },
+        {
+          "span": "soweit dies … erforderlich ist",
+          "zh": "僅在必要範圍"
+        },
+        {
+          "span": "widersprechen",
+          "zh": "提出異議／拒絕"
+        },
+        {
+          "span": "davon betroffen",
+          "zh": "因此受影響"
+        },
+        {
+          "span": "ersetzen",
+          "zh": "取代"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "werden … gespeichert, um … zu können",
+          "zh": "目的說明",
+          "example": "werden archiviert, um Prüfungen zu ermöglichen"
+        },
+        {
+          "pattern": "soweit dies erforderlich ist",
+          "zh": "必要性限制",
+          "example": "soweit gesetzlich vorgeschrieben"
+        },
+        {
+          "pattern": "ohne dass …",
+          "zh": "不導致……",
+          "example": "ohne dass Mehrkosten entstehen"
+        }
+      ],
+      "tips": [
+        "個資公告：變更→限制→異議權→取代舊版。",
+        "widersprechen＝行使拒絕權。"
+      ],
+      "focus": [
+        "法律",
+        "個資",
+        "公告"
+      ]
+    },
+    {
+      "id": "b1-57",
+      "level": "B1",
+      "kind": "story",
+      "topic": "共享經濟批判",
+      "title": "Teilen ist nicht immer günstig",
+      "titleZh": "共享不一定比較便宜",
+      "text": "Carsharing und Roller gelten als flexibel und umweltfreundlich.\nIn der Praxis entstehen jedoch oft Zusatzkosten durch längere Buchungen oder beschädigte Fahrzeuge.\nWer selten fährt, spart möglicherweise; wer täglich pendelt, rechnet besser mit einem eigenen Rad oder Jobticket.\nZudem verlagert sich Verantwortung: Nutzerinnen müssen Schäden melden und Termine einhalten.\nNachhaltigkeit hängt daher weniger vom Label „Sharing“ ab als von Nutzungshäufigkeit und Alternativen vor Ort.",
+      "textZh": "共乘汽車與滑板車被視為彈性又環保。\n實務上卻常因較長租用或車輛損壞產生額外費用。\n很少騎的人或可省錢；每天通勤者精算後可能自有單車或通勤票更划算。\n此外責任轉移：使用者必須通報損壞並遵守時段。\n永續因此較少取決於「共享」標籤，而取決於使用頻率與在地替代方案。",
+      "notes": [
+        {
+          "span": "Carsharing",
+          "zh": "共享汽車"
+        },
+        {
+          "span": "Zusatzkosten",
+          "zh": "額外費用"
+        },
+        {
+          "span": "pendelt",
+          "zh": "通勤"
+        },
+        {
+          "span": "verlagert sich",
+          "zh": "轉移"
+        },
+        {
+          "span": "hängt … ab",
+          "zh": "取決於",
+          "tip": "abhängen von。"
+        },
+        {
+          "span": "Nutzungshäufigkeit",
+          "zh": "使用頻率"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "gelten als …",
+          "zh": "被視為……",
+          "example": "gelten als zuverlässig"
+        },
+        {
+          "pattern": "Wer A, …; wer B, …",
+          "zh": "依對象分論",
+          "example": "Wer spät kommt, wartet; wer früh kommt, wählt."
+        },
+        {
+          "pattern": "hängt weniger von A ab als von B",
+          "zh": "比較真正因素",
+          "example": "hängt weniger vom Preis ab als von der Qualität"
+        }
+      ],
+      "tips": [
+        "批判短論：流行說法→實務成本→責任→結論。",
+        "abhängen von＝取決於。"
+      ],
+      "focus": [
+        "消費",
+        "環境",
+        "論述"
+      ]
+    },
+    {
+      "id": "b1-58",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "職場回饋面談",
+      "title": "Feedbackgespräch",
+      "titleZh": "回饋面談",
+      "text": "Führungskraft: Insgesamt arbeiten Sie zuverlässig. Ein Punkt betrifft die Dokumentation.\nMitarbeiter: Meinen Sie die Wochenberichte?\nFührungskraft: Ja. Sie kommen oft erst nach Nachfrage. Das erschwert die Übergabe im Team.\nMitarbeiter: Verstehe. Ich kann sie künftig freitags bis 15 Uhr einstellen.\nFührungskraft: Das wäre hilfreich. Dann prüfen wir den Punkt in vier Wochen erneut.\nMitarbeiter: Einverstanden. Danke für das klare Feedback.",
+      "textZh": "主管：整體來說您工作可靠。有一點關於文件紀錄。\n員工：您是指週報嗎？\n主管：對。常要催才交。這讓團隊交接變困難。\n員工：明白。我以後可以週五 15 點前上傳。\n主管：那會很有幫助。四週後我們再檢視這點。\n員工：同意。謝謝清楚的回饋。",
+      "notes": [
+        {
+          "span": "zuverlässig",
+          "zh": "可靠的"
+        },
+        {
+          "span": "betrifft",
+          "zh": "涉及"
+        },
+        {
+          "span": "nach Nachfrage",
+          "zh": "經催問之後"
+        },
+        {
+          "span": "erschwert",
+          "zh": "使變困難"
+        },
+        {
+          "span": "einstellen",
+          "zh": "上傳／設置",
+          "tip": "此處＝放到系統。"
+        },
+        {
+          "span": "erneut",
+          "zh": "再次"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ein Punkt betrifft …",
+          "zh": "回饋聚焦",
+          "example": "Ein Punkt betrifft die Pünktlichkeit."
+        },
+        {
+          "pattern": "Das erschwert …",
+          "zh": "說明影響",
+          "example": "Das erschwert die Planung."
+        },
+        {
+          "pattern": "Dann prüfen wir … erneut",
+          "zh": "約定追蹤",
+          "example": "Dann sprechen wir in einem Monat erneut."
+        }
+      ],
+      "tips": [
+        "回饋對話：肯定→問題→影響→具體承諾→追蹤。",
+        "nach Nachfrage＝被催之後。"
+      ],
+      "focus": [
+        "職場",
+        "溝通",
+        "對話"
+      ]
+    },
+    {
+      "id": "b1-59",
+      "level": "B1",
+      "kind": "email",
+      "topic": "保險拒賠異議",
+      "title": "Widerspruch gegen Ablehnung",
+      "titleZh": "對拒賠提出異議",
+      "text": "Betreff: Widerspruch zu Schadennummer 55219\n\nSehr geehrte Damen und Herren,\n\nhiermit widerspreche ich der Ablehnung meines Antrags vom 2. April.\nIn Ihrem Schreiben fehlt die Begründung, warum der Wasserschaden als „grobe Fahrlässigkeit“ gewertet wird.\nLaut Hausratversicherungspolice sind Leitungswasserschäden grundsätzlich versichert.\nIch bitte um erneute Prüfung und Übersendung der internen Bewertungsgrundlage.\nFrist zur Stellungnahme: 14 Tage.\n\nMit freundlichen Grüßen\nHelena Krüger",
+      "textZh": "主旨：對理賠案 55219 提出異議\n\n敬啟者：\n\n謹此對貴公司 4 月 2 日拒賠提出異議。\n來函未說明為何將水損評為「重大過失」。\n依家庭財物保險條款，水管漏水損害原則上在保。\n請重新審查並寄送內部評定依據。\n請於 14 日內回覆。\n\n此致問候\nHelena Krüger",
+      "notes": [
+        {
+          "span": "widerspreche",
+          "zh": "提出異議",
+          "tip": "widersprechen。"
+        },
+        {
+          "span": "Ablehnung",
+          "zh": "拒絕／拒賠"
+        },
+        {
+          "span": "grobe Fahrlässigkeit",
+          "zh": "重大過失"
+        },
+        {
+          "span": "grundsätzlich versichert",
+          "zh": "原則上有承保"
+        },
+        {
+          "span": "erneute Prüfung",
+          "zh": "重新審查"
+        },
+        {
+          "span": "Stellungnahme",
+          "zh": "意見回覆"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "hiermit widerspreche ich …",
+          "zh": "正式異議",
+          "example": "Hiermit widerspreche ich dem Bescheid."
+        },
+        {
+          "pattern": "In Ihrem Schreiben fehlt …",
+          "zh": "指出缺漏",
+          "example": "In Ihrem Schreiben fehlt das Datum."
+        },
+        {
+          "pattern": "Ich bitte um erneute Prüfung",
+          "zh": "請求重審",
+          "example": "Ich bitte um erneute Bearbeitung."
+        }
+      ],
+      "tips": [
+        "異議信：案號→反駁理由→條款依據→期限。",
+        "Fahrlässigkeit＝過失。"
+      ],
+      "focus": [
+        "保險",
+        "法律",
+        "異議"
+      ]
+    },
+    {
+      "id": "b1-60",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "校園網路政策",
+      "title": "Nutzungsordnung WLAN",
+      "titleZh": "校園無線網路使用規範",
+      "text": "Nutzungsordnung für das Hochschul-WLAN\nDer Zugang ist ausschließlich Angehörigen der Hochschule gestattet.\nDas Weitergeben von Zugangsdaten an Dritte ist untersagt und kann zur Sperrung führen.\nIllegale Downloads sowie die Umgehung von Sicherheitssystemen sind verboten.\nBei Störungen melden Sie sich bitte beim IT-Helpdesk unter helpdesk@uni.example.\nMit der Anmeldung erkennen Sie diese Ordnung verbindlich an.",
+      "textZh": "大學無線網路使用規範\n僅校內成員可使用。\n禁止將帳密轉給第三人，否則可能遭停權。\n禁止非法下載及規避安全系統。\n故障請向 IT 服務台 helpdesk@uni.example 回報。\n登入即表示您具拘束力地接受本規範。",
+      "notes": [
+        {
+          "span": "ausschließlich",
+          "zh": "僅限"
+        },
+        {
+          "span": "Angehörigen",
+          "zh": "所屬成員"
+        },
+        {
+          "span": "untersagt",
+          "zh": "被禁止"
+        },
+        {
+          "span": "Umgehung",
+          "zh": "規避"
+        },
+        {
+          "span": "Sperrung",
+          "zh": "停權／封鎖"
+        },
+        {
+          "span": "verbindlich an",
+          "zh": "具拘束力地接受",
+          "tip": "anerkennen。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "ist … gestattet / untersagt",
+          "zh": "允許／禁止",
+          "example": "Rauchen ist untersagt."
+        },
+        {
+          "pattern": "kann zur … führen",
+          "zh": "可能導致……",
+          "example": "kann zur Kündigung führen"
+        },
+        {
+          "pattern": "Mit der Anmeldung erkennen Sie … an",
+          "zh": "默示同意條款",
+          "example": "Mit der Buchung erkennen Sie die AGB an."
+        }
+      ],
+      "tips": [
+        "規範公告：資格→禁止→後果→聯絡→同意。",
+        "untersagt＝正式「禁止」。"
+      ],
+      "focus": [
+        "大學",
+        "數位",
+        "規範"
+      ]
+    },
+    {
+      "id": "b1-61",
+      "level": "B1",
+      "kind": "story",
+      "topic": "城市交通收費",
+      "title": "City-Maut in der Diskussion",
+      "titleZh": "討論市區通行費",
+      "text": "Mehrere Städte prüfen eine City-Maut, um Staus und Abgase zu reduzieren.\nBefürworterinnen erwarten Einnahmen für den Ausbau von Bahnen und Radwegen.\nKritiker warnen vor sozialer Ungleichheit: Wer im Umland wohnt und aufs Auto angewiesen ist, zahlte stärker.\nOb die Maßnahme wirkt, hängt davon ab, ob gleichzeitig günstige Alternativen angeboten werden.\nOhne verlässlichen ÖPNV bleibt eine Maut vor allem ein Preissignal mit begrenzter Lenkungswirkung.",
+      "textZh": "多個城市評估徵收市區通行費，以減少塞車與廢氣。\n支持者期待收入用於擴建軌道與單車道。\n批評者警告社會不均：住郊區又必須開車者負擔會更重。\n措施能否奏效，取決於是否同時提供平價替代方案。\n若沒有可靠大眾運輸，通行費多半只是價格訊號，導引效果有限。",
+      "notes": [
+        {
+          "span": "City-Maut",
+          "zh": "市區通行費"
+        },
+        {
+          "span": "Befürworterinnen",
+          "zh": "女支持者們"
+        },
+        {
+          "span": "angewiesen ist",
+          "zh": "依賴於……"
+        },
+        {
+          "span": "hängt davon ab, ob",
+          "zh": "取決於是否"
+        },
+        {
+          "span": "ÖPNV",
+          "zh": "大眾運輸",
+          "tip": "öffentlicher Personennahverkehr。"
+        },
+        {
+          "span": "Lenkungswirkung",
+          "zh": "導引效果"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "prüfen …, um … zu …",
+          "zh": "評估目的",
+          "example": "prüfen Regeln, um Sicherheit zu erhöhen"
+        },
+        {
+          "pattern": "Wer …, zahlte / zahlt stärker",
+          "zh": "負擔分配",
+          "example": "Wer später bucht, zahlt mehr."
+        },
+        {
+          "pattern": "hängt davon ab, ob …",
+          "zh": "條件依賴",
+          "example": "hängt davon ab, ob Hilfe kommt"
+        }
+      ],
+      "tips": [
+        "政策短論：措施→正反→成功條件→限制。",
+        "angewiesen auf＝依賴。"
+      ],
+      "focus": [
+        "交通",
+        "社會",
+        "論述"
+      ]
+    },
+    {
+      "id": "b1-62",
+      "level": "B1",
+      "kind": "email",
+      "topic": "志工排班衝突",
+      "title": "Absage Schicht Ehrenamt",
+      "titleZh": "志工班次請假",
+      "text": "Betreff: Absage der Schicht am Samstag\n\nLiebe Koordination,\n\nleider muss ich meine Schicht am Samstag von 10–14 Uhr absagen, weil ein familiärer Notfall eingetreten ist.\nIch habe bereits zwei Teammitglieder gefragt; Frau Albers kann von 10–12 Uhr übernehmen.\nFür 12–14 Uhr suche ich noch eine Vertretung und melde mich bis Donnerstagabend.\nBitte bestätigen Sie kurz den Eingang dieser Nachricht.\n\nHerzliche Grüße\nTimo Brandt",
+      "textZh": "主旨：取消週六班次\n\n協調組您好，\n\n很遺憾必須取消週六 10–14 點班次，因家中突發狀況。\n我已詢問兩位隊員；Albers 女士可接手 10–12 點。\n12–14 點仍在找代理人，週四晚前回報。\n請簡短確認已收到此訊息。\n\n誠摯問候\nTimo Brandt",
+      "notes": [
+        {
+          "span": "Absage",
+          "zh": "取消／婉拒"
+        },
+        {
+          "span": "Schicht",
+          "zh": "班次"
+        },
+        {
+          "span": "eingetreten ist",
+          "zh": "已發生",
+          "tip": "eintreten。"
+        },
+        {
+          "span": "übernehmen",
+          "zh": "接手"
+        },
+        {
+          "span": "Vertretung",
+          "zh": "代理／代班"
+        },
+        {
+          "span": "Eingang",
+          "zh": "收件／送達"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "leider muss ich … absagen, weil …",
+          "zh": "取消並說明",
+          "example": "Leider muss ich absagen, weil ich krank bin."
+        },
+        {
+          "pattern": "kann … übernehmen",
+          "zh": "找人接手",
+          "example": "Kannst du den Termin übernehmen?"
+        },
+        {
+          "pattern": "Bitte bestätigen Sie den Eingang",
+          "zh": "請確認收悉",
+          "example": "Bitte bestätigen Sie den Erhalt."
+        }
+      ],
+      "tips": [
+        "責任溝通：取消＋已做補救＋剩餘缺口＋確認。",
+        "Notfall＝緊急狀況。"
+      ],
+      "focus": [
+        "志工",
+        "組織",
+        "郵件"
+      ]
+    },
+    {
+      "id": "b1-63",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "噪音整治期",
+      "title": "Lärmsanierung Straßenbahn",
+      "titleZh": "路面電車噪音整治",
+      "text": "Bekanntmachung des Verkehrsunternehmens\nVom 5. bis 25. September werden Gleise in der Nordstraße saniert.\nNachtarbeiten sind an Werktagen zwischen 22 und 5 Uhr möglich.\nAnwohnerinnen erhalten bei Bedarf Gehörschutz über das Bürgerbüro.\nErsatzverkehr mit Bussen ist ausgeschildert; Fahrplanabweichungen sind unter /verkehr abrufbar.\nSchadensersatzansprüche wegen Erschütterungen sind innerhalb von vier Wochen zu melden.",
+      "textZh": "交通公司公告\n9 月 5 至 25 日將整修北街軌道。\n平日 22 至 5 點可能夜間施工。\n住戶如有需要可向市民辦公室領取耳塞／護耳。\n替代公車已設標示；班表異動見 /verkehr。\n因震動提出之損害賠償須於四週內通報。",
+      "notes": [
+        {
+          "span": "saniert",
+          "zh": "整修",
+          "tip": "sanieren。"
+        },
+        {
+          "span": "Nachtarbeiten",
+          "zh": "夜間施工"
+        },
+        {
+          "span": "Anwohnerinnen",
+          "zh": "女住戶們／住戶"
+        },
+        {
+          "span": "Ersatzverkehr",
+          "zh": "替代交通"
+        },
+        {
+          "span": "ausgeschildert",
+          "zh": "已設標示"
+        },
+        {
+          "span": "Schadensersatzansprüche",
+          "zh": "損害賠償請求"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "sind … möglich",
+          "zh": "可能發生",
+          "example": "Verzögerungen sind möglich."
+        },
+        {
+          "pattern": "ist … abrufbar",
+          "zh": "可查閱",
+          "example": "Der Plan ist online abrufbar."
+        },
+        {
+          "pattern": "sind innerhalb von … zu melden",
+          "zh": "期限義務",
+          "example": "sind innerhalb von 14 Tagen zu melden"
+        }
+      ],
+      "tips": [
+        "工程公告：時段→夜間→補助→替代→求償期限。",
+        "sanieren＝整修更新。"
+      ],
+      "focus": [
+        "交通",
+        "市政",
+        "公告"
+      ]
+    },
+    {
+      "id": "b1-64",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "租約終止諮詢",
+      "title": "Kündigung Mietvertrag",
+      "titleZh": "租約終止諮詢",
+      "text": "Beraterin: Wann möchten Sie ausziehen?\nMieter: Zum 31. Oktober. Reicht die Kündigungsfrist von drei Monaten?\nBeraterin: Ja, wenn Sie heute noch schriftlich kündigen und der Vermieter das Schreiben erhält.\nMieter: Muss ich Schönheitsreparaturen machen?\nBeraterin: Das hängt vom Vertrag ab. Bringen Sie bitte die Klauseln mit.\nMieter: Gut. Ich schicke Ihnen morgen eine Kopie zur Prüfung.",
+      "textZh": "顧問：您想何時遷出？\n房客：10 月 31 日。三個月解約預告期夠嗎？\n顧問：可以，若您今天仍書面解約且房東收到信件。\n房客：我必須做修繕粉刷嗎？\n顧問：取決於合約。請把相關條款帶來。\n房客：好。我明天寄副本請您審閱。",
+      "notes": [
+        {
+          "span": "ausziehen",
+          "zh": "遷出"
+        },
+        {
+          "span": "Kündigungsfrist",
+          "zh": "解約預告期"
+        },
+        {
+          "span": "schriftlich kündigen",
+          "zh": "書面解約"
+        },
+        {
+          "span": "Schönheitsreparaturen",
+          "zh": "修繕粉刷義務"
+        },
+        {
+          "span": "Klauseln",
+          "zh": "條款"
+        },
+        {
+          "span": "zur Prüfung",
+          "zh": "以供審閱"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Reicht die Frist von …?",
+          "zh": "確認期限是否足夠",
+          "example": "Reicht die Frist von zwei Wochen?"
+        },
+        {
+          "pattern": "Das hängt vom Vertrag ab.",
+          "zh": "視合約而定",
+          "example": "Das hängt von der Regelung ab."
+        },
+        {
+          "pattern": "… zur Prüfung schicken",
+          "zh": "送審",
+          "example": "Ich schicke die Unterlagen zur Prüfung."
+        }
+      ],
+      "tips": [
+        "諮詢對話：目標日→期限→義務→下一步。",
+        "Schönheitsreparaturen 是租屋常考詞。"
+      ],
+      "focus": [
+        "租屋",
+        "法律",
+        "對話"
+      ]
+    },
+    {
+      "id": "b1-65",
+      "level": "B1",
+      "kind": "story",
+      "topic": "演算法招聘",
+      "title": "Automatisierte Bewerbungsfilter",
+      "titleZh": "自動化履歷篩選",
+      "text": "Viele Unternehmen filtern Bewerbungen zuerst per Software.\nDas spart Zeit, kann aber auch passende Personen aussortieren, wenn Lebensläufe ungewöhnlich formuliert sind.\nTransparenz wäre wichtig: Bewerberinnen sollten erfahren, welche Kriterien zählen und ob Menschen später nachprüfen.\nGewerkschaften fordern zudem, dass Diskriminierungsrisiken regelmäßig getestet werden.\nTechnik ersetzt keine Verantwortung; sie verschiebt nur, wann und von wem entschieden wird.",
+      "textZh": "許多公司先用軟體篩履歷。\n這能省時間，但若履歷寫法不尋常，也可能刷掉合適的人。\n透明度很重要：應聘者應知道哪些標準算數、之後是否有人覆核。\n工會亦要求定期檢測歧視風險。\n技術不能取代責任；它只是改變決策的時機與決策者。",
+      "notes": [
+        {
+          "span": "filtern",
+          "zh": "篩選"
+        },
+        {
+          "span": "aussortieren",
+          "zh": "刷掉／剔除"
+        },
+        {
+          "span": "ungewöhnlich formuliert",
+          "zh": "表述不尋常"
+        },
+        {
+          "span": "nachprüfen",
+          "zh": "覆核"
+        },
+        {
+          "span": "Diskriminierungsrisiken",
+          "zh": "歧視風險"
+        },
+        {
+          "span": "verschiebt",
+          "zh": "推移／轉移"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "kann … aussortieren, wenn …",
+          "zh": "條件風險",
+          "example": "kann Fehler erzeugen, wenn Daten fehlen"
+        },
+        {
+          "pattern": "sollten erfahren, welche …",
+          "zh": "資訊權",
+          "example": "sollten erfahren, warum …"
+        },
+        {
+          "pattern": "ersetzt keine …; sie verschiebt nur …",
+          "zh": "技術／責任辯證",
+          "example": "ersetzt keine Kontrolle; sie verändert sie"
+        }
+      ],
+      "tips": [
+        "科技倫理：效率→誤殺風險→透明→責任歸屬。",
+        "aussortieren＝篩除。"
+      ],
+      "focus": [
+        "科技",
+        "職場",
+        "倫理"
+      ]
+    },
+    {
+      "id": "b1-66",
+      "level": "B1",
+      "kind": "email",
+      "topic": "消費者保護",
+      "title": "Widerruf Onlinekauf",
+      "titleZh": "線上購物撤回",
+      "text": "Betreff: Widerruf der Bestellung 907733\n\nSehr geehrte Damen und Herren,\n\nhiermit widerrufe ich innerhalb der gesetzlichen Frist den Kauf des Kopfhörers vom 12. Mai.\nDas ungeöffnete Paket sende ich morgen mit dem Retourenschein zurück.\nBitte erstatten Sie den Kaufpreis auf das Konto der ursprünglichen Zahlung.\nEine Bestätigung des Widerrufs erwarte ich per E-Mail.\n\nMit freundlichen Grüßen\nJonas Lehmann",
+      "textZh": "主旨：撤銷訂單 907733\n\n敬啟者：\n\n謹此在法定期限內撤銷 5 月 12 日耳機購買。\n未拆封包裹明日將以退貨單寄回。\n請將款項退回原付款帳戶。\n請以電子郵件確認已受理撤銷。\n\n此致問候\nJonas Lehmann",
+      "notes": [
+        {
+          "span": "widerrufe",
+          "zh": "撤銷／撤回",
+          "tip": "widerrufen。"
+        },
+        {
+          "span": "gesetzlichen Frist",
+          "zh": "法定期限"
+        },
+        {
+          "span": "Retourenschein",
+          "zh": "退貨單"
+        },
+        {
+          "span": "erstatten",
+          "zh": "退款"
+        },
+        {
+          "span": "ursprünglichen Zahlung",
+          "zh": "原付款"
+        },
+        {
+          "span": "Bestätigung",
+          "zh": "確認"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "hiermit widerrufe ich …",
+          "zh": "撤回聲明",
+          "example": "Hiermit widerrufe ich den Vertrag."
+        },
+        {
+          "pattern": "innerhalb der Frist",
+          "zh": "在期限內",
+          "example": "innerhalb von 14 Tagen"
+        },
+        {
+          "pattern": "Bitte erstatten Sie …",
+          "zh": "請求退款",
+          "example": "Bitte erstatten Sie den Betrag."
+        }
+      ],
+      "tips": [
+        "消費者撤回：聲明＋退貨＋退款帳戶＋確認。",
+        "Widerruf＝法定撤回權。"
+      ],
+      "focus": [
+        "消費",
+        "法律",
+        "郵件"
+      ]
+    },
+    {
+      "id": "b1-67",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "疫苗接種門診",
+      "title": "Impfaktion im Stadtteil",
+      "titleZh": "社區接種活動",
+      "text": "Öffentliche Impfaktion\nAm Samstag, 9–15 Uhr, im Kulturzentrum Ost finden Impfungen ohne Termin statt.\nBitte Personalausweis und Impfpass mitbringen; wer keinen Pass hat, erhält eine Bescheinigung.\nFür Menschen mit eingeschränkter Mobilität gibt es einen barrierefreien Eingang an der Südseite.\nKinder unter zwölf Jahren nur in Begleitung einer erwachsenen Bezugsperson.\nAktuelle Wartezeiten werden vor Ort und auf der Website angezeigt.",
+      "textZh": "公共接種活動\n週六 9–15 點於東區文化中心提供免預約接種。\n請攜帶身分證與疫苗手冊；無手冊者可獲證明。\n行動不便者可走南側無障礙入口。\n未滿十二歲須由成年監護人陪同。\n目前等候時間現場與網站會公布。",
+      "notes": [
+        {
+          "span": "Impfaktion",
+          "zh": "接種活動"
+        },
+        {
+          "span": "ohne Termin",
+          "zh": "免預約"
+        },
+        {
+          "span": "Impfpass",
+          "zh": "疫苗手冊"
+        },
+        {
+          "span": "eingeschränkter Mobilität",
+          "zh": "行動受限"
+        },
+        {
+          "span": "barrierefreien",
+          "zh": "無障礙的"
+        },
+        {
+          "span": "Bezugsperson",
+          "zh": "監護／主要照顧者"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "finden … statt",
+          "zh": "舉行",
+          "example": "finden Beratungen statt"
+        },
+        {
+          "pattern": "wer keinen … hat, erhält …",
+          "zh": "條件補救",
+          "example": "Wer keine Karte hat, erhält ein Ersatzdokument."
+        },
+        {
+          "pattern": "nur in Begleitung …",
+          "zh": "陪同條件",
+          "example": "nur in Begleitung eines Erwachsenen"
+        }
+      ],
+      "tips": [
+        "公衛公告：時地→文件→無障礙→年齡規則。",
+        "Impfpass＝接種紀錄本。"
+      ],
+      "focus": [
+        "健康",
+        "公共服務",
+        "公告"
+      ]
+    },
+    {
+      "id": "b1-68",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "跨部門專案",
+      "title": "Kick-off Projektmeeting",
+      "titleZh": "專案啟動會議",
+      "text": "Projektleitung: Ziel ist, den Prototyp bis Ende August fertigzustellen.\nDesign: Dafür brauchen wir spätestens Mitte Juli finale Inhalte.\nTechnik: Wenn die Inhalte später kommen, verschiebt sich der Test.\nProjektleitung: Dann setzen wir einen verbindlichen Liefertermin und eine Eskalationsstufe.\nFinanzen: Bitte meldet Mehrbedarf an Budget vor dem 1. Juli.\nAlle: Einverstanden. Protokoll kommt heute Nachmittag.",
+      "textZh": "專案主管：目標是八月底完成原型。\n設計：因此我們最晚七月中需要最終內容。\n技術：若內容更晚到，測試就會延後。\n專案主管：那我們訂具拘束力的交付日與升級處理層級。\n財務：預算追加請於七月一日前提出。\n全體：同意。會議紀錄今天下午發送。",
+      "notes": [
+        {
+          "span": "fertigzustellen",
+          "zh": "完成",
+          "tip": "fertigstellen。"
+        },
+        {
+          "span": "spätestens",
+          "zh": "最晚"
+        },
+        {
+          "span": "verschiebt sich",
+          "zh": "延後"
+        },
+        {
+          "span": "verbindlichen Liefertermin",
+          "zh": "具拘束力的交付期限"
+        },
+        {
+          "span": "Eskalationsstufe",
+          "zh": "問題升級層級"
+        },
+        {
+          "span": "Mehrbedarf",
+          "zh": "額外需求"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ziel ist, … zu + Infinitiv",
+          "zh": "專案目標",
+          "example": "Ziel ist, Kosten zu senken."
+        },
+        {
+          "pattern": "Wenn …, verschiebt sich …",
+          "zh": "依賴風險",
+          "example": "Wenn Teile fehlen, verschiebt sich die Montage."
+        },
+        {
+          "pattern": "setzen wir einen verbindlichen …",
+          "zh": "訂定硬期限",
+          "example": "setzen wir eine Deadline"
+        }
+      ],
+      "tips": [
+        "會議對話：目標→依賴→風險→決策→紀錄。",
+        "Eskalation＝向上呈報。"
+      ],
+      "focus": [
+        "職場",
+        "專案",
+        "對話"
+      ]
+    },
+    {
+      "id": "b1-69",
+      "level": "B1",
+      "kind": "story",
+      "topic": "夜班托育爭議",
+      "title": "Kita-Öffnungszeiten und Schichtarbeit",
+      "titleZh": "托育時間與輪班",
+      "text": "Viele Eltern in Pflege und Logistik arbeiten zu Zeiten, in denen Kitas geschlossen sind.\nPrivate Betreuung ist teuer und nicht überall verfügbar.\nBetriebe fordern daher längere Kita-Öffnung, Kommunen verweisen auf fehlendes Personal.\nEine mögliche Zwischenlösung sind betriebliche Kinderzimmer mit klaren Qualitätsstandards.\nSolange Versorgungslücken bleiben, betrifft die Debatte nicht nur Familien, sondern auch Fachkräftemangel.",
+      "textZh": "許多護理與物流業父母的上班時間，托兒所已關閉。\n私人托育昂貴且非處處有。\n企業因此要求延長托育時間，地方政府則指人力不足。\n可能的過渡方案是符合明確品質標準的企業托育室。\n只要供給缺口仍在，這場辯論就不只關乎家庭，也關乎缺工。",
+      "notes": [
+        {
+          "span": "Kitas",
+          "zh": "托兒所",
+          "tip": "Kindertagesstätte。"
+        },
+        {
+          "span": "verfügbar",
+          "zh": "可取得的"
+        },
+        {
+          "span": "verweisen auf",
+          "zh": "指向／歸因於"
+        },
+        {
+          "span": "Zwischenlösung",
+          "zh": "過渡方案"
+        },
+        {
+          "span": "Versorgungslücken",
+          "zh": "供給缺口"
+        },
+        {
+          "span": "Fachkräftemangel",
+          "zh": "專業人力短缺"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "zu Zeiten, in denen …",
+          "zh": "關係時間",
+          "example": "zu Zeiten, in denen wenig Busse fahren"
+        },
+        {
+          "pattern": "verweisen auf …",
+          "zh": "把原因指向……",
+          "example": "verweisen auf fehlende Mittel"
+        },
+        {
+          "pattern": "Solange …, betrifft …",
+          "zh": "持續條件",
+          "example": "Solange Unsicherheit bleibt, betrifft es alle."
+        }
+      ],
+      "tips": [
+        "社會議題：問題→限制→各方立場→過渡→更大後果。",
+        "Fachkräftemangel 是報紙高頻詞。"
+      ],
+      "focus": [
+        "社會",
+        "家庭",
+        "勞動"
+      ]
+    },
+    {
+      "id": "b1-70",
+      "level": "B1",
+      "kind": "email",
+      "topic": "媒體更正請求",
+      "title": "Gegendarstellung an Redaktion",
+      "titleZh": "向編輯部請求更正說明",
+      "text": "Betreff: Gegendarstellung zum Artikel vom 4. Juni\n\nSehr geehrte Redaktion,\n\nin Ihrem Artikel wird behauptet, unser Verein habe Fördermittel zweckwidrig verwendet.\nDiese Darstellung ist unzutreffend; die Prüfung der Stadtverwaltung vom Mai hat keine Verstöße festgestellt.\nWir bitten um Veröffentlichung einer Gegendarstellung in vergleichbarer Länge und Platzierung.\nDen Prüfbericht senden wir Ihnen vertraulich zu.\nFür Rückfragen stehe ich telefonisch zur Verfügung.\n\nMit freundlichen Grüßen\nDr. Mira Soltani\nVorsitzende",
+      "textZh": "主旨：針對 6 月 4 日報導之更正說明\n\n編輯部您好，\n\n貴文聲稱本協會不當使用補助款。\n此說法不正確；市政府五月審查並未認定違規。\n請以相當篇幅與版位刊登更正說明。\n審查報告將保密寄上。\n如有疑問，我可電話說明。\n\n此致問候\nDr. Mira Soltani\n理事長",
+      "notes": [
+        {
+          "span": "Gegendarstellung",
+          "zh": "更正／相對陳述"
+        },
+        {
+          "span": "zweckwidrig",
+          "zh": "不符合用途地"
+        },
+        {
+          "span": "unzutreffend",
+          "zh": "不正確的"
+        },
+        {
+          "span": "Verstöße",
+          "zh": "違規"
+        },
+        {
+          "span": "vergleichbarer Länge",
+          "zh": "相當篇幅"
+        },
+        {
+          "span": "vertraulich",
+          "zh": "保密地"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "wird behauptet, …",
+          "zh": "指出對方主張",
+          "example": "wird behauptet, wir seien informiert worden"
+        },
+        {
+          "pattern": "Wir bitten um Veröffentlichung …",
+          "zh": "請求刊登",
+          "example": "Wir bitten um Berichtigung."
+        },
+        {
+          "pattern": "stehe … zur Verfügung",
+          "zh": "可提供協助",
+          "example": "Ich stehe für ein Interview zur Verfügung."
+        }
+      ],
+      "tips": [
+        "媒體交涉：指出錯誤→舉證→請求形式→附件。",
+        "Gegendarstellung 是新聞法用語。"
+      ],
+      "focus": [
+        "媒體",
+        "法律",
+        "正式郵件"
+      ]
+    },
+    {
+      "id": "b2-51",
+      "level": "B2",
+      "kind": "story",
+      "topic": "職場",
+      "title": "Grenzen im Homeoffice",
+      "titleZh": "在宅辦公的界線",
+      "text": "Homeoffice wird oft als Gewinn an Freiheit dargestellt. Gleichzeitig berichten Beschäftigte von längeren Arbeitstagen, weil die Grenze zwischen Beruf und Privatleben verschwimmt. Wer morgens schon Mails liest und abends noch „kurz“ antwortet, verlängert die Anwesenheit, ohne dass dies in Verträgen sichtbar wird.\n\nUnternehmen argumentieren mit Produktivität und gesparten Bürokosten. Betriebsräte hingegen fordern klare Erreichbarkeitsfenster und ein Recht auf Nicht-Erreichbarkeit. Ohne solche Regeln droht eine Kultur der ständigen Verfügbarkeit, die besonders Pflegeaufgaben zu Hause zusätzlich belastet.\n\nKritikerinnen wenden ein, starre Verbote passten nicht zu internationalen Teams. Dennoch lässt sich Mindestschutz formulieren: Kernarbeitszeiten, dokumentierte Mehrarbeit und freiwillige, aber echte Pausen. Technik allein löst das Problem nicht; nötig sind Vereinbarungen, die überprüft werden.\n\nInsofern ist hybrides Arbeiten weder automatisch modern noch automatisch entlastend. Es bleibt abzuwarten, inwiefern gesetzliche Leitplanken und betriebliche Praxis tatsächlich Erholung sichern. Wer Flexibilität will, muss zugleich Schutzmechanismen mitdenken.",
+      "textZh": "在宅辦公常被描繪成自由的收穫。同時員工反映工時變長，因為職業與私生活界線模糊。早上就讀郵件、晚上還「快速」回覆的人，延長了在場時間，卻未必寫進合約。\n\n企業以生產力與節省辦公成本辯護。員工代表則要求明確可聯繫時段與「有權不被聯繫」。若無此類規則，恐形成持續待命文化，尤其加重居家照顧負擔。\n\n批評者認為僵硬禁令不適合國際團隊。但仍可設定最低保護：核心工時、加班紀錄與真正自願的休息。單靠技術無法解決；需要可被檢查的約定。\n\n因此混合辦公既不自動現代，也不自動減壓。法規護欄與企業實務能否真正保障恢復，仍有待觀察。想要彈性，就必須同時思考保護機制。",
+      "notes": [
+        {
+          "span": "verschwimmt",
+          "zh": "變模糊"
+        },
+        {
+          "span": "Erreichbarkeitsfenster",
+          "zh": "可聯繫時段"
+        },
+        {
+          "span": "Nicht-Erreichbarkeit",
+          "zh": "不被聯繫／離線權"
+        },
+        {
+          "span": "wenden ein",
+          "zh": "提出反駁"
+        },
+        {
+          "span": "Leitplanken",
+          "zh": "護欄／基本框架"
+        },
+        {
+          "span": "Insofern",
+          "zh": "就這點而言"
+        },
+        {
+          "span": "inwiefern",
+          "zh": "在多大程度上"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "weder … noch …",
+          "zh": "雙重否定",
+          "example": "weder modern noch entlastend"
+        },
+        {
+          "pattern": "Kritikerinnen wenden ein, …",
+          "zh": "引入反論",
+          "example": "Kritiker wenden ein, die Kosten seien zu hoch."
+        },
+        {
+          "pattern": "Es bleibt abzuwarten, inwiefern …",
+          "zh": "開放結論",
+          "example": "Es bleibt abzuwarten, inwiefern die Reform wirkt."
+        }
+      ],
+      "tips": [
+        "德檢論述：現象→勞資立場→讓步反論→開放結論。",
+        "標出名詞化：Verfügbarkeit、Mehrarbeit、Leitplanken。",
+        "圈出 dennoch／insofern／inwiefern。"
+      ],
+      "focus": [
+        "職場",
+        "數位",
+        "論述",
+        "勞動"
+      ]
+    },
+    {
+      "id": "b2-52",
+      "level": "B2",
+      "kind": "email",
+      "topic": "教育",
+      "title": "Beschwerde über Prüfungsorganisation",
+      "titleZh": "對考試組織提出申訴",
+      "text": "Betreff: Formelle Beschwerde zur Klausurorganisation im Modul Schreiben\n\nSehr geehrte Mitglieder des Prüfungsausschusses,\n\nhiermit erhebe ich Beschwerde gegen die Organisation der Klausur vom 14. Mai. Mehrere Prüflinge, einschließlich meiner Person, erhielten die Aufgabenblätter mit zehnminütiger Verspätung, während die Bearbeitungszeit nicht entsprechend verlängert wurde. Dadurch entstand ein messbarer Nachteil gegenüber dem veröffentlichten Zeitfenster.\n\nDarüber hinaus fehlte eine barrierefreie Sitzplatzregelung für eine Kommilitonin mit attestierter Sehbehinderung, obwohl der Nachteilsausgleich rechtzeitig beantragt worden war. Die Aufsicht verwies lediglich auf „organisatorische Engpässe“, ohne Protokollierung.\n\nIch beantrage daher: (1) eine neutrale Untersuchung des Ablaufs, (2) die Option einer Nachklausur unter fairen Bedingungen bzw. eine anteilige Bewertungskorrektur sowie (3) eine schriftliche Stellungnahme binnen drei Wochen. Als Belege füge ich Zeitstempel der digitalen Einlassliste sowie zwei eidesstattliche Versicherungen von Mitprüflingen bei.\n\nMir ist bewusst, dass Fehler vorkommen können; gerade deshalb erwarte ich eine transparente Aufarbeitung statt informeller Zusagen. Für Rückfragen stehe ich gerne zur Verfügung.\n\nMit freundlichen Grüßen\nLeonie Hartmann\nMatrikelnummer 219004",
+      "textZh": "主旨：對寫作模組考試組織提出正式申訴\n\n考試委員會委員您好，\n\n謹此對 5 月 14 日考試組織提出申訴。含本人在內多名考生晚十分鐘才拿到題本，但作答時間未相對延長，相對已公布時段形成可測量的不利益。\n\n此外，一位具證明之視力障礙同學雖已及時申請補償措施，現場卻無無障礙座位安排。監考僅稱「組織瓶頸」，未做紀錄。\n\n因此請求：(1) 中立調查流程，(2) 在公平條件下補考或按比例調整評分，(3) 三週內書面回覆。附件為數位入場時間戳與兩份同學切結書。\n\n我理解疏失可能發生；正因如此更期待透明處理，而非口頭承諾。如有疑問，樂意說明。\n\n此致問候\nLeonie Hartmann\n學號 219004",
+      "notes": [
+        {
+          "span": "hiermit erhebe ich Beschwerde",
+          "zh": "謹此提出申訴"
+        },
+        {
+          "span": "messbarer Nachteil",
+          "zh": "可測量的不利益"
+        },
+        {
+          "span": "Nachteilsausgleich",
+          "zh": "考試補償措施"
+        },
+        {
+          "span": "eidesstattliche Versicherungen",
+          "zh": "切結書／宣誓證明"
+        },
+        {
+          "span": "Aufarbeitung",
+          "zh": "徹底釐清／檢討"
+        },
+        {
+          "span": "binnen drei Wochen",
+          "zh": "三週內"
+        },
+        {
+          "span": "anteiliger",
+          "zh": "按比例的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "hiermit erhebe ich Beschwerde gegen …",
+          "zh": "正式申訴套語",
+          "example": "hiermit erhebe ich Einspruch gegen …"
+        },
+        {
+          "pattern": "obwohl … worden war",
+          "zh": "過去完成被動讓步",
+          "example": "obwohl der Antrag gestellt worden war"
+        },
+        {
+          "pattern": "Ich beantrage daher: (1) … (2) …",
+          "zh": "條列請求",
+          "example": "Ich beantrage daher: Akteneinsicht und Fristverlängerung."
+        }
+      ],
+      "tips": [
+        "正式申訴信：事實→程序瑕疵→具體請求→證據。",
+        "注意副句：während／obwohl／ohne zu。",
+        "德檢郵件：語氣堅定但保持禮貌公式。"
+      ],
+      "focus": [
+        "教育",
+        "行政",
+        "正式郵件",
+        "申訴"
+      ]
+    },
+    {
+      "id": "b2-53",
+      "level": "B2",
+      "kind": "notice",
+      "topic": "環境",
+      "title": "Konsultation zur Verkehrswende",
+      "titleZh": "交通轉型公聽",
+      "text": "Öffentliche Konsultation – Entwurf „Mobilität 2030“\nDie Stadtverwaltung legt hiermit den Entwurf zur Verkehrswende zur Stellungnahme vor. Vorgesehen sind eine Ausweitung der Busspuren, Tempo 30 in Wohngebieten sowie gestaffelte Parkgebühren nach Fahrzeuggröße. Ziel ist eine Reduktion der Stickoxidwerte und eine fairere Verteilung des öffentlichen Raums.\n\nEinwände und Alternativvorschläge können bis zum 30. September schriftlich oder über das Portal /mobilitaet eingereicht werden. Anonymisierte Beiträge werden veröffentlicht; personenbezogene Daten nur verarbeitet, soweit für Rückfragen erforderlich. Eine Bürgerversammlung findet am 12. September, 18 Uhr, im Rathaussaal statt; Gebärdensprachdolmetschung ist angemeldet.\n\nDie Verwaltung weist darauf hin, dass nicht alle Wünsche umsetzbar sind, sofern Haushaltsmittel oder rechtliche Vorgaben entgegenstehen. Dennoch soll transparent dargelegt werden, welche Argumente in die Beschlussvorlage einfließen. Nach Auswertung folgt eine Synopse der Stellungnahmen.\n\nWeitere Unterlagen: Wirkungsabschätzung, Lärmkartierung und Sozialverträglichkeitsprüfung liegen in den Bürgerämtern aus. Bei Fragen wenden Sie sich an mobilitaet@stadt.example.",
+      "textZh": "公開諮詢－《移動 2030》草案\n市政府特此提出交通轉型草案徵求意見。計畫包括擴大公車專用道、住宅區時速 30，以及依車型分級停車費。目標是降低氮氧化物並更公平分配公共空間。\n\n異議與替代方案可於 9 月 30 日前書面或透過 /mobilitaet 提交。匿名化意見將公開；個資僅在回覆所需範圍處理。公聽會訂於 9 月 12 日 18 點市政廳大禮堂，已安排手語翻譯。\n\n市府提醒：若預算或法規限制，並非所有願望都能實現。但仍應透明說明哪些論點納入決議提案。彙整後將公布意見對照摘要。\n\n其他文件：影響評估、噪音地圖與社會可接受性評估置於市民辦公室供閱。問題請洽 mobilitaet@stadt.example。",
+      "notes": [
+        {
+          "span": "Konsultation",
+          "zh": "諮詢／公聽程序"
+        },
+        {
+          "span": "gestaffelte Parkgebühren",
+          "zh": "分級停車費"
+        },
+        {
+          "span": "Stickoxidwerte",
+          "zh": "氮氧化物數值"
+        },
+        {
+          "span": "sofern … entgegenstehen",
+          "zh": "若……相牴觸"
+        },
+        {
+          "span": "Beschlussvorlage",
+          "zh": "決議提案"
+        },
+        {
+          "span": "Synopse",
+          "zh": "對照摘要"
+        },
+        {
+          "span": "Sozialverträglichkeitsprüfung",
+          "zh": "社會可接受性評估"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "zur Stellungnahme vorlegen",
+          "zh": "提出以供表態",
+          "example": "den Entwurf zur Stellungnahme vorlegen"
+        },
+        {
+          "pattern": "soweit für … erforderlich",
+          "zh": "必要性限制",
+          "example": "soweit für die Bearbeitung erforderlich"
+        },
+        {
+          "pattern": "sofern … entgegenstehen",
+          "zh": "法律／預算限制句",
+          "example": "sofern Mittel entgegenstehen"
+        }
+      ],
+      "tips": [
+        "市政公告：措施→參與管道→限制誠實說明→文件。",
+        "找出條件句 sofern／soweit。",
+        "注意行政名詞化堆疊。"
+      ],
+      "focus": [
+        "環境",
+        "市政",
+        "公告",
+        "參與"
+      ]
+    },
+    {
+      "id": "b2-54",
+      "level": "B2",
+      "kind": "dialogue",
+      "topic": "媒體",
+      "title": "Interview: Verantwortung von Plattformen",
+      "titleZh": "訪談：平台責任",
+      "text": "Moderatorin: Frau Dr. Keller, sollen Plattformen stärker für Inhalte haften?\nKeller: Haftung darf nicht bedeuten, dass jedes Risiko auf Nutzerinnen abgewälzt wird. Wer Geschäftsmodelle auf Reichweite aufbaut, muss Moderationspflichten ernst nehmen.\nModeratorin: Kritiker fürchten Zensur.\nKeller: Es geht nicht um Meinungsverbote, sondern um Kennzeichnung, Transparenz und nachvollziehbare Verfahren. Wer gelöscht wird, braucht eine Begründung und eine Beschwerdemöglichkeit.\nModeratorin: Reicht Freiwilligkeit?\nKeller: Freiwillige Kodizes helfen als Einstieg, ersetzen jedoch keine Mindeststandards. Zum einen entstehen sonst Wettbewerbsnachteile für seriöse Anbieter; zum anderen bleiben Grauzonen bestehen.\nModeratorin: Was wäre Ihr Sofortmaßnahme-Paket?\nKeller: Unabhängige Audits, klarere Altersgrenzen und Forschungsschnittstellen für Wissenschaftlerinnen – ohne private Chatverläufe pauschal zu öffnen.\nModeratorin: Und die Nutzerseite?\nKeller: Medienkompetenz bleibt unverzichtbar. Dennoch wäre es verkürzt, strukturelle Anreize allein durch Appelle an Individuen zu korrigieren.",
+      "textZh": "主持人：Keller 博士，平台是否應為內容負更大責任？\nKeller：責任不該意味把所有風險轉嫁使用者。誰靠觸及率建立商業模式，就必須認真看待審核義務。\n主持人：批評者擔心審查。\nKeller：重點不是禁止言論，而是標示、透明與可追溯程序。被刪文者需要理由與申訴管道。\n主持人：自願夠嗎？\nKeller：自願守則可作起點，但不能取代最低標準。一方面認真業者會吃虧；另一方面灰色地帶仍在。\n主持人：您的立即措施清單？\nKeller：獨立稽核、更清楚的年齡門檻，以及給研究者的介面——而非概括打開私人對話。\n主持人：使用者端呢？\nKeller：媒體素養仍不可或缺。但若只靠呼籲個人來修正結構誘因，就過於簡化。",
+      "notes": [
+        {
+          "span": "haften",
+          "zh": "負責／承擔責任"
+        },
+        {
+          "span": "abgewälzt",
+          "zh": "被轉嫁"
+        },
+        {
+          "span": "nachvollziehbare Verfahren",
+          "zh": "可追溯的程序"
+        },
+        {
+          "span": "Kodizes",
+          "zh": "守則／行為準則"
+        },
+        {
+          "span": "Audits",
+          "zh": "稽核"
+        },
+        {
+          "span": "pauschal",
+          "zh": "概括地／一刀切地"
+        },
+        {
+          "span": "verkürzt",
+          "zh": "過於簡化的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Zum einen …; zum anderen …",
+          "zh": "雙面論證",
+          "example": "Zum einen spart man Zeit; zum anderen steigt der Druck."
+        },
+        {
+          "pattern": "Dennoch wäre es verkürzt, …",
+          "zh": "反駁簡化論",
+          "example": "Dennoch wäre es verkürzt, nur Kosten zu sehen."
+        },
+        {
+          "pattern": "Es geht nicht um A, sondern um B",
+          "zh": "澄清焦點",
+          "example": "Es geht nicht um Strafe, sondern um Prävention."
+        }
+      ],
+      "tips": [
+        "訪談體：問答中抓論點與轉折。",
+        "標出讓步：Dennoch／reichen … nicht。",
+        "區分『審查恐懼』與『程序透明』兩條線。"
+      ],
+      "focus": [
+        "媒體",
+        "科技",
+        "倫理",
+        "訪談"
+      ]
+    },
+    {
+      "id": "b2-55",
+      "level": "B2",
+      "kind": "story",
+      "topic": "住房",
+      "title": "Bezahlbarer Wohnraum jenseits von Appellen",
+      "titleZh": "呼籲之外的可負擔住房",
+      "text": "In vielen Ballungsräumen übersteigen Mietsteigerungen die Einkommensentwicklung. Wer neu zuzieht, konkurriert mit kapitalstarken Investoren um knappen Wohnraum. Symbolische Mietendeckel ohne Neubau und ohne Schutz vor Umwandlung in Eigentum greifen oft zu kurz.\n\nZugleich ist nicht jeder Neubau automatisch sozial: Luxusprojekte können Bodenpreise weiter anheizen. Wirksamer wären Mischkalkulationen, bei denen ein verbindlicher Anteil dauerhaft gebunden bleibt, sowie die Aktivierung von Leerstand. Kommunen brauchen dafür Planungsrecht und Personal, nicht nur Pressemitteilungen.\n\nGegner warnen vor Eingriffen in Eigentumsrechte und vor ausbleibenden Investitionen. Dieses Argument ist ernst zu nehmen, darf jedoch nicht dazu führen, dass Wohnen ausschließlich als Renditeobjekt gedacht wird. Eine Stadt funktioniert nur, wenn Pflegekräfte, Lernende und Dienstleistungsbeschäftigte auch tatsächlich wohnen können.\n\nInsofern verschiebt sich die Debatte von moralischen Appellen hin zu Steuerungsinstrumenten: Bodenpolitik, Genossenschaften und transparente Vergabe. Es bleibt abzuwarten, inwiefern neue Bündnisse zwischen Ländern und Kommunen messbare Entlastung bringen.",
+      "textZh": "許多都會區租金漲幅超過收入成長。新移入者須與資本雄厚投資人爭奪稀缺住房。沒有新建與防止改為產權住宅配套的象徵性租金上限，往往力有未逮。\n\n同時，新建案也不自動具社會性：豪宅可能繼續推高地價。較有效的是混合核算，讓一定比例長期受拘束，並活化空屋。地方政府需要規劃權與人力，而不只是新聞稿。\n\n反對者警告干預所有權與投資卻步。這論點必須認真看待，但不能因此把居住只想成報酬標的。若護理人員、學生與服務業勞工實際上住不起，城市就無法運轉。\n\n因此辯論從道德呼籲轉向政策工具：土地政策、合作社與透明分配。邦與市的新聯盟能否帶來可測量減壓，仍有待觀察。",
+      "notes": [
+        {
+          "span": "Ballungsräumen",
+          "zh": "都會密集區"
+        },
+        {
+          "span": "Mietendeckel",
+          "zh": "租金上限"
+        },
+        {
+          "span": "greifen … zu kurz",
+          "zh": "力有未逮／不夠用"
+        },
+        {
+          "span": "anheizen",
+          "zh": "推高／煽動"
+        },
+        {
+          "span": "Leerstand",
+          "zh": "空屋／空置"
+        },
+        {
+          "span": "Renditeobjekt",
+          "zh": "報酬標的"
+        },
+        {
+          "span": "Steuerungsinstrumenten",
+          "zh": "調控工具"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "ohne A und ohne B greifen … zu kurz",
+          "zh": "指出配套不足",
+          "example": "ohne Kontrolle greifen Appelle zu kurz"
+        },
+        {
+          "pattern": "Dieses Argument ist ernst zu nehmen, darf jedoch nicht …",
+          "zh": "承認後限制",
+          "example": "Das Risiko ist ernst, darf jedoch nicht lähmen."
+        },
+        {
+          "pattern": "verschiebt sich die Debatte von A hin zu B",
+          "zh": "論點轉向",
+          "example": "verschiebt sich die Debatte von Schuld hin zu Struktur"
+        }
+      ],
+      "tips": [
+        "住房論述：數據現象→政策缺陷→反論→工具轉向。",
+        "找出『承認對方論點』的句子。",
+        "名詞化：Umwandlung、Vergabe、Entlastung。"
+      ],
+      "focus": [
+        "住房",
+        "社會",
+        "政策",
+        "論述"
+      ]
+    },
+    {
+      "id": "b2-56",
+      "level": "B2",
+      "kind": "email",
+      "topic": "職場",
+      "title": "Konfliktgespräch dokumentieren",
+      "titleZh": "紀錄衝突面談",
+      "text": "Betreff: Dokumentation des Klärungsgesprächs vom 3. Juni\n\nSehr geehrte Frau Sandberg,\n\nanbei übersende ich die vereinbarte Zusammenfassung unseres Gesprächs zu den wiederholten Fristüberschreitungen im Projekt „Nord“. Ziel ist eine gemeinsame Faktenbasis, keine einseitige Schuldzuweisung.\n\nFestgehalten wurde: (1) Liefertermine wurden in drei Fällen ohne frühzeitige Eskalation überschritten; (2) Parallelaufgaben aus dem Tagesgeschäft waren unzureichend priorisiert; (3) eine wöchentliche Kurzabstimmung mittwochs 9 Uhr wird verbindlich eingeführt. Sie haben zugesagt, Engpässe spätestens 48 Stunden vorher zu melden; ich sichere zu, Prioritäten schriftlich zu bestätigen.\n\nSollten Sie Korrekturen am Protokoll haben, bitte ich um Rückmeldung bis Freitag 12 Uhr. Andernfalls gilt die Fassung als abgestimmt und wird der Personalakte des Projekts beigelegt. Eine erneute Auswertung erfolgt in vier Wochen.\n\nIch danke für die sachliche Gesprächsführung und gehe davon aus, dass wir die Zusammenarbeit damit stabilisieren.\n\nMit freundlichen Grüßen\nMarc Eller\nProjektleitung",
+      "textZh": "主旨：6 月 3 日澄清面談紀錄\n\nSandberg 女士您好，\n\n附上我們就「Nord」專案多次逾期之談話摘要。目的是建立共同事實基礎，而非單方歸咎。\n\n紀錄要點：(1) 三次交付未及早升級呈報即逾期；(2) 日常並行任務優先順序不足；(3) 週三 9 點短會改為具拘束力。您承諾最晚提前 48 小時通報瓶頸；我承諾書面確認優先順序。\n\n若對紀錄有修正，請於週五 12 點前回覆；否則視同定稿並歸入專案人事檔。四週後再評估。\n\n感謝您務實的談話態度，並預期藉此穩定合作。\n\n此致問候\nMarc Eller\n專案主管",
+      "notes": [
+        {
+          "span": "Fristüberschreitungen",
+          "zh": "逾期"
+        },
+        {
+          "span": "Schuldzuweisung",
+          "zh": "歸咎"
+        },
+        {
+          "span": "Eskalation",
+          "zh": "問題升級呈報"
+        },
+        {
+          "span": "verbindlich eingeführt",
+          "zh": "具拘束力地導入"
+        },
+        {
+          "span": "beigelegt",
+          "zh": "附入／歸檔"
+        },
+        {
+          "span": "sachliche Gesprächsführung",
+          "zh": "務實／就事論事的談話"
+        },
+        {
+          "span": "abgestimmt",
+          "zh": "達成一致的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ziel ist A, keine B",
+          "zh": "澄清目的",
+          "example": "Ziel ist Klärung, keine Eskalation."
+        },
+        {
+          "pattern": "Sollten Sie …, bitte ich um …",
+          "zh": "條件客氣請求",
+          "example": "Sollten Sie Fragen haben, bitte ich um Nachricht."
+        },
+        {
+          "pattern": "Andernfalls gilt … als …",
+          "zh": "預設後果",
+          "example": "Andernfalls gilt der Antrag als zurückgezogen."
+        }
+      ],
+      "tips": [
+        "職場正式信：摘要→約定→確認期限→追蹤。",
+        "注意被動與名詞化：wurde festgehalten。",
+        "區分『紀錄』與『指控』語氣。"
+      ],
+      "focus": [
+        "職場",
+        "衝突",
+        "正式郵件",
+        "程序"
+      ]
+    },
+    {
+      "id": "b2-57",
+      "level": "B2",
+      "kind": "story",
+      "topic": "健康",
+      "title": "Psychische Belastung am Arbeitsplatz",
+      "titleZh": "職場心理負荷",
+      "text": "Psychische Erkrankungen gehören zu den häufigsten Gründen für längere Fehlzeiten. Dennoch wird Überlastung in manchen Branchen weiterhin als individuelles Versagen gedeutet. Wer früh Hilfe sucht, riskiert Stigmatisierung; wer schweigt, riskiert Chronifizierung.\n\nBetriebliche Prävention müsste deshalb früher ansetzen: realistische Zielvereinbarungen, erholsame Pausenräume und Führungskräfte, die Überstunden nicht still belohnen. Externe Beratungsangebote helfen, ersetzen jedoch keine Organisationsentwicklung. Auch Beschäftigte mit hoher Motivation brauchen Schutz vor Dauererreichbarkeit.\n\nSkeptiker argumentieren, Unternehmen seien keine Therapeuten. Das ist richtig – und gerade deshalb brauchen sie klare Schnittstellen zu professioneller Unterstützung sowie vertrauliche Verfahren. Prävention ist keine Softkompetenz-Dekoration, sondern Teil der Fürsorgepflicht.\n\nInsofern verbindet sich Gesundheitsschutz mit Produktivität auf längere Sicht. Es bleibt abzuwarten, inwiefern gesetzliche Berichtspflichten und Tarifverträge psychische Belastungen ebenso ernst nehmen wie klassische Unfallrisiken. Wer nur Appelle veröffentlicht, verändert wenig.",
+      "textZh": "心理疾患已是長期病假的常見原因之一。但在某些行業，過勞仍被解讀成個人失敗。早求助者冒著污名化風險；沉默者則冒著慢性化風險。\n\n因此企業預防必須更早介入：務實目標約定、可恢復的休息空間，以及不暗中獎勵加班的主管。外部諮詢有幫助，但不能取代組織發展。高動機員工也需要免於持續待命的保護。\n\n懷疑者說企業不是治療師。這話沒錯——正因如此更需要與專業支援的清晰介面與保密程序。預防不是軟實力裝飾，而是照顧義務的一環。\n\n因此健康保護長期而言與生產力相連。法定報告義務與團體協約能否像看待傳統工安一樣認真看待心理負荷，仍有待觀察。只發呼籲，改變很少。",
+      "notes": [
+        {
+          "span": "Fehlzeiten",
+          "zh": "缺勤／病假時數"
+        },
+        {
+          "span": "Stigmatisierung",
+          "zh": "污名化"
+        },
+        {
+          "span": "Chronifizierung",
+          "zh": "慢性化"
+        },
+        {
+          "span": "Zielvereinbarungen",
+          "zh": "目標約定"
+        },
+        {
+          "span": "Fürsorgepflicht",
+          "zh": "照顧義務"
+        },
+        {
+          "span": "Tarifverträge",
+          "zh": "團體協約"
+        },
+        {
+          "span": "Dauererreichbarkeit",
+          "zh": "持續可聯繫狀態"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wer A, riskiert X; wer B, riskiert Y",
+          "zh": "雙風險結構",
+          "example": "Wer fragt, riskiert Kritik; wer schweigt, riskiert Fehler."
+        },
+        {
+          "pattern": "Das ist richtig – und gerade deshalb …",
+          "zh": "承認後推進",
+          "example": "Das ist teuer – und gerade deshalb müssen wir planen."
+        },
+        {
+          "pattern": "Prävention ist keine A, sondern B",
+          "zh": "重新定義",
+          "example": "Flexibilität ist keine Gabe, sondern Verhandlung."
+        }
+      ],
+      "tips": [
+        "健康論述：數據→污名兩難→組織解方→義務框架。",
+        "抓住『承認懷疑者』再推進的轉折。",
+        "對照個人化 vs 結構性解釋。"
+      ],
+      "focus": [
+        "健康",
+        "職場",
+        "社會",
+        "論述"
+      ]
+    },
+    {
+      "id": "b2-58",
+      "level": "B2",
+      "kind": "notice",
+      "topic": "法律／規定",
+      "title": "Hinweis zu Hinweisgeberinnen",
+      "titleZh": "吹哨者保護提示",
+      "text": "Interne Richtlinie – Schutz von Hinweisgeberinnen und Hinweisgebern\nPersonen, die im guten Glauben Verstöße gegen Recht oder interne Compliance melden, dürfen deswegen keine Benachteiligung erfahren. Meldungen können über das vertrauliche Portal /hinweis oder postalisch an die Ombudsstelle erfolgen. Anonyme Hinweise werden geprüft, sofern sie hinreichend konkret sind.\n\nDie Bearbeitung erfolgt unabhängig von betroffenen Fachbereichen. Rückmeldungen zum Verfahrensstand erfolgen in der Regel innerhalb von drei Monaten, soweit keine gesetzlichen Geheimhaltungspflichten entgegenstehen. Mutwillige Falschmeldungen können arbeitsrechtliche Folgen haben; gutgläubige Irrtümer hingegen nicht.\n\nFührungskräfte sind verpflichtet, Vergeltungsmaßnahmen zu unterbinden und Verdachtsfälle unverzüglich weiterzuleiten. Externe Meldestellen bleiben parallel nutzbar; interne Wege ersetzen keine gesetzlichen Rechte. Schulungen zur Richtlinie finden quartalsweise statt.\n\nFragen richten Sie bitte an compliance@firma.example. Diese Fassung ersetzt die Richtlinie vom Januar und tritt am 1. August in Kraft.",
+      "textZh": "內部準則－吹哨者保護\n善意舉報違法或內部法遵違規者，不得因此受不利益。可透過保密入口 /hinweis 或郵寄監察辦公室舉報。匿名檢舉若夠具體仍會審查。\n\n處理獨立於涉案單位。除非有法定保密義務相牴觸，原則上三個月內回報進度。惡意不實檢舉可能有勞動法後果；善意誤解則否。\n\n主管有義務遏止報復並立即上呈嫌疑案件。外部檢舉管道仍可並行；內部途徑不取代法定權利。準則培訓每季舉行。\n\n問題請洽 compliance@firma.example。本版取代一月準則，8 月 1 日生效。",
+      "notes": [
+        {
+          "span": "Hinweisgeberinnen",
+          "zh": "吹哨者（陰性複數）"
+        },
+        {
+          "span": "Benachteiligung",
+          "zh": "不利益／歧視待遇"
+        },
+        {
+          "span": "Ombudsstelle",
+          "zh": "監察／申訴辦公室"
+        },
+        {
+          "span": "hinreichend konkret",
+          "zh": "足夠具體"
+        },
+        {
+          "span": "Mutwillige Falschmeldungen",
+          "zh": "惡意不實檢舉"
+        },
+        {
+          "span": "Vergeltungsmaßnahmen",
+          "zh": "報復措施"
+        },
+        {
+          "span": "tritt … in Kraft",
+          "zh": "生效"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "dürfen deswegen keine … erfahren",
+          "zh": "保護條款",
+          "example": "dürfen keine Nachteile erfahren"
+        },
+        {
+          "pattern": "sofern sie … sind",
+          "zh": "條件限定",
+          "example": "sofern sie belegt sind"
+        },
+        {
+          "pattern": "soweit keine … entgegenstehen",
+          "zh": "法律保留",
+          "example": "soweit keine Fristen entgegenstehen"
+        }
+      ],
+      "tips": [
+        "法遵公告：保護→管道→程序→例外→生效。",
+        "區分 gutgläubig vs mutwillig。",
+        "注意被動：werden geprüft／erfolgen。"
+      ],
+      "focus": [
+        "法律",
+        "職場",
+        "合規",
+        "公告"
+      ]
+    },
+    {
+      "id": "b2-59",
+      "level": "B2",
+      "kind": "story",
+      "topic": "文化",
+      "title": "Übersetzung als kulturelle Entscheidung",
+      "titleZh": "翻譯作為文化決定",
+      "text": "Übersetzen gilt oberflächlich als technischer Transfer von Wörtern. Tatsächlich handelt es sich um fortlaufende Entscheidungen: Welche Anredeebene trifft den Ton? Welche Metapher bleibt verständlich, ohne den Ausgangstext zu verfälschen? Besonders bei Behördentexten und Literatur zeigt sich, dass scheinbar neutrale Formulierungen Werte transportieren.\n\nMaschinelle Systeme beschleunigen Entwürfe, ersetzen jedoch kein Kontextwissen über Register, Irony oder rechtliche Bindungswirkung. Wer Warnhinweise falsch glättet, erzeugt Haftungsrisiken; wer literarische Mehrdeutigkeit tilgt, verliert Kunst. Deshalb fordern Berufsverbände sichtbare Verantwortung: Menschen prüfen kritische Passagen.\n\nGegner einer strengen Regulierung betonen Innovationsgeschwindigkeit. Geschwindigkeit ohne Qualitätsstandards verlagert Kosten jedoch auf Leserinnen, Patientinnen oder Antragstellende. Eine pragmatische Linie verbindet Automatisierung in Routinefällen mit verbindlicher Fachrevision bei Hochrisiko-Texten.\n\nInsofern ist Sprachmittlung Infrastruktur, nicht bloß Dienstleistung. Es bleibt abzuwarten, inwiefern Ausbildung, Honorare und Transparenzregeln mit dem technischen Wandel Schritt halten.",
+      "textZh": "翻譯表面像是詞語的技術轉移。實際上是一連串決定：哪個稱呼層級對味？哪種隱喻仍可懂又不扭曲原文？尤其在公文與文學中，看似中性的措辭也承載價值。\n\n機器系統能加速草稿，卻取代不了語域、反諷或法律拘束力的語境知識。警告用語被錯誤「磨平」會產生責任風險；刪去文學歧義則失去藝術。因此專業協會要求可見的責任：關鍵段落由人審核。\n\n反對嚴格管制者強調創新速度。但沒有品質標準的速度，會把成本轉嫁給讀者、病患或申請人。務實路線是：例行文本自動化，高風險文本強制專業覆核。\n\n因此語言中介是基礎設施，而不只是服務。培養、稿費與透明規則能否跟上技術變遷，仍有待觀察。",
+      "notes": [
+        {
+          "span": "handelt es sich um",
+          "zh": "這指的是……"
+        },
+        {
+          "span": "Register",
+          "zh": "語域／文體層級"
+        },
+        {
+          "span": "Bindungswirkung",
+          "zh": "拘束效力"
+        },
+        {
+          "span": "glättet",
+          "zh": "磨平／圓滑化"
+        },
+        {
+          "span": "tilgt",
+          "zh": "刪除／抹去"
+        },
+        {
+          "span": "Fachrevision",
+          "zh": "專業覆核"
+        },
+        {
+          "span": "Sprachmittlung",
+          "zh": "語言中介"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "handelt es sich um …",
+          "zh": "定義主題",
+          "example": "Dabei handelt es sich um ein Missverständnis."
+        },
+        {
+          "pattern": "Wer A, erzeugt B; wer C, verliert D",
+          "zh": "對照後果",
+          "example": "Wer spart, riskiert Qualität."
+        },
+        {
+          "pattern": "Eine pragmatische Linie verbindet A mit B",
+          "zh": "折衷方案",
+          "example": "Eine Linie verbindet Tempo mit Kontrolle."
+        }
+      ],
+      "tips": [
+        "文化／科技論述：表面定義→風險→反論→折衷。",
+        "標出對偶句 Wer… / Wer…。",
+        "注意名詞化：Bindungswirkung、Fachrevision。"
+      ],
+      "focus": [
+        "文化",
+        "科技",
+        "語言",
+        "論述"
+      ]
+    },
+    {
+      "id": "b2-60",
+      "level": "B2",
+      "kind": "dialogue",
+      "topic": "經濟",
+      "title": "Podium: Lieferketten und Verantwortung",
+      "titleZh": "論壇：供應鏈與責任",
+      "text": "Moderator: Herr Okonjo, genügen freiwillige Lieferkettenstandards?\nOkonjo: Freiwilligkeit reicht selten, wenn Preisdruck systematisch nach unten durchgereicht wird. Ohne sorgfältige Prüfung bleiben Risiken unsichtbar.\nUnternehmerin Lang: Strenge Gesetze belasten vor allem kleinere Importeure.\nOkonjo: Dann braucht es gestufte Pflichten und Unterstützung bei Audits, nicht ein Alles-oder-nichts. Zum einen schützen klare Regeln seriöse Firmen vor Dumping; zum anderen brauchen KMU praktikable Tools.\nLang: Und wenn Produzentinnen die Auflagen nicht erfüllen können?\nOkonjo: Dann ist Ausstieg nicht die einzige Antwort. Man kann Übergangsfristen, Schulungen und gemeinsame Investitionen vereinbaren – allerdings mit messbaren Meilensteinen.\nModerator: Wer kontrolliert die Kontrolleure?\nOkonjo: Unabhängigkeit, Rotationsregeln und öffentliche Summaries reduzieren Interessenkonflikte, ersetzen aber nicht zivilgesellschaftliche Beobachtung.\nLang: Das klingt teuer.\nOkonjo: Teurer ist langfristig ein Reputationsschaden nach einem Skandal. Verantwortung ist Teil der Kalkulation, nicht ihr Gegenteil.",
+      "textZh": "主持人：Okonjo 先生，自願供應鏈標準夠嗎？\nOkonjo：若價格壓力被系統性往下轉嫁，自願往往不夠。沒有審慎檢查，風險就看不見。\n企業家 Lang：嚴格法律尤其負擔較小進口商。\nOkonjo：那需要分級義務與稽核支持，而非全有全無。一方面清楚規則保護認真公司免於傾銷式競爭；另一方面中小企業需要可用工具。\nLang：若生產者做不到規定呢？\nOkonjo：退出不是唯一答案。可以談過渡期、培訓與共同投資——但要有可測量里程碑。\n主持人：誰監督監督者？\nOkonjo：獨立性、輪替與公開摘要可降低利益衝突，但仍不能取代公民社會觀察。\nLang：聽起來很貴。\nOkonjo：醜聞後的商譽損害長期更貴。責任是成本計算的一部分，不是其對立面。",
+      "notes": [
+        {
+          "span": "durchgereicht",
+          "zh": "被轉嫁下去"
+        },
+        {
+          "span": "gestufte Pflichten",
+          "zh": "分級義務"
+        },
+        {
+          "span": "KMU",
+          "zh": "中小企業"
+        },
+        {
+          "span": "Meilensteine",
+          "zh": "里程碑"
+        },
+        {
+          "span": "Interessenkonflikte",
+          "zh": "利益衝突"
+        },
+        {
+          "span": "Reputationsschaden",
+          "zh": "商譽損害"
+        },
+        {
+          "span": "Kalkulation",
+          "zh": "成本精算"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Zum einen …; zum anderen …",
+          "zh": "雙面論證",
+          "example": "Zum einen schützt es; zum anderen kostet es."
+        },
+        {
+          "pattern": "nicht die einzige Antwort",
+          "zh": "拒絕單一解",
+          "example": "Ausstieg ist nicht die einzige Antwort."
+        },
+        {
+          "pattern": "A ist Teil von B, nicht ihr Gegenteil",
+          "zh": "重新框定",
+          "example": "Sicherheit ist Teil der Qualität, nicht ihr Gegenteil."
+        }
+      ],
+      "tips": [
+        "論壇對話：抓各方立場與折衷提案。",
+        "注意條件句 Wenn… Dann…。",
+        "德檢：辨識『成本』論與『風險』論。"
+      ],
+      "focus": [
+        "經濟",
+        "倫理",
+        "全球化",
+        "對話"
+      ]
+    },
+    {
+      "id": "b2-61",
+      "level": "B2",
+      "kind": "story",
+      "topic": "教育",
+      "title": "Noten und Motivation in der Diskussion",
+      "titleZh": "討論中的分數與動機",
+      "text": "Noten strukturieren Lernwege, erzeugen aber auch Vergleichsdruck. Wer früh schlechte Rückmeldungen erhält, kann Kompetenzen unterschätzen, obwohl Entwicklung möglich wäre. Alternative Formate wie Portfolios und formative Rückmeldungen versprechen mehr Lernorientierung, verlangen jedoch Zeit und geschulte Lehrkräfte.\n\nEltern und Hochschulen fordern weiterhin vergleichbare Zertifikate. Ohne gemeinsame Standards droht Unübersichtlichkeit; mit starren Skalen droht Verengung auf Prüfbares. Eine differenzierte Praxis kombiniert verbindliche Kernkompetenzen mit narrativen Einschätzungen.\n\nKritikerinnen warnen, Soft-Assessment werde ungerecht, weil subjektiv. Subjektivität verschwindet jedoch nicht hinter Zahlen – sie wird nur unsichtbar. Transparente Rubriken und Zweitkorrekturen können Willkür begrenzen, ohne Komplexität zu leugnen.\n\nInsofern ist die Frage weniger „Noten ja oder nein“ als „welche Informationen brauchen Lernende zum Weiterarbeiten“. Es bleibt abzuwarten, inwiefern Schulen Ressourcen erhalten, um Rückmeldung jenseits von Punktwerten professionell zu gestalten.",
+      "textZh": "分數能結構化學習路徑，也製造比較壓力。很早收到負評者可能低估自己能力，儘管仍可發展。學習歷程檔與形成性回饋等替代形式承諾更以學習為導向，但需要時間與受過訓練的教師。\n\n家長與大學仍要求可比較的證明。沒有共同標準會混亂；僵硬量表則把焦點窄化到可考之物。較細緻的做法是把具拘束力的核心能力與敘事評量結合。\n\n批評者警告軟性評量因主觀而不公。但主觀性不會因數字而消失——只是被藏起來。透明量規與複評可限制恣意，同時不否認複雜性。\n\n因此問題較少是「要不要分數」，而是「學習者繼續前進需要哪些資訊」。學校能否獲得資源，把回饋做到分數以外的專業水準，仍有待觀察。",
+      "notes": [
+        {
+          "span": "Vergleichsdruck",
+          "zh": "比較壓力"
+        },
+        {
+          "span": "formative Rückmeldungen",
+          "zh": "形成性回饋"
+        },
+        {
+          "span": "Unübersichtlichkeit",
+          "zh": "混亂難辨"
+        },
+        {
+          "span": "Verengung",
+          "zh": "窄化"
+        },
+        {
+          "span": "Rubriken",
+          "zh": "評分量規"
+        },
+        {
+          "span": "Willkür",
+          "zh": "恣意"
+        },
+        {
+          "span": "Punktwerten",
+          "zh": "點數／分數值"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "obwohl … wäre",
+          "zh": "讓步虛擬",
+          "example": "obwohl Hilfe möglich wäre"
+        },
+        {
+          "pattern": "Ohne A droht X; mit B droht Y",
+          "zh": "兩難結構",
+          "example": "Ohne Regeln droht Chaos; mit Härte droht Angst."
+        },
+        {
+          "pattern": "weniger A als B",
+          "zh": "重新提問",
+          "example": "weniger Schuld als Struktur"
+        }
+      ],
+      "tips": [
+        "教育論述：功能→代價→替代→反論→重設問題。",
+        "找出『數字並非中性』的論點。",
+        "標出 Insofern／Es bleibt abzuwarten。"
+      ],
+      "focus": [
+        "教育",
+        "評量",
+        "論述",
+        "社會"
+      ]
+    },
+    {
+      "id": "b2-62",
+      "level": "B2",
+      "kind": "email",
+      "topic": "消費",
+      "title": "Aufforderung zur Nacherfüllung",
+      "titleZh": "請求後履行（瑕疵補救）",
+      "text": "Betreff: Nacherfüllung zur Bestellung 441208 – defektes Gerät\n\nSehr geehrte Damen und Herren,\n\nam 2. April erwarb ich bei Ihnen eine Waschmaschine (Modell AquaPro 8), die innerhalb der Gewährleistungsfrist einen irreparablen Pumpenschaden aufweist. Eine Reparatur vor Ort am 20. Mai blieb erfolglos; das Protokoll des Technikers sowie Fotos des Fehlercodes liegen bei. Bereits am 21. Mai habe ich Ihren Support telefonisch informiert und eine Ticketnummer erhalten, ohne dass seither ein verbindlicher Ersatztermin genannt wurde.\n\nHiermit fordere ich Sie zur Nacherfüllung auf, primär durch Lieferung einer mangelfreien Ersatzmaschine binnen 14 Tagen ab Zugang dieses Schreibens. Hilfsweise begehre ich Minderung bzw. Rücktritt vom Kaufvertrag einschließlich Erstattung der Anfahrtskosten der erfolglosen Reparatur. Eine weitere Verzögerung ist mir nicht zumutbar, da die Haushaltsführung erheblich beeinträchtigt ist und externe Wäschereikosten entstehen.\n\nBitte bestätigen Sie den Eingang und teilen Sie den Liefertermin verbindlich mit. Sollte keine fristgerechte Reaktion erfolgen, behalte ich mir weitere rechtliche Schritte vor, einschließlich der Einschaltung der Verbraucherzentrale und der Geltendmachung von Verzugsschäden.\n\nMit freundlichen Grüßen\nKarim Haddad",
+      "textZh": "主旨：訂單 441208 後履行請求－故障設備\n\n敬啟者：\n\n我於 4 月 2 日購買洗衣機（型號 AquaPro 8），在保固期內出現無法修復的水泵損壞。5 月 20 日到府維修未果；技師紀錄與錯誤代碼照片附上。5 月 21 日已電話告知客服並取得工單編號，其後仍未獲具拘束力的換機時程。\n\n謹此請求後履行，原則上於本函送達後 14 日內交付無瑕疵替換機。退而求其次請求減價或解除買賣契約，並請退還無效維修的出勤費用。家務已明顯受影響且產生外部洗衣費用，再拖延對我而言不可期待。\n\n請確認收悉並具拘束力地告知送達日期。若未如期回應，我保留進一步法律行動，包括向消費者中心求助及主張遲延損害。\n\n此致問候\nKarim Haddad",
+      "notes": [
+        {
+          "span": "Nacherfüllung",
+          "zh": "後履行／瑕疵補救"
+        },
+        {
+          "span": "Gewährleistungsfrist",
+          "zh": "瑕疵擔保期間"
+        },
+        {
+          "span": "mangelfreien",
+          "zh": "無瑕疵的"
+        },
+        {
+          "span": "Hilfsweise",
+          "zh": "退而求其次／備位主張"
+        },
+        {
+          "span": "nicht zumutbar",
+          "zh": "不可期待／無法再忍受"
+        },
+        {
+          "span": "Minderung",
+          "zh": "減價"
+        },
+        {
+          "span": "Verbraucherzentrale",
+          "zh": "消費者中心"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Hiermit fordere ich Sie zur … auf",
+          "zh": "正式催告",
+          "example": "Hiermit fordere ich Sie zur Zahlung auf."
+        },
+        {
+          "pattern": "Hilfsweise begehre ich …",
+          "zh": "備位請求",
+          "example": "Hilfsweise begehre ich Schadensersatz."
+        },
+        {
+          "pattern": "Sollte keine … erfolgen, behalte ich mir … vor",
+          "zh": "預告後果",
+          "example": "Sollte keine Antwort erfolgen, behalte ich mir Klage vor."
+        }
+      ],
+      "tips": [
+        "消費爭議信：事實→請求層級→期限→法律保留。",
+        "分清 primär／hilfsweise。",
+        "語氣強硬但公式完整。"
+      ],
+      "focus": [
+        "消費",
+        "法律",
+        "正式郵件",
+        "契約"
+      ]
+    },
+    {
+      "id": "b2-63",
+      "level": "B2",
+      "kind": "notice",
+      "topic": "交通",
+      "title": "Sperrung und Ersatzkonzept",
+      "titleZh": "封閉與替代方案",
+      "text": "Verkehrsmeldung – Vollsperrung Konrad-Adenauer-Brücke\nWegen Brückenprüfung ist die Konrad-Adenauer-Brücke vom 8. bis 18. Oktober in beiden Richtungen gesperrt. Der motorisierte Individualverkehr wird über die Südumfahrung geleitet; mit erheblichen Reisezeitverlusten ist zu rechnen. Schwertransporte benötigen Sondergenehmigungen der Straßenverkehrsbehörde.\n\nFür den ÖPNV gilt ein Schienenersatzverkehr zwischen Hauptbahnhof und Westkreuz. Taktverdichtung erfolgt in der Hauptverkehrszeit; Barrierefreiheit der Ersatzbusse ist weitgehend sichergestellt, vereinzelte Fahrten jedoch nur mit Voranmeldung. Radverkehr nutzt die ausgewiesene Behelfsfurt unterhalb der Brücke; Fußverkehr die Treppenanlage Ost mit Aufzugbetrieb 6–22 Uhr.\n\nAnwohnerparken im Umleitungsbereich wird temporär ausgeweitet. Schadensersatz wegen Lieferverzögerungen ist beim Tiefbauamt innerhalb von sechs Wochen zu beantragen. Aktuelle Störungen erscheinen im Live-Ticker /verkehr. Wir bitten um Verständnis und frühzeitige Fahrtplanung.",
+      "textZh": "交通訊息－Konrad-Adenauer 橋全面封閉\n因橋樑檢測，該橋 10 月 8 至 18 日雙向封閉。汽機車改循南繞道；請預期明顯耗時增加。重車須向道路交通機關申請特別許可。\n\n大眾運輸於中央車站與西十字站間實施軌道替代公車。尖峰加密班次；替代公車大致無障礙，少數班次需預約。單車行經橋下指定便道；行人走東側階梯，電梯 6–22 點運作。\n\n改道區域臨停將臨時擴大。因延誤求償須於六週內向土木工程處提出。即時障礙見 /verkehr。請見諒並提早規劃行程。",
+      "notes": [
+        {
+          "span": "Vollsperrung",
+          "zh": "全面封閉"
+        },
+        {
+          "span": "Individualverkehr",
+          "zh": "私人運具交通"
+        },
+        {
+          "span": "Reisezeitverlusten",
+          "zh": "旅途耗時損失"
+        },
+        {
+          "span": "Schienenersatzverkehr",
+          "zh": "軌道替代交通"
+        },
+        {
+          "span": "Taktverdichtung",
+          "zh": "班距加密"
+        },
+        {
+          "span": "Behelfsfurt",
+          "zh": "臨時便道"
+        },
+        {
+          "span": "Tiefbauamt",
+          "zh": "土木工程處"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Mit … ist zu rechnen",
+          "zh": "預期後果",
+          "example": "Mit Wartezeiten ist zu rechnen."
+        },
+        {
+          "pattern": "gilt ein …",
+          "zh": "適用特別規定",
+          "example": "gilt ein Ersatzfahrplan"
+        },
+        {
+          "pattern": "ist … zu beantragen",
+          "zh": "申請義務",
+          "example": "ist schriftlich zu beantragen"
+        }
+      ],
+      "tips": [
+        "長公告：封閉→汽機車→大眾運→單車行人→求償。",
+        "抓行政被動與 zu-不定式。",
+        "對照『largely／vereinzelt』這類限定詞。"
+      ],
+      "focus": [
+        "交通",
+        "市政",
+        "公告",
+        "基礎設施"
+      ]
+    },
+    {
+      "id": "b2-64",
+      "level": "B2",
+      "kind": "story",
+      "topic": "科技",
+      "title": "Open Data und Machtasymmetrien",
+      "titleZh": "開放資料與權力不對稱",
+      "text": "Open-Data-Initiativen versprechen Transparenz und Innovation. Behörden veröffentlichen Fahrpläne, Umweltwerte und Haushaltszahlen, damit Zivilgesellschaft und Start-ups darauf aufbauen können. Doch Rohdaten allein schaffen keine gleiche Augenhöhe: Wer über Analysekapazität, Rechtsberatung und Recheninfrastruktur verfügt, nutzt Freigaben oft wirksamer als ehrenamtliche Gruppen.\n\nZudem entscheiden Metadaten und Schnittstellen darüber, welche Fragen überhaupt stellbar sind. Unvollständige Dokumentation oder verzögerte Updates erzeugen Scheintransparenz. Deshalb fordern Fachleute verpflichtende Qualitätsstandards, nachhaltige Finanzierung und Schulungen für nutzende Organisationen.\n\nUnternehmen argumentieren mit Geschäftsgeheimnissen, Verwaltungen mit Sicherheitsrisiken. Beides kann legitim sein, darf jedoch nicht pauschal als Ausrede dienen. Abwägungen sollten begründet und periodisch überprüft werden.\n\nInsofern ist Open Data weniger ein Schalter als ein dauerhafter Institutionalisierungsprozess. Es bleibt abzuwarten, inwiefern gesetzliche Mindestkataloge tatsächlich Machtasymmetrien verringern – und nicht nur ohnehin privilegierte Akteure weiter stärken.",
+      "textZh": "開放資料倡議承諾透明與創新。機關公開班表、環境數值與預算，讓公民社會與新創能據此開發。但光有原始資料並不造就對等：擁有分析能力、法律諮詢與運算基礎設施者，往往比志工團體更能有效利用開放。\n\n此外，詮釋資料與介面決定了哪些問題根本問得出來。文件不全或更新延遲會製造假透明。因此專家要求強制品質標準、永續經費與對使用組織的培訓。\n\n企業談營業秘密，行政談安全風險。兩者都可能正當，但不能一概作為藉口。權衡應說明理由並定期檢視。\n\n因此開放資料比較不是一個開關，而是持續制度化過程。法定最低清單能否真正降低權力不對稱——而非只讓原本有優勢者更強——仍有待觀察。",
+      "notes": [
+        {
+          "span": "Augenhöhe",
+          "zh": "對等／平視"
+        },
+        {
+          "span": "Metadaten",
+          "zh": "詮釋資料"
+        },
+        {
+          "span": "Scheintransparenz",
+          "zh": "假透明"
+        },
+        {
+          "span": "pauschal",
+          "zh": "一概地"
+        },
+        {
+          "span": "Abwägungen",
+          "zh": "權衡"
+        },
+        {
+          "span": "Institutionalisierungsprozess",
+          "zh": "制度化過程"
+        },
+        {
+          "span": "Machtasymmetrien",
+          "zh": "權力不對稱"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "weniger A als B",
+          "zh": "重新定義",
+          "example": "weniger Produkt als Prozess"
+        },
+        {
+          "pattern": "darf jedoch nicht pauschal als … dienen",
+          "zh": "限制藉口",
+          "example": "darf nicht pauschal als Sicherheitsargument dienen"
+        },
+        {
+          "pattern": "Es bleibt abzuwarten, inwiefern … – und nicht nur …",
+          "zh": "雙向開放結論",
+          "example": "Es bleibt abzuwarten, inwiefern Hilfe trifft – und nicht nur Symbolik bleibt."
+        }
+      ],
+      "tips": [
+        "科技治理文：承諾→不對稱→品質→權衡→制度。",
+        "找出對『假透明』的批判。",
+        "注意破折號延伸結論。"
+      ],
+      "focus": [
+        "科技",
+        "治理",
+        "透明",
+        "論述"
+      ]
+    },
+    {
+      "id": "b2-65",
+      "level": "B2",
+      "kind": "dialogue",
+      "topic": "移民／融合",
+      "title": "Gespräch in der Integrationsberatung",
+      "titleZh": "融合諮詢對話",
+      "text": "Beraterin: Sie möchten die Anerkennung Ihrer Pflegeausbildung beschleunigen?\nKlientin: Ja. Ich arbeite seit einem Jahr als Hilfskraft, obwohl ich im Herkunftsland examiniert bin.\nBeraterin: Dafür brauchen wir beglaubigte Übersetzungen, den Lehrplanvergleich und ggf. eine Kenntnisprüfung. Die Wartezeiten sind derzeit lang.\nKlientin: Kann ich parallel einen Sprachkurs B2 berufsbezogen belegen?\nBeraterin: Das ist sinnvoll und wird teilweise gefördert. Allerdings müssen Kurszeiten mit Schichtplänen abgestimmt werden; wir können eine Bescheinigung für den Arbeitgeber formulieren.\nKlientin: Und wenn die Anerkennung länger dauert als erwartet?\nBeraterin: Dann prüfen wir Zwischenqualifikationen, damit Ihre Erfahrung nicht entwertet wird. Wichtig ist, Fristen im Blick zu behalten und Unterlagen vollständig einzureichen.\nKlientin: Ich habe Angst vor bürokratischen Fehlern.\nBeraterin: Deshalb machen wir eine Checkliste und einen Termin zur Zwischenkontrolle. Sie müssen das nicht allein navigieren.",
+      "textZh": "顧問：您想加快護理學歷認證？\n案主：對。我已當一年助理，但在原籍國已取得考試資格。\n顧問：需要公證翻譯、課程對照，必要時還有專業知識考試。目前等候很久。\n案主：我可以同時修職業導向 B2 語言課嗎？\n顧問：合理，且部分有補助。但課程時間須與輪班協調；我們可幫開給雇主的證明。\n案主：若認證比預期更久？\n顧問：那就評估中間資格，避免您的經驗被貶值。重要的是盯緊期限並備齊文件。\n案主：我怕行政出錯。\n顧問：所以我們做清單與期中檢查。您不必一個人摸索。",
+      "notes": [
+        {
+          "span": "Anerkennung",
+          "zh": "學歷／證照認證"
+        },
+        {
+          "span": "beglaubigte Übersetzungen",
+          "zh": "公證翻譯"
+        },
+        {
+          "span": "Kenntnisprüfung",
+          "zh": "專業知識考試"
+        },
+        {
+          "span": "berufsbezogen",
+          "zh": "職業導向的"
+        },
+        {
+          "span": "Zwischenqualifikationen",
+          "zh": "中間資格"
+        },
+        {
+          "span": "entwertet",
+          "zh": "被貶值"
+        },
+        {
+          "span": "navigieren",
+          "zh": "摸索前進／導航"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "obwohl ich … bin",
+          "zh": "讓步現實",
+          "example": "obwohl ich qualifiziert bin"
+        },
+        {
+          "pattern": "Das ist sinnvoll und wird teilweise gefördert",
+          "zh": "肯定＋條件",
+          "example": "Das ist möglich und wird teilweise erstattet."
+        },
+        {
+          "pattern": "damit … nicht …",
+          "zh": "目的防杜",
+          "example": "damit Erfahrung nicht verloren geht"
+        }
+      ],
+      "tips": [
+        "諮詢對話：目標→文件→並行策略→風險管理。",
+        "注意行政程序詞：Anerkennung、Fristen。",
+        "語氣支持但不給虛假保證。"
+      ],
+      "focus": [
+        "移民",
+        "勞動",
+        "行政",
+        "對話"
+      ]
+    },
+    {
+      "id": "b2-66",
+      "level": "B2",
+      "kind": "story",
+      "topic": "環境",
+      "title": "Recyclingquoten und echte Kreisläufe",
+      "titleZh": "回收率與真正循環",
+      "text": "Hohe Recyclingquoten gelten als Beleg gelungener Umweltpolitik. Doch Quoten allein sagen wenig, wenn gesammelte Kunststoffe qualitativ minderwertig sind oder exportiert werden, ohne dass Weiterverarbeitung nachvollziehbar bleibt. Ein Kreislauf entsteht erst, wenn Produktdesign, Sammlung und Absatz von Rezyklaten zusammengeplant werden.\n\nHersteller verweisen auf Konsumentinnen, die falsch trennen; Kommunen auf fehlende Anlagen; Anlagenbetreiber auf schwankende Rohstoffpreise. Jede Teilwahrheit verschiebt Verantwortung. Verbindliche Rezyklatanteile, Ökodesign-Vorgaben und transparente Exportkontrollen wären kohärenter als Appelle zum „richtigen“ Mülltonnenverhalten.\n\nSkeptiker fürchten Kostensteigerungen und Wettbewerbsnachteile. Ohne Internalisierung ökologischer Kosten bleiben jedoch Billigprodukte mit kurzer Lebensdauer systematisch im Vorteil. Politik muss daher Übergangsfristen und Förderungen so staffeln, dass Innovation möglich bleibt.\n\nInsofern ist Kreislaufwirtschaft Industriepolitik plus Verbraucherinformation – nicht bloß Moral. Es bleibt abzuwarten, inwiefern neue EU-Vorgaben Messbarkeit verbessern, statt nur Berichtsaufwand zu erzeugen.",
+      "textZh": "高回收率常被當作環境政策成功的證據。但若蒐集的塑膠品質差，或出口後再處理無法追溯，光看比率意義有限。唯有產品設計、回收與再生料銷路一起規劃，循環才成立。\n\n製造商指向消費者分錯類；地方政府指向設備不足；處理業者指向原料價格波動。每個片面真相都在轉移責任。強制再生料比例、生態設計規範與透明出口管制，比呼籲「正確丟垃圾」更一致。\n\n懷疑者擔心成本上升與競爭劣勢。但若不把生態成本內部化，短壽命廉價產品會系統性占優。因此政策須以過渡期與補助分級，使創新仍可能。\n\n故循環經濟是產業政策加消費者資訊——不只是道德。新的歐盟規範能否改善可測量性，而非只增加報告負擔，仍有待觀察。",
+      "notes": [
+        {
+          "span": "Recyclingquoten",
+          "zh": "回收率"
+        },
+        {
+          "span": "Rezyklaten",
+          "zh": "再生料"
+        },
+        {
+          "span": "Internalisierung",
+          "zh": "內部化（成本）"
+        },
+        {
+          "span": "Ökodesign",
+          "zh": "生態設計"
+        },
+        {
+          "span": "staffeln",
+          "zh": "分級／分期"
+        },
+        {
+          "span": "Kreislaufwirtschaft",
+          "zh": "循環經濟"
+        },
+        {
+          "span": "Berichtsaufwand",
+          "zh": "報告負擔"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": " Quoten allein sagen wenig, wenn …",
+          "zh": "質疑指標",
+          "example": "Zahlen allein sagen wenig, wenn Kontext fehlt."
+        },
+        {
+          "pattern": "Jede Teilwahrheit verschiebt Verantwortung",
+          "zh": "批判推責",
+          "example": "Jede Ausrede verschiebt Kosten."
+        },
+        {
+          "pattern": "A plus B – nicht bloß C",
+          "zh": "擴大定義",
+          "example": "Bildung plus Praxis – nicht bloß Theorie."
+        }
+      ],
+      "tips": [
+        "環境論述：指標迷思→責任推諉→工具→成本反論。",
+        "注意『系統性占優』這類結構句。",
+        "標出 Insofern 收束。"
+      ],
+      "focus": [
+        "環境",
+        "政策",
+        "經濟",
+        "論述"
+      ]
+    },
+    {
+      "id": "b2-67",
+      "level": "B2",
+      "kind": "email",
+      "topic": "學術",
+      "title": "Antrag auf Ethikvotum",
+      "titleZh": "申請倫理審查意見",
+      "text": "Betreff: Antrag auf Ethikvotum – Studie „Alltag mit Langzeitpflege“\n\nSehr geehrte Mitglieder der Ethikkommission,\n\nhiermit beantrage ich die Prüfung des beigefügten Studienprotokolls. Erhoben werden Leitfadeninterviews mit Angehörigen, die zu Hause pflegen. Die Teilnahme ist freiwillig; Einwilligungen werden schriftlich dokumentiert und können jederzeit widerrufen werden, ohne dass Nachteile für die Versorgung entstehen.\n\nBesondere Sorgfalt gilt dem Schutz vulnerabler Personen sowie der Pseudonymisierung von Audioaufnahmen. Rohdaten lagern verschlüsselt auf Hochschulservern; Zugriff haben nur projektbeteiligte Personen mit dokumentierter Schulung. Eine Weitergabe an Dritte ist nicht vorgesehen. Transkripte werden nach Projektende gemäß Löschkonzept vernichtet bzw. archiviert.\n\nIch bitte um Hinweise, falls Einwilligungsformulare oder die Risikoabschätzung nachgeschärft werden müssen. Der geplante Erhebungsbeginn liegt acht Wochen nach positivem Votum; Zwischenberichte an die Kommission sind jährlich vorgesehen. Für Rückfragen stehe ich in der Sprechstunde dienstags 10–12 Uhr zur Verfügung.\n\nMit freundlichen Grüßen\nProf. Dr. Elena Vogt\nInstitut für Sozialwissenschaften",
+      "textZh": "主旨：申請倫理審查－研究「長期照顧的日常」\n\n倫理委員會委員您好，\n\n謹此申請審查附件研究計畫書。將對居家照顧的家屬進行指引式訪談。參與自願；同意書書面紀錄且可隨時撤回，不影響其受照顧權益。\n\n對脆弱群體保護與錄音假名化將特別審慎。原始資料加密存於大學伺服器；僅受過紀錄訓練的計畫參與者可存取。不預定提供給第三人。逐字稿於計畫結束後依刪除方案銷毀或歸檔。\n\n若同意書或風險評估需再強化，請惠予指正。預定於獲同意見後八週開始蒐集資料；並將每年向委員會提交期中報告。每週二 10–12 點面談時段可答詢。\n\n此致問候\nProf. Dr. Elena Vogt\n社會科學研究所",
+      "notes": [
+        {
+          "span": "Ethikvotum",
+          "zh": "倫理審查意見"
+        },
+        {
+          "span": "Leitfadeninterviews",
+          "zh": "指引式訪談"
+        },
+        {
+          "span": "widerrufen",
+          "zh": "撤回"
+        },
+        {
+          "span": "vulnerabler Personen",
+          "zh": "脆弱／易受傷害者"
+        },
+        {
+          "span": "Pseudonymisierung",
+          "zh": "假名化"
+        },
+        {
+          "span": "nachgeschärft",
+          "zh": "再加強／收緊"
+        },
+        {
+          "span": "Erhebungsbeginn",
+          "zh": "資料蒐集開始"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "hiermit beantrage ich die Prüfung …",
+          "zh": "研究倫理申請",
+          "example": "hiermit beantrage ich die Genehmigung …"
+        },
+        {
+          "pattern": "können jederzeit widerrufen werden",
+          "zh": "撤回權",
+          "example": "kann jederzeit beendet werden"
+        },
+        {
+          "pattern": "Ich bitte um Hinweise, falls …",
+          "zh": "預先開放修正",
+          "example": "Ich bitte um Hinweise, falls Fristen eng sind."
+        }
+      ],
+      "tips": [
+        "學術正式信：對象保護→資料安全→時程→可聯繫。",
+        "抓住自願／撤回／假名化三關鍵。",
+        "語氣謙遜但程序完整。"
+      ],
+      "focus": [
+        "學術",
+        "倫理",
+        "研究",
+        "正式郵件"
+      ]
+    },
+    {
+      "id": "b2-68",
+      "level": "B2",
+      "kind": "story",
+      "topic": "政治社會",
+      "title": "Bürgerbeteiligung ohne Alibiverfahren",
+      "titleZh": "沒有走過場的公民參與",
+      "text": "Bürgerbeteiligung wird häufig angekündigt, wenn Konflikte bereits eskaliert sind. Dann wirken Workshops wie Beruhigungstherapie, während Entscheidungen faktisch feststehen. Seriöse Beteiligung beginnt früher: mit verständlichen Unterlagen, ausreichenden Fristen und einer klaren Angabe, welche Spielräume noch offen sind.\n\nDigitale Portale erhöhen Reichweite, schließen jedoch Menschen ohne stabile Netzzugänge aus, sofern keine analogen Kanäle parallel laufen. Moderation muss zudem Machtasymmetrien aktiv bearbeiten, damit Lautstarke nicht automatisch obsiegen. Protokolle und Begründungen, warum Anregungen übernommen oder verworfen wurden, erzeugen Legitimität.\n\nKritiker sehen in Beteiligung Zeitverlust. Ohne sie drohen jedoch Klagewellen und Vertrauensverlust, die Projekte teurer machen. Beteiligung ist damit kein Gegenteil von Effizienz, sondern eine Investition in Robustheit.\n\nInsofern braucht Demokratie nicht mehr Symbole, sondern verlässliche Verfahren. Es bleibt abzuwarten, inwiefern Kommunen Personal und Mandat erhalten, Beteiligung als Pflichtaufgabe statt als Imagepflege zu betreiben.",
+      "textZh": "公民參與常在衝突已升溫才被宣布。此時工作坊像安撫治療，決策其實已定。認真的參與要更早開始：易懂文件、充足期限，並清楚說明還有哪些空間可討論。\n\n數位入口擴大觸及，但若不並行實體管道，會排除網路不穩者。主持還必須主動處理權力不對稱，避免嗓門大的自動勝出。說明建議為何被採納或否決的紀錄與理由，才能產生正當性。\n\n批評者視參與為費時。但沒有參與，可能迎來訴訟潮與信任流失，反而更貴。因此參與不是效率的對立面，而是對強健性的投資。\n\n故民主需要的不是更多象徵，而是可靠程序。地方政府能否獲得人力與授權，把參與當法定任務而非形象工程，仍有待觀察。",
+      "notes": [
+        {
+          "span": "eskaliert",
+          "zh": "升溫／升級"
+        },
+        {
+          "span": "Spielräume",
+          "zh": "可協商空間"
+        },
+        {
+          "span": "obsiegen",
+          "zh": "勝出"
+        },
+        {
+          "span": "Legitimität",
+          "zh": "正當性"
+        },
+        {
+          "span": "Klagewellen",
+          "zh": "訴訟潮"
+        },
+        {
+          "span": "Robustheit",
+          "zh": "強健性／抗壓性"
+        },
+        {
+          "span": "Imagepflege",
+          "zh": "形象經營"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "während … feststehen",
+          "zh": "對比表面／實際",
+          "example": "während die Richtung feststeht"
+        },
+        {
+          "pattern": "damit A nicht automatisch B",
+          "zh": "目的防杜",
+          "example": "damit Lautstärke nicht entscheidet"
+        },
+        {
+          "pattern": "A ist kein Gegenteil von B, sondern …",
+          "zh": "重新框定",
+          "example": "Kontrolle ist kein Gegenteil von Vertrauen, sondern seine Basis."
+        }
+      ],
+      "tips": [
+        "政治社會論述：假參與→條件→數位落差→效率反論。",
+        "找出 Imagepflege 對比 Pflichtaufgabe。",
+        "標出 Insofern 收束句。"
+      ],
+      "focus": [
+        "政治社會",
+        "民主",
+        "參與",
+        "論述"
+      ]
+    },
+    {
+      "id": "b2-69",
+      "level": "B2",
+      "kind": "notice",
+      "topic": "健康",
+      "title": "Krankenhaus: Besuchs- und Hygieneregeln",
+      "titleZh": "醫院探病與衛生規定",
+      "text": "Information für Patientinnen, Patienten und Angehörige\nZum Schutz vulnerabler Personen gelten ab sofort angepasste Besuchszeiten: täglich 15–18 Uhr, maximal zwei Personen gleichzeitig am Bett. Bei Atemwegsinfekten bitten wir um Verschiebung des Besuchs; Mund-Nasen-Schutz ist auf allen Stationen mit Immunsuppression verpflichtend. Ausnahmen für Abschiedssituationen werden individuell mit der Stationsleitung abgestimmt.\n\nBlumen mit stehendem Wasser sind auf Intensivstationen nicht gestattet. Lebensmittel bitte nur nach Absprache mit dem Pflegepersonal mitbringen. Die Weitergabe von Medikamenten durch Angehörige ist untersagt. Seelsorge und ethische Beratung können unabhängig von den Besuchszeiten angefordert werden; Dolmetschung ist über die Zentrale buchbar.\n\nBeschwerden zum Ablauf richten Sie an die Patientenfürsprache (Zi. 1.12). Diese Regeln ersetzen den Aushang vom März und werden bei geänderter Infektionslage kurzfristig angepasst. Verstöße gegen Hygienevorgaben können zum Abbruch des Besuchs führen. Wir danken für Kooperation und Rücksichtnahme.\n\nNotfallnummern und aktuelle Hinweise finden Sie am Informationsschalter sowie unter /klinik-besuch.",
+      "textZh": "病患與家屬須知\n為保護脆弱族群，即日起調整探病時間：每日 15–18 點，床邊同時最多兩人。有呼吸道感染症狀請改期；免疫抑制病房必須戴口罩。告別等特殊情況由病房主管個案協調例外。\n\n加護病房禁止帶有積水的花。食物請先與護理人員商量。禁止家屬轉交藥品。牧靈與倫理諮詢可不受探病時段限制申請；口譯可向總機預約。\n\n流程申訴請洽病患權益服務（1.12 室）。本規則取代三月公告，並隨感染情勢短期調整。違反衛生規定可能中止探視。感謝配合與體諒。\n\n緊急電話與最新提示見服務台及 /klinik-besuch。",
+      "notes": [
+        {
+          "span": "vulnerabler Personen",
+          "zh": "脆弱族群"
+        },
+        {
+          "span": "Immunsuppression",
+          "zh": "免疫抑制"
+        },
+        {
+          "span": "nicht gestattet",
+          "zh": "不允許"
+        },
+        {
+          "span": "untersagt",
+          "zh": "禁止"
+        },
+        {
+          "span": "Patientenfürsprache",
+          "zh": "病患權益／申訴窗口"
+        },
+        {
+          "span": "Infektionslage",
+          "zh": "感染情勢"
+        },
+        {
+          "span": "Rücksichtnahme",
+          "zh": "體諒／顧及他人"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "gelten ab sofort …",
+          "zh": "即時生效規則",
+          "example": "gelten ab sofort neue Öffnungszeiten"
+        },
+        {
+          "pattern": "bitte nur nach Absprache …",
+          "zh": "需事先協商",
+          "example": "bitte nur nach Absprache fotografieren"
+        },
+        {
+          "pattern": "werden bei … angepasst",
+          "zh": "動態調整",
+          "example": "werden bei Bedarf angepasst"
+        }
+      ],
+      "tips": [
+        "醫院公告：保護理由→禁止清單→申訴→動態更新。",
+        "抓住 verpflichtend／untersagt 強度詞。",
+        "注意對弱勢的例外服務（Seelsorge）。"
+      ],
+      "focus": [
+        "健康",
+        "機構",
+        "公告",
+        "規範"
+      ]
+    },
+    {
+      "id": "b2-70",
+      "level": "B2",
+      "kind": "story",
+      "topic": "媒體",
+      "title": "Desinformation als Geschäftsmodell",
+      "titleZh": "作為商業模式的假訊",
+      "text": "Desinformation wird manchmal als bloßes Missverständnis dargestellt. Tatsächlich existieren professionelle Produktionsketten, die Aufmerksamkeit als Ware behandeln: zugespitzte Behauptungen, emotionale Trigger, schnelle Verbreitung in geschlossenen Gruppen. Wer nur auf Absicht einzelner Täterinnen schaut, unterschätzt Anreizstrukturen.\n\nPlattformen reagieren mit Kennzeichnungen und Löschungen, geraten jedoch in Zielkonflikte zwischen Reichweite und Verantwortung. Regulierung kann Transparenz erzwingen, ersetzt aber keine redaktionelle Einordnung und keine öffentliche Medienförderung. Gleichzeitig müssen Eingriffe richterlich überprüfbar bleiben, damit Macht nicht willkürlich wächst.\n\nNutzerinnen sind nicht hilflos, aber auch nicht allein verantwortlich. Medienkompetenz wirkt, sofern Schulen und Erwachsenenbildung dauerhaft ausgestattet werden. Appelle ohne Infrastruktur verpuffen.\n\nInsofern ist der Kampf gegen Desinformation eine Aufgabe von Technik, Recht und Bildung zugleich. Es bleibt abzuwarten, inwiefern neue Kennzeichnungspflichten die Qualität öffentlicher Debatten messbar verbessern – oder lediglich Sichtbarkeit von Konflikten erhöhen.",
+      "textZh": "假訊有時被說成只是誤解。實際上存在把注意力當商品的專業生產鏈：尖銳斷言、情緒觸發、在封閉群組快速擴散。若只看個別行為者意圖，會低估誘因結構。\n\n平台以標示與刪除回應，卻陷入觸及率與責任的目標衝突。管制能強迫透明，但取代不了編輯定位與公共媒體資助。同時干預必須可受司法審查，以免權力恣意擴張。\n\n使用者並非無助，但也非獨負全責。媒體素養要有效，學校與成人教育須長期獲得資源。沒有基礎設施的呼籲會落空。\n\n因此對抗假訊是技術、法律與教育的共同任務。新的標示義務能否可測量地改善公共辯論品質——或只是提高衝突可見度——仍有待觀察。",
+      "notes": [
+        {
+          "span": "Desinformation",
+          "zh": "假訊／虛假訊息"
+        },
+        {
+          "span": "zugespitzte Behauptungen",
+          "zh": "尖銳化的斷言"
+        },
+        {
+          "span": "Anreizstrukturen",
+          "zh": "誘因結構"
+        },
+        {
+          "span": "Zielkonflikte",
+          "zh": "目標衝突"
+        },
+        {
+          "span": "richterlich überprüfbar",
+          "zh": "可受司法審查"
+        },
+        {
+          "span": "verpuffen",
+          "zh": "落空／效果消散"
+        },
+        {
+          "span": "Kennzeichnungspflichten",
+          "zh": "標示義務"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Wer nur auf A schaut, unterschätzt B",
+          "zh": "糾正焦點",
+          "example": "Wer nur auf Kosten schaut, unterschätzt Risiken."
+        },
+        {
+          "pattern": "wirkt, sofern …",
+          "zh": "條件有效",
+          "example": "Hilfe wirkt, sofern sie früh kommt."
+        },
+        {
+          "pattern": "eine Aufgabe von A, B und C zugleich",
+          "zh": "多重責任",
+          "example": "eine Aufgabe von Staat, Firmen und Bürgern zugleich"
+        }
+      ],
+      "tips": [
+        "媒體論述：商業邏輯→平台兩難→管制界限→教育條件。",
+        "找出『不只個人責任』的句子。",
+        "結論保留兩種可能結果。"
+      ],
+      "focus": [
+        "媒體",
+        "民主",
+        "科技",
+        "論述"
       ]
     }
   ]
