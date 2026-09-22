@@ -765,7 +765,7 @@ export default function App() {
             ? '完整 A1→C1：冠詞、複數、字首字根、動詞變化與字族記憶。'
             : section === 'grammar'
               ? '完整 A1→C1 文法：格變、時態、語序、從句、被動與虛擬式。'
-              : 'der／die／das 怎麼記？先把最普通的一批連冠詞一起背。'}
+              : 'der／die／das、bin／bist／ist：冠詞與最常用變位一起記。'}
         </p>
 
         <div className="cta-row section-switch" role="tablist" aria-label="單字、冠詞或文法">
@@ -1052,7 +1052,7 @@ export default function App() {
           {section === 'grammar'
             ? '文法依 CEFR 分級：先掌握規則與例句，再標記已學會。建議 Chrome／Edge 聽發音。'
             : section === 'articles'
-              ? '冠詞介紹頁：先記 der／die／das 與最常見名詞。建議 Chrome／Edge 聽發音。'
+              ? '冠詞與 sein／haben 入門：定冠詞、格變，以及 bin／bist／ist。建議 Chrome／Edge 聽發音。'
               : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
         </p>
       </footer>

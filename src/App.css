@@ -1496,6 +1496,17 @@ select {
   margin-top: 0.55rem;
 }
 
+.ai-subhead {
+  margin: 1.25rem 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+}
+
+.ai-conj-table td:nth-child(2) {
+  font-family: var(--font-de);
+  font-size: 1.05rem;
+}
+
 .ai-one-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

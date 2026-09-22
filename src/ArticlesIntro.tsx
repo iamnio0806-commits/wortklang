@@ -104,6 +104,24 @@ const NUMBER_ONE = [
   },
 ]
 
+const SEIN_ROWS = [
+  ['ich', 'bin', '我是／在'],
+  ['du', 'bist', '你是／在'],
+  ['er / sie / es', 'ist', '他／她／它是／在'],
+  ['wir', 'sind', '我們是／在'],
+  ['ihr', 'seid', '你們是／在'],
+  ['sie / Sie', 'sind', '他們／您是／在'],
+]
+
+const HABEN_ROWS = [
+  ['ich', 'habe', '我有'],
+  ['du', 'hast', '你有'],
+  ['er / sie / es', 'hat', '他／她／它有'],
+  ['wir', 'haben', '我們有'],
+  ['ihr', 'habt', '你們有'],
+  ['sie / Sie', 'haben', '他們／您有'],
+]
+
 function GenderTable({
   caption,
   rows,
@@ -168,7 +186,8 @@ export default function ArticlesIntro() {
           德文名詞幾乎都要帶性別。先把三個定冠詞記熟，再記最常見的那一批名詞；顏色會一直跟著你：
           <span className="gender-der"> der 藍</span>、
           <span className="gender-die"> die 紅</span>、
-          <span className="gender-das"> das 綠</span>。
+          <span className="gender-das"> das 綠</span>
+          。同一頁也收了最常用的 <strong>bin／bist／ist</strong> 與 haben。
         </p>
         <div className="ai-trio" aria-label="三個定冠詞">
           {(
@@ -203,6 +222,99 @@ export default function ArticlesIntro() {
           <li>複數定冠詞一律是 <span className="gender-die">die</span>（先記這個不變的點）。</li>
           <li>不定冠詞「一個」：陽性／中性 <strong>ein</strong>，陰性 <span className="gender-die">eine</span>。</li>
           <li>背單字請連冠詞：不要只背 Haus，要背 <span className="gender-das">das</span> Haus。</li>
+        </ul>
+      </section>
+
+      <section className="ai-block">
+        <h3>sein：bin · bist · ist</h3>
+        <p className="ai-lead-sm">
+          字典寫 <strong>sein</strong>（是／在），但句子裡幾乎都是變位：ich{' '}
+          <strong>bin</strong>、du <strong>bist</strong>、er/sie/es{' '}
+          <strong>ist</strong>。單字卡記原形 sein；這裡先把最常用變位背熟。
+        </p>
+        <div className="grammar-table-wrap">
+          <table className="grammar-table ai-conj-table">
+            <thead>
+              <tr>
+                <th>人稱</th>
+                <th>sein</th>
+                <th>意思</th>
+              </tr>
+            </thead>
+            <tbody>
+              {SEIN_ROWS.map((row) => (
+                <tr key={row[0]}>
+                  <td>{row[0]}</td>
+                  <td>
+                    <strong>{row[1]}</strong>
+                  </td>
+                  <td>{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="ai-examples">
+          <p>
+            Ich <strong>bin</strong> Student.／Du <strong>bist</strong> hier.／Das{' '}
+            <span className="gender-das">Kind</span> <strong>ist</strong> klein.
+          </p>
+          <p>
+            Wir <strong>sind</strong> in Berlin.／Seid ihr bereit?／Sie{' '}
+            <strong>sind</strong> Lehrerin.
+          </p>
+          <Speak
+            label="聽 sein"
+            text="Ich bin Student. Du bist hier. Das Kind ist klein. Wir sind in Berlin."
+          />
+        </div>
+
+        <h4 className="ai-subhead">haben：habe · hast · hat</h4>
+        <p className="ai-lead-sm">
+          字典寫 <strong>haben</strong>（有）。跟 sein 一樣，先記變位，單字卡仍用原形。
+        </p>
+        <div className="grammar-table-wrap">
+          <table className="grammar-table ai-conj-table">
+            <thead>
+              <tr>
+                <th>人稱</th>
+                <th>haben</th>
+                <th>意思</th>
+              </tr>
+            </thead>
+            <tbody>
+              {HABEN_ROWS.map((row) => (
+                <tr key={row[0]}>
+                  <td>{row[0]}</td>
+                  <td>
+                    <strong>{row[1]}</strong>
+                  </td>
+                  <td>{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="ai-examples">
+          <p>
+            Ich <strong>habe</strong> ein <span className="gender-das">Buch</span>
+            .／Hast du Zeit?／Er <strong>hat</strong> ein{' '}
+            <span className="gender-das">Auto</span>.
+          </p>
+          <Speak
+            label="聽 haben"
+            text="Ich habe ein Buch. Hast du Zeit? Er hat ein Auto."
+          />
+        </div>
+        <ul className="ai-points">
+          <li>
+            單字頁會看到原形 <strong>sein</strong>／<strong>haben</strong>
+            ，例句會寫出原形方便對照；變位表以這一頁為準。
+          </li>
+          <li>
+            極常用口頭短句：Wie geht&apos;s? — Mir geht&apos;s gut.／Ich{' '}
+            <strong>bin</strong> müde.／Ich <strong>habe</strong> Hunger.
+          </li>
         </ul>
       </section>
 
@@ -345,6 +457,9 @@ export default function ArticlesIntro() {
           </li>
           <li>
             先記「格＋性別」兩軸：橫看陰陽中，豎看一／四／三／二格。
+          </li>
+          <li>
+            sein 口訣：bin／bist／ist，複數多半 sind（ihr 是 seid）。
           </li>
           <li>ein 跟 kein、mein 是同一套尾巴，背一組等於背三組。</li>
           <li>單字卡正面只寫「冠詞＋名詞」，反面再寫中文。</li>

@@ -67,7 +67,22 @@ DEVICE_HINTS = ("電腦", "手機", "電話", "平板", "印表", "螢幕", "鍵
 ILLNESS_HINTS = ("病", "痛", "感冒", "發燒", "咳", "過敏", "傷")
 COLOR_HINTS = ("紅", "藍", "綠", "黃", "黑", "白", "灰", "棕", "粉", "橙", "紫")
 
-AUX_VERBS = {
+# A1/A2：例句必須出現原形（infinitive），方便對照單字卡
+AUX_VERBS_LEMMA = {
+    "sein": ("Ich möchte heute zu Hause sein.", "我今天想待在家。"),
+    "haben": ("Ich möchte mehr Zeit haben.", "我想多一點時間。"),
+    "werden": ("Arzt werden ist mein Ziel.", "成為醫生是我的目標。"),
+    "können": ("Ich will gut Deutsch können.", "我想要很會德文。"),
+    "müssen": ("Wir müssen jetzt gehen.", "我們現在必須走了。"),
+    "dürfen": ("Hier dürfen wir nicht rauchen.", "我們這裡不准吸菸。"),
+    "sollen": ("Was sollen wir jetzt tun?", "我們現在該做什麼？"),
+    "wollen": ("Wir wollen heute früh schlafen.", "我們今天想早點睡。"),
+    "mögen": ("Viele Leute mögen diese Stadt.", "很多人喜歡這座城市。"),
+    "möchten": ("Wir möchten einen Kaffee, bitte.", "我們想要一杯咖啡。"),
+}
+
+# B1+ 可用常見變位（文法頁另有完整表）
+AUX_VERBS_FINITE = {
     "sein": ("Ich bin müde, aber zufrieden.", "我累，但很滿足。"),
     "haben": ("Hast du heute Zeit?", "你今天有時間嗎？"),
     "werden": ("Es wird gleich dunkel.", "天快黑了。"),
@@ -509,92 +524,96 @@ def classify_verb(word: str, zh: str) -> str:
     return "activity"
 
 
-# High-frequency verbs with fixed natural examples (overrides templates)
+# High-frequency verbs — examples MUST contain the infinitive lemma as written
 VERB_CURATED: dict[str, tuple[str, str]] = {
-    "wohnen": ("Ich wohne in Berlin.", "我住在柏林。"),
-    "leben": ("Wir leben seit drei Jahren hier.", "我們在這裡住了三年。"),
-    "gehen": ("Wir gehen jetzt nach Hause.", "我們現在回家。"),
-    "kommen": ("Kommst du morgen mit?", "你明天一起來嗎？"),
-    "fahren": ("Wir fahren mit dem Bus zur Schule.", "我們搭公車去學校。"),
-    "laufen": ("Ich laufe jeden Morgen im Park.", "我每天早上在公園跑步。"),
-    "fliegen": ("Nächste Woche fliegen wir nach Wien.", "下週我們飛去維也納。"),
-    "schwimmen": ("Im Sommer schwimme ich gern.", "夏天我喜歡游泳。"),
+    "wohnen": ("Ich möchte in Berlin wohnen.", "我想住在柏林。"),
+    "leben": ("Wir wollen lange hier leben.", "我們想在這裡長期生活。"),
+    "gehen": ("Wir wollen jetzt nach Hause gehen.", "我們現在想回家。"),
+    "kommen": ("Möchtest du morgen kommen?", "你明天想來嗎？"),
+    "fahren": ("Wir wollen mit dem Bus fahren.", "我們想搭公車。"),
+    "laufen": ("Ich möchte jeden Morgen laufen.", "我想每天早上跑步。"),
+    "fliegen": ("Nächste Woche wollen wir nach Wien fliegen.", "下週我們想飛去維也納。"),
+    "schwimmen": ("Im Sommer möchte ich schwimmen.", "夏天我想游泳。"),
     "stehen": ("Bitte bleib kurz stehen!", "請先停一下！"),
-    "sitzen": ("Darf ich mich hier setzen?", "我可以坐這裡嗎？"),
-    "liegen": ("Das Buch liegt auf dem Tisch.", "書在桌上。"),
-    "bleiben": ("Ich bleibe heute Abend zu Hause.", "我今晚待在家。"),
-    "warten": ("Wir warten auf den Bus.", "我們在等公車。"),
+    "sitzen": ("Darf ich hier sitzen?", "我可以坐這裡嗎？"),
+    "liegen": ("Das Buch soll auf dem Tisch liegen.", "書應該放在桌上。"),
+    "bleiben": ("Ich möchte heute Abend zu Hause bleiben.", "我今晚想待在家。"),
+    "warten": ("Wir müssen auf den Bus warten.", "我們得等公車。"),
     "einsteigen": ("Bitte hier einsteigen!", "請從這裡上車！"),
-    "aussteigen": ("Wir steigen an der nächsten Station aus.", "我們下一站下車。"),
+    "aussteigen": ("Wir müssen an der nächsten Station aussteigen.", "我們得在下一站下車。"),
     "umsteigen": ("In Köln müssen wir umsteigen.", "我們得在科隆轉車。"),
-    "abfahren": ("Der Zug fährt um 9 Uhr ab.", "火車九點出發。"),
-    "ankommen": ("Wann kommen wir in Hamburg an?", "我們什麼時候到漢堡？"),
-    "mitkommen": ("Kommst du heute Abend mit?", "你今晚一起來嗎？"),
-    "essen": ("Wir essen um 12 Uhr zu Mittag.", "我們十二點吃午餐。"),
-    "trinken": ("Ich trinke morgens Kaffee.", "我早上喝咖啡。"),
-    "kochen": ("Anna kocht heute Pasta.", "Anna 今天煮義大利麵。"),
-    "sprechen": ("Sprichst du Deutsch?", "你會說德文嗎？"),
+    "abfahren": ("Der Zug soll um 9 Uhr abfahren.", "火車應該九點出發。"),
+    "ankommen": ("Wann sollen wir in Hamburg ankommen?", "我們該什麼時候抵達漢堡？"),
+    "mitkommen": ("Möchtest du heute Abend mitkommen?", "你今晚想一起來嗎？"),
+    "essen": ("Wir wollen um 12 Uhr essen.", "我們想十二點吃飯。"),
+    "trinken": ("Möchtest du etwas trinken?", "你想喝點什麼嗎？"),
+    "kochen": ("Anna will heute Pasta kochen.", "Anna 今天想煮義大利麵。"),
+    "sprechen": ("Kannst du Deutsch sprechen?", "你會說德文嗎？"),
     "sagen": ("Kannst du das noch einmal sagen?", "你可以再說一次嗎？"),
     "fragen": ("Darf ich etwas fragen?", "我可以問一件事嗎？"),
-    "antworten": ("Bitte antworte auf die E-Mail.", "請回覆這封郵件。"),
-    "schreiben": ("Ich schreibe gerade eine Nachricht.", "我正在寫訊息。"),
-    "lesen": ("Abends lese ich ein Buch.", "晚上我看書。"),
-    "hören": ("Hörst du die Musik?", "你有聽到音樂嗎？"),
-    "sehen": ("Siehst du das Schild dort?", "你看到那邊的牌子嗎？"),
+    "antworten": ("Bitte auf die E-Mail antworten!", "請回覆這封郵件！"),
+    "schreiben": ("Ich möchte eine Nachricht schreiben.", "我想寫一則訊息。"),
+    "lesen": ("Abends möchte ich ein Buch lesen.", "晚上我想看書。"),
+    "hören": ("Kannst du die Musik hören?", "你聽得到音樂嗎？"),
+    "sehen": ("Kannst du das Schild dort sehen?", "你看得到那邊的牌子嗎？"),
     "helfen": ("Kannst du mir bitte helfen?", "可以請你幫我嗎？"),
-    "danken": ("Ich danke dir für deine Hilfe.", "謝謝你的幫忙。"),
-    "treffen": ("Wir treffen uns um 5 Uhr.", "我們五點碰面。"),
-    "lernen": ("Ich lerne jeden Tag Deutsch.", "我每天學德文。"),
-    "arbeiten": ("Er arbeitet im Büro.", "他在辦公室工作。"),
-    "studieren": ("Sie studiert Medizin.", "她在唸醫學。"),
-    "üben": ("Wir üben die Dialoge noch einmal.", "我們再練一次對話。"),
+    "danken": ("Ich möchte dir für deine Hilfe danken.", "我想謝謝你的幫忙。"),
+    "treffen": ("Wir wollen uns um 5 Uhr treffen.", "我們想五點碰面。"),
+    "lernen": ("Ich möchte jeden Tag Deutsch lernen.", "我想每天學德文。"),
+    "arbeiten": ("Er will im Büro arbeiten.", "他想在辦公室工作。"),
+    "studieren": ("Sie will Medizin studieren.", "她想唸醫學。"),
+    "üben": ("Wir wollen die Dialoge noch einmal üben.", "我們想再練一次對話。"),
     "einkaufen": ("Am Samstag gehe ich einkaufen.", "星期六我去購物。"),
-    "putzen": ("Am Sonntag putze ich die Küche.", "星期天我打掃廚房。"),
-    "waschen": ("Ich wasche gerade die Wäsche.", "我正在洗衣服。"),
-    "anziehen": ("Zieh bitte eine Jacke an, es ist kalt.", "外面冷，請穿件外套。"),
+    "putzen": ("Am Sonntag müssen wir die Küche putzen.", "星期天我們得打掃廚房。"),
+    "waschen": ("Ich muss noch die Wäsche waschen.", "我還得洗衣服。"),
+    "anziehen": ("Bitte eine Jacke anziehen, es ist kalt.", "請穿件外套，外面冷。"),
     "öffnen": ("Kannst du bitte das Fenster öffnen?", "可以請你開窗嗎？"),
-    "schließen": ("Schließ bitte die Tür.", "請把門關上。"),
-    "bringen": ("Bringst du mir ein Glas Wasser?", "你可以幫我拿杯水來嗎？"),
-    "finden": ("Ich finde den Schlüssel nicht.", "我找不到鑰匙。"),
-    "suchen": ("Wir suchen einen Parkplatz.", "我們在找停車位。"),
-    "verstehen": ("Ich verstehe die Frage nicht.", "我聽不懂這個問題。"),
-    "wissen": ("Weißt du, wie spät es ist?", "你知道現在幾點嗎？"),
-    "kennen": ("Kennst du diesen Film?", "你認識／看過這部電影嗎？"),
-    "denken": ("Was denkst du darüber?", "你對這件事怎麼想？"),
-    "vergessen": ("Vergiss deine Flasche nicht!", "別忘了你的水瓶！"),
-    "erinnern": ("Erinnerst du dich an ihn?", "你還記得他嗎？"),
-    "kaufen": ("Ich kaufe Brot beim Bäcker.", "我在麵包店買麵包。"),
-    "verkaufen": ("Das Geschäft verkauft frisches Obst.", "這家店賣新鮮水果。"),
-    "brauchen": ("Ich brauche noch etwas Zeit.", "我還需要一點時間。"),
+    "schließen": ("Bitte die Tür schließen!", "請把門關上！"),
+    "bringen": ("Kannst du mir ein Glas Wasser bringen?", "你可以幫我拿杯水來嗎？"),
+    "finden": ("Ich kann den Schlüssel nicht finden.", "我找不到鑰匙。"),
+    "suchen": ("Wir müssen einen Parkplatz suchen.", "我們得找停車位。"),
+    "verstehen": ("Ich kann die Frage nicht verstehen.", "我聽不懂這個問題。"),
+    "wissen": ("Das will ich genau wissen.", "這件事我想確實知道。"),
+    "kennen": ("Diesen Film kennen viele Leute.", "很多人都認識／看過這部電影。"),
+    "denken": ("Was soll ich darüber denken?", "這件事我該怎麼想？"),
+    "vergessen": ("Die Flasche nicht vergessen!", "別忘了水瓶！"),
+    "erinnern": ("Ich kann mich kaum an ihn erinnern.", "我幾乎想不起他。"),
+    "kaufen": ("Ich möchte Brot beim Bäcker kaufen.", "我想在麵包店買麵包。"),
+    "verkaufen": ("Das Geschäft will frisches Obst verkaufen.", "這家店想賣新鮮水果。"),
+    "brauchen": ("Ich werde noch etwas Zeit brauchen.", "我還會需要一點時間。"),
     "benutzen": ("Darf ich dein Handy benutzen?", "我可以用你的手機嗎？"),
-    "funktionieren": ("Der Drucker funktioniert nicht.", "印表機壞了／不能用。"),
-    "klappen": ("Alles hat gut geklappt.", "一切都很順利。"),
-    "steigen": ("Die Preise steigen wieder.", "物價又上漲了。"),
+    "funktionieren": ("Der Drucker will nicht funktionieren.", "印表機就是不能用。"),
+    "klappen": ("Hoffentlich wird alles gut klappen.", "希望一切都能順利。"),
+    "steigen": ("Die Preise werden wieder steigen.", "物價又會上漲。"),
     "zählen": ("Kannst du bis zehn zählen?", "你可以數到十嗎？"),
-    "messen": ("Wir messen die Temperatur.", "我們在量溫度。"),
-    "wiegen": ("Wie viel wiegt dein Koffer?", "你的行李箱多重？"),
-    "bauen": ("Die Kinder bauen einen Turm.", "孩子們在蓋一座塔。"),
+    "messen": ("Wir müssen die Temperatur messen.", "我們得量溫度。"),
+    "wiegen": ("Kannst du den Koffer wiegen?", "你可以秤一下行李箱嗎？"),
+    "bauen": ("Die Kinder wollen einen Turm bauen.", "孩子們想蓋一座塔。"),
     "entschuldigen": ("Entschuldigen Sie bitte die Verspätung.", "請原諒我遲到。"),
-    "rufen": ("Ruf mich bitte später an.", "請晚點打給我。"),
-    "anrufen": ("Ich rufe dich nach der Arbeit an.", "下班後我打給你。"),
-    "duschen": ("Ich dusche schnell und komme dann.", "我先快速冲個澡再過來。"),
+    "rufen": ("Bitte mich später anrufen!", "請晚點打給我！"),
+    "anrufen": ("Ich will dich nach der Arbeit anrufen.", "下班後我想打給你。"),
+    "duschen": ("Ich möchte schnell duschen und dann kommen.", "我想先快速冲個澡再過來。"),
     "probieren": ("Möchtest du den Kuchen probieren?", "你想試試這蛋糕嗎？"),
-    "singen": ("Wir singen zusammen ein Lied.", "我們一起唱一首歌。"),
-    "trinken": ("Möchtest du etwas trinken?", "你想喝點什麼嗎？"),
-    "passen": ("Die Jacke passt mir gut.", "這件外套很適合我。"),
-    "stimmen": ("Das stimmt so nicht.", "這不對／不是這樣。"),
+    "singen": ("Wir wollen zusammen ein Lied singen.", "我們想一起唱一首歌。"),
+    "passen": ("Die Jacke soll mir gut passen.", "這件外套應該要很適合我。"),
+    "stimmen": ("Das kann so nicht stimmen.", "這不可能是對的。"),
     "zeigen": ("Kannst du mir den Weg zeigen?", "你可以指給我看路怎麼走嗎？"),
     "zwingen": ("Niemand darf dich dazu zwingen.", "誰都不能強迫你這麼做。"),
-    "enthalten": ("Der Saft enthält viel Zucker.", "這果汁含很多糖。"),
+    "enthalten": ("Der Saft darf nicht zu viel Zucker enthalten.", "這果汁不該含太多糖。"),
     "rechnen": ("Kannst du das bitte nachrechnen?", "可以請你再算一次嗎？"),
-    "schneiden": ("Ich schneide das Brot in Scheiben.", "我把麵包切成片。"),
-    "decken": ("Deck bitte den Tisch!", "請擺好桌子！"),
-    "löschen": ("Lösch bitte das Licht.", "請把燈關掉。"),
-    "vorschlagen": ("Ich schlage vor, früher zu gehen.", "我建議早點走。"),
-    "rennen": ("Die Kinder rennen im Hof.", "孩子們在院子裡跑。"),
-    "zurückkommen": ("Wann kommst du zurück?", "你什麼時候回來？"),
-    "erzählen": ("Erzähl mir bitte von deiner Reise.", "請跟我說說你的旅行。"),
+    "schneiden": ("Ich will das Brot in Scheiben schneiden.", "我想把麵包切成片。"),
+    "decken": ("Bitte den Tisch decken!", "請擺好桌子！"),
+    "löschen": ("Bitte das Licht löschen!", "請把燈關掉！"),
+    "vorschlagen": ("Ich möchte vorschlagen, früher zu gehen.", "我想建議早點走。"),
+    "rennen": ("Die Kinder wollen im Hof rennen.", "孩子們想在院子裡跑。"),
+    "zurückkommen": ("Wann willst du zurückkommen?", "你想什麼時候回來？"),
+    "erzählen": ("Bitte von deiner Reise erzählen!", "請跟我說說你的旅行！"),
     "mitessen": ("Darfst du bei uns mitessen?", "你可以跟我們一起吃饭嗎？"),
+    "heißen": ("Wie soll das Kind heißen?", "這孩子該叫什麼名字？"),
+    "machen": ("Was sollen wir jetzt machen?", "我們現在該做什麼？"),
+    "geben": ("Kannst du mir das Buch geben?", "你可以給我那本書嗎？"),
+    "nehmen": ("Darf ich noch einen Apfel nehmen?", "我可以再拿一個蘋果嗎？"),
+    "spielen": ("Die Kinder wollen draußen spielen.", "孩子們想在外面玩。"),
 }
 
 
@@ -881,14 +900,38 @@ def ex_other(w, seed) -> tuple[str, str]:
     return bank[seed % len(bank)]
 
 
+def lemma_in_example(word: str, de: str) -> bool:
+    """A1/A2: dictionary form must appear as a contiguous substring (case-insensitive)."""
+    return word.lower() in de.lower()
+
+
+def force_lemma_example(w: dict) -> tuple[str, str]:
+    word, zh = w["word"], short_zh(w["translation"])
+    if w["category"] == "動詞":
+        return (
+            f"Ich möchte heute {word}.",
+            f"我今天想要{zh}。",
+        )
+    if w["category"] == "形容詞":
+        return (f"Das ist {word}.", f"這是{zh}的。")
+    if w.get("article"):
+        art = w["article"]
+        return (f"{cap(art)} {word} ist wichtig.", f"這個{zh}很重要。")
+    return (f"Was bedeutet „{word}“?", f"「{word}」是什麼意思？（{zh}）")
+
+
 def make_example(w: dict, index: int) -> tuple[str, str]:
     key = w["word"].lower()
-    if key in AUX_VERBS:
-        de, zh = AUX_VERBS[key]
-        if w["level"] in ("B2", "C1"):
-            name = pick(NAMES, index, 4)
-            de = f"{de[:-1]}, meint {name}." if de.endswith(".") else f"{de} — {name}"
-            zh = f"{zh}（{name}這麼說）"
+    level = w["level"]
+    if key in AUX_VERBS_LEMMA:
+        if level in ("A1", "A2"):
+            de, zh = AUX_VERBS_LEMMA[key]
+        else:
+            de, zh = AUX_VERBS_FINITE.get(key, AUX_VERBS_LEMMA[key])
+            if level in ("B2", "C1"):
+                name = pick(NAMES, index, 4)
+                de = f"{de[:-1]}, meint {name}." if de.endswith(".") else f"{de} — {name}"
+                zh = f"{zh}（{name}這麼說）"
         return de, zh
     if key in CURATED:
         de, zh = CURATED[key]
@@ -913,23 +956,53 @@ def make_example(w: dict, index: int) -> tuple[str, str]:
             "abstract": ex_abstract,
             "illness": ex_illness,
         }[kind]
-        return fn(w, seed)
-    if w["category"] == "動詞":
-        return ex_verb(w, seed)
-    if w["category"] == "形容詞":
-        return ex_adj(w, seed)
-    return ex_other(w, seed)
+        de, zh = fn(w, seed)
+    elif w["category"] == "動詞":
+        de, zh = ex_verb(w, seed)
+    elif w["category"] == "形容詞":
+        de, zh = ex_adj(w, seed)
+    else:
+        de, zh = ex_other(w, seed)
+
+    # A1/A2: guarantee the card lemma is visible in the German sentence
+    if level in ("A1", "A2") and not lemma_in_example(w["word"], de):
+        de, zh = force_lemma_example(w)
+    return de, zh
 
 
 def uniquify(entries: list[dict]) -> int:
     seen: dict[str, int] = {}
     fixed = 0
-    for w in entries:
+    for i, w in enumerate(entries):
         de = w["example"]
         if de not in seen:
             seen[de] = 0
             continue
         seen[de] += 1
+        lemma = w["word"]
+        if w["level"] in ("A1", "A2"):
+            # Keep lemma visible — do not append conjugations or unrelated clauses
+            for salt in range(1, 40):
+                de2, zh2 = make_example(w, i + salt * 19)
+                if de2 not in seen and lemma_in_example(lemma, de2):
+                    w["example"] = de2
+                    w["exampleTranslation"] = zh2
+                    seen[de2] = 0
+                    fixed += 1
+                    break
+            else:
+                de2 = f"Ja: {de}"
+                if not lemma_in_example(lemma, de2):
+                    de2, zh2 = force_lemma_example(w)
+                    de2 = f"{de2} ({w['id']})"
+                    w["exampleTranslation"] = zh2
+                else:
+                    w["exampleTranslation"] = w["exampleTranslation"] + "（再說一次）"
+                w["example"] = de2
+                seen[de2] = 0
+                fixed += 1
+            continue
+
         name = pick(NAMES, hmix(w["id"]), seen[de])
         if de.endswith((".", "!", "?")):
             de2 = f"{de[:-1]}; {name} bestätigt das{de[-1]}"
@@ -955,10 +1028,29 @@ def main() -> None:
         w["exampleTranslation"] = re.sub(r" +", " ", zh).strip()
 
     fixed = uniquify(data)
+
+    # Final A1/A2 lemma guard after uniquify
+    repaired = 0
+    for w in data:
+        if w["level"] in ("A1", "A2") and not lemma_in_example(w["word"], w["example"]):
+            de, zh = force_lemma_example(w)
+            w["example"] = de
+            w["exampleTranslation"] = zh
+            repaired += 1
+
     PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
     examples = [w["example"] for w in data]
-    print(f"total={len(data)} unique={len(set(examples))} fixes={fixed}")
+    print(f"total={len(data)} unique={len(set(examples))} fixes={fixed} repaired={repaired}")
+
+    bad = [
+        w
+        for w in data
+        if w["level"] in ("A1", "A2") and not lemma_in_example(w["word"], w["example"])
+    ]
+    print(f"A1/A2 lemma-missing after fix: {len(bad)}")
+    for w in bad[:10]:
+        print(f"  {w['word']}: {w['example']}")
 
     # show classified samples
     for label, pred in [
@@ -971,7 +1063,7 @@ def main() -> None:
         print(f"\n== {label}")
         n = 0
         for w in data:
-            if pred(w):
+            if pred(w) and w["level"] in ("A1", "A2"):
                 print(f"  {w.get('article') or '-'} {w['word']} ({short_zh(w['translation'])})")
                 print(f"    {w['example']}")
                 print(f"    {w['exampleTranslation']}")
