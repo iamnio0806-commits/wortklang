@@ -78,6 +78,9 @@ export type ExamSection = {
   items: ExamItem[]
 }
 
+/** 同級內難度微調（非跨 CEFR） */
+export type ExamDifficulty = 'leichter' | 'standard' | 'etwas_schwerer'
+
 export type ExamPaper = {
   id: string
   level: ExamLevel
@@ -85,6 +88,8 @@ export type ExamPaper = {
   round: number
   /** compact = 現有綜合卷；goethe = 分 Teil 的考場結構 */
   format?: 'compact' | 'goethe'
+  /** 同級內稍易／標準／稍難；缺省視為 standard */
+  difficulty?: ExamDifficulty
   title: string
   titleZh: string
   durationMin: number
@@ -138,6 +143,13 @@ export function countScoredItems(paper: ExamPaper): number {
 
 export function paperFormatLabel(paper: ExamPaper): string {
   return paper.format === 'goethe' ? '考場版' : '練習版'
+}
+
+export function paperDifficultyLabel(paper: ExamPaper): string | null {
+  const d = paper.difficulty ?? 'standard'
+  if (d === 'leichter') return '稍易'
+  if (d === 'etwas_schwerer') return '稍難'
+  return null
 }
 
 export function sectionTabLabel(section: ExamSection): string {
