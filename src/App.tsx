@@ -291,7 +291,7 @@ export default function App() {
         <p className="brand">Wortklang</p>
         <h1>聽得見的德文單字</h1>
         <p className="tagline">
-          依 CEFR 分級 A1 → A2，含冠詞、例句與發音，一步步學完初級。
+          850+ 個 A1／A2 單字：冠詞、例句、發音，依等級一步步學完。
         </p>
         <div className="cta-row">
           <button
