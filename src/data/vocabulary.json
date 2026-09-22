@@ -18,8 +18,8 @@
     "translation": "女人／太太",
     "phonetic": "Frau",
     "category": "家庭",
-    "example": "Sprich bitte mit der Frau.",
-    "exampleTranslation": "請跟這位女人說一下。",
+    "example": "Ich spreche mit der Frau.",
+    "exampleTranslation": "我跟那位女士說話。",
     "level": "A1",
     "plural": "Frauen"
   },
@@ -2283,8 +2283,8 @@
     "translation": "祖母",
     "phonetic": "Großmutter",
     "category": "家庭",
-    "example": "Sprich bitte mit der Großmutter.",
-    "exampleTranslation": "請跟這位祖母說一下。",
+    "example": "Ich spreche mit der Großmutter.",
+    "exampleTranslation": "我跟祖母說話。",
     "level": "A1",
     "plural": "Großmütter"
   },
@@ -2354,8 +2354,8 @@
     "translation": "表／堂姊妹",
     "phonetic": "Cousine",
     "category": "家庭",
-    "example": "Sprich bitte mit der Cousine.",
-    "exampleTranslation": "請跟這位表說一下。",
+    "example": "Ich spreche mit der Cousine.",
+    "exampleTranslation": "我跟表妹說話。",
     "level": "A1",
     "plural": "Cousinen"
   },
@@ -11761,8 +11761,8 @@
     "translation": "工人（女）",
     "phonetic": "Arbeiterin",
     "category": "工作",
-    "example": "Sprich bitte mit der Arbeiterin.",
-    "exampleTranslation": "請跟這位工人（女）說一下。",
+    "example": "Ich spreche mit der Arbeiterin.",
+    "exampleTranslation": "我跟工人（女）說話。",
     "level": "A1",
     "plural": "Arbeiterinnen"
   },
@@ -11833,8 +11833,8 @@
     "translation": "廚師（女）",
     "phonetic": "Köchin",
     "category": "工作",
-    "example": "Sprich bitte mit der Köchin.",
-    "exampleTranslation": "請跟這位廚師（女）說一下。",
+    "example": "Ich spreche mit der Köchin.",
+    "exampleTranslation": "我跟廚師（女）說話。",
     "level": "A1",
     "plural": "Köchinnen"
   },
@@ -12817,8 +12817,8 @@
     "translation": "找房子",
     "phonetic": "Wohnungssuche",
     "category": "家庭",
-    "example": "Sprich bitte mit der Wohnungssuche.",
-    "exampleTranslation": "請跟這位找房子說一下。",
+    "example": "Ich spreche mit der Wohnungssuche.",
+    "exampleTranslation": "我跟找房子說話。",
     "level": "A2"
   },
   {
@@ -26078,13 +26078,13 @@
   },
   {
     "id": "erfolg_b1",
-    "article": "die",
+    "article": "der",
     "word": "Erfolg",
     "translation": "成功",
     "phonetic": "Erfolg",
     "category": "工作",
-    "example": "Ich habe die Erfolg zu Hause gelassen.",
-    "exampleTranslation": "我把成功忘在家了。",
+    "example": "Der Erfolg kommt nicht von allein.",
+    "exampleTranslation": "成功不是自己跑來的。",
     "level": "B1",
     "plural": "Erfolge"
   },
@@ -27415,8 +27415,8 @@
     "translation": "同意",
     "phonetic": "Zustimmung",
     "category": "日常",
-    "example": "Sprich bitte mit der Zustimmung.",
-    "exampleTranslation": "請跟這位同意說一下。",
+    "example": "Ich spreche mit der Zustimmung.",
+    "exampleTranslation": "我跟同意說話。",
     "level": "B1",
     "plural": "Zustimmungen"
   },
@@ -33234,8 +33234,8 @@
     "translation": "衛生政策",
     "phonetic": "Gesundheitspolitik",
     "category": "日常",
-    "example": "Sprich bitte mit der Gesundheitspolitik.",
-    "exampleTranslation": "請跟這位衛生政策說一下。",
+    "example": "Ich spreche mit der Gesundheitspolitik.",
+    "exampleTranslation": "我跟衛生政策說話。",
     "level": "B2"
   },
   {
@@ -66824,35 +66824,35 @@
   },
   {
     "id": "einwand_b2_2",
-    "article": "die",
+    "article": "der",
     "word": "Einwand",
     "translation": "異議",
     "phonetic": "Einwand",
     "category": "日常",
-    "example": "Die Einwand gehört Nina.",
-    "exampleTranslation": "這個異議是Nina的。",
+    "example": "Der Einwand gehört Nina.",
+    "exampleTranslation": "這個異議是 Nina 提出的。",
     "level": "B2"
   },
   {
     "id": "vorschlag_b2",
-    "article": "die",
+    "article": "der",
     "word": "Vorschlag",
     "translation": "建議",
     "phonetic": "Vorschlag",
     "category": "日常",
-    "example": "Die Vorschlag liegt auf dem Tisch.",
-    "exampleTranslation": "建議在桌上。",
+    "example": "Der Vorschlag liegt auf dem Tisch.",
+    "exampleTranslation": "建議放在桌上。",
     "level": "B2"
   },
   {
     "id": "antrag_b2",
-    "article": "die",
+    "article": "der",
     "word": "Antrag",
     "translation": "申請",
     "phonetic": "Antrag",
     "category": "工作",
-    "example": "Kannst du mir die Antrag geben?",
-    "exampleTranslation": "你可以給我這個申請嗎？",
+    "example": "Kannst du mir den Antrag geben?",
+    "exampleTranslation": "你可以給我那份申請嗎？",
     "level": "B2"
   },
   {
@@ -72109,8 +72109,8 @@
     "translation": "客觀性",
     "phonetic": "Objektivität",
     "category": "工作",
-    "example": "Sprich bitte mit der Objektivität.",
-    "exampleTranslation": "請跟這位客觀性說一下。",
+    "example": "Ich spreche mit der Objektivität.",
+    "exampleTranslation": "我跟客觀性說話。",
     "level": "C1"
   },
   {
@@ -72467,13 +72467,13 @@
   },
   {
     "id": "einwand_c1",
-    "article": "die",
+    "article": "der",
     "word": "Einwand",
     "translation": "反駁點",
     "phonetic": "Einwand",
     "category": "工作",
-    "example": "Wir verschieben es auf die Einwand.",
-    "exampleTranslation": "我們改到反駁點。",
+    "example": "Wir verschieben es wegen des Einwands.",
+    "exampleTranslation": "我們因為這個異議而延期。",
     "level": "C1"
   },
   {
