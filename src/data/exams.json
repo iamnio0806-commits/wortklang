@@ -1,0 +1,3426 @@
+{
+  "note": "德檢取向模擬測驗（Goethe／ÖSD 風格）：A1–B2 各兩份模考。聚焦 Lesen＋Hören（TTS 朗讀腳本）＋Bausteine＋Schreiben；Sprechen 為選練口說提示，不計入及格門檻。答完後可對照中文譯文與詳解。非官方試題，僅供練習。",
+  "levels": [
+    "A1",
+    "A2",
+    "B1",
+    "B2"
+  ],
+  "papers": [
+    {
+      "id": "a1-m1",
+      "level": "A1",
+      "round": 1,
+      "title": "Goethe-Format A1 · Modellsatz 1",
+      "titleZh": "德檢模擬 A1 · 模考一（咖啡館／進城）",
+      "durationMin": 60,
+      "sections": [
+        {
+          "id": "lesen",
+          "kind": "lesen",
+          "title": "Lesen",
+          "titleZh": "閱讀",
+          "instructions": "Lesen Sie den Text. Kreuzen Sie an: Ja, Nein oder Steht nicht im Text.",
+          "instructionsZh": "請閱讀短文。勾選：對、錯，或文中未提及。",
+          "items": [
+            {
+              "id": "a1-m1-lesen-01",
+              "type": "tf",
+              "prompt": "Das Café ist am Sonntag geöffnet.",
+              "answer": false,
+              "explainZh": "文中寫 So geschlossen，週日公休。",
+              "promptZh": "咖啡館週日營業。"
+            },
+            {
+              "id": "a1-m1-lesen-02",
+              "type": "tf",
+              "prompt": "Am Samstag öffnet das Café um 9 Uhr.",
+              "answer": true,
+              "explainZh": "Sa 9:00–14:00，週六九點開門。",
+              "promptZh": "週六九點開門。"
+            },
+            {
+              "id": "a1-m1-lesen-03",
+              "type": "tf",
+              "prompt": "Kaffee und Brötchen kosten heute 3,50 €.",
+              "answer": true,
+              "explainZh": "今日特價寫明 3,50 €。",
+              "promptZh": "咖啡加麵包捲今天 3,50 歐。"
+            },
+            {
+              "id": "a1-m1-lesen-04",
+              "type": "tf",
+              "prompt": "Es gibt kein WLAN im Café.",
+              "answer": false,
+              "explainZh": "寫明 WLAN gratis。",
+              "promptZh": "館內沒有無線網路。"
+            },
+            {
+              "id": "a1-m1-lesen-05",
+              "type": "tf",
+              "prompt": "Hunde dürfen nicht ins Café.",
+              "answer": false,
+              "explainZh": "Hunde willkommen＝歡迎帶狗。",
+              "promptZh": "不准帶狗進館。"
+            },
+            {
+              "id": "a1-m1-lesen-06",
+              "type": "tf",
+              "prompt": "Lisa und Tom treffen sich um 15 Uhr.",
+              "answer": true,
+              "explainZh": "簡訊寫 um 15 Uhr。",
+              "promptZh": "兩人約三點碰面。"
+            },
+            {
+              "id": "a1-m1-lesen-07",
+              "type": "tf",
+              "prompt": "Tom soll ein Buch mitbringen.",
+              "answer": true,
+              "explainZh": "Bring bitte dein Buch mit。",
+              "promptZh": "Tom 要帶書來。"
+            },
+            {
+              "id": "a1-m1-lesen-08",
+              "type": "tf",
+              "prompt": "Lisa wohnt neben dem Café.",
+              "answer": "nicht",
+              "explainZh": "簡訊沒說 Lisa 住哪。",
+              "promptZh": "Lisa 住在咖啡館旁邊。"
+            },
+            {
+              "id": "a1-m1-lesen-09",
+              "type": "tf",
+              "prompt": "Lisa hat Hunger.",
+              "answer": true,
+              "explainZh": "簡訊寫 Ich habe Hunger。",
+              "promptZh": "Lisa 餓了。"
+            }
+          ],
+          "passage": "Café Sonne\nÖffnungszeiten: Mo–Fr 8:00–18:00, Sa 9:00–14:00, So geschlossen.\nHeute: Frische Brötchen und Kaffee für 3,50 €.\nWLAN gratis. Hunde willkommen.\n\nSMS von Lisa an Tom:\nHallo Tom! Treffen wir uns um 15 Uhr vor dem Café Sonne? Ich habe Hunger. Bring bitte dein Buch mit. Bis später! Lisa",
+          "passageZh": "太陽咖啡館\n營業時間：週一至週五 8:00–18:00，週六 9:00–14:00，週日公休。\n今日特價：新鮮麵包捲配咖啡 3,50 歐元。\n免費無線網路。歡迎帶狗。\n\nLisa 傳給 Tom 的簡訊：\n哈囉 Tom！我們下午三點在太陽咖啡館前碰面好嗎？我餓了。請把你的書帶來。待會見！Lisa"
+        },
+        {
+          "id": "hoeren",
+          "kind": "hoeren",
+          "title": "Hören",
+          "titleZh": "聽力",
+          "instructions": "Hören Sie den Dialog. Wählen Sie die richtige Antwort.",
+          "instructionsZh": "請聽對話（可用語音播放），選出正確答案。",
+          "items": [
+            {
+              "id": "a1-m1-hoeren-01",
+              "type": "mc",
+              "prompt": "Was bestellt die Frau zuerst?",
+              "options": [
+                "Tee und Kuchen",
+                "Kaffee und ein Brötchen",
+                "Wasser und Brot",
+                "Saft und Käse"
+              ],
+              "answer": 1,
+              "explainZh": "她點了咖啡和麵包捲。"
+            },
+            {
+              "id": "a1-m1-hoeren-02",
+              "type": "mc",
+              "prompt": "Möchte die Frau Milch im Kaffee?",
+              "options": [
+                "Nein",
+                "Ja, mit Milch",
+                "Nur Zucker",
+                "Sie sagt nichts"
+              ],
+              "answer": 1,
+              "explainZh": "她說 mit Milch。"
+            },
+            {
+              "id": "a1-m1-hoeren-03",
+              "type": "mc",
+              "prompt": "Was möchte sie zum Brötchen?",
+              "options": [
+                "Marmelade",
+                "Käse",
+                "Butter",
+                "Honig"
+              ],
+              "answer": 2,
+              "explainZh": "她選 Butter。"
+            },
+            {
+              "id": "a1-m1-hoeren-04",
+              "type": "mc",
+              "prompt": "Welchen Saft bestellt sie?",
+              "options": [
+                "großes Glas",
+                "kleines Glas Orangensaft",
+                "keinen Saft",
+                "Apfelsaft"
+              ],
+              "answer": 1,
+              "explainZh": "ein kleines Glas Orangensaft。"
+            },
+            {
+              "id": "a1-m1-hoeren-05",
+              "type": "mc",
+              "prompt": "Wie viel kostet alles?",
+              "options": [
+                "3,50 €",
+                "5,40 €",
+                "6,00 €",
+                "0,60 €"
+              ],
+              "answer": 1,
+              "explainZh": "fünf Euro vierzig。"
+            },
+            {
+              "id": "a1-m1-hoeren-06",
+              "type": "mc",
+              "prompt": "Wie viel gibt die Frau?",
+              "options": [
+                "4 Euro",
+                "6 Euro",
+                "10 Euro",
+                "2 Euro"
+              ],
+              "answer": 1,
+              "explainZh": "她給 sechs Euro。"
+            },
+            {
+              "id": "a1-m1-hoeren-07",
+              "type": "mc",
+              "prompt": "Wo sitzt die Frau?",
+              "options": [
+                "An der Tür",
+                "Am Fenster",
+                "Draußen",
+                "An der Bar"
+              ],
+              "answer": 1,
+              "explainZh": "桌子在 am Fenster。"
+            },
+            {
+              "id": "a1-m1-hoeren-08",
+              "type": "mc",
+              "prompt": "Wie viel Wechselgeld bekommt sie?",
+              "options": [
+                "60 Cent",
+                "80 Cent",
+                "1 Euro",
+                "kein Wechselgeld"
+              ],
+              "answer": 0,
+              "explainZh": "sechzig Cent。"
+            }
+          ],
+          "audioText": "Kellnerin: Guten Tag und willkommen im Café Sonne! Was darf ich Ihnen bringen?\nFrau: Guten Tag! Einen Kaffee und ein Brötchen, bitte.\nKellnerin: Gerne. Möchten Sie Milch oder Zucker im Kaffee?\nFrau: Ja, bitte mit Milch. Ohne Zucker.\nKellnerin: Und zum Brötchen? Butter oder Marmelade?\nFrau: Butter, bitte. Und haben Sie auch Orangensaft?\nKellnerin: Ja, frischen Saft. Möchten Sie ein kleines oder ein großes Glas?\nFrau: Ein kleines Glas, danke.\nKellnerin: Das macht zusammen fünf Euro vierzig.\nFrau: Hier sind sechs Euro.\nKellnerin: Danke. Hier ist Ihr Wechselgeld, sechzig Cent. Ihren Kaffee bringe ich gleich an den Tisch am Fenster. Das Brötchen kommt auch sofort.\nFrau: Super, vielen Dank!\nKellnerin: Bitte sehr. Einen schönen Tag noch!"
+        },
+        {
+          "id": "bausteine",
+          "kind": "bausteine",
+          "title": "Bausteine",
+          "titleZh": "語法詞彙",
+          "instructions": "Ergänzen Sie oder wählen Sie die richtige Form.",
+          "instructionsZh": "填空或選出正確形式。",
+          "items": [
+            {
+              "id": "a1-m1-bausteine-01",
+              "type": "mc",
+              "prompt": "___ Café ist neu.",
+              "options": [
+                "Der",
+                "Die",
+                "Das",
+                "Den"
+              ],
+              "answer": 2,
+              "explainZh": "Café 是中性 → das。"
+            },
+            {
+              "id": "a1-m1-bausteine-02",
+              "type": "mc",
+              "prompt": "Ich ___ aus Taiwan.",
+              "options": [
+                "komme",
+                "kommst",
+                "kommt",
+                "kommen"
+              ],
+              "answer": 0,
+              "explainZh": "ich 用 komme。"
+            },
+            {
+              "id": "a1-m1-bausteine-03",
+              "type": "gap",
+              "prompt": "Guten Tag! Wie ___ Sie?",
+              "answer": "heißen",
+              "explainZh": "詢問姓名：Wie heißen Sie？",
+              "accept": [
+                "heissen"
+              ]
+            },
+            {
+              "id": "a1-m1-bausteine-04",
+              "type": "mc",
+              "prompt": "Das ist ___ Buch.",
+              "options": [
+                "mein",
+                "meine",
+                "meiner",
+                "meinen"
+              ],
+              "answer": 0,
+              "explainZh": "Buch 中性 → mein。"
+            },
+            {
+              "id": "a1-m1-bausteine-05",
+              "type": "gap",
+              "prompt": "Wir treffen ___ um 15 Uhr.",
+              "answer": "uns",
+              "explainZh": "反身：sich treffen → uns。"
+            },
+            {
+              "id": "a1-m1-bausteine-06",
+              "type": "mc",
+              "prompt": "Heute ___ das Café geschlossen.",
+              "options": [
+                "ist",
+                "bist",
+                "sind",
+                "seid"
+              ],
+              "answer": 0,
+              "explainZh": "單數主詞 → ist。"
+            },
+            {
+              "id": "a1-m1-bausteine-07",
+              "type": "gap",
+              "prompt": "Ich habe ___ Hunger.",
+              "answer": "keinen",
+              "explainZh": "否定：kein + Akkusativ masculin → keinen。",
+              "accept": [
+                "kein"
+              ]
+            },
+            {
+              "id": "a1-m1-bausteine-08",
+              "type": "mc",
+              "prompt": "Bring bitte ___ Buch mit!",
+              "options": [
+                "dein",
+                "deine",
+                "deiner",
+                "deinen"
+              ],
+              "answer": 0,
+              "explainZh": "Buch 中性 → dein。"
+            },
+            {
+              "id": "a1-m1-bausteine-09",
+              "type": "gap",
+              "prompt": "Am Sonntag ist das Café ___.",
+              "answer": "geschlossen",
+              "explainZh": "geschlossen＝關閉。"
+            }
+          ]
+        },
+        {
+          "id": "schreiben",
+          "kind": "schreiben",
+          "title": "Schreiben",
+          "titleZh": "寫作",
+          "instructions": "Schreiben Sie eine kurze E-Mail (ca. 30–40 Wörter).",
+          "instructionsZh": "請寫一封短郵件（約 30–40 字）。",
+          "items": [
+            {
+              "id": "a1-m1-schreiben-01",
+              "type": "schreiben",
+              "prompt": "Sie möchten sich mit einem Freund im Café Sonne treffen. Schreiben Sie eine E-Mail: Begrüßung – Vorschlag (Tag und Uhrzeit) – Was möchten Sie trinken/essen? – Verabschiedung.",
+              "promptZh": "你想約朋友在太陽咖啡館見面。寫信包含：問候、提議日期時間、想吃／喝什麼、結尾。",
+              "minWords": 30,
+              "modelAnswer": "Hallo Anna,\nvielen Dank für deine Nachricht. Treffen wir uns am Samstag um 11 Uhr im Café Sonne? Ich möchte einen Kaffee und ein Brötchen. Bis bald!\nLiebe Grüße\nTom",
+              "checklist": [
+                "有問候與結尾",
+                "有明確時間／地點",
+                "提到想吃或喝的東西",
+                "約 30 字以上、句子完整"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sprechen",
+          "kind": "sprechen",
+          "title": "Sprechen",
+          "titleZh": "口說",
+          "instructions": "Sprechen Sie zu den Themen. Optional mit Modellantwort üben.",
+          "instructionsZh": "依題口述練習；可聽範例對照。",
+          "items": [
+            {
+              "id": "a1-m1-sprechen-01",
+              "type": "sprechen",
+              "prompt": "Stellen Sie sich vor: Name, Herkunft, Wohnort, Hobby.",
+              "promptZh": "自我介紹：名字、出身、住處、嗜好。",
+              "cues": [
+                "Name",
+                "Woher kommen Sie?",
+                "Wo wohnen Sie?",
+                "Hobby"
+              ],
+              "modelAnswer": "Guten Tag, ich heiße Mei. Ich komme aus Taiwan und wohne in Berlin. Mein Hobby ist Lesen. Ich lerne Deutsch."
+            },
+            {
+              "id": "a1-m1-sprechen-02",
+              "type": "sprechen",
+              "prompt": "Beschreiben Sie Ihr Lieblingscafé: Wo? Was bestellen Sie?",
+              "promptZh": "描述最愛的咖啡館：在哪？常點什麼？",
+              "cues": [
+                "Ort",
+                "Öffnungszeiten",
+                "Getränk/Essen"
+              ],
+              "modelAnswer": "Mein Lieblingscafé heißt Café Sonne. Es ist in der Stadtmitte. Ich bestelle oft einen Kaffee mit Milch und ein Brötchen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1-m2",
+      "level": "A1",
+      "round": 2,
+      "title": "Goethe-Format A1 · Modellsatz 2",
+      "titleZh": "德檢模擬 A1 · 模考二（租屋／語言課）",
+      "durationMin": 60,
+      "sections": [
+        {
+          "id": "lesen",
+          "kind": "lesen",
+          "title": "Lesen",
+          "titleZh": "閱讀",
+          "instructions": "Lesen Sie die Texte. Ja / Nein / Steht nicht im Text.",
+          "instructionsZh": "閱讀兩則短文，判斷對、錯或未提及。",
+          "items": [
+            {
+              "id": "a1-m2-lesen-01",
+              "type": "tf",
+              "prompt": "Die Wohnung hat zwei Zimmer.",
+              "answer": true,
+              "explainZh": "寫明 2 Zimmer。",
+              "promptZh": "公寓有兩間房。"
+            },
+            {
+              "id": "a1-m2-lesen-02",
+              "type": "tf",
+              "prompt": "Es gibt einen Aufzug.",
+              "answer": false,
+              "explainZh": "kein Aufzug＝沒有電梯。",
+              "promptZh": "有電梯。"
+            },
+            {
+              "id": "a1-m2-lesen-03",
+              "type": "tf",
+              "prompt": "Die Miete kostet 650 € ohne Nebenkosten.",
+              "answer": true,
+              "explainZh": "650 € + 120 € Nebenkosten。",
+              "promptZh": "租金不含雜費是 650 歐。"
+            },
+            {
+              "id": "a1-m2-lesen-04",
+              "type": "tf",
+              "prompt": "Die Wohnung ist ab Juni frei.",
+              "answer": false,
+              "explainZh": "Ab 1. Mai frei。",
+              "promptZh": "六月才能入住。"
+            },
+            {
+              "id": "a1-m2-lesen-05",
+              "type": "tf",
+              "prompt": "Die Wohnung liegt in Berlin.",
+              "answer": false,
+              "explainZh": "地址是 München。",
+              "promptZh": "公寓在柏林。"
+            },
+            {
+              "id": "a1-m2-lesen-06",
+              "type": "tf",
+              "prompt": "Der Sprachkurs beginnt um 9 Uhr.",
+              "answer": true,
+              "explainZh": "um 9:00 Uhr。",
+              "promptZh": "語言課九點開始。"
+            },
+            {
+              "id": "a1-m2-lesen-07",
+              "type": "tf",
+              "prompt": "Der Kurs ist in Raum 4.",
+              "answer": true,
+              "explainZh": "in Raum 4。",
+              "promptZh": "在 4 教室。"
+            },
+            {
+              "id": "a1-m2-lesen-08",
+              "type": "tf",
+              "prompt": "Man braucht ein Wörterbuch im Kurs.",
+              "answer": "nicht",
+              "explainZh": "只要求 Heft 和 Stift，沒提字典。",
+              "promptZh": "課堂必須帶字典。"
+            },
+            {
+              "id": "a1-m2-lesen-09",
+              "type": "tf",
+              "prompt": "Am Freitag gibt es einen Test.",
+              "answer": true,
+              "explainZh": "郵件寫 kurzener Test am Freitag。",
+              "promptZh": "週五有考試。"
+            }
+          ],
+          "passage": "Wohnung zu vermieten\n2 Zimmer, Küche, Bad. 45 m². 3. Etage, kein Aufzug.\nMiete: 650 € + 120 € Nebenkosten. Ab 1. Mai frei.\nAdresse: Parkstraße 12, 80331 München. Tel: 089-555-2211.\n\nE-Mail vom Sprachkurs:\nLiebe Kursteilnehmerinnen und Kursteilnehmer,\nunser Kurs beginnt am Montag, den 3. März um 9:00 Uhr in Raum 4. Bitte bringen Sie ein Heft und einen Stift mit. Am Freitag gibt es einen kurzen Test. Viele Grüße, Frau Weber",
+          "passageZh": "出租公寓\n兩房、廚房、衛浴。45 平方公尺。三樓，無電梯。\n租金：650 歐 + 120 歐雜費。五月一日起可入住。\n地址：Parkstraße 12, 80331 慕尼黑。電話：089-555-2211。\n\n語言課郵件：\n親愛的學員們，\n課程於三月三日（週一）上午九點在 4 教室開始。請帶筆記本與筆。週五有小考。問候，Weber 老師"
+        },
+        {
+          "id": "hoeren",
+          "kind": "hoeren",
+          "title": "Hören",
+          "titleZh": "聽力",
+          "instructions": "Hören Sie. Wählen Sie die richtige Antwort.",
+          "instructionsZh": "聽對話後選答案。",
+          "items": [
+            {
+              "id": "a1-m2-hoeren-01",
+              "type": "mc",
+              "prompt": "Wohin möchte der Mann?",
+              "options": [
+                "Bahnhof",
+                "Parkstraße 12",
+                "Schule",
+                "Café"
+              ],
+              "answer": 1,
+              "explainZh": "他找 Parkstraße 12。"
+            },
+            {
+              "id": "a1-m2-hoeren-02",
+              "type": "mc",
+              "prompt": "Was macht er an der Ampel?",
+              "options": [
+                "rechts",
+                "links",
+                "geradeaus weiter",
+                "zurück"
+              ],
+              "answer": 1,
+              "explainZh": "dann links。"
+            },
+            {
+              "id": "a1-m2-hoeren-03",
+              "type": "mc",
+              "prompt": "Wie lange zu Fuß?",
+              "options": [
+                "2 Minuten",
+                "etwa 5 Minuten",
+                "15 Minuten",
+                "30 Minuten"
+              ],
+              "answer": 1,
+              "explainZh": "etwa fünf Minuten。"
+            },
+            {
+              "id": "a1-m2-hoeren-04",
+              "type": "mc",
+              "prompt": "Welche Buslinie nennt die Frau?",
+              "options": [
+                "Linie 2",
+                "Linie 4",
+                "Linie 12",
+                "keinen Bus"
+              ],
+              "answer": 1,
+              "explainZh": "Bus Linie vier。"
+            },
+            {
+              "id": "a1-m2-hoeren-05",
+              "type": "mc",
+              "prompt": "Wo ist die Bushaltestelle?",
+              "options": [
+                "weit weg",
+                "vor dem Haus",
+                "hinter dem Park",
+                "am Bahnhof"
+              ],
+              "answer": 1,
+              "explainZh": "direkt vor dem Haus。"
+            },
+            {
+              "id": "a1-m2-hoeren-06",
+              "type": "mc",
+              "prompt": "Warum geht der Mann dorthin?",
+              "options": [
+                "Arbeit",
+                "Wohnung anschauen",
+                "Einkaufen",
+                "Arzt"
+              ],
+              "answer": 1,
+              "explainZh": "eine Wohnung anschauen。"
+            },
+            {
+              "id": "a1-m2-hoeren-07",
+              "type": "mc",
+              "prompt": "Das Haus ist das ___ auf der rechten Seite.",
+              "options": [
+                "erste",
+                "zweite",
+                "dritte",
+                "vierte"
+              ],
+              "answer": 2,
+              "explainZh": "das dritte。"
+            },
+            {
+              "id": "a1-m2-hoeren-08",
+              "type": "mc",
+              "prompt": "Wie verabschieden sie sich?",
+              "options": [
+                "Tschüss",
+                "Auf Wiedersehen",
+                "Bis morgen",
+                "Gute Nacht"
+              ],
+              "answer": 1,
+              "explainZh": "Auf Wiedersehen。"
+            }
+          ],
+          "audioText": "Mann: Entschuldigung, ich suche die Parkstraße Nummer zwölf. Können Sie mir bitte helfen?\nFrau: Die Parkstraße? Ja, natürlich. Gehen Sie hier geradeaus bis zur Ampel, dann links in die kleine Seitenstraße. Das Haus ist das dritte auf der rechten Seite. Es ist rot und hat einen Balkon.\nMann: Ist das weit von hier?\nFrau: Nein, nur etwa fünf Minuten zu Fuß. Wenn Sie möchten, können Sie auch den Bus Linie vier nehmen.\nMann: Und gibt es dort eine Bushaltestelle?\nFrau: Ja, die Haltestelle Parkstraße ist direkt vor dem Haus.\nMann: Vielen Dank! Ich schaue mir heute Nachmittag eine Wohnung an. Ich hoffe, sie ist noch frei.\nFrau: Viel Erfolg bei der Besichtigung! Auf Wiedersehen.\nMann: Auf Wiedersehen und schönen Tag noch!"
+        },
+        {
+          "id": "bausteine",
+          "kind": "bausteine",
+          "title": "Bausteine",
+          "titleZh": "語法詞彙",
+          "instructions": "Wählen oder ergänzen Sie.",
+          "instructionsZh": "選擇或填空。",
+          "items": [
+            {
+              "id": "a1-m2-bausteine-01",
+              "type": "mc",
+              "prompt": "___ Wohnung ist schön.",
+              "options": [
+                "Der",
+                "Die",
+                "Das",
+                "Den"
+              ],
+              "answer": 1,
+              "explainZh": "Wohnung 陰性 → die。"
+            },
+            {
+              "id": "a1-m2-bausteine-02",
+              "type": "gap",
+              "prompt": "Ich wohne ___ München.",
+              "answer": "in",
+              "explainZh": "城市用 in + 地名。"
+            },
+            {
+              "id": "a1-m2-bausteine-03",
+              "type": "mc",
+              "prompt": "Der Kurs ___ am Montag.",
+              "options": [
+                "beginnt",
+                "beginne",
+                "beginnen",
+                "beginnst"
+              ],
+              "answer": 0,
+              "explainZh": "第三人稱單數 beginnt。"
+            },
+            {
+              "id": "a1-m2-bausteine-04",
+              "type": "gap",
+              "prompt": "Bitte bringen Sie ein Heft ___.",
+              "answer": "mit",
+              "explainZh": "mitbringen 可分動詞：bringen … mit。"
+            },
+            {
+              "id": "a1-m2-bausteine-05",
+              "type": "mc",
+              "prompt": "Die Nebenkosten betragen ___ Euro.",
+              "options": [
+                "hundertzwanzig",
+                "zweihundert",
+                "fünfzig",
+                "tausend"
+              ],
+              "answer": 0,
+              "explainZh": "120＝hundertzwanzig。"
+            },
+            {
+              "id": "a1-m2-bausteine-06",
+              "type": "gap",
+              "prompt": "Gehen Sie ___ bis zur Ampel.",
+              "answer": "geradeaus",
+              "explainZh": "geradeaus＝直走。"
+            },
+            {
+              "id": "a1-m2-bausteine-07",
+              "type": "mc",
+              "prompt": "Am Freitag gibt ___ einen Test.",
+              "options": [
+                "es",
+                "er",
+                "sie",
+                "ihn"
+              ],
+              "answer": 0,
+              "explainZh": "es gibt＝有。"
+            },
+            {
+              "id": "a1-m2-bausteine-08",
+              "type": "gap",
+              "prompt": "Die Wohnung ist ab 1. Mai ___.",
+              "answer": "frei",
+              "explainZh": "frei＝可入住／空出。"
+            },
+            {
+              "id": "a1-m2-bausteine-09",
+              "type": "mc",
+              "prompt": "___ Etage, kein Aufzug.",
+              "options": [
+                "3.",
+                "drei",
+                "dritten",
+                "3"
+              ],
+              "answer": 0,
+              "explainZh": "樓層寫法 3. Etage。"
+            }
+          ]
+        },
+        {
+          "id": "schreiben",
+          "kind": "schreiben",
+          "title": "Schreiben",
+          "titleZh": "寫作",
+          "instructions": "Füllen Sie das Formular / schreiben Sie eine kurze Nachricht (ca. 30 Wörter).",
+          "instructionsZh": "填寫簡訊／短訊息（約 30 字）。",
+          "items": [
+            {
+              "id": "a1-m2-schreiben-01",
+              "type": "schreiben",
+              "prompt": "Sie interessieren sich für die Wohnung in der Parkstraße. Schreiben Sie eine kurze E-Mail an den Vermieter: Wer sind Sie? Wann können Sie die Wohnung besichtigen? Stellen Sie eine Frage zur Wohnung.",
+              "promptZh": "你對 Parkstraße 的公寓有興趣。寫短信給房東：自我介紹、何時可看房、問一個關於房子的問題。",
+              "minWords": 30,
+              "modelAnswer": "Guten Tag,\nich heiße Lin und arbeite in München. Kann ich die Wohnung am Samstag um 14 Uhr besichtigen? Gibt es Möbel in der Wohnung?\nMit freundlichen Grüßen\nLin Chen",
+              "checklist": [
+                "有稱呼與結尾",
+                "自我介紹",
+                "提出看房時間",
+                "至少一個問題"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sprechen",
+          "kind": "sprechen",
+          "title": "Sprechen",
+          "titleZh": "口說",
+          "instructions": "Sprechen Sie frei zu den Punkten.",
+          "instructionsZh": "依提示自由口述。",
+          "items": [
+            {
+              "id": "a1-m2-sprechen-01",
+              "type": "sprechen",
+              "prompt": "Beschreiben Sie Ihre Wohnung oder Ihr Zimmer.",
+              "promptZh": "描述你的住處或房間。",
+              "cues": [
+                "Wie groß?",
+                "Welche Zimmer?",
+                "Was ist wichtig?"
+              ],
+              "modelAnswer": "Ich wohne in einer Zwei-Zimmer-Wohnung. Die Küche ist klein, aber hell. Mein Zimmer hat einen Schreibtisch und ein Bett."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2-m1",
+      "level": "A2",
+      "round": 1,
+      "title": "Goethe-Format A2 · Modellsatz 1",
+      "titleZh": "德檢模擬 A2 · 模考一（體育社團／休閒）",
+      "durationMin": 70,
+      "sections": [
+        {
+          "id": "lesen",
+          "kind": "lesen",
+          "title": "Lesen",
+          "titleZh": "閱讀",
+          "instructions": "Lesen Sie den Text und beantworten Sie die Fragen.",
+          "instructionsZh": "閱讀公告並作答（選擇／判斷）。",
+          "items": [
+            {
+              "id": "a2-m1-lesen-01",
+              "type": "mc",
+              "prompt": "Wann starten die neuen Kurse?",
+              "options": [
+                "Im März",
+                "Ab April",
+                "Im Mai",
+                "Im Juni"
+              ],
+              "answer": 1,
+              "explainZh": "Ab April。"
+            },
+            {
+              "id": "a2-m1-lesen-02",
+              "type": "mc",
+              "prompt": "Wann ist Yoga?",
+              "options": [
+                "Montag",
+                "Dienstag",
+                "Mittwoch",
+                "Donnerstag"
+              ],
+              "answer": 1,
+              "explainZh": "Di 18–19。"
+            },
+            {
+              "id": "a2-m1-lesen-03",
+              "type": "tf",
+              "prompt": "Fußball ist am Mittwochabend.",
+              "answer": true,
+              "explainZh": "Mi 19–20:30。"
+            },
+            {
+              "id": "a2-m1-lesen-04",
+              "type": "tf",
+              "prompt": "Die Mitgliedschaft kostet 50 € im Monat.",
+              "answer": false,
+              "explainZh": "25 € im Monat。"
+            },
+            {
+              "id": "a2-m1-lesen-05",
+              "type": "mc",
+              "prompt": "Was bekommen neue Mitglieder?",
+              "options": [
+                "Gratis Sportschuhe",
+                "50 % Rabatt im ersten Monat",
+                "Kein Angebot",
+                "Jahr gratis"
+              ],
+              "answer": 1,
+              "explainZh": "首月半價。"
+            },
+            {
+              "id": "a2-m1-lesen-06",
+              "type": "tf",
+              "prompt": "Das Büro ist auch am Sonntag geöffnet.",
+              "answer": false,
+              "explainZh": "只寫 Mo–Fr。"
+            },
+            {
+              "id": "a2-m1-lesen-07",
+              "type": "tf",
+              "prompt": "Kinder unter 14 brauchen die Erlaubnis der Eltern.",
+              "answer": true,
+              "explainZh": "文中明確寫出。"
+            },
+            {
+              "id": "a2-m1-lesen-08",
+              "type": "mc",
+              "prompt": "Was soll man mitbringen?",
+              "options": [
+                "Bücher",
+                "Sportkleidung und Handtuch",
+                "Essen",
+                "Geldkarte"
+              ],
+              "answer": 1,
+              "explainZh": "運動服與毛巾。"
+            },
+            {
+              "id": "a2-m1-lesen-09",
+              "type": "tf",
+              "prompt": "Das Vereinsfest kostet 10 € Eintritt.",
+              "answer": false,
+              "explainZh": "Eintritt frei。"
+            },
+            {
+              "id": "a2-m1-lesen-10",
+              "type": "mc",
+              "prompt": "Wo findet das Fest statt?",
+              "options": [
+                "In der Halle",
+                "Im Stadtpark",
+                "Im Büro",
+                "Online"
+              ],
+              "answer": 1,
+              "explainZh": "im Stadtpark。"
+            }
+          ],
+          "passage": "Sportverein Grün-Weiß – Neuigkeiten\n\nAb April starten neue Kursangebote: Yoga (Di 18–19 Uhr), Fußball für Erwachsene (Mi 19–20:30 Uhr) und Schwimmen (Do 17–18 Uhr). Die Mitgliedschaft kostet 25 € im Monat. Neue Mitglieder bekommen im ersten Monat 50 % Rabatt. Anmeldung online oder im Büro (Mo–Fr 10–16 Uhr). Kinder unter 14 Jahren brauchen die Erlaubnis der Eltern. Bitte Sportkleidung und Handtuch mitbringen. Das Vereinsfest findet am 12. Mai im Stadtpark statt – Eintritt frei!",
+          "passageZh": "綠白體育會 – 最新消息\n\n四月起新開課程：瑜珈（週二 18–19）、成人足球（週三 19–20:30）、游泳（週四 17–18）。會員月費 25 歐。新會員首月半價。可線上或辦公室報名（週一至五 10–16）。未滿 14 歲需家長同意。請自備運動服與毛巾。五月十二日市立公園有社團日，免費入場！"
+        },
+        {
+          "id": "hoeren",
+          "kind": "hoeren",
+          "title": "Hören",
+          "titleZh": "聽力",
+          "instructions": "Hören Sie das Interview. Wählen Sie.",
+          "instructionsZh": "聽訪談後選擇。",
+          "items": [
+            {
+              "id": "a2-m1-hoeren-01",
+              "type": "mc",
+              "prompt": "Mit wem spricht der Reporter?",
+              "options": [
+                "Herrn Weber",
+                "Anna Berger",
+                "Frau Mai",
+                "Trainer Paul"
+              ],
+              "answer": 1,
+              "explainZh": "Trainerin Anna Berger。"
+            },
+            {
+              "id": "a2-m1-hoeren-02",
+              "type": "mc",
+              "prompt": "Braucht man Erfahrung für Yoga?",
+              "options": [
+                "Ja, viel",
+                "Nein",
+                "Nur Zertifikat",
+                "Nur Schwimmen"
+              ],
+              "answer": 1,
+              "explainZh": "keine Erfahrung nötig。"
+            },
+            {
+              "id": "a2-m1-hoeren-03",
+              "type": "mc",
+              "prompt": "Ab welchem Alter ist Fußball?",
+              "options": [
+                "14",
+                "16",
+                "18",
+                "21"
+              ],
+              "answer": 2,
+              "explainZh": "ab 18 Jahren。"
+            },
+            {
+              "id": "a2-m1-hoeren-04",
+              "type": "mc",
+              "prompt": "Wo spielt man Fußball?",
+              "options": [
+                "In der Halle",
+                "Hinter der Halle",
+                "Im Park",
+                "Im Büro"
+              ],
+              "answer": 1,
+              "explainZh": "Platz hinter der Halle。"
+            },
+            {
+              "id": "a2-m1-hoeren-05",
+              "type": "mc",
+              "prompt": "Wann ist das Büro geöffnet?",
+              "options": [
+                "8–12",
+                "10–16",
+                "14–20",
+                "ganztags"
+              ],
+              "answer": 1,
+              "explainZh": "zwischen zehn und sechzehn。"
+            },
+            {
+              "id": "a2-m1-hoeren-06",
+              "type": "mc",
+              "prompt": "Wie viele Plätze sind im Schwimmen frei?",
+              "options": [
+                "zwei",
+                "vier",
+                "sechs",
+                "zehn"
+              ],
+              "answer": 2,
+              "explainZh": "noch sechs Plätze。"
+            },
+            {
+              "id": "a2-m1-hoeren-07",
+              "type": "mc",
+              "prompt": "Wann ist der Schwimmkurs?",
+              "options": [
+                "Dienstag",
+                "Mittwoch",
+                "Donnerstag",
+                "Freitag"
+              ],
+              "answer": 2,
+              "explainZh": "donnerstags。"
+            },
+            {
+              "id": "a2-m1-hoeren-08",
+              "type": "mc",
+              "prompt": "Wie meldet man sich am besten an?",
+              "options": [
+                "per Telefon",
+                "online",
+                "nur per Post",
+                "gar nicht nötig"
+              ],
+              "answer": 1,
+              "explainZh": "Am besten online。"
+            }
+          ],
+          "audioText": "Reporter: Hallo und willkommen beim Sportverein Grün-Weiß. Heute spreche ich mit Trainerin Anna Berger.\nAnna: Hallo! Schön, dass Sie da sind.\nReporter: Anna, für wen ist der Yoga-Kurs?\nAnna: Für Anfänger und Fortgeschrittene. Man braucht keine Erfahrung.\nReporter: Und der Fußballkurs?\nAnna: Der ist nur für Erwachsene ab 18 Jahren. Wir spielen auf dem Platz hinter der Halle.\nReporter: Wie meldet man sich an?\nAnna: Am besten online. Oder kommen Sie persönlich ins Büro zwischen zehn und sechzehn Uhr.\nReporter: Gibt es noch freie Plätze im Schwimmkurs?\nAnna: Ja, noch sechs Plätze. Der Kurs ist donnerstags.\nReporter: Danke, Anna!\nAnna: Gerne. Bis bald beim Training!"
+        },
+        {
+          "id": "bausteine",
+          "kind": "bausteine",
+          "title": "Bausteine",
+          "titleZh": "語法詞彙",
+          "instructions": "Grammatik und Wortschatz.",
+          "instructionsZh": "語法與詞彙。",
+          "items": [
+            {
+              "id": "a2-m1-bausteine-01",
+              "type": "mc",
+              "prompt": "Ich ___ seit zwei Jahren Mitglied.",
+              "options": [
+                "bin",
+                "habe",
+                "werde",
+                "muss"
+              ],
+              "answer": 0,
+              "explainZh": "Mitglied sein。"
+            },
+            {
+              "id": "a2-m1-bausteine-02",
+              "type": "gap",
+              "prompt": "Der Kurs beginnt ___ April.",
+              "answer": "ab",
+              "explainZh": "ab + 時間點＝從…起。",
+              "accept": [
+                "im"
+              ]
+            },
+            {
+              "id": "a2-m1-bausteine-03",
+              "type": "mc",
+              "prompt": "Neue Mitglieder bekommen ___ Rabatt.",
+              "options": [
+                "einen",
+                "eine",
+                "ein",
+                "eines"
+              ],
+              "answer": 0,
+              "explainZh": "Rabatt 陽性 Akk → einen。"
+            },
+            {
+              "id": "a2-m1-bausteine-04",
+              "type": "gap",
+              "prompt": "Bitte ___ Sie Sportkleidung mit.",
+              "answer": "bringen",
+              "explainZh": "mitbringen 分離：bringen … mit。"
+            },
+            {
+              "id": "a2-m1-bausteine-05",
+              "type": "mc",
+              "prompt": "Kinder ___ 14 Jahren brauchen Erlaubnis.",
+              "options": [
+                "unter",
+                "über",
+                "seit",
+                "gegen"
+              ],
+              "answer": 0,
+              "explainZh": "unter＝未滿。"
+            },
+            {
+              "id": "a2-m1-bausteine-06",
+              "type": "gap",
+              "prompt": "Das Fest findet am 12. Mai ___.",
+              "answer": "statt",
+              "explainZh": "stattfinden → findet … statt。"
+            },
+            {
+              "id": "a2-m1-bausteine-07",
+              "type": "mc",
+              "prompt": "Am besten meldet man sich ___ an.",
+              "options": [
+                "online",
+                "langsam",
+                "nie",
+                "gestern"
+              ],
+              "answer": 0,
+              "explainZh": "online。"
+            },
+            {
+              "id": "a2-m1-bausteine-08",
+              "type": "gap",
+              "prompt": "Wir spielen ___ dem Platz hinter der Halle.",
+              "answer": "auf",
+              "explainZh": "auf dem Platz。"
+            },
+            {
+              "id": "a2-m1-bausteine-09",
+              "type": "mc",
+              "prompt": "Der Eintritt ist ___.",
+              "options": [
+                "frei",
+                "teuer",
+                "geschlossen",
+                "voll"
+              ],
+              "answer": 0,
+              "explainZh": "Eintritt frei。"
+            },
+            {
+              "id": "a2-m1-bausteine-10",
+              "type": "gap",
+              "prompt": "Ich gehe ___ Yoga-Kurs.",
+              "answer": "zum",
+              "explainZh": "zu dem → zum。",
+              "accept": [
+                "zu dem"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "schreiben",
+          "kind": "schreiben",
+          "title": "Schreiben",
+          "titleZh": "寫作",
+          "instructions": "Schreiben Sie eine E-Mail (ca. 40–60 Wörter).",
+          "instructionsZh": "寫一封約 40–60 字的郵件。",
+          "items": [
+            {
+              "id": "a2-m1-schreiben-01",
+              "type": "schreiben",
+              "prompt": "Sie möchten Mitglied im Sportverein Grün-Weiß werden. Schreiben Sie eine E-Mail: Warum interessieren Sie sich? Welchen Kurs möchten Sie? Wann können Sie starten? Fragen Sie nach dem Preis.",
+              "promptZh": "你想加入綠白體育會。說明興趣原因、想上哪門課、何時開始，並詢問費用。",
+              "minWords": 40,
+              "modelAnswer": "Guten Tag,\nich interessiere mich für Sport und möchte Mitglied werden. Besonders Yoga am Dienstag gefällt mir. Kann ich ab April starten? Wie viel kostet die Mitgliedschaft genau?\nVielen Dank\nSara Nguyen",
+              "checklist": [
+                "說明動機",
+                "點名課程",
+                "提出開始時間",
+                "詢問價格",
+                "禮貌問候與結尾"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sprechen",
+          "kind": "sprechen",
+          "title": "Sprechen",
+          "titleZh": "口說",
+          "instructions": "Sprechen Sie zu den Themen.",
+          "instructionsZh": "依題口述。",
+          "items": [
+            {
+              "id": "a2-m1-sprechen-01",
+              "type": "sprechen",
+              "prompt": "Erzählen Sie von Ihrer Freizeit: Was machen Sie gerne?",
+              "promptZh": "談談你的休閒：喜歡做什麼？",
+              "cues": [
+                "Wie oft?",
+                "Mit wem?",
+                "Warum?"
+              ],
+              "modelAnswer": "In meiner Freizeit mache ich gerne Sport. Zweimal in der Woche gehe ich schwimmen. Manchmal treffe ich Freunde im Park. Sport hilft mir, mich zu entspannen."
+            },
+            {
+              "id": "a2-m1-sprechen-02",
+              "type": "sprechen",
+              "prompt": "Möchten Sie in einem Verein Mitglied sein? Warum (nicht)?",
+              "promptZh": "想不想加入社團？為什麼？",
+              "cues": [
+                "Vorteile",
+                "Nachteile",
+                "Ihre Meinung"
+              ],
+              "modelAnswer": "Ja, ich möchte in einem Verein sein, weil man neue Leute kennenlernt und regelmäßig trainiert. Es kostet etwas Geld, aber es lohnt sich."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2-m2",
+      "level": "A2",
+      "round": 2,
+      "title": "Goethe-Format A2 · Modellsatz 2",
+      "titleZh": "德檢模擬 A2 · 模考二（旅行／火車站）",
+      "durationMin": 70,
+      "sections": [
+        {
+          "id": "lesen",
+          "kind": "lesen",
+          "title": "Lesen",
+          "titleZh": "閱讀",
+          "instructions": "Lesen Sie die Hinweise und antworten Sie.",
+          "instructionsZh": "閱讀旅客須知並作答。",
+          "items": [
+            {
+              "id": "a2-m2-lesen-01",
+              "type": "mc",
+              "prompt": "Warum ändert sich das Gleis nach Hamburg?",
+              "options": [
+                "Streik",
+                "Bauarbeiten",
+                "Wetter",
+                "Fest"
+              ],
+              "answer": 1,
+              "explainZh": "Wegen Bauarbeiten。"
+            },
+            {
+              "id": "a2-m2-lesen-02",
+              "type": "mc",
+              "prompt": "Von welchem Gleis fährt der Zug nach Hamburg?",
+              "options": [
+                "Gleis 3",
+                "Gleis 8",
+                "Gleis 12",
+                "Gleis 1"
+              ],
+              "answer": 1,
+              "explainZh": "ab Gleis 8。"
+            },
+            {
+              "id": "a2-m2-lesen-03",
+              "type": "tf",
+              "prompt": "Die RB12 nach Leipzig hat Verspätung.",
+              "answer": true,
+              "explainZh": "20 Minuten Verspätung。"
+            },
+            {
+              "id": "a2-m2-lesen-04",
+              "type": "tf",
+              "prompt": "Am Automaten kann man bar bezahlen.",
+              "answer": false,
+              "explainZh": "nur Karten, kein Bargeld。"
+            },
+            {
+              "id": "a2-m2-lesen-05",
+              "type": "mc",
+              "prompt": "Wann öffnet das Reisezentrum?",
+              "options": [
+                "um 5 Uhr",
+                "um 6 Uhr",
+                "um 8 Uhr",
+                "um 9 Uhr"
+              ],
+              "answer": 1,
+              "explainZh": "6–21 Uhr。"
+            },
+            {
+              "id": "a2-m2-lesen-06",
+              "type": "tf",
+              "prompt": "Gepäckschließfächer sind in der Unterführung.",
+              "answer": true,
+              "explainZh": "文中寫明。"
+            },
+            {
+              "id": "a2-m2-lesen-07",
+              "type": "mc",
+              "prompt": "Wo soll man am Bahnsteig warten?",
+              "options": [
+                "vor dem Zug",
+                "hinter der gelben Linie",
+                "im Restaurant",
+                "auf dem Gleis"
+              ],
+              "answer": 1,
+              "explainZh": "hinter der gelben Linie。"
+            },
+            {
+              "id": "a2-m2-lesen-08",
+              "type": "tf",
+              "prompt": "WLAN kostet 2 € pro Stunde.",
+              "answer": false,
+              "explainZh": "gratis für 60 Minuten。"
+            },
+            {
+              "id": "a2-m2-lesen-09",
+              "type": "mc",
+              "prompt": "Wie heißt das WLAN?",
+              "options": [
+                "FreeRail",
+                "BahnHotspot",
+                "SüdNet",
+                "TrainFi"
+              ],
+              "answer": 1,
+              "explainZh": "BahnHotspot。"
+            },
+            {
+              "id": "a2-m2-lesen-10",
+              "type": "tf",
+              "prompt": "Umbuchungen sind im Reisezentrum möglich.",
+              "answer": true,
+              "explainZh": "helfen wir bei Umbuchungen。"
+            }
+          ],
+          "passage": "Hinweise für Reisende – Bahnhof Süd\n\nWegen Bauarbeiten fahren die Züge nach Hamburg ab Gleis 8 statt Gleis 3. Die Regionalbahn RB12 nach Leipzig hat heute 20 Minuten Verspätung. Der Fahrkartenautomat neben dem Kiosk akzeptiert nur Karten, kein Bargeld. Im Reisezentrum (Öffnung 6–21 Uhr) helfen wir bei Umbuchungen. Gepäckschließfächer stehen in der Unterführung. Achtung: Am Bahnsteig bitte hinter der gelben Linie warten. WLAN „BahnHotspot“ ist gratis für 60 Minuten.",
+          "passageZh": "南站旅客須知\n\n因施工，前往漢堡的列車改由 8 月台發車（原為 3 月台）。往萊比錫的區域列車 RB12 今天誤點 20 分鐘。售票機（報刊亭旁）只收卡、不收現金。旅遊服務中心（6–21 點）可協助改票。置物櫃在地下通道。月台請站在黃線後方。免費 Wi‑Fi「BahnHotspot」可用 60 分鐘。"
+        },
+        {
+          "id": "hoeren",
+          "kind": "hoeren",
+          "title": "Hören",
+          "titleZh": "聽力",
+          "instructions": "Hören Sie Durchsage und Dialog.",
+          "instructionsZh": "聽廣播與對話後作答。",
+          "items": [
+            {
+              "id": "a2-m2-hoeren-01",
+              "type": "mc",
+              "prompt": "Wohin fährt der Intercity?",
+              "options": [
+                "Berlin",
+                "Köln",
+                "Hamburg",
+                "Leipzig"
+              ],
+              "answer": 1,
+              "explainZh": "Intercity nach Köln。"
+            },
+            {
+              "id": "a2-m2-hoeren-02",
+              "type": "mc",
+              "prompt": "Von welchem Gleis?",
+              "options": [
+                "3",
+                "5",
+                "7",
+                "8"
+              ],
+              "answer": 1,
+              "explainZh": "Gleis fünf。"
+            },
+            {
+              "id": "a2-m2-hoeren-03",
+              "type": "mc",
+              "prompt": "Wann ist die Abfahrt?",
+              "options": [
+                "14:00",
+                "14:30",
+                "15:10",
+                "16:00"
+              ],
+              "answer": 1,
+              "explainZh": "vierzehn Uhr dreißig。"
+            },
+            {
+              "id": "a2-m2-hoeren-04",
+              "type": "mc",
+              "prompt": "Ist Düsseldorf der erste Halt?",
+              "options": [
+                "Ja",
+                "Nein, der zweite",
+                "Es hält nicht",
+                "Nur Endstation"
+              ],
+              "answer": 1,
+              "explainZh": "der zweite Halt。"
+            },
+            {
+              "id": "a2-m2-hoeren-05",
+              "type": "mc",
+              "prompt": "Wann Ankunft in Düsseldorf?",
+              "options": [
+                "14:30",
+                "15:10",
+                "15:30",
+                "16:10"
+              ],
+              "answer": 1,
+              "explainZh": "gegen fünfzehn Uhr zehn。"
+            },
+            {
+              "id": "a2-m2-hoeren-06",
+              "type": "mc",
+              "prompt": "Muss der Fahrgast umsteigen?",
+              "options": [
+                "Ja",
+                "Nein",
+                "Nur nach Köln",
+                "In Wagen 7"
+              ],
+              "answer": 1,
+              "explainZh": "Nein, Sie bleiben sitzen。"
+            },
+            {
+              "id": "a2-m2-hoeren-07",
+              "type": "mc",
+              "prompt": "Wo ist der Speisewagen?",
+              "options": [
+                "Wagen 3",
+                "Wagen 5",
+                "Wagen 7",
+                "kein Speisewagen"
+              ],
+              "answer": 2,
+              "explainZh": "im Wagen sieben。"
+            },
+            {
+              "id": "a2-m2-hoeren-08",
+              "type": "mc",
+              "prompt": "Was gibt es im Speisewagen?",
+              "options": [
+                "Nur Kaffee",
+                "Snacks und Getränke",
+                "Nur Zeitung",
+                "Freie Plätze"
+              ],
+              "answer": 1,
+              "explainZh": "Snacks und Getränke。"
+            }
+          ],
+          "audioText": "Ansagerin: Sehr geehrte Fahrgäste, der Intercity nach Köln fährt heute von Gleis fünf. Die Abfahrt ist um vierzehn Uhr dreißig. Bitte haben Sie Ihre Fahrkarten bereit.\nFahrgast: Entschuldigung, fährt dieser Zug auch nach Düsseldorf?\nSchaffner: Ja, Düsseldorf ist der zweite Halt. Ankunft dort gegen fünfzehn Uhr zehn.\nFahrgast: Muss ich umsteigen?\nSchaffner: Nein, Sie bleiben sitzen. Der Zug fährt weiter nach Köln.\nFahrgast: Gibt es einen Speisewagen?\nSchaffner: Ja, im Wagen sieben. Dort bekommen Sie Snacks und Getränke.\nFahrgast: Danke schön!\nSchaffner: Gern geschehen. Gute Fahrt!"
+        },
+        {
+          "id": "bausteine",
+          "kind": "bausteine",
+          "title": "Bausteine",
+          "titleZh": "語法詞彙",
+          "instructions": "Ergänzen Sie korrekt.",
+          "instructionsZh": "正確填空／選擇。",
+          "items": [
+            {
+              "id": "a2-m2-bausteine-01",
+              "type": "mc",
+              "prompt": "Der Zug ___ von Gleis 5.",
+              "options": [
+                "fährt",
+                "fahrt",
+                "fahren",
+                "fährst"
+              ],
+              "answer": 0,
+              "explainZh": "第三人稱 fährt。"
+            },
+            {
+              "id": "a2-m2-bausteine-02",
+              "type": "gap",
+              "prompt": "Wegen ___ fährt der Zug von einem anderen Gleis.",
+              "answer": "Bauarbeiten",
+              "explainZh": "Wegen + Genitiv／複數名詞。"
+            },
+            {
+              "id": "a2-m2-bausteine-03",
+              "type": "mc",
+              "prompt": "Die Bahn hat 20 Minuten ___.",
+              "options": [
+                "Verspätung",
+                "Verspätungen",
+                "verspäten",
+                "spät"
+              ],
+              "answer": 0,
+              "explainZh": "Verspätung haben。"
+            },
+            {
+              "id": "a2-m2-bausteine-04",
+              "type": "gap",
+              "prompt": "Am Automaten kann man ___ bar bezahlen.",
+              "answer": "nicht",
+              "explainZh": "nicht＝不能。",
+              "accept": [
+                "kein"
+              ]
+            },
+            {
+              "id": "a2-m2-bausteine-05",
+              "type": "mc",
+              "prompt": "Bitte ___ Sie hinter der Linie.",
+              "options": [
+                "warten",
+                "warte",
+                "wartet",
+                "wartest"
+              ],
+              "answer": 0,
+              "explainZh": "Sie 用 warten（命令式 warten Sie）。"
+            },
+            {
+              "id": "a2-m2-bausteine-06",
+              "type": "gap",
+              "prompt": "WLAN ist ___ für 60 Minuten.",
+              "answer": "gratis",
+              "explainZh": "gratis＝免費。",
+              "accept": [
+                "kostenlos",
+                "umsonst"
+              ]
+            },
+            {
+              "id": "a2-m2-bausteine-07",
+              "type": "mc",
+              "prompt": "Düsseldorf ist der ___ Halt.",
+              "options": [
+                "zwei",
+                "zweite",
+                "zweiten",
+                "zweiter"
+              ],
+              "answer": 1,
+              "explainZh": "序數 der zweite。"
+            },
+            {
+              "id": "a2-m2-bausteine-08",
+              "type": "gap",
+              "prompt": "Muss ich ___?",
+              "answer": "umsteigen",
+              "explainZh": "umsteigen＝換車。"
+            },
+            {
+              "id": "a2-m2-bausteine-09",
+              "type": "mc",
+              "prompt": "Gute ___!",
+              "options": [
+                "Fahrt",
+                "Fahr",
+                "Fahren",
+                "Gefahren"
+              ],
+              "answer": 0,
+              "explainZh": "Gute Fahrt＝一路順風。"
+            },
+            {
+              "id": "a2-m2-bausteine-10",
+              "type": "gap",
+              "prompt": "Der Zug fährt weiter ___ Köln.",
+              "answer": "nach",
+              "explainZh": "nach + 城市。"
+            }
+          ]
+        },
+        {
+          "id": "schreiben",
+          "kind": "schreiben",
+          "title": "Schreiben",
+          "titleZh": "寫作",
+          "instructions": "Schreiben Sie eine Nachricht (ca. 50 Wörter).",
+          "instructionsZh": "寫約 50 字訊息。",
+          "items": [
+            {
+              "id": "a2-m2-schreiben-01",
+              "type": "schreiben",
+              "prompt": "Ihr Zug hat Verspätung. Schreiben Sie einer Freundin: Welcher Zug? Wie viel Verspätung? Wann kommen Sie an? Was soll sie tun (warten / später kommen)?",
+              "promptZh": "火車誤點。寫給朋友：哪班車、誤點多久、何時到、請她怎麼做。",
+              "minWords": 40,
+              "modelAnswer": "Liebe Mia,\nmein Zug RB12 nach Leipzig hat 20 Minuten Verspätung. Ich komme erst gegen 16:40 an. Bitte warte am Ausgang Süd oder komm etwas später. Bis gleich!\nJonas",
+              "checklist": [
+                "說明哪班車",
+                "說明誤點時間",
+                "給出新到達時間",
+                "給朋友明確指示"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sprechen",
+          "kind": "sprechen",
+          "title": "Sprechen",
+          "titleZh": "口說",
+          "instructions": "Sprechen Sie über Reisen.",
+          "instructionsZh": "談談旅行。",
+          "items": [
+            {
+              "id": "a2-m2-sprechen-01",
+              "type": "sprechen",
+              "prompt": "Erzählen Sie von Ihrer letzten Reise: Wohin? Womit? Was war gut/schlecht?",
+              "promptZh": "談談上次旅行：去哪、交通、優缺點。",
+              "cues": [
+                "Ziel",
+                "Verkehrsmittel",
+                "Erlebnis"
+              ],
+              "modelAnswer": "Letzte Woche bin ich mit dem Zug nach Köln gefahren. Die Fahrt war bequem, aber wir hatten etwas Verspätung. In der Stadt habe ich den Dom besichtigt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1-m1",
+      "level": "B1",
+      "round": 1,
+      "title": "Goethe-Format B1 · Modellsatz 1",
+      "titleZh": "德檢模擬 B1 · 模考一（實習／職場）",
+      "durationMin": 100,
+      "sections": [
+        {
+          "id": "lesen",
+          "kind": "lesen",
+          "title": "Lesen",
+          "titleZh": "閱讀",
+          "instructions": "Lesen Sie die Stellenanzeige und wählen Sie.",
+          "instructionsZh": "閱讀職缺公告並選擇。",
+          "items": [
+            {
+              "id": "b1-m1-lesen-01",
+              "type": "mc",
+              "prompt": "Wann beginnt das Praktikum?",
+              "options": [
+                "Im Juni",
+                "Im Juli",
+                "Ab September",
+                "Im Dezember"
+              ],
+              "answer": 2,
+              "explainZh": "ab September。"
+            },
+            {
+              "id": "b1-m1-lesen-02",
+              "type": "mc",
+              "prompt": "Wie lange dauert es?",
+              "options": [
+                "1 Monat",
+                "3 Monate",
+                "6 Monate",
+                "1 Jahr"
+              ],
+              "answer": 1,
+              "explainZh": "3 Monate。"
+            },
+            {
+              "id": "b1-m1-lesen-03",
+              "type": "mc",
+              "prompt": "Welche Aufgabe gehört dazu?",
+              "options": [
+                "Buchhaltung führen",
+                "Social Media pflegen",
+                "Gebäude reinigen",
+                "Tickets verkaufen nur"
+              ],
+              "answer": 1,
+              "explainZh": "Pflege der Social-Media-Kanäle。"
+            },
+            {
+              "id": "b1-m1-lesen-04",
+              "type": "mc",
+              "prompt": "Welches Sprachniveau wird erwartet?",
+              "options": [
+                "A2",
+                "B1",
+                "C1",
+                "kein Deutsch"
+              ],
+              "answer": 1,
+              "explainZh": "mindestens B1。"
+            },
+            {
+              "id": "b1-m1-lesen-05",
+              "type": "tf",
+              "prompt": "Bildbearbeitung ist Pflicht.",
+              "answer": false,
+              "explainZh": "von Vorteil, aber nicht Pflicht。"
+            },
+            {
+              "id": "b1-m1-lesen-06",
+              "type": "mc",
+              "prompt": "Wie hoch ist die Vergütung?",
+              "options": [
+                "unbezahlt",
+                "450 € / Monat",
+                "1000 € / Monat",
+                "Stundenlohn 15 €"
+              ],
+              "answer": 1,
+              "explainZh": "450 € monatlich。"
+            },
+            {
+              "id": "b1-m1-lesen-07",
+              "type": "tf",
+              "prompt": "Es gibt nie Arbeit am Wochenende.",
+              "answer": false,
+              "explainZh": "gelegentlich … Wochenendeinsätze。"
+            },
+            {
+              "id": "b1-m1-lesen-08",
+              "type": "mc",
+              "prompt": "Bis wann muss man sich bewerben?",
+              "options": [
+                "1. Juni",
+                "15. Juni",
+                "1. September",
+                "15. September"
+              ],
+              "answer": 1,
+              "explainZh": "bis 15. Juni。"
+            },
+            {
+              "id": "b1-m1-lesen-09",
+              "type": "tf",
+              "prompt": "Späte Bewerbungen werden trotzdem angenommen.",
+              "answer": false,
+              "explainZh": "können leider nicht berücksichtigt werden。"
+            },
+            {
+              "id": "b1-m1-lesen-10",
+              "type": "mc",
+              "prompt": "Was soll die Bewerbung enthalten?",
+              "options": [
+                "nur Foto",
+                "Lebenslauf und Motivationsschreiben",
+                "Zeugnis vom Sport",
+                "Führerschein"
+              ],
+              "answer": 1,
+              "explainZh": "Lebenslauf und kurzes Motivationsschreiben。"
+            },
+            {
+              "id": "b1-m1-lesen-11",
+              "type": "mc",
+              "prompt": "Wohin schickt man die Unterlagen?",
+              "options": [
+                "per Post ans Rathaus",
+                "an praktikum@kultur-linden.de",
+                "nur WhatsApp",
+                "ins Reisezentrum"
+              ],
+              "answer": 1,
+              "explainZh": "指定信箱。"
+            }
+          ],
+          "passage": "Praktikum im Kulturbüro der Stadt Linden\n\nDas Kulturbüro sucht ab September eine Praktikantin / einen Praktikanten (Vollzeit, 3 Monate). Aufgaben: Unterstützung bei der Organisation von Stadtteilfesten, Pflege der Social-Media-Kanäle und Betreuung von Gästen bei Veranstaltungen. Voraussetzungen: gute Deutschkenntnisse (mindestens B1), Interesse an Kultur und zuverlässige Arbeitsweise. Erfahrungen mit Bildbearbeitung sind von Vorteil, aber nicht Pflicht. Vergütung: 450 € monatlich. Arbeitszeit: Mo–Fr 9–17 Uhr, gelegentlich Abend- oder Wochenendeinsätze (werden ausgeglichen). Bewerbung mit Lebenslauf und kurzem Motivationsschreiben bis 15. Juni an praktikum@kultur-linden.de. Spät eingesendete Unterlagen können leider nicht berücksichtigt werden.",
+          "passageZh": "林登市文化局實習\n\n文化局自九月起徵實習（全職三個月）。工作：協助籌辦街區活動、維護社群媒體、活動現場接待來賓。條件：德語至少 B1、對文化有興趣、做事可靠。影像處理經驗佳，非必須。月津貼 450 歐。工時週一至五 9–17，偶有晚間／週末（可補休）。請於六月十五日前將履歷與短動機信寄至 praktikum@kultur-linden.de。逾期恕不受理。"
+        },
+        {
+          "id": "hoeren",
+          "kind": "hoeren",
+          "title": "Hören",
+          "titleZh": "聽力",
+          "instructions": "Hören Sie das Gespräch und wählen Sie.",
+          "instructionsZh": "聽對談後選擇。",
+          "items": [
+            {
+              "id": "b1-m1-hoeren-01",
+              "type": "mc",
+              "prompt": "Wo hat Markus praktiziert?",
+              "options": [
+                "Bank",
+                "Kulturbüro",
+                "Krankenhaus",
+                "Schule"
+              ],
+              "answer": 1,
+              "explainZh": "im Kulturbüro。"
+            },
+            {
+              "id": "b1-m1-hoeren-02",
+              "type": "mc",
+              "prompt": "Was gefiel ihm am besten?",
+              "options": [
+                "Das Gehalt",
+                "Die Abwechslung",
+                "Die Ferien",
+                "Das pendeln"
+              ],
+              "answer": 1,
+              "explainZh": "Die Abwechslung。"
+            },
+            {
+              "id": "b1-m1-hoeren-03",
+              "type": "mc",
+              "prompt": "Was hat er unter anderem gemacht?",
+              "options": [
+                "Posts geschrieben",
+                "nur geputzt",
+                "nur gekocht",
+                "Autos repariert"
+              ],
+              "answer": 0,
+              "explainZh": "Posts geschrieben。"
+            },
+            {
+              "id": "b1-m1-hoeren-04",
+              "type": "mc",
+              "prompt": "Was war schwierig?",
+              "options": [
+                "Ein Fest im Regen",
+                "Keine Aufgaben",
+                "Zu viel Freizeit",
+                "Sprachtest"
+              ],
+              "answer": 0,
+              "explainZh": "Fest im Regen。"
+            },
+            {
+              "id": "b1-m1-hoeren-05",
+              "type": "mc",
+              "prompt": "Was musste das Team schnell machen?",
+              "options": [
+                "Zelte aufbauen",
+                "Tickets drucken",
+                "Essen kochen",
+                "Filme drehen"
+              ],
+              "answer": 0,
+              "explainZh": "Zelte aufbauen。"
+            },
+            {
+              "id": "b1-m1-hoeren-06",
+              "type": "mc",
+              "prompt": "Für wen empfiehlt er das Praktikum besonders?",
+              "options": [
+                "Nur für Lehrer",
+                "Wer Organisation und Kultur mag",
+                "Nur für Sportler",
+                "Nur für Touristen"
+              ],
+              "answer": 1,
+              "explainZh": "Organisation und Kultur。"
+            },
+            {
+              "id": "b1-m1-hoeren-07",
+              "type": "mc",
+              "prompt": "Was lernt man laut Markus?",
+              "options": [
+                "nur Englisch",
+                "Termine und Kommunikation",
+                "nur Kochen",
+                "Autofahren"
+              ],
+              "answer": 1,
+              "explainZh": "Termine und Kommunikation。"
+            },
+            {
+              "id": "b1-m1-hoeren-08",
+              "type": "mc",
+              "prompt": "Sein Tipp fürs Motivationsschreiben?",
+              "options": [
+                "Stadt weglassen",
+                "warum die Stadt interessiert",
+                "nur Humor",
+                "kein Lebenslauf"
+              ],
+              "answer": 1,
+              "explainZh": "warum euch die Stadt interessiert。"
+            },
+            {
+              "id": "b1-m1-hoeren-09",
+              "type": "mc",
+              "prompt": "Was ist ihm außerdem wichtig?",
+              "options": [
+                "Pünktlichkeit",
+                "Teure Kleidung",
+                "Späte Ankunft",
+                "Lange Pausen"
+              ],
+              "answer": 0,
+              "explainZh": "seid pünktlich。"
+            }
+          ],
+          "audioText": "Moderatorin: Willkommen bei „Jobtalk“. Heute ist Markus Klein zu Gast. Er hat ein Praktikum im Kulturbüro gemacht.\nMarkus: Hallo!\nModeratorin: Markus, was hat Ihnen am besten gefallen?\nMarkus: Die Abwechslung. An einem Tag habe ich Posts geschrieben, am nächsten habe ich Künstler empfangen.\nModeratorin: Gab es auch schwierige Momente?\nMarkus: Ja, bei einem Fest im Regen. Wir mussten schnell Zelte aufbauen. Aber das Team hat super zusammengearbeitet.\nModeratorin: Würden Sie das Praktikum weiterempfehlen?\nMarkus: Auf jeden Fall – besonders wenn man Organisation und Kultur mag. Man lernt viel über Termine und Kommunikation.\nModeratorin: Ein Tipp für Bewerberinnen und Bewerber?\nMarkus: Schreibt im Motivationsschreiben, warum euch die Stadt interessiert. Und seid pünktlich – das ist wichtig.\nModeratorin: Danke, Markus!\nMarkus: Danke Ihnen."
+        },
+        {
+          "id": "bausteine",
+          "kind": "bausteine",
+          "title": "Bausteine",
+          "titleZh": "語法詞彙",
+          "instructions": "Wählen Sie die passende Form / Ergänzung.",
+          "instructionsZh": "選出正確形式或填空。",
+          "items": [
+            {
+              "id": "b1-m1-bausteine-01",
+              "type": "mc",
+              "prompt": "Ich bewerbe mich ___ die Stelle.",
+              "options": [
+                "um",
+                "für",
+                "an",
+                "gegen"
+              ],
+              "answer": 0,
+              "explainZh": "sich bewerben um。"
+            },
+            {
+              "id": "b1-m1-bausteine-02",
+              "type": "gap",
+              "prompt": "Die Unterlagen müssen bis 15. Juni ___ werden.",
+              "answer": "eingesendet",
+              "explainZh": "被動：eingesendet werden。",
+              "accept": [
+                "geschickt",
+                "eingereicht"
+              ]
+            },
+            {
+              "id": "b1-m1-bausteine-03",
+              "type": "mc",
+              "prompt": "___ ich Interesse an Kultur habe, passe ich gut.",
+              "options": [
+                "Weil",
+                "Obwohl",
+                "Damit",
+                "Ob"
+              ],
+              "answer": 0,
+              "explainZh": "Weil＝因為。"
+            },
+            {
+              "id": "b1-m1-bausteine-04",
+              "type": "gap",
+              "prompt": "Erfahrungen ___ Bildbearbeitung sind von Vorteil.",
+              "answer": "mit",
+              "explainZh": "Erfahrungen mit。"
+            },
+            {
+              "id": "b1-m1-bausteine-05",
+              "type": "mc",
+              "prompt": "Abendstunden ___ ausgeglichen.",
+              "options": [
+                "werden",
+                "wird",
+                "wurde",
+                "worden"
+              ],
+              "answer": 0,
+              "explainZh": "複數 Stunden → werden。"
+            },
+            {
+              "id": "b1-m1-bausteine-06",
+              "type": "gap",
+              "prompt": "Bitte schicken Sie uns Ihren ___.",
+              "answer": "Lebenslauf",
+              "explainZh": "Lebenslauf＝履歷。"
+            },
+            {
+              "id": "b1-m1-bausteine-07",
+              "type": "mc",
+              "prompt": "Späte Bewerbungen können nicht ___ werden.",
+              "options": [
+                "berücksichtigt",
+                "berücksichtigen",
+                "berücksichtige",
+                "berücksichtigtst"
+              ],
+              "answer": 0,
+              "explainZh": "被動過去分詞 berücksichtigt。"
+            },
+            {
+              "id": "b1-m1-bausteine-08",
+              "type": "gap",
+              "prompt": "Man ___ viel über Kommunikation.",
+              "answer": "lernt",
+              "explainZh": "man lernt。"
+            },
+            {
+              "id": "b1-m1-bausteine-09",
+              "type": "mc",
+              "prompt": "Schreiben Sie, ___ Sie die Stadt interessiert.",
+              "options": [
+                "warum",
+                "wann",
+                "wohin",
+                "wessen"
+              ],
+              "answer": 0,
+              "explainZh": "warum＝為何。"
+            },
+            {
+              "id": "b1-m1-bausteine-10",
+              "type": "gap",
+              "prompt": "Seien Sie bitte ___.",
+              "answer": "pünktlich",
+              "explainZh": "pünktlich＝準時。"
+            }
+          ]
+        },
+        {
+          "id": "schreiben",
+          "kind": "schreiben",
+          "title": "Schreiben",
+          "titleZh": "寫作",
+          "instructions": "Schreiben Sie ein Motivationsschreiben (ca. 80–100 Wörter).",
+          "instructionsZh": "寫動機信約 80–100 字。",
+          "items": [
+            {
+              "id": "b1-m1-schreiben-01",
+              "type": "schreiben",
+              "prompt": "Bewerbung um das Praktikum im Kulturbüro Linden. Gehen Sie auf: Ihre Motivation, Ihre Stärken, verfügbare Zeit ab September, Abschlussformel.",
+              "promptZh": "應徵林登文化局實習：動機、優勢、九月起可上班、正式結尾。",
+              "minWords": 80,
+              "modelAnswer": "Sehr geehrte Damen und Herren,\nich bewerbe mich um das Praktikum ab September. Kultur und Veranstaltungen interessieren mich sehr. Während meines Studiums habe ich bereits Social-Media-Beiträge gestaltet und bei einem Stadtfest geholfen. Ich arbeite zuverlässig und lerne schnell. Ab dem 1. September bin ich Vollzeit verfügbar.\nÜber eine Einladung zum Gespräch würde ich mich freuen.\nMit freundlichen Grüßen\nLea Hoffmann",
+              "checklist": [
+                "正式稱呼與結尾",
+                "說明動機",
+                "提到相關經驗／優勢",
+                "說明可開始時間",
+                "字數約 80 以上"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sprechen",
+          "kind": "sprechen",
+          "title": "Sprechen",
+          "titleZh": "口說",
+          "instructions": "Sprechen Sie zusammenhängend.",
+          "instructionsZh": "連貫口述。",
+          "items": [
+            {
+              "id": "b1-m1-sprechen-01",
+              "type": "sprechen",
+              "prompt": "Was ist Ihnen bei einem Praktikum oder Job wichtig? Begründen Sie.",
+              "promptZh": "實習／工作上什麼對你重要？請說明理由。",
+              "cues": [
+                "Team",
+                "Lernchance",
+                "Arbeitszeiten",
+                "Vergütung"
+              ],
+              "modelAnswer": "Mir ist ein gutes Team wichtig, weil man sich gegenseitig hilft. Außerdem möchte ich etwas Neues lernen. Flexible Arbeitszeiten wären schön, aber Pünktlichkeit finde ich genauso wichtig."
+            },
+            {
+              "id": "b1-m1-sprechen-02",
+              "type": "sprechen",
+              "prompt": "Beschreiben Sie eine Situation, in der Sie organisiert haben oder helfen mussten.",
+              "promptZh": "描述一次你必須組織或幫忙的經驗。",
+              "cues": [
+                "Was passierte?",
+                "Was haben Sie getan?",
+                "Ergebnis"
+              ],
+              "modelAnswer": "Bei einem Schulfest hat es plötzlich geregnet. Ich habe mit anderen schnell Tische nach drinnen getragen. Am Ende konnte das Fest trotzdem stattfinden."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1-m2",
+      "level": "B1",
+      "round": 2,
+      "title": "Goethe-Format B1 · Modellsatz 2",
+      "titleZh": "德檢模擬 B1 · 模考二（環境／都市計畫）",
+      "durationMin": 100,
+      "sections": [
+        {
+          "id": "lesen",
+          "kind": "lesen",
+          "title": "Lesen",
+          "titleZh": "閱讀",
+          "instructions": "Lesen Sie den Text und beantworten Sie die Fragen.",
+          "instructionsZh": "閱讀市民資訊並作答。",
+          "items": [
+            {
+              "id": "b1-m2-lesen-01",
+              "type": "mc",
+              "prompt": "Was soll an der Marktstraße entstehen?",
+              "options": [
+                "Ein Einkaufszentrum",
+                "Eine Grünfläche",
+                "Ein Kino",
+                "Ein Hotel"
+              ],
+              "answer": 1,
+              "explainZh": "kleine Grünfläche。"
+            },
+            {
+              "id": "b1-m2-lesen-02",
+              "type": "mc",
+              "prompt": "Wie viele Parkplätze werden umgewandelt?",
+              "options": [
+                "einer",
+                "zwei",
+                "zehn",
+                "alle"
+              ],
+              "answer": 1,
+              "explainZh": "zwei Parkplätze。"
+            },
+            {
+              "id": "b1-m2-lesen-03",
+              "type": "tf",
+              "prompt": "Es soll auch eine Trinkwasserstelle geben.",
+              "answer": true,
+              "explainZh": "文中列出。"
+            },
+            {
+              "id": "b1-m2-lesen-04",
+              "type": "mc",
+              "prompt": "Was ist ein Ziel der Maßnahme?",
+              "options": [
+                "Mehr Autolärm",
+                "Mehr Schatten im Sommer",
+                "Höhere Steuern",
+                "Weniger Bäume"
+              ],
+              "answer": 1,
+              "explainZh": "für Schatten zu sorgen。"
+            },
+            {
+              "id": "b1-m2-lesen-05",
+              "type": "tf",
+              "prompt": "Alle Geschäfte unterstützen den Plan ohne Kritik.",
+              "answer": false,
+              "explainZh": "Kritiker befürchten weniger Parkraum。"
+            },
+            {
+              "id": "b1-m2-lesen-06",
+              "type": "mc",
+              "prompt": "Was passiert am Bahnhof?",
+              "options": [
+                "Schließung",
+                "Parkhaus wird erweitert",
+                "Nur Fahrräder",
+                "Keine Änderung"
+              ],
+              "answer": 1,
+              "explainZh": "Parkhaus … erweitert。"
+            },
+            {
+              "id": "b1-m2-lesen-07",
+              "type": "tf",
+              "prompt": "Die ersten 30 Minuten im Parkhaus sind kostenlos.",
+              "answer": true,
+              "explainZh": "bleiben … kostenlos。"
+            },
+            {
+              "id": "b1-m2-lesen-08",
+              "type": "mc",
+              "prompt": "Bis wann läuft die Umfrage?",
+              "options": [
+                "bis Ende des Monats",
+                "bis Oktober",
+                "nur einen Tag",
+                "gar nicht"
+              ],
+              "answer": 0,
+              "explainZh": "bis Ende des Monats。"
+            },
+            {
+              "id": "b1-m2-lesen-09",
+              "type": "mc",
+              "prompt": "Wann entscheidet der Stadtrat?",
+              "options": [
+                "Im August",
+                "Im September",
+                "Im Oktober",
+                "Im Dezember"
+              ],
+              "answer": 2,
+              "explainZh": "im Oktober。"
+            },
+            {
+              "id": "b1-m2-lesen-10",
+              "type": "tf",
+              "prompt": "Der Informationsabend kostet Eintritt.",
+              "answer": false,
+              "explainZh": "Eintritt frei。"
+            },
+            {
+              "id": "b1-m2-lesen-11",
+              "type": "mc",
+              "prompt": "Wann ist der Informationsabend?",
+              "options": [
+                "8.9., 19 Uhr",
+                "8.10., 9 Uhr",
+                "19.8., 8 Uhr",
+                "nur online"
+              ],
+              "answer": 0,
+              "explainZh": "8. September, 19 Uhr。"
+            }
+          ],
+          "passage": "Mehr Grün für die Innenstadt – Bürgerinformation\n\nDie Stadtverwaltung plant, zwei Parkplätze an der Marktstraße in eine kleine Grünfläche umzuwandeln. Dort sollen Bäume, Sitzbänke und eine Trinkwasserstelle entstehen. Ziel ist es, die Aufenthaltsqualität zu verbessern und im Sommer für Schatten zu sorgen. Kritikerinnen und Kritiker befürchten weniger Parkraum für Kundschaft der Geschäfte. Deshalb wird gleichzeitig ein Parkhaus am Bahnhof erweitert; die ersten 30 Minuten bleiben dort kostenlos. Eine Online-Umfrage läuft bis Ende des Monats. Die endgültige Entscheidung fällt im Stadtrat im Oktober. Informationsabend: 8. September, 19 Uhr, Rathaussaal – Eintritt frei, Anmeldung erwünscht.",
+          "passageZh": "市中心多一點綠意 – 市民資訊\n\n市政府計畫把市場街兩處停車格改成小綠地，設置樹木、座椅與飲水點，以提升停留品質並在夏天提供樹蔭。反對者擔心商家顧客停車位減少；因此車站旁停車場將擴建，且前 30 分鐘免費。線上問卷開放至月底，市議會十月做最終決定。說明會：九月八日晚七點市政廳大廳，免費，建議報名。"
+        },
+        {
+          "id": "hoeren",
+          "kind": "hoeren",
+          "title": "Hören",
+          "titleZh": "聽力",
+          "instructions": "Hören Sie den Dialog der Nachbarn.",
+          "instructionsZh": "聽鄰居對話後作答。",
+          "items": [
+            {
+              "id": "b1-m2-hoeren-01",
+              "type": "mc",
+              "prompt": "Was findet der Nachbar gut?",
+              "options": [
+                "Weniger Bäume",
+                "Mehr Bäume",
+                "Mehr Autos",
+                "Kein Parkhaus"
+              ],
+              "answer": 1,
+              "explainZh": "endlich mehr Bäume。"
+            },
+            {
+              "id": "b1-m2-hoeren-02",
+              "type": "mc",
+              "prompt": "Warum ist die Marktstraße im Sommer problematisch?",
+              "options": [
+                "zu kalt",
+                "zu heiß",
+                "zu dunkel",
+                "zu laut nur nachts"
+              ],
+              "answer": 1,
+              "explainZh": "viel zu heiß。"
+            },
+            {
+              "id": "b1-m2-hoeren-03",
+              "type": "mc",
+              "prompt": "Warum ist die Nachbarin unsicher?",
+              "options": [
+                "Ihre Mutter kommt mit dem Auto",
+                "Sie hasst Bänke",
+                "Kein WLAN",
+                "Zu viele Fahrräder"
+              ],
+              "answer": 0,
+              "explainZh": "Mutter kommt mit dem Auto。"
+            },
+            {
+              "id": "b1-m2-hoeren-04",
+              "type": "mc",
+              "prompt": "Was erwähnt der Nachbar zum Parkhaus?",
+              "options": [
+                "Es schließt",
+                "Es wird erweitert; 30 Min gratis",
+                "Nur für Busse",
+                "Kosten 20 €"
+              ],
+              "answer": 1,
+              "explainZh": "erweitern … dreißig Minuten gratis。"
+            },
+            {
+              "id": "b1-m2-hoeren-05",
+              "type": "mc",
+              "prompt": "Wohin will die Nachbarin gehen?",
+              "options": [
+                "Zur Bürgerversammlung",
+                "Zum Strand",
+                "Nur online chatten",
+                "Ins Kino"
+              ],
+              "answer": 0,
+              "explainZh": "zur Bürgerversammlung。"
+            },
+            {
+              "id": "b1-m2-hoeren-06",
+              "type": "mc",
+              "prompt": "Was schlägt der Nachbar in der Umfrage vor?",
+              "options": [
+                "Mehr Parkplätze in der Straße",
+                "Mehr Fahrradständer",
+                "Kein Trinkwasser",
+                "Nachtclub"
+              ],
+              "answer": 1,
+              "explainZh": "mehr Fahrradständer。"
+            },
+            {
+              "id": "b1-m2-hoeren-07",
+              "type": "mc",
+              "prompt": "Wann treffen sie sich?",
+              "options": [
+                "8.9., 18:45",
+                "8.9., 19:30",
+                "9.8., 7:00",
+                "nur online"
+              ],
+              "answer": 0,
+              "explainZh": "vierten vor sieben＝18:45。"
+            },
+            {
+              "id": "b1-m2-hoeren-08",
+              "type": "mc",
+              "prompt": "Wo treffen sie sich?",
+              "options": [
+                "vor dem Rathaus",
+                "am Bahnhof",
+                "im Parkhaus",
+                "zu Hause"
+              ],
+              "answer": 0,
+              "explainZh": "vor dem Rathaus。"
+            },
+            {
+              "id": "b1-m2-hoeren-09",
+              "type": "mc",
+              "prompt": "Füllen beide die Umfrage aus?",
+              "options": [
+                "Nur sie",
+                "Er will sie ausfüllen; sie geht zur Versammlung",
+                "Niemand",
+                "Nur die Mutter"
+              ],
+              "answer": 1,
+              "explainZh": "他填問卷、她去說明會。"
+            }
+          ],
+          "audioText": "Nachbarin: Hast du die Pläne für die Marktstraße gelesen?\nNachbar: Ja. Ich finde die Idee gut – endlich mehr Bäume. Im Sommer ist es dort viel zu heiß.\nNachbarin: Stimmt. Aber meine Mutter kommt mit dem Auto zum Arzt. Wenn die Parkplätze weg sind, wird es für sie schwerer.\nNachbar: Deshalb erweitern sie doch das Parkhaus. Und die ersten dreißig Minuten sind gratis.\nNachbarin: Das hilft ein bisschen. Ich werde trotzdem zur Bürgerversammlung gehen und Fragen stellen.\nNachbar: Gute Idee. Ich fülle auch die Online-Umfrage aus. Ich schlage vor, mehr Fahrradständer neben die Bänke zu stellen.\nNachbarin: Super. Sollen wir zusammen am achten September hingehen?\nNachbar: Ja, um viertel vor sieben vor dem Rathaus?\nNachbarin: Passt. Bis dann!"
+        },
+        {
+          "id": "bausteine",
+          "kind": "bausteine",
+          "title": "Bausteine",
+          "titleZh": "語法詞彙",
+          "instructions": "Grammatik passend zum Textniveau B1.",
+          "instructionsZh": "B1 程度語法詞彙。",
+          "items": [
+            {
+              "id": "b1-m2-bausteine-01",
+              "type": "mc",
+              "prompt": "Zwei Parkplätze sollen ___ eine Grünfläche umgewandelt werden.",
+              "options": [
+                "in",
+                "an",
+                "auf",
+                "bei"
+              ],
+              "answer": 0,
+              "explainZh": "umwandeln in。"
+            },
+            {
+              "id": "b1-m2-bausteine-02",
+              "type": "gap",
+              "prompt": "Ziel ist es, die Qualität ___.",
+              "answer": "zu verbessern",
+              "explainZh": "um … zu / Ziel ist es zu + Inf。",
+              "accept": [
+                "zu verbessern"
+              ]
+            },
+            {
+              "id": "b1-m2-bausteine-03",
+              "type": "mc",
+              "prompt": "Kritiker ___ weniger Parkraum.",
+              "options": [
+                "befürchten",
+                "befürchtet",
+                "befürchte",
+                "befürchtest"
+              ],
+              "answer": 0,
+              "explainZh": "複數 Kritiker → befürchten。"
+            },
+            {
+              "id": "b1-m2-bausteine-04",
+              "type": "gap",
+              "prompt": "Die ersten 30 Minuten bleiben ___.",
+              "answer": "kostenlos",
+              "explainZh": "kostenlos＝免費。",
+              "accept": [
+                "gratis",
+                "umsonst"
+              ]
+            },
+            {
+              "id": "b1-m2-bausteine-05",
+              "type": "mc",
+              "prompt": "Die Entscheidung fällt ___, Oktober.",
+              "options": [
+                "im",
+                "am",
+                "um",
+                "seit"
+              ],
+              "answer": 0,
+              "explainZh": "im Oktober。"
+            },
+            {
+              "id": "b1-m2-bausteine-06",
+              "type": "gap",
+              "prompt": "Anmeldung ist ___.",
+              "answer": "erwünscht",
+              "explainZh": "erwünscht＝建議／希望報名。"
+            },
+            {
+              "id": "b1-m2-bausteine-07",
+              "type": "mc",
+              "prompt": "___ die Parkplätze weg sind, wird es schwerer.",
+              "options": [
+                "Wenn",
+                "Als",
+                "Bevor",
+                "Damit"
+              ],
+              "answer": 0,
+              "explainZh": "Wenn＝如果／當。"
+            },
+            {
+              "id": "b1-m2-bausteine-08",
+              "type": "gap",
+              "prompt": "Ich schlage ___, mehr Fahrradständer zu stellen.",
+              "answer": "vor",
+              "explainZh": "vorschlagen → schlage … vor。"
+            },
+            {
+              "id": "b1-m2-bausteine-09",
+              "type": "mc",
+              "prompt": "Sollen wir ___ hingehen?",
+              "options": [
+                "zusammen",
+                "zusammenen",
+                "zusammenes",
+                "zusammens"
+              ],
+              "answer": 0,
+              "explainZh": "zusammen。"
+            },
+            {
+              "id": "b1-m2-bausteine-10",
+              "type": "gap",
+              "prompt": "Treffen wir uns um Viertel ___ sieben?",
+              "answer": "vor",
+              "explainZh": "Viertel vor＝差一刻。"
+            }
+          ]
+        },
+        {
+          "id": "schreiben",
+          "kind": "schreiben",
+          "title": "Schreiben",
+          "titleZh": "寫作",
+          "instructions": "Schreiben Sie einen Forumsbeitrag (ca. 80–100 Wörter).",
+          "instructionsZh": "寫論壇留言約 80–100 字。",
+          "items": [
+            {
+              "id": "b1-m2-schreiben-01",
+              "type": "schreiben",
+              "prompt": "Forumsthema: Grünfläche statt Parkplätze – ja oder nein? Schreiben Sie Ihre Meinung, nennen Sie ein Argument dafür und eines dagegen, machen Sie einen Kompromissvorschlag.",
+              "promptZh": "論壇：綠地取代車位？表達立場、正反各一論點，並提折衷方案。",
+              "minWords": 80,
+              "modelAnswer": "Meiner Meinung nach ist mehr Grün in der Innenstadt wichtig, weil Schatten und Sitzplätze die Straße lebendiger machen. Andererseits brauchen manche Kundinnen und Kunden kurze Parkmöglichkeiten. Ein guter Kompromiss wäre: die Grünfläche bauen und gleichzeitig das Parkhaus am Bahnhof klar ausschildern. Außerdem sollten mehr Fahrradständer entstehen.",
+              "checklist": [
+                "清楚表達立場",
+                "至少一個贊成理由",
+                "至少一個反對／顧慮",
+                "提出折衷建議",
+                "語句連貫、約 80 字"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sprechen",
+          "kind": "sprechen",
+          "title": "Sprechen",
+          "titleZh": "口說",
+          "instructions": "Nehmen Sie Stellung.",
+          "instructionsZh": "發表看法。",
+          "items": [
+            {
+              "id": "b1-m2-sprechen-01",
+              "type": "sprechen",
+              "prompt": "Sollte Ihre Stadt mehr Grünflächen oder mehr Parkplätze haben? Begründen Sie.",
+              "promptZh": "你的城市該多綠地還是多車位？請說明。",
+              "cues": [
+                "Ihre Stadt",
+                "Vorteile",
+                "Nachteile",
+                "Kompromiss"
+              ],
+              "modelAnswer": "Ich finde, wir brauchen mehr Grünflächen, weil die Sommer immer heißer werden. Parkplätze sind auch wichtig, aber man kann Parkhäuser nutzen. Ein Mix aus Bäumen, Bänken und guter ÖPNV-Anbindung wäre ideal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2-m1",
+      "level": "B2",
+      "round": 1,
+      "title": "Goethe-Format B2 · Modellsatz 1",
+      "titleZh": "德檢模擬 B2 · 模考一（數位化／居家辦公）",
+      "durationMin": 110,
+      "sections": [
+        {
+          "id": "lesen",
+          "kind": "lesen",
+          "title": "Lesen",
+          "titleZh": "閱讀",
+          "instructions": "Lesen Sie den Kommentar. Wählen Sie die zutreffende Aussage.",
+          "instructionsZh": "閱讀評論後選出正確理解。",
+          "items": [
+            {
+              "id": "b2-m1-lesen-01",
+              "type": "mc",
+              "prompt": "Was ist laut Text seit der Pandemie in vielen Branchen normal?",
+              "options": [
+                "Nur Präsenzpflicht",
+                "Mobiles Arbeiten",
+                "Nachtarbeit für alle",
+                "Kein Internet"
+              ],
+              "answer": 1,
+              "explainZh": "mobiles Arbeiten … Normalität。"
+            },
+            {
+              "id": "b2-m1-lesen-02",
+              "type": "mc",
+              "prompt": "Welches Argument nennen Befürworter?",
+              "options": [
+                "Längere Pendlerzeiten",
+                "Bessere Vereinbarkeit",
+                "Schlechterer Schlaf als Ziel",
+                "Mehr Bürokratie"
+              ],
+              "answer": 1,
+              "explainZh": "bessere Vereinbarkeit。"
+            },
+            {
+              "id": "b2-m1-lesen-03",
+              "type": "mc",
+              "prompt": "Wovor warnen Arbeitspsychologinnen?",
+              "options": [
+                "Vor zu vielen Bäumen",
+                "Vor Entgrenzung",
+                "Vor zu kurzen Mails",
+                "Vor Hybridmodellen generell"
+              ],
+              "answer": 1,
+              "explainZh": "schleichenden Entgrenzung。"
+            },
+            {
+              "id": "b2-m1-lesen-04",
+              "type": "mc",
+              "prompt": "Was kann laut Text abends leichter passieren?",
+              "options": [
+                "Man schläft sofort",
+                "Man beantwortet noch eine Mail",
+                "Man geht joggen",
+                "Man löscht den Laptop"
+              ],
+              "answer": 1,
+              "explainZh": "beantwortet … noch schnell eine Mail。"
+            },
+            {
+              "id": "b2-m1-lesen-05",
+              "type": "tf",
+              "prompt": "Alle Unternehmen haben identische Regeln zum Homeoffice.",
+              "answer": false,
+              "explainZh": "Unternehmen reagieren unterschiedlich。"
+            },
+            {
+              "id": "b2-m1-lesen-06",
+              "type": "mc",
+              "prompt": "Was schreiben manche Firmen fest?",
+              "options": [
+                "Recht auf Nichterreichbarkeit",
+                "Verbot von Pausen",
+                "24h-Erreichbarkeit Pflicht",
+                "Kein Homeoffice"
+              ],
+              "answer": 0,
+              "explainZh": "Recht auf Nichterreichbarkeit。"
+            },
+            {
+              "id": "b2-m1-lesen-07",
+              "type": "mc",
+              "prompt": "Was deuten Studien zu hybriden Modellen an?",
+              "options": [
+                "Sie scheitern immer",
+                "Sie können Zusammenhalt und Flexibilität stützen",
+                "Nur Nachteile",
+                "Nur für Schulen"
+              ],
+              "answer": 1,
+              "explainZh": "Teamzusammenhalt … Flexibilität stützen。"
+            },
+            {
+              "id": "b2-m1-lesen-08",
+              "type": "mc",
+              "prompt": "Worauf sollten Führungskräfte achten?",
+              "options": [
+                "Nur auf Präsenz",
+                "Ergebnisse statt Präsenz",
+                "Längere Meetings",
+                "Privatleben der Mitarbeitenden kontrollieren"
+              ],
+              "answer": 1,
+              "explainZh": "Ergebnisse statt Präsenz。"
+            },
+            {
+              "id": "b2-m1-lesen-09",
+              "type": "tf",
+              "prompt": "Jede Wohnung bietet idealen Arbeitsplatz.",
+              "answer": false,
+              "explainZh": "Nicht jede Wohnung …。"
+            },
+            {
+              "id": "b2-m1-lesen-10",
+              "type": "mc",
+              "prompt": "Was fordern Gewerkschaften?",
+              "options": [
+                "Einheitliche Regel ohne Ausnahme",
+                "Branchenspezifische und sozial ausgewogene Regelung",
+                "Abschaffung aller Büros",
+                "Nur digitale Berufe"
+              ],
+              "answer": 1,
+              "explainZh": "branchenspezifisch und sozial ausgewogen。"
+            },
+            {
+              "id": "b2-m1-lesen-11",
+              "type": "mc",
+              "prompt": "Was bedeutet „Entgrenzung“ im Kontext?",
+              "options": [
+                "Mehr Grenzen im Büro",
+                "Verschwimmen von Arbeits- und Privatzeit",
+                "Mehr Urlaubstage",
+                "Kürzere Arbeitsverträge"
+              ],
+              "answer": 1,
+              "explainZh": "工作與私領域界線模糊。"
+            }
+          ],
+          "passage": "Homeoffice zwischen Freiheit und Entgrenzung\n\nSeit der Pandemie ist mobiles Arbeiten in vielen Branchen zur Normalität geworden. Befürworterinnen und Befürworter betonen die gestiegene Produktivität, kürzere Pendlerzeiten und eine bessere Vereinbarkeit von Beruf und Privatleben. Gleichzeitig warnen Arbeitspsychologinnen vor einer schleichenden Entgrenzung: Wer den Laptop auf dem Küchentisch stehen lässt, beantwortet abends leichter noch schnell eine Mail – und schläft schlechter. Unternehmen reagieren unterschiedlich. Während manche feste Kernarbeitszeiten und ein Recht auf Nichterreichbarkeit festschreiben, setzen andere auf Vertrauensarbeitszeit ohne klare Leitplanken. Studien deuten darauf hin, dass hybride Modelle – etwa drei Tage im Büro, zwei zu Hause – sowohl den Teamzusammenhalt als auch die individuelle Flexibilität stützen können, sofern Führungskräfte Ergebnisse statt Präsenz bewerten. Kritisch bleibt der Zugang: Nicht jede Wohnung bietet einen ruhigen Arbeitsplatz, und nicht jede Tätigkeit lässt sich digitalisieren. Eine gerechte Regelung müsse daher branchenspezifisch und sozial ausgewogen sein, fordern Gewerkschaften.",
+          "passageZh": "居家辦公：自由與界線模糊之間\n\n疫情以來，許多產業已把遠距工作視為常態。支持者強調生產力上升、通勤變短、工作與生活更易兼顧。另一方面，工作心理學家警告界線正慢慢消失：筆電放在餐桌上，晚上更容易「再回一封信」，睡眠也變差。企業反應不一：有的訂定核心工時與「有權不被聯絡」，有的採信任工時卻缺少清楚規範。研究顯示，混合模式（例如三天辦公室、兩天在家）若主管以成果而非出席評核，可同時維繫團隊與個人彈性。仍待解決的是公平近用：並非每戶都有安靜工作角落，也非每種工作都能數位化。工會主張規範應依產業調整並兼顾社會公平。"
+        },
+        {
+          "id": "hoeren",
+          "kind": "hoeren",
+          "title": "Hören",
+          "titleZh": "聽力",
+          "instructions": "Hören Sie das Podcast-Gespräch.",
+          "instructionsZh": "聽 Podcast 訪談後作答。",
+          "items": [
+            {
+              "id": "b2-m1-hoeren-01",
+              "type": "mc",
+              "prompt": "Wer ist zu Gast?",
+              "options": [
+                "Ein Coach ohne Forschung",
+                "Dr. Sabine Vogt",
+                "Nur der Host allein",
+                "Ein IT-Techniker"
+              ],
+              "answer": 1,
+              "explainZh": "Dr. Sabine Vogt。"
+            },
+            {
+              "id": "b2-m1-hoeren-02",
+              "type": "mc",
+              "prompt": "Sinkt die Produktivität laut Vogt immer?",
+              "options": [
+                "Ja, immer",
+                "Nicht zwangsläufig",
+                "Nur nachts",
+                "Sie sagt nichts dazu"
+              ],
+              "answer": 1,
+              "explainZh": "Nicht zwangsläufig。"
+            },
+            {
+              "id": "b2-m1-hoeren-03",
+              "type": "mc",
+              "prompt": "Wann arbeiten viele zu Hause besonders gut?",
+              "options": [
+                "Bei Aufgaben, die Ruhe brauchen",
+                "Nur in Großraumbüros",
+                "Nur mit Dauer-Meetings",
+                "Nur ohne Internet"
+              ],
+              "answer": 0,
+              "explainZh": "Aufgaben, die Ruhe brauchen。"
+            },
+            {
+              "id": "b2-m1-hoeren-04",
+              "type": "mc",
+              "prompt": "Wann wird es problematisch?",
+              "options": [
+                "Wenn Pausen zu lang sind",
+                "Wenn Meetings den Tag füllen",
+                "Wenn man spazieren geht",
+                "Wenn Kernzeiten existieren"
+              ],
+              "answer": 1,
+              "explainZh": "Meetings den ganzen Tag füllen。"
+            },
+            {
+              "id": "b2-m1-hoeren-05",
+              "type": "mc",
+              "prompt": "Welche Kernzeit nennt sie als Beispiel?",
+              "options": [
+                "6–9 Uhr",
+                "10–15 Uhr",
+                "18–22 Uhr",
+                "ganztags"
+              ],
+              "answer": 1,
+              "explainZh": "von zehn bis fünfzehn Uhr。"
+            },
+            {
+              "id": "b2-m1-hoeren-06",
+              "type": "mc",
+              "prompt": "Was soll danach gelten?",
+              "options": [
+                "Nochmal mehr Meetings",
+                "Recht, offline zu sein",
+                "Pflicht zu chatten",
+                "Büroschließung"
+              ],
+              "answer": 1,
+              "explainZh": "Recht, offline zu sein。"
+            },
+            {
+              "id": "b2-m1-hoeren-07",
+              "type": "mc",
+              "prompt": "Warum feste Präsenztage?",
+              "options": [
+                "Damit niemand Urlaub nimmt",
+                "Damit informeller Austausch bleibt",
+                "Nur für Kontrolle",
+                "Für mehr Pendeln"
+              ],
+              "answer": 1,
+              "explainZh": "informeller Austausch。"
+            },
+            {
+              "id": "b2-m1-hoeren-08",
+              "type": "mc",
+              "prompt": "Welches Feierabend-Ritual nennt sie?",
+              "options": [
+                "Laptop offen lassen",
+                "Laptop schließen und spazieren",
+                "Mails um Mitternacht",
+                "Kein Ritual"
+              ],
+              "answer": 1,
+              "explainZh": "Laptop schließen und spazieren gehen。"
+            },
+            {
+              "id": "b2-m1-hoeren-09",
+              "type": "mc",
+              "prompt": "Wer kann benachteiligt sein?",
+              "options": [
+                "Nur Manager",
+                "Menschen in kleinen Wohnungen / mit Care-Aufgaben",
+                "Nur Studierende",
+                "Niemand"
+              ],
+              "answer": 1,
+              "explainZh": "kleinen Wohnungen oder Care-Aufgaben。"
+            },
+            {
+              "id": "b2-m1-hoeren-10",
+              "type": "mc",
+              "prompt": "Welche Unterstützung erwähnt sie?",
+              "options": [
+                "Zugang zu Coworking-Spaces",
+                "Kostenlose Autos",
+                "Längere Nachtschichten",
+                "Abschaffung von Pausen"
+              ],
+              "answer": 0,
+              "explainZh": "Coworking-Spaces。"
+            }
+          ],
+          "audioText": "Podcast-Host: Herzlich willkommen zu unserem Arbeitsleben-Podcast. Heute sprechen wir über Homeoffice-Regeln und gesunde Grenzen. Zu Gast ist Dr. Sabine Vogt, Arbeitsforscherin an der Universität Mainz.\nVogt: Guten Tag, vielen Dank für die Einladung.\nHost: Frau Dr. Vogt, sinkt die Produktivität wirklich, wenn Leute zu Hause arbeiten?\nVogt: Nicht zwangsläufig. Viele berichten von konzentrierterem Arbeiten, vor allem bei Aufgaben, die Ruhe und tiefe Konzentration brauchen. Problematisch wird es allerdings, wenn virtuelle Meetings den ganzen Tag füllen und keine echten Erholungspausen bleiben. Dann sinkt die Qualität spürbar.\nHost: Was empfehlen Sie Unternehmen konkret?\nVogt: Klare Kernzeiten für gemeinsame Erreichbarkeit, zum Beispiel von zehn bis fünfzehn Uhr, und danach ein Recht, offline zu sein. Außerdem sollten Teams feste Präsenztage haben, damit informeller Austausch und spontane Ideen nicht verloren gehen. Führungskräfte müssen Ergebnisse bewerten, nicht nur Präsenz.\nHost: Und welchen Rat geben Sie Beschäftigten?\nVogt: Richten Sie einen festen Arbeitsplatz zu Hause ein, nehmen Sie Pausen ernst und pflegen Sie Feierabend-Rituale – etwa den Laptop schließen und kurz spazieren gehen. Sprechen Sie Erwartungen im Team offen an.\nHost: Gibt es Gruppen, die besonders benachteiligt werden?\nVogt: Ja. Menschen in kleinen Wohnungen oder mit Care-Aufgaben brauchen zusätzliche Unterstützung, etwa Zugang zu Coworking-Spaces oder flexible Kinderbetreuung. Ohne solche Angebote bleibt mobiles Arbeiten ungerecht verteilt.\nHost: Vielen Dank für diese klare Einschätzung.\nVogt: Sehr gerne. Ich hoffe, mehr Betriebe setzen Leitplanken statt nur Freiheiten."
+        },
+        {
+          "id": "bausteine",
+          "kind": "bausteine",
+          "title": "Bausteine",
+          "titleZh": "語法詞彙",
+          "instructions": "Präzise Formulierungen auf B2-Niveau.",
+          "instructionsZh": "B2 精準表達。",
+          "items": [
+            {
+              "id": "b2-m1-bausteine-01",
+              "type": "mc",
+              "prompt": "Mobiles Arbeiten ist ___ Normalität geworden.",
+              "options": [
+                "zur",
+                "zum",
+                "zur der",
+                "in die"
+              ],
+              "answer": 0,
+              "explainZh": "zur Normalität werden。"
+            },
+            {
+              "id": "b2-m1-bausteine-02",
+              "type": "gap",
+              "prompt": "Studien ___ darauf hin, dass Hybridmodelle helfen können.",
+              "answer": "deuten",
+              "explainZh": "darauf hindeuten。"
+            },
+            {
+              "id": "b2-m1-bausteine-03",
+              "type": "mc",
+              "prompt": "___ Führungskräfte Ergebnisse bewerten, funktioniert Hybrid besser.",
+              "options": [
+                "Sofern",
+                "Seitdem ohne Sinn",
+                "Bevor nie",
+                "Ohne dass falsch"
+              ],
+              "answer": 0,
+              "explainZh": "sofern＝只要。"
+            },
+            {
+              "id": "b2-m1-bausteine-04",
+              "type": "gap",
+              "prompt": "Manche schreiben ein Recht auf ___ fest.",
+              "answer": "Nichterreichbarkeit",
+              "explainZh": "Nichterreichbarkeit。"
+            },
+            {
+              "id": "b2-m1-bausteine-05",
+              "type": "mc",
+              "prompt": "Nicht jede Tätigkeit lässt sich ___.",
+              "options": [
+                "digitalisieren",
+                "digitalisiert",
+                "digitalisieren lassen falsch doppelt",
+                "zu digital"
+              ],
+              "answer": 0,
+              "explainZh": "lässt sich + Inf。"
+            },
+            {
+              "id": "b2-m1-bausteine-06",
+              "type": "gap",
+              "prompt": "Es besteht die Gefahr einer schleichenden ___.",
+              "answer": "Entgrenzung",
+              "explainZh": "Entgrenzung＝界線模糊。"
+            },
+            {
+              "id": "b2-m1-bausteine-07",
+              "type": "mc",
+              "prompt": "Sie warnt ___, dass Erholung fehlt.",
+              "options": [
+                "davor",
+                "darauf",
+                "davon",
+                "damit"
+              ],
+              "answer": 0,
+              "explainZh": "warnen vor / davor, dass。"
+            },
+            {
+              "id": "b2-m1-bausteine-08",
+              "type": "gap",
+              "prompt": "Pausen sollte man ___ nehmen.",
+              "answer": "ernst",
+              "explainZh": "ernst nehmen。"
+            },
+            {
+              "id": "b2-m1-bausteine-09",
+              "type": "mc",
+              "prompt": "Gewerkschaften fordern ___ Regelungen.",
+              "options": [
+                "ausgewogene",
+                "ausgewogenen",
+                "ausgewogenes",
+                "ausgewogen"
+              ],
+              "answer": 0,
+              "explainZh": "Regelungen 複數 → ausgewogene。"
+            },
+            {
+              "id": "b2-m1-bausteine-10",
+              "type": "gap",
+              "prompt": "Hybride Modelle können den Teamzusammenhalt ___.",
+              "answer": "stützen",
+              "explainZh": "stützen＝支撐。",
+              "accept": [
+                "fördern",
+                "stärken"
+              ]
+            },
+            {
+              "id": "b2-m1-bausteine-11",
+              "type": "mc",
+              "prompt": "___ die Produktivität sinkt, hängt von der Organisation ab.",
+              "options": [
+                "Ob",
+                "Als",
+                "Seit",
+                "Je"
+              ],
+              "answer": 0,
+              "explainZh": "Ob＝是否。"
+            }
+          ]
+        },
+        {
+          "id": "schreiben",
+          "kind": "schreiben",
+          "title": "Schreiben",
+          "titleZh": "寫作",
+          "instructions": "Schreiben Sie eine Stellungnahme (ca. 150 Wörter).",
+          "instructionsZh": "撰寫立場文約 150 字。",
+          "items": [
+            {
+              "id": "b2-m1-schreiben-01",
+              "type": "schreiben",
+              "prompt": "Thema: Sollte mobiles Arbeiten gesetzlich stärker geregelt werden? Einleitung – zwei Argumente – Gegenargument mit Entkräftung – Schlussfolgerung mit Empfehlung.",
+              "promptZh": "題目：遠距工作是否應有更強法律規範？含引言、兩論點、反論與反駁、結論建議。",
+              "minWords": 150,
+              "modelAnswer": "Ob mobiles Arbeiten gesetzlich stärker geregelt werden sollte, ist umstritten. Einerseits schützen klare Regeln Beschäftigte vor ständiger Erreichbarkeit und fördern gesunde Arbeitszeiten. Andererseits brauchen Branchen Flexibilität; zu starre Gesetze könnten Innovation hemmen. Ein Gegenargument lautet, Unternehmen regelten das besser selbst – doch ohne Mindeststandards bleibt die Macht ungleich. Daher plädiere ich für Rahmenbedingungen: Recht auf Nichterreichbarkeit, hybride Leitlinien und Unterstützung für Menschen ohne geeigneten Arbeitsplatz zu Hause. Details sollten tariflich anpassbar bleiben.",
+              "checklist": [
+                "有引言與清楚立場",
+                "至少兩個支持論點",
+                "有反論並嘗試反駁",
+                "結論含具體建議",
+                "連接詞與複雜句運用得宜",
+                "約 150 字"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sprechen",
+          "kind": "sprechen",
+          "title": "Sprechen",
+          "titleZh": "口說",
+          "instructions": "Präsentieren Sie Ihre Meinung strukturiert.",
+          "instructionsZh": "有結構地陳述看法。",
+          "items": [
+            {
+              "id": "b2-m1-sprechen-01",
+              "type": "sprechen",
+              "prompt": "Diskutieren Sie Vor- und Nachteile von Homeoffice. Kommen Sie zu einer Empfehlung.",
+              "promptZh": "討論居家辦公優缺點並提出建議。",
+              "cues": [
+                "Vorteile",
+                "Nachteile",
+                "Für wen geeignet?",
+                "Empfehlung"
+              ],
+              "modelAnswer": "Homeoffice spart Pendelzeit und erhöht oft die Konzentration. Nachteilig sind Isolation und verschwommene Grenzen. Für Menschen mit ruhigem Platz und klaren Aufgaben eignet es sich gut. Ich empfehle hybride Modelle mit Kernzeiten und Präsenztagen."
+            },
+            {
+              "id": "b2-m1-sprechen-02",
+              "type": "sprechen",
+              "prompt": "Wie schützen Sie Ihre Work-Life-Balance im Alltag?",
+              "promptZh": "日常生活中你如何保護工作生活平衡？",
+              "cues": [
+                "Rituale",
+                "Technik",
+                "Kommunikation mit dem Team"
+              ],
+              "modelAnswer": "Ich schließe den Laptop nach Feierabend und schalte Benachrichtigungen aus. Mit dem Team kläre ich Erreichbarkeitszeiten. Spaziergänge helfen mir abzuschalten."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2-m2",
+      "level": "B2",
+      "round": 2,
+      "title": "Goethe-Format B2 · Modellsatz 2",
+      "titleZh": "德檢模擬 B2 · 模考二（教育／學費）",
+      "durationMin": 110,
+      "sections": [
+        {
+          "id": "lesen",
+          "kind": "lesen",
+          "title": "Lesen",
+          "titleZh": "閱讀",
+          "instructions": "Lesen Sie den Essayauszug und wählen Sie.",
+          "instructionsZh": "閱讀論說文節錄並選擇。",
+          "items": [
+            {
+              "id": "b2-m2-lesen-01",
+              "type": "mc",
+              "prompt": "Welche Prinzipien prallen aufeinander?",
+              "options": [
+                "Nur Sportregeln",
+                "Öffentliches Gut vs. Eigenbeteiligung",
+                "Nur Sprachkurse",
+                "Nur Online-Prüfungen"
+              ],
+              "answer": 1,
+              "explainZh": "Bildung als öffentliches Gut versus Eigenbeteiligung。"
+            },
+            {
+              "id": "b2-m2-lesen-02",
+              "type": "mc",
+              "prompt": "Was sollen zusätzliche Mittel laut Befürwortern verbessern?",
+              "options": [
+                "Nur Mensapreise",
+                "Betreuung, Bibliotheken, digitale Infrastruktur",
+                "Nur Parkplätze",
+                "Nur Werbung"
+              ],
+              "answer": 1,
+              "explainZh": "Betreuungsrelationen, Bibliotheken und digitale Infrastruktur。"
+            },
+            {
+              "id": "b2-m2-lesen-03",
+              "type": "mc",
+              "prompt": "Warum sei Beteiligung fair laut Befürwortern?",
+              "options": [
+                "Weil niemand studiert",
+                "Weil Studierende später oft höhere Einkommen haben",
+                "Weil Bücher kostenlos sind",
+                "Weil es keine Jobs gibt"
+              ],
+              "answer": 1,
+              "explainZh": "höhere Einkommen。"
+            },
+            {
+              "id": "b2-m2-lesen-04",
+              "type": "mc",
+              "prompt": "Wen schrecken Gebühren laut Gegnern besonders ab?",
+              "options": [
+                "Nur Professoren",
+                "Erstakademiker / einkommensschwächere Haushalte",
+                "Nur Touristen",
+                "Nur Rentner"
+              ],
+              "answer": 1,
+              "explainZh": "Erstakademikerinnen … einkommensschwächeren Haushalten。"
+            },
+            {
+              "id": "b2-m2-lesen-05",
+              "type": "tf",
+              "prompt": "Angst vor Verschuldung kann Entscheidungen beeinflussen.",
+              "answer": true,
+              "explainZh": "kann Bildungsentscheidungen verzerren。"
+            },
+            {
+              "id": "b2-m2-lesen-06",
+              "type": "mc",
+              "prompt": "Was leisten Stipendien laut Text nur teilweise?",
+              "options": [
+                "Ausgleich von Ungleichheit",
+                "Abschaffung aller Hochschulen",
+                "Kostenlose Flüge",
+                "Mehr Parkraum"
+              ],
+              "answer": 0,
+              "explainZh": "Ungleichheit nur teilweise ausgleichen。"
+            },
+            {
+              "id": "b2-m2-lesen-07",
+              "type": "mc",
+              "prompt": "Warum greifen Stipendien nicht vollständig?",
+              "options": [
+                "Weil alle reich sind",
+                "Informationsbarrieren und Bürokratie",
+                "Weil es keine Bibliotheken gibt",
+                "Weil niemand bewirbt"
+              ],
+              "answer": 1,
+              "explainZh": "Informationsbarrieren und Bürokratie。"
+            },
+            {
+              "id": "b2-m2-lesen-08",
+              "type": "mc",
+              "prompt": "Welcher Mittelweg wird genannt?",
+              "options": [
+                "Sofortige Schließung",
+                "Sozial gestaffelte Beiträge / nachgelagerte Steuern / bessere Beratung",
+                "Nur höhere Gebühren ohne Hilfe",
+                "Verbot von Studium"
+              ],
+              "answer": 1,
+              "explainZh": "gestaffelte Beiträge、nachgelagerte Steuern、Studienberatung。"
+            },
+            {
+              "id": "b2-m2-lesen-09",
+              "type": "tf",
+              "prompt": "Nur die Höhe der Gebühr entscheidet über Chancengleichheit.",
+              "answer": false,
+              "explainZh": "nicht allein die Höhe … sondern ob Zugänge …。"
+            },
+            {
+              "id": "b2-m2-lesen-10",
+              "type": "mc",
+              "prompt": "Was bleibt ohne verlässliche Unterstützung?",
+              "options": [
+                "Automatische Fairness",
+                "Chancengleichheit als Versprechen ohne ausreichende Praxis",
+                "Kostenlose Wohnungen für alle",
+                "Keine Debatte mehr"
+              ],
+              "answer": 1,
+              "explainZh": "Versprechen ohne ausreichende Praxis。"
+            },
+            {
+              "id": "b2-m2-lesen-11",
+              "type": "mc",
+              "prompt": "Was bedeutet „nachgelagerte Einkommenssteuern“ hier ungefähr?",
+              "options": [
+                "Steuern vor dem Studium",
+                "Abgaben später je nach Einkommen der Absolventen",
+                "Steuern nur für Schulen",
+                "Keine Steuern je"
+              ],
+              "answer": 1,
+              "explainZh": "畢業後依所得課徵。"
+            },
+            {
+              "id": "b2-m2-lesen-12",
+              "type": "mc",
+              "prompt": "Was soll laut Text frühzeitig sein?",
+              "options": [
+                "Nur Prüfungen",
+                "Beratung",
+                "Nur Gebührenbescheid",
+                "Nur Feiern"
+              ],
+              "answer": 1,
+              "explainZh": "Beratung frühzeitig。"
+            }
+          ],
+          "passage": "Studiengebühren: Investition oder soziale Hürde?\n\nIn der Debatte um die Finanzierung von Hochschulen prallen zwei Prinzipien aufeinander: Bildung als öffentliches Gut versus stärkere Eigenbeteiligung der Studierenden. Befürworter moderater Gebühren argumentieren, zusätzliche Mittel verbesserten Betreuungsrelationen, Bibliotheken und digitale Infrastruktur. Wer studiere, profitiere später von höheren Einkommen – eine Beteiligung sei daher fair. Gegnerinnen und Gegner entgegnen, Gebühren schreckten gerade Erstakademikerinnen und Studierende aus einkommensschwächeren Haushalten ab. Schon die Angst vor Verschuldung könne Bildungsentscheidungen verzerren. International zeige sich, dass Stipendienprogramme die Ungleichheit nur teilweise ausgleichen, weil Informationsbarrieren und Bürokratie weiterhin wirkten. Als Mittelweg diskutieren Expertinnen sozial gestaffelte Beiträge, nachgelagerte Einkommenssteuern für Absolventinnen und Absolventen sowie stärkere Investitionen in Studienberatung. Entscheidend sei nicht allein die Höhe einer Gebühr, sondern ob Zugänge transparent, Beratung frühzeitig und Unterstützung verlässlich seien. Andernfalls bleibe Chancengleichheit ein Versprechen ohne ausreichende Praxis.",
+          "passageZh": "學費：投資還是社會門檻？\n\n高教經費辯論中，兩個原則對撞：教育作為公共財，或是學生應有更多自付。贊成適度收費者認為，額外經費能改善師生比、圖書館與數位基礎建設；讀大學者日後收入較高，分擔成本較公平。反對者則說，學費會嚇跑第一代大學生與低收入家庭學生，光是懼怕負債就可能扭曲升學選擇。國際經驗顯示，獎學金只能部分弭平不平等，因為資訊落差與行政手續仍在作用。專家討論折衷：依收入分級繳費、畢業後依所得課徵、加強選課輔導。關鍵不只在學費高低，而在入學管道是否透明、輔導是否及早、支持是否可靠——否則機會平等只是口號。"
+        },
+        {
+          "id": "hoeren",
+          "kind": "hoeren",
+          "title": "Hören",
+          "titleZh": "聽力",
+          "instructions": "Hören Sie die Diskussionsrunde.",
+          "instructionsZh": "聽討論後作答。",
+          "items": [
+            {
+              "id": "b2-m2-hoeren-01",
+              "type": "mc",
+              "prompt": "Wer diskutiert mit?",
+              "options": [
+                "Nur der Moderator",
+                "Hartmann und Meier",
+                "Nur Studierende ohne Prof",
+                "Nur Politiker"
+              ],
+              "answer": 1,
+              "explainZh": "Elena Hartmann und Jonas Meier。"
+            },
+            {
+              "id": "b2-m2-hoeren-02",
+              "type": "mc",
+              "prompt": "Warum hält Hartmann Gebühren für vertretbar?",
+              "options": [
+                "Weil Studium sinnlos ist",
+                "Weil Lehrqualität unter Finanzdruck leidet",
+                "Weil niemand Stipendien will",
+                "Weil Labore überflüssig sind"
+              ],
+              "answer": 1,
+              "explainZh": "Qualität der Lehre unter Finanzdruck。"
+            },
+            {
+              "id": "b2-m2-hoeren-03",
+              "type": "mc",
+              "prompt": "Womit sollen Beiträge kombiniert werden?",
+              "options": [
+                "Mit Werbeverbot",
+                "Mit großzügigen Stipendien",
+                "Mit weniger Tutorien",
+                "Mit höheren Mieten nur"
+              ],
+              "answer": 1,
+              "explainZh": "großzügigen Stipendien。"
+            },
+            {
+              "id": "b2-m2-hoeren-04",
+              "type": "mc",
+              "prompt": "Welche Bedingung nennt Hartmann?",
+              "options": [
+                "Mittel kommen in der Lehre an",
+                "Nur Neubauten",
+                "Keine Beratung",
+                "Sofortige Schulden"
+              ],
+              "answer": 0,
+              "explainZh": "Mittel … in der Lehre an。"
+            },
+            {
+              "id": "b2-m2-hoeren-05",
+              "type": "mc",
+              "prompt": "Was bezweifelt Meier?",
+              "options": [
+                "Dass Versprechen eingehalten werden",
+                "Dass es Universitäten gibt",
+                "Dass man studieren darf",
+                "Dass Beratung existiert"
+              ],
+              "answer": 0,
+              "explainZh": "Versprechen werden leicht gegeben。"
+            },
+            {
+              "id": "b2-m2-hoeren-06",
+              "type": "mc",
+              "prompt": "Wen erwähnt Meier besonders?",
+              "options": [
+                "Nur Professoren",
+                "Studierende aus Nichtakademikerfamilien",
+                "Nur Touristen",
+                "Nur Kinder"
+              ],
+              "answer": 1,
+              "explainZh": "Nichtakademikerfamilien。"
+            },
+            {
+              "id": "b2-m2-hoeren-07",
+              "type": "mc",
+              "prompt": "Was fordert Meier statt Gebührenfokus?",
+              "options": [
+                "Grundfinanzierung und Beratung stärken",
+                "Sofortige Schließung",
+                "Nur Online-Studium",
+                "Mehr Parkgebühren"
+              ],
+              "answer": 0,
+              "explainZh": "Grundfinanzierung stärken und Beratung ausbauen。"
+            },
+            {
+              "id": "b2-m2-hoeren-08",
+              "type": "mc",
+              "prompt": "Wie steht Meier zu nachgelagerter Abgabe?",
+              "options": [
+                "Komplett dagegen",
+                "Eher ja, wenn Regeln transparent",
+                "Nur bar zahlen",
+                "Nur für Schulen"
+              ],
+              "answer": 1,
+              "explainZh": "Eher ja … transparent。"
+            },
+            {
+              "id": "b2-m2-hoeren-09",
+              "type": "mc",
+              "prompt": "Worin sind sich beide einig?",
+              "options": [
+                "Transparenz und frühe Beratung wichtig",
+                "Keine Finanzierung nötig",
+                "Nur Gebäude bauen",
+                "Stipendien abschaffen"
+              ],
+              "answer": 0,
+              "explainZh": "Transparenz und frühe Beratung。"
+            },
+            {
+              "id": "b2-m2-hoeren-10",
+              "type": "mc",
+              "prompt": "Was sagt Meier zum Schluss über Chancengleichheit?",
+              "options": [
+                "Sie ist automatisch da",
+                "Ohne sichtbare Zugänge bleibt sie Theorie",
+                "Sie betrifft nur Sport",
+                "Sie braucht keine Beratung"
+              ],
+              "answer": 1,
+              "explainZh": "sonst bleibt … Theorie。"
+            }
+          ],
+          "audioText": "Moderator: Willkommen zur heutigen Bildungsrunde im Studio. Am Tisch sitzen Prof. Elena Hartmann von der Hochschule und Studierendensprecher Jonas Meier.\nHartmann: Guten Tag.\nMeier: Hallo, schön hier zu sein.\nModerator: Frau Professorin, warum halten Sie begrenzte Studiengebühren für vertretbar?\nHartmann: Weil die Qualität der Lehre unter anhaltendem Finanzdruck leidet. Moderate Beiträge, kombiniert mit großzügigen Stipendien, könnten Labore, Tutorien und digitale Infrastruktur sichern – vorausgesetzt, die Mittel kommen tatsächlich in der Lehre an und versickern nicht in der Verwaltung.\nMeier: Genau da liegt mein Zweifel. Versprechen werden leicht gegeben, aber Studierende aus Nichtakademikerfamilien scheuen Schulden oft stärker als andere. Lieber die öffentliche Grundfinanzierung stärken und Beratung früh ausbauen, statt Hürden aufzubauen.\nModerator: Herr Meier, wäre eine nachgelagerte Abgabe für Sie akzeptabler?\nMeier: Eher ja – wer später viel verdient, zahlt mehr zurück. Aber die Regeln müssen einfach, transparent und bundesweit vergleichbar sein. Sonst entsteht wieder neue Ungleichheit zwischen den Bundesländern.\nHartmann: Da sind wir nah beieinander. Transparenz und frühe Studienberatung sind für mich ebenso wichtig wie die reine Finanzierungsfrage. Ohne Information helfen weder Gebühren noch Stipendien wirklich.\nModerator: Ein Satz zum Schluss von beiden, bitte.\nHartmann: Investiert in Menschen und gute Lehre, nicht nur in Gebäude.\nMeier: Und macht Zugänge sichtbar – sonst bleibt Chancengleichheit reine Theorie.\nModerator: Herzlichen Dank für dieses klare Gespräch."
+        },
+        {
+          "id": "bausteine",
+          "kind": "bausteine",
+          "title": "Bausteine",
+          "titleZh": "語法詞彙",
+          "instructions": "Konnektoren und Nominalstil.",
+          "instructionsZh": "連接詞與名詞化。",
+          "items": [
+            {
+              "id": "b2-m2-bausteine-01",
+              "type": "mc",
+              "prompt": "Zwei Prinzipien ___ aufeinander.",
+              "options": [
+                "prallen",
+                "prallt",
+                "geprallt sein falsch",
+                "prall"
+              ],
+              "answer": 0,
+              "explainZh": "prallen aufeinander。"
+            },
+            {
+              "id": "b2-m2-bausteine-02",
+              "type": "gap",
+              "prompt": "Gebühren könnten Erstakademiker ___.",
+              "answer": "abschrecken",
+              "explainZh": "abschrecken＝嚇跑。",
+              "accept": [
+                "abschrecken"
+              ]
+            },
+            {
+              "id": "b2-m2-bausteine-03",
+              "type": "mc",
+              "prompt": "___ die Mittel in der Lehre ankommen, lohnen sich Beiträge.",
+              "options": [
+                "Vorausgesetzt",
+                "Bevor ohne Sinn",
+                "Während nie",
+                "Ohne dass immer"
+              ],
+              "answer": 0,
+              "explainZh": "vorausgesetzt＝前提是。"
+            },
+            {
+              "id": "b2-m2-bausteine-04",
+              "type": "gap",
+              "prompt": "Stipendien gleichen Ungleichheit nur ___ aus.",
+              "answer": "teilweise",
+              "explainZh": "teilweise＝部分。"
+            },
+            {
+              "id": "b2-m2-bausteine-05",
+              "type": "mc",
+              "prompt": "Expertinnen diskutieren sozial ___ Beiträge.",
+              "options": [
+                "gestaffelte",
+                "gestaffelten",
+                "gestaffeltes",
+                "Staffel"
+              ],
+              "answer": 0,
+              "explainZh": "gestaffelte Beiträge。"
+            },
+            {
+              "id": "b2-m2-bausteine-06",
+              "type": "gap",
+              "prompt": "Entscheidend ist, ___ Zugänge transparent sind.",
+              "answer": "ob",
+              "explainZh": "ob＝是否。"
+            },
+            {
+              "id": "b2-m2-bausteine-07",
+              "type": "mc",
+              "prompt": "Andernfalls ___ Chancengleichheit Theorie.",
+              "options": [
+                "bleibt",
+                "bleiben",
+                "blieb",
+                "bleibst"
+              ],
+              "answer": 0,
+              "explainZh": "bleibt。"
+            },
+            {
+              "id": "b2-m2-bausteine-08",
+              "type": "gap",
+              "prompt": "Man sollte in Menschen ___, nicht nur in Gebäude.",
+              "answer": "investieren",
+              "explainZh": "investieren in。"
+            },
+            {
+              "id": "b2-m2-bausteine-09",
+              "type": "mc",
+              "prompt": "Die Angst ___ Verschuldung verzerrt Entscheidungen.",
+              "options": [
+                "vor",
+                "für",
+                "um",
+                "gegen"
+              ],
+              "answer": 0,
+              "explainZh": "Angst vor。"
+            },
+            {
+              "id": "b2-m2-bausteine-10",
+              "type": "gap",
+              "prompt": "Nachgelagerte Abgaben hängen vom ___ ab.",
+              "answer": "Einkommen",
+              "explainZh": "Einkommen。",
+              "accept": [
+                "Verdienst"
+              ]
+            },
+            {
+              "id": "b2-m2-bausteine-11",
+              "type": "mc",
+              "prompt": "___ Bürokratie wirkt weiterhin, greifen Stipendien nicht voll.",
+              "options": [
+                "Weil",
+                "Als",
+                "Seit wann falsch",
+                "Damit"
+              ],
+              "answer": 0,
+              "explainZh": "Weil。"
+            },
+            {
+              "id": "b2-m2-bausteine-12",
+              "type": "gap",
+              "prompt": "Macht Zugänge ___, sonst bleibt Gleichheit Theorie.",
+              "answer": "sichtbar",
+              "explainZh": "sichtbar＝看得見。"
+            }
+          ]
+        },
+        {
+          "id": "schreiben",
+          "kind": "schreiben",
+          "title": "Schreiben",
+          "titleZh": "寫作",
+          "instructions": "Schreiben Sie eine formale Stellungnahme (ca. 150–180 Wörter).",
+          "instructionsZh": "撰寫正式立場文約 150–180 字。",
+          "items": [
+            {
+              "id": "b2-m2-schreiben-01",
+              "type": "schreiben",
+              "prompt": "Thema: Sollen Universitäten Studiengebühren erheben? Struktur: Einleitung mit These – Argumente – Gegenposition – Kompromiss/Empfehlung – Schluss.",
+              "promptZh": "大學該不該收學費？含命題、論點、反論、折衷建議與結論。",
+              "minWords": 150,
+              "modelAnswer": "Die Frage, ob Universitäten Studiengebühren erheben sollten, berührt Gerechtigkeit und Qualität zugleich. Meiner Ansicht nach sind hohe Gebühren riskant, weil sie soziale Selektion verstärken. Zugleich braucht gute Lehre verlässliche Mittel. Ein Gegenargument lautet, Studierende profitierten später finanziell und sollten zahlen – doch ohne Beratung und Stipendien trifft das vor allem Unsichere. Als Kompromiss empfehle ich nachgelagerte einkommensabhängige Beiträge sowie transparente Stipendien und frühe Studienberatung. So bliebe Bildung zugänglich, während Absolventinnen und Absolventen mit hohem Einkommen einen fairen Anteil zurückgeben.",
+              "checklist": [
+                "正式語體與清楚命題",
+                "正反論兼具",
+                "提出具體折衷",
+                "連接手段豐富",
+                "約 150 字以上"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sprechen",
+          "kind": "sprechen",
+          "title": "Sprechen",
+          "titleZh": "口說",
+          "instructions": "Argumentieren Sie überzeugend.",
+          "instructionsZh": "有說服力地論證。",
+          "items": [
+            {
+              "id": "b2-m2-sprechen-01",
+              "type": "sprechen",
+              "prompt": "Nehmen Sie Stellung: Bildung als öffentliches Gut – stimmen Sie zu?",
+              "promptZh": "立場：教育是公共財——你同意嗎？",
+              "cues": [
+                "These",
+                "Beispiel",
+                "Einwand",
+                "Schluss"
+              ],
+              "modelAnswer": "Ja, Bildung sollte ein öffentliches Gut sein, weil Chancen nicht vom Geldbeutel der Eltern abhängen dürfen. Zum Beispiel brauchen Erstakademiker verlässliche Unterstützung. Ein Einwand ist die Finanzierung – dafür braucht der Staat klare Prioritäten. Am Ende zählt Zugänglichkeit mehr als Symbolpolitik."
+            },
+            {
+              "id": "b2-m2-sprechen-02",
+              "type": "sprechen",
+              "prompt": "Wie sollten Stipendien fairer gestaltet werden?",
+              "promptZh": "獎學金應如何設計得更公平？",
+              "cues": [
+                "Informationszugang",
+                "Bürokratie",
+                "Höhe / Dauer"
+              ],
+              "modelAnswer": "Stipendien müssen leicht auffindbar und einfach beantragbar sein. Weniger Bürokratie und frühe Beratung in der Schule helfen. Die Förderung sollte lange genug dauern, damit Planungssicherheit entsteht."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
