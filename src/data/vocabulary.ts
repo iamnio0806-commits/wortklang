@@ -1,7 +1,7 @@
 import raw from './vocabulary.json'
 
 export type Gender = 'der' | 'die' | 'das' | null
-export type Level = 'A1' | 'A2'
+export type Level = 'A1' | 'A2' | 'B1' | 'B2' | 'C1'
 export type Category =
   | '日常'
   | '飲食'
@@ -40,7 +40,7 @@ export const categories: Category[] = [
   '數字',
 ]
 
-export const levels: Level[] = ['A1', 'A2']
+export const levels: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1']
 
 export const vocabulary = raw as VocabWord[]
 

@@ -728,7 +728,7 @@ export default function App() {
         <p className="brand">Wortklang</p>
         <h1>聽得見的德文單字</h1>
         <p className="tagline">
-          完整 A1／A2：冠詞、複數規則、字首字根、動詞變化與字族記憶。
+          完整 A1→C1：冠詞、複數、字首字根、動詞變化與字族記憶。
         </p>
         <div className="cta-row modes">
           {(Object.keys(MODE_LABEL) as Mode[]).map((m) => (
@@ -763,24 +763,26 @@ export default function App() {
 
       <section className="level-board" aria-label="等級進度">
         <div className="level-tabs" role="tablist" aria-label="選擇等級">
-          {(['A1', 'A2', '全部'] as LevelFilter[]).map((lv) => (
-            <button
-              key={lv}
-              type="button"
-              role="tab"
-              aria-selected={levelFilter === lv}
-              className={`level-tab ${levelFilter === lv ? 'active' : ''}`}
-              onClick={() => {
-                stopSpeaking()
-                setLevelFilter(lv)
-              }}
-            >
-              {lv === '全部' ? '全部' : lv}
-              {lv !== '全部' && (
-                <span className="tab-count">{countByLevel(lv)}</span>
-              )}
-            </button>
-          ))}
+          {(['A1', 'A2', 'B1', 'B2', 'C1', '全部'] as LevelFilter[]).map(
+            (lv) => (
+              <button
+                key={lv}
+                type="button"
+                role="tab"
+                aria-selected={levelFilter === lv}
+                className={`level-tab ${levelFilter === lv ? 'active' : ''}`}
+                onClick={() => {
+                  stopSpeaking()
+                  setLevelFilter(lv)
+                }}
+              >
+                {lv === '全部' ? '全部' : lv}
+                {lv !== '全部' && (
+                  <span className="tab-count">{countByLevel(lv)}</span>
+                )}
+              </button>
+            ),
+          )}
         </div>
 
         <div className="progress-grid">

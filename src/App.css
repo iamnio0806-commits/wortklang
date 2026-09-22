@@ -151,8 +151,8 @@ select {
 
 .progress-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.55rem;
 }
 
 .progress-card {
@@ -215,6 +215,21 @@ select {
 .level-pill.level-A2 {
   background: rgba(184, 106, 47, 0.14);
   color: var(--copper);
+}
+
+.level-pill.level-B1 {
+  background: rgba(31, 92, 69, 0.14);
+  color: var(--fir);
+}
+
+.level-pill.level-B2 {
+  background: rgba(166, 61, 90, 0.12);
+  color: var(--die);
+}
+
+.level-pill.level-C1 {
+  background: rgba(20, 32, 28, 0.12);
+  color: var(--ink);
 }
 
 .learned-btn {
@@ -462,7 +477,7 @@ select {
 
 @media (max-width: 820px) {
   .progress-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
