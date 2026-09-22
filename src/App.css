@@ -1065,6 +1065,30 @@ select {
   transform: translateY(-1px);
 }
 
+.speak-btn-slow {
+  border-color: rgba(42, 95, 158, 0.35);
+  color: var(--der);
+  background: rgba(42, 95, 158, 0.08);
+}
+
+.speak-btn-slow:hover {
+  background: rgba(42, 95, 158, 0.14);
+}
+
+.reading-note-speak {
+  margin-bottom: 0.25rem;
+}
+
+.reading-note-speak .speak-btn:first-child {
+  font-family: var(--font-de);
+  font-weight: 700;
+}
+
+.ai-art-card .speak-row {
+  margin-top: 0.45rem;
+  justify-content: center;
+}
+
 .speak-icon {
   display: inline-grid;
   place-items: center;

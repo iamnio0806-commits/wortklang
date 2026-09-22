@@ -14,7 +14,8 @@ import {
 import { LinkedGermanText } from './lib/LinkedGermanText'
 import type { VocabHit } from './lib/vocabIndex'
 import { scoreTextFields } from './lib/search'
-import { speakGerman, stopSpeaking } from './lib/speech'
+import { stopSpeaking } from './lib/speech'
+import { SpeakPair } from './lib/SpeakControls'
 import { ArticleText } from './lib/richText'
 
 type LevelFilter = ReadingLevel | '全部'
@@ -30,22 +31,6 @@ function loadLearned(): Set<string> {
   } catch {
     return new Set()
   }
-}
-
-function Speak({ text, label }: { text: string; label: string }) {
-  return (
-    <button
-      type="button"
-      className="speak-btn"
-      onClick={() => speakGerman(text.replace(/\n/g, '. '), 0.92)}
-      aria-label={label}
-    >
-      <span className="speak-icon" aria-hidden>
-        ♪
-      </span>
-      {label}
-    </button>
-  )
 }
 
 function ReadingDetail({
@@ -106,7 +91,12 @@ function ReadingDetail({
         <div className="reading-toolbar">
           <h3>德文</h3>
           <div className="speak-row">
-            <Speak label="聽全文" text={item.text} />
+            <SpeakPair
+              text={item.text}
+              normalLabel="聽全文"
+              slowLabel="慢速全文"
+              normalizeNewlines
+            />
             <button
               type="button"
               className="ghost"
@@ -145,13 +135,13 @@ function ReadingDetail({
         <ul className="reading-notes">
           {item.notes.map((note) => (
             <li key={note.span + note.zh}>
-              <button
-                type="button"
-                className="reading-note-span"
-                onClick={() => speakGerman(note.span, 0.9)}
-              >
-                {note.span}
-              </button>
+              <div className="speak-row reading-note-speak">
+                <SpeakPair
+                  text={note.span}
+                  normalLabel={note.span}
+                  slowLabel="慢速"
+                />
+              </div>
               <span className="reading-note-zh">{note.zh}</span>
               {note.tip && <p className="reading-note-tip">{note.tip}</p>}
             </li>

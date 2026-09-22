@@ -21,7 +21,8 @@ import {
   type ExamPaper,
   type ExamSection,
 } from './data/exams'
-import { speakGerman, stopSpeaking } from './lib/speech'
+import { stopSpeaking } from './lib/speech'
+import { SpeakPair } from './lib/SpeakControls'
 
 type Phase = 'lobby' | 'taking' | 'results'
 type TfChoice = 'ja' | 'nein' | 'nicht'
@@ -67,21 +68,6 @@ function formatTime(sec: number): string {
   const m = Math.floor(sec / 60)
   const s = sec % 60
   return `${m}:${s.toString().padStart(2, '0')}`
-}
-
-function SpeakBtn({ text, label }: { text: string; label: string }) {
-  return (
-    <button
-      type="button"
-      className="speak-btn"
-      onClick={() => speakGerman(text.replace(/\n/g, '. '), 0.88)}
-    >
-      <span className="speak-icon" aria-hidden>
-        ♪
-      </span>
-      {label}
-    </button>
-  )
 }
 
 function McBlock({
@@ -242,7 +228,12 @@ function SchreibenBlock({
       {review && (
         <div className="exam-model">
           <h4>參考範文</h4>
-          <SpeakBtn text={item.modelAnswer} label="聽範文" />
+          <SpeakPair
+            text={item.modelAnswer}
+            normalLabel="聽範文"
+            slowLabel="慢速範文"
+            normalizeNewlines
+          />
           <pre className="exam-model-text">{item.modelAnswer}</pre>
           <h4>自評檢核（不計入自動分數）</h4>
           <ul className="exam-checklist">
@@ -283,7 +274,12 @@ function SprechenBlock({
       </ul>
       <p className="exam-meta">口說為選練：可對著提示說，再聽範例對照。不計分。</p>
       <div className="exam-model">
-        <SpeakBtn text={item.modelAnswer} label="聽口說範例" />
+        <SpeakPair
+          text={item.modelAnswer}
+          normalLabel="聽口說範例"
+          slowLabel="慢速範例"
+          normalizeNewlines
+        />
         {review && <pre className="exam-model-text">{item.modelAnswer}</pre>}
       </div>
     </div>
@@ -326,10 +322,17 @@ function SectionBody({
           <p className="exam-meta">
             聽力以語音朗讀腳本模擬（可重播）。作答時建議先聽再看題。
           </p>
-          <SpeakBtn text={section.audioText} label="播放聽力腳本" />
+          <div className="speak-row">
+          <SpeakPair
+            text={section.audioText}
+            normalLabel="播放聽力腳本"
+            slowLabel="慢速播放"
+            normalizeNewlines
+          />
           <button type="button" className="ghost" onClick={() => stopSpeaking()}>
             停止
           </button>
+        </div>
           {review && (
             <details className="exam-script">
               <summary>查看聽力稿（檢討用）</summary>

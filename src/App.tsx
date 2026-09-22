@@ -23,7 +23,8 @@ import {
 import { LinkedGermanText } from './lib/LinkedGermanText'
 import type { VocabHit } from './lib/vocabIndex'
 import { searchVocabulary } from './lib/search'
-import { ensureVoicesLoaded, speakGerman, stopSpeaking } from './lib/speech'
+import { ensureVoicesLoaded, stopSpeaking } from './lib/speech'
+import { SpeakPair } from './lib/SpeakControls'
 import GrammarView from './GrammarView'
 import ArticlesIntro from './ArticlesIntro'
 import AffixesIntro from './AffixesIntro'
@@ -96,30 +97,6 @@ function loadLearned(): Set<string> {
 function WordBadge({ article }: { article: Gender }) {
   if (!article) return <span className="badge badge-neutral">無冠詞</span>
   return <span className={`badge ${genderClass[article]}`}>{article}</span>
-}
-
-function SpeakButton({
-  label,
-  text,
-  slow,
-}: {
-  label: string
-  text: string
-  slow?: boolean
-}) {
-  return (
-    <button
-      type="button"
-      className="speak-btn"
-      onClick={() => speakGerman(text, slow ? 0.7 : 0.92)}
-      aria-label={label}
-    >
-      <span className="speak-icon" aria-hidden>
-        ♪
-      </span>
-      {label}
-    </button>
-  )
 }
 
 function NavButtons({
@@ -270,9 +247,10 @@ function GrammarPanels({ e }: { e: EnrichedWord }) {
             </dd>
           </dl>
           <div className="speak-row">
-            <SpeakButton
-              label="聽現在時"
+            <SpeakPair
               text={`${e.verb.present.ich}. ${e.verb.present.du}. ${e.verb.present.er}.`}
+              normalLabel="聽現在時"
+              slowLabel="慢速現在時"
             />
           </div>
         </section>
@@ -382,10 +360,13 @@ function WordDetail({
       </dl>
 
       <div className="speak-row">
-        <SpeakButton label="聽單字" text={lemma} />
-        <SpeakButton label="慢速" text={lemma} slow />
+        <SpeakPair text={lemma} normalLabel="聽單字" slowLabel="慢速" />
         {word.plural && (
-          <SpeakButton label="聽複數" text={`die ${word.plural}`} />
+          <SpeakPair
+            text={`die ${word.plural}`}
+            normalLabel="聽複數"
+            slowLabel="慢速複數"
+          />
         )}
         <button
           type="button"
@@ -412,8 +393,11 @@ function WordDetail({
           <ArticleText text={word.exampleTranslation} />
         </p>
         <div className="speak-row">
-          <SpeakButton label="聽例句" text={word.example} />
-          <SpeakButton label="慢速例句" text={word.example} slow />
+          <SpeakPair
+            text={word.example}
+            normalLabel="聽例句"
+            slowLabel="慢速例句"
+          />
         </div>
       </section>
 
@@ -592,7 +576,7 @@ function PracticeCard({
           frontExtra
         )}
         {mode !== 'flash' && frontExtra}
-        <SpeakButton label="聽發音" text={lemma} />
+        <SpeakPair text={lemma} normalLabel="聽發音" slowLabel="慢速" />
       </div>
 
       {revealed && <div className="flash-back">{backExtra}</div>}

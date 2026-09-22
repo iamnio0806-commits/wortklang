@@ -15,7 +15,8 @@ import { RichText } from './lib/richText'
 import { LinkedGermanText } from './lib/LinkedGermanText'
 import { scoreTextFields } from './lib/search'
 import type { VocabHit } from './lib/vocabIndex'
-import { speakGerman, stopSpeaking } from './lib/speech'
+import { stopSpeaking } from './lib/speech'
+import { SpeakPair } from './lib/SpeakControls'
 
 type LevelFilter = GrammarLevel | '全部'
 
@@ -30,22 +31,6 @@ function loadLearned(): Set<string> {
   } catch {
     return new Set()
   }
-}
-
-function SpeakButton({ label, text }: { label: string; text: string }) {
-  return (
-    <button
-      type="button"
-      className="speak-btn"
-      onClick={() => speakGerman(text, 0.92)}
-      aria-label={label}
-    >
-      <span className="speak-icon" aria-hidden>
-        ♪
-      </span>
-      {label}
-    </button>
-  )
 }
 
 function FormTable({
@@ -339,7 +324,7 @@ function TopicDetail({
       </p>
 
       <div className="detail-actions">
-        <SpeakButton label="聽標題" text={topic.titleDe} />
+        <SpeakPair text={topic.titleDe} normalLabel="聽標題" slowLabel="慢速" />
         <button
           type="button"
           className={`learned-btn ${learned ? 'on' : ''}`}
@@ -389,7 +374,7 @@ function TopicDetail({
                     onOpenWord={onOpenWord}
                   />
                 </p>
-                <SpeakButton label="聽例句" text={ex.de} />
+                <SpeakPair text={ex.de} normalLabel="聽例句" slowLabel="慢速" />
               </div>
               <p className="ex-zh">
                 <RichText text={ex.zh} />

@@ -1,4 +1,4 @@
-import { speakGerman, stopSpeaking } from './lib/speech'
+import { SpeakPair } from './lib/SpeakControls'
 import { genderClass } from './lib/richText'
 
 type Article = 'der' | 'die' | 'das'
@@ -160,22 +160,6 @@ function GenderTable({
   )
 }
 
-function Speak({ text, label }: { text: string; label: string }) {
-  return (
-    <button
-      type="button"
-      className="speak-btn"
-      onClick={() => speakGerman(text, 0.92)}
-      aria-label={label}
-    >
-      <span className="speak-icon" aria-hidden>
-        ♪
-      </span>
-      {label}
-    </button>
-  )
-}
-
 export default function ArticlesIntro() {
   return (
     <div className="articles-intro">
@@ -197,22 +181,17 @@ export default function ArticlesIntro() {
               ['das', '中性', '像 das Kind'],
             ] as const
           ).map(([art, gender, eg]) => (
-            <button
-              key={art}
-              type="button"
-              className={`ai-art-card ${genderClass[art]}`}
-              onClick={() => {
-                stopSpeaking()
-                speakGerman(art, 0.85)
-              }}
-            >
+            <div key={art} className={`ai-art-card ${genderClass[art]}`}>
               <strong className={genderClass[art]}>{art}</strong>
               <span>{gender}</span>
               <em>{eg}</em>
-            </button>
+              <div className="speak-row">
+                <SpeakPair text={art} normalLabel="聽" slowLabel="慢速" />
+              </div>
+            </div>
           ))}
         </div>
-        <p className="ai-note">點上面三張卡片可聽發音。</p>
+        <p className="ai-note">每張卡片可聽正常／慢速發音。</p>
       </section>
 
       <section className="ai-block">
@@ -263,9 +242,10 @@ export default function ArticlesIntro() {
             Wir <strong>sind</strong> in Berlin.／Seid ihr bereit?／Sie{' '}
             <strong>sind</strong> Lehrerin.
           </p>
-          <Speak
-            label="聽 sein"
+          <SpeakPair
             text="Ich bin Student. Du bist hier. Das Kind ist klein. Wir sind in Berlin."
+            normalLabel="聽 sein"
+            slowLabel="慢速"
           />
         </div>
 
@@ -301,9 +281,10 @@ export default function ArticlesIntro() {
             .／Hast du Zeit?／Er <strong>hat</strong> ein{' '}
             <span className="gender-das">Auto</span>.
           </p>
-          <Speak
-            label="聽 haben"
+          <SpeakPair
             text="Ich habe ein Buch. Hast du Zeit? Er hat ein Auto."
+            normalLabel="聽 haben"
+            slowLabel="慢速"
           />
         </div>
         <ul className="ai-points">
@@ -373,9 +354,10 @@ export default function ArticlesIntro() {
             <span className="gender-das">das</span> Kind.／von{' '}
             <span className="gender-das">dem</span> Kind
           </p>
-          <Speak
-            label="聽例句"
+          <SpeakPair
             text="Der Mann kommt. Ich sehe den Mann. Die Frau wartet. Das Kind spielt."
+            normalLabel="聽例句"
+            slowLabel="慢速"
           />
         </div>
       </section>
@@ -397,7 +379,7 @@ export default function ArticlesIntro() {
                 單獨說「一個」時常用{' '}
                 <span className={genderClass[item.article]}>{item.alone}</span>
               </p>
-              <Speak label="聽" text={item.phrase} />
+              <SpeakPair text={item.phrase} normalLabel="聽" slowLabel="慢速" />
             </article>
           ))}
         </div>
@@ -416,9 +398,10 @@ export default function ArticlesIntro() {
             zwei／drei／vier… 數字本身不變性別：zwei Äpfel、drei Bücher。
           </li>
         </ul>
-        <Speak
-          label="聽：一個蘋果、一個香蕉、一個麵包"
+        <SpeakPair
           text="ein Apfel, eine Banane, ein Brot"
+          normalLabel="聽：一個蘋果、一個香蕉、一個麵包"
+          slowLabel="慢速"
         />
       </section>
 
@@ -440,7 +423,7 @@ export default function ArticlesIntro() {
                 </p>
                 <p className="ai-zh">{item.zh}</p>
                 <p className="ai-tip">{item.tip}</p>
-                <Speak label="聽" text={lemma} />
+                <SpeakPair text={lemma} normalLabel="聽" slowLabel="慢速" />
               </article>
             )
           })}

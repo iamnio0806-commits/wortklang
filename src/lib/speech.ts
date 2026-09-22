@@ -1,5 +1,13 @@
 let preferredVoice: SpeechSynthesisVoice | null = null
 
+/** Normal playback (slightly under 1.0 for learners). */
+export const SPEECH_RATE_NORMAL = 0.88
+/**
+ * Slow playback — deliberately slower than the old ~0.7 “慢速”
+ * so beginners can catch word boundaries.
+ */
+export const SPEECH_RATE_SLOW = 0.5
+
 function pickGermanVoice(): SpeechSynthesisVoice | null {
   if (typeof window === 'undefined' || !window.speechSynthesis) return null
   const voices = window.speechSynthesis.getVoices()
@@ -29,12 +37,14 @@ export function ensureVoicesLoaded(): Promise<SpeechSynthesisVoice | null> {
     window.speechSynthesis.addEventListener('voiceschanged', ready, {
       once: true,
     })
-    // Fallback if event never fires
     setTimeout(ready, 500)
   })
 }
 
-export function speakGerman(text: string, rate = 0.9): void {
+export function speakGerman(
+  text: string,
+  rate: number = SPEECH_RATE_NORMAL,
+): void {
   if (typeof window === 'undefined' || !window.speechSynthesis) return
   window.speechSynthesis.cancel()
   const utterance = new SpeechSynthesisUtterance(text)
@@ -47,6 +57,10 @@ export function speakGerman(text: string, rate = 0.9): void {
     utterance.voice = voice
   }
   window.speechSynthesis.speak(utterance)
+}
+
+export function speakGermanSlow(text: string): void {
+  speakGerman(text, SPEECH_RATE_SLOW)
 }
 
 export function stopSpeaking(): void {

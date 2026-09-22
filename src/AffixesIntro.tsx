@@ -8,7 +8,7 @@ import {
   type AffixKind,
   type AffixLevel,
 } from './data/affixes'
-import { speakGerman, stopSpeaking } from './lib/speech'
+import { SpeakPair } from './lib/SpeakControls'
 
 const KIND_LABEL: Record<AffixKind, string> = {
   separable: '可分字首',
@@ -45,22 +45,6 @@ const LEVEL_META: {
   },
 ]
 
-function Speak({ text, label }: { text: string; label: string }) {
-  return (
-    <button
-      type="button"
-      className="speak-btn"
-      onClick={() => speakGerman(text, 0.92)}
-      aria-label={label}
-    >
-      <span className="speak-icon" aria-hidden>
-        ♪
-      </span>
-      {label}
-    </button>
-  )
-}
-
 function AffixCard({ entry }: { entry: AffixEntry }) {
   const display =
     entry.kind === 'suffix'
@@ -72,18 +56,11 @@ function AffixCard({ entry }: { entry: AffixEntry }) {
   return (
     <article className={`af-card af-${entry.kind}`}>
       <div className="af-card-top">
-        <button
-          type="button"
-          className="af-form"
-          onClick={() => {
-            stopSpeaking()
-            speakGerman(sample, 0.9)
-          }}
-          aria-label={`聽 ${display}`}
-        >
-          {display}
-        </button>
+        <span className="af-form">{display}</span>
         <span className="af-kind">{KIND_LABEL[entry.kind]}</span>
+      </div>
+      <div className="speak-row">
+        <SpeakPair text={sample} normalLabel="聽例" slowLabel="慢速" />
       </div>
       <p className="af-zh">{entry.zh}</p>
       <p className="af-tip">{entry.tip}</p>
@@ -209,7 +186,11 @@ export default function AffixesIntro() {
         <p className="ai-note">
           ver-≈改變／完成；steh≈站；合起來常記「把意思站穩＝懂了」。
         </p>
-        <Speak label="聽 verstehen" text="verstehen" />
+        <SpeakPair
+          text="verstehen"
+          normalLabel="聽 verstehen"
+          slowLabel="慢速"
+        />
       </section>
 
       <section className="ai-block">
