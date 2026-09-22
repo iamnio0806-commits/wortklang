@@ -24,9 +24,10 @@ import { LinkedGermanText } from './lib/LinkedGermanText'
 import type { VocabHit } from './lib/vocabIndex'
 import { ensureVoicesLoaded, speakGerman, stopSpeaking } from './lib/speech'
 import GrammarView from './GrammarView'
+import ArticlesIntro from './ArticlesIntro'
 import './App.css'
 
-type Section = 'vocab' | 'grammar'
+type Section = 'vocab' | 'grammar' | 'articles'
 type Mode = 'browse' | 'flash' | 'plural' | 'verb' | 'family'
 type LevelFilter = Level | '全部'
 type WordTypeFilter = '全部' | '名詞' | '動詞' | '形容詞'
@@ -752,14 +753,22 @@ export default function App() {
 
       <header className="hero">
         <p className="brand">Wortklang</p>
-        <h1>{section === 'vocab' ? '聽得見的德文單字' : '聽得見的德文文法'}</h1>
+        <h1>
+          {section === 'vocab'
+            ? '聽得見的德文單字'
+            : section === 'grammar'
+              ? '聽得見的德文文法'
+              : '冠詞入門'}
+        </h1>
         <p className="tagline">
           {section === 'vocab'
             ? '完整 A1→C1：冠詞、複數、字首字根、動詞變化與字族記憶。'
-            : '完整 A1→C1 文法：格變、時態、語序、從句、被動與虛擬式。'}
+            : section === 'grammar'
+              ? '完整 A1→C1 文法：格變、時態、語序、從句、被動與虛擬式。'
+              : 'der／die／das 怎麼記？先把最普通的一批連冠詞一起背。'}
         </p>
 
-        <div className="cta-row section-switch" role="tablist" aria-label="單字或文法">
+        <div className="cta-row section-switch" role="tablist" aria-label="單字、冠詞或文法">
           <button
             type="button"
             role="tab"
@@ -771,6 +780,18 @@ export default function App() {
             }}
           >
             單字
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={section === 'articles'}
+            className={section === 'articles' ? 'primary' : 'ghost'}
+            onClick={() => {
+              stopSpeaking()
+              setSection('articles')
+            }}
+          >
+            冠詞
           </button>
           <button
             type="button"
@@ -821,6 +842,8 @@ export default function App() {
 
       {section === 'grammar' ? (
         <GrammarView onOpenWord={openWordFromLink} />
+      ) : section === 'articles' ? (
+        <ArticlesIntro />
       ) : (
       <>
       <section className="level-board" aria-label="等級進度">
@@ -1028,7 +1051,9 @@ export default function App() {
         <p>
           {section === 'grammar'
             ? '文法依 CEFR 分級：先掌握規則與例句，再標記已學會。建議 Chrome／Edge 聽發音。'
-            : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
+            : section === 'articles'
+              ? '冠詞介紹頁：先記 der／die／das 與最常見名詞。建議 Chrome／Edge 聽發音。'
+              : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
         </p>
       </footer>
     </div>

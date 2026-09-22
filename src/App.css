@@ -1339,6 +1339,169 @@ select {
   flex-shrink: 0;
 }
 
+/* —— Articles intro (standalone) —— */
+.articles-intro {
+  display: grid;
+  gap: 1.1rem;
+  animation: rise 0.75s ease both;
+}
+
+.ai-hero-card,
+.ai-block {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  padding: 1.25rem 1.2rem 1.35rem;
+}
+
+.ai-eyebrow {
+  margin: 0 0 0.45rem;
+  color: var(--copper);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.ai-hero-card h2,
+.ai-block h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.ai-hero-card h2 {
+  font-size: clamp(1.55rem, 3.5vw, 2.1rem);
+}
+
+.ai-lead,
+.ai-lead-sm,
+.ai-case > p,
+.ai-note {
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.ai-lead {
+  margin: 0.75rem 0 1.1rem;
+}
+
+.ai-lead-sm {
+  margin: 0.45rem 0 1rem;
+}
+
+.ai-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7rem;
+}
+
+.ai-art-card {
+  display: grid;
+  gap: 0.25rem;
+  justify-items: start;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 0.95rem 1rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.ai-art-card strong {
+  font-family: var(--font-de);
+  font-size: 1.65rem;
+  font-weight: 700;
+}
+
+.ai-art-card span {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.ai-art-card em {
+  font-style: normal;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.ai-note {
+  margin: 0.75rem 0 0;
+  font-size: 0.88rem;
+}
+
+.ai-points {
+  margin: 0.65rem 0 0;
+  padding-left: 1.15rem;
+  line-height: 1.7;
+}
+
+.ai-points li + li {
+  margin-top: 0.3rem;
+}
+
+.ai-case {
+  margin-top: 1rem;
+}
+
+.ai-case h4 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+}
+
+.ai-examples {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.ai-examples p {
+  margin: 0 0 0.45rem;
+  font-family: var(--font-de);
+  font-size: 1.05rem;
+}
+
+.ai-word-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.7rem;
+}
+
+.ai-word {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.85rem 0.9rem;
+}
+
+.ai-lemma {
+  margin: 0;
+  font-family: var(--font-de);
+  font-size: 1.15rem;
+  font-weight: 650;
+}
+
+.ai-zh {
+  margin: 0.25rem 0 0;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.ai-tip {
+  margin: 0.35rem 0 0.65rem;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.ai-block.tips.beginner {
+  background: rgba(31, 92, 69, 0.1);
+  border-color: rgba(31, 92, 69, 0.18);
+}
+
 @media (max-width: 820px) {
   .layout {
     grid-template-columns: 1fr;
@@ -1354,5 +1517,9 @@ select {
 
   .level-pill {
     margin-left: 0;
+  }
+
+  .ai-trio {
+    grid-template-columns: 1fr;
   }
 }
