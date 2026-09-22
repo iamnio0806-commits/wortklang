@@ -6,7 +6,9 @@ import {
   examNote,
   examPapers,
   getPaper,
+  paperFormatLabel,
   papersForLevel,
+  sectionTabLabel,
   type ExamItem,
   type ExamItemGap,
   type ExamItemMc,
@@ -491,35 +493,44 @@ export default function ExamView() {
 
         <div className="exam-lobby-grid">
           {lobbyPapers.map((p) => (
-            <article key={p.id} className="exam-card">
+            <article
+              key={p.id}
+              className={`exam-card ${p.format === 'goethe' ? 'exam-card-goethe' : ''}`}
+            >
               <div className="detail-top">
                 <span className={`level-pill level-${p.level}`}>{p.level}</span>
-                <span className="type-pill">模考 {p.round}</span>
+                <span className="type-pill">{paperFormatLabel(p)}</span>
+                <span className="type-pill">第 {p.round} 回</span>
               </div>
               <h2 className="grammar-title">{p.titleZh}</h2>
               <p className="grammar-title-de">{p.title}</p>
               <p className="exam-card-meta">
-                約 {p.durationMin} 分鐘 · 自動計分 {countScoredItems(p)} 題 ·
-                含寫作／口說選練
+                約 {p.durationMin} 分鐘 · 自動計分 {countScoredItems(p)} 題 ·{' '}
+                {p.format === 'goethe'
+                  ? `${p.sections.length} 個 Teil（對齊 Goethe 分節）`
+                  : '綜合卷（含語法詞彙）'}
               </p>
               <ul className="exam-kind-row">
-                {p.sections.map((s) => (
-                  <li key={s.id}>{EXAM_KIND_LABEL[s.kind]}</li>
-                ))}
+                {[...new Set(p.sections.map((s) => EXAM_KIND_LABEL[s.kind]))].map(
+                  (lab) => (
+                    <li key={lab}>{lab}</li>
+                  ),
+                )}
               </ul>
               <button
                 type="button"
                 className="primary"
                 onClick={() => startPaper(p)}
               >
-                開始模考 {p.round}
+                開始{paperFormatLabel(p)} · 第 {p.round} 回
               </button>
             </article>
           ))}
         </div>
 
         <p className="exam-footnote">
-          共 {examPapers.length} 份：A1–B2 各兩回。聽力用瀏覽器德文語音朗讀腳本；口說不計入自動分數。
+          共 {examPapers.length} 份。練習版＝綜合訓練；考場版＝依 Goethe 分
+          Teil（Lesen／Hören／Schreiben／Sprechen）。聽力以瀏覽器德文語音朗讀腳本；口說選練不計分。
         </p>
       </div>
     )
@@ -608,7 +619,7 @@ export default function ExamView() {
               setSecIdx(i)
             }}
           >
-            {EXAM_KIND_LABEL[s.kind]}
+            {sectionTabLabel(s)}
           </button>
         ))}
       </div>

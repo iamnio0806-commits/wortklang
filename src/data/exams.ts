@@ -81,7 +81,10 @@ export type ExamSection = {
 export type ExamPaper = {
   id: string
   level: ExamLevel
-  round: 1 | 2
+  /** 練習版 1–2；考場版另編號 */
+  round: number
+  /** compact = 現有綜合卷；goethe = 分 Teil 的考場結構 */
+  format?: 'compact' | 'goethe'
   title: string
   titleZh: string
   durationMin: number
@@ -109,7 +112,14 @@ export const EXAM_KIND_LABEL: Record<ExamKind, string> = {
 }
 
 export function papersForLevel(level: ExamLevel): ExamPaper[] {
-  return examPapers.filter((p) => p.level === level)
+  return examPapers
+    .filter((p) => p.level === level)
+    .sort((a, b) => {
+      const fa = a.format === 'goethe' ? 1 : 0
+      const fb = b.format === 'goethe' ? 1 : 0
+      if (fa !== fb) return fa - fb
+      return a.round - b.round
+    })
 }
 
 export function getPaper(id: string): ExamPaper | undefined {
@@ -124,4 +134,15 @@ export function countScoredItems(paper: ExamPaper): number {
     }
   }
   return n
+}
+
+export function paperFormatLabel(paper: ExamPaper): string {
+  return paper.format === 'goethe' ? '考場版' : '練習版'
+}
+
+export function sectionTabLabel(section: ExamSection): string {
+  // Prefer short Teil labels already in titleZh, else kind label
+  const zh = section.titleZh.trim()
+  if (zh) return zh
+  return EXAM_KIND_LABEL[section.kind]
 }
