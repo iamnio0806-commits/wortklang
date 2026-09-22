@@ -28,10 +28,11 @@ import GrammarView from './GrammarView'
 import ArticlesIntro from './ArticlesIntro'
 import AffixesIntro from './AffixesIntro'
 import ReadingView from './ReadingView'
+import ExamView from './ExamView'
 import { lookupPrefix, lookupSuffix } from './data/affixes'
 import './App.css'
 
-type Section = 'vocab' | 'grammar' | 'articles' | 'affixes' | 'reading'
+type Section = 'vocab' | 'grammar' | 'articles' | 'affixes' | 'reading' | 'exam'
 type Mode = 'browse' | 'flash' | 'plural' | 'verb' | 'family'
 type LevelFilter = Level | '全部'
 type WordTypeFilter = '全部' | '名詞' | '動詞' | '形容詞'
@@ -637,12 +638,14 @@ export default function App() {
   const [articlesMounted, setArticlesMounted] = useState(false)
   const [affixesMounted, setAffixesMounted] = useState(false)
   const [readingMounted, setReadingMounted] = useState(false)
+  const [examMounted, setExamMounted] = useState(false)
 
   useEffect(() => {
     if (section === 'grammar') setGrammarMounted(true)
     if (section === 'articles') setArticlesMounted(true)
     if (section === 'affixes') setAffixesMounted(true)
     if (section === 'reading') setReadingMounted(true)
+    if (section === 'exam') setExamMounted(true)
   }, [section])
 
   useEffect(() => {
@@ -854,7 +857,9 @@ export default function App() {
                 ? '字首字根字尾'
                 : section === 'reading'
                   ? '分級閱讀'
-                  : '冠詞入門'}
+                  : section === 'exam'
+                    ? '德檢模擬測驗'
+                    : '冠詞入門'}
         </h1>
         <p className="tagline">
           {section === 'vocab'
@@ -865,13 +870,15 @@ export default function App() {
                 ? '可分／不可分字首與常見字尾：每個都有中文意思與例子。'
                 : section === 'reading'
                   ? '對齊德檢：練習熱身 → A1／A2／B1／B2 考場長度閱讀，含註解與句型。'
-                  : 'der／die／das、bin／bist／ist：冠詞與最常用變位一起記。'}
+                  : section === 'exam'
+                    ? 'A1–B2 各兩回：閱讀、聽力（TTS）、語法詞彙、寫作；口說選練不計分。'
+                    : 'der／die／das、bin／bist／ist：冠詞與最常用變位一起記。'}
         </p>
 
         <div
           className="cta-row section-switch"
           role="tablist"
-          aria-label="單字、冠詞、字首、閱讀或文法"
+          aria-label="單字、冠詞、字首、閱讀、測驗或文法"
         >
           <button
             type="button"
@@ -920,6 +927,18 @@ export default function App() {
             }}
           >
             閱讀
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={section === 'exam'}
+            className={section === 'exam' ? 'primary' : 'ghost'}
+            onClick={() => {
+              stopSpeaking()
+              setSection('exam')
+            }}
+          >
+            測驗
           </button>
           <button
             type="button"
@@ -986,6 +1005,11 @@ export default function App() {
       {readingMounted && (
         <div hidden={section !== 'reading'}>
           <ReadingView onOpenWord={openWordFromLink} />
+        </div>
+      )}
+      {examMounted && (
+        <div hidden={section !== 'exam'}>
+          <ExamView />
         </div>
       )}
       {section === 'vocab' && (
@@ -1204,7 +1228,9 @@ export default function App() {
                 ? '字首字根字尾：可分／不可分與常見字尾都有中文意思。建議 Chrome／Edge 聽發音。'
                 : section === 'reading'
                   ? '分級閱讀（德檢取向）：練習＋A1～B2 各 50 篇。點德文可跳單字。'
-                  : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
+                  : section === 'exam'
+                    ? '德檢模擬：閱讀／聽力／語法自動計分；寫作對照範文；口說選練。建議 Chrome／Edge。'
+                    : '複數可對照英文 +s／+es／不規則；動詞看三態與現在時；相關詞幫你串字族。建議 Chrome／Edge 聽發音。'}
         </p>
       </footer>
     </div>

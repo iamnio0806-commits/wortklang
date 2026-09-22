@@ -1852,6 +1852,299 @@ select {
   flex-wrap: wrap;
 }
 
+/* ── 德檢模擬測驗 ── */
+.exam-view {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.exam-lobby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.exam-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.62);
+  padding: 1.1rem 1.15rem 1.2rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.exam-card .grammar-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.exam-card-meta,
+.exam-meta,
+.exam-footnote {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.exam-kind-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.exam-kind-row li {
+  font-size: 0.78rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.exam-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.exam-topbar-main {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.exam-timer,
+.exam-score-pill {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(31, 92, 69, 0.12);
+  color: var(--fir-deep);
+}
+
+.exam-timer.warn {
+  background: rgba(166, 61, 90, 0.14);
+  color: var(--die);
+}
+
+.exam-results-summary {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1rem 1.15rem;
+}
+
+.exam-results-summary h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.15rem;
+}
+
+.exam-kind-scores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.exam-kind-score {
+  display: flex;
+  gap: 0.45rem;
+  align-items: baseline;
+  padding: 0.35rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.exam-sec-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.exam-section-body {
+  display: grid;
+  gap: 1rem;
+}
+
+.exam-sec-head h3 {
+  margin: 0.35rem 0;
+  font-size: 1.25rem;
+}
+
+.exam-sec-zh {
+  font-weight: 500;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.exam-instructions {
+  margin: 0.25rem 0;
+  font-weight: 600;
+}
+
+.exam-instructions-de {
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: var(--font-de);
+  line-height: 1.45;
+}
+
+.exam-audio,
+.exam-passage,
+.exam-model {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.55);
+  padding: 0.9rem 1rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.exam-passage-text,
+.exam-model-text,
+.exam-script pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: var(--font-de);
+  line-height: 1.55;
+  font-size: 1.02rem;
+}
+
+.exam-passage-zh {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.exam-items {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.exam-q {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.62);
+  padding: 0.9rem 1rem;
+}
+
+.exam-q.ok {
+  border-color: rgba(31, 92, 69, 0.45);
+  background: rgba(31, 92, 69, 0.06);
+}
+
+.exam-q.bad {
+  border-color: rgba(166, 61, 90, 0.4);
+  background: rgba(166, 61, 90, 0.06);
+}
+
+.exam-prompt {
+  font-family: var(--font-de);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  padding: 0;
+}
+
+.exam-prompt-zh {
+  margin: 0.35rem 0 0.55rem;
+  color: var(--ink-soft);
+}
+
+.exam-options {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.exam-option {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  cursor: pointer;
+  font-family: var(--font-de);
+  line-height: 1.4;
+}
+
+.exam-gap {
+  width: min(100%, 280px);
+  margin-top: 0.35rem;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  font-family: var(--font-de);
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.exam-textarea {
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  font-family: var(--font-de);
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: vertical;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.exam-explain {
+  margin: 0.65rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--fir-deep);
+}
+
+.exam-cues {
+  margin: 0.4rem 0;
+  padding-left: 1.1rem;
+  font-family: var(--font-de);
+}
+
+.exam-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.exam-checklist label {
+  display: flex;
+  gap: 0.45rem;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.exam-nav-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding-bottom: 1.5rem;
+}
+
+.exam-script summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 820px) {
+  .exam-lobby-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 820px) {
   .layout {
     grid-template-columns: 1fr;
