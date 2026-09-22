@@ -1,0 +1,1239 @@
+{
+  "note": "連貫分級故事：同一系列角色與情節會延續。A1 章節約 180–320 字元，A2 約 350–500。先聽／讀德文，再對照繁中與重點片語。",
+  "series": [
+    {
+      "id": "anna-stadt",
+      "level": "A1",
+      "title": "Anna in der Stadt",
+      "titleZh": "安娜在城市",
+      "blurbZh": "短短幾章的連貫故事：安娜與好友 Lisa 度過城市裡美好的一天——從早安到回家。",
+      "chapters": [
+        {
+          "id": "anna-stadt-01",
+          "order": 1,
+          "title": "Guten Morgen",
+          "titleZh": "早安",
+          "text": "Anna wacht auf. Die Sonne scheint.\nSie sagt: „Guten Morgen!“\nAnna steht auf und geht ins Bad.\nSie wäscht sich und putzt die Zähne.\nDann trinkt sie einen Kaffee.\nHeute ist ein schöner Tag in der Stadt.",
+          "textZh": "安娜醒來。太陽照耀著。\n她說：「早安！」\n安娜起床走進浴室。\n她洗臉並刷牙。\n然後她喝一杯咖啡。\n今天在城市裡是美好的一天。",
+          "focus": [
+            "sein",
+            "Begrüßung",
+            "Tagesablauf"
+          ],
+          "notes": [
+            {
+              "span": "Guten Morgen",
+              "zh": "早安",
+              "tip": "早上用；中午 Guten Tag。"
+            },
+            {
+              "span": "wacht auf",
+              "zh": "醒來",
+              "tip": "aufwachen：可分動詞。"
+            },
+            {
+              "span": "steht auf",
+              "zh": "起床",
+              "tip": "aufstehen。"
+            },
+            {
+              "span": "wäscht sich",
+              "zh": "洗臉／洗澡",
+              "tip": "sich waschen。"
+            },
+            {
+              "span": "putzt die Zähne",
+              "zh": "刷牙"
+            }
+          ]
+        },
+        {
+          "id": "anna-stadt-02",
+          "order": 2,
+          "title": "Frühstück",
+          "titleZh": "早餐",
+          "text": "Anna macht Frühstück. Sie isst Brot mit Käse.\nDazu trinkt sie Orangensaft.\nIhr Handy klingelt. Es ist Lisa.\nLisa: „Hallo Anna! Hast du Zeit?“\nAnna: „Ja! Was möchtest du machen?“\nLisa: „Kommst du mit in die Stadt?“\nAnna: „Ja, gerne! Bis später!“",
+          "textZh": "安娜做早餐。她吃起司麵包。\n還喝柳橙汁。\n她的手機響了。是 Lisa。\nLisa：「嗨安娜！你有空嗎？」\n安娜：「有！你想做什麼？」\nLisa：「你要一起進城嗎？」\n安娜：「好，很樂意！待會見！」",
+          "focus": [
+            "Frühstück",
+            "einladen",
+            "Zeit"
+          ],
+          "notes": [
+            {
+              "span": "Hast du Zeit?",
+              "zh": "你有空嗎？"
+            },
+            {
+              "span": "Kommst du mit…?",
+              "zh": "你要一起……嗎？",
+              "tip": "mitkommen。"
+            },
+            {
+              "span": "gerne",
+              "zh": "很樂意／喜歡"
+            },
+            {
+              "span": "Bis später",
+              "zh": "待會見"
+            },
+            {
+              "span": "Dazu",
+              "zh": "此外／搭配"
+            }
+          ]
+        },
+        {
+          "id": "anna-stadt-03",
+          "order": 3,
+          "title": "Mit dem Bus",
+          "titleZh": "搭公車",
+          "text": "Anna nimmt den Bus. An der Haltestelle wartet Lisa.\nLisa: „Hallo! Wie geht's?“\nAnna: „Gut, danke. Und dir?“\nLisa: „Auch gut!“\nDer Bus kommt. Die beiden steigen ein.\nLisa: „Wir fahren zum Park.“\nAnna schaut aus dem Fenster. Die Stadt ist groß.",
+          "textZh": "安娜搭公車。Lisa 在公車站等著。\nLisa：「嗨！你好嗎？」\n安娜：「很好，謝謝。你呢？」\nLisa：「也很好！」\n公車來了。兩人上車。\nLisa：「我們去公園。」\n安娜望向窗外。城市很大。",
+          "focus": [
+            "Verkehr",
+            "Wie geht's",
+            "Richtung"
+          ],
+          "notes": [
+            {
+              "span": "nimmt den Bus",
+              "zh": "搭公車",
+              "tip": "nehmen + Verkehrsmittel。"
+            },
+            {
+              "span": "Haltestelle",
+              "zh": "公車站"
+            },
+            {
+              "span": "steigen ein",
+              "zh": "上車",
+              "tip": "einsteigen。"
+            },
+            {
+              "span": "Wie geht's?",
+              "zh": "你好嗎？",
+              "tip": "口語＝Wie geht es dir?"
+            },
+            {
+              "span": "Und dir?",
+              "zh": "你呢？"
+            }
+          ]
+        },
+        {
+          "id": "anna-stadt-04",
+          "order": 4,
+          "title": "Im Park",
+          "titleZh": "在公園",
+          "text": "Im Park ist es ruhig. Die Vögel singen.\nAnna und Lisa gehen spazieren.\nLisa: „Schau! Ein Eiswagen!“\nAnna: „Mmm, ich möchte ein Eis.“\nSie kaufen zwei Kugeln.\nAnna: „Mein Eis ist Vanille. Und deins?“\nLisa: „Schokolade. Sehr lecker!“\nSie sitzen auf einer Bank und lachen.",
+          "textZh": "公園裡很安靜。鳥在唱歌。\n安娜和 Lisa 去散步。\nLisa：「看！冰淇淋車！」\n安娜：「嗯，我想要一支冰淇淋。」\n她們買了兩球。\n安娜：「我的是香草。你的呢？」\nLisa：「巧克力。很好吃！」\n她們坐在長椅上笑著。",
+          "focus": [
+            "Freizeit",
+            "möchten",
+            "Essen"
+          ],
+          "notes": [
+            {
+              "span": "gehen spazieren",
+              "zh": "去散步"
+            },
+            {
+              "span": "ich möchte",
+              "zh": "我想要",
+              "tip": "möchten＝客氣的「想要」。"
+            },
+            {
+              "span": "Kugel",
+              "zh": "（冰淇淋）球"
+            },
+            {
+              "span": "lecker",
+              "zh": "好吃"
+            },
+            {
+              "span": "Bank",
+              "zh": "長椅",
+              "tip": "也指銀行；此處是公園長椅。"
+            }
+          ]
+        },
+        {
+          "id": "anna-stadt-05",
+          "order": 5,
+          "title": "Im Café",
+          "titleZh": "在咖啡廳",
+          "text": "Später gehen sie in ein Café.\nDer Kellner fragt: „Was möchten Sie?“\nAnna: „Einen Tee, bitte.“\nLisa: „Einen Kaffee mit Milch.“\nKellner: „Sonst noch etwas?“\nAnna: „Nein, danke.“\nDas macht 6 Euro. Anna bezahlt.\nLisa: „Danke! Nächstes Mal zahle ich.“",
+          "textZh": "之後她們走進一間咖啡廳。\n服務生問：「您想要什麼？」\n安娜：「一杯茶，麻煩。」\nLisa：「一杯加牛奶的咖啡。」\n服務生：「還要別的嗎？」\n安娜：「不用，謝謝。」\n一共 6 歐元。安娜付錢。\nLisa：「謝謝！下次我請。」",
+          "focus": [
+            "Café",
+            "Sie",
+            "bezahlen"
+          ],
+          "notes": [
+            {
+              "span": "Was möchten Sie?",
+              "zh": "您想要什麼？",
+              "tip": "對服務場合用 Sie。"
+            },
+            {
+              "span": "Einen Tee, bitte",
+              "zh": "一杯茶，麻煩",
+              "tip": "陽性第四格：ein→einen。"
+            },
+            {
+              "span": "Sonst noch etwas?",
+              "zh": "還要別的嗎？"
+            },
+            {
+              "span": "Das macht … Euro",
+              "zh": "一共……歐元"
+            },
+            {
+              "span": "Nächstes Mal",
+              "zh": "下次"
+            }
+          ]
+        },
+        {
+          "id": "anna-stadt-06",
+          "order": 6,
+          "title": "Einkaufen",
+          "titleZh": "購物",
+          "text": "Nach dem Café gehen sie einkaufen.\nAnna braucht eine neue Tasche.\nIm Laden sagt die Verkäuferin: „Kann ich helfen?“\nAnna: „Ja. Wie viel kostet die blaue Tasche?“\nVerkäuferin: „Sie kostet 25 Euro.“\nAnna: „Okay, ich nehme sie.“\nLisa: „Die Farbe steht dir gut!“",
+          "textZh": "咖啡廳之後她們去購物。\n安娜需要一個新包包。\n店裡售貨員說：「需要幫忙嗎？」\n安娜：「是的。藍色包包多少錢？」\n售貨員：「25 歐元。」\n安娜：「好，我要這個。」\nLisa：「這顏色很適合你！」",
+          "focus": [
+            "Einkaufen",
+            "Preise",
+            "Farben"
+          ],
+          "notes": [
+            {
+              "span": "Wie viel kostet…?",
+              "zh": "……多少錢？"
+            },
+            {
+              "span": "Ich nehme sie",
+              "zh": "我要這個／買它",
+              "tip": "nehmen＝選定購買。"
+            },
+            {
+              "span": "Kann ich helfen?",
+              "zh": "需要幫忙嗎？"
+            },
+            {
+              "span": "steht dir gut",
+              "zh": "很適合你",
+              "tip": "顏色／衣服合身合色。"
+            },
+            {
+              "span": "braucht",
+              "zh": "需要",
+              "tip": "brauchen。"
+            }
+          ]
+        },
+        {
+          "id": "anna-stadt-07",
+          "order": 7,
+          "title": "Der Regen",
+          "titleZh": "下雨了",
+          "text": "Draußen regnet es plötzlich.\nAnna: „Oh nein! Ich habe keinen Schirm.“\nLisa: „Ich habe einen. Komm unter meinen Schirm!“\nSie laufen schnell zur Bushaltestelle.\nAnna: „Danke, du bist eine gute Freundin.“\nLisa: „Gern geschehen!“\nDer Bus kommt gerade. Sie steigen nass und froh ein.",
+          "textZh": "外面突然下雨了。\n安娜：「喔不！我沒有傘。」\nLisa：「我有一把。到我傘下來！」\n她們快步跑向公車站。\n安娜：「謝謝，你真是好朋友。」\nLisa：「不客氣！」\n公車剛好來了。她們溼著卻開心地上車。",
+          "focus": [
+            "Wetter",
+            "helfen",
+            "Freundschaft"
+          ],
+          "notes": [
+            {
+              "span": "regnet es",
+              "zh": "下雨",
+              "tip": "es regnet。"
+            },
+            {
+              "span": "Schirm",
+              "zh": "傘",
+              "tip": "Regenschirm。"
+            },
+            {
+              "span": "Gern geschehen",
+              "zh": "不客氣"
+            },
+            {
+              "span": "plötzlich",
+              "zh": "突然"
+            },
+            {
+              "span": "gute Freundin",
+              "zh": "好朋友（陰性）"
+            }
+          ]
+        },
+        {
+          "id": "anna-stadt-08",
+          "order": 8,
+          "title": "Zu Hause",
+          "titleZh": "回到家",
+          "text": "Zu Hause ist Anna müde, aber glücklich.\nSie schreibt Lisa eine Nachricht:\n„Danke für den schönen Tag! Bis bald!“\nLisa antwortet: „Gern! Morgen im Park?“\nAnna: „Ja! Um 10 Uhr.“\nAnna lächelt. Die Stadt ist schön —\nbesonders mit einer Freundin.",
+          "textZh": "回到家，安娜疲倦但快樂。\n她傳訊息給 Lisa：\n「謝謝美好的一天！明天見！」\nLisa 回覆：「不客氣！明天公園見？」\n安娜：「好！十點。」\n安娜微笑。城市很美——\n尤其是有朋友一起。",
+          "focus": [
+            "Nachricht",
+            "planen",
+            "Gefühle"
+          ],
+          "notes": [
+            {
+              "span": "Bis bald",
+              "zh": "改天見／明天見"
+            },
+            {
+              "span": "müde",
+              "zh": "疲倦"
+            },
+            {
+              "span": "glücklich",
+              "zh": "快樂"
+            },
+            {
+              "span": "Nachricht",
+              "zh": "訊息／消息"
+            },
+            {
+              "span": "besonders",
+              "zh": "尤其／特別"
+            },
+            {
+              "span": "Um 10 Uhr",
+              "zh": "在十點",
+              "tip": "um + 時間。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tom-umzug",
+      "level": "A1",
+      "title": "Tom und der Umzug",
+      "titleZh": "Tom 與搬家",
+      "blurbZh": "Tom 搭火車去漢堡，幫朋友 Paul 和 Mia 搬家：從信件邀請到車站告別。",
+      "chapters": [
+        {
+          "id": "tom-umzug-01",
+          "order": 1,
+          "title": "Ein Brief",
+          "titleZh": "一封信",
+          "text": "Tom wohnt in München. Heute kommt ein Brief.\nTom öffnet ihn und liest.\n„Lieber Tom, wir haben eine Wohnung in Hamburg.\nKommst du uns helfen?“\nEs ist von seinem Freund Paul.\nTom denkt: „Hamburg ist weit. Aber Paul ist mein Freund.“\nEr ruft Paul an.",
+          "textZh": "Tom 住在慕尼黑。今天來了一封信。\nTom 打開並閱讀。\n「親愛的 Tom，我們在漢堡有一間公寓。\n你能來幫我們嗎？」\n信是他朋友 Paul 寄的。\nTom 想：「漢堡很遠。但 Paul 是我的朋友。」\n他打電話給 Paul。",
+          "focus": [
+            "wohnen",
+            "Brief",
+            "helfen"
+          ],
+          "notes": [
+            {
+              "span": "Brief",
+              "zh": "信"
+            },
+            {
+              "span": "Kommst du uns helfen?",
+              "zh": "你能來幫我們嗎？"
+            },
+            {
+              "span": "ruft … an",
+              "zh": "打電話給……",
+              "tip": "anrufen。"
+            },
+            {
+              "span": "weit",
+              "zh": "遠"
+            },
+            {
+              "span": "Wohnung",
+              "zh": "公寓／房子"
+            }
+          ]
+        },
+        {
+          "id": "tom-umzug-02",
+          "order": 2,
+          "title": "Am Telefon",
+          "titleZh": "通電話",
+          "text": "Paul: „Hallo Tom! Danke für den Anruf.“\nTom: „Wann braucht ihr Hilfe?“\nPaul: „Am Samstag. Um 9 Uhr.“\nTom: „Okay. Ich nehme den Zug.“\nPaul: „Super! Bring bitte Handschuhe mit.“\nTom: „Kein Problem. Bis Samstag!“\nTom packt seine Tasche. Er ist bereit.",
+          "textZh": "Paul：「嗨 Tom！謝謝來電。」\nTom：「你們什麼時候需要幫忙？」\nPaul：「星期六。九點。」\nTom：「好。我搭火車。」\nPaul：「太好了！請帶手套來。」\nTom：「沒問題。星期六見！」\nTom 打包行李。他準備好了。",
+          "focus": [
+            "Telefon",
+            "Zeit",
+            "vorbereiten"
+          ],
+          "notes": [
+            {
+              "span": "Am Samstag",
+              "zh": "在星期六",
+              "tip": "am + 星期。"
+            },
+            {
+              "span": "Bring … mit",
+              "zh": "帶……來",
+              "tip": "mitbringen。"
+            },
+            {
+              "span": "Kein Problem",
+              "zh": "沒問題"
+            },
+            {
+              "span": "packt",
+              "zh": "打包",
+              "tip": "packen。"
+            },
+            {
+              "span": "bereit",
+              "zh": "準備好"
+            }
+          ]
+        },
+        {
+          "id": "tom-umzug-03",
+          "order": 3,
+          "title": "Im Zug",
+          "titleZh": "在火車上",
+          "text": "Am Freitagabend sitzt Tom im Zug.\nNeben ihm sitzt eine Frau.\nFrau: „Fahren Sie nach Hamburg?“\nTom: „Ja. Ich helfe einem Freund.“\nFrau: „Das ist nett!“\nTom liest ein Buch. Der Zug fährt schnell.\nUm 22 Uhr ist er in Hamburg. Paul wartet am Bahnhof.",
+          "textZh": "星期五晚上 Tom 坐在火車上。\n旁邊坐著一位女士。\n女士：「您去漢堡嗎？」\nTom：「是的。我去幫一個朋友。」\n女士：「真好！」\nTom 讀一本書。火車開得很快。\n二十二點他到漢堡。Paul 在車站等著。",
+          "focus": [
+            "Reisen",
+            "Sie",
+            "Bahnhof"
+          ],
+          "notes": [
+            {
+              "span": "Fahren Sie nach…?",
+              "zh": "您去……嗎？"
+            },
+            {
+              "span": "Das ist nett",
+              "zh": "真好／真貼心"
+            },
+            {
+              "span": "Bahnhof",
+              "zh": "火車站"
+            },
+            {
+              "span": "Neben ihm",
+              "zh": "在他旁邊"
+            },
+            {
+              "span": "wartet",
+              "zh": "等待",
+              "tip": "warten。"
+            }
+          ]
+        },
+        {
+          "id": "tom-umzug-04",
+          "order": 4,
+          "title": "Die neue Wohnung",
+          "titleZh": "新公寓",
+          "text": "Paul zeigt Tom die Wohnung.\nPaul: „Hier ist das Wohnzimmer. Dort die Küche.“\nTom: „Sehr schön! Und das Schlafzimmer?“\nPaul: „Links. Es ist noch leer.“\nMias Stimme kommt aus der Küche: „Hallo Tom!“\nMia ist Pauls Freundin. Sie kocht Tee.\nTom: „Danke. Morgen packen wir die Kisten.“",
+          "textZh": "Paul 帶 Tom 看公寓。\nPaul：「這裡是客廳。那裡是廚房。」\nTom：「很漂亮！臥室呢？」\nPaul：「左邊。還是空的。」\nMia 的聲音從廚房傳來：「嗨 Tom！」\nMia 是 Paul 的女友。她泡茶。\nTom：「謝謝。明天我們就搬箱子。」",
+          "focus": [
+            "Wohnung",
+            "Räume",
+            "Lokaladverbien"
+          ],
+          "notes": [
+            {
+              "span": "Wohnzimmer",
+              "zh": "客廳"
+            },
+            {
+              "span": "links",
+              "zh": "左邊"
+            },
+            {
+              "span": "noch leer",
+              "zh": "還是空的"
+            },
+            {
+              "span": "Hier / Dort",
+              "zh": "這裡／那裡"
+            },
+            {
+              "span": "Kisten",
+              "zh": "箱子"
+            }
+          ]
+        },
+        {
+          "id": "tom-umzug-05",
+          "order": 5,
+          "title": "Schwere Kisten",
+          "titleZh": "沉重的箱子",
+          "text": "Am Samstagmorgen beginnen sie.\nPaul: „Diese Kiste ist schwer!“\nTom: „Vorsicht! Langsam.“\nSie tragen die Kisten die Treppe hoch.\nMia: „Passt auf! Die Tür ist eng.“\nNach zwei Stunden sind sie müde.\nTom: „Pause! Ich hole Wasser.“\nAlle lachen und trinken.",
+          "textZh": "星期六早上他們開始。\nPaul：「這個箱子很重！」\nTom：「小心！慢慢來。」\n他們把箱子抬上樓。\nMia：「小心！門很窄。」\n兩小時後他們累了。\nTom：「休息！我去拿水。」\n大家笑著喝水。",
+          "focus": [
+            "helfen",
+            "Adjektive",
+            "Imperativ"
+          ],
+          "notes": [
+            {
+              "span": "schwer",
+              "zh": "重",
+              "tip": "也指「難」。"
+            },
+            {
+              "span": "Vorsicht",
+              "zh": "小心"
+            },
+            {
+              "span": "Passt auf",
+              "zh": "小心／注意",
+              "tip": "aufpassen。"
+            },
+            {
+              "span": "Pause",
+              "zh": "休息／暫停"
+            },
+            {
+              "span": "die Treppe hoch",
+              "zh": "上樓"
+            }
+          ]
+        },
+        {
+          "id": "tom-umzug-06",
+          "order": 6,
+          "title": "Pizza bestellen",
+          "titleZh": "訂披薩",
+          "text": "Abends sind alle hungrig.\nMia: „Sollen wir Pizza bestellen?“\nTom: „Ja! Eine mit Käse und eine mit Gemüse.“\nPaul ruft an und bestellt.\nZwanzig Minuten später kommt der Bote.\nPaul: „Das Essen ist da!“\nSie sitzen auf dem Boden und essen.\nTom: „Beste Pizza nach dem Umzug!“",
+          "textZh": "晚上大家都餓了。\nMia：「我們要訂披薩嗎？」\nTom：「好！一份起司、一份蔬菜。」\nPaul 打電話訂餐。\n二十分鐘後外送員來了。\nPaul：「食物到了！」\n他們坐在地板上吃。\nTom：「搬家後最好吃的披薩！」",
+          "focus": [
+            "Essen",
+            "bestellen",
+            "Sollen"
+          ],
+          "notes": [
+            {
+              "span": "Sollen wir…?",
+              "zh": "我們要……嗎？",
+              "tip": "提議句型。"
+            },
+            {
+              "span": "bestellen",
+              "zh": "訂購"
+            },
+            {
+              "span": "hungrig",
+              "zh": "肚子餓"
+            },
+            {
+              "span": "Das Essen ist da",
+              "zh": "食物到了"
+            },
+            {
+              "span": "Bote",
+              "zh": "外送員／信差"
+            }
+          ]
+        },
+        {
+          "id": "tom-umzug-07",
+          "order": 7,
+          "title": "Sonntagmorgen",
+          "titleZh": "星期天早上",
+          "text": "Am Sonntag scheint die Sonne.\nTom, Paul und Mia putzen die Wohnung.\nMia: „Wohin kommt der Tisch?“\nTom: „Ans Fenster. Da ist mehr Licht.“\nPaul hängt Bilder an die Wand.\nDie Wohnung sieht jetzt gemütlich aus.\nTom: „Ihr habt ein schönes Zuhause.“",
+          "textZh": "星期天太陽照耀。\nTom、Paul 和 Mia 打掃公寓。\nMia：「桌子放哪裡？」\nTom：「靠窗。那裡光線比較多。」\nPaul 把畫掛上牆。\n公寓現在看起來很溫馨。\nTom：「你們有一個漂亮的家。」",
+          "focus": [
+            "putzen",
+            "einrichten",
+            "Lokal"
+          ],
+          "notes": [
+            {
+              "span": "Wohin kommt…?",
+              "zh": "……要放哪裡？"
+            },
+            {
+              "span": "Ans Fenster",
+              "zh": "靠窗",
+              "tip": "an das → ans。"
+            },
+            {
+              "span": "gemütlich",
+              "zh": "溫馨／舒適"
+            },
+            {
+              "span": "hängt … an",
+              "zh": "掛上",
+              "tip": "hängen an。"
+            },
+            {
+              "span": "Zuhause",
+              "zh": "家"
+            }
+          ]
+        },
+        {
+          "id": "tom-umzug-08",
+          "order": 8,
+          "title": "Abschied",
+          "titleZh": "告別",
+          "text": "Tom muss zurück nach München.\nAm Bahnhof umarmen sie sich.\nPaul: „Danke für alles, Tom!“\nMia: „Du bist immer willkommen.“\nTom: „Gern geschehen. Besucht mich bald!“\nDer Zug fährt ein. Tom winkt.\nPaul und Mia winken zurück.\nFreunde helfen — und Freunde bleiben.",
+          "textZh": "Tom 必須回慕尼黑。\n在車站他們互相擁抱。\nPaul：「謝謝一切，Tom！」\nMia：「隨時歡迎你來。」\nTom：「不客氣。很快來找我玩！」\n火車進站。Tom 揮手。\nPaul 和 Mia 也揮手。\n朋友互相幫忙——朋友一直都在。",
+          "focus": [
+            "Abschied",
+            "danken",
+            "Zukunft"
+          ],
+          "notes": [
+            {
+              "span": "Abschied",
+              "zh": "告別"
+            },
+            {
+              "span": "Du bist willkommen",
+              "zh": "歡迎你"
+            },
+            {
+              "span": "Besucht mich",
+              "zh": "來找我／拜訪我",
+              "tip": "besuchen。"
+            },
+            {
+              "span": "winkt",
+              "zh": "揮手",
+              "tip": "winken。"
+            },
+            {
+              "span": "muss zurück",
+              "zh": "必須回去"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mia-kochen",
+      "level": "A1",
+      "title": "Mia lernt kochen",
+      "titleZh": "Mia 學煮飯",
+      "blurbZh": "Mia 肚子餓、冰箱空空，於是找奶奶學做簡單番茄湯——最後請朋友來嚐。",
+      "chapters": [
+        {
+          "id": "mia-kochen-01",
+          "order": 1,
+          "title": "Hunger!",
+          "titleZh": "好餓！",
+          "text": "Mia kommt nach Hause. Sie hat Hunger.\nIm Kühlschrank ist nicht viel:\netwas Milch, ein Ei und Brot.\nMia: „Oh nein. Was koche ich?“\nSie ruft ihre Oma an.\nOma: „Hallo, Liebling! Alles gut?“\nMia: „Oma, kannst du mir helfen? Ich will kochen lernen.“",
+          "textZh": "Mia 回到家。她肚子餓。\n冰箱裡東西不多：\n一點牛奶、一顆蛋和麵包。\nMia：「喔不。我煮什麼？」\n她打電話給奶奶。\n奶奶：「嗨，寶貝！一切都好嗎？」\nMia：「奶奶，你能幫我嗎？我想學煮飯。」",
+          "focus": [
+            "Hunger",
+            "Kühlschrank",
+            "lernen"
+          ],
+          "notes": [
+            {
+              "span": "Hunger haben",
+              "zh": "肚子餓",
+              "tip": "Ich habe Hunger。"
+            },
+            {
+              "span": "Kühlschrank",
+              "zh": "冰箱"
+            },
+            {
+              "span": "etwas Milch",
+              "zh": "一點牛奶",
+              "tip": "不可數用 etwas。"
+            },
+            {
+              "span": "Liebling",
+              "zh": "寶貝／親愛的"
+            },
+            {
+              "span": "kochen lernen",
+              "zh": "學煮飯"
+            }
+          ]
+        },
+        {
+          "id": "mia-kochen-02",
+          "order": 2,
+          "title": "Omas Plan",
+          "titleZh": "奶奶的計畫",
+          "text": "Oma: „Komm morgen zu mir. Wir kochen zusammen.“\nMia: „Was kochen wir?“\nOma: „Einfache Suppe und Nudeln. Sehr leicht!“\nMia: „Perfekt. Was soll ich mitbringen?“\nOma: „Tomaten und Zwiebeln, bitte.“\nMia: „Okay! Bis morgen, Oma.“\nMia ist froh. Morgen wird spannend.",
+          "textZh": "奶奶：「明天來我家。我們一起煮。」\nMia：「我們煮什麼？」\n奶奶：「簡單的湯和麵。很容易！」\nMia：「太好了。我要帶什麼來？」\n奶奶：「番茄和洋蔥，麻煩。」\nMia：「好！明天見，奶奶。」\nMia 很開心。明天會很有趣。",
+          "focus": [
+            "planen",
+            "Lebensmittel",
+            "mitbringen"
+          ],
+          "notes": [
+            {
+              "span": "Wir kochen zusammen",
+              "zh": "我們一起煮"
+            },
+            {
+              "span": "leicht",
+              "zh": "容易／輕"
+            },
+            {
+              "span": "Was soll ich…?",
+              "zh": "我該……？"
+            },
+            {
+              "span": "mitbringen",
+              "zh": "帶來"
+            },
+            {
+              "span": "spannend",
+              "zh": "刺激／有趣"
+            }
+          ]
+        },
+        {
+          "id": "mia-kochen-03",
+          "order": 3,
+          "title": "Auf dem Markt",
+          "titleZh": "在市場",
+          "text": "Am nächsten Tag geht Mia auf den Markt.\nVerkäufer: „Frische Tomaten! Heute günstig!“\nMia: „Ein Kilo Tomaten, bitte. Und zwei Zwiebeln.“\nVerkäufer: „Das macht 4 Euro.“\nMia bezahlt und sagt: „Danke, schönen Tag!“\nDie Tüte ist schwer, aber Mia lächelt.\nSie geht zu Oma.",
+          "textZh": "隔天 Mia 去市場。\n攤販：「新鮮番茄！今天便宜！」\nMia：「一公斤番茄，麻煩。還有兩顆洋蔥。」\n攤販：「一共 4 歐元。」\nMia 付錢並說：「謝謝，祝您有美好的一天！」\n袋子很重，但 Mia 微笑著。\n她走向奶奶家。",
+          "focus": [
+            "Markt",
+            "Mengen",
+            "Höflichkeit"
+          ],
+          "notes": [
+            {
+              "span": "Ein Kilo",
+              "zh": "一公斤"
+            },
+            {
+              "span": "günstig",
+              "zh": "便宜／划算"
+            },
+            {
+              "span": "frische",
+              "zh": "新鮮的"
+            },
+            {
+              "span": "schönen Tag",
+              "zh": "祝美好的一天",
+              "tip": "告別／祝福用語。"
+            },
+            {
+              "span": "Tüte",
+              "zh": "袋子"
+            }
+          ]
+        },
+        {
+          "id": "mia-kochen-04",
+          "order": 4,
+          "title": "In Omas Küche",
+          "titleZh": "在奶奶廚房",
+          "text": "Oma öffnet die Tür. „Willkommen, Mia!“\nDie Küche riecht nach Kräutern.\nOma: „Wasch zuerst die Tomaten.“\nMia wäscht und schneidet.\nOma: „Sehr gut. Jetzt die Zwiebeln — aber vorsichtig!“\nMia: „Autsch! Die Zwiebeln beißen in die Augen.“\nOma lacht: „Das kennen alle Köche.“",
+          "textZh": "奶奶開門。「歡迎，Mia！」\n廚房有香草氣味。\n奶奶：「先洗番茄。」\nMia 清洗並切好。\n奶奶：「很好。現在洋蔥——但要小心！」\nMia：「哎喲！洋蔥刺眼睛。」\n奶奶笑：「所有廚師都知道。」",
+          "focus": [
+            "Küche",
+            "Imperativ",
+            "schneiden"
+          ],
+          "notes": [
+            {
+              "span": "Willkommen",
+              "zh": "歡迎"
+            },
+            {
+              "span": "Wasch zuerst…",
+              "zh": "先洗……",
+              "tip": "祈使句。"
+            },
+            {
+              "span": "schneiden",
+              "zh": "切"
+            },
+            {
+              "span": "vorsichtig",
+              "zh": "小心的"
+            },
+            {
+              "span": "riecht nach",
+              "zh": "聞起來像……"
+            }
+          ]
+        },
+        {
+          "id": "mia-kochen-05",
+          "order": 5,
+          "title": "Die Suppe kocht",
+          "titleZh": "湯在煮",
+          "text": "Oma gibt Öl in die Pfanne.\nDann kommen Zwiebeln und Tomaten hinein.\nOma: „Jetzt Salz und Pfeffer.“\nMia rührt um. Die Suppe kocht.\nOma: „Zehn Minuten warten.“\nMia: „Es riecht fantastisch!“\nOma: „Warte ab. Gleich schmeckt es noch besser.“",
+          "textZh": "奶奶把油倒進鍋裡。\n接著洋蔥和番茄下鍋。\n奶奶：「現在加鹽和胡椒。」\nMia 攪拌。湯在煮。\n奶奶：「等十分鐘。」\nMia：「味道棒極了！」\n奶奶：「等著看。馬上會更好吃。」",
+          "focus": [
+            "kochen",
+            "Gewürze",
+            "warten"
+          ],
+          "notes": [
+            {
+              "span": "gibt … hinein",
+              "zh": "放進去"
+            },
+            {
+              "span": "rührt um",
+              "zh": "攪拌",
+              "tip": "umrühren。"
+            },
+            {
+              "span": "Salz und Pfeffer",
+              "zh": "鹽和胡椒"
+            },
+            {
+              "span": "kocht",
+              "zh": "在煮／沸騰"
+            },
+            {
+              "span": "Warte ab",
+              "zh": "等著看",
+              "tip": "abwarten。"
+            }
+          ]
+        },
+        {
+          "id": "mia-kochen-06",
+          "order": 6,
+          "title": "Nudeln dazu",
+          "titleZh": "再配麵",
+          "text": "Oma kocht auch Nudeln.\nMia: „Sind sie fertig?“\nOma: „Ja. Probier mal!“\nMia probiert die Suppe. „Mmm! Sehr lecker.“\nOma: „Du hast gut geholfen.“\nSie decken den Tisch.\nZwei Teller, zwei Löffel, Brot dazu.\nEs ist ein kleines Fest.",
+          "textZh": "奶奶也煮了麵。\nMia：「好了嗎？」\n奶奶：「好了。嚐嚐看！」\nMia 嚐湯。「嗯！很好喝。」\n奶奶：「你幫了很多忙。」\n她們擺桌子。\n兩個盤子、兩支湯匙，再配麵包。\n這是一場小小的慶祝。",
+          "focus": [
+            "probieren",
+            "Tisch",
+            "loben"
+          ],
+          "notes": [
+            {
+              "span": "fertig",
+              "zh": "完成／好了"
+            },
+            {
+              "span": "Probier mal",
+              "zh": "嚐嚐看",
+              "tip": "probieren。"
+            },
+            {
+              "span": "decken den Tisch",
+              "zh": "擺桌子"
+            },
+            {
+              "span": "dazu",
+              "zh": "搭配／另加"
+            },
+            {
+              "span": "Fest",
+              "zh": "慶典／宴會"
+            }
+          ]
+        },
+        {
+          "id": "mia-kochen-07",
+          "order": 7,
+          "title": "Rezept aufschreiben",
+          "titleZh": "寫下食譜",
+          "text": "Nach dem Essen holt Oma Papier.\nOma: „Schreib das Rezept auf.“\nMia schreibt langsam:\nTomaten, Zwiebeln, Salz, Pfeffer, Öl, Nudeln.\nMia: „Und die Zeit?“\nOma: „Zehn Minuten für die Suppe. Acht für die Nudeln.“\nMia: „Danke, Oma. Jetzt kann ich allein kochen!“",
+          "textZh": "飯後奶奶拿出紙。\n奶奶：「把食譜寫下來。」\nMia 慢慢寫：\n番茄、洋蔥、鹽、胡椒、油、麵。\nMia：「時間呢？」\n奶奶：「湯十分鐘。麵八分鐘。」\nMia：「謝謝奶奶。現在我可以自己煮了！」",
+          "focus": [
+            "Rezept",
+            "schreiben",
+            "allein"
+          ],
+          "notes": [
+            {
+              "span": "Rezept",
+              "zh": "食譜／處方"
+            },
+            {
+              "span": "Schreib … auf",
+              "zh": "寫下來",
+              "tip": "aufschreiben。"
+            },
+            {
+              "span": "allein",
+              "zh": "獨自"
+            },
+            {
+              "span": "holt",
+              "zh": "拿來",
+              "tip": "holen。"
+            },
+            {
+              "span": "langsam",
+              "zh": "慢慢地"
+            }
+          ]
+        },
+        {
+          "id": "mia-kochen-08",
+          "order": 8,
+          "title": "Für Freunde",
+          "titleZh": "為朋友煮",
+          "text": "Eine Woche später kommen Freunde zu Mia.\nAnna und Lisa klingeln an der Tür.\nMia: „Willkommen! Heute koche ich.“\nIm Topf kocht Omas Suppe.\nAnna: „Wow, das riecht gut!“\nLisa: „Darf ich helfen?“\nMia: „Nein, setzt euch. Genießt!“\nSie essen und lachen. Mia ist stolz.",
+          "textZh": "一週後朋友們來找 Mia。\nAnna 和 Lisa 按門鈴。\nMia：「歡迎！今天我煮飯。」\n鍋裡煮著奶奶的湯。\nAnna：「哇，好香！」\nLisa：「我可以幫忙嗎？」\nMia：「不用，坐下。享用吧！」\n她們邊吃邊笑。Mia 很驕傲。",
+          "focus": [
+            "einladen",
+            "stolz",
+            "Gastgeber"
+          ],
+          "notes": [
+            {
+              "span": "klingeln",
+              "zh": "按門鈴"
+            },
+            {
+              "span": "Darf ich…?",
+              "zh": "我可以……嗎？"
+            },
+            {
+              "span": "setzt euch",
+              "zh": "坐下（你們）",
+              "tip": "sich setzen。"
+            },
+            {
+              "span": "Genießt",
+              "zh": "享用吧",
+              "tip": "genießen。"
+            },
+            {
+              "span": "stolz",
+              "zh": "驕傲"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jonas-see",
+      "level": "A2",
+      "title": "Jonas am See",
+      "titleZh": "Jonas 在湖邊",
+      "blurbZh": "輕鬆 A2：Jonas 週末跟表哥去湖邊露營——搭帳篷、游泳、烤肉，帶回一點平靜。",
+      "chapters": [
+        {
+          "id": "jonas-see-01",
+          "order": 1,
+          "title": "Die Einladung",
+          "titleZh": "邀請",
+          "text": "Jonas bekommt eine Nachricht von seinem Cousin Felix.\n„Hallo Jonas! Am Wochenende fahren wir an den See.\nMöchtest du mitkommen? Wir schwimmen, grillen und zelten.“\nJonas arbeitet unter der Woche im Büro und ist oft müde.\nAber ein Wochenende am Wasser klingt perfekt.\nEr antwortet schnell: „Ja! Wann und wo treffen wir uns?“\nFelix schreibt: „Samstag um 8 Uhr am Bahnhof. Bring Schlafsack und Sonnencreme mit.“",
+          "textZh": "Jonas 收到表哥 Felix 的訊息。\n「嗨 Jonas！週末我們去湖邊。\n你要一起來嗎？我們游泳、烤肉和露營。」\nJonas 平日在辦公室工作，常常很累。\n但在水邊度過週末聽起來很完美。\n他很快回覆：「好！我們何時何地碰面？」\nFelix 寫：「星期六八點在車站。帶睡袋和防曬霜。」",
+          "focus": [
+            "Einladung",
+            "Wochenende",
+            "mitkommen"
+          ],
+          "notes": [
+            {
+              "span": "Möchtest du mitkommen?",
+              "zh": "你想一起來嗎？"
+            },
+            {
+              "span": "klingt perfekt",
+              "zh": "聽起來很完美"
+            },
+            {
+              "span": "unter der Woche",
+              "zh": "平日／週間"
+            },
+            {
+              "span": "Schlafsack",
+              "zh": "睡袋"
+            },
+            {
+              "span": "treffen wir uns",
+              "zh": "我們碰面",
+              "tip": "sich treffen。"
+            },
+            {
+              "span": "Bring … mit",
+              "zh": "把……帶來",
+              "tip": "mitbringen。"
+            }
+          ]
+        },
+        {
+          "id": "jonas-see-02",
+          "order": 2,
+          "title": "Früh am Bahnhof",
+          "titleZh": "清晨火車站",
+          "text": "Am Samstag steht Jonas früh auf. Der Himmel ist klar.\nAm Bahnhof warten schon Felix und dessen Freundin Nora.\nNora: „Schön, dass du da bist! Kennst du den See?“\nJonas: „Nein, noch nicht. Ich freue mich darauf.“\nSie kaufen Tickets und steigen in den Regionalzug.\nIm Zug erzählt Felix von dem Campingplatz: ruhig, nah am Wasser, mit einem kleinen Kiosk.\nJonas schaut aus dem Fenster. Felder und Wälder ziehen vorbei.",
+          "textZh": "星期六 Jonas 早早起床。天空晴朗。\n在車站，Felix 和他女友 Nora 已經在等。\nNora：「很高興你來了！你認識那個湖嗎？」\nJonas：「還沒。我很期待。」\n他們買票上了區間車。\n車上 Felix 描述露營區：安靜、靠近水邊，還有小賣店。\nJonas 望向窗外。田野和森林掠過。",
+          "focus": [
+            "Reisen",
+            "sich freuen",
+            "Beschreiben"
+          ],
+          "notes": [
+            {
+              "span": "Schön, dass du da bist",
+              "zh": "很高興你來了"
+            },
+            {
+              "span": "Ich freue mich darauf",
+              "zh": "我很期待",
+              "tip": "sich freuen auf。"
+            },
+            {
+              "span": "Regionalzug",
+              "zh": "區間車／區域列車"
+            },
+            {
+              "span": "Campingplatz",
+              "zh": "露營區"
+            },
+            {
+              "span": "ziehen vorbei",
+              "zh": "掠過／經過"
+            }
+          ]
+        },
+        {
+          "id": "jonas-see-03",
+          "order": 3,
+          "title": "Ankunft am See",
+          "titleZh": "抵達湖邊",
+          "text": "Nach zwei Stunden kommen sie an. Der See liegt ruhig und blau vor ihnen.\nFelix: „Zuerst das Zelt aufbauen, dann schwimmen.“\nSie tragen Rucksäcke den Weg hinunter. Nora sucht einen flachen Platz.\nJonas hält die Stangen, Felix spannt die Plane. Nach einer Weile steht das Zelt.\nNora lacht: „Nicht schlecht für Anfänger!“\nJonas wischt sich den Schweiß ab und atmet die frische Luft ein.\nGleich nebenan glitzert das Wasser.",
+          "textZh": "兩小時後他們抵達。平靜藍色的湖就在眼前。\nFelix：「先搭帳篷，再游泳。」\n他們背著背包走下小路。Nora 找一塊平坦的地方。\nJonas 扶著桿子，Felix 拉起篷布。過一會兒帳篷立好了。\nNora 笑：「對新手來說不錯！」\nJonas 擦掉汗水，吸入新鮮空氣。\n緊鄰著，水面閃閃發光。",
+          "focus": [
+            "Camping",
+            "aufbauen",
+            "Natur"
+          ],
+          "notes": [
+            {
+              "span": "Zelt aufbauen",
+              "zh": "搭帳篷"
+            },
+            {
+              "span": "Nach einer Weile",
+              "zh": "過一會兒"
+            },
+            {
+              "span": "Nicht schlecht",
+              "zh": "不錯"
+            },
+            {
+              "span": "atmet … ein",
+              "zh": "吸入",
+              "tip": "einatmen。"
+            },
+            {
+              "span": "gleich nebenan",
+              "zh": "就在旁邊"
+            },
+            {
+              "span": "glitzert",
+              "zh": "閃閃發光"
+            }
+          ]
+        },
+        {
+          "id": "jonas-see-04",
+          "order": 4,
+          "title": "Das erste Bad",
+          "titleZh": "第一次下水",
+          "text": "Die Sonne steht hoch. Nora springt zuerst ins Wasser.\n„Kalt, aber herrlich!“ ruft sie.\nJonas geht langsam hinein. Das Wasser reicht ihm bis zur Brust.\nFelix schwimmt ein paar Bahnen und kommt zurück.\nFelix: „Kannst du gut schwimmen?“\nJonas: „Ein bisschen. In der Stadt gehe ich selten ins Bad.“\nSie treiben eine Weile auf dem Rücken und schauen in den Himmel.\nMöwen kreisen über dem See.",
+          "textZh": "太陽高掛。Nora 先跳進水裡。\n她喊：「冷，但太棒了！」\nJonas 慢慢走進去。水到他胸口。\nFelix 游了幾個來回再回來。\nFelix：「你很會游泳嗎？」\nJonas：「一點點。在城裡我很少去泳池。」\n他們仰躺漂浮一會兒，望著天空。\n海鷗在湖上盤旋。",
+          "focus": [
+            "schwimmen",
+            "Körper",
+            "Gegensatz"
+          ],
+          "notes": [
+            {
+              "span": "herrlich",
+              "zh": "美妙／太棒了"
+            },
+            {
+              "span": "reicht … bis",
+              "zh": "到……為止"
+            },
+            {
+              "span": "ein paar Bahnen",
+              "zh": "幾個來回（泳道）"
+            },
+            {
+              "span": "Ein bisschen",
+              "zh": "一點點"
+            },
+            {
+              "span": "selten",
+              "zh": "很少"
+            },
+            {
+              "span": "treiben",
+              "zh": "漂浮／漂流"
+            }
+          ]
+        },
+        {
+          "id": "jonas-see-05",
+          "order": 5,
+          "title": "Einkauf am Kiosk",
+          "titleZh": "小賣店採買",
+          "text": "Am Nachmittag gehen sie zum Kiosk.\nVerkäuferin: „Was darf's sein?“\nNora: „Drei Wasser, Brot, Käse und Äpfel, bitte.“\nFelix: „Und Holzkohle für den Grill.“\nDie Verkäuferin packt alles ein. „Das macht 18 Euro.“\nJonas bezahlt und sagt: „Darf ich die Tasche tragen?“\nZurück am Zelt schneiden sie das Brot und machen einfache Stulle.\nDer Wind vom See ist leicht und angenehm.",
+          "textZh": "下午他們去小賣店。\n店員：「要什麼？」\nNora：「三瓶水、麵包、起司和蘋果，麻煩。」\nFelix：「還有烤肉用的木炭。」\n店員打包。「一共 18 歐元。」\nJonas 付錢並說：「袋子我來提好嗎？」\n回到帳篷，他們切麵包做簡單三明治。\n湖風輕柔舒適。",
+          "focus": [
+            "einkaufen",
+            "Grill",
+            "Höflichkeit"
+          ],
+          "notes": [
+            {
+              "span": "Was darf's sein?",
+              "zh": "要什麼？",
+              "tip": "店員常用。"
+            },
+            {
+              "span": "Holzkohle",
+              "zh": "木炭"
+            },
+            {
+              "span": "packt … ein",
+              "zh": "打包",
+              "tip": "einpacken。"
+            },
+            {
+              "span": "Stulle",
+              "zh": "（北德）開放式三明治"
+            },
+            {
+              "span": "angenehm",
+              "zh": "舒適／宜人"
+            }
+          ]
+        },
+        {
+          "id": "jonas-see-06",
+          "order": 6,
+          "title": "Abend am Grill",
+          "titleZh": "傍晚烤肉",
+          "text": "Als die Sonne sinkt, zünden sie den Grill an.\nFelix legt Würstchen auf den Rost. Nora schneidet Gurken.\nJonas erzählt von seiner Arbeit: Meetings, E-Mails, wenig Bewegung.\nNora: „Deshalb bist du hier. Pause vom Alltag.“\nSie essen, trinken Apfelschorle und hören leise Musik.\nAm Nachbarzelt sitzt eine Familie und lacht.\nJonas denkt: Hier brauche ich kein Handy. Nur Freunde und den See.",
+          "textZh": "太陽下沉時，他們點燃烤肉架。\nFelix 把香腸放上烤網。Nora 切黃瓜。\nJonas 談起工作：會議、郵件、很少運動。\nNora：「所以你才來這裡。暫時離開日常。」\n他們吃東西、喝蘋果氣泡汁，聽著輕柔音樂。\n隔壁帳篷坐著一家人在笑。\nJonas 想：這裡我不需要手機。只要朋友和湖。",
+          "focus": [
+            "Grill",
+            "Alltag",
+            "Gedanken"
+          ],
+          "notes": [
+            {
+              "span": "Als die Sonne sinkt",
+              "zh": "當太陽下沉時",
+              "tip": "als＝過去／一次性時間。"
+            },
+            {
+              "span": "zünden … an",
+              "zh": "點燃",
+              "tip": "anzünden。"
+            },
+            {
+              "span": "Pause vom Alltag",
+              "zh": "暫時離開日常"
+            },
+            {
+              "span": "Apfelschorle",
+              "zh": "蘋果氣泡汁"
+            },
+            {
+              "span": "Deshalb",
+              "zh": "因此"
+            }
+          ]
+        },
+        {
+          "id": "jonas-see-07",
+          "order": 7,
+          "title": "Die Nacht",
+          "titleZh": "夜晚",
+          "text": "Nachts wird es kühl. Sie sitzen noch eine Weile am Feuer.\nFelix zeigt Jonas die Sterne: „Dort ist der Große Wagen.“\nJonas findet ihn nach ein paar Minuten. „Ah, jetzt sehe ich ihn!“\nSpäter kriechen sie in die Schlafsäcke. Nora liest kurz mit der Taschenlampe.\nDraußen ruft ein Vogel. Das Wasser plätschert leise.\nJonas schließt die Augen und schläft schneller ein als in der Stadt.",
+          "textZh": "夜裡變涼。他們還在營火旁坐一會兒。\nFelix 指給 Jonas 看星星：「那裡是北斗七星。」\nJonas 過幾分鐘才找到。「啊，現在看到了！」\n之後他們鑽進睡袋。Nora 用手電筒短暫看書。\n外頭有鳥叫。水聲輕輕拍打。\nJonas 閉上眼，比在城裡更快入睡。",
+          "focus": [
+            "Nacht",
+            "Natur",
+            "Vergleich"
+          ],
+          "notes": [
+            {
+              "span": "Nachts",
+              "zh": "在夜裡",
+              "tip": "時間副詞。"
+            },
+            {
+              "span": "Große Wagen",
+              "zh": "北斗七星"
+            },
+            {
+              "span": "kriechen",
+              "zh": "爬／鑽進"
+            },
+            {
+              "span": "Taschenlampe",
+              "zh": "手電筒"
+            },
+            {
+              "span": "schläft … ein",
+              "zh": "入睡",
+              "tip": "einschlafen。"
+            },
+            {
+              "span": "plätschert",
+              "zh": "拍打作響（水聲）"
+            }
+          ]
+        },
+        {
+          "id": "jonas-see-08",
+          "order": 8,
+          "title": "Abschied vom See",
+          "titleZh": "告別湖邊",
+          "text": "Am Sonntagmorgen packen sie zusammen. Das Zelt wird kleiner und kleiner.\nFelix: „Nächstes Mal bleiben wir zwei Nächte.“\nJonas: „Gerne. Ich habe mich richtig erholt.“\nAm Bahnhof umarmen sie sich. Der Zug nach Hause wartet schon.\nIm Abteil schreibt Jonas eine kurze Notiz an sich selbst:\n„Mehr Tage am Wasser. Weniger Bildschirm.“\nEr lächelt und legt das Handy weg. Draußen beginnt die Stadt wieder — aber der See bleibt in seinem Kopf.",
+          "textZh": "星期天早上他們一起打包。帳篷越收越小。\nFelix：「下次我們待兩晚。」\nJonas：「好啊。我真的休息夠了。」\n在車站他們互相擁抱。回家的火車已經在等。\n車廂裡 Jonas 給自己寫了一則短記：\n「多去水邊。少盯螢幕。」\n他微笑並把手機放下。外頭城市又開始出現——但湖仍留在他腦中。",
+          "focus": [
+            "Abschied",
+            "Vorsätze",
+            "erholen"
+          ],
+          "notes": [
+            {
+              "span": "packe zusammen",
+              "zh": "一起打包／收拾",
+              "tip": "zusammenpacken。"
+            },
+            {
+              "span": "Ich habe mich erholt",
+              "zh": "我休息夠了／恢復了",
+              "tip": "sich erholen。"
+            },
+            {
+              "span": "Nächstes Mal",
+              "zh": "下次"
+            },
+            {
+              "span": "Notiz",
+              "zh": "短記／便條"
+            },
+            {
+              "span": "legt … weg",
+              "zh": "放下／收起",
+              "tip": "weglegen。"
+            },
+            {
+              "span": "bleibt in seinem Kopf",
+              "zh": "留在他腦中"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
