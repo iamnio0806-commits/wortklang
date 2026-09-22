@@ -965,7 +965,7 @@ export default function App() {
         </h1>
         <p className="tagline">
           {section === 'learn'
-            ? 'Day 1–30 闖關、SRS 自動複習、故事泛讀，以及可接 API 的寫作／口說批改。'
+            ? '兩年單字路徑（B2→C1）、SRS 複習、故事與 AI 批改。'
             : section === 'vocab'
               ? '完整 A1→C1：冠詞、複數、字首字根、動詞變化與字族記憶。'
               : section === 'grammar'

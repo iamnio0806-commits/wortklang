@@ -7,9 +7,18 @@ import { ArticleText } from './lib/richText'
 import {
   ROADMAP_DAYS,
   ROADMAP_NOTE,
-  type RoadmapDay,
   type RoadmapTask,
 } from './data/roadmap'
+import {
+  getVocabPathDay,
+  getVocabPathWeek,
+  VOCAB_PATH_META,
+  VOCAB_PATH_NOTE,
+  VOCAB_PATH_PHASES,
+  VOCAB_PATH_WEEKS,
+  type VocabPathDay,
+  type VocabPathWeek,
+} from './data/vocabPath'
 import {
   getChapter,
   getSeries,
@@ -37,14 +46,17 @@ import {
   type TutorCorrection,
 } from './lib/llmTutor'
 
-type LearnTab = 'today' | 'roadmap' | 'stories' | 'tutor'
+type LearnTab = 'today' | 'vocabPath' | 'roadmap' | 'stories' | 'tutor'
 
 const ROADMAP_DONE_KEY = 'wortklang-roadmap-done'
 const ROADMAP_DAY_KEY = 'wortklang-roadmap-day'
+const VP_WEEK_KEY = 'wortklang-vp-week'
+const VP_DAY_KEY = 'wortklang-vp-day'
+const VP_DONE_KEY = 'wortklang-vp-done'
 
-function loadDone(): Set<string> {
+function loadDone(key: string): Set<string> {
   try {
-    const raw = localStorage.getItem(ROADMAP_DONE_KEY)
+    const raw = localStorage.getItem(key)
     if (!raw) return new Set()
     const arr = JSON.parse(raw) as string[]
     return new Set(Array.isArray(arr) ? arr : [])
@@ -53,8 +65,18 @@ function loadDone(): Set<string> {
   }
 }
 
+function loadInt(key: string, min: number, max: number, fallback: number) {
+  const raw = localStorage.getItem(key)
+  const n = raw ? Number(raw) : fallback
+  return Number.isFinite(n) && n >= min && n <= max ? n : fallback
+}
+
 function vocabById(id: string): VocabWord | undefined {
   return vocabulary.find((w) => w.id === id)
+}
+
+function vpTaskId(week: number, day: number) {
+  return `vp-w${week}-d${day}`
 }
 
 export default function LearnHub({
@@ -73,12 +95,13 @@ export default function LearnHub({
   setSrsMap: (map: Record<string, SrsCard>) => void
 }) {
   const [tab, setTab] = useState<LearnTab>('today')
-  const [day, setDay] = useState(() => {
-    const raw = localStorage.getItem(ROADMAP_DAY_KEY)
-    const n = raw ? Number(raw) : 1
-    return Number.isFinite(n) && n >= 1 && n <= 30 ? n : 1
-  })
-  const [done, setDone] = useState<Set<string>>(() => loadDone())
+  const [day, setDay] = useState(() => loadInt(ROADMAP_DAY_KEY, 1, 30, 1))
+  const [done, setDone] = useState<Set<string>>(() => loadDone(ROADMAP_DONE_KEY))
+  const [vpWeek, setVpWeek] = useState(() =>
+    loadInt(VP_WEEK_KEY, 1, VOCAB_PATH_META.weeks, 1),
+  )
+  const [vpDay, setVpDay] = useState(() => loadInt(VP_DAY_KEY, 1, 7, 1))
+  const [vpDone, setVpDone] = useState<Set<string>>(() => loadDone(VP_DONE_KEY))
 
   useEffect(() => {
     localStorage.setItem(ROADMAP_DONE_KEY, JSON.stringify([...done]))
@@ -88,15 +111,51 @@ export default function LearnHub({
     localStorage.setItem(ROADMAP_DAY_KEY, String(day))
   }, [day])
 
+  useEffect(() => {
+    localStorage.setItem(VP_WEEK_KEY, String(vpWeek))
+  }, [vpWeek])
+
+  useEffect(() => {
+    localStorage.setItem(VP_DAY_KEY, String(vpDay))
+  }, [vpDay])
+
+  useEffect(() => {
+    localStorage.setItem(VP_DONE_KEY, JSON.stringify([...vpDone]))
+  }, [vpDone])
+
   const dueIds = useMemo(() => listDueIds(srsMap), [srsMap])
   const dueCount = countDue(srsMap)
-  const today = ROADMAP_DAYS.find((d) => d.day === day) ?? ROADMAP_DAYS[0]
+  const todayVp =
+    getVocabPathDay(vpWeek, vpDay) ??
+    getVocabPathDay(1, 1) ??
+    VOCAB_PATH_WEEKS[0].days[0]
+  const todayWeek = getVocabPathWeek(vpWeek) ?? VOCAB_PATH_WEEKS[0]
+
+  const vpProgress = useMemo(() => {
+    const totalDays = VOCAB_PATH_META.weeks * 7
+    return {
+      doneDays: vpDone.size,
+      totalDays,
+      pct: Math.round((vpDone.size / totalDays) * 100),
+      enrolled: Object.keys(srsMap).length,
+    }
+  }, [vpDone, srsMap])
 
   function toggleDone(taskId: string) {
     setDone((prev) => {
       const next = new Set(prev)
       if (next.has(taskId)) next.delete(taskId)
       else next.add(taskId)
+      return next
+    })
+  }
+
+  function toggleVpDone(week: number, d: number) {
+    const id = vpTaskId(week, d)
+    setVpDone((prev) => {
+      const next = new Set(prev)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
       return next
     })
   }
@@ -114,18 +173,31 @@ export default function LearnHub({
     saveSrsMap(map)
   }
 
+  function goNextVpDay() {
+    if (vpDay < 7) {
+      setVpDay(vpDay + 1)
+      return
+    }
+    if (vpWeek < VOCAB_PATH_META.weeks) {
+      setVpWeek(vpWeek + 1)
+      setVpDay(1)
+    }
+  }
+
   return (
     <div className="learn-hub">
       <section className="level-board">
         <p className="ai-lead-sm reading-banner">
-          自學中樞：今日複習（SRS）→ 30 日路徑 → 故事泛讀 → AI
-          家教批改。零基礎建議每天先走路徑，再消化到期複習。
+          兩年單字優先（目標 B2→C1）：每天 8
+          個新字＋SRS 到期複習。進度 {vpProgress.pct}% · 已排入複習{' '}
+          {vpProgress.enrolled} 字。
         </p>
         <div className="level-tabs" role="tablist" aria-label="自學分區">
           {(
             [
-              ['today', `今日複習${dueCount ? ` ${dueCount}` : ''}`],
-              ['roadmap', '30日路徑'],
+              ['today', `今日${dueCount ? ` · 複習${dueCount}` : ''}`],
+              ['vocabPath', '單字路徑'],
+              ['roadmap', '30日入門'],
               ['stories', '故事泛讀'],
               ['tutor', 'AI家教'],
             ] as const
@@ -148,22 +220,28 @@ export default function LearnHub({
         <TodayReview
           dueIds={dueIds}
           srsMap={srsMap}
-          today={today}
-          done={done}
+          vpDay={todayVp}
+          vpWeek={todayWeek}
+          vpDone={vpDone}
           onGrade={gradeDue}
           onOpenVocabIds={onOpenVocabIds}
-          onGoRoadmap={() => setTab('roadmap')}
-          onTask={toggleDone}
-          onOpenGrammar={onOpenGrammar}
-          onOpenReading={onOpenReading}
-          onOpenStory={(seriesId, chapterId) => {
-            sessionStorage.setItem(
-              'wortklang-story-jump',
-              JSON.stringify({ seriesId, chapterId }),
-            )
-            setTab('stories')
-          }}
+          onGoVocabPath={() => setTab('vocabPath')}
+          onToggleVp={() => toggleVpDone(vpWeek, vpDay)}
           onEnroll={enrollMany}
+          onNextDay={goNextVpDay}
+        />
+      )}
+      {tab === 'vocabPath' && (
+        <VocabPathPanel
+          week={vpWeek}
+          setWeek={setVpWeek}
+          day={vpDay}
+          setDay={setVpDay}
+          done={vpDone}
+          onToggle={toggleVpDone}
+          onOpenVocabIds={onOpenVocabIds}
+          onEnroll={enrollMany}
+          progress={vpProgress}
         />
       )}
       {tab === 'roadmap' && (
@@ -194,34 +272,34 @@ export default function LearnHub({
 function TodayReview({
   dueIds,
   srsMap,
-  today,
-  done,
+  vpDay,
+  vpWeek,
+  vpDone,
   onGrade,
   onOpenVocabIds,
-  onGoRoadmap,
-  onTask,
-  onOpenGrammar,
-  onOpenReading,
-  onOpenStory,
+  onGoVocabPath,
+  onToggleVp,
   onEnroll,
+  onNextDay,
 }: {
   dueIds: string[]
   srsMap: Record<string, SrsCard>
-  today: RoadmapDay
-  done: Set<string>
+  vpDay: VocabPathDay
+  vpWeek: VocabPathWeek
+  vpDone: Set<string>
   onGrade: (id: string, g: SrsGrade) => void
   onOpenVocabIds: (ids: string[]) => void
-  onGoRoadmap: () => void
-  onTask: (id: string) => void
-  onOpenGrammar: (id: string) => void
-  onOpenReading: (id: string) => void
-  onOpenStory: (seriesId: string, chapterId: string) => void
+  onGoVocabPath: () => void
+  onToggleVp: () => void
   onEnroll: (ids: string[]) => void
+  onNextDay: () => void
 }) {
   const [idx, setIdx] = useState(0)
   const [revealed, setRevealed] = useState(false)
   const currentId = dueIds[idx]
   const word = currentId ? vocabById(currentId) : undefined
+  const taskKey = vpTaskId(vpDay.week, vpDay.day)
+  const dayDone = vpDone.has(taskKey)
 
   useEffect(() => {
     setRevealed(false)
@@ -232,31 +310,75 @@ function TodayReview({
     <div className="learn-panel">
       <article className="exam-card exam-card-goethe">
         <div className="detail-top">
-          <span className="type-pill">Day {today.day}</span>
-          <span className="type-pill">{today.titleZh}</span>
+          <span className={`level-pill level-${vpDay.level}`}>{vpDay.level}</span>
+          <span className="type-pill">
+            第 {vpDay.week} 週 · 第 {vpDay.day} 天
+          </span>
+          <span className="type-pill">{vpWeek.phaseZh}</span>
         </div>
-        <h2 className="grammar-title">今日路徑：{today.titleZh}</h2>
-        <p className="exam-card-meta">{today.focusZh}</p>
-        <button type="button" className="primary" onClick={onGoRoadmap}>
-          打開今日 30 日路徑
-        </button>
+        <h2 className="grammar-title">
+          {vpDay.kind === 'review' ? '今日：複習日' : `今日新字：${vpDay.titleZh}`}
+        </h2>
+        <p className="exam-card-meta">{vpWeek.focusZh}</p>
+        <p className="exam-meta">{vpDay.tipZh}</p>
+        {vpDay.vocabIds.length > 0 && vpDay.kind === 'learn' && (
+          <ul className="learn-vocab-preview">
+            {vpDay.vocabIds.map((id) => {
+              const w = vocabById(id)
+              return (
+                <li key={id}>
+                  {w
+                    ? `${w.article ? w.article + ' ' : ''}${w.word} — ${w.translation}`
+                    : id}
+                </li>
+              )
+            })}
+          </ul>
+        )}
+        <div className="speak-row" style={{ marginTop: '0.75rem' }}>
+          <button
+            type="button"
+            className="primary"
+            onClick={() => {
+              onEnroll(vpDay.vocabIds)
+              onOpenVocabIds(
+                vpDay.kind === 'learn'
+                  ? vpDay.vocabIds
+                  : vpDay.vocabIds.slice(0, 16),
+              )
+            }}
+          >
+            {vpDay.kind === 'learn'
+              ? `去學這 ${vpDay.vocabIds.length} 個字`
+              : '打開本週單字（抽樣）'}
+          </button>
+          <button type="button" className="ghost" onClick={onGoVocabPath}>
+            單字路徑總覽
+          </button>
+          <label className="check">
+            <input type="checkbox" checked={dayDone} onChange={onToggleVp} />
+            今日完成
+          </label>
+          {dayDone && (
+            <button type="button" className="ghost" onClick={onNextDay}>
+              下一天 →
+            </button>
+          )}
+        </div>
       </article>
 
       <section className="panel">
         <h3>SRS 到期複習（艾賓浩斯排程）</h3>
         <p className="panel-note">
-          標記「已學會」的單字會在 1→3→7→14
-          天後自動回來。依記得程度按下方按鈕，系統會改下次複習日。
+          先做上方今日新字，再消化到期卡。按記得程度排下次複習（約
+          1→3→7→14 天）。
         </p>
         {!word ? (
-          <p className="empty">
-            目前沒有到期單字。去路徑學新字並按「加入複習／已學會」吧。
-          </p>
+          <p className="empty">目前沒有到期單字。去學今日新字並標記已學會吧。</p>
         ) : (
           <div className="srs-card">
             <p className="exam-meta">
-              {idx + 1} / {dueIds.length} ·{' '}
-              {formatDueLabel(srsMap[word.id])}
+              {idx + 1} / {dueIds.length} · {formatDueLabel(srsMap[word.id])}
             </p>
             <h2 className="lemma">
               {word.article ? `${word.article} ` : ''}
@@ -296,35 +418,169 @@ function TodayReview({
           </div>
         )}
       </section>
+    </div>
+  )
+}
 
-      <section className="panel">
-        <h3>今日任務速覽</h3>
-        <ul className="learn-task-list">
-          {today.tasks.map((t) => (
-            <li key={t.id}>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={done.has(t.id)}
-                  onChange={() => onTask(t.id)}
-                />
-                <strong>{t.titleZh}</strong>
-                <span className="exam-meta"> · {t.tipZh}</span>
-              </label>
-              <TaskActions
-                task={t}
-                onOpenVocabIds={(ids) => {
-                  onEnroll(ids)
-                  onOpenVocabIds(ids)
-                }}
-                onOpenGrammar={onOpenGrammar}
-                onOpenReading={onOpenReading}
-                onOpenStory={onOpenStory}
-              />
-            </li>
-          ))}
-        </ul>
-      </section>
+function VocabPathPanel({
+  week,
+  setWeek,
+  day,
+  setDay,
+  done,
+  onToggle,
+  onOpenVocabIds,
+  onEnroll,
+  progress,
+}: {
+  week: number
+  setWeek: (n: number) => void
+  day: number
+  setDay: (n: number) => void
+  done: Set<string>
+  onToggle: (week: number, day: number) => void
+  onOpenVocabIds: (ids: string[]) => void
+  onEnroll: (ids: string[]) => void
+  progress: { doneDays: number; totalDays: number; pct: number; enrolled: number }
+}) {
+  const w = getVocabPathWeek(week) ?? VOCAB_PATH_WEEKS[0]
+  const d = w.days.find((x) => x.day === day) ?? w.days[0]
+  const weekDone = w.days.filter((x) => done.has(vpTaskId(w.week, x.day))).length
+
+  return (
+    <div className="learn-panel">
+      <p className="ai-lead-sm">{VOCAB_PATH_NOTE}</p>
+
+      <div className="progress-grid" style={{ marginBottom: '0.75rem' }}>
+        <div className="progress-card">
+          <div className="progress-head">
+            <strong>兩年進度</strong>
+            <span>
+              {progress.doneDays} / {progress.totalDays} 天（{progress.pct}%）
+            </span>
+          </div>
+          <div className="progress-bar" aria-hidden>
+            <span style={{ width: `${progress.pct}%` }} />
+          </div>
+        </div>
+      </div>
+
+      <div className="level-tabs" role="tablist" aria-label="階段">
+        {VOCAB_PATH_PHASES.map((p) => (
+          <button
+            key={p.titleZh}
+            type="button"
+            className={`level-tab ${week >= p.fromWeek && week <= p.toWeek ? 'active' : ''}`}
+            onClick={() => {
+              setWeek(p.fromWeek)
+              setDay(1)
+            }}
+          >
+            {p.level} {p.titleZh}
+          </button>
+        ))}
+      </div>
+
+      <div className="roadmap-day-tabs" aria-label="週次">
+        {Array.from({ length: 12 }, (_, i) => {
+          const start = Math.floor((week - 1) / 12) * 12 + 1
+          const wk = start + i
+          if (wk > VOCAB_PATH_META.weeks) return null
+          const ww = getVocabPathWeek(wk)
+          const all =
+            ww &&
+            ww.days.every((xd) => done.has(vpTaskId(wk, xd.day)))
+          return (
+            <button
+              key={wk}
+              type="button"
+              className={`level-tab ${week === wk ? 'active' : ''}`}
+              onClick={() => {
+                setWeek(wk)
+                setDay(1)
+              }}
+            >
+              W{wk}
+              {all ? '✓' : ''}
+            </button>
+          )
+        })}
+      </div>
+      <p className="exam-meta">
+        顯示第 {Math.floor((week - 1) / 12) * 12 + 1}–
+        {Math.min(Math.floor((week - 1) / 12) * 12 + 12, VOCAB_PATH_META.weeks)}{' '}
+        週（共 {VOCAB_PATH_META.weeks} 週）。用上方階段可跳轉。
+      </p>
+
+      <article className="exam-card">
+        <div className="detail-top">
+          <span className={`level-pill level-${w.level}`}>{w.level}</span>
+          <span className="type-pill">
+            {weekDone}/7 天完成 · 本週新字 {w.newCount}
+          </span>
+        </div>
+        <h2 className="grammar-title">{w.titleZh}</h2>
+        <p className="exam-card-meta">{w.focusZh}</p>
+      </article>
+
+      <div className="level-tabs">
+        {w.days.map((xd) => (
+          <button
+            key={xd.day}
+            type="button"
+            className={`level-tab ${day === xd.day ? 'active' : ''}`}
+            onClick={() => setDay(xd.day)}
+          >
+            D{xd.day}
+            {done.has(vpTaskId(w.week, xd.day)) ? '✓' : ''}
+            {xd.kind === 'review' ? ' 複' : ''}
+          </button>
+        ))}
+      </div>
+
+      <div className="learn-task">
+        <label>
+          <input
+            type="checkbox"
+            checked={done.has(vpTaskId(w.week, d.day))}
+            onChange={() => onToggle(w.week, d.day)}
+          />
+          <span>
+            <strong>
+              第 {d.day} 天 · {d.titleZh}
+            </strong>
+          </span>
+        </label>
+        <p className="exam-meta">{d.tipZh}</p>
+        {d.kind === 'learn' && (
+          <ul className="learn-vocab-preview">
+            {d.vocabIds.map((id) => {
+              const word = vocabById(id)
+              return (
+                <li key={id}>
+                  {word
+                    ? `${word.article ? word.article + ' ' : ''}${word.word} — ${word.translation}`
+                    : id}
+                </li>
+              )
+            })}
+          </ul>
+        )}
+        <button
+          type="button"
+          className="primary"
+          onClick={() => {
+            onEnroll(d.vocabIds)
+            onOpenVocabIds(
+              d.kind === 'learn' ? d.vocabIds : d.vocabIds.slice(0, 16),
+            )
+          }}
+        >
+          {d.kind === 'learn'
+            ? `去學並排入 SRS（${d.vocabIds.length}）`
+            : '打開本週單字複習'}
+        </button>
+      </div>
     </div>
   )
 }
@@ -416,7 +672,11 @@ function RoadmapPanel({
 
   return (
     <div className="learn-panel">
-      <p className="ai-lead-sm">{ROADMAP_NOTE}</p>
+      <p className="ai-lead-sm">
+        30
+        日入門衝刺（選用）：適合想先混搭文法／閱讀暖身的人。兩年主線請用「單字路徑」。
+        {ROADMAP_NOTE}
+      </p>
       <div className="roadmap-day-tabs">
         {ROADMAP_DAYS.map((x) => {
           const n = x.tasks.filter((t) => done.has(t.id)).length
