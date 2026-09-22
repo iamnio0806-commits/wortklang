@@ -581,6 +581,20 @@ VERB_CURATED: dict[str, tuple[str, str]] = {
     "probieren": ("Möchtest du den Kuchen probieren?", "你想試試這蛋糕嗎？"),
     "singen": ("Wir singen zusammen ein Lied.", "我們一起唱一首歌。"),
     "trinken": ("Möchtest du etwas trinken?", "你想喝點什麼嗎？"),
+    "passen": ("Die Jacke passt mir gut.", "這件外套很適合我。"),
+    "stimmen": ("Das stimmt so nicht.", "這不對／不是這樣。"),
+    "zeigen": ("Kannst du mir den Weg zeigen?", "你可以指給我看路怎麼走嗎？"),
+    "zwingen": ("Niemand darf dich dazu zwingen.", "誰都不能強迫你這麼做。"),
+    "enthalten": ("Der Saft enthält viel Zucker.", "這果汁含很多糖。"),
+    "rechnen": ("Kannst du das bitte nachrechnen?", "可以請你再算一次嗎？"),
+    "schneiden": ("Ich schneide das Brot in Scheiben.", "我把麵包切成片。"),
+    "decken": ("Deck bitte den Tisch!", "請擺好桌子！"),
+    "löschen": ("Lösch bitte das Licht.", "請把燈關掉。"),
+    "vorschlagen": ("Ich schlage vor, früher zu gehen.", "我建議早點走。"),
+    "rennen": ("Die Kinder rennen im Hof.", "孩子們在院子裡跑。"),
+    "zurückkommen": ("Wann kommst du zurück?", "你什麼時候回來？"),
+    "erzählen": ("Erzähl mir bitte von deiner Reise.", "請跟我說說你的旅行。"),
+    "mitessen": ("Darfst du bei uns mitessen?", "你可以跟我們一起吃饭嗎？"),
 }
 
 
@@ -725,15 +739,15 @@ def ex_verb(w, seed) -> tuple[str, str]:
         ]
     else:
         bank = [
-            (f"Ich möchte das später {word}.", f"我想稍後再{zh}。"),
-            (f"Wir können das zusammen {word}.", f"我們可以一起{zh}。"),
+            (f"Ich möchte später {word}.", f"我想稍後再{zh}。"),
+            (f"Wir können zusammen {word}.", f"我們可以一起{zh}。"),
             (f"{name} hat keine Zeit zu {word}.", f"{name}沒時間{zh}。"),
-            (f"Lass uns ruhig {word}.", f"我們慢慢{zh}吧。"),
+            (f"Lass uns in Ruhe {word}.", f"我們慢慢{zh}吧。"),
             (f"Ohne Plan ist es schwer zu {word}.", f"沒計畫就很難{zh}。"),
             (f"Bist du bereit zu {word}?", f"你準備好{zh}了嗎？"),
-            (f"Heute ist ein guter Tag zum {word}.", f"今天很適合{zh}。"),
+            (f"Heute ist ein guter Tag, um zu {word}.", f"今天很適合{zh}。"),
             (f"Ich lerne Schritt für Schritt zu {word}.", f"我一步步學著{zh}。"),
-            (f"Wir sollten früher damit anfangen zu {word}.", f"我們該早點開始{zh}。"),
+            (f"Wir sollten früher anfangen zu {word}.", f"我們該早點開始{zh}。"),
             (f"Mach dir keine Sorgen und fang einfach an zu {word}.", f"別擔心，直接開始{zh}就好。"),
         ]
 
