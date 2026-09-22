@@ -29,24 +29,118 @@ const INTRO_WORDS: {
   { article: 'das', word: 'Brot', zh: '麵包', tip: '飲食：das Brot' },
 ]
 
-const CASES = [
+const CASE_CARDS = [
   {
-    title: '主格 Nominativ',
-    lead: '當主語：誰／什麼在做這件事。',
-    rows: [
-      ['定冠詞', 'der', 'die', 'das', 'die'],
-      ['不定冠詞', 'ein', 'eine', 'ein', '—'],
-    ],
+    num: '一格',
+    de: 'Nominativ',
+    zh: '主格',
+    use: '主語：誰／什麼在做？',
   },
   {
-    title: '第四格 Akkusativ（入門）',
-    lead: '直接受詞：我看到／需要／買誰／什麼。陽性會變。',
-    rows: [
-      ['定冠詞', 'den', 'die', 'das', 'die'],
-      ['不定冠詞', 'einen', 'eine', 'ein', '—'],
-    ],
+    num: '四格',
+    de: 'Akkusativ',
+    zh: '直接受詞',
+    use: '看到／需要／買誰／什麼？陽性會變。',
+  },
+  {
+    num: '三格',
+    de: 'Dativ',
+    zh: '間接受詞',
+    use: '給誰／幫誰？跟 mit、zu、von…',
+  },
+  {
+    num: '二格',
+    de: 'Genitiv',
+    zh: '所有格',
+    use: '誰的？A1 先認識，少主動用。',
+  },
+] as const
+
+/** 格 × 陰陽中性：定冠詞 */
+const DEFINITE_ROWS = [
+  ['一格 Nom.', 'der', 'die', 'das', 'die'],
+  ['四格 Akk.', 'den', 'die', 'das', 'die'],
+  ['三格 Dat.', 'dem', 'der', 'dem', 'den'],
+  ['二格 Gen.', 'des', 'der', 'des', 'der'],
+]
+
+/** 不定冠詞「一個」ein — 複數沒有 ein */
+const INDEFINITE_ROWS = [
+  ['一格 Nom.', 'ein', 'eine', 'ein', '—'],
+  ['四格 Akk.', 'einen', 'eine', 'ein', '—'],
+  ['三格 Dat.', 'einem', 'einer', 'einem', '—'],
+  ['二格 Gen.', 'eines', 'einer', 'eines', '—'],
+]
+
+/** kein「沒有一個」— 變化跟 ein 同一套，複數有 keine */
+const KEIN_ROWS = [
+  ['一格 Nom.', 'kein', 'keine', 'kein', 'keine'],
+  ['四格 Akk.', 'keinen', 'keine', 'kein', 'keine'],
+  ['三格 Dat.', 'keinem', 'keiner', 'keinem', 'keinen'],
+  ['二格 Gen.', 'keines', 'keiner', 'keines', 'keiner'],
+]
+
+const NUMBER_ONE = [
+  {
+    article: 'der' as const,
+    form: 'ein',
+    phrase: 'ein Mann',
+    zh: '一個男人',
+    alone: 'einer',
+  },
+  {
+    article: 'die' as const,
+    form: 'eine',
+    phrase: 'eine Frau',
+    zh: '一個女人',
+    alone: 'eine',
+  },
+  {
+    article: 'das' as const,
+    form: 'ein',
+    phrase: 'ein Kind',
+    zh: '一個孩子',
+    alone: 'eins / eines',
   },
 ]
+
+function GenderTable({
+  caption,
+  rows,
+}: {
+  caption: string
+  rows: string[][]
+}) {
+  return (
+    <div className="ai-case">
+      <h4>{caption}</h4>
+      <div className="grammar-table-wrap">
+        <table className="grammar-table">
+          <thead>
+            <tr>
+              <th>格</th>
+              <th className="gender-der">陽性</th>
+              <th className="gender-die">陰性</th>
+              <th className="gender-das">中性</th>
+              <th>複數</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row) => (
+              <tr key={row[0]}>
+                <td>{row[0]}</td>
+                <td className="gender-der">{row[1]}</td>
+                <td className="gender-die">{row[2]}</td>
+                <td className="gender-das">{row[3]}</td>
+                <td>{row[4]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  )
+}
 
 function Speak({ text, label }: { text: string; label: string }) {
   return (
@@ -113,55 +207,107 @@ export default function ArticlesIntro() {
       </section>
 
       <section className="ai-block">
-        <h3>最常用對照表（主格／第四格）</h3>
-        {CASES.map((block) => (
-          <div key={block.title} className="ai-case">
-            <h4>{block.title}</h4>
-            <p>{block.lead}</p>
-            <div className="grammar-table-wrap">
-              <table className="grammar-table">
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th className="gender-der">陽性</th>
-                    <th className="gender-die">陰性</th>
-                    <th className="gender-das">中性</th>
-                    <th>複數</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {block.rows.map((row) => (
-                    <tr key={row[0]}>
-                      <td>{row[0]}</td>
-                      <td className="gender-der">{row[1]}</td>
-                      <td className="gender-die">{row[2]}</td>
-                      <td className="gender-das">{row[3]}</td>
-                      <td>{row[4]}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        ))}
+        <h3>四格 × 陰陽中性</h3>
+        <p className="ai-lead-sm">
+          教科書常寫「一格、四格、三格、二格」——這是<strong>格</strong>；再乘上陽性／陰性／中性／複數，就是冠詞變化表。A1
+          先把一格、四格摸熟，三格跟著介系詞學，二格先認識即可。
+        </p>
+        <div className="ai-case-grid" aria-label="四個格">
+          {CASE_CARDS.map((c) => (
+            <article key={c.num} className="ai-case-card">
+              <p className="ai-case-num">{c.num}</p>
+              <p className="ai-case-de">{c.de}</p>
+              <p className="ai-case-zh">{c.zh}</p>
+              <p className="ai-case-use">{c.use}</p>
+            </article>
+          ))}
+        </div>
+
+        <GenderTable caption="定冠詞 der / die / das" rows={DEFINITE_ROWS} />
+        <p className="ai-note ai-table-note">
+          入門捷徑：一格→四格，只有陽性 <span className="gender-der">der→den</span>
+          ；陰性、中性外形不變。三格陽性／中性都變 <span className="gender-der">dem</span>
+          ，陰性變 <span className="gender-die">der</span>。
+        </p>
+
+        <GenderTable
+          caption="不定冠詞 ein / eine（「一個」）"
+          rows={INDEFINITE_ROWS}
+        />
+        <p className="ai-note ai-table-note">
+          複數沒有「一個」：要說 die Bücher，不能說 *ein Bücher。mein／dein／sein
+          等物主代詞變化跟 ein 同一套。
+        </p>
+
+        <GenderTable caption="kein（沒有一個／不是）" rows={KEIN_ROWS} />
+        <p className="ai-note ai-table-note">
+          否定名詞用 kein，不要說 *nicht ein Auto → 正確是{' '}
+          <span className="gender-das">kein</span> Auto。
+        </p>
+
         <div className="ai-examples">
           <p>
             <span className="gender-der">Der</span> Mann kommt.／Ich sehe{' '}
-            <span className="gender-der">den</span> Mann.
+            <span className="gender-der">den</span> Mann.／Ich helfe{' '}
+            <span className="gender-der">dem</span> Mann.
           </p>
           <p>
             <span className="gender-die">Die</span> Frau wartet.／Ich treffe{' '}
-            <span className="gender-die">die</span> Frau.
+            <span className="gender-die">die</span> Frau.／mit{' '}
+            <span className="gender-die">der</span> Frau
           </p>
           <p>
             <span className="gender-das">Das</span> Kind spielt.／Ich habe{' '}
-            <span className="gender-das">das</span> Kind.
+            <span className="gender-das">das</span> Kind.／von{' '}
+            <span className="gender-das">dem</span> Kind
           </p>
           <Speak
-            label="聽三句"
-            text="Der Mann kommt. Die Frau wartet. Das Kind spielt."
+            label="聽例句"
+            text="Der Mann kommt. Ich sehe den Mann. Die Frau wartet. Das Kind spielt."
           />
         </div>
+      </section>
+
+      <section className="ai-block">
+        <h3>數詞「一」也分陰陽中</h3>
+        <p className="ai-lead-sm">
+          只有「一」會隨性別變；二、三、四……本身不換陰陽中（後面的名詞冠詞／形容詞才變）。
+        </p>
+        <div className="ai-one-grid">
+          {NUMBER_ONE.map((item) => (
+            <article key={item.phrase} className="ai-one-card">
+              <p className="ai-lemma">
+                <span className={genderClass[item.article]}>{item.form}</span>{' '}
+                {item.phrase.split(' ')[1]}
+              </p>
+              <p className="ai-zh">{item.zh}</p>
+              <p className="ai-tip">
+                單獨說「一個」時常用{' '}
+                <span className={genderClass[item.article]}>{item.alone}</span>
+              </p>
+              <Speak label="聽" text={item.phrase} />
+            </article>
+          ))}
+        </div>
+        <ul className="ai-points">
+          <li>
+            帶名詞：<span className="gender-der">ein</span> Apfel、
+            <span className="gender-die">eine</span> Banane、
+            <span className="gender-das">ein</span> Brot。
+          </li>
+          <li>
+            單獨回答「幾個？」：陽性 <span className="gender-der">einer</span>
+            、陰性 <span className="gender-die">eine</span>、中性常說{' '}
+            <span className="gender-das">eins</span>。
+          </li>
+          <li>
+            zwei／drei／vier… 數字本身不變性別：zwei Äpfel、drei Bücher。
+          </li>
+        </ul>
+        <Speak
+          label="聽：一個蘋果、一個香蕉、一個麵包"
+          text="ein Apfel, eine Banane, ein Brot"
+        />
       </section>
 
       <section className="ai-block">
@@ -197,12 +343,12 @@ export default function ArticlesIntro() {
             <span className="gender-die">die＝紅</span>、
             <span className="gender-das">das＝綠</span>。
           </li>
+          <li>
+            先記「格＋性別」兩軸：橫看陰陽中，豎看一／四／三／二格。
+          </li>
+          <li>ein 跟 kein、mein 是同一套尾巴，背一組等於背三組。</li>
           <li>單字卡正面只寫「冠詞＋名詞」，反面再寫中文。</li>
           <li>先求正確，不要先追「為什麼是這個性別」——很多只能硬記。</li>
-          <li>
-            複數先記：不管單數是誰，複數定冠詞多半是{' '}
-            <span className="gender-die">die</span>。
-          </li>
         </ul>
       </section>
     </div>
