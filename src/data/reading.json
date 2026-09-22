@@ -1,9 +1,10 @@
 {
   "levels": [
     "A1",
-    "A2"
+    "A2",
+    "B1"
   ],
-  "note": "A1：短句／對話／告示；A2：段落／郵件／公告。先完成前面等級。",
+  "note": "A1：短句／對話／告示；A2：段落／郵件／公告；B1：較長文章與正式情境，含從句、被動與客氣表達。",
   "items": [
     {
       "id": "a1-01",
@@ -4778,6 +4779,2847 @@
         "複習",
         "生活",
         "dass"
+      ]
+    },
+    {
+      "id": "b1-01",
+      "level": "B1",
+      "kind": "story",
+      "topic": "工作",
+      "title": "Mein erster Job in Deutschland",
+      "titleZh": "我在德國的第一份工作",
+      "text": "Als ich nach Deutschland kam, suchte ich zuerst einen Nebenjob.\nNach drei Wochen habe ich in einem Café angefangen.\nAm Anfang war alles neu: die Bestellungen, die Kunden und das Tempo.\nWeil ich noch unsicher war, habe ich oft nachgefragt.\nMeine Kolleginnen waren geduldig und haben mir viel erklärt.\nHeute fühle ich mich sicherer, obwohl ich noch Fehler mache.\nDer Job hilft mir nicht nur finanziell, sondern auch beim Deutschlernen.",
+      "textZh": "我剛到德國時，先找打工。\n三週後我在一間咖啡廳開始上班。\n一開始一切都陌生：點餐、客人，還有節奏。\n因為我還不確定，所以常常再確認。\n同事們很有耐心，跟我解釋很多。\n現在我比較有把握了，雖然還是會犯錯。\n這份工作不只在經濟上幫我，也幫我學德文。",
+      "notes": [
+        {
+          "span": "Als ich … kam",
+          "zh": "當我……來時",
+          "tip": "過去時間子句，動詞在句尾。"
+        },
+        {
+          "span": "Nebenjob",
+          "zh": "打工／兼職"
+        },
+        {
+          "span": "Weil ich noch unsicher war",
+          "zh": "因為我還不確定",
+          "tip": "weil 子句動詞在句尾。"
+        },
+        {
+          "span": "obwohl ich noch Fehler mache",
+          "zh": "雖然我還會犯錯",
+          "tip": "obwohl＝儘管。"
+        },
+        {
+          "span": "nicht nur …, sondern auch …",
+          "zh": "不僅……而且……"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Als + 過去式, + 主句",
+          "zh": "敘述過去時間點",
+          "example": "Als ich ankam, war ich nervös."
+        },
+        {
+          "pattern": "Weil + 子句, + 主句",
+          "zh": "說明原因",
+          "example": "Weil es regnete, blieben wir zu Hause."
+        },
+        {
+          "pattern": "obwohl + 子句",
+          "zh": "讓步",
+          "example": "Obwohl ich müde bin, lerne ich weiter."
+        },
+        {
+          "pattern": "nicht nur A, sondern auch B",
+          "zh": "遞進",
+          "example": "Nicht nur billig, sondern auch gut."
+        }
+      ],
+      "tips": [
+        "B1 短文常見：Als／Weil／obwohl 串故事。",
+        "先標出所有子句動詞位置，再整段朗讀。"
+      ],
+      "focus": [
+        "從句",
+        "過去敘事",
+        "連接詞"
+      ]
+    },
+    {
+      "id": "b1-02",
+      "level": "B1",
+      "kind": "email",
+      "topic": "正式郵件",
+      "title": "Bewerbung um ein Praktikum",
+      "titleZh": "實習申請信",
+      "text": "Betreff: Bewerbung um ein Praktikum im Marketing\n\nSehr geehrte Frau Braun,\n\nhiermit bewerbe ich mich um ein dreimonatiges Praktikum in Ihrer Abteilung.\nIch studiere Betriebswirtschaft und interessiere mich besonders für digitale Kampagnen.\nWährend meines Studiums habe ich bereits an einem Hochschulprojekt mitgearbeitet, bei dem wir Social-Media-Inhalte geplant haben.\nIch arbeite zuverlässig, lerne schnell und kann gut im Team arbeiten.\nÜber eine Einladung zum Gespräch würde ich mich sehr freuen.\n\nMit freundlichen Grüßen\nLara Hoffmann",
+      "textZh": "主旨：申請行銷部門實習\n\n敬愛的 Braun 女士：\n\n謹此申請貴部門為期三個月的實習。\n我主修企管，特別對數位活動有興趣。\n在學期間我已參與過一個大學專案，我們規劃社群內容。\n我做事可靠、學習快，也能良好團隊合作。\n若能獲邀面談，將不勝感激。\n\n此致問候\nLara Hoffmann",
+      "notes": [
+        {
+          "span": "hiermit bewerbe ich mich um",
+          "zh": "謹此申請……"
+        },
+        {
+          "span": "Während meines Studiums",
+          "zh": "在學期間",
+          "tip": "während + 第二格。"
+        },
+        {
+          "span": "bei dem wir … geplant haben",
+          "zh": "在其中我們……",
+          "tip": "關係子句。"
+        },
+        {
+          "span": "Über … würde ich mich freuen",
+          "zh": "若……我會很高興",
+          "tip": "客氣虛擬式。"
+        },
+        {
+          "span": "Sehr geehrte … / Mit freundlichen Grüßen",
+          "zh": "正式書信開頭結尾"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Hiermit bewerbe ich mich um + 第四格",
+          "zh": "正式申請",
+          "example": "Hiermit bewerbe ich mich um die Stelle."
+        },
+        {
+          "pattern": "Während + Genitiv …",
+          "zh": "在……期間",
+          "example": "Während der Woche arbeite ich."
+        },
+        {
+          "pattern": "bei dem / der / dem + 關係子句",
+          "zh": "補充說明名詞",
+          "example": "das Projekt, bei dem ich half"
+        },
+        {
+          "pattern": "Über … würde ich mich freuen",
+          "zh": "客氣期待",
+          "example": "Über eine Antwort würde ich mich freuen."
+        }
+      ],
+      "tips": [
+        "正式信：稱呼正確、動機清楚、結尾客氣。",
+        "把行銷換成你的科系／部門再寫一版。"
+      ],
+      "focus": [
+        "正式郵件",
+        "關係子句",
+        "虛擬式客氣"
+      ]
+    },
+    {
+      "id": "b1-03",
+      "level": "B1",
+      "kind": "story",
+      "topic": "居住",
+      "title": "Nachbarn und Rücksicht",
+      "titleZh": "鄰居與體諒",
+      "text": "In meinem Haus wohnen Menschen aus vielen Ländern.\nMeistens ist es ruhig, aber am Wochenende wird manchmal laut gefeiert.\nDeshalb haben wir uns auf eine Hausregel geeinigt: nach 22 Uhr keine laute Musik.\nWer Gäste einlädt, informiert die Nachbarn vorher kurz.\nSeitdem gibt es deutlich weniger Konflikte.\nIch finde das fair, weil jeder Erholung braucht.",
+      "textZh": "我這棟樓住著許多不同國家的人。\n大多時候很安靜，但週末有時會吵鬧慶祝。\n因此我們約好一條規矩：22 點後不大聲放音樂。\n誰請客，就先簡短告知鄰居。\n從那以後衝突明顯變少。\n我覺得公平，因為每個人都需要休息。",
+      "notes": [
+        {
+          "span": "sich einigen auf",
+          "zh": "就……達成共識"
+        },
+        {
+          "span": "Hausregel",
+          "zh": "大樓規定"
+        },
+        {
+          "span": "Wer …, …",
+          "zh": "誰……，就……",
+          "tip": "無先行詞的關係句。"
+        },
+        {
+          "span": "Seitdem",
+          "zh": "從那時起"
+        },
+        {
+          "span": "deutlich weniger",
+          "zh": "明顯比較少"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "sich auf etwas einigen",
+          "zh": "達成共識",
+          "example": "Wir haben uns auf einen Termin geeinigt."
+        },
+        {
+          "pattern": "Wer + 動詞, + 主句",
+          "zh": "泛指『任何人』",
+          "example": "Wer kommt, bringt Kuchen mit."
+        },
+        {
+          "pattern": "Seitdem + 句子",
+          "zh": "從那時起",
+          "example": "Seitdem schlafe ich besser."
+        }
+      ],
+      "tips": [
+        "B1 談社區規則：原因＋解決＋結果。"
+      ],
+      "focus": [
+        "被動語氣入門",
+        "關係句",
+        "社會"
+      ]
+    },
+    {
+      "id": "b1-04",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "行政",
+      "title": "Anmeldung beim Bürgeramt",
+      "titleZh": "市民局登記公告",
+      "text": "Hinweis zur Anmeldung\nNeuzugezogene müssen sich innerhalb von zwei Wochen anmelden.\nBitte bringen Sie Pass, Mietvertrag und eine Wohnungsgeberbestätigung mit.\nOhne Termin ist die Wartezeit oft länger als eine Stunde.\nTermine können online gebucht werden.\nBei fehlenden Unterlagen kann der Antrag nicht bearbeitet werden.",
+      "textZh": "戶籍登記提示\n新遷入者須於兩週內辦理登記。\n請攜帶護照、租約與房東住宿證明。\n若無預約，等候常超過一小時。\n可線上預約。\n缺件時申請無法受理。",
+      "notes": [
+        {
+          "span": "Neuzugezogene",
+          "zh": "新遷入者"
+        },
+        {
+          "span": "innerhalb von zwei Wochen",
+          "zh": "兩週內"
+        },
+        {
+          "span": "Wohnungsgeberbestätigung",
+          "zh": "房東住宿證明"
+        },
+        {
+          "span": "ohne Termin",
+          "zh": "未預約"
+        },
+        {
+          "span": "kann … nicht bearbeitet werden",
+          "zh": "無法被處理",
+          "tip": "被動。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "innerhalb von + 時間",
+          "zh": "時限內",
+          "example": "innerhalb von drei Tagen"
+        },
+        {
+          "pattern": "kann … werden",
+          "zh": "可能性／被動",
+          "example": "kann nicht geändert werden"
+        },
+        {
+          "pattern": "Bitte bringen Sie … mit",
+          "zh": "正式攜帶清單",
+          "example": "Bitte Ausweis mitbringen"
+        }
+      ],
+      "tips": [
+        "行政公告：義務、文件、後果要抓到。"
+      ],
+      "focus": [
+        "行政",
+        "被動",
+        "正式用語"
+      ]
+    },
+    {
+      "id": "b1-05",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "職場",
+      "title": "Feedback im Team",
+      "titleZh": "團隊回饋",
+      "text": "Chefin: Wie läuft die neue Aufgabe für dich?\nMitarbeiter: Insgesamt gut, aber die Deadline war eng.\nChefin: Was hätte dir geholfen?\nMitarbeiter: Wenn ich früher die Dateien bekommen hätte, wäre ich fertiger geworden.\nChefin: Verstehe. Ab jetzt schicken wir die Unterlagen zwei Tage früher.\nMitarbeiter: Das wäre eine große Hilfe, danke.",
+      "textZh": "主管：新任務對你來說怎麼樣？\n員工：整體不錯，但截止很緊。\n主管：什麼會對你有幫助？\n員工：如果我更早拿到檔案，就會完成得更完整。\n主管：了解。從現在起我們提早兩天寄資料。\n員工：那會是很大幫助，謝謝。",
+      "notes": [
+        {
+          "span": "Insgesamt",
+          "zh": "整體而言"
+        },
+        {
+          "span": "Deadline",
+          "zh": "截止日期"
+        },
+        {
+          "span": "Was hätte dir geholfen?",
+          "zh": "什麼本來會幫到你？",
+          "tip": "虛擬式。"
+        },
+        {
+          "span": "Wenn ich … bekommen hätte, wäre ich …",
+          "zh": "與過去事實相反的條件"
+        },
+        {
+          "span": "Ab jetzt",
+          "zh": "從現在起"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Was hätte dir geholfen?",
+          "zh": "回饋提問",
+          "example": "Was hättest du gebraucht?"
+        },
+        {
+          "pattern": "Wenn ich … hätte, wäre / hätte ich …",
+          "zh": "虛擬條件",
+          "example": "Wenn ich Zeit hätte, käme ich."
+        },
+        {
+          "pattern": "Ab jetzt + 改變",
+          "zh": "宣布新規則",
+          "example": "Ab jetzt starten wir früher."
+        }
+      ],
+      "tips": [
+        "B1 職場對話會出現客氣虛擬式。",
+        "把重點放在『問題→假設→改善』。"
+      ],
+      "focus": [
+        "虛擬式",
+        "職場",
+        "條件句"
+      ]
+    },
+    {
+      "id": "b1-06",
+      "level": "B1",
+      "kind": "story",
+      "topic": "健康",
+      "title": "Nach dem Sportarzt",
+      "titleZh": "看完運動醫生之後",
+      "text": "Seit meinem Sturz beim Joggen habe ich Knieschmerzen.\nDer Arzt hat gesagt, dass ich zwei Wochen pausieren soll.\nAußerdem soll ich regelmäßig Dehnübungen machen.\nObwohl ich ungern auf Sport verzichte, folge ich dem Rat.\nLangfristig ist das vernünftiger, als weiterzulaufen und alles zu verschlimmern.\nNächste Woche habe ich einen Kontrolltermin.",
+      "textZh": "自從跑步跌倒後我膝蓋痛。\n醫生說我應該休息兩週。\n此外要定期做伸展。\n雖然我不想放棄運動，但我聽從建議。\n長期來看，這比繼續跑、把狀況弄糟更合理。\n下週我有回診。",
+      "notes": [
+        {
+          "span": "Seit meinem Sturz",
+          "zh": "自從我跌倒後"
+        },
+        {
+          "span": "dass ich … soll",
+          "zh": "說我應該……",
+          "tip": "dass 子句。"
+        },
+        {
+          "span": "auf etwas verzichten",
+          "zh": "放棄某事"
+        },
+        {
+          "span": "Langfristig",
+          "zh": "長期來看"
+        },
+        {
+          "span": "als weiterzulaufen",
+          "zh": "比起繼續跑",
+          "tip": "比較＋zu 不定式。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Der Arzt hat gesagt, dass …",
+          "zh": "轉述醫囑",
+          "example": "Sie sagt, dass ich warten soll."
+        },
+        {
+          "pattern": "auf etwas verzichten",
+          "zh": "放棄",
+          "example": "Ich verzichte auf Zucker."
+        },
+        {
+          "pattern": "vernünftiger, als zu + 不定式",
+          "zh": "比較合理",
+          "example": "Besser, als nichts zu tun."
+        }
+      ],
+      "tips": [
+        "健康主題常有建議與讓步。"
+      ],
+      "focus": [
+        "dass",
+        "比較",
+        "健康"
+      ]
+    },
+    {
+      "id": "b1-07",
+      "level": "B1",
+      "kind": "email",
+      "topic": "投訴升級",
+      "title": "Beschwerde über eine Lieferung",
+      "titleZh": "物流投訴信",
+      "text": "Sehr geehrte Damen und Herren,\n\nam 3. März habe ich die Bestellung Nr. 88214 aufgegeben.\nLaut Sendungsverfolgung sollte das Paket schon am Freitag ankommen.\nLeider ist es bis heute nicht da, obwohl der Status „zugestellt“ zeigt.\nIch bitte Sie, den Fall zu prüfen und mir bis Ende der Woche eine Lösung anzubieten.\nAndernfalls werde ich die Zahlung zurückfordern.\n\nMit freundlichen Grüßen\nJonas Berg",
+      "textZh": "敬啟者：\n\n我於 3 月 3 日下了訂單 88214。\n依物流追蹤，包裹應於週五送達。\n遺憾的是至今未到，儘管狀態顯示「已送達」。\n請貴公司查核此案，並於本週末前提供解決方案。\n否則我將要求退款。\n\n此致問候\nJonas Berg",
+      "notes": [
+        {
+          "span": "Laut + 名詞",
+          "zh": "根據……"
+        },
+        {
+          "span": "obwohl der Status … zeigt",
+          "zh": "儘管狀態顯示……"
+        },
+        {
+          "span": "Ich bitte Sie, zu + 不定式",
+          "zh": "懇請您……"
+        },
+        {
+          "span": "Andernfalls",
+          "zh": "否則"
+        },
+        {
+          "span": "zurückfordern",
+          "zh": "要求退回"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Laut + 名詞 / Angaben",
+          "zh": "引據",
+          "example": "Laut Wetterbericht regnet es."
+        },
+        {
+          "pattern": "Ich bitte Sie, … zu prüfen",
+          "zh": "正式請求",
+          "example": "Ich bitte Sie, mir zu schreiben."
+        },
+        {
+          "pattern": "Andernfalls + Futur/werden",
+          "zh": "否則後果",
+          "example": "Andernfalls werde ich stornieren."
+        }
+      ],
+      "tips": [
+        "投訴信語氣堅定但保持禮貌。"
+      ],
+      "focus": [
+        "正式郵件",
+        "讓步",
+        "請求"
+      ]
+    },
+    {
+      "id": "b1-08",
+      "level": "B1",
+      "kind": "story",
+      "topic": "學習",
+      "title": "Prüfungsvorbereitung",
+      "titleZh": "考試準備",
+      "text": "In zwei Wochen schreibe ich die B1-Prüfung.\nDeshalb habe ich einen Lernplan gemacht.\nMorgens wiederhole ich Grammatik, nachmittags lese ich kurze Artikel.\nWas mir noch schwerfällt, sind die Hörtexte mit Dialekt.\nDeshalb übe ich mit Podcasts, die langsam und klar gesprochen sind.\nWenn ich den Plan einhalte, fühle ich mich am Prüfungstag sicherer.",
+      "textZh": "兩週後我要考 B1。\n因此我做了學習計畫。\n早上複習文法，下午讀短文。\n我仍覺得難的是帶口音的聽力。\n所以我用說得慢又清楚的 Podcast 練習。\n若我遵守計畫，考試當天會更有把握。",
+      "notes": [
+        {
+          "span": "schreibe … die Prüfung",
+          "zh": "參加筆試／考試",
+          "tip": "Prüfung schreiben。"
+        },
+        {
+          "span": "Was mir noch schwerfällt",
+          "zh": "我仍覺得難的是……",
+          "tip": "free relative。"
+        },
+        {
+          "span": "Hörtexte",
+          "zh": "聽力文本"
+        },
+        {
+          "span": "den Plan einhalten",
+          "zh": "遵守計畫"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Was mir schwerfällt, ist …",
+          "zh": "說明難點",
+          "example": "Was mir hilft, ist Wiederholung."
+        },
+        {
+          "pattern": "Deshalb übe ich mit …, die …",
+          "zh": "因果＋關係子句",
+          "example": "Ich lese Bücher, die kurz sind."
+        },
+        {
+          "pattern": "Wenn ich … einhalte, …",
+          "zh": "條件與規律",
+          "example": "Wenn ich übe, werde ich besser."
+        }
+      ],
+      "tips": [
+        "把你的弱項寫成『Was mir schwerfällt…』一句。"
+      ],
+      "focus": [
+        "學習",
+        "關係句",
+        "計畫"
+      ]
+    },
+    {
+      "id": "b1-09",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "租屋",
+      "title": "Hausordnung Auszug",
+      "titleZh": "住戶公約摘錄",
+      "text": "Auszug aus der Hausordnung\n1. Die Ruhezeiten gelten von 22 bis 6 Uhr sowie sonntags ganztägig.\n2. Fahrräder gehören in den Keller, nicht in den Flur.\n3. Der Hausflur muss freigehalten werden (Fluchtweg).\n4. Müll ist getrennt und nur zu den Abfuhrzeiten rauszustellen.\nVerstöße können zu einer Abmahnung führen.",
+      "textZh": "住戶公約摘錄\n1. 安靜時段為 22–6 點以及週日全天。\n2. 腳踏車放地下室，不放走廊。\n3. 走廊須保持暢通（逃生通道）。\n4. 垃圾須分類，且僅在清運時段拿出。\n違規可能導致警告。",
+      "notes": [
+        {
+          "span": "Ruhezeiten",
+          "zh": "安靜時段"
+        },
+        {
+          "span": "freigehalten werden",
+          "zh": "被保持暢通",
+          "tip": "被動。"
+        },
+        {
+          "span": "Fluchtweg",
+          "zh": "逃生通道"
+        },
+        {
+          "span": "rauszustellen",
+          "zh": "拿到外面",
+          "tip": "zu 不定式拼寫。"
+        },
+        {
+          "span": "Abmahnung",
+          "zh": "警告函"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "gelten von … bis …",
+          "zh": "規定時段",
+          "example": "Die Regel gilt für alle."
+        },
+        {
+          "pattern": "muss … werden",
+          "zh": "義務被動",
+          "example": "muss getrennt werden"
+        },
+        {
+          "pattern": "können zu … führen",
+          "zh": "可能導致",
+          "example": "kann zu Problemen führen"
+        }
+      ],
+      "tips": [
+        "公約閱讀抓：禁止、義務、後果。"
+      ],
+      "focus": [
+        "被動",
+        "規定",
+        "住房"
+      ]
+    },
+    {
+      "id": "b1-10",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "服務",
+      "title": "Reklamation im Laden",
+      "titleZh": "店內申訴",
+      "text": "Kundin: Guten Tag, ich habe diese Jeans vor einer Woche gekauft.\nLeider ist der Reißverschluss kaputt.\nVerkäufer: Haben Sie den Kassenbon?\nKundin: Ja, hier. Könnte ich umtauschen oder das Geld zurückbekommen?\nVerkäufer: Umtausch ist möglich. Möchten Sie eine andere Größe?\nKundin: Ja, bitte eine Nummer größer.",
+      "textZh": "顧客：您好，我一週前買了這條牛仔褲。\n遺憾拉鍊壞了。\n店員：您有收據嗎？\n顧客：有，在這。我可以換貨或退款嗎？\n店員：可以換貨。要換別的尺寸嗎？\n顧客：好，請大一號。",
+      "notes": [
+        {
+          "span": "Reißverschluss",
+          "zh": "拉鍊"
+        },
+        {
+          "span": "Kassenbon",
+          "zh": "收據"
+        },
+        {
+          "span": "umtauschen",
+          "zh": "換貨"
+        },
+        {
+          "span": "zurückbekommen",
+          "zh": "拿回（錢）"
+        },
+        {
+          "span": "eine Nummer größer",
+          "zh": "大一號"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Könnte ich …?",
+          "zh": "客氣請求許可",
+          "example": "Könnte ich umtauschen?"
+        },
+        {
+          "pattern": "Umtausch ist möglich",
+          "zh": "說明政策",
+          "example": "Rückgabe ist möglich innerhalb 14 Tagen."
+        },
+        {
+          "pattern": "eine Nummer größer / kleiner",
+          "zh": "尺寸調整",
+          "example": "Bitte eine Nummer kleiner."
+        }
+      ],
+      "tips": [
+        "消費維權對話：問題＋證明＋請求選項。"
+      ],
+      "focus": [
+        "購物",
+        "客氣虛擬式"
+      ]
+    },
+    {
+      "id": "b1-11",
+      "level": "B1",
+      "kind": "story",
+      "topic": "交通",
+      "title": "Ohne Auto in der Stadt",
+      "titleZh": "在城市不開車",
+      "text": "Seit ich in die Stadt gezogen bin, nutze ich selten das Auto.\nMeistens fahre ich mit dem Rad oder der Straßenbahn.\nDas spart Geld und ist oft schneller in der Rushhour.\nAllerdings wird es problematisch, wenn ich schwere Einkäufe habe.\nDann leihe ich mir ein Lastenrad oder bestelle online.\nInsgesamt bin ich mit dieser Lösung zufrieden, weil sie flexibel ist.",
+      "textZh": "自從搬到城市後，我很少開車。\n多半騎車或搭路面電車。\n這樣省錢，尖峰時段也常比較快。\n不過買重東西時就麻煩了。\n那時我會借貨運自行車或改網購。\n整體我滿意這做法，因為彈性高。",
+      "notes": [
+        {
+          "span": "Seit ich … gezogen bin",
+          "zh": "自從我搬家後"
+        },
+        {
+          "span": "Rushhour",
+          "zh": "尖峰時刻"
+        },
+        {
+          "span": "Allerdings",
+          "zh": "不過"
+        },
+        {
+          "span": "Lastenrad",
+          "zh": "貨運自行車"
+        },
+        {
+          "span": "Insgesamt",
+          "zh": "整體而言"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Seit ich …, …",
+          "zh": "自從……之後",
+          "example": "Seit ich hier wohne, lerne ich Deutsch."
+        },
+        {
+          "pattern": "Allerdings + 對比",
+          "zh": "轉折",
+          "example": "Allerdings ist es teurer."
+        },
+        {
+          "pattern": "Insgesamt + 評價",
+          "zh": "總結",
+          "example": "Insgesamt war es gut."
+        }
+      ],
+      "tips": [
+        "論點短文：優點→限制→折衷→總結。"
+      ],
+      "focus": [
+        "論述",
+        "交通",
+        "連接詞"
+      ]
+    },
+    {
+      "id": "b1-12",
+      "level": "B1",
+      "kind": "email",
+      "topic": "大學",
+      "title": "Verlängerung der Abgabefrist",
+      "titleZh": "延期繳交申請",
+      "text": "Sehr geehrter Herr Prof. Keller,\n\nleider kann ich die Hausarbeit nicht bis Freitag abgeben.\nAufgrund einer Erkrankung in der Familie brauche ich mehr Zeit.\nKönnten Sie die Frist bitte bis zum 20. des Monats verlängern?\nIch habe bereits einen großen Teil fertig und würde die Arbeit dann vollständig einreichen.\n\nMit freundlichen Grüßen\nMira Soltani",
+      "textZh": "敬愛的 Keller 教授：\n\n遺憾我無法在週五前繳交報告。\n因家中有人生病，我需要更多時間。\n可否請您將期限延至本月 20 日？\n我已完成大部分，屆時會完整繳交。\n\n此致問候\nMira Soltani",
+      "notes": [
+        {
+          "span": "Aufgrund + Genitiv",
+          "zh": "由於……"
+        },
+        {
+          "span": "Frist verlängern",
+          "zh": "延長期限"
+        },
+        {
+          "span": "einen großen Teil",
+          "zh": "一大部分"
+        },
+        {
+          "span": "einreichen",
+          "zh": "繳交／提交"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Aufgrund + Genitiv / von …",
+          "zh": "原因",
+          "example": "Aufgrund des Wetters …"
+        },
+        {
+          "pattern": "Könnten Sie … verlängern?",
+          "zh": "請求延期",
+          "example": "Könnten Sie den Termin verschieben?"
+        },
+        {
+          "pattern": "Ich würde … einreichen",
+          "zh": "客氣未來計畫",
+          "example": "Ich würde dann kommen."
+        }
+      ],
+      "tips": [
+        "學術郵件：原因具體、提出新日期、說明進度。"
+      ],
+      "focus": [
+        "正式郵件",
+        "大學",
+        "Genitiv"
+      ]
+    },
+    {
+      "id": "b1-13",
+      "level": "B1",
+      "kind": "story",
+      "topic": "數位",
+      "title": "Digitale Pause",
+      "titleZh": "數位休息",
+      "text": "Früher habe ich abends stundenlang Serien geschaut.\nDanach konnte ich schlecht einschlafen.\nDeshalb habe ich mir eine digitale Pause von 21 Uhr an vorgenommen.\nStattdessen lese ich oder gehe kurz spazieren.\nAm Anfang war das ungewohnt, aber nach zwei Wochen fühlte ich mich erholter.\nManchmal breche ich die Regel, doch ich starte am nächsten Tag neu.",
+      "textZh": "以前我晚上會長時間追劇。\n之後很難入睡。\n因此我決定從 21 點起數位休息。\n改為閱讀或短暫散步。\n一開始不習慣，但兩週後覺得更有恢復感。\n有時會破功，但我隔天重新開始。",
+      "notes": [
+        {
+          "span": "stundenlang",
+          "zh": "連續數小時"
+        },
+        {
+          "span": "einschlafen",
+          "zh": "入睡"
+        },
+        {
+          "span": "sich etwas vornehmen",
+          "zh": "下決心做某事"
+        },
+        {
+          "span": "von 21 Uhr an",
+          "zh": "從 21 點起"
+        },
+        {
+          "span": "ungewohnt",
+          "zh": "不習慣的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "sich vornehmen, zu + 不定式／名詞",
+          "zh": "立志",
+          "example": "Ich nehme mir vor, früher zu schlafen."
+        },
+        {
+          "pattern": "Am Anfang …, aber nach …",
+          "zh": "過程變化",
+          "example": "Am Anfang schwer, aber dann leichter."
+        },
+        {
+          "pattern": "doch + 轉折",
+          "zh": "口語轉折",
+          "example": "Ich will, doch ich kann nicht."
+        }
+      ],
+      "tips": [
+        "習慣改變敘事很適合 B1。"
+      ],
+      "focus": [
+        "生活",
+        "連接詞"
+      ]
+    },
+    {
+      "id": "b1-14",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "工作",
+      "title": "Homeoffice-Regelung",
+      "titleZh": "在家上班規定",
+      "text": "Interne Regelung: Homeoffice\nMitarbeitende dürfen bis zu zwei Tage pro Woche von zu Hause arbeiten.\nVoraussetzung ist, dass die Aufgaben das zulassen und die Erreichbarkeit gesichert ist.\nTermine mit Kundinnen und Kunden finden weiter vor Ort statt, sofern nichts anderes vereinbart wurde.\nTechnikprobleme sind umgehend der IT zu melden.",
+      "textZh": "內部規定：在家上班\n員工每週最多可在家兩天。\n前提是任務允許，且可保持聯繫。\n與客戶的會面原則上仍在現場，除非另有約定。\n技術問題須立即向 IT 回報。",
+      "notes": [
+        {
+          "span": "dürfen bis zu …",
+          "zh": "最多可……"
+        },
+        {
+          "span": "Voraussetzung ist, dass …",
+          "zh": "前提是……"
+        },
+        {
+          "span": "Erreichbarkeit",
+          "zh": "可聯繫性"
+        },
+        {
+          "span": "sofern",
+          "zh": "只要／除非另有……",
+          "tip": "偏正式。"
+        },
+        {
+          "span": "umgehend",
+          "zh": "立即"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Voraussetzung ist, dass …",
+          "zh": "訂定前提",
+          "example": "Bedingung ist, dass …"
+        },
+        {
+          "pattern": "sofern nichts anderes …",
+          "zh": "除外條件",
+          "example": "sofern nicht anders vereinbart"
+        },
+        {
+          "pattern": "ist … zu melden",
+          "zh": "必須回報（正式）",
+          "example": "ist zu beachten"
+        }
+      ],
+      "tips": [
+        "職場公告語氣客觀、條件清楚。"
+      ],
+      "focus": [
+        "職場",
+        "dass",
+        "正式"
+      ]
+    },
+    {
+      "id": "b1-15",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "旅行投訴",
+      "title": "Verspäteter Flug",
+      "titleZh": "班機延誤",
+      "text": "Passagier: Entschuldigung, mein Flug hat drei Stunden Verspätung.\nGibt es Verpflegung oder eine Entschädigung?\nMitarbeiterin: Bei dieser Verspätung haben Sie Anspruch auf Snacks und Getränke.\nPassagier: Und wenn ich den Anschlussflug verpasse?\nMitarbeiterin: Dann buchen wir Sie auf die nächste Verbindung um.\nPassagier: Alles klar, danke für die Information.",
+      "textZh": "乘客：不好意思，我的班機延誤三小時。\n有餐食或補償嗎？\n職員：依此延誤，您有權獲得點心與飲料。\n乘客：若我錯過轉機呢？\n職員：那我們會幫您改訂下一班。\n乘客：好的，謝謝說明。",
+      "notes": [
+        {
+          "span": "Anspruch auf",
+          "zh": "有權獲得……"
+        },
+        {
+          "span": "Verpflegung",
+          "zh": "餐食供應"
+        },
+        {
+          "span": "Entschädigung",
+          "zh": "補償"
+        },
+        {
+          "span": "Anschlussflug",
+          "zh": "轉機航班"
+        },
+        {
+          "span": "umbuchen auf",
+          "zh": "改訂到……"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Anspruch auf + 第四格 haben",
+          "zh": "主張權利",
+          "example": "Ich habe Anspruch auf Hilfe."
+        },
+        {
+          "pattern": "Wenn ich … verpasse, dann …",
+          "zh": "假設後果",
+          "example": "Wenn ich den Bus verpasse, nehme ich ein Taxi."
+        },
+        {
+          "pattern": "umbuchen auf + 第四格",
+          "zh": "改訂",
+          "example": "auf einen späteren Zug umbuchen"
+        }
+      ],
+      "tips": [
+        "旅行突發：問權利＋問備案。"
+      ],
+      "focus": [
+        "旅行",
+        "條件",
+        "權利用語"
+      ]
+    },
+    {
+      "id": "b1-16",
+      "level": "B1",
+      "kind": "story",
+      "topic": "社會",
+      "title": "Ehrenamt im Tierheim",
+      "titleZh": "動物收容所志工",
+      "text": "Einmal wöchentlich helfe ich in einem Tierheim.\nDort gehe ich mit den Hunden spazieren und reinige Gehege.\nManche Tiere sind schüchtern, weil sie schlechte Erfahrungen gemacht haben.\nMan muss geduldig sein und klare Routinen einhalten.\nWas mich motiviert, ist das Gefühl, etwas Nützliches beizutragen.\nAußerdem verbessere ich mein Deutsch im Gespräch mit den anderen Helfenden.",
+      "textZh": "我每週一次在動物收容所幫忙。\n在那裡帶狗散步、清理圍欄。\n有些動物很怕生，因為有過不好經驗。\n必須有耐心並遵守清楚作息。\n激勵我的是感到自己有貢獻。\n此外跟其他志工交談也讓我德文進步。",
+      "notes": [
+        {
+          "span": "Gehege",
+          "zh": "圍欄／獸欄"
+        },
+        {
+          "span": "schüchtern",
+          "zh": "怕生／害羞"
+        },
+        {
+          "span": "Routinen einhalten",
+          "zh": "遵守例行"
+        },
+        {
+          "span": "etwas Nützliches beitragen",
+          "zh": "做出有用貢獻"
+        },
+        {
+          "span": "Helfenden",
+          "zh": "協助者們",
+          "tip": "分詞當名詞。"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Was mich motiviert, ist …",
+          "zh": "說明動機",
+          "example": "Was mich stört, ist der Lärm."
+        },
+        {
+          "pattern": "Man muss … und …",
+          "zh": "一般義務",
+          "example": "Man muss warten und zuhören."
+        },
+        {
+          "pattern": "weil sie … gemacht haben",
+          "zh": "完成式原因",
+          "example": "weil er gelernt hat"
+        }
+      ],
+      "tips": [
+        "志工主題可練習『動機＋規則＋收穫』。"
+      ],
+      "focus": [
+        "社會",
+        "關係句",
+        "完成式"
+      ]
+    },
+    {
+      "id": "b1-17",
+      "level": "B1",
+      "kind": "email",
+      "topic": "房東",
+      "title": "Feuchtigkeit in der Wohnung",
+      "titleZh": "公寓潮濕問題",
+      "text": "Sehr geehrte Frau Lorenz,\n\nseit zwei Wochen bemerke ich Feuchtigkeit an der Schlafzimmerwand.\nEs riecht muffig und die Farbe blättert ab.\nIch habe bereits gelüftet und die Heizung angepasst, aber das Problem bleibt.\nKönnten Sie bitte eine Fachfirma schicken oder einen Termin zur Besichtigung vorschlagen?\nFotos habe ich angehängt.\n\nMit freundlichen Grüßen\nKeno Ali",
+      "textZh": "敬愛的 Lorenz 女士：\n\n兩週來我發現臥室牆面潮濕。\n有霉味，油漆也在剝落。\n我已通風並調整暖氣，但問題仍在。\n可否請您派專業廠商，或提出看屋時間？\n照片已附上。\n\n此致問候\nKeno Ali",
+      "notes": [
+        {
+          "span": "bemerke",
+          "zh": "察覺"
+        },
+        {
+          "span": "muffig",
+          "zh": "霉味的"
+        },
+        {
+          "span": "blättert ab",
+          "zh": "剝落",
+          "tip": "abblättern。"
+        },
+        {
+          "span": "Fachfirma",
+          "zh": "專業公司"
+        },
+        {
+          "span": "angehängt",
+          "zh": "已附件"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "seit + 時間 + Präsens",
+          "zh": "持續到現在",
+          "example": "Seit einer Woche habe ich Husten."
+        },
+        {
+          "pattern": "Ich habe bereits …, aber …",
+          "zh": "已嘗試卻無效",
+          "example": "Ich habe angerufen, aber niemand ging ran."
+        },
+        {
+          "pattern": "Fotos habe ich angehängt",
+          "zh": "附件說明",
+          "example": "Die Datei habe ich angehängt."
+        }
+      ],
+      "tips": [
+        "問題描述要具體：時間、現象、已做措施、請求。"
+      ],
+      "focus": [
+        "住房",
+        "正式郵件"
+      ]
+    },
+    {
+      "id": "b1-18",
+      "level": "B1",
+      "kind": "story",
+      "topic": "媒體",
+      "title": "Falschnachrichten erkennen",
+      "titleZh": "辨識假訊息",
+      "text": "Im Internet verbreiten sich Nachrichten sehr schnell.\nNicht jede Meldung ist überprüft.\nBevor ich etwas teile, schaue ich, wer die Quelle ist und ob andere Medien dasselbe berichten.\nWenn Behauptungen extrem klingen, werde ich besonders vorsichtig.\nEs kostet ein paar Minuten, spart aber Peinlichkeit.\nKritisches Lesen gehört heute zur Alltagsfähigkeit.",
+      "textZh": "網路上消息傳得很快。\n不是每則都經過查證。\n分享前我會看來源是誰、其他媒體是否也這樣報導。\n若說法很極端，我會特別小心。\n只花幾分鐘，卻能少出糗。\n批判性閱讀已是日常能力。",
+      "notes": [
+        {
+          "span": "verbreiten sich",
+          "zh": "傳播"
+        },
+        {
+          "span": "überprüft",
+          "zh": "查證過的"
+        },
+        {
+          "span": "Quelle",
+          "zh": "來源"
+        },
+        {
+          "span": "Behauptungen",
+          "zh": "說法／主張"
+        },
+        {
+          "span": "Peinlichkeit",
+          "zh": "尷尬"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bevor ich …, …",
+          "zh": "在……之前",
+          "example": "Bevor ich antworte, denke ich nach."
+        },
+        {
+          "pattern": "Wenn … extrem klingen, …",
+          "zh": "條件警戒",
+          "example": "Wenn es unrealistisch klingt, prüfe ich."
+        },
+        {
+          "pattern": "Es kostet …, spart aber …",
+          "zh": "代價與好處",
+          "example": "Es kostet Zeit, spart aber Geld."
+        }
+      ],
+      "tips": [
+        "議論文短版：現象→方法→結論。"
+      ],
+      "focus": [
+        "媒體",
+        "論述"
+      ]
+    },
+    {
+      "id": "b1-19",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "銀行進階",
+      "title": "Dispokredit",
+      "titleZh": "透支額度",
+      "text": "Berater: Möchten Sie einen Dispokredit einrichten?\nKundin: Was genau bedeutet das?\nBerater: Damit können Sie Ihr Konto kurzzeitig überziehen, gegen Zinsen.\nKundin: Und wenn ich das nicht brauche?\nBerater: Dann bleibt er ungenutzt. Sie können ihn auch wieder abschalten.\nKundin: Gut, dann richte ich ihn mit einem niedrigen Limit ein.",
+      "textZh": "行員：您要設定透支額度嗎？\n顧客：那到底是什麼意思？\n行員：您可短暫讓帳戶透支，但需付利息。\n顧客：若我不需要呢？\n行員：那就不會動用。也可以再關閉。\n顧客：好，那我設一個較低上限。",
+      "notes": [
+        {
+          "span": "Dispokredit",
+          "zh": "透支信用"
+        },
+        {
+          "span": "überziehen",
+          "zh": "透支"
+        },
+        {
+          "span": "gegen Zinsen",
+          "zh": "需付利息"
+        },
+        {
+          "span": "ungenutzt",
+          "zh": "未使用的"
+        },
+        {
+          "span": "Limit",
+          "zh": "上限"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Was genau bedeutet das?",
+          "zh": "要求清楚解釋",
+          "example": "Was heißt das genau?"
+        },
+        {
+          "pattern": "Dann bleibt …",
+          "zh": "說明後果／狀態",
+          "example": "Dann bleibt alles wie bisher."
+        },
+        {
+          "pattern": "mit einem niedrigen Limit",
+          "zh": "附加條件",
+          "example": "mit kurzer Laufzeit"
+        }
+      ],
+      "tips": [
+        "金融對話：先問定義再決定。"
+      ],
+      "focus": [
+        "行政",
+        "金融"
+      ]
+    },
+    {
+      "id": "b1-20",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "活動",
+      "title": "Nachbarschaftsfest",
+      "titleZh": "鄰里節",
+      "text": "Nachbarschaftsfest am 12. Juni, 15–20 Uhr, Innenhof\nBring mit: Salat, Kuchen oder Getränke (nach Möglichkeit).\nFür Kinder gibt es Spiele; bitte Aufsichtspersonen mitbringen.\nMusik bis 19 Uhr, danach Gespräche in Zimmerlautstärke.\nBei starkem Regen treffen wir uns im Gemeinschaftsraum.\nAnmeldung bis 5. Juni per Aushang oder E-Mail.",
+      "textZh": "鄰里節：6 月 12 日 15–20 點，內院\n請盡量帶沙拉、蛋糕或飲料。\n兒童有遊戲；請家長陪同。\n音樂至 19 點，之後請保持室內音量交談。\n若下大雨改至交誼廳。\n請於 6 月 5 日前以公告欄或郵件報名。",
+      "notes": [
+        {
+          "span": "nach Möglichkeit",
+          "zh": "盡可能"
+        },
+        {
+          "span": "Aufsichtspersonen",
+          "zh": "監護／陪同成人"
+        },
+        {
+          "span": "Zimmerlautstärke",
+          "zh": "室內音量"
+        },
+        {
+          "span": "Gemeinschaftsraum",
+          "zh": "交誼廳"
+        },
+        {
+          "span": "Aushang",
+          "zh": "公告欄"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bring mit: + 清單",
+          "zh": "自備物",
+          "example": "Bring mit: Teller und Becher."
+        },
+        {
+          "pattern": "Bei starkem Regen …",
+          "zh": "天氣備案",
+          "example": "Bei Hitze gibt es Schattenplätze."
+        },
+        {
+          "pattern": "Anmeldung bis + 日期",
+          "zh": "報名截止",
+          "example": "Anmeldung bis Montag"
+        }
+      ],
+      "tips": [
+        "活動公告包含備案與截止日。"
+      ],
+      "focus": [
+        "社區",
+        "公告"
+      ]
+    },
+    {
+      "id": "b1-21",
+      "level": "B1",
+      "kind": "story",
+      "topic": "環境",
+      "title": "Weniger Plastik",
+      "titleZh": "減少塑膠",
+      "text": "Ich versuche, weniger Plastik zu benutzen.\nDeshalb kaufe ich öfter unverpacktes Obst und nehme Stoffbeutel mit.\nUnterwegs habe ich eine Flasche dabei, die ich wiederauffülle.\nNatürlich ist das nicht immer möglich, besonders unter Zeitdruck.\nTrotzdem merke ich, dass mein Müll sichtbar weniger wird.\nKleine Schritte sind besser als gar keine.",
+      "textZh": "我試著少用塑膠。\n所以更常買散裝水果並帶布袋。\n出門會帶可回充水瓶。\n當然不是每次都行，尤其趕時間時。\n儘管如此我發現垃圾明顯變少。\n小步驟勝過完全不做。",
+      "notes": [
+        {
+          "span": "unverpackt",
+          "zh": "未包裝的"
+        },
+        {
+          "span": "Stoffbeutel",
+          "zh": "布袋"
+        },
+        {
+          "span": "wiederauffülle",
+          "zh": "回充"
+        },
+        {
+          "span": "unter Zeitdruck",
+          "zh": "在時間壓力下"
+        },
+        {
+          "span": "sichtbar weniger",
+          "zh": "明顯變少"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ich versuche, zu + 不定式",
+          "zh": "嘗試",
+          "example": "Ich versuche, früher zu kommen."
+        },
+        {
+          "pattern": "besonders unter …",
+          "zh": "尤其在……情況下",
+          "example": "besonders unter Stress"
+        },
+        {
+          "pattern": "besser als gar keine",
+          "zh": "比較級論點",
+          "example": "Besser spät als nie."
+        }
+      ],
+      "tips": [
+        "環保主題常用『嘗試→例外→仍有效果』。"
+      ],
+      "focus": [
+        "環境",
+        "不定式"
+      ]
+    },
+    {
+      "id": "b1-22",
+      "level": "B1",
+      "kind": "email",
+      "topic": "客服跟催",
+      "title": "Zweite Nachfrage",
+      "titleZh": "二次催問",
+      "text": "Guten Tag,\n\nam 10. April habe ich bereits wegen meiner Bestellung geschrieben.\nLeider habe ich noch keine Antwort erhalten.\nKönnten Sie mir bitte den aktuellen Status mitteilen?\nFalls das Paket verloren gegangen ist, möchte ich eine Neulieferung oder Erstattung.\n\nFreundliche Grüße\nSvenja Orth",
+      "textZh": "您好，\n\n我已於 4 月 10 日就訂單寫過信。\n遺憾尚未收到回覆。\n可否請告知目前狀態？\n若包裹遺失，我希望補寄或退款。\n\n問候\nSvenja Orth",
+      "notes": [
+        {
+          "span": "bereits",
+          "zh": "已經"
+        },
+        {
+          "span": "noch keine Antwort erhalten",
+          "zh": "尚未收到回覆"
+        },
+        {
+          "span": "Falls … verloren gegangen ist",
+          "zh": "若……遺失了"
+        },
+        {
+          "span": "Neulieferung",
+          "zh": "重新配達"
+        },
+        {
+          "span": "Erstattung",
+          "zh": "退款"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Leider habe ich noch keine … erhalten",
+          "zh": "二次催問",
+          "example": "Leider habe ich noch keine Rückmeldung erhalten."
+        },
+        {
+          "pattern": "Falls …, möchte ich …",
+          "zh": "條件請求",
+          "example": "Falls es nicht geht, möchte ich stornieren."
+        },
+        {
+          "pattern": "Status mitteilen",
+          "zh": "請告知狀態",
+          "example": "Bitte teilen Sie mir den Termin mit."
+        }
+      ],
+      "tips": [
+        "催問信引用前次日期，語氣仍專業。"
+      ],
+      "focus": [
+        "郵件",
+        "客服"
+      ]
+    },
+    {
+      "id": "b1-23",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "醫療進階",
+      "title": "Überweisung",
+      "titleZh": "轉診",
+      "text": "Ärztin: Die Entzündung geht zurück, aber wir brauchen ein Bild vom Gelenk.\nPatient: Bedeutet das eine Überweisung?\nÄrztin: Ja, zum Radiologen. Ich schreibe sie Ihnen gleich.\nPatient: Wie schnell sollte ich den Termin machen?\nÄrztin: Innerhalb von zwei Wochen wäre ideal.\nPatient: In Ordnung, ich kümmere mich darum.",
+      "textZh": "醫生：發炎在消退，但我們需要關節影像。\n病人：意思是要轉診嗎？\n醫生：對，轉放射科。我現在就開給您。\n病人：我該多快約診？\n醫生：兩週內最理想。\n病人：好，我會去處理。",
+      "notes": [
+        {
+          "span": "geht zurück",
+          "zh": "消退"
+        },
+        {
+          "span": "Überweisung",
+          "zh": "轉診單"
+        },
+        {
+          "span": "Radiologen",
+          "zh": "放射科醫師"
+        },
+        {
+          "span": "wäre ideal",
+          "zh": "會是理想的",
+          "tip": "虛擬式建議。"
+        },
+        {
+          "span": "kümmere mich darum",
+          "zh": "我來處理這事"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bedeutet das …?",
+          "zh": "確認理解",
+          "example": "Bedeutet das, dass ich warten muss?"
+        },
+        {
+          "pattern": "Innerhalb von … wäre ideal",
+          "zh": "建議時限",
+          "example": "Morgen wäre ideal."
+        },
+        {
+          "pattern": "sich um etwas kümmern",
+          "zh": "負責處理",
+          "example": "Ich kümmere mich um die Tickets."
+        }
+      ],
+      "tips": [
+        "醫病溝通：解釋→確認→行動。"
+      ],
+      "focus": [
+        "健康",
+        "虛擬式"
+      ]
+    },
+    {
+      "id": "b1-24",
+      "level": "B1",
+      "kind": "story",
+      "topic": "文化衝擊",
+      "title": "Andere Pünktlichkeit",
+      "titleZh": "不同的準時觀",
+      "text": "In meinem Heimatland sind Treffen oft flexibler.\nHier erwarten viele Leute, dass man pünktlich ist.\nAm Anfang kam ich öfter fünf Minuten zu spät und fühlte mich schlecht.\nJetzt plane ich Absichtlich Pufferzeit ein.\nDas reduziert Stress und wirkt respektvoller.\nKulturelle Unterschiede merkt man besonders im Alltag.",
+      "textZh": "在我的家鄉，約見常較彈性。\n這裡很多人期待你準時。\n一開始我常晚五分鐘，感覺很糟。\n現在我會故意排緩衝時間。\n這樣減少壓力，也顯得更尊重。\n文化差異在日常生活裡特別明顯。",
+      "notes": [
+        {
+          "span": "erwarten, dass",
+          "zh": "期待……"
+        },
+        {
+          "span": "Absichtlich",
+          "zh": "故意地"
+        },
+        {
+          "span": "Pufferzeit einplanen",
+          "zh": "安排緩衝時間"
+        },
+        {
+          "span": "wirkt respektvoller",
+          "zh": "顯得更尊重"
+        },
+        {
+          "span": "besonders im Alltag",
+          "zh": "尤其在日常"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "erwarten, dass …",
+          "zh": "期待從句",
+          "example": "Ich erwarte, dass du schreibst."
+        },
+        {
+          "pattern": "Absichtlich + 動詞",
+          "zh": "刻意行為",
+          "example": "Ich komme absichtlich früher."
+        },
+        {
+          "pattern": "wirkt + 比較級形容詞",
+          "zh": "給人印象",
+          "example": "Das wirkt professioneller."
+        }
+      ],
+      "tips": [
+        "文化比較短文：觀察→問題→調整。"
+      ],
+      "focus": [
+        "文化",
+        "dass"
+      ]
+    },
+    {
+      "id": "b1-25",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "資安",
+      "title": "Passwort-Regeln",
+      "titleZh": "密碼規則",
+      "text": "IT-Hinweis: Passwörter\nVerwenden Sie mindestens 12 Zeichen mit Zahlen und Sonderzeichen.\nNutzen Sie für dienstliche Konten keine privaten Passwörter erneut.\nBei Verdacht auf Phishing melden Sie die Mail sofort.\nDas Zurücksetzen ist über das Portal möglich; die IT gibt keine Passwörter telefonisch durch.",
+      "textZh": "IT 提示：密碼\n請使用至少 12 碼並含數字與特殊符號。\n公務帳號勿重複使用私人密碼。\n懷疑釣魚郵件請立即回報。\n可經入口網站重設；IT 不會電話告知密碼。",
+      "notes": [
+        {
+          "span": "mindestens",
+          "zh": "至少"
+        },
+        {
+          "span": "Sonderzeichen",
+          "zh": "特殊符號"
+        },
+        {
+          "span": "erneut nutzen",
+          "zh": "再次使用"
+        },
+        {
+          "span": "Bei Verdacht auf",
+          "zh": "若懷疑……"
+        },
+        {
+          "span": "gibt … durch",
+          "zh": "告知／通報"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Verwenden Sie …",
+          "zh": "正式指令",
+          "example": "Verwenden Sie den Nebeneingang."
+        },
+        {
+          "pattern": "Bei Verdacht auf + 名詞",
+          "zh": "警戒情境",
+          "example": "Bei Verdacht auf Betrug anrufen."
+        },
+        {
+          "pattern": "ist über … möglich",
+          "zh": "可透過……完成",
+          "example": "ist online möglich"
+        }
+      ],
+      "tips": [
+        "資安公告：規則＋禁止＋通報方式。"
+      ],
+      "focus": [
+        "數位",
+        "規定"
+      ]
+    },
+    {
+      "id": "b1-26",
+      "level": "B1",
+      "kind": "story",
+      "topic": "財務",
+      "title": "Monatliches Budget",
+      "titleZh": "每月預算",
+      "text": "Seit ich ein Budget führe, weiß ich besser, wohin mein Geld geht.\nIch teile die Ausgaben in Miete, Essen, Transport und Freizeit.\nWas übrig bleibt, spare ich oder nutze ich für unerwartete Kosten.\nAm schwierigsten ist die Kategorie „Kleinigkeiten“, weil sie sich summieren.\nDeshalb notiere ich auch kleine Beträge.\nNach drei Monaten habe ich weniger Schulden und mehr Überblick.",
+      "textZh": "自從做預算後，我更清楚錢花去哪。\n我把支出分成房租、飲食、交通與休閒。\n剩下的就存起來或留作突發費用。\n最難的是「零碎開銷」類，因為會累加。\n所以連小金額我也記。\n三個月後我負債更少、也更有全貌。",
+      "notes": [
+        {
+          "span": "ein Budget führen",
+          "zh": "做預算"
+        },
+        {
+          "span": "wohin … geht",
+          "zh": "錢流向何處"
+        },
+        {
+          "span": "was übrig bleibt",
+          "zh": "剩下的"
+        },
+        {
+          "span": "sich summieren",
+          "zh": "累加"
+        },
+        {
+          "span": "Überblick",
+          "zh": "總覽／掌握"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Seit ich …, weiß ich …",
+          "zh": "習慣帶來認知",
+          "example": "Seit ich laufe, schlafe ich besser."
+        },
+        {
+          "pattern": "Was übrig bleibt, …",
+          "zh": "剩餘處理",
+          "example": "Was übrig ist, spende ich."
+        },
+        {
+          "pattern": "sich summieren",
+          "zh": "逐漸累積",
+          "example": "Kleine Fehler summieren sich."
+        }
+      ],
+      "tips": [
+        "財務主題訓練抽象名詞與總結。"
+      ],
+      "focus": [
+        "生活",
+        "論述"
+      ]
+    },
+    {
+      "id": "b1-27",
+      "level": "B1",
+      "kind": "email",
+      "topic": "推薦信請求",
+      "title": "Bitte um Referenz",
+      "titleZh": "請求推薦",
+      "text": "Sehr geehrte Frau Dr. Hartmann,\n\nin den letzten zwei Jahren habe ich in Ihrem Team als Werkstudentin gearbeitet.\nNun bewerbe ich mich um eine Vollzeitstelle und benötige eine kurze Referenz.\nKönnten Sie mir bitte bis Ende des Monats eine Einschätzung zu meiner Arbeit schreiben?\nGerne sende ich Ihnen meine Unterlagen und den Stellenlink.\n\nHerzlichen Dank im Voraus\nYasmin Korkmaz",
+      "textZh": "敬愛的 Hartmann 博士：\n\n過去兩年我在您的團隊擔任工讀生。\n現在我申請全職，需要一封簡短推薦。\n可否請您在月底前就我的工作表現寫一段評估？\n我很樂意寄上資料與職缺連結。\n\n先行致謝\nYasmin Korkmaz",
+      "notes": [
+        {
+          "span": "Werkstudentin",
+          "zh": "工讀生（女性）"
+        },
+        {
+          "span": "Referenz",
+          "zh": "推薦／參考查證"
+        },
+        {
+          "span": "Einschätzung",
+          "zh": "評估"
+        },
+        {
+          "span": "im Voraus",
+          "zh": "事先／先行"
+        },
+        {
+          "span": "Stellenlink",
+          "zh": "職缺連結"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Nun bewerbe ich mich um …",
+          "zh": "說明當前目標",
+          "example": "Nun suche ich eine neue Aufgabe."
+        },
+        {
+          "pattern": "Könnten Sie mir bitte bis …?",
+          "zh": "含期限的請求",
+          "example": "Könnten Sie bis Freitag antworten?"
+        },
+        {
+          "pattern": "Dank im Voraus",
+          "zh": "先行感謝",
+          "example": "Vielen Dank im Voraus."
+        }
+      ],
+      "tips": [
+        "請求推薦要給期限與你能提供的材料。"
+      ],
+      "focus": [
+        "職場",
+        "正式郵件"
+      ]
+    },
+    {
+      "id": "b1-28",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "租車",
+      "title": "Schaden am Mietwagen",
+      "titleZh": "租車損傷",
+      "text": "Mitarbeiter: Bitte prüfen Sie das Auto vor der Abfahrt.\nKundin: Hier vorne rechts sehe ich einen Kratzer. Ist der schon dokumentiert?\nMitarbeiter: Ja, der steht im Übergabeprotokoll.\nKundin: Gut. Was passiert, wenn unterwegs etwas passiert?\nMitarbeiter: Melden Sie den Schaden sofort der Hotline und machen Sie Fotos.\nKundin: Verstanden, danke.",
+      "textZh": "職員：出發前請檢查車輛。\n顧客：右前方有刮痕。有記錄嗎？\n職員：有，交接單上有。\n顧客：好。若路上出狀況怎麼辦？\n職員：立刻打熱線通報並拍照。\n顧客：了解，謝謝。",
+      "notes": [
+        {
+          "span": "vor der Abfahrt",
+          "zh": "出發前"
+        },
+        {
+          "span": "Kratzer",
+          "zh": "刮痕"
+        },
+        {
+          "span": "dokumentiert",
+          "zh": "已記錄"
+        },
+        {
+          "span": "Übergabeprotokoll",
+          "zh": "交接紀錄"
+        },
+        {
+          "span": "Hotline",
+          "zh": "服務專線"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ist … schon dokumentiert?",
+          "zh": "確認是否記錄",
+          "example": "Ist der Mangel notiert?"
+        },
+        {
+          "pattern": "Was passiert, wenn …?",
+          "zh": "問突發流程",
+          "example": "Was passiert, wenn ich zu spät komme?"
+        },
+        {
+          "pattern": "Melden Sie … sofort",
+          "zh": "緊急指示",
+          "example": "Melden Sie sich sofort."
+        }
+      ],
+      "tips": [
+        "服務流程對話：檢查→確認→緊急步驟。"
+      ],
+      "focus": [
+        "旅行",
+        "服務"
+      ]
+    },
+    {
+      "id": "b1-29",
+      "level": "B1",
+      "kind": "story",
+      "topic": "人際",
+      "title": "Missverständnis klären",
+      "titleZh": "澄清誤會",
+      "text": "Gestern war mein Freund kurz angebunden und ich dachte, er sei sauer auf mich.\nSpäter hat er erklärt, dass er nur unter Termindruck stand.\nIch war erleichtert, aber auch ein bisschen peinlich berührt.\nDeshalb haben wir vereinbart, in solchen Momenten klarer zu schreiben.\nZum Beispiel: „Ich habe Stress, später mehr.“\nKleine Sätze verhindern große Missverständnisse.",
+      "textZh": "昨天朋友回覆很簡短，我以為他在生我氣。\n後來他解釋只是行程壓力大。\n我鬆了一口氣，但也有點不好意思。\n因此我們約定這種時候要把話說清楚。\n例如：「我很忙，稍後再談。」\n小句子能避免大誤會。",
+      "notes": [
+        {
+          "span": "kurz angebunden",
+          "zh": "愛理不理／回得很短"
+        },
+        {
+          "span": "sauer auf mich",
+          "zh": "在生我的氣"
+        },
+        {
+          "span": "unter Termindruck",
+          "zh": "處於時間壓力"
+        },
+        {
+          "span": "peinlich berührt",
+          "zh": "感到尷尬"
+        },
+        {
+          "span": "vereinbart",
+          "zh": "約定"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "ich dachte, er sei …",
+          "zh": "過去以為（虛擬）",
+          "example": "Ich dachte, sie wäre krank."
+        },
+        {
+          "pattern": "erklärt, dass …",
+          "zh": "解釋原因",
+          "example": "Er sagt, dass er keine Zeit hat."
+        },
+        {
+          "pattern": "Deshalb haben wir vereinbart, zu …",
+          "zh": "約定改善",
+          "example": "Wir haben vereinbart, früher zu kommen."
+        }
+      ],
+      "tips": [
+        "人際文：誤會→澄清→約定。"
+      ],
+      "focus": [
+        "社交",
+        "虛擬式",
+        "dass"
+      ]
+    },
+    {
+      "id": "b1-30",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "校園",
+      "title": "Bibliotheksregeln erweitert",
+      "titleZh": "圖書館規則（進階）",
+      "text": "Ergänzung der Bibliotheksordnung\nGruppenarbeit ist nur in den gekennzeichneten Räumen erlaubt.\nGetränke mit Deckel sind gestattet; offene Speisen nicht.\nWer Bücher beschädigt, muss Ersatz leisten oder die Reparaturkosten tragen.\nAusleihen können online verlängert werden, sofern keine Vormerkung vorliegt.\nBei wiederholten Verstößen kann das Nutzerkonto gesperrt werden.",
+      "textZh": "圖書館規則補充\n團體討論僅限標示空間。\n有蓋飲料可；開放食物不行。\n損壞書籍須賠償或負擔修理費。\n可線上續借，前提是無人預約。\n重複違規可能停權。",
+      "notes": [
+        {
+          "span": "gekennzeichnet",
+          "zh": "有標示的"
+        },
+        {
+          "span": "gestattet",
+          "zh": "被允許"
+        },
+        {
+          "span": "Ersatz leisten",
+          "zh": "賠償"
+        },
+        {
+          "span": "Vormerkung",
+          "zh": "預約／保留"
+        },
+        {
+          "span": "Nutzerkonto",
+          "zh": "使用者帳號"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "ist nur … erlaubt",
+          "zh": "僅允許",
+          "example": "ist nur mit Ausweis erlaubt"
+        },
+        {
+          "pattern": "sofern keine … vorliegt",
+          "zh": "前提不存在某狀況",
+          "example": "sofern kein Fehler vorliegt"
+        },
+        {
+          "pattern": "kann … gesperrt werden",
+          "zh": "可能被停用",
+          "example": "kann gelöscht werden"
+        }
+      ],
+      "tips": [
+        "長公告要會抓『允許／禁止／後果』。"
+      ],
+      "focus": [
+        "規定",
+        "被動",
+        "校園"
+      ]
+    },
+    {
+      "id": "b1-31",
+      "level": "B1",
+      "kind": "story",
+      "topic": "職業規劃",
+      "title": "Zwischen Abschluss und Job",
+      "titleZh": "畢業與工作之間",
+      "text": "Bald bin ich mit dem Studium fertig und unsicher, wie es weitergeht.\nEinerseits möchte ich Berufserfahrung sammeln, andererseits noch einen Kurs machen.\nDeshalb habe ich Gespräche mit der Studienberatung geführt.\nDort wurde mir empfohlen, zuerst ein Praktikum zu suchen.\nSo kann ich testen, welches Feld zu mir passt.\nUnsicherheit gehört dazu, aber ein Plan macht sie kleiner.",
+      "textZh": "我快畢業了，不確定接下來怎麼辦。\n一方面想累積工作經驗，另一方面想再修一門課。\n因此我找了學習諮詢談過。\n他們建議我先找實習。\n這樣能測試哪個領域適合我。\n不確定感是正常的，但有計畫會讓它變小。",
+      "notes": [
+        {
+          "span": "mit … fertig",
+          "zh": "完成……"
+        },
+        {
+          "span": "Einerseits … andererseits …",
+          "zh": "一方面……另一方面……"
+        },
+        {
+          "span": "Studienberatung",
+          "zh": "學習諮詢"
+        },
+        {
+          "span": "wurde mir empfohlen",
+          "zh": "我被建議",
+          "tip": "被動。"
+        },
+        {
+          "span": "Unsicherheit gehört dazu",
+          "zh": "不確定是過程的一部分"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Einerseits …, andererseits …",
+          "zh": "兩難",
+          "example": "Einerseits günstig, andererseits weit."
+        },
+        {
+          "pattern": "wurde mir empfohlen, zu …",
+          "zh": "被建議去做",
+          "example": "Es wurde empfohlen, früher zu starten."
+        },
+        {
+          "pattern": "So kann ich …",
+          "zh": "因此能夠",
+          "example": "So kann ich vergleichen."
+        }
+      ],
+      "tips": [
+        "生涯短文常用雙方面與被動建議。"
+      ],
+      "focus": [
+        "職涯",
+        "被動",
+        "連接詞"
+      ]
+    },
+    {
+      "id": "b1-32",
+      "level": "B1",
+      "kind": "email",
+      "topic": "保險理賠",
+      "title": "Schadensmeldung",
+      "titleZh": "損害通報",
+      "text": "Sehr geehrte Damen und Herren,\n\nhiermit melde ich einen Wasserschaden in meiner Küche vom 2. Mai.\nDurch ein undichtes Rohr ist der Boden beschädigt worden.\nIch habe Fotos und die Rechnung des Notdienstes beigefügt.\nBitte teilen Sie mir mit, welche nächsten Schritte nötig sind und ob ein Gutachter kommt.\n\nMit freundlichen Grüßen\nRalf Neumann\nPolizzennummer: H-22981",
+      "textZh": "敬啟者：\n\n謹通報 5 月 2 日廚房水損。\n因水管滲漏，地板受損。\n已附上照片與緊急維修收據。\n請告知後續步驟，以及是否會派鑑定人。\n\n此致問候\nRalf Neumann\n保單號碼：H-22981",
+      "notes": [
+        {
+          "span": "hiermit melde ich",
+          "zh": "謹此通報"
+        },
+        {
+          "span": "undicht",
+          "zh": "滲漏的"
+        },
+        {
+          "span": "beschädigt worden",
+          "zh": "被損壞",
+          "tip": "狀態被動／過程。"
+        },
+        {
+          "span": "beigefügt",
+          "zh": "已附上"
+        },
+        {
+          "span": "Gutachter",
+          "zh": "鑑定人"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "hiermit melde ich …",
+          "zh": "正式通報",
+          "example": "Hiermit melde ich den Verlust."
+        },
+        {
+          "pattern": "ist … worden",
+          "zh": "被動完成",
+          "example": "ist geliefert worden"
+        },
+        {
+          "pattern": "Bitte teilen Sie mir mit, ob …",
+          "zh": "請告知是否",
+          "example": "teilen Sie mir mit, wann …"
+        }
+      ],
+      "tips": [
+        "保險信：事件＋證據＋明確問題。"
+      ],
+      "focus": [
+        "保險",
+        "被動",
+        "正式"
+      ]
+    },
+    {
+      "id": "b1-33",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "面試",
+      "title": "Vorstellungsgespräch Ausschnitt",
+      "titleZh": "面試片段",
+      "text": "Personaler: Warum möchten Sie bei uns arbeiten?\nBewerberin: Weil Ihr Unternehmen nachhaltig produziert und ich dazu beitragen möchte.\nPersonaler: Welche Aufgabe lag Ihnen bisher am meisten?\nBewerberin: Die Kundenberatung, bei der ich Probleme schnell lösen konnte.\nPersonaler: Und wo sehen Sie sich in drei Jahren?\nBewerberin: Ich hoffe, mehr Verantwortung im Projektmanagement zu übernehmen.",
+      "textZh": "人資：為什麼想在我們這工作？\n應徵者：因為貴公司永續生產，而我想參與其中。\n人資：到目前哪項任務最適合你？\n應徵者：客戶諮詢，我能快速解問題。\n人資：三年後你期待自己在哪？\n應徵者：希望在專案管理承擔更多責任。",
+      "notes": [
+        {
+          "span": "nachhaltig",
+          "zh": "永續地"
+        },
+        {
+          "span": "dazu beitragen",
+          "zh": "為此貢獻"
+        },
+        {
+          "span": "lag Ihnen … am meisten",
+          "zh": "最契合你的是"
+        },
+        {
+          "span": "Verantwortung übernehmen",
+          "zh": "承擔責任"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Warum möchten Sie …? — Weil …",
+          "zh": "面試動機",
+          "example": "Weil ich dazulernen will."
+        },
+        {
+          "pattern": "bei der ich … konnte",
+          "zh": "關係子句說成就",
+          "example": "ein Job, bei dem ich wuchs"
+        },
+        {
+          "pattern": "Ich hoffe, zu + 不定式",
+          "zh": "未來希望",
+          "example": "Ich hoffe, zu bestehen."
+        }
+      ],
+      "tips": [
+        "面試標準三問可整段練習。"
+      ],
+      "focus": [
+        "職場",
+        "面試",
+        "關係句"
+      ]
+    },
+    {
+      "id": "b1-34",
+      "level": "B1",
+      "kind": "story",
+      "topic": "親子／照護",
+      "title": "Hilfe für die Großeltern",
+      "titleZh": "協助祖父母",
+      "text": "Meine Großeltern werden älter und brauchen mehr Unterstützung im Alltag.\nEinmal pro Woche gehe ich mit ihnen einkaufen und helfe bei Formularen.\nManchmal ist das anstrengend, weil sie alles genau erklärt haben wollen.\nTrotzdem bin ich dankbar, Zeit mit ihnen zu verbringen.\nWir haben auch einen Pflegedienst organisiert, der mittags vorbeikommt.\nGeteilte Verantwortung macht die Situation leichter.",
+      "textZh": "祖父母年紀漸長，日常需要更多協助。\n我每週陪他們採買一次，並幫忙填表格。\n有時很累，因為他們希望每件事都解釋得很清楚。\n儘管如此，我很珍惜共處時間。\n我們也安排了中午來訪的居家照顧。\n分擔責任讓情況輕鬆些。",
+      "notes": [
+        {
+          "span": "Unterstützung",
+          "zh": "協助"
+        },
+        {
+          "span": "Formularen",
+          "zh": "表格"
+        },
+        {
+          "span": "Pflegedienst",
+          "zh": "居家照顧服務"
+        },
+        {
+          "span": "Geteilte Verantwortung",
+          "zh": "分擔的責任"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "brauchen mehr Unterstützung bei …",
+          "zh": "需求表達",
+          "example": "brauchen Hilfe beim Lernen"
+        },
+        {
+          "pattern": "wollen … erklärt haben",
+          "zh": "希望被解釋清楚",
+          "example": "Er will alles schriftlich haben."
+        },
+        {
+          "pattern": "… organisiert, der/die …",
+          "zh": "安排＋關係子句",
+          "example": "ein Kurs, der abends stattfindet"
+        }
+      ],
+      "tips": [
+        "照護主題：事實＋情感＋資源。"
+      ],
+      "focus": [
+        "家庭",
+        "社會",
+        "關係句"
+      ]
+    },
+    {
+      "id": "b1-35",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "公共",
+      "title": "Hitzewarnung",
+      "titleZh": "高溫警報",
+      "text": "Aktuelle Hitzewarnung für Samstag und Sonntag\nBitte trinken Sie ausreichend und vermeiden Sie schwere Arbeit in der Mittagssonne.\nÖffentliche Kühlräume sind in Bibliothek und Rathaus geöffnet.\nÄltere Menschen und Kinder besonders beobachten.\nNotruf bei Kreislaufproblemen: 112.",
+      "textZh": "週六日高溫警報\n請充足飲水，避免正午做粗重工作。\n圖書館與市政廳開放公共降溫空間。\n請特別留意長者與孩童。\n循環系統不適請打 112。",
+      "notes": [
+        {
+          "span": "ausreichend",
+          "zh": "足夠地"
+        },
+        {
+          "span": "vermeiden Sie",
+          "zh": "請避免"
+        },
+        {
+          "span": "Kühlräume",
+          "zh": "降溫空間"
+        },
+        {
+          "span": "Kreislaufproblemen",
+          "zh": "循環／暈眩不適"
+        },
+        {
+          "span": "Notruf",
+          "zh": "緊急電話"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bitte … und vermeiden Sie …",
+          "zh": "雙重指示",
+          "example": "Bitte warten und vermeiden Sie Lärm."
+        },
+        {
+          "pattern": "sind … geöffnet",
+          "zh": "開放告知",
+          "example": "sind bis 18 Uhr geöffnet"
+        },
+        {
+          "pattern": "Notruf: 112",
+          "zh": "緊急資訊",
+          "example": "Bei Feuer: 112"
+        }
+      ],
+      "tips": [
+        "公共警告短而明確，先抓行動指示。"
+      ],
+      "focus": [
+        "公共",
+        "健康"
+      ]
+    },
+    {
+      "id": "b1-36",
+      "level": "B1",
+      "kind": "story",
+      "topic": "語言交換",
+      "title": "Tandem-Treffen",
+      "titleZh": "語言交換聚會",
+      "text": "Alle zwei Wochen treffe ich mich mit meinem Tandempartner.\nEine Stunde sprechen wir Deutsch, eine Stunde seine Muttersprache.\nWir korrigieren uns höflich und notieren neue Wendungen.\nWas besonders hilft, sind Themen aus dem echten Leben: Behördengänge, Arbeit, Humor.\nNach dem Treffen schicken wir uns eine kurze Sprachnachricht zur Wiederholung.\nSo bleibt das Lernen lebendig und verbindlich.",
+      "textZh": "我每兩週與語伴見面一次。\n一小時說德文，一小時說他的母語。\n我們禮貌糾正並記下新說法。\n特別有幫助的是真實生活主題：辦行政、工作、幽默。\n結束後互傳語音訊息複習。\n這樣學習既生動又有約束力。",
+      "notes": [
+        {
+          "span": "Tandempartner",
+          "zh": "語伴"
+        },
+        {
+          "span": "Wendungen",
+          "zh": "表達／片語"
+        },
+        {
+          "span": "Behördengänge",
+          "zh": "跑行政機關"
+        },
+        {
+          "span": "Sprachnachricht",
+          "zh": "語音訊息"
+        },
+        {
+          "span": "verbindlich",
+          "zh": "有約束力／可靠的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Alle zwei Wochen …",
+          "zh": "每兩週",
+          "example": "Alle drei Tage sportlich."
+        },
+        {
+          "pattern": "Was besonders hilft, sind …",
+          "zh": "強調有效方法",
+          "example": "Was hilft, sind Beispiele."
+        },
+        {
+          "pattern": "höflich korrigieren",
+          "zh": "禮貌糾錯",
+          "example": "Bitte korrigiere mich höflich."
+        }
+      ],
+      "tips": [
+        "學習策略文，可直接仿作你的語伴計畫。"
+      ],
+      "focus": [
+        "學習",
+        "社交"
+      ]
+    },
+    {
+      "id": "b1-37",
+      "level": "B1",
+      "kind": "email",
+      "topic": "房東通知",
+      "title": "Geplante Renovierung",
+      "titleZh": "計畫整修通知",
+      "text": "Sehr geehrte Mieterinnen und Mieter,\n\nvom 8. bis 12. Juli werden die Flure gestrichen.\nIn dieser Zeit kann es zu Geruch und eingeschränktem Zugang kommen.\nBitte entfernen Sie Fußmatten und persönliche Gegenstände aus dem Treppenhaus.\nBei Fragen erreichen Sie die Hausverwaltung unter der bekannten Nummer.\n\nMit freundlichen Grüßen\nHausverwaltung Nord",
+      "textZh": "親愛的住戶們：\n\n7 月 8 日至 12 日將粉刷走廊。\n期間可能有氣味且通行受限。\n請將踏墊與個人物品移出樓梯間。\n問題請以既有電話聯絡管委。\n\n此致問候\n北區管委會",
+      "notes": [
+        {
+          "span": "werden … gestrichen",
+          "zh": "將被粉刷",
+          "tip": "未來被動。"
+        },
+        {
+          "span": "eingeschränktem Zugang",
+          "zh": "受限通行"
+        },
+        {
+          "span": "entfernen",
+          "zh": "移除"
+        },
+        {
+          "span": "Treppenhaus",
+          "zh": "樓梯間"
+        },
+        {
+          "span": "Hausverwaltung",
+          "zh": "大樓管理"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "vom … bis … werden …",
+          "zh": "時段工程被動",
+          "example": "vom Montag bis Freitag wird gebaut"
+        },
+        {
+          "pattern": "kann es zu … kommen",
+          "zh": "可能出現……",
+          "example": "kann es zu Lärm kommen"
+        },
+        {
+          "pattern": "Bei Fragen erreichen Sie …",
+          "zh": "聯絡方式",
+          "example": "Bei Fragen mailen Sie uns."
+        }
+      ],
+      "tips": [
+        "大樓通知：時間、影響、住戶要做的事。"
+      ],
+      "focus": [
+        "住房",
+        "被動",
+        "公告"
+      ]
+    },
+    {
+      "id": "b1-38",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "客服技術",
+      "title": "Account gesperrt",
+      "titleZh": "帳號被鎖",
+      "text": "Kundin: Ich komme nicht mehr in meinen Account. Es heißt, er sei gesperrt.\nSupport: Das passiert nach mehreren falschen Passworteingaben.\nKundin: Kann ich das selbst zurücksetzen?\nSupport: Ja, über „Passwort vergessen“. Falls das nicht geht, prüfen wir Ihre Identität.\nKundin: Per Ausweis-Upload?\nSupport: Genau, verschlüsselt über das Formular.",
+      "textZh": "顧客：我登不進帳號。顯示被鎖定。\n客服：密碼連續錯誤就會這樣。\n顧客：我能自己重設嗎？\n客服：可以，用「忘記密碼」。若不行，我們會核對身分。\n顧客：用上傳證件？\n客服：對，經加密表單。",
+      "notes": [
+        {
+          "span": "es heißt, er sei gesperrt",
+          "zh": "顯示／據說被鎖",
+          "tip": "間接引語虛擬。"
+        },
+        {
+          "span": "Passworteingaben",
+          "zh": "密碼輸入"
+        },
+        {
+          "span": "Identität prüfen",
+          "zh": "核對身分"
+        },
+        {
+          "span": "verschlüsselt",
+          "zh": "加密的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Es heißt, … sei …",
+          "zh": "轉述系統訊息",
+          "example": "Es heißt, der Zug habe Verspätung."
+        },
+        {
+          "pattern": "Falls das nicht geht, …",
+          "zh": "備案",
+          "example": "Falls das nicht geht, rufen Sie an."
+        },
+        {
+          "pattern": "über + 功能名",
+          "zh": "操作路徑",
+          "example": "über das Menü einstellen"
+        }
+      ],
+      "tips": [
+        "數位客服：原因→自助→升級驗證。"
+      ],
+      "focus": [
+        "數位",
+        "虛擬式"
+      ]
+    },
+    {
+      "id": "b1-39",
+      "level": "B1",
+      "kind": "story",
+      "topic": "志工活動組織",
+      "title": "Stadtclean-up",
+      "titleZh": "城市清潔活動",
+      "text": "Letzten Sonntag habe ich bei einem Clean-up im Park mitgemacht.\nWir haben Müll gesammelt und nach Typen getrennt.\nÜberraschend viele Passanten haben spontan geholfen.\nOrganisiert wurde die Aktion von einer lokalen Initiative, die regelmäßig aufruft.\nDanach gab es Wasser und eine kurze Dankesrunde.\nSolche Aktionen zeigen, dass Engagement ansteckend sein kann.",
+      "textZh": "上週日我參加公園清潔活動。\n我們撿垃圾並分類。\n意外地許多路人自發幫忙。\n活動由在地團體籌辦，他們定期號召。\n結束後有水與簡短致謝。\n這類活動說明投入可以有感染力。",
+      "notes": [
+        {
+          "span": "mitgemacht",
+          "zh": "參加"
+        },
+        {
+          "span": "Passanten",
+          "zh": "路人"
+        },
+        {
+          "span": "spontan",
+          "zh": "自發地"
+        },
+        {
+          "span": "Organisiert wurde … von",
+          "zh": "由……籌辦",
+          "tip": "被動置前。"
+        },
+        {
+          "span": "ansteckend",
+          "zh": "有感染力的"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Organisiert wurde … von …",
+          "zh": "被動強調籌辦者",
+          "example": "Geschrieben wurde der Text von …"
+        },
+        {
+          "pattern": "Überraschend viele …",
+          "zh": "驚訝量化",
+          "example": "Überraschend wenig Zeit"
+        },
+        {
+          "pattern": "zeigen, dass …",
+          "zh": "結論從句",
+          "example": "Das zeigt, dass Übung hilft."
+        }
+      ],
+      "tips": [
+        "活動報導：過程＋被動＋反思。"
+      ],
+      "focus": [
+        "社會",
+        "被動",
+        "dass"
+      ]
+    },
+    {
+      "id": "b1-40",
+      "level": "B1",
+      "kind": "story",
+      "topic": "遠距友誼",
+      "title": "Freundschaft über Distanz",
+      "titleZh": "遠距離友誼",
+      "text": "Meine beste Freundin wohnt jetzt in einer anderen Stadt.\nAm Anfang hatten wir Angst, den Kontakt zu verlieren.\nDeshalb haben wir einen festen Video-Abend alle zwei Wochen.\nDazwischen schreiben wir Sprachnachrichten, wenn etwas Wichtiges passiert.\nNatürlich ersetzt das nicht echte Treffen, aber es hält die Nähe.\nNächsten Monat besuche ich sie endlich wieder.",
+      "textZh": "我最好的朋友現在住另一座城市。\n一開始我們怕失去聯繫。\n因此每兩週固定視訊一晚。\n其間若有要事就互傳語音。\n當然不能取代見面，但能維持親近。\n下個月我終於要再去看她。",
+      "notes": [
+        {
+          "span": "Angst haben, zu + 不定式",
+          "zh": "害怕做／發生"
+        },
+        {
+          "span": "festen Video-Abend",
+          "zh": "固定視訊夜"
+        },
+        {
+          "span": "Dazwischen",
+          "zh": "其間"
+        },
+        {
+          "span": "ersetzt das nicht",
+          "zh": "不能取代"
+        },
+        {
+          "span": "hält die Nähe",
+          "zh": "維持親近感"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Angst haben, zu …",
+          "zh": "害怕",
+          "example": "Ich habe Angst, Fehler zu machen."
+        },
+        {
+          "pattern": "Am Anfang … Deshalb …",
+          "zh": "問題到解法",
+          "example": "Am Anfang chaotisch. Deshalb Plan."
+        },
+        {
+          "pattern": "ersetzt nicht, aber hält …",
+          "zh": "限制與功能",
+          "example": "Das heilt nicht, aber hilft."
+        }
+      ],
+      "tips": [
+        "情感敘事仍要有結構與連接詞。"
+      ],
+      "focus": [
+        "社交",
+        "不定式"
+      ]
+    },
+    {
+      "id": "b1-41",
+      "level": "B1",
+      "kind": "email",
+      "topic": "正式道歉",
+      "title": "Entschuldigung für die Verspätung",
+      "titleZh": "延誤致歉",
+      "text": "Sehr geehrte Frau Saito,\n\nhiermit entschuldige ich mich für meine Verspätung zum Meeting gestern.\nAufgrund einer Signalstörung im Nahverkehr bin ich 25 Minuten später angekommen.\nKünftig plane ich einen größeren Zeitpuffer ein.\nDie besprochenen Aufgaben habe ich heute Vormittag bereits erledigt.\n\nMit freundlichen Grüßen\nTobias Kranz",
+      "textZh": "敬愛的 Saito 女士：\n\n謹為昨日會議遲到致歉。\n因捷運號誌故障，我晚到 25 分鐘。\n往後會安排更大時間緩衝。\n會中交付的任務我今早已完成。",
+      "notes": [
+        {
+          "span": "hiermit entschuldige ich mich für",
+          "zh": "謹為……道歉"
+        },
+        {
+          "span": "Signalstörung",
+          "zh": "號誌故障"
+        },
+        {
+          "span": "Künftig",
+          "zh": "今後"
+        },
+        {
+          "span": "Zeitpuffer",
+          "zh": "時間緩衝"
+        },
+        {
+          "span": "bereits erledigt",
+          "zh": "已經完成"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "hiermit entschuldige ich mich für + 第四格",
+          "zh": "正式道歉",
+          "example": "Hiermit entschuldige ich mich für den Fehler."
+        },
+        {
+          "pattern": "Aufgrund + Genitiv",
+          "zh": "原因",
+          "example": "Aufgrund der Störung …"
+        },
+        {
+          "pattern": "Künftig + 改進",
+          "zh": "承諾改善",
+          "example": "Künftig melde ich mich früher."
+        }
+      ],
+      "tips": [
+        "道歉信：原因＋改進＋已補救。"
+      ],
+      "focus": [
+        "正式郵件",
+        "職場"
+      ]
+    },
+    {
+      "id": "b1-42",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "住房糾紛調解",
+      "title": "Lärmprotokoll",
+      "titleZh": "噪音紀錄",
+      "text": "Vermittlung: Haben Sie ein Lärmprotokoll geführt?\nMieter: Ja, mit Datum, Uhrzeit und Dauer.\nVermittlung: Das ist hilfreich. Wir sprechen als Nächstes mit der Gegenseite.\nMieter: Was passiert, wenn sich nichts ändert?\nVermittlung: Dann können weitere Schritte bis zur Abmahnung folgen.\nMieter: Verstehe. Ich bleibe erstmal sachlich und dokumentiere weiter.",
+      "textZh": "調解：您有做噪音紀錄嗎？\n房客：有，含日期、時間與持續長度。\n調解：這很有幫助。下一步我們會跟對方談。\n房客：若沒改善會怎樣？\n調解：可能進一步到警告。\n房客：了解。我先保持理性並繼續記錄。",
+      "notes": [
+        {
+          "span": "Lärmprotokoll",
+          "zh": "噪音紀錄"
+        },
+        {
+          "span": "Gegenseite",
+          "zh": "對方"
+        },
+        {
+          "span": "als Nächstes",
+          "zh": "接下來"
+        },
+        {
+          "span": "sachlich bleiben",
+          "zh": "保持就事論事"
+        },
+        {
+          "span": "dokumentieren",
+          "zh": "記錄存證"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Was passiert, wenn sich nichts ändert?",
+          "zh": "問升級後果",
+          "example": "Was passiert, wenn ich ablehne?"
+        },
+        {
+          "pattern": "weitere Schritte bis zu …",
+          "zh": "程序升級",
+          "example": "Schritte bis zur Kündigung"
+        },
+        {
+          "pattern": "sachlich bleiben",
+          "zh": "衝突策略",
+          "example": "ruhig und sachlich"
+        }
+      ],
+      "tips": [
+        "糾紛溝通：證據→程序→態度。"
+      ],
+      "focus": [
+        "住房",
+        "調解"
+      ]
+    },
+    {
+      "id": "b1-43",
+      "level": "B1",
+      "kind": "story",
+      "topic": "永續時尚",
+      "title": "Second Hand zuerst",
+      "titleZh": "二手優先",
+      "text": "Bevor ich neue Kleidung kaufe, schaue ich zuerst in Second-Hand-Läden.\nOft finde ich qualitativ gute Stücke zu einem fairen Preis.\nWenn etwas nicht passt, gebe ich es weiter, statt es wegzuwerfen.\nNatürlich kaufe ich manchmal neu, etwa Schuhe für die Arbeit.\nWichtig ist mir die bewusste Entscheidung statt Impuls.\nSo verbindet sich Stil mit Verantwortung.",
+      "textZh": "買新衣服前我先逛二手店。\n常能找到質感好、價格合理的單品。\n不合身就轉送，而不是丟掉。\n當然有時仍會買新的，例如工作鞋。\n對我重要的是有意識的選擇，而非衝動。\n這樣風格能與責任並存。",
+      "notes": [
+        {
+          "span": "qualitativ gut",
+          "zh": "品質好"
+        },
+        {
+          "span": "weitergeben",
+          "zh": "轉送"
+        },
+        {
+          "span": "statt es wegzuwerfen",
+          "zh": "而不是丟掉"
+        },
+        {
+          "span": "bewusste Entscheidung",
+          "zh": "有意識的決定"
+        },
+        {
+          "span": "Impuls",
+          "zh": "衝動"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Bevor ich …, schaue ich …",
+          "zh": "優先順序",
+          "example": "Bevor ich bestelle, vergleiche ich."
+        },
+        {
+          "pattern": "statt zu + 不定式",
+          "zh": "取代",
+          "example": "statt zu klagen, handeln"
+        },
+        {
+          "pattern": "etwa + 例子",
+          "zh": "例如",
+          "example": "etwa am Wochenende"
+        }
+      ],
+      "tips": [
+        "消費議題：原則＋例外＋價值。"
+      ],
+      "focus": [
+        "環境",
+        "論述"
+      ]
+    },
+    {
+      "id": "b1-44",
+      "level": "B1",
+      "kind": "notice",
+      "topic": "交通新制",
+      "title": "Tempolimit in der Innenstadt",
+      "titleZh": "市區速限",
+      "text": "Ab 1. August gilt in der Innenstadt Tempo 30.\nZiel ist weniger Lärm und mehr Sicherheit für Radfahrende.\nVerstöße werden mit Bußgeld geahndet.\nLieferverkehr behält Zufahrtsrechte zu bestimmten Zeiten.\nDetails stehen auf der Stadtwebsite unter „Mobilität“.",
+      "textZh": "自 8 月 1 日起市區實施時速 30。\n目標是減少噪音並提升對騎車者的安全。\n違規將處以罰鍰。\n物流車在特定時段仍保有進出權。\n詳見市政網站「交通移動」頁。",
+      "notes": [
+        {
+          "span": "gilt … Tempo 30",
+          "zh": "實施速限 30"
+        },
+        {
+          "span": "Radfahrende",
+          "zh": "騎自行車者"
+        },
+        {
+          "span": "Bußgeld",
+          "zh": "罰鍰"
+        },
+        {
+          "span": "geahndet",
+          "zh": "被處罰"
+        },
+        {
+          "span": "Zufahrtsrechte",
+          "zh": "進出權"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Ab + 日期 gilt …",
+          "zh": "新制生效",
+          "example": "Ab Montag gilt die Regel."
+        },
+        {
+          "pattern": "werden mit … geahndet",
+          "zh": "處罰方式",
+          "example": "wird mit Verwarnung geahndet"
+        },
+        {
+          "pattern": "unter + 欄位名",
+          "zh": "網站路徑",
+          "example": "unter Kontakt finden"
+        }
+      ],
+      "tips": [
+        "政策公告：生效日、目的、罰則、例外。"
+      ],
+      "focus": [
+        "公共",
+        "被動"
+      ]
+    },
+    {
+      "id": "b1-45",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "教育諮詢",
+      "title": "Abendgymnasium",
+      "titleZh": "夜間高中諮詢",
+      "text": "Berater: Mit Ihrem Abschluss könnten Sie das Abendgymnasium besuchen.\nInteressentin: Wie lange dauert das neben dem Job?\nBerater: In der Regel drei bis vier Jahre, je nach Anrechnung.\nInteressentin: Und die Kosten?\nBerater: Das öffentliche Angebot ist weitgehend kostenfrei; Lernmaterialien zahlen Sie selbst.\nInteressentin: Dann beantrage ich zuerst die Einstufung.",
+      "textZh": "顧問：以您的學歷可就讀夜間高中。\n諮詢者：邊工作要念多久？\n顧問：通常三到四年，視抵免而定。\n諮詢者：費用呢？\n顧問：公立大致免費；教材自付。\n諮詢者：那我先申請分班測驗。",
+      "notes": [
+        {
+          "span": "je nach Anrechnung",
+          "zh": "視抵免而定"
+        },
+        {
+          "span": "weitgehend kostenfrei",
+          "zh": "大致免費"
+        },
+        {
+          "span": "Lernmaterialien",
+          "zh": "教材"
+        },
+        {
+          "span": "beantrage",
+          "zh": "申請"
+        },
+        {
+          "span": "Einstufung",
+          "zh": "程度／分班鑑定"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "In der Regel …, je nach …",
+          "zh": "通則＋條件",
+          "example": "In der Regel 2 Jahre, je nach Tempo"
+        },
+        {
+          "pattern": "weitgehend + 形容詞",
+          "zh": "大致上",
+          "example": "weitgehend klar"
+        },
+        {
+          "pattern": "zuerst + 動詞",
+          "zh": "先做步驟",
+          "example": "zuerst informieren"
+        }
+      ],
+      "tips": [
+        "教育路徑諮詢含時間成本與下一步。"
+      ],
+      "focus": [
+        "學習",
+        "行政"
+      ]
+    },
+    {
+      "id": "b1-46",
+      "level": "B1",
+      "kind": "story",
+      "topic": "心理健康",
+      "title": "Überforderung erkennen",
+      "titleZh": "察覺過載",
+      "text": "Im letzten Monat war mein Kalender zu voll.\nIch habe Zug um Zug Termine abgesagt, die nicht dringend waren.\nAußerdem spreche ich offener mit Freunden, wenn ich Pause brauche.\nÜberforderung ist kein persönliches Versagen, sondern ein Signal.\nWer früh gegensteuert, verhindert einen größeren Crash.\nHeute plane ich bewusst freie Abende ein.",
+      "textZh": "上個月我的行程太滿。\n我逐步取消了不緊急的約會。\n此外需要休息時，我也更坦率跟朋友說。\n過載不是個人失敗，而是訊號。\n及早調整可避免更大崩潰。\n現在我會刻意安排空閒晚上。",
+      "notes": [
+        {
+          "span": "Zug um Zug",
+          "zh": "逐步地"
+        },
+        {
+          "span": "dringend",
+          "zh": "緊急的"
+        },
+        {
+          "span": "Überforderung",
+          "zh": "過載／不堪負荷"
+        },
+        {
+          "span": "Versagen",
+          "zh": "失敗"
+        },
+        {
+          "span": "gegensteuern",
+          "zh": "採取對策／糾偏"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Zug um Zug + 動詞",
+          "zh": "逐步行動",
+          "example": "Zug um Zug aufräumen"
+        },
+        {
+          "pattern": "ist kein …, sondern ein …",
+          "zh": "重新定義",
+          "example": "ist kein Ende, sondern ein Anfang"
+        },
+        {
+          "pattern": "Wer früh …, verhindert …",
+          "zh": "條件忠告",
+          "example": "Wer übt, verhindert Panik."
+        }
+      ],
+      "tips": [
+        "B1 可談抽象主題，但仍用清楚結構。"
+      ],
+      "focus": [
+        "健康",
+        "論述",
+        "關係句"
+      ]
+    },
+    {
+      "id": "b1-47",
+      "level": "B1",
+      "kind": "email",
+      "topic": "合作提案",
+      "title": "Kooperationsanfrage",
+      "titleZh": "合作詢問",
+      "text": "Guten Tag Herr Meier,\n\nwir organisieren einen Sprachtreff für Neuankommende und suchen Räume.\nIhre Nachbarschaftsinitiative wäre ein idealer Partner.\nKönnten wir nächste Woche kurz online sprechen?\nAnbei finden Sie ein einseitiges Konzept.\n\nFreundliche Grüße\nTeam Ankommen",
+      "textZh": "Meier 先生您好，\n\n我們為新住民籌辦語言聚會，正在找場地。\n貴鄰里團體會是理想夥伴。\n下週可否短線上聊聊？\n附件有一頁構想。\n\n問候\nTeam Ankommen",
+      "notes": [
+        {
+          "span": "Neuankommende",
+          "zh": "新到者"
+        },
+        {
+          "span": "Nachbarschaftsinitiative",
+          "zh": "鄰里倡議團體"
+        },
+        {
+          "span": "Anbei",
+          "zh": "附件於此"
+        },
+        {
+          "span": "einseitiges Konzept",
+          "zh": "一頁企劃"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "suchen … und …",
+          "zh": "需求並列",
+          "example": "suchen Räume und Helfer"
+        },
+        {
+          "pattern": "wäre ein idealer Partner",
+          "zh": "客氣評價",
+          "example": "wäre eine gute Lösung"
+        },
+        {
+          "pattern": "Anbei finden Sie …",
+          "zh": "附件套語",
+          "example": "Anbei die Unterlagen."
+        }
+      ],
+      "tips": [
+        "合作信：需求、為何找對方、具體下一步。"
+      ],
+      "focus": [
+        "正式郵件",
+        "社區"
+      ]
+    },
+    {
+      "id": "b1-48",
+      "level": "B1",
+      "kind": "dialogue",
+      "topic": "簽證／居留",
+      "title": "Termin bei der Ausländerbehörde",
+      "titleZh": "外國人管理局預約",
+      "text": "Sachbearbeiterin: Welche Aufenthaltsfrage betrifft Sie?\nAntragsteller: Die Verlängerung meiner Aufenthaltserlaubnis zum Studium.\nSachbearbeiterin: Bitte Immatrikulationsbescheinigung und Finanzierungsnachweis vorlegen.\nAntragsteller: Reicht eine Sperrkonto-Bestätigung?\nSachbearbeiterin: Ja, aktuell. Und bitte biometrische Fotos.\nAntragsteller: Alles dabei. Wann erfahre ich das Ergebnis?",
+      "textZh": "承辦：您的居留問題是哪一類？\n申請人：學生居留許可延期。\n承辦：請提出在學證明與財力證明。\n申請人：凍結帳戶證明可以嗎？\n承辦：目前可以。還需要證件照。\n申請人：都帶了。何時能知道結果？",
+      "notes": [
+        {
+          "span": "Aufenthaltserlaubnis",
+          "zh": "居留許可"
+        },
+        {
+          "span": "Immatrikulationsbescheinigung",
+          "zh": "在學證明"
+        },
+        {
+          "span": "Finanzierungsnachweis",
+          "zh": "財力證明"
+        },
+        {
+          "span": "Sperrkonto",
+          "zh": "凍結帳戶"
+        },
+        {
+          "span": "biometrische Fotos",
+          "zh": "生物辨識照片"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Welche … betrifft Sie?",
+          "zh": "分類提問",
+          "example": "Welches Anliegen haben Sie?"
+        },
+        {
+          "pattern": "Bitte … vorlegen",
+          "zh": "請提出文件",
+          "example": "Bitte Pass vorlegen."
+        },
+        {
+          "pattern": "Wann erfahre ich …?",
+          "zh": "問結果時程",
+          "example": "Wann erfahre ich Bescheid?"
+        }
+      ],
+      "tips": [
+        "機關對話：目的＋文件＋結果時程。"
+      ],
+      "focus": [
+        "行政",
+        "居留"
+      ]
+    },
+    {
+      "id": "b1-49",
+      "level": "B1",
+      "kind": "story",
+      "topic": "城市參與",
+      "title": "Bürgerbeteiligung",
+      "titleZh": "公民參與",
+      "text": "In meiner Stadt gab es eine Umfrage zur Neugestaltung des Marktplatzes.\nIch habe online abgestimmt und einen Kommentar geschrieben.\nSpäter fand eine öffentliche Sitzung statt, an der auch Anwohnende teilnahmen.\nNicht alle Wünsche können erfüllt werden, aber Transparenz ist wichtig.\nWenn Bürgerinnen und Bürger mitreden, steigt oft die Akzeptanz von Entscheidungen.\nIch werde die Ergebnisse verfolgen.",
+      "textZh": "我市舉辦市集廣場改造問卷。\n我線上投票並寫了評論。\n之後有一場公聽會，住戶也參加。\n不是所有願望都能實現，但透明很重要。\n若公民能參與討論，決策接受度常會提高。\n我會持續追蹤結果。",
+      "notes": [
+        {
+          "span": "Neugestaltung",
+          "zh": "重新規劃"
+        },
+        {
+          "span": "abgestimmt",
+          "zh": "投票"
+        },
+        {
+          "span": "an der … teilnahmen",
+          "zh": "參加該場……",
+          "tip": "關係子句。"
+        },
+        {
+          "span": "Transparenz",
+          "zh": "透明"
+        },
+        {
+          "span": "Akzeptanz",
+          "zh": "接受度"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "eine Sitzung, an der … teilnehmen",
+          "zh": "活動＋關係句",
+          "example": "ein Kurs, an dem ich teilnehme"
+        },
+        {
+          "pattern": "Nicht alle …, aber …",
+          "zh": "現實限制",
+          "example": "Nicht alles klappt, aber wir üben."
+        },
+        {
+          "pattern": "Wenn … mitreden, steigt …",
+          "zh": "條件與社會結果",
+          "example": "Wenn man fragt, steigt Vertrauen."
+        }
+      ],
+      "tips": [
+        "公民參與文：參與方式＋限制＋意義。"
+      ],
+      "focus": [
+        "社會",
+        "關係句",
+        "論述"
+      ]
+    },
+    {
+      "id": "b1-50",
+      "level": "B1",
+      "kind": "story",
+      "topic": "總複習",
+      "title": "Was ich auf B1 anders mache",
+      "titleZh": "B1 階段我怎麼學",
+      "text": "Auf A2 habe ich vor allem kurze Texte und Dialoge geübt.\nJetzt auf B1 lese ich längere Beiträge und markiere Konnektoren wie deshalb, obwohl, seitdem.\nAußerdem schreibe ich E-Mails, in denen ich höflich bitte, begründe und eine Frist nenne.\nWenn ich unsicher bin, formuliere ich Alternativen mit könnte und würde.\nFehler gehören dazu; wichtig ist, dass ich sie korrigiere und wiederverwende.\nSo wird aus vielen kleinen Texten ein sicherer Stil.",
+      "textZh": "在 A2 我主要練短文與對話。\n現在到 B1，我讀較長文章並標出 deshalb、obwohl、seitdem 等連接詞。\n此外我寫郵件：客氣請求、說明理由、提出期限。\n不確定時會用 könnte、würde 寫替代說法。\n犯錯難免；重要的是改正並再次使用。\n如此許多短文會變成更穩的表達風格。",
+      "notes": [
+        {
+          "span": "Konnektoren",
+          "zh": "連接詞"
+        },
+        {
+          "span": "begründe",
+          "zh": "說明理由"
+        },
+        {
+          "span": "Frist nenne",
+          "zh": "提出期限"
+        },
+        {
+          "span": "formuliere Alternativen",
+          "zh": "提出替代說法"
+        },
+        {
+          "span": "wiederverwende",
+          "zh": "再次使用"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern": "Jetzt auf B1 …",
+          "zh": "階段對照",
+          "example": "Früher …, jetzt …"
+        },
+        {
+          "pattern": "E-Mails, in denen ich …",
+          "zh": "關係子句描述文類",
+          "example": "Texte, in denen ich argumentiere"
+        },
+        {
+          "pattern": "wichtig ist, dass …",
+          "zh": "強調重點",
+          "example": "Wichtig ist, dass du übst."
+        }
+      ],
+      "tips": [
+        "把本篇當 B1 學習宣言，對照你自己的方法。",
+        "長度、從句與客氣表達是與 A2 的主要差別。"
+      ],
+      "focus": [
+        "複習",
+        "連接詞",
+        "正式寫作",
+        "虛擬式"
       ]
     }
   ]
