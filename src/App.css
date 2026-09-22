@@ -668,7 +668,7 @@ select {
     grid-template-columns: 1fr;
   }
 
-  .level {
+  .level-pill {
     margin-left: 0;
   }
 }
