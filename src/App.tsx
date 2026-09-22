@@ -32,6 +32,19 @@ type Mode = 'browse' | 'flash' | 'plural' | 'verb' | 'family'
 type LevelFilter = Level | '全部'
 type WordTypeFilter = '全部' | '名詞' | '動詞' | '形容詞'
 
+type NavSnap = {
+  section: Section
+  mode: Mode
+  selectedId: string
+  levelFilter: LevelFilter
+  category: Category | '全部'
+  wordType: WordTypeFilter
+  gender: '全部' | 'der' | 'die' | 'das' | '無冠詞'
+  query: string
+  hideLearned: boolean
+  flashIndex: number
+}
+
 const LEARNED_KEY = 'wortklang-learned'
 
 /** Color every der/die/das (any case) inside a text string. */
@@ -108,20 +121,29 @@ function NavButtons({
   onPrev,
   onNext,
   label,
+  onBack,
 }: {
   onPrev: () => void
   onNext: () => void
   label: string
+  onBack?: () => void
 }) {
   return (
-    <div className="nav-row">
-      <button type="button" className="ghost nav-btn" onClick={onPrev}>
-        ← 上一個
-      </button>
-      <span className="nav-label">{label}</span>
-      <button type="button" className="ghost nav-btn" onClick={onNext}>
-        下一個 →
-      </button>
+    <div className="nav-block">
+      {onBack && (
+        <button type="button" className="ghost nav-back" onClick={onBack}>
+          ← 回上頁
+        </button>
+      )}
+      <div className="nav-row">
+        <button type="button" className="ghost nav-btn" onClick={onPrev}>
+          ← 上一個
+        </button>
+        <span className="nav-label">{label}</span>
+        <button type="button" className="ghost nav-btn" onClick={onNext}>
+          下一個 →
+        </button>
+      </div>
     </div>
   )
 }
@@ -280,6 +302,7 @@ function WordDetail({
   onNext,
   positionLabel,
   onOpenWord,
+  onBack,
 }: {
   word: VocabWord
   learned: boolean
@@ -288,13 +311,19 @@ function WordDetail({
   onNext: () => void
   positionLabel: string
   onOpenWord: (hit: VocabHit) => void
+  onBack?: () => void
 }) {
   const e = enrich(word)
   const lemma = word.article ? `${word.article} ${word.word}` : word.word
 
   return (
     <article className="detail" key={word.id}>
-      <NavButtons onPrev={onPrev} onNext={onNext} label={positionLabel} />
+      <NavButtons
+        onPrev={onPrev}
+        onNext={onNext}
+        label={positionLabel}
+        onBack={onBack}
+      />
 
       <div className="detail-top">
         <WordBadge article={word.article} />
@@ -388,6 +417,7 @@ function PracticeCard({
   onMark,
   positionLabel,
   onOpenWord,
+  onBack,
 }: {
   mode: Mode
   word: VocabWord
@@ -398,6 +428,7 @@ function PracticeCard({
   onMark: () => void
   positionLabel: string
   onOpenWord: (hit: VocabHit) => void
+  onBack?: () => void
 }) {
   const e = enrich(word)
   const lemma = word.article ? `${word.article} ${word.word}` : word.word
@@ -524,7 +555,12 @@ function PracticeCard({
 
   return (
     <div className={`flash ${revealed ? 'revealed' : ''}`}>
-      <NavButtons onPrev={onPrev} onNext={onNext} label={positionLabel} />
+      <NavButtons
+        onPrev={onPrev}
+        onNext={onNext}
+        label={positionLabel}
+        onBack={onBack}
+      />
       <div className="flash-front">
         <WordBadge article={word.article} />
         <PosLabel type={e.wordType} as="span" />
@@ -582,6 +618,14 @@ export default function App() {
   const [voiceReady, setVoiceReady] = useState(false)
   const [learned, setLearned] = useState<Set<string>>(() => loadLearned())
   const [hideLearned, setHideLearned] = useState(false)
+  const [navStack, setNavStack] = useState<NavSnap[]>([])
+  const [grammarMounted, setGrammarMounted] = useState(false)
+  const [articlesMounted, setArticlesMounted] = useState(false)
+
+  useEffect(() => {
+    if (section === 'grammar') setGrammarMounted(true)
+    if (section === 'articles') setArticlesMounted(true)
+  }, [section])
 
   useEffect(() => {
     ensureVoicesLoaded().then(() => setVoiceReady(true))
@@ -727,8 +771,25 @@ export default function App() {
     goFlash(1)
   }
 
+  const clearNavStack = () => setNavStack([])
+
   const openWordFromLink = (hit: VocabHit) => {
     stopSpeaking()
+    setNavStack((prev) => [
+      ...prev,
+      {
+        section,
+        mode,
+        selectedId,
+        levelFilter,
+        category,
+        wordType,
+        gender,
+        query,
+        hideLearned,
+        flashIndex,
+      },
+    ])
     setSection('vocab')
     setMode('browse')
     setLevelFilter(hit.level)
@@ -738,7 +799,6 @@ export default function App() {
     setQuery('')
     setHideLearned(false)
     setSelectedId(hit.id)
-    // scroll detail into view after paint
     requestAnimationFrame(() => {
       document.querySelector('.detail')?.scrollIntoView({
         behavior: 'smooth',
@@ -746,6 +806,32 @@ export default function App() {
       })
     })
   }
+
+  const goBackNav = () => {
+    if (navStack.length === 0) return
+    const snap = navStack[navStack.length - 1]
+    setNavStack(navStack.slice(0, -1))
+    setSection(snap.section)
+    setMode(snap.mode)
+    setLevelFilter(snap.levelFilter)
+    setCategory(snap.category)
+    setWordType(snap.wordType)
+    setGender(snap.gender)
+    setQuery(snap.query)
+    setHideLearned(snap.hideLearned)
+    setFlashIndex(snap.flashIndex)
+    setSelectedId(snap.selectedId)
+    setRevealed(false)
+    requestAnimationFrame(() => {
+      const target =
+        snap.section === 'grammar'
+          ? document.querySelector('.grammar-app, .grammar-layout, .layout')
+          : document.querySelector('.detail, .flash')
+      target?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    })
+  }
+
+  const backProp = navStack.length > 0 ? goBackNav : undefined
 
   return (
     <div className="app">
@@ -840,11 +926,17 @@ export default function App() {
         </p>
       </header>
 
-      {section === 'grammar' ? (
-        <GrammarView onOpenWord={openWordFromLink} />
-      ) : section === 'articles' ? (
-        <ArticlesIntro />
-      ) : (
+      {grammarMounted && (
+        <div hidden={section !== 'grammar'}>
+          <GrammarView onOpenWord={openWordFromLink} />
+        </div>
+      )}
+      {articlesMounted && (
+        <div hidden={section !== 'articles'}>
+          <ArticlesIntro />
+        </div>
+      )}
+      {section === 'vocab' && (
       <>
       <section className="level-board" aria-label="等級進度">
         <div className="level-tabs" role="tablist" aria-label="選擇等級">
@@ -982,6 +1074,7 @@ export default function App() {
                   className={`word-row ${active ? 'active' : ''} ${isLearned ? 'learned' : ''}`}
                   onClick={() => {
                     stopSpeaking()
+                    clearNavStack()
                     setSelectedId(w.id)
                   }}
                 >
@@ -1019,6 +1112,7 @@ export default function App() {
             onNext={() => goBrowse(1)}
             positionLabel={`${selectedIndex + 1} / ${filtered.length}`}
             onOpenWord={openWordFromLink}
+            onBack={backProp}
           />
         </main>
       )}
@@ -1036,6 +1130,7 @@ export default function App() {
               onMark={() => markAndNext(flashWord.id)}
               positionLabel={`${(flashIndex % filtered.length) + 1} / ${filtered.length}`}
               onOpenWord={openWordFromLink}
+              onBack={backProp}
             />
           ) : (
             <p className="empty">
