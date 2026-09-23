@@ -1642,6 +1642,128 @@ select {
   font-size: 0.88rem;
 }
 
+/* —— Prepositions intro —— */
+.prep-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+.prep-badge-akk {
+  background: rgba(47, 107, 184, 0.14);
+  color: #2f6bb8;
+}
+
+.prep-badge-dat {
+  background: rgba(184, 106, 47, 0.14);
+  color: var(--copper);
+}
+
+.prep-badge-wechsel {
+  background: rgba(46, 125, 90, 0.14);
+  color: #2e7d5a;
+}
+
+.prep-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+}
+
+.prep-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 0.9rem 1rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.prep-card-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.prep-card-top strong {
+  font-family: var(--font-de);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.prep-card-top span {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.prep-tip {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--copper);
+  font-weight: 600;
+}
+
+.prep-ex {
+  margin: 0;
+  display: grid;
+  gap: 0.15rem;
+}
+
+.prep-ex em {
+  font-style: normal;
+  font-family: var(--font-de);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.prep-ex span {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.prep-phrases {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.prep-phrases li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 0.7rem 0.9rem;
+}
+
+.prep-phrases li strong {
+  font-family: var(--font-de);
+  display: block;
+}
+
+.prep-phrases li span {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 640px) {
+  .prep-phrases li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .ai-note {
   margin: 0.75rem 0 0;
   font-size: 0.88rem;

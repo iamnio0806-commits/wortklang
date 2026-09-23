@@ -27,6 +27,7 @@ import { ensureVoicesLoaded, stopSpeaking } from './lib/speech'
 import { SpeakPair } from './lib/SpeakControls'
 import GrammarView from './GrammarView'
 import ArticlesIntro from './ArticlesIntro'
+import PrepositionsIntro from './PrepositionsIntro'
 import AffixesIntro from './AffixesIntro'
 import ReadingView from './ReadingView'
 import ExamView from './ExamView'
@@ -49,6 +50,7 @@ type Section =
   | 'vocab'
   | 'grammar'
   | 'articles'
+  | 'prepositions'
   | 'affixes'
   | 'reading'
   | 'exam'
@@ -676,6 +678,7 @@ export default function App() {
   const [learnMounted, setLearnMounted] = useState(true)
   const [grammarMounted, setGrammarMounted] = useState(false)
   const [articlesMounted, setArticlesMounted] = useState(false)
+  const [prepositionsMounted, setPrepositionsMounted] = useState(false)
   const [affixesMounted, setAffixesMounted] = useState(false)
   const [readingMounted, setReadingMounted] = useState(false)
   const [examMounted, setExamMounted] = useState(false)
@@ -686,6 +689,7 @@ export default function App() {
     if (section === 'learn') setLearnMounted(true)
     if (section === 'grammar') setGrammarMounted(true)
     if (section === 'articles') setArticlesMounted(true)
+    if (section === 'prepositions') setPrepositionsMounted(true)
     if (section === 'affixes') setAffixesMounted(true)
     if (section === 'reading') setReadingMounted(true)
     if (section === 'exam') setExamMounted(true)
@@ -955,13 +959,15 @@ export default function App() {
               ? '聽得見的德文單字'
               : section === 'grammar'
                 ? '聽得見的德文文法'
-                : section === 'affixes'
-                  ? '字首字根字尾'
-                  : section === 'reading'
-                    ? '分級閱讀'
-                    : section === 'exam'
-                      ? '德檢模擬測驗'
-                      : '冠詞入門'}
+                : section === 'prepositions'
+                  ? '介係詞入門'
+                  : section === 'affixes'
+                    ? '字首字根字尾'
+                    : section === 'reading'
+                      ? '分級閱讀'
+                      : section === 'exam'
+                        ? '德檢模擬測驗'
+                        : '冠詞入門'}
         </h1>
         <p className="tagline">
           {section === 'learn'
@@ -970,11 +976,13 @@ export default function App() {
               ? '完整 A1→C1：冠詞、複數、字首字根、動詞變化與字族記憶。'
               : section === 'grammar'
                 ? '完整 A1→C1 文法：格變、時態、語序、從句、被動與虛擬式。'
-                : section === 'affixes'
-                  ? '可分／不可分字首與常見字尾：每個都有中文意思與例子。'
-                  : section === 'reading'
-                    ? '對齊德檢：練習熱身 → A1／A2／B1／B2 考場長度閱讀，含註解與句型。'
-                    : section === 'exam'
+                : section === 'prepositions'
+                  ? '固定三／四格與兩用介詞：mit、für、in、zu… 例句可聽。'
+                  : section === 'affixes'
+                    ? '可分／不可分字首與常見字尾：每個都有中文意思與例子。'
+                    : section === 'reading'
+                      ? '對齊德檢：練習熱身 → A1／A2／B1／B2 考場長度閱讀，含註解與句型。'
+                      : section === 'exam'
                       ? '練習版＋考場版（Goethe 分 Teil）：A1–B2 各多回；聽力 TTS、寫作範文、口說選練。'
                       : 'der／die／das、bin／bist／ist：冠詞與最常用變位一起記。'}
         </p>
@@ -982,7 +990,7 @@ export default function App() {
         <div
           className="cta-row section-switch"
           role="tablist"
-          aria-label="自學、單字、冠詞、字首、閱讀、測驗或文法"
+          aria-label="自學、單字、冠詞、介詞、字首、閱讀、測驗或文法"
         >
           <button
             type="button"
@@ -1019,6 +1027,18 @@ export default function App() {
             }}
           >
             冠詞
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={section === 'prepositions'}
+            className={section === 'prepositions' ? 'primary' : 'ghost'}
+            onClick={() => {
+              stopSpeaking()
+              setSection('prepositions')
+            }}
+          >
+            介詞
           </button>
           <button
             type="button"
@@ -1126,6 +1146,11 @@ export default function App() {
       {articlesMounted && (
         <div hidden={section !== 'articles'}>
           <ArticlesIntro />
+        </div>
+      )}
+      {prepositionsMounted && (
+        <div hidden={section !== 'prepositions'}>
+          <PrepositionsIntro />
         </div>
       )}
       {affixesMounted && (
@@ -1376,13 +1401,15 @@ export default function App() {
               ? '文法依 CEFR 分級：先掌握規則與例句，再標記已學會。建議 Chrome／Edge 聽發音。'
               : section === 'articles'
                 ? '冠詞與 sein／haben 入門：定冠詞、格變，以及 bin／bist／ist。建議 Chrome／Edge 聽發音。'
-                : section === 'affixes'
-                  ? '字首字根字尾：可分／不可分與常見字尾都有中文意思。建議 Chrome／Edge 聽發音。'
-                  : section === 'reading'
-                    ? '分級閱讀（德檢取向）：練習＋A1～B2 各 85 篇。點德文可跳單字。'
-                    : section === 'exam'
-                      ? '德檢模擬：練習版綜合卷＋考場版分 Teil。建議 Chrome／Edge 聽聽力腳本。'
-                      : '只有你自己按「我會了」才會排入 SRS（約 1→3→7 天複習）。打開看不會自動拿掉。建議 Chrome／Edge 聽發音。'}
+                : section === 'prepositions'
+                  ? '介係詞篇章：固定三／四格、兩用介詞 wo／wohin，高頻搭配可聽。建議 Chrome／Edge 聽發音。'
+                  : section === 'affixes'
+                    ? '字首字根字尾：可分／不可分與常見字尾都有中文意思。建議 Chrome／Edge 聽發音。'
+                    : section === 'reading'
+                      ? '分級閱讀（德檢取向）：練習＋A1～B2 各 85 篇。點德文可跳單字。'
+                      : section === 'exam'
+                        ? '德檢模擬：練習版綜合卷＋考場版分 Teil。建議 Chrome／Edge 聽聽力腳本。'
+                        : '只有你自己按「我會了」才會排入 SRS（約 1→3→7 天複習）。打開看不會自動拿掉。建議 Chrome／Edge 聽發音。'}
         </p>
       </footer>
     </div>
