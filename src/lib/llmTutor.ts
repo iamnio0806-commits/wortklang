@@ -21,6 +21,12 @@ export const GEMINI_OPENAI_BASE =
   'https://generativelanguage.googleapis.com/v1beta/openai'
 /** Official model id — bare `gemini-3.1-pro` returns 404. */
 export const GEMINI_31_PRO = 'gemini-3.1-pro-preview'
+/** Free-tier / cheaper fallbacks when Pro hits 429 quota. */
+export const GEMINI_FLASH_FALLBACKS = [
+  'gemini-3-flash-preview',
+  'gemini-2.5-flash',
+] as const
+
 
 export const DEFAULT_LLM_SETTINGS: LlmSettings = {
   apiKey: '',
@@ -126,6 +132,14 @@ function isGeminiEndpoint(baseUrl: string): boolean {
 
 function friendlyApiError(status: number, errText: string): string {
   const short = errText.slice(0, 280)
+  if (status === 429 || /exceeded your current quota|rate.?limit/i.test(errText)) {
+    return (
+      '配額／頻率已達上限（429）。Gemini 3.1 Pro 免費額度用完了，或打太快。' +
+      '系統會自動改試 Flash；也可到 Google AI Studio 開帳單／看用量：' +
+      'https://ai.google.dev/gemini-api/docs/rate-limits 。' +
+      short
+    )
+  }
   if (
     status === 404 &&
     /gemini-3\.1-pro(?!-preview)/i.test(errText)
@@ -133,9 +147,49 @@ function friendlyApiError(status: number, errText: string): string {
     return `模型名稱錯誤：請用 ${GEMINI_31_PRO}（不能寫成 gemini-3.1-pro）。已可按「一鍵填入」自動修正。原文：${short}`
   }
   if (status === 404 && /not found/i.test(errText)) {
-    return `模型不存在或無 generatContent 權限（404）。請確認 Model 為 ${GEMINI_31_PRO}。${short}`
+    return `模型不存在或無 generateContent 權限（404）。請確認 Model 為 ${GEMINI_31_PRO}。${short}`
   }
   return `API 錯誤 ${status}: ${short}`
+}
+
+function isQuotaError(err: unknown): boolean {
+  const msg = err instanceof Error ? err.message : String(err)
+  return /\b429\b|quota|rate.?limit|配額/i.test(msg)
+}
+
+async function sleep(ms: number): Promise<void> {
+  await new Promise((r) => setTimeout(r, ms))
+}
+
+async function requestModelContent(opts: {
+  settings: LlmSettings
+  system: string
+  user: string
+}): Promise<string> {
+  const { settings, system, user } = opts
+  const base = settings.baseUrl.replace(/\/$/, '')
+
+  if (isGeminiEndpoint(base)) {
+    try {
+      return await requestViaGeminiNative({ settings, system, user })
+    } catch (nativeErr) {
+      try {
+        return await requestViaChatCompletions({
+          settings: {
+            ...settings,
+            baseUrl: /openai/i.test(base) ? base : GEMINI_OPENAI_BASE,
+          },
+          system,
+          user,
+        })
+      } catch {
+        throw nativeErr instanceof Error
+          ? nativeErr
+          : new Error(String(nativeErr))
+      }
+    }
+  }
+  return requestViaChatCompletions({ settings, system, user })
 }
 
 /** Native Gemini generateContent via v1beta. */
@@ -255,49 +309,74 @@ Keep explanations in Traditional Chinese (Taiwan). Mode: ${mode}.`
 
   const user = `Task (zh): ${promptZh}\n\nLearner German:\n${userText}`
 
-  const base = settings.baseUrl
-  let content: string
+  const tried: string[] = []
+  const queue = [
+    settings.model,
+    ...GEMINI_FLASH_FALLBACKS.filter((m) => m !== settings.model),
+  ]
 
-  // Gemini: prefer native v1beta generateContent (more reliable model routing),
-  // fall back to OpenAI-compat bridge.
-  if (isGeminiEndpoint(base)) {
+  let content = ''
+  let usedModel = settings.model
+  let lastErr: unknown
+
+  for (let i = 0; i < queue.length; i++) {
+    const model = normalizeGeminiModelId(queue[i])
+    if (tried.includes(model)) continue
+    tried.push(model)
     try {
-      content = await requestViaGeminiNative({ settings, system, user })
-    } catch (nativeErr) {
-      // If user configured the /openai bridge explicitly, also try chat/completions
-      if (/openai/i.test(base)) {
+      content = await requestModelContent({
+        settings: { ...settings, model },
+        system,
+        user,
+      })
+      usedModel = model
+      lastErr = null
+      break
+    } catch (err) {
+      lastErr = err
+      if (isQuotaError(err) && i < queue.length - 1) {
+        // Brief pause then try a cheaper / free-tier model
+        await sleep(600)
+        continue
+      }
+      // Non-quota errors: one short retry on same model, then throw
+      if (i === 0) {
+        await sleep(800)
         try {
-          content = await requestViaChatCompletions({ settings, system, user })
-        } catch {
-          throw nativeErr instanceof Error
-            ? nativeErr
-            : new Error(String(nativeErr))
-        }
-      } else {
-        // Even if baseUrl has no /openai, retry once via openai bridge with fixed model
-        try {
-          content = await requestViaChatCompletions({
-            settings: { ...settings, baseUrl: GEMINI_OPENAI_BASE },
+          content = await requestModelContent({
+            settings: { ...settings, model },
             system,
             user,
           })
-        } catch {
-          throw nativeErr instanceof Error
-            ? nativeErr
-            : new Error(String(nativeErr))
+          usedModel = model
+          lastErr = null
+          break
+        } catch (err2) {
+          lastErr = err2
+          if (isQuotaError(err2)) continue
+          throw err2 instanceof Error ? err2 : new Error(String(err2))
         }
       }
+      throw err instanceof Error ? err : new Error(String(err))
     }
-  } else {
-    content = await requestViaChatCompletions({ settings, system, user })
+  }
+
+  if (lastErr || !content) {
+    throw lastErr instanceof Error
+      ? lastErr
+      : new Error('所有模型皆無法回應（可能配額用盡）')
   }
 
   const parsed = extractJson(content) as TutorCorrection
   if (!parsed.corrected) throw new Error('回傳格式不完整')
+  const fallbackNote =
+    usedModel !== normalizeGeminiModelId(settings.model)
+      ? `（Pro 額度不足，已改用 ${usedModel}）`
+      : ''
   return {
     corrected: parsed.corrected,
     score: Number(parsed.score) || 0,
-    summaryZh: parsed.summaryZh || '',
+    summaryZh: `${parsed.summaryZh || ''}${fallbackNote}`,
     issues: Array.isArray(parsed.issues) ? parsed.issues : [],
     tipsZh: Array.isArray(parsed.tipsZh) ? parsed.tipsZh : [],
   }

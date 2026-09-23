@@ -1136,7 +1136,8 @@ function TutorPanel() {
           </div>
           <p className="exam-meta">
             正確模型 ID 是 <code>gemini-3.1-pro-preview</code>
-            （少寫 -preview 會 404）。金鑰從{' '}
+            （少寫 -preview 會 404）。若 Pro 出現 429
+            配額用完，系統會自動改試 Flash。金鑰從{' '}
             <a
               href="https://aistudio.google.com/apikey"
               target="_blank"
@@ -1144,7 +1145,7 @@ function TutorPanel() {
             >
               Google AI Studio
             </a>{' '}
-            取得，只存在本機。
+            取得，只存在本機——請勿把 Key 傳給任何人。
           </p>
         </section>
       )}
