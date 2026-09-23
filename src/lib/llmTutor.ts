@@ -16,9 +16,10 @@ export type TutorCorrection = {
 
 const SETTINGS_KEY = 'wortklang-llm-settings'
 
-/** Gemini OpenAI-compatible endpoint + Gemini 3.1 Pro. */
+/** Gemini OpenAI-compatible endpoint + Gemini 3.1 Pro Preview. */
 export const GEMINI_OPENAI_BASE =
   'https://generativelanguage.googleapis.com/v1beta/openai'
+/** Official model id — bare `gemini-3.1-pro` returns 404. */
 export const GEMINI_31_PRO = 'gemini-3.1-pro-preview'
 
 export const DEFAULT_LLM_SETTINGS: LlmSettings = {
@@ -27,46 +28,58 @@ export const DEFAULT_LLM_SETTINGS: LlmSettings = {
   model: GEMINI_31_PRO,
 }
 
-const LEGACY_OPENAI_DEFAULTS = {
-  baseUrl: 'https://api.openai.com/v1',
-  model: 'gpt-4o-mini',
+/** Map common typos / shorthand to the live API id. */
+const MODEL_ALIASES: Record<string, string> = {
+  'gemini-3.1-pro': GEMINI_31_PRO,
+  'gemini-3.1-pro-latest': GEMINI_31_PRO,
+  'gemini-3-pro': 'gemini-3-pro-preview',
+  'gemini-3-pro-preview': 'gemini-3.1-pro-preview', // 3 Pro preview now points to 3.1
+  'gemini-pro': GEMINI_31_PRO,
+  'gemini-pro-latest': GEMINI_31_PRO,
+  'gemini 3.1 pro': GEMINI_31_PRO,
+  'gemini3.1pro': GEMINI_31_PRO,
+}
+
+export function normalizeGeminiModelId(model: string): string {
+  const raw = model.trim()
+  if (!raw) return GEMINI_31_PRO
+  const key = raw.toLowerCase().replace(/\s+/g, ' ')
+  if (MODEL_ALIASES[key]) return MODEL_ALIASES[key]
+  // Strip accidental "models/" prefix
+  const stripped = raw.replace(/^models\//i, '')
+  if (MODEL_ALIASES[stripped.toLowerCase()]) {
+    return MODEL_ALIASES[stripped.toLowerCase()]
+  }
+  return stripped
 }
 
 function migrateSettings(parsed: Partial<LlmSettings>): LlmSettings {
   const merged: LlmSettings = { ...DEFAULT_LLM_SETTINGS, ...parsed }
-
-  // Upgrade leftover OpenAI defaults from older builds to Gemini 3.1 Pro.
   const base = (merged.baseUrl || '').replace(/\/$/, '')
-  const legacyBase = LEGACY_OPENAI_DEFAULTS.baseUrl.replace(/\/$/, '')
+
+  // Upgrade leftover OpenAI defaults
   if (
     !parsed.baseUrl ||
-    base === legacyBase ||
-    base.includes('api.openai.com')
+    base === 'https://api.openai.com/v1' ||
+    /api\.openai\.com/i.test(base)
   ) {
-    if (!parsed.baseUrl || base === legacyBase) {
+    if (!parsed.baseUrl || base === 'https://api.openai.com/v1') {
       merged.baseUrl = GEMINI_OPENAI_BASE
     }
   }
   if (
     !parsed.model ||
-    parsed.model === LEGACY_OPENAI_DEFAULTS.model ||
+    parsed.model === 'gpt-4o-mini' ||
     parsed.model === 'gpt-4o' ||
-    parsed.model.startsWith('gpt-')
+    /^gpt-/i.test(parsed.model)
   ) {
-    // Only auto-switch when they were still on the old default / GPT family
-    // and had not explicitly set a non-GPT model.
-    if (
-      !parsed.model ||
-      parsed.model === LEGACY_OPENAI_DEFAULTS.model ||
-      (parsed.model.startsWith('gpt-') &&
-        (base === legacyBase || !parsed.baseUrl))
-    ) {
-      merged.model = GEMINI_31_PRO
+    merged.model = GEMINI_31_PRO
+    if (!parsed.baseUrl || /api\.openai\.com/i.test(base)) {
       merged.baseUrl = GEMINI_OPENAI_BASE
     }
   }
 
-  // Normalize trailing slash
+  merged.model = normalizeGeminiModelId(merged.model)
   merged.baseUrl = merged.baseUrl.replace(/\/$/, '')
   return merged
 }
@@ -76,7 +89,12 @@ export function loadLlmSettings(): LlmSettings {
     const raw = localStorage.getItem(SETTINGS_KEY)
     if (!raw) return { ...DEFAULT_LLM_SETTINGS }
     const parsed = JSON.parse(raw) as Partial<LlmSettings>
-    return migrateSettings(parsed)
+    const next = migrateSettings(parsed)
+    // Persist normalized model so UI stops showing the broken id
+    if (parsed.model && parsed.model !== next.model) {
+      saveLlmSettings(next)
+    }
+    return next
   } catch {
     return { ...DEFAULT_LLM_SETTINGS }
   }
@@ -87,6 +105,7 @@ export function saveLlmSettings(s: LlmSettings): void {
     SETTINGS_KEY,
     JSON.stringify({
       ...s,
+      model: normalizeGeminiModelId(s.model),
       baseUrl: s.baseUrl.replace(/\/$/, ''),
     }),
   )
@@ -105,14 +124,28 @@ function isGeminiEndpoint(baseUrl: string): boolean {
   return /generativelanguage\.googleapis\.com/i.test(baseUrl)
 }
 
-/** Native Gemini generateContent (when not using the OpenAI-compat path). */
+function friendlyApiError(status: number, errText: string): string {
+  const short = errText.slice(0, 280)
+  if (
+    status === 404 &&
+    /gemini-3\.1-pro(?!-preview)/i.test(errText)
+  ) {
+    return `模型名稱錯誤：請用 ${GEMINI_31_PRO}（不能寫成 gemini-3.1-pro）。已可按「一鍵填入」自動修正。原文：${short}`
+  }
+  if (status === 404 && /not found/i.test(errText)) {
+    return `模型不存在或無 generatContent 權限（404）。請確認 Model 為 ${GEMINI_31_PRO}。${short}`
+  }
+  return `API 錯誤 ${status}: ${short}`
+}
+
+/** Native Gemini generateContent via v1beta. */
 async function requestViaGeminiNative(opts: {
   settings: LlmSettings
   system: string
   user: string
 }): Promise<string> {
   const { settings, system, user } = opts
-  const model = settings.model.trim() || GEMINI_31_PRO
+  const model = normalizeGeminiModelId(settings.model)
   const key = settings.apiKey.trim()
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(key)}`
 
@@ -131,7 +164,7 @@ async function requestViaGeminiNative(opts: {
 
   if (!res.ok) {
     const errText = await res.text().catch(() => '')
-    throw new Error(`Gemini API 錯誤 ${res.status}: ${errText.slice(0, 220)}`)
+    throw new Error(friendlyApiError(res.status, errText))
   }
 
   const data = (await res.json()) as {
@@ -153,27 +186,32 @@ async function requestViaChatCompletions(opts: {
 }): Promise<string> {
   const { settings, system, user } = opts
   const base = settings.baseUrl.replace(/\/$/, '')
+  const model = normalizeGeminiModelId(settings.model)
+  const body: Record<string, unknown> = {
+    model,
+    temperature: 0.2,
+    messages: [
+      { role: 'system', content: system },
+      { role: 'user', content: user },
+    ],
+  }
+  // response_format helps JSON; some proxies reject it — only send for Gemini/OpenAI-ish hosts
+  if (isGeminiEndpoint(base) || /openai\.com/i.test(base)) {
+    body.response_format = { type: 'json_object' }
+  }
+
   const res = await fetch(`${base}/chat/completions`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${settings.apiKey.trim()}`,
     },
-    body: JSON.stringify({
-      model: settings.model,
-      temperature: 0.2,
-      messages: [
-        { role: 'system', content: system },
-        { role: 'user', content: user },
-      ],
-      // Helps Gemini / newer OpenAI models stick to JSON
-      response_format: { type: 'json_object' },
-    }),
+    body: JSON.stringify(body),
   })
 
   if (!res.ok) {
     const errText = await res.text().catch(() => '')
-    throw new Error(`API 錯誤 ${res.status}: ${errText.slice(0, 220)}`)
+    throw new Error(friendlyApiError(res.status, errText))
   }
 
   const data = (await res.json()) as {
@@ -189,7 +227,13 @@ export async function requestGermanFeedback(opts: {
   userText: string
   level: string
 }): Promise<TutorCorrection> {
-  const { settings, mode, promptZh, userText, level } = opts
+  const settings: LlmSettings = {
+    ...opts.settings,
+    model: normalizeGeminiModelId(opts.settings.model),
+    baseUrl: opts.settings.baseUrl.replace(/\/$/, ''),
+  }
+  const { mode, promptZh, userText, level } = opts
+
   if (!settings.apiKey.trim()) {
     throw new Error('請先設定 Gemini API Key（僅存在本機瀏覽器）')
   }
@@ -211,16 +255,39 @@ Keep explanations in Traditional Chinese (Taiwan). Mode: ${mode}.`
 
   const user = `Task (zh): ${promptZh}\n\nLearner German:\n${userText}`
 
-  // Prefer OpenAI-compat when baseUrl points at Gemini openai bridge or any chat endpoint.
-  // If baseUrl is empty/default Gemini host without /openai, use native generateContent.
-  const base = settings.baseUrl.replace(/\/$/, '')
+  const base = settings.baseUrl
   let content: string
-  if (
-    isGeminiEndpoint(base) &&
-    !/\/openai$/i.test(base) &&
-    !/openai/i.test(base)
-  ) {
-    content = await requestViaGeminiNative({ settings, system, user })
+
+  // Gemini: prefer native v1beta generateContent (more reliable model routing),
+  // fall back to OpenAI-compat bridge.
+  if (isGeminiEndpoint(base)) {
+    try {
+      content = await requestViaGeminiNative({ settings, system, user })
+    } catch (nativeErr) {
+      // If user configured the /openai bridge explicitly, also try chat/completions
+      if (/openai/i.test(base)) {
+        try {
+          content = await requestViaChatCompletions({ settings, system, user })
+        } catch {
+          throw nativeErr instanceof Error
+            ? nativeErr
+            : new Error(String(nativeErr))
+        }
+      } else {
+        // Even if baseUrl has no /openai, retry once via openai bridge with fixed model
+        try {
+          content = await requestViaChatCompletions({
+            settings: { ...settings, baseUrl: GEMINI_OPENAI_BASE },
+            system,
+            user,
+          })
+        } catch {
+          throw nativeErr instanceof Error
+            ? nativeErr
+            : new Error(String(nativeErr))
+        }
+      }
+    }
   } else {
     content = await requestViaChatCompletions({ settings, system, user })
   }

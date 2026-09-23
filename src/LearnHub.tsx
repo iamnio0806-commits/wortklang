@@ -40,6 +40,7 @@ import {
   loadLlmSettings,
   requestGermanFeedback,
   saveLlmSettings,
+  normalizeGeminiModelId,
   type LlmSettings,
   type TutorCorrection,
 } from './lib/llmTutor'
@@ -993,8 +994,13 @@ function TutorPanel() {
   const [result, setResult] = useState<TutorCorrection | null>(null)
 
   function persist(next: LlmSettings) {
-    setSettings(next)
-    saveLlmSettings(next)
+    const normalized = {
+      ...next,
+      model: normalizeGeminiModelId(next.model),
+      baseUrl: next.baseUrl.replace(/\/$/, ''),
+    }
+    setSettings(normalized)
+    saveLlmSettings(normalized)
   }
 
   async function run() {
@@ -1064,6 +1070,12 @@ function TutorPanel() {
             <input
               value={settings.model}
               onChange={(e) => persist({ ...settings, model: e.target.value })}
+              onBlur={() =>
+                persist({
+                  ...settings,
+                  model: normalizeGeminiModelId(settings.model),
+                })
+              }
               placeholder="gemini-3.1-pro-preview"
             />
           </label>
@@ -1074,7 +1086,8 @@ function TutorPanel() {
               onClick={() =>
                 persist({
                   ...settings,
-                  baseUrl: 'https://generativelanguage.googleapis.com/v1beta/openai',
+                  baseUrl:
+                    'https://generativelanguage.googleapis.com/v1beta/openai',
                   model: 'gemini-3.1-pro-preview',
                 })
               }
@@ -1083,9 +1096,8 @@ function TutorPanel() {
             </button>
           </div>
           <p className="exam-meta">
-            預設使用 Google Gemini OpenAI 相容端點（模型{' '}
-            <code>gemini-3.1-pro-preview</code>
-            ）。金鑰從{' '}
+            正確模型 ID 是 <code>gemini-3.1-pro-preview</code>
+            （少寫 -preview 會 404）。金鑰從{' '}
             <a
               href="https://aistudio.google.com/apikey"
               target="_blank"
@@ -1093,7 +1105,7 @@ function TutorPanel() {
             >
               Google AI Studio
             </a>{' '}
-            取得，只存在本機，不會上傳到本站伺服器。
+            取得，只存在本機。
           </p>
         </section>
       )}
