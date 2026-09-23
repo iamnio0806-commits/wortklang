@@ -41,6 +41,8 @@ import {
   requestGermanFeedback,
   saveLlmSettings,
   normalizeGeminiModelId,
+  GEMINI_31_PRO,
+  GEMINI_OPENAI_BASE,
   type LlmSettings,
   type TutorCorrection,
 } from './lib/llmTutor'
@@ -981,7 +983,19 @@ function StoriesPanel({ onOpenWord }: { onOpenWord: (hit: VocabHit) => void }) {
 }
 
 function TutorPanel() {
-  const [settings, setSettings] = useState<LlmSettings>(() => loadLlmSettings())
+  const [settings, setSettings] = useState<LlmSettings>(() => {
+    const loaded = loadLlmSettings()
+    // Always coerce to the live Gemini 3.1 Pro id — bare "gemini-3.1-pro" 404s.
+    const fixed: LlmSettings = {
+      ...loaded,
+      model: GEMINI_31_PRO,
+      baseUrl: loaded.baseUrl?.includes('generativelanguage.googleapis.com')
+        ? loaded.baseUrl.replace(/\/$/, '')
+        : GEMINI_OPENAI_BASE,
+    }
+    saveLlmSettings(fixed)
+    return fixed
+  })
   const [showSettings, setShowSettings] = useState(false)
   const [mode, setMode] = useState<'schreiben' | 'sprechen'>('schreiben')
   const [level, setLevel] = useState('A1')
@@ -992,6 +1006,16 @@ function TutorPanel() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [result, setResult] = useState<TutorCorrection | null>(null)
+
+  useEffect(() => {
+    // Re-assert correct model if an old tab left a broken id in localStorage.
+    const loaded = loadLlmSettings()
+    if (normalizeGeminiModelId(loaded.model) !== GEMINI_31_PRO) {
+      const fixed = { ...loaded, model: GEMINI_31_PRO }
+      setSettings(fixed)
+      saveLlmSettings(fixed)
+    }
+  }, [])
 
   function persist(next: LlmSettings) {
     const normalized = {
@@ -1008,8 +1032,17 @@ function TutorPanel() {
     setError('')
     setResult(null)
     try {
+      const safeSettings: LlmSettings = {
+        ...settings,
+        model: GEMINI_31_PRO,
+        baseUrl: settings.baseUrl.replace(/\/$/, '') || GEMINI_OPENAI_BASE,
+      }
+      // Keep UI + storage in sync with what we actually call
+      if (settings.model !== GEMINI_31_PRO) {
+        persist(safeSettings)
+      }
       const r = await requestGermanFeedback({
-        settings,
+        settings: safeSettings,
         mode,
         promptZh,
         userText,
@@ -1043,6 +1076,12 @@ function TutorPanel() {
           {settings.apiKey ? '已設定 Key' : '尚未設定 Key'} · {settings.model}
         </span>
       </div>
+      {settings.model !== 'gemini-3.1-pro-preview' && (
+        <p className="exam-explain">
+          偵測到錯誤模型名。請按下方「一鍵填入 Gemini 3.1 Pro」（必須含
+          -preview，否則會 404）。
+        </p>
+      )}
 
       {showSettings && (
         <section className="panel">
