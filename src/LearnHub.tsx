@@ -1020,8 +1020,9 @@ function TutorPanel() {
   return (
     <div className="learn-panel">
       <p className="ai-lead-sm">
-        把你寫的／準備說的德文貼上來，串接 OpenAI
-        相容 API（金鑰只存在本機）即時糾錯：冠詞、動詞位置、格變與語意。
+        把你寫的／準備說的德文貼上來，串接{' '}
+        <strong>Gemini 3.1 Pro</strong>
+        （金鑰只存在本機）即時糾錯：冠詞、動詞位置、格變與語意。
       </p>
 
       <div className="speak-row">
@@ -1033,19 +1034,19 @@ function TutorPanel() {
           {showSettings ? '收起設定' : 'API 設定'}
         </button>
         <span className="exam-meta">
-          {settings.apiKey ? '已設定 Key' : '尚未設定 Key'}
+          {settings.apiKey ? '已設定 Key' : '尚未設定 Key'} · {settings.model}
         </span>
       </div>
 
       {showSettings && (
         <section className="panel">
           <label className="learn-field">
-            API Key
+            Gemini API Key
             <input
               type="password"
               value={settings.apiKey}
               onChange={(e) => persist({ ...settings, apiKey: e.target.value })}
-              placeholder="sk-…"
+              placeholder="AIza…"
             />
           </label>
           <label className="learn-field">
@@ -1055,6 +1056,7 @@ function TutorPanel() {
               onChange={(e) =>
                 persist({ ...settings, baseUrl: e.target.value })
               }
+              placeholder="https://generativelanguage.googleapis.com/v1beta/openai"
             />
           </label>
           <label className="learn-field">
@@ -1062,10 +1064,36 @@ function TutorPanel() {
             <input
               value={settings.model}
               onChange={(e) => persist({ ...settings, model: e.target.value })}
+              placeholder="gemini-3.1-pro-preview"
             />
           </label>
+          <div className="speak-row" style={{ marginTop: '0.5rem' }}>
+            <button
+              type="button"
+              className="ghost"
+              onClick={() =>
+                persist({
+                  ...settings,
+                  baseUrl: 'https://generativelanguage.googleapis.com/v1beta/openai',
+                  model: 'gemini-3.1-pro-preview',
+                })
+              }
+            >
+              一鍵填入 Gemini 3.1 Pro
+            </button>
+          </div>
           <p className="exam-meta">
-            支援 OpenAI／相容端點（含部分 Grok／代理）。金鑰不會上傳到本站伺服器。
+            預設使用 Google Gemini OpenAI 相容端點（模型{' '}
+            <code>gemini-3.1-pro-preview</code>
+            ）。金鑰從{' '}
+            <a
+              href="https://aistudio.google.com/apikey"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google AI Studio
+            </a>{' '}
+            取得，只存在本機，不會上傳到本站伺服器。
           </p>
         </section>
       )}
