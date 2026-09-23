@@ -71,6 +71,50 @@ function FormTable({
   )
 }
 
+function sanitizeHint(exercise: GrammarExercise): string {
+  let hint = (exercise.hint || '').trim()
+  if (!hint) return '想想本單元重點，不要急著偷看答案。'
+
+  const secrets: string[] = []
+  if (exercise.answer) secrets.push(String(exercise.answer))
+  if (exercise.type === 'mcq') {
+    for (const opt of exercise.options) secrets.push(opt)
+  }
+  // Longest first so "Guten Tag" beats "Tag"
+  secrets.sort((a, b) => b.trim().length - a.trim().length)
+
+  for (const secret of secrets) {
+    const s = secret.trim()
+    if (s.length < 2) continue
+    const re = new RegExp(
+      s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'),
+      'gi',
+    )
+    hint = hint.replace(re, '……')
+  }
+
+  // Blank lines that literally paste the example / full sentence answer
+  hint = hint
+    .replace(/(完整例句|對照例句|例句|答案)[：:]\s*.+$/gi, '$1：……')
+    .replace(/是\s*(der|die|das|den|dem|des|ein|eine|einen|einem|einer)\b/gi, '是 ……')
+    .replace(/用\s*(der|die|das|den|dem|des|ein|eine|einen|einem|einer)\b/gi, '用 ……')
+    .replace(/[→➝]\s*[A-Za-zÄÖÜäöüß\-]+/g, '→ ……')
+    .replace(/\b(der|die|das|den|dem|des)\s*[（(][^)）]*[)）]/gi, '……')
+    .replace(/[（(](?:藍色|紅色|綠色|陽性|陰性|中性)[)）]/g, '')
+
+  hint = hint.replace(/\s{2,}/g, ' ').trim()
+  // Mostly German leftovers or ellipses → generic nudge
+  const latinOnly = hint.replace(/[….…\s\p{P}]/gu, '')
+  if (
+    hint.length < 4 ||
+    /^[….…\s]+$/.test(hint) ||
+    (latinOnly.length > 0 && /^[A-Za-zÄÖÜäöüß]+$/.test(latinOnly) && latinOnly.length < 24)
+  ) {
+    return '想想語法重點（性別／格／動詞變化／語序），先自己選再核對。'
+  }
+  return hint
+}
+
 function QuizPanel({ topic }: { topic: GrammarTopic }) {
   const exercises = topic.exercises ?? []
   const [answers, setAnswers] = useState<Record<string, string>>({})
@@ -117,8 +161,8 @@ function QuizPanel({ topic }: { topic: GrammarTopic }) {
       <h3>確認學會</h3>
       <p className="quiz-lead">
         {beginner
-          ? '初學者：先做選擇題再做填空；不會就按「提示」。全對後請自己按「標記已學會」。'
-          : '每單元含選擇題與填空題。全對後請自己按「標記已學會」。'}
+          ? '初學者：先做選擇題再做填空。提示預設隱藏，可自行打開／關掉；提示不會直接寫出答案。'
+          : '每單元含選擇題與填空題。提示預設隱藏，可自行打開／關掉。'}
       </p>
 
       <div className="quiz-block">
@@ -129,8 +173,7 @@ function QuizPanel({ topic }: { topic: GrammarTopic }) {
             index={i + 1}
             exercise={ex}
             value={answers[ex.id] ?? ''}
-            showHint={!!showHint[ex.id] || beginner}
-            forcedHint={beginner && !checked}
+            showHint={!!showHint[ex.id]}
             checked={checked}
             correct={results[ex.id]}
             onChange={(v) =>
@@ -151,8 +194,7 @@ function QuizPanel({ topic }: { topic: GrammarTopic }) {
             index={i + 1}
             exercise={ex}
             value={answers[ex.id] ?? ''}
-            showHint={!!showHint[ex.id] || (beginner && !checked)}
-            forcedHint={false}
+            showHint={!!showHint[ex.id]}
             checked={checked}
             correct={results[ex.id]}
             onChange={(v) =>
@@ -175,7 +217,7 @@ function QuizPanel({ topic }: { topic: GrammarTopic }) {
           >
             {score.ok === score.total
               ? `全對 ${score.ok}/${score.total}！可以自己按上方「標記已學會」。`
-              : `目前 ${score.ok}/${score.total} 題正確，看看提示再試一次。`}
+              : `目前 ${score.ok}/${score.total} 題正確，可開提示再試，或對照單元重點。`}
           </p>
         )}
       </div>
@@ -188,7 +230,6 @@ function ExerciseCard({
   exercise,
   value,
   showHint,
-  forcedHint,
   checked,
   correct,
   onChange,
@@ -198,7 +239,6 @@ function ExerciseCard({
   exercise: GrammarExercise
   value: string
   showHint: boolean
-  forcedHint: boolean
   checked: boolean
   correct?: boolean
   onChange: (v: string) => void
@@ -206,6 +246,7 @@ function ExerciseCard({
 }) {
   const status =
     checked && correct !== undefined ? (correct ? 'ok' : 'bad') : ''
+  const hintText = sanitizeHint(exercise)
 
   return (
     <div className={`exercise-card ${status}`}>
@@ -242,14 +283,12 @@ function ExerciseCard({
       )}
 
       <div className="exercise-foot">
-        {!forcedHint && (
-          <button type="button" className="ghost hint-btn" onClick={onToggleHint}>
-            {showHint ? '隱藏提示' : '提示'}
-          </button>
-        )}
-        {(showHint || forcedHint) && (
+        <button type="button" className="ghost hint-btn" onClick={onToggleHint}>
+          {showHint ? '隱藏提示' : '提示'}
+        </button>
+        {showHint && (
           <p className="exercise-hint">
-            <RichText text={exercise.hint} />
+            <RichText text={hintText} />
           </p>
         )}
         {checked && correct === false && exercise.type === 'fill' && (

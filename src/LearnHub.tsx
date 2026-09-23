@@ -54,6 +54,26 @@ const ROADMAP_DAY_KEY = 'wortklang-roadmap-day'
 const VP_WEEK_KEY = 'wortklang-vp-week'
 const VP_DAY_KEY = 'wortklang-vp-day'
 const VP_DONE_KEY = 'wortklang-vp-done'
+const SPELL_DONE_KEY = 'wortklang-spell-done'
+
+function foldSpell(s: string): string {
+  return s
+    .trim()
+    .normalize('NFC')
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+}
+
+/** Accept bare lemma or article + lemma; ignore trailing punctuation. */
+function checkSpellingInput(word: VocabWord, input: string): boolean {
+  const raw = foldSpell(input.replace(/[.!?。！？]+$/g, ''))
+  if (!raw) return false
+  const lemma = foldSpell(word.word)
+  const withArticle = word.article
+    ? foldSpell(`${word.article} ${word.word}`)
+    : null
+  return raw === lemma || (withArticle !== null && raw === withArticle)
+}
 
 function loadDone(key: string): Set<string> {
   try {
@@ -266,6 +286,204 @@ export default function LearnHub({
   )
 }
 
+function DailySpellingQuiz({
+  taskKey,
+  vocabIds,
+  dayDone,
+  onMarkDayDone,
+}: {
+  taskKey: string
+  vocabIds: string[]
+  dayDone: boolean
+  onMarkDayDone?: () => void
+}) {
+  const words = useMemo(
+    () =>
+      vocabIds
+        .map((id) => vocabById(id))
+        .filter((w): w is VocabWord => Boolean(w)),
+    [vocabIds],
+  )
+
+  const [spellDone, setSpellDone] = useState(() => loadDone(SPELL_DONE_KEY))
+  const alreadyDone = spellDone.has(taskKey)
+
+  const [idx, setIdx] = useState(0)
+  const [input, setInput] = useState('')
+  const [feedback, setFeedback] = useState<'idle' | 'ok' | 'bad'>('idle')
+  const [correctCount, setCorrectCount] = useState(0)
+  const [finished, setFinished] = useState(alreadyDone)
+  const [showAnswer, setShowAnswer] = useState(false)
+
+  useEffect(() => {
+    setIdx(0)
+    setInput('')
+    setFeedback('idle')
+    setCorrectCount(0)
+    setFinished(alreadyDone)
+    setShowAnswer(false)
+  }, [taskKey, alreadyDone])
+
+  const current = words[idx]
+  const total = words.length
+
+  function persistDone() {
+    setSpellDone((prev) => {
+      const next = new Set(prev)
+      next.add(taskKey)
+      localStorage.setItem(SPELL_DONE_KEY, JSON.stringify([...next]))
+      return next
+    })
+  }
+
+  function submit() {
+    if (!current || feedback === 'ok') return
+    const ok = checkSpellingInput(current, input)
+    if (ok) {
+      setFeedback('ok')
+      setShowAnswer(false)
+      setCorrectCount((c) => c + 1)
+    } else {
+      setFeedback('bad')
+    }
+  }
+
+  function nextCard() {
+    if (!current) return
+    const wasOk = feedback === 'ok'
+    const nextIdx = idx + 1
+    if (nextIdx >= total) {
+      setFinished(true)
+      persistDone()
+      return
+    }
+    setIdx(nextIdx)
+    setInput('')
+    setFeedback('idle')
+    setShowAnswer(false)
+    if (!wasOk) {
+      /* keep correctCount as-is */
+    }
+  }
+
+  function restart() {
+    setIdx(0)
+    setInput('')
+    setFeedback('idle')
+    setCorrectCount(0)
+    setFinished(false)
+    setShowAnswer(false)
+  }
+
+  if (!total) return null
+
+  return (
+    <section className="panel spelling-quiz" aria-label="今日拼字小測驗">
+      <h3>④ 今日拼字小測驗</h3>
+      <p className="panel-note">
+        看中文意思，自己打出德文拼字（名詞可加或不加冠詞）。學完今日字後練一次，加深記憶。
+      </p>
+
+      {finished ? (
+        <div className="spelling-done">
+          <p className="quiz-score pass">
+            {alreadyDone && correctCount === 0
+              ? '今日拼字已完成 ✓'
+              : `拼字完成：${correctCount} / ${total} 題一次就對`}
+          </p>
+          <div className="srs-grades">
+            <button type="button" className="ghost" onClick={restart}>
+              再練一次
+            </button>
+            {!dayDone && onMarkDayDone && (
+              <button type="button" className="learned-btn on" onClick={onMarkDayDone}>
+                標記今日完成
+              </button>
+            )}
+          </div>
+        </div>
+      ) : current ? (
+        <div className={`srs-card spelling-card ${feedback === 'ok' ? 'ok' : feedback === 'bad' ? 'bad' : ''}`}>
+          <p className="exam-meta">
+            {idx + 1} / {total}
+            {current.level ? ` · ${current.level}` : ''}
+            {current.category ? ` · ${current.category}` : ''}
+          </p>
+          <p className="spelling-prompt-zh">{current.translation}</p>
+          <label className="learn-field">
+            德文拼字
+            <input
+              value={input}
+              onChange={(e) => {
+                setInput(e.target.value)
+                if (feedback !== 'idle') setFeedback('idle')
+                setShowAnswer(false)
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault()
+                  if (feedback === 'ok') nextCard()
+                  else submit()
+                }
+              }}
+              placeholder={
+                current.article
+                  ? `例如：${current.article} … 或只寫單詞`
+                  : '打出德文單詞…'
+              }
+              autoComplete="off"
+              autoCorrect="off"
+              autoCapitalize="off"
+              spellCheck={false}
+              className="spelling-input"
+              disabled={feedback === 'ok'}
+            />
+          </label>
+          {feedback === 'ok' && (
+            <p className="quiz-score pass">正確！</p>
+          )}
+          {feedback === 'bad' && (
+            <p className="quiz-score fail">不對，再試一次，或看答案後下一題。</p>
+          )}
+          {showAnswer && (
+            <p className="exercise-answer">
+              參考：{current.article ? `${current.article} ` : ''}
+              {current.word}
+            </p>
+          )}
+          <div className="srs-grades">
+            {feedback !== 'ok' ? (
+              <>
+                <button type="button" className="primary" onClick={submit}>
+                  檢查拼字
+                </button>
+                {feedback === 'bad' && (
+                  <button
+                    type="button"
+                    className="ghost"
+                    onClick={() => setShowAnswer(true)}
+                  >
+                    看答案
+                  </button>
+                )}
+                {(feedback === 'bad' || showAnswer) && (
+                  <button type="button" className="ghost" onClick={nextCard}>
+                    下一題
+                  </button>
+                )}
+              </>
+            ) : (
+              <button type="button" className="primary" onClick={nextCard}>
+                {idx + 1 >= total ? '完成' : '下一題'}
+              </button>
+            )}
+          </div>
+        </div>
+      ) : null}
+    </section>
+  )
+}
+
 function TodayReview({
   dueIds,
   srsMap,
@@ -423,6 +641,15 @@ function TodayReview({
           )}
         </div>
       </article>
+
+      {vocabIds.length > 0 && (
+        <DailySpellingQuiz
+          taskKey={taskKey}
+          vocabIds={vocabIds}
+          dayDone={dayDone}
+          onMarkDayDone={!dayDone ? onToggleVp : undefined}
+        />
+      )}
 
       <section className="panel">
         <h3>SRS 到期複習</h3>

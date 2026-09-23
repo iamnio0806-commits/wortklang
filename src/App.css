@@ -2425,6 +2425,41 @@ select {
   padding: 1rem 0 0.25rem;
 }
 
+.spelling-quiz .spelling-prompt-zh {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 650;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.spelling-quiz .spelling-input {
+  font-family: var(--font-de);
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+}
+
+.spelling-card.ok {
+  outline: 1px solid rgba(31, 92, 69, 0.35);
+  border-radius: 12px;
+  padding: 0.85rem 0.9rem;
+  background: rgba(31, 92, 69, 0.06);
+}
+
+.spelling-card.bad {
+  outline: 1px solid rgba(166, 61, 90, 0.3);
+  border-radius: 12px;
+  padding: 0.85rem 0.9rem;
+  background: rgba(166, 61, 90, 0.05);
+}
+
+.spelling-done {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding-top: 0.35rem;
+}
+
 .srs-grades {
   display: flex;
   flex-wrap: wrap;
