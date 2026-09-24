@@ -54,7 +54,83 @@ const ROADMAP_DAY_KEY = 'wortklang-roadmap-day'
 const VP_WEEK_KEY = 'wortklang-vp-week'
 const VP_DAY_KEY = 'wortklang-vp-day'
 const VP_DONE_KEY = 'wortklang-vp-done'
+const VP_LAST_DATE_KEY = 'wortklang-vp-last-date'
 const SPELL_DONE_KEY = 'wortklang-spell-done'
+
+/** Local calendar day as YYYY-MM-DD (not UTC). */
+function todayKey(d = new Date()): string {
+  const y = d.getFullYear()
+  const m = String(d.getMonth() + 1).padStart(2, '0')
+  const day = String(d.getDate()).padStart(2, '0')
+  return `${y}-${m}-${day}`
+}
+
+function parseDayKey(key: string): Date | null {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(key)
+  if (!m) return null
+  const y = Number(m[1])
+  const mo = Number(m[2])
+  const d = Number(m[3])
+  if (!y || mo < 1 || mo > 12 || d < 1 || d > 31) return null
+  return new Date(y, mo - 1, d)
+}
+
+function calendarDaysBetween(fromKey: string, toKey: string): number {
+  const a = parseDayKey(fromKey)
+  const b = parseDayKey(toKey)
+  if (!a || !b) return 0
+  return Math.round((b.getTime() - a.getTime()) / 86_400_000)
+}
+
+function vpIndex(week: number, day: number): number {
+  return (week - 1) * 7 + (day - 1)
+}
+
+function vpFromIndex(index: number): { week: number; day: number } {
+  const max = VOCAB_PATH_META.weeks * 7 - 1
+  const i = Math.max(0, Math.min(max, index))
+  return { week: Math.floor(i / 7) + 1, day: (i % 7) + 1 }
+}
+
+/**
+ * Advance path by real calendar days so「今日」單字／文法／閱讀每天換新，
+ * 不依賴「今日完成」或有沒有背完字。
+ */
+function advancePathByCalendar(
+  week: number,
+  day: number,
+  lastDate: string | null,
+  now = todayKey(),
+): {
+  week: number
+  day: number
+  lastDate: string
+  passedTaskIds: string[]
+  stepped: number
+} {
+  if (!lastDate || !parseDayKey(lastDate)) {
+    return { week, day, lastDate: now, passedTaskIds: [], stepped: 0 }
+  }
+  const delta = calendarDaysBetween(lastDate, now)
+  if (delta <= 0) {
+    return { week, day, lastDate: now, passedTaskIds: [], stepped: 0 }
+  }
+  const start = vpIndex(week, day)
+  const end = Math.min(start + delta, VOCAB_PATH_META.weeks * 7 - 1)
+  const passedTaskIds: string[] = []
+  for (let i = start; i < end; i++) {
+    const pos = vpFromIndex(i)
+    passedTaskIds.push(vpTaskId(pos.week, pos.day))
+  }
+  const next = vpFromIndex(end)
+  return {
+    week: next.week,
+    day: next.day,
+    lastDate: now,
+    passedTaskIds,
+    stepped: end - start,
+  }
+}
 
 function foldSpell(s: string): string {
   return s
@@ -118,11 +194,59 @@ export default function LearnHub({
   const [tab, setTab] = useState<LearnTab>('today')
   const [day, setDay] = useState(() => loadInt(ROADMAP_DAY_KEY, 1, 30, 1))
   const [done, setDone] = useState<Set<string>>(() => loadDone(ROADMAP_DONE_KEY))
-  const [vpWeek, setVpWeek] = useState(() =>
-    loadInt(VP_WEEK_KEY, 1, VOCAB_PATH_META.weeks, 1),
-  )
+
+  const [vpWeek, setVpWeek] = useState(() => {
+    const savedWeek = loadInt(VP_WEEK_KEY, 1, VOCAB_PATH_META.weeks, 1)
+    const savedDay = loadInt(VP_DAY_KEY, 1, 7, 1)
+    const last = localStorage.getItem(VP_LAST_DATE_KEY)
+    const next = advancePathByCalendar(savedWeek, savedDay, last)
+    localStorage.setItem(VP_WEEK_KEY, String(next.week))
+    localStorage.setItem(VP_DAY_KEY, String(next.day))
+    localStorage.setItem(VP_LAST_DATE_KEY, next.lastDate)
+    if (next.passedTaskIds.length) {
+      const prev = loadDone(VP_DONE_KEY)
+      for (const id of next.passedTaskIds) prev.add(id)
+      localStorage.setItem(VP_DONE_KEY, JSON.stringify([...prev]))
+    }
+    return next.week
+  })
   const [vpDay, setVpDay] = useState(() => loadInt(VP_DAY_KEY, 1, 7, 1))
   const [vpDone, setVpDone] = useState<Set<string>>(() => loadDone(VP_DONE_KEY))
+
+  /** If the tab stays open past midnight, roll the path forward. */
+  useEffect(() => {
+    function syncFromCalendar() {
+      const last = localStorage.getItem(VP_LAST_DATE_KEY)
+      const today = todayKey()
+      if (last === today) return
+      const week = loadInt(VP_WEEK_KEY, 1, VOCAB_PATH_META.weeks, 1)
+      const dayNum = loadInt(VP_DAY_KEY, 1, 7, 1)
+      const next = advancePathByCalendar(week, dayNum, last, today)
+      setVpWeek(next.week)
+      setVpDay(next.day)
+      localStorage.setItem(VP_WEEK_KEY, String(next.week))
+      localStorage.setItem(VP_DAY_KEY, String(next.day))
+      localStorage.setItem(VP_LAST_DATE_KEY, next.lastDate)
+      if (next.passedTaskIds.length) {
+        setVpDone((prev) => {
+          const merged = new Set(prev)
+          for (const id of next.passedTaskIds) merged.add(id)
+          return merged
+        })
+      }
+    }
+    const timer = window.setInterval(syncFromCalendar, 60_000)
+    const onVis = () => {
+      if (document.visibilityState === 'visible') syncFromCalendar()
+    }
+    document.addEventListener('visibilitychange', onVis)
+    window.addEventListener('focus', syncFromCalendar)
+    return () => {
+      window.clearInterval(timer)
+      document.removeEventListener('visibilitychange', onVis)
+      window.removeEventListener('focus', syncFromCalendar)
+    }
+  }, [])
 
   useEffect(() => {
     localStorage.setItem(ROADMAP_DONE_KEY, JSON.stringify([...done]))
@@ -155,13 +279,15 @@ export default function LearnHub({
 
   const vpProgress = useMemo(() => {
     const totalDays = VOCAB_PATH_META.weeks * 7
+    const cursorDays = vpIndex(vpWeek, vpDay) + 1
     return {
-      doneDays: vpDone.size,
+      doneDays: cursorDays,
+      cursorDays,
       totalDays,
-      pct: Math.round((vpDone.size / totalDays) * 100),
+      pct: Math.round((cursorDays / totalDays) * 100),
       enrolled: Object.keys(srsMap).length,
     }
-  }, [vpDone, srsMap])
+  }, [vpWeek, vpDay, srsMap])
 
   function toggleDone(taskId: string) {
     setDone((prev) => {
@@ -182,6 +308,14 @@ export default function LearnHub({
     })
   }
 
+  /** Manual jump stamps today so calendar won't double-skip tomorrow. */
+  function setPathPosition(week: number, dayNum: number) {
+    const pos = vpFromIndex(vpIndex(week, dayNum))
+    setVpWeek(pos.week)
+    setVpDay(pos.day)
+    localStorage.setItem(VP_LAST_DATE_KEY, todayKey())
+  }
+
   function gradeDue(id: string, grade: SrsGrade) {
     const next = reviewCard(srsMap, id, grade)
     setSrsMap(next)
@@ -189,22 +323,24 @@ export default function LearnHub({
   }
 
   function goNextVpDay() {
-    if (vpDay < 7) {
-      setVpDay(vpDay + 1)
-      return
-    }
-    if (vpWeek < VOCAB_PATH_META.weeks) {
-      setVpWeek(vpWeek + 1)
-      setVpDay(1)
-    }
+    const cur = vpIndex(vpWeek, vpDay)
+    const max = VOCAB_PATH_META.weeks * 7 - 1
+    if (cur >= max) return
+    const next = vpFromIndex(cur + 1)
+    setVpDone((prev) => {
+      const merged = new Set(prev)
+      merged.add(vpTaskId(vpWeek, vpDay))
+      return merged
+    })
+    setPathPosition(next.week, next.day)
   }
 
   return (
     <div className="learn-hub">
       <section className="level-board">
         <p className="ai-lead-sm reading-banner">
-          兩年路徑：單字＋閱讀（每天）＋文法（週一／三／五）。B1 起加量，約
-          500 多天達 B2 詞量。進度 {vpProgress.pct}% · 已排入複習{' '}
+          兩年路徑：每天自動換下一天的單字／文法／閱讀（不背完也不會卡住）。單字只有你在學習介面按「我會了」才排入複習。進度{' '}
+          {vpProgress.pct}%（第 {vpProgress.cursorDays}/{vpProgress.totalDays} 天）· 已排入複習{' '}
           {vpProgress.enrolled} 字。
         </p>
         <div className="level-tabs" role="tablist" aria-label="自學分區">
@@ -238,22 +374,26 @@ export default function LearnHub({
           vpDay={todayVp}
           vpWeek={todayWeek}
           vocabIds={todayVocabIds}
-          vpDone={vpDone}
           onGrade={gradeDue}
           onOpenVocabIds={onOpenVocabIds}
           onOpenGrammar={onOpenGrammar}
           onOpenReading={onOpenReading}
           onGoVocabPath={() => setTab('vocabPath')}
-          onToggleVp={() => toggleVpDone(vpWeek, vpDay)}
           onNextDay={goNextVpDay}
         />
       )}
       {tab === 'vocabPath' && (
         <VocabPathPanel
           week={vpWeek}
-          setWeek={setVpWeek}
+          setWeek={(w) => {
+            setVpWeek(w)
+            localStorage.setItem(VP_LAST_DATE_KEY, todayKey())
+          }}
           day={vpDay}
-          setDay={setVpDay}
+          setDay={(d) => {
+            setVpDay(d)
+            localStorage.setItem(VP_LAST_DATE_KEY, todayKey())
+          }}
           done={vpDone}
           onToggle={toggleVpDone}
           onOpenVocabIds={onOpenVocabIds}
@@ -289,13 +429,9 @@ export default function LearnHub({
 function DailySpellingQuiz({
   taskKey,
   vocabIds,
-  dayDone,
-  onMarkDayDone,
 }: {
   taskKey: string
   vocabIds: string[]
-  dayDone: boolean
-  onMarkDayDone?: () => void
 }) {
   const words = useMemo(
     () =>
@@ -395,11 +531,6 @@ function DailySpellingQuiz({
             <button type="button" className="ghost" onClick={restart}>
               再練一次
             </button>
-            {!dayDone && onMarkDayDone && (
-              <button type="button" className="learned-btn on" onClick={onMarkDayDone}>
-                標記今日完成
-              </button>
-            )}
           </div>
         </div>
       ) : current ? (
@@ -490,13 +621,11 @@ function TodayReview({
   vpDay,
   vpWeek,
   vocabIds,
-  vpDone,
   onGrade,
   onOpenVocabIds,
   onOpenGrammar,
   onOpenReading,
   onGoVocabPath,
-  onToggleVp,
   onNextDay,
 }: {
   dueIds: string[]
@@ -504,13 +633,11 @@ function TodayReview({
   vpDay: VocabPathDay
   vpWeek: VocabPathWeek
   vocabIds: string[]
-  vpDone: Set<string>
   onGrade: (id: string, g: SrsGrade) => void
   onOpenVocabIds: (ids: string[]) => void
   onOpenGrammar: (id: string) => void
   onOpenReading: (id: string) => void
   onGoVocabPath: () => void
-  onToggleVp: () => void
   onNextDay: () => void
 }) {
   const [idx, setIdx] = useState(0)
@@ -524,7 +651,6 @@ function TodayReview({
   const currentId = activeDue[idx]
   const word = currentId ? vocabById(currentId) : undefined
   const taskKey = vpTaskId(vpDay.week, vpDay.day)
-  const dayDone = vpDone.has(taskKey)
 
   useEffect(() => {
     setRevealed(false)
@@ -561,7 +687,7 @@ function TodayReview({
         <p className="exam-card-meta">{vpWeek.focusZh}</p>
         <p className="exam-meta">
           {vpDay.kind === 'learn'
-            ? `今日 ${vocabIds.length} 個字。點進去看沒關係；只有你按「我會了」才會排入複習——系統不會自動拿掉。`
+            ? `今日 ${vocabIds.length} 個字。沒背完也沒關係——明天會自動換成下一天的單字／文法／閱讀。只有在單字頁按「我會了」才會排入複習。`
             : vpDay.tipZh}
         </p>
         {vocabIds.length > 0 && (
@@ -630,24 +756,19 @@ function TodayReview({
           <button type="button" className="ghost" onClick={onGoVocabPath}>
             路徑總覽
           </button>
-          <label className="check">
-            <input type="checkbox" checked={dayDone} onChange={onToggleVp} />
-            今日完成
-          </label>
-          {dayDone && (
-            <button type="button" className="ghost" onClick={onNextDay}>
-              下一天 →
-            </button>
-          )}
+          <button type="button" className="ghost" onClick={onNextDay}>
+            手動下一天 →
+          </button>
         </div>
+        <p className="panel-note" style={{ marginTop: '0.65rem' }}>
+          每天換日後自動進入下一天（單字、文法、閱讀一起換）。不必勾「完成」；單字學會了再在學習介面按「我會了」即可。
+        </p>
       </article>
 
       {vocabIds.length > 0 && (
         <DailySpellingQuiz
           taskKey={taskKey}
           vocabIds={vocabIds}
-          dayDone={dayDone}
-          onMarkDayDone={!dayDone ? onToggleVp : undefined}
         />
       )}
 
@@ -857,7 +978,7 @@ function VocabPathPanel({
         </label>
         <p className="exam-meta">
           {d.kind === 'learn'
-            ? '清單固定顯示今日字；只有你按「我會了」才會排入複習。'
+            ? '這天的單字固定在此；沒背完明天仍會自動換下一天。只有你按「我會了」才排入複習。'
             : d.tipZh}
         </p>
         {d.vocabIds.length > 0 && (
