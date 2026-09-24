@@ -194,6 +194,16 @@ export function formatDueLabel(card: SrsCard, at = now()): string {
   return `${days} 天後`
 }
 
+/** Soonest non-mastered future due among enrolled cards. */
+export function nextUpcomingDue(
+  map: Record<string, SrsCard>,
+  at = now(),
+): SrsCard | undefined {
+  return Object.values(map)
+    .filter((c) => !c.mastered && c.due > at)
+    .sort((a, b) => a.due - b.due)[0]
+}
+
 export const SRS_GRADE_LABEL: Record<SrsGrade, string> = {
   again: '還不會',
   hard: '有點難',

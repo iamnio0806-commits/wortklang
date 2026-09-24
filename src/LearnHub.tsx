@@ -31,6 +31,7 @@ import {
   countDue,
   formatDueLabel,
   listDueIds,
+  nextUpcomingDue,
   reviewCard,
   saveSrsMap,
   type SrsCard,
@@ -651,6 +652,12 @@ function TodayReview({
   const currentId = activeDue[idx]
   const word = currentId ? vocabById(currentId) : undefined
   const taskKey = vpTaskId(vpDay.week, vpDay.day)
+  const learnedToday = useMemo(
+    () => vocabIds.filter((id) => Boolean(srsMap[id])).length,
+    [vocabIds, srsMap],
+  )
+  const enrolledTotal = Object.keys(srsMap).length
+  const nextDue = useMemo(() => nextUpcomingDue(srsMap), [srsMap])
 
   useEffect(() => {
     setRevealed(false)
@@ -680,6 +687,11 @@ function TodayReview({
           </span>
           <span className="type-pill">{vpWeek.phaseZh}</span>
           <span className="type-pill">{vpDay.targetCount} 字／天</span>
+          {vocabIds.length > 0 && (
+            <span className="type-pill">
+              已會 {learnedToday}/{vocabIds.length}
+            </span>
+          )}
         </div>
         <h2 className="grammar-title">
           {vpDay.kind === 'review' ? '今日：複習日' : `今日新字：${vpDay.titleZh}`}
@@ -687,7 +699,7 @@ function TodayReview({
         <p className="exam-card-meta">{vpWeek.focusZh}</p>
         <p className="exam-meta">
           {vpDay.kind === 'learn'
-            ? `今日 ${vocabIds.length} 個字。沒背完也沒關係——明天會自動換成下一天的單字／文法／閱讀。只有在單字頁按「我會了」才會排入複習。`
+            ? `今日 ${vocabIds.length} 個字${learnedToday ? `（已會 ${learnedToday} 個，✓ 已排入複習）` : ''}。沒背完也沒關係——明天會自動換成下一天的單字／文法／閱讀。`
             : vpDay.tipZh}
         </p>
         {vocabIds.length > 0 && (
@@ -714,7 +726,11 @@ function TodayReview({
             onClick={() => onOpenVocabIds(vocabIds)}
           >
             {vpDay.kind === 'learn'
-              ? `① 去學這 ${vocabIds.length} 個字`
+              ? learnedToday > 0 && learnedToday < vocabIds.length
+                ? `① 繼續學（已會 ${learnedToday}/${vocabIds.length}）`
+                : learnedToday >= vocabIds.length && vocabIds.length > 0
+                  ? `① 今日 ${vocabIds.length} 字都已會 ✓`
+                  : `① 去學這 ${vocabIds.length} 個字`
               : `① 單字複習（${vocabIds.length}）`}
           </button>
           {vpDay.grammarId && (
@@ -773,15 +789,19 @@ function TodayReview({
       )}
 
       <section className="panel">
-        <h3>SRS 到期複習</h3>
+        <h3>SRS 到期複習{dueIds.length ? ` · ${activeDue.length}` : ''}</h3>
         <p className="panel-note">
-          打開看、顯示意思都不會把字拿掉。只有你按「我會了」才會排下次複習；也可以先跳過，排程不變。
+          打開看、顯示意思都不會把字拿掉。按「我會了」的字會排入複習（通常隔天開始到期）。
         </p>
         {!word ? (
           <p className="empty">
-            {dueIds.length === 0
-              ? '目前沒有到期單字。學會新字後記得自己按「我會了」。'
-              : '這一輪先跳過的都看完了。重整頁面可再複習，或等下次到期。'}
+            {dueIds.length === 0 && enrolledTotal > 0
+              ? `已排入複習 ${enrolledTotal} 字${
+                  nextDue ? `，下次約 ${formatDueLabel(nextDue)}` : ''
+                }。目前沒有到期卡，明天再來即可。`
+              : dueIds.length === 0
+                ? '目前沒有到期單字。學會新字後在單字頁按「我會了」，就會排入複習。'
+                : '這一輪先跳過的都看完了。重整頁面可再複習，或等下次到期。'}
           </p>
         ) : (
           <div className="srs-card">
