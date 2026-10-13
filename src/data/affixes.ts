@@ -794,7 +794,7 @@ export const SUFFIX_MEANINGS: AffixEntry[] = [
     examples: [
       { de: 'freundlich', zh: '友善的' },
       { de: 'täglich', zh: '每天的' },
-      { de: 'möglich', zh: '可能的' },
+      { de: 'Möglichkeit', zh: '可能性' },
     ],
   },
   {
@@ -1683,7 +1683,7 @@ export const ROOT_MEANINGS: AffixEntry[] = [
     zh: '安全／確定',
     tip: 'sicher、Sicherheit、versichern。',
     examples: [
-      { de: 'sicher', zh: '安全的；確定的' },
+      { de: 'Sicherheit', zh: '安全' },
       { de: 'Sicherheit', zh: '安全' },
     ],
   },
@@ -1694,7 +1694,7 @@ export const ROOT_MEANINGS: AffixEntry[] = [
     zh: '自由／空的',
     tip: 'frei、Freiheit、Freizeit。',
     examples: [
-      { de: 'frei', zh: '自由的；空的' },
+      { de: 'Freiheit', zh: '自由' },
       { de: 'Freizeit', zh: '空閒' },
     ],
   },
@@ -1705,7 +1705,7 @@ export const ROOT_MEANINGS: AffixEntry[] = [
     zh: '可能',
     tip: 'möglich、Möglichkeit、unmöglich。',
     examples: [
-      { de: 'möglich', zh: '可能的' },
+      { de: 'Möglichkeit', zh: '可能性' },
       { de: 'Möglichkeit', zh: '可能性' },
     ],
   },
@@ -1969,7 +1969,7 @@ export const ROOT_MEANINGS: AffixEntry[] = [
     tip: 'Supermarkt、super、Superior。',
     examples: [
       { de: 'Supermarkt', zh: '超市' },
-      { de: 'super', zh: '超棒' },
+      { de: 'Superheld', zh: '超級英雄' },
     ],
   },
   {

@@ -468,59 +468,119 @@ def ex_abstract(w, seed) -> tuple[str, str]:
     return bank[seed % len(bank)]
 
 
+# Short separable prefixes only apply to known verbs (avoids an+tworten).
+KNOWN_SEPARABLE = {
+    "anfangen", "ankommen", "anrufen", "anziehen", "anbieten", "ansehen",
+    "anschauen", "anmelden", "anpassen", "angucken",
+    "abfahren", "abholen", "abschließen", "abgeben", "ablaufen", "abhängen",
+    "aufstehen", "aufhören", "aufräumen", "aufmachen", "aufwachen", "aufnehmen",
+    "aufpassen", "aufregen", "aufschreiben",
+    "aussteigen", "aussehen", "ausmachen", "ausziehen", "ausgeben", "ausfüllen",
+    "einsteigen", "einkaufen", "einladen", "einnehmen", "einziehen", "einführen",
+    "eintragen", "einpacken",
+    "zumachen", "zuhören", "zugeben", "zubereiten",
+    "mitkommen", "mitbringen", "mitmachen", "mitnehmen", "mitfahren",
+    "vorstellen", "vorbereiten", "vorschlagen", "vorhaben", "vorlesen",
+    "nachdenken", "nachfragen", "nachmachen", "nachschlagen",
+    "weggehen", "wegnehmen", "wegräumen",
+    "zurückkommen", "zurückgeben", "zurückrufen",
+    "zusammenarbeiten", "zusammenfassen",
+    "weitergehen", "weitermachen",
+    "losgehen", "losfahren",
+    "festlegen", "teilnehmen", "stattfinden",
+    "herumlaufen", "vorbeikommen",
+    "hineingehen", "herauskommen", "hereinbitten", "hinausgehen",
+    "durchsetzen", "übernehmen", "untergehen", "umsteigen", "umziehen", "umkehren",
+}
+
+
+def zu_inf(word: str) -> str:
+    """Build zu-infinitive; separable → vorzustellen, else → zu besuchen."""
+    w = word.strip()
+    low = w.lower()
+    if low.startswith("sich "):
+        return f"sich zu {low[5:]}"
+    if low in KNOWN_SEPARABLE:
+        # longest matching separable particle
+        for p in (
+            "zurück", "zusammen", "weiter", "wieder", "entlang", "vorbei", "herum",
+            "hinein", "heraus", "herein", "hinaus", "durch", "über", "unter",
+            "ein", "aus", "auf", "ab", "an", "zu", "mit", "vor", "nach", "weg",
+            "los", "fest", "teil", "statt", "her", "hin", "um",
+        ):
+            if low.startswith(p) and len(low) > len(p) + 2:
+                return f"{p}zu{w[len(p):]}"
+    return f"zu {w}"
+
+
 def classify_verb(word: str, zh: str) -> str:
-    w = word.lower()
+    w = word.lower().replace("sich ", "")
     if w in {
         "wohnen", "leben", "übernachten",
     } or has_any(zh, ("住", "居住", "生活")):
         return "reside"
     if w in {
         "gehen", "kommen", "fahren", "laufen", "rennen", "fliegen", "schwimmen",
-        "wandern", "reisen", "folgen", "starten", "landen",
-    } or has_any(zh, ("走", "來", "去", "開", "跑", "飛", "游", "旅行")):
+        "wandern", "reisen", "folgen", "starten", "landen", "steigen", "klettern",
+    } or has_any(zh, ("走", "來", "去", "開", "跑", "飛", "游", "旅行", "爬", "升")):
         return "motion"
     if w in {
-        "stehen", "sitzen", "liegen", "bleiben", "warten", "hängen",
-    } or has_any(zh, ("站", "坐", "躺", "留", "等")):
+        "stehen", "sitzen", "liegen", "bleiben", "warten", "hängen", "schlafen",
+        "aufstehen", "aufwachen",
+    } or has_any(zh, ("站", "坐", "躺", "留", "等", "睡", "起床", "醒")):
         return "posture"
     if w in {
         "einsteigen", "aussteigen", "umsteigen", "abfahren", "ankommen",
-        "mitkommen", "mitfahren", "abholen", "bringen",
-    } or has_any(zh, ("上車", "下車", "轉車", "出發", "到達", "一起來")):
+        "mitkommen", "mitfahren", "abholen", "bringen", "mitbringen",
+    } or has_any(zh, ("上車", "下車", "轉車", "出發", "到達", "抵達", "一起來", "接人", "帶來")):
         return "transit"
     if w in {
         "essen", "trinken", "kochen", "backen", "schmecken", "bestellen", "probieren",
-    } or has_any(zh, ("吃", "喝", "煮", "烤", "點餐", "味道")):
+        "frühstücken", "zu Mittag essen",
+    } or has_any(zh, ("吃", "喝", "煮", "烤", "點餐", "味道", "早餐", "試吃")):
         return "food"
     if w in {
         "sprechen", "sagen", "reden", "fragen", "antworten", "erzählen",
         "schreiben", "lesen", "hören", "sehen", "schauen", "rufen", "anrufen",
-        "erklären", "übersetzen", "wiederholen",
-    } or has_any(zh, ("說", "問", "答", "寫", "讀", "聽", "看", "講", "打電話", "解釋", "翻譯")):
+        "erklären", "übersetzen", "wiederholen", "beschreiben", "melden",
+        "berichten", "diskutieren", "nennen", "behaupten", "beweisen",
+    } or has_any(zh, ("說", "問", "答", "寫", "讀", "聽", "看", "講", "打電話", "解釋", "翻譯", "描述", "報告", "討論", "宣稱")):
         return "communicate"
     if w in {
         "helfen", "danken", "treffen", "einladen", "besuchen", "begrüßen", "entschuldigen",
-    } or has_any(zh, ("幫", "謝", "見", "邀", "訪", "打招呼", "道歉")):
+        "gratulieren", "feiern", "lieben", "hassen", "küssen", "umarmen",
+    } or has_any(zh, ("幫", "謝", "見", "邀", "訪", "打招呼", "道歉", "祝賀", "慶祝", "愛", "恨")):
         return "social"
     if w in {
-        "lernen", "studieren", "üben", "arbeiten", "üben", "prüfen", "bestehen",
-    } or has_any(zh, ("學", "唸", "練", "工作", "考試", "及格")):
+        "lernen", "studieren", "üben", "arbeiten", "prüfen", "bestehen",
+        "unterrichten", "lehren", "merken", "wiederholen",
+    } or has_any(zh, ("學", "唸", "練", "工作", "考試", "及格", "教", "記住")):
         return "study"
     if w in {
         "putzen", "waschen", "aufräumen", "einkaufen", "duschen",
         "anziehen", "ausziehen", "öffnen", "schließen", "bauen", "reparieren",
-    } or has_any(zh, ("打掃", "洗", "收拾", "購物", "淋浴", "穿", "脫", "開", "關", "建", "修")):
+        "kochen", "decken", "löschen", "schneiden",
+    } or has_any(zh, ("打掃", "洗", "收拾", "購物", "淋浴", "穿", "脫", "開", "關", "建", "修", "切", "擺桌")):
         return "household"
     if w in {
         "denken", "finden", "verstehen", "wissen", "kennen", "glauben", "meinen",
-        "erinnern", "vergessen", "entscheiden", "wählen",
-    } or has_any(zh, ("想", "找", "懂", "知道", "認識", "相信", "記得", "忘", "決定", "選")):
+        "erinnern", "vergessen", "entscheiden", "wählen", "planen", "hoffen",
+        "wünschen", "zweifeln", "überlegen", "vermuten", "erwarten",
+    } or has_any(zh, ("想", "找", "懂", "知道", "認識", "相信", "記得", "忘", "決定", "選", "計畫", "希望", "祝願", "懷疑", "期待")):
         return "think"
     if w in {
         "funktionieren", "klappen", "passieren", "geschehen", "geben", "nehmen",
-        "bekommen", "brauchen", "benutzen", "brauchen", "zählen", "messen", "wiegen",
-    }:
+        "bekommen", "brauchen", "benutzen", "zählen", "messen", "wiegen",
+        "kosten", "dauern", "scheinen", "regnen", "schneien", "fehlen",
+    } or has_any(zh, ("運作", "順利", "發生", "給", "拿", "得到", "需要", "使用", "數", "量", "秤", "花費", "持續", "下雨", "下雪", "缺少", "似乎")):
         return "misc"
+    # emotion / perception leftovers
+    if has_any(zh, ("感覺", "感受", "哭", "笑", "害怕", "生氣", "高興", "難過", "痛苦", "享受")):
+        return "social"
+    if has_any(zh, ("買", "賣", "付", "訂", "寄", "送", "收", "存", "取", "簽", "匯")):
+        return "household"
+    if has_any(zh, ("開始", "結束", "停止", "繼續", "允許", "禁止", "要求", "建議", "改變", "改善", "產生", "發明", "解決")):
+        return "think"
     return "activity"
 
 
@@ -614,6 +674,73 @@ VERB_CURATED: dict[str, tuple[str, str]] = {
     "geben": ("Kannst du mir das Buch geben?", "你可以給我那本書嗎？"),
     "nehmen": ("Darf ich noch einen Apfel nehmen?", "我可以再拿一個蘋果嗎？"),
     "spielen": ("Die Kinder wollen draußen spielen.", "孩子們想在外面玩。"),
+    "tun": ("Was sollen wir jetzt tun?", "我們現在該做什麼？"),
+    "schlafen": ("Ich möchte heute früh schlafen.", "我想今天早點睡。"),
+    "aufstehen": ("Morgen muss ich um 6 Uhr aufstehen.", "明天我得六點起床。"),
+    "weinen": ("Das Kind beginnt zu weinen.", "孩子開始哭了。"),
+    "lachen": ("Über den Witz müssen alle lachen.", "這個笑話大家都得笑。"),
+    "schneiden": ("Ich will das Brot in Scheiben schneiden.", "我想把麵包切成片。"),
+    "legen": ("Bitte das Buch auf den Tisch legen.", "請把書平放到桌上。"),
+    "stellen": ("Kannst du die Lampe in die Ecke stellen?", "你可以把手燈立放到角落嗎？"),
+    "ziehen": ("Vorsicht, nicht zu stark an der Tür ziehen!", "小心，別太用力拉門！"),
+    "enden": ("Der Kurs soll um 16 Uhr enden.", "課程應該四點結束。"),
+    "lieben": ("Es ist schön, die Familie zu lieben.", "能愛家人是件美好的事。"),
+    "hassen": ("Man sollte nicht leichtfertig hassen.", "人不該輕易懷恨。"),
+    "fehlen": ("Mir fehlt mein Pass — hast du ihn gesehen?", "我的護照不見了——你有看到嗎？"),
+    "scheinen": ("Die Sonne scheint heute endlich wieder.", "太陽今天終於又出來了。"),
+    "schneien": ("Im Januar kann es hier stark schneien.", "一月這裡可能下大雪。"),
+    "regnen": ("Wenn es regnet, bleiben wir zu Hause.", "如果下雨，我們就待在家。"),
+    "fühlen": ("Ich kann den Schmerz in der Hand fühlen.", "我感覺得到手上的痛。"),
+    "wünschen": ("Ich möchte dir alles Gute wünschen.", "我想祝你一切順利。"),
+    "hoffen": ("Wir hoffen auf gutes Wetter.", "我們希望天氣好。"),
+    "planen": ("Wir müssen die Reise sorgfältig planen.", "我們得仔細計畫這趟旅行。"),
+    "handeln": ("In so einer Lage muss man schnell handeln.", "這種情況下必須快速行動。"),
+    "wachsen": ("Die Pflanzen wachsen auf dem Balkon gut.", "陽台上的植物長得不錯。"),
+    "wechseln": ("Ich muss noch Geld wechseln.", "我還得換錢。"),
+    "wenden": ("An der Ampel bitte wenden!", "請在紅綠燈那裡迴轉！"),
+    "beschreiben": ("Kannst du das Problem kurz beschreiben?", "你可以簡短描述一下問題嗎？"),
+    "schaffen": ("Heute schaffen wir die Aufgabe noch.", "今天我們還能完成這項任務。"),
+    "überweisen": ("Ich möchte das Geld online überweisen.", "我想線上匯款。"),
+    "unterschreiben": ("Bitte hier unterschreiben.", "請在這裡簽名。"),
+    "vorstellen": ("Darf ich dir meine Freundin vorstellen?", "我可以向你介紹我的女朋友嗎？"),
+    "aufhören": ("Bitte mit dem Lärm aufhören!", "請停止製造噪音！"),
+    "baden": ("Am Sonntag wollen die Kinder baden.", "星期天孩子們想泡澡／游泳。"),
+    "bilden": ("Gute Beispiele bilden den Kern des Unterrichts.", "好的例子構成課堂核心。"),
+    "blicken": ("Aus dem Fenster kann man auf den Fluss blicken.", "從窗戶可以望向河。"),
+    "erlauben": ("Die Eltern erlauben ihm, später heimzukommen.", "父母允許他晚點回家。"),
+    "feiern": ("Wir wollen am Samstag deinen Geburtstag feiern.", "我們星期六想慶祝你的生日。"),
+    "gratulieren": ("Ich möchte dir zum Erfolg gratulieren.", "我想恭喜你成功。"),
+    "fotografieren": ("Darf ich das Gebäude fotografieren?", "我可以拍這棟建築物嗎？"),
+    "tanzen": ("Abends gehen wir gern tanzen.", "晚上我們很喜歡去跳舞。"),
+    "mailen": ("Kannst du mir die Datei mailen?", "你可以寄檔案給我嗎？"),
+    "betreffen": ("Die neue Regel wird alle Mitarbeitenden betreffen.", "新規定會影響所有員工。"),
+    "betreten": ("Mit Schuhen darf man den Raum nicht betreten.", "穿鞋不准進入這個房間。"),
+    "bewerben": ("Sie möchte sich um die Stelle bewerben.", "她想應徵這個職位。"),
+    "eingeben": ("Bitte das Passwort noch einmal eingeben.", "請再輸入一次密碼。"),
+    "einnehmen": ("Das Medikament sollst du nach dem Essen einnehmen.", "這藥要飯後服用。"),
+    "empfinden": ("Viele empfinden den Lärm als störend.", "很多人覺得噪音很惱人。"),
+    "entsprechen": ("Das Ergebnis entspricht nicht unseren Erwartungen.", "結果不符合我們的期待。"),
+    "erfinden": ("Wer hat eigentlich das Telefon erfunden?", "電話到底是誰發明的？"),
+    "erzeugen": ("Solarzellen erzeugen Strom aus Licht.", "太陽能板用光發電。"),
+    "fallen": ("Pass auf, dass du nicht von der Leiter fällst!", "小心別從梯子上摔下來！"),
+    "demokratisieren": ("Das Ziel ist, Entscheidungen stärker zu demokratisieren.", "目標是讓決策更加民主化。"),
+    "beeinflussen": ("Werbung kann Kinder stark beeinflussen.", "廣告可能強烈影響兒童。"),
+    "analysieren": ("Wir müssen die Daten genau analysieren.", "我們必須仔細分析這些資料。"),
+    "feststellen": ("Der Arzt konnte nichts Ernstes feststellen.", "醫生查不出什麼嚴重問題。"),
+    "besichtigen": ("Wir wollen das Museum besichtigen.", "我們想參觀博物館。"),
+    "fokussieren": ("Bitte fokussieren wir uns auf das Wesentliche.", "請我們把焦點放在重點上。"),
+    "raten": ("Kannst du mal raten, wer kommt?", "你猜猜誰會來？"),
+    "starten": ("Der Zug soll pünktlich starten.", "火車應該準點出發。"),
+    "bestellen": ("Ich möchte eine Pizza bestellen.", "我想點一份披薩。"),
+    "bewegen": ("Du solltest dich jeden Tag bewegen.", "你應該每天活動一下。"),
+    "gewinnen": ("Wir wollen das Spiel gewinnen.", "我們想贏得這場比賽。"),
+    "anpassen": ("Wir müssen den Plan anpassen.", "我們得調整計畫。"),
+    "beleuchten": ("Kannst du das Problem beleuchten?", "你可以說明一下這個問題嗎？"),
+    "best\u00e4tigen": ("Bitte die E-Mail bestätigen.", "請確認這封郵件。"),
+    "verwenden": ("Du kannst Mehl und Wasser verwenden.", "你可以用麵粉和水。"),
+    "weiterdenken": ("Lass uns diesen Gedanken weiterdenken.", "我們把這個想法繼續想下去吧。"),
+    "ergr\u00fcnden": ("Die Polizei will die Ursache ergründen.", "警方想查明原因。"),
+    "evaluieren": ("Wir müssen die Ergebnisse evaluieren.", "我們必須評估結果。"),
 }
 
 
@@ -641,8 +768,8 @@ def ex_verb(w, seed) -> tuple[str, str]:
             (f"Wo möchtest du {word}?", f"你想在哪裡{zh}？"),
             (f"{name} will lange hier {word}.", f"{name}想在這裡長期{zh}。"),
             (f"Wir können hier günstig {word}.", f"我們可以在這裡便宜地{zh}。"),
-            (f"Planst du, in München zu {word}?", f"你打算在慕尼黑{zh}嗎？"),
-            (f"Es ist schön, nah bei der Uni zu {word}.", f"能住在大學附近很好（{zh}）。"),
+            (f"Planst du, in München {zu_inf(word)}?", f"你打算在慕尼黑{zh}嗎？"),
+            (f"Es ist schön, nah bei der Uni {zu_inf(word)}.", f"能住在大學附近很好（{zh}）。"),
             (f"Seit wann möchtest du hier {word}?", f"你從什麼時候起想在這裡{zh}？"),
             (f"Viele Studenten möchten in Wohngemeinschaften {word}.", f"很多學生想在共用公寓{zh}。"),
         ]
@@ -652,10 +779,10 @@ def ex_verb(w, seed) -> tuple[str, str]:
             (f"Lass uns zusammen {word}!", f"我們一起{zh}吧！"),
             (f"{name} muss früher {word}.", f"{name}必須早點{zh}。"),
             (f"Wann können wir {word}?", f"我們什麼時候可以{zh}？"),
-            (f"Bist du bereit zu {word}?", f"你準備好{zh}了嗎？"),
+            (f"Bist du bereit {zu_inf(word)}?", f"你準備好{zh}了嗎？"),
             (f"Ohne Ticket kannst du nicht {word}.", f"沒票你就不能{zh}。"),
             (f"Heute dürfen wir länger {word}.", f"今天我們可以多{zh}一會兒。"),
-            (f"Ich habe Lust zu {word}.", f"我很想{zh}。"),
+            (f"Ich habe Lust {zu_inf(word)}.", f"我很想{zh}。"),
         ]
     elif kind == "posture":
         bank = [
@@ -665,19 +792,19 @@ def ex_verb(w, seed) -> tuple[str, str]:
             (f"Wir können hier ruhig {word}.", f"我們可以安靜地在這裡{zh}。"),
             (f"Lass uns einen Moment {word}.", f"我們{zh}一會兒吧。"),
             (f"Hier kannst du bequem {word}.", f"你在這裡可以舒服地{zh}。"),
-            (f"Zu lange zu {word} ist ungesund.", f"{zh}太久對身體不好。"),
+            (f"Zu lange {zu_inf(word)} ist ungesund.", f"{zh}太久對身體不好。"),
             (f"Ich muss warten und darf nicht {word}.", f"我得等著，不能{zh}。"),
         ]
     elif kind == "transit":
         bank = [
             (f"Bitte jetzt {word}!", f"請現在{zh}！"),
             (f"Wir müssen in Köln {word}.", f"我們必須在科隆{zh}。"),
-            (f"Vergiss nicht rechtzeitig zu {word}.", f"別忘了準時{zh}。"),
+            (f"Vergiss nicht rechtzeitig {zu_inf(word)}.", f"別忘了準時{zh}。"),
             (f"{name} sagt, wir sollen {word}.", f"{name}說我們該{zh}。"),
             (f"Wann sollen wir {word}?", f"我們該什麼時候{zh}？"),
             (f"Ohne Hilfe kann ich nicht {word}.", f"沒人幫我，我沒辦法{zh}。"),
             (f"Der Durchsage nach müssen alle {word}.", f"廣播說大家都要{zh}。"),
-            (f"Bist du bereit zu {word}?", f"你準備好{zh}了嗎？"),
+            (f"Bist du bereit {zu_inf(word)}?", f"你準備好{zh}了嗎？"),
         ]
     elif kind == "food":
         bank = [
@@ -685,9 +812,9 @@ def ex_verb(w, seed) -> tuple[str, str]:
             (f"Wir können später zusammen {word}.", f"我們可以稍後一起{zh}。"),
             (f"{name} will heute nicht {word}.", f"{name}今天不想{zh}。"),
             (f"Lass uns zu Hause {word}!", f"我們在家{zh}吧！"),
-            (f"Ich habe keine Zeit zu {word}.", f"我沒時間{zh}。"),
+            (f"Ich habe keine Zeit {zu_inf(word)}.", f"我沒時間{zh}。"),
             (f"Zum Abendessen können wir {word}.", f"晚餐時我們可以{zh}。"),
-            (f"Hast du Lust zu {word}?", f"你有興致{zh}嗎？"),
+            (f"Hast du Lust {zu_inf(word)}?", f"你有興致{zh}嗎？"),
             (f"Ohne Hunger will ich nicht {word}.", f"不餓我就不想{zh}。"),
         ]
     elif kind == "communicate":
@@ -707,28 +834,28 @@ def ex_verb(w, seed) -> tuple[str, str]:
             (f"Wir können uns morgen {word}.", f"我們明天可以{zh}。"),
             (f"{name} will uns am Wochenende {word}.", f"{name}週末想{zh}我們。"),
             (f"Darf ich dich kurz {word}?", f"我可以短暫{zh}你一下嗎？"),
-            (f"Es ist schön, Freunde zu {word}.", f"{zh}朋友是件美好的事。"),
+            (f"Es ist schön, Freunde {zu_inf(word)}.", f"{zh}朋友是件美好的事。"),
             (f"Ohne Termin können wir uns nicht {word}.", f"沒約好我們沒辦法{zh}。"),
             (f"Lass uns öfter {word}!", f"我們多{zh}吧！"),
-            (f"Ich habe vergessen zu {word}.", f"我忘了要{zh}。"),
+            (f"Ich habe vergessen {zu_inf(word)}.", f"我忘了要{zh}。"),
         ]
     elif kind == "study":
         bank = [
             (f"Ich muss heute noch {word}.", f"我今天還必須{zh}。"),
             (f"Wir wollen zusammen {word}.", f"我們想一起{zh}。"),
-            (f"{name} beginnt um 9 Uhr zu {word}.", f"{name}九點開始{zh}。"),
+            (f"{name} beginnt um 9 Uhr {zu_inf(word)}.", f"{name}九點開始{zh}。"),
             (f"Ohne Pause kann ich nicht gut {word}.", f"不休息我就沒辦法好好{zh}。"),
-            (f"Hast du Zeit zu {word}?", f"你有時間{zh}嗎？"),
+            (f"Hast du Zeit {zu_inf(word)}?", f"你有時間{zh}嗎？"),
             (f"Lass uns konzentriert {word}.", f"我們專心{zh}吧。"),
             (f"Jeden Tag ein bisschen {word} hilft.", f"每天{zh}一點點很有幫助。"),
-            (f"Ich plane, am Wochenende zu {word}.", f"我計畫週末{zh}。"),
+            (f"Ich plane, am Wochenende {zu_inf(word)}.", f"我計畫週末{zh}。"),
         ]
     elif kind == "household":
         bank = [
             (f"Ich muss heute noch {word}.", f"我今天還得{zh}。"),
-            (f"Kannst du mir bitte dabei helfen zu {word}?", f"可以請你幫我{zh}嗎？"),
+            (f"Kannst du mir bitte dabei helfen {zu_inf(word)}?", f"可以請你幫我{zh}嗎？"),
             (f"Wir wollen am Samstag {word}.", f"我們星期六想{zh}。"),
-            (f"{name} hat keine Lust zu {word}.", f"{name}不想{zh}。"),
+            (f"{name} hat keine Lust {zu_inf(word)}.", f"{name}不想{zh}。"),
             (f"Vor dem Besuch sollten wir {word}.", f"客人來之前我們該{zh}。"),
             (f"Lass uns zuerst {word}.", f"我們先{zh}吧。"),
             (f"Ohne Werkzeug kann ich nicht {word}.", f"沒工具我沒辦法{zh}。"),
@@ -739,11 +866,11 @@ def ex_verb(w, seed) -> tuple[str, str]:
             (f"Was soll ich davon {word}?", f"這件事我該怎麼{zh}？"),
             (f"Ich kann das noch nicht {word}.", f"我還沒辦法{zh}這件事。"),
             (f"Lass uns in Ruhe {word}.", f"我們冷靜下來{zh}吧。"),
-            (f"{name} versucht zu {word}.", f"{name}試著{zh}。"),
+            (f"{name} versucht {zu_inf(word)}.", f"{name}試著{zh}。"),
             (f"Ohne Beispiel kann ich es nicht {word}.", f"沒有例子我沒辦法{zh}。"),
             (f"Wir müssen klar {word}.", f"我們必須清楚地{zh}。"),
-            (f"Das ist schwer zu {word}.", f"這很難{zh}。"),
-            (f"Bitte hilf mir zu {word}.", f"請幫我{zh}。"),
+            (f"Das ist schwer {zu_inf(word)}.", f"這很難{zh}。"),
+            (f"Bitte hilf mir {zu_inf(word)}.", f"請幫我{zh}。"),
         ]
     elif kind == "misc":
         bank = [
@@ -757,33 +884,34 @@ def ex_verb(w, seed) -> tuple[str, str]:
             (f"Das soll so nicht {word}.", f"這不該這樣{zh}。"),
         ]
     else:
+        # Generic activity verbs — still use the lemma in a concrete situation
         bank = [
-            (f"Ich möchte später {word}.", f"我想稍後再{zh}。"),
-            (f"Wir können zusammen {word}.", f"我們可以一起{zh}。"),
-            (f"{name} hat keine Zeit zu {word}.", f"{name}沒時間{zh}。"),
-            (f"Lass uns in Ruhe {word}.", f"我們慢慢{zh}吧。"),
-            (f"Ohne Plan ist es schwer zu {word}.", f"沒計畫就很難{zh}。"),
-            (f"Bist du bereit zu {word}?", f"你準備好{zh}了嗎？"),
-            (f"Heute ist ein guter Tag, um zu {word}.", f"今天很適合{zh}。"),
-            (f"Ich lerne Schritt für Schritt zu {word}.", f"我一步步學著{zh}。"),
-            (f"Wir sollten früher anfangen zu {word}.", f"我們該早點開始{zh}。"),
-            (f"Mach dir keine Sorgen und fang einfach an zu {word}.", f"別擔心，直接開始{zh}就好。"),
+            (f"Kannst du bitte kurz {word}?", f"可以請你先{zh}一下嗎？"),
+            (f"Wir wollen heute zusammen {word}.", f"我們今天想一起{zh}。"),
+            (f"{name} muss das noch {word}.", f"{name}還得把這件事{zh}。"),
+            (f"Lass uns ruhig {word}.", f"我們慢慢{zh}吧。"),
+            (f"Ich habe gerade keine Zeit {zu_inf(word)}.", f"我現在沒時間{zh}。"),
+            (f"Bist du bereit {zu_inf(word)}?", f"你準備好{zh}了嗎？"),
+            (f"Ohne Hilfe kann ich das nicht {word}.", f"沒人幫忙，我沒辦法{zh}。"),
+            (f"Wann sollen wir {word}?", f"我們該什麼時候{zh}？"),
+            (f"Bitte nicht vergessen {zu_inf(word)}!", f"請別忘了要{zh}！"),
+            (f"Am Wochenende können wir in Ruhe {word}.", f"週末我們可以慢慢{zh}。"),
         ]
 
-    # Higher levels: prefer zu-infinitive planning frames if not curated
+    # Higher levels: planning / advice frames that still sound like real speech
     if level in ("B1", "B2", "C1") and kind not in {"misc"}:
         advanced = [
-            (f"Es ist sinnvoll, rechtzeitig zu {word}.", f"及時{zh}是合理的。"),
-            (f"Wir planen, nächste Woche zu {word}.", f"我們計畫下週{zh}。"),
-            (f"{name} schlägt vor, gemeinsam zu {word}.", f"{name}建議一起{zh}。"),
+            (f"Wir sollten rechtzeitig {word}.", f"我們應該準時{zh}。"),
+            (f"Wir planen, nächste Woche {zu_inf(word)}.", f"我們計畫下週{zh}。"),
+            (f"{name} schlägt vor, gemeinsam {zu_inf(word)}.", f"{name}建議一起{zh}。"),
             (f"Bevor wir entscheiden, sollten wir {word}.", f"決定前我們應該先{zh}。"),
-            (f"Ohne Vorbereitung ist es riskant zu {word}.", f"沒準備就{zh}會有風險。"),
-            (f"Ich habe keine Lust mehr zu {word}.", f"我沒興致再{zh}了。"),
+            (f"Ohne Vorbereitung ist es riskant {zu_inf(word)}.", f"沒準備就{zh}會有風險。"),
+            (f"Ich habe heute keine Lust mehr {zu_inf(word)}.", f"我今天沒興致再{zh}了。"),
         ]
-        if level != "B1":
+        if level in ("B2", "C1"):
             advanced.extend([
-                (f"Kritiker fordern, sorgfältiger zu {word}.", f"批評者要求更仔細地{zh}。"),
-                (f"Die Fähigkeit zu {word} wird erwartet.", f"大家期待具備{zh}的能力。"),
+                (f"Es lohnt sich, regelmäßig {zu_inf(word)}.", f"定期{zh}是值得的。"),
+                (f"In der Praxis muss man oft {word}.", f"實務上常常必須{zh}。"),
             ])
         # mix: prefer advanced but keep some basic
         bank = advanced + bank[:4]
@@ -907,13 +1035,54 @@ def lemma_in_example(word: str, de: str) -> bool:
 
 def force_lemma_example(w: dict) -> tuple[str, str]:
     word, zh = w["word"], short_zh(w["translation"])
+    seed = hmix(w["id"] + word)
+    name = pick(NAMES, seed, 2)
     if w["category"] == "動詞":
-        return (
-            f"Ich möchte heute {word}.",
-            f"我今天想要{zh}。",
-        )
+        low = word.lower()
+        if low in {"schneien", "regnen"}:
+            return (
+                f"Im Winter kann es hier stark {word}.",
+                f"冬天這裡可能會大{zh}。",
+            )
+        if low in {"scheinen"}:
+            return (f"Die Sonne kann den ganzen Tag {word}.", f"太陽可以整天{zh}。")
+        if low in {"fehlen"}:
+            return (f"Mir darf nichts Wichtiges {word}.", f"重要的東西可不能{zh}。")
+        if low in {"tun", "machen"}:
+            return (f"Was sollen wir jetzt {word}?", f"我們現在該{zh}什麼？")
+        if low in {"hassen", "lieben"}:
+            return (
+                f"Man sollte nicht leichtfertig {word}.",
+                f"人不該輕易就{zh}。",
+            )
+        if low in {"weinen", "lachen"}:
+            return (f"Manchmal muss man einfach {word}.", f"有時人就是得{zh}。")
+        if low.startswith("sich "):
+            bare = word[5:]
+            return (f"Ich will mich nicht {bare}.", f"我不想{zh}。")
+        bank = [
+            (f"Wir wollen jetzt {word}.", f"我們現在想{zh}。"),
+            (f"Kannst du das bitte {word}?", f"可以請你把這件事{zh}嗎？"),
+            (f"Lass uns gemeinsam {word}!", f"我們一起{zh}吧！"),
+            (f"{name} muss heute noch {word}.", f"{name}今天還得{zh}。"),
+            (f"Ohne Stress können wir {word}.", f"不急的話我們可以{zh}。"),
+            (f"Am besten gleich {word}!", f"最好馬上{zh}！"),
+            (
+                f"Ich habe Zeit, {zu_inf(word)}."
+                if low in KNOWN_SEPARABLE
+                else f"Ich habe Zeit zu {word}.",
+                f"我有時間{zh}。",
+            ),
+            (
+                f"Bist du bereit, {zu_inf(word)}?"
+                if low in KNOWN_SEPARABLE
+                else f"Bist du bereit zu {word}?",
+                f"你準備好{zh}了嗎？",
+            ),
+        ]
+        return bank[seed % len(bank)]
     if w["category"] == "形容詞":
-        return (f"Das ist {word}.", f"這是{zh}的。")
+        return (f"Das ist wirklich {word}.", f"這真的很{zh}。")
     if w.get("article"):
         art = w["article"]
         return (f"{cap(art)} {word} ist wichtig.", f"這個{zh}很重要。")
