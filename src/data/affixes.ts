@@ -2016,6 +2016,459 @@ export const ROOT_MEANINGS: AffixEntry[] = [
       { de: 'produzieren', zh: '生產' },
     ],
   },
+  // ── Extra high-frequency stems for word-detail meanings ──
+  {
+    form: 'hol',
+    kind: 'root',
+    level: 'A1',
+    zh: '取／拿來',
+    tip: 'holen、abholen、wiederholen。',
+    examples: [
+      { de: 'holen', zh: '去拿' },
+      { de: 'abholen', zh: '接（人）' },
+      { de: 'wiederholen', zh: '重複' },
+    ],
+  },
+  {
+    form: 'lass',
+    kind: 'root',
+    level: 'A1',
+    zh: '讓／留下',
+    tip: 'lassen、verlassen、zulassen。',
+    examples: [
+      { de: 'lassen', zh: '讓；留下' },
+      { de: 'verlassen', zh: '離開' },
+    ],
+  },
+  {
+    form: 'zahl',
+    kind: 'root',
+    level: 'A1',
+    zh: '數／付',
+    tip: 'zahlen、Anzahl、bezahlen。',
+    examples: [
+      { de: 'zahlen', zh: '付錢' },
+      { de: 'Anzahl', zh: '數量' },
+    ],
+  },
+  {
+    form: 'zähl',
+    kind: 'root',
+    level: 'A1',
+    zh: '數／計算',
+    tip: 'zählen、erzählen、zählen。',
+    examples: [
+      { de: 'zählen', zh: '數' },
+      { de: 'erzählen', zh: '講述' },
+    ],
+  },
+  {
+    form: 'wart',
+    kind: 'root',
+    level: 'A1',
+    zh: '等／等候',
+    tip: 'warten、erwart、Warteschlange。',
+    examples: [
+      { de: 'warten', zh: '等待' },
+      { de: 'erwarten', zh: '期待' },
+    ],
+  },
+  {
+    form: 'nutz',
+    kind: 'root',
+    level: 'A2',
+    zh: '用／利用',
+    tip: 'nutzen、benutzen、nützlich。',
+    examples: [
+      { de: 'nutzen', zh: '利用' },
+      { de: 'benutzen', zh: '使用' },
+    ],
+  },
+  {
+    form: 'bring',
+    kind: 'root',
+    level: 'A1',
+    zh: '帶／帶來',
+    tip: 'bringen、mitbringen、verbringen。',
+    examples: [
+      { de: 'bringen', zh: '帶來' },
+      { de: 'mitbringen', zh: '帶來' },
+    ],
+  },
+  {
+    form: 'end',
+    kind: 'root',
+    level: 'A2',
+    zh: '結束／末端',
+    tip: 'Ende、enden、beenden。',
+    examples: [
+      { de: 'Ende', zh: '結束' },
+      { de: 'beenden', zh: '結束' },
+    ],
+  },
+  {
+    form: 'treff',
+    kind: 'root',
+    level: 'A1',
+    zh: '遇見／擊中',
+    tip: 'treffen、Treffen、betreffen。',
+    examples: [
+      { de: 'treffen', zh: '遇見' },
+      { de: 'Treffen', zh: '會面' },
+    ],
+  },
+  {
+    form: 'fühl',
+    kind: 'root',
+    level: 'A1',
+    zh: '感覺',
+    tip: 'fühlen、sich fühlen、Gefühl。',
+    examples: [
+      { de: 'fühlen', zh: '感覺' },
+      { de: 'Gefühl', zh: '感覺（名詞）' },
+    ],
+  },
+  {
+    form: 'glaub',
+    kind: 'root',
+    level: 'A1',
+    zh: '相信',
+    tip: 'glauben、Glaube、unglaublich。',
+    examples: [
+      { de: 'glauben', zh: '相信' },
+      { de: 'Glaube', zh: '信仰' },
+    ],
+  },
+  {
+    form: 'hoff',
+    kind: 'root',
+    level: 'A1',
+    zh: '希望',
+    tip: 'hoffen、Hoffnung。',
+    examples: [
+      { de: 'hoffen', zh: '希望' },
+      { de: 'Hoffnung', zh: '希望（名詞）' },
+    ],
+  },
+  {
+    form: 'zeig',
+    kind: 'root',
+    level: 'A1',
+    zh: '指出／顯示',
+    tip: 'zeigen、Anzeige、aufzeigen。',
+    examples: [
+      { de: 'zeigen', zh: '顯示' },
+      { de: 'Anzeige', zh: '廣告；告發' },
+    ],
+  },
+  {
+    form: 'scheid',
+    kind: 'root',
+    level: 'A2',
+    zh: '分開／區分',
+    tip: 'scheiden、unterscheiden、Entscheidung。',
+    examples: [
+      { de: 'scheiden', zh: '分開；離婚' },
+      { de: 'entscheiden', zh: '決定' },
+    ],
+  },
+  {
+    form: 'such',
+    kind: 'root',
+    level: 'A1',
+    zh: '尋找',
+    tip: 'suchen、besuchen、Versuch。',
+    examples: [
+      { de: 'suchen', zh: '尋找' },
+      { de: 'besuchen', zh: '拜訪' },
+    ],
+  },
+  {
+    form: 'steig',
+    kind: 'root',
+    level: 'A1',
+    zh: '登／升',
+    tip: 'steigen、einsteigen、Anstieg。',
+    examples: [
+      { de: 'steigen', zh: '上升' },
+      { de: 'einsteigen', zh: '上車' },
+    ],
+  },
+  {
+    form: 'fang',
+    kind: 'root',
+    level: 'A1',
+    zh: '抓／開始',
+    tip: 'fangen、anfangen、Anfang。',
+    examples: [
+      { de: 'fangen', zh: '抓住' },
+      { de: 'anfangen', zh: '開始' },
+    ],
+  },
+  {
+    form: 'dien',
+    kind: 'root',
+    level: 'A2',
+    zh: '服務',
+    tip: 'dienen、Bedienung、Dienst。',
+    examples: [
+      { de: 'dienen', zh: '服務' },
+      { de: 'Dienst', zh: '勤務；服務' },
+    ],
+  },
+  {
+    form: 'lad',
+    kind: 'root',
+    level: 'A1',
+    zh: '裝載／邀請',
+    tip: 'laden、einladen、laden（充電）。',
+    examples: [
+      { de: 'laden', zh: '裝載；邀請' },
+      { de: 'einladen', zh: '邀請' },
+    ],
+  },
+  {
+    form: 'klär',
+    kind: 'root',
+    level: 'A2',
+    zh: '澄清／清楚',
+    tip: 'klären、erklären、Erklärung。',
+    examples: [
+      { de: 'klären', zh: '澄清' },
+      { de: 'erklären', zh: '解釋' },
+    ],
+  },
+  {
+    form: 'lieg',
+    kind: 'root',
+    level: 'A1',
+    zh: '躺／位於',
+    tip: 'liegen、gelegen、Lage。',
+    examples: [
+      { de: 'liegen', zh: '躺；位於' },
+      { de: 'Lage', zh: '位置；情況' },
+    ],
+  },
+  {
+    form: 'füll',
+    kind: 'root',
+    level: 'A2',
+    zh: '充滿',
+    tip: 'füllen、erfüllen、gefüllt。',
+    examples: [
+      { de: 'füllen', zh: '裝滿' },
+      { de: 'erfüllen', zh: '實現；充滿' },
+    ],
+  },
+  {
+    form: 'schlag',
+    kind: 'root',
+    level: 'A2',
+    zh: '打／擊',
+    tip: 'schlagen、Vorschlag、Ausschlag。',
+    examples: [
+      { de: 'schlagen', zh: '打' },
+      { de: 'Vorschlag', zh: '建議' },
+    ],
+  },
+  {
+    form: 'kost',
+    kind: 'root',
+    level: 'A1',
+    zh: '花費／成本',
+    tip: 'kosten、Kosten、kostbar。',
+    examples: [
+      { de: 'kosten', zh: '花費' },
+      { de: 'Kosten', zh: '費用' },
+    ],
+  },
+  {
+    form: 'schlaf',
+    kind: 'root',
+    level: 'A1',
+    zh: '睡',
+    tip: 'schlafen、Schlaf、einschlafen。',
+    examples: [
+      { de: 'schlafen', zh: '睡覺' },
+      { de: 'Schlaf', zh: '睡眠' },
+    ],
+  },
+  {
+    form: 'prüf',
+    kind: 'root',
+    level: 'A2',
+    zh: '檢查／考試',
+    tip: 'prüfen、Prüfung、überprüfen。',
+    examples: [
+      { de: 'prüfen', zh: '檢查' },
+      { de: 'Prüfung', zh: '考試' },
+    ],
+  },
+  {
+    form: 'richt',
+    kind: 'root',
+    level: 'A2',
+    zh: '方向／正確',
+    tip: 'richten、richtig、Nachricht。',
+    examples: [
+      { de: 'richtig', zh: '正確的' },
+      { de: 'Nachricht', zh: '消息' },
+    ],
+  },
+  {
+    form: 'räum',
+    kind: 'root',
+    level: 'A1',
+    zh: '空間／整理',
+    tip: 'Raum、räumen、aufräumen。',
+    examples: [
+      { de: 'Raum', zh: '空間；房間' },
+      { de: 'aufräumen', zh: '整理' },
+    ],
+  },
+  {
+    form: 'ruf',
+    kind: 'root',
+    level: 'A1',
+    zh: '叫／呼叫',
+    tip: 'rufen、Anruf、berühmt。',
+    examples: [
+      { de: 'rufen', zh: '呼叫' },
+      { de: 'Anruf', zh: '來電' },
+    ],
+  },
+  {
+    form: 'merk',
+    kind: 'root',
+    level: 'A2',
+    zh: '注意／記住',
+    tip: 'merken、bemerken、Merkmal。',
+    examples: [
+      { de: 'merken', zh: '察覺；記住' },
+      { de: 'bemerken', zh: '注意到' },
+    ],
+  },
+  {
+    form: 'häng',
+    kind: 'root',
+    level: 'A2',
+    zh: '掛／依賴',
+    tip: 'hängen、abhängen、Anhänger。',
+    examples: [
+      { de: 'hängen', zh: '掛' },
+      { de: 'abhängen', zh: '取決於' },
+    ],
+  },
+  {
+    form: 'drück',
+    kind: 'root',
+    level: 'A2',
+    zh: '壓／表達',
+    tip: 'drücken、ausdrücken、Druck。',
+    examples: [
+      { de: 'drücken', zh: '壓' },
+      { de: 'ausdrücken', zh: '表達' },
+    ],
+  },
+  {
+    form: 'wünsch',
+    kind: 'root',
+    level: 'A1',
+    zh: '願望',
+    tip: 'wünschen、Wunsch、wünschte。',
+    examples: [
+      { de: 'wünschen', zh: '祝願；想要' },
+      { de: 'Wunsch', zh: '願望' },
+    ],
+  },
+  {
+    form: 'brauch',
+    kind: 'root',
+    level: 'A1',
+    zh: '需要／使用',
+    tip: 'brauchen、gebrauchen、Brauch。',
+    examples: [
+      { de: 'brauchen', zh: '需要' },
+      { de: 'Gebrauch', zh: '使用' },
+    ],
+  },
+  {
+    form: 'änder',
+    kind: 'root',
+    level: 'A2',
+    zh: '改變',
+    tip: 'ändern、verändern、Veränderung。',
+    examples: [
+      { de: 'ändern', zh: '改變' },
+      { de: 'verändern', zh: '改變' },
+    ],
+  },
+  {
+    form: 'ginn',
+    kind: 'root',
+    level: 'A1',
+    zh: '開始',
+    tip: 'Beginn、beginnen、Anfang 近義。',
+    examples: [
+      { de: 'beginnen', zh: '開始' },
+      { de: 'Beginn', zh: '開始（名詞）' },
+    ],
+  },
+  {
+    form: 'antwort',
+    kind: 'root',
+    level: 'A1',
+    zh: '回答',
+    tip: 'Antwort、antworten、beantworten。整詞當字根，勿拆成 an-。',
+    examples: [
+      { de: 'Antwort', zh: '答案' },
+      { de: 'antworten', zh: '回答' },
+    ],
+  },
+  {
+    form: 'kenn',
+    kind: 'root',
+    level: 'A1',
+    zh: '認識／知道',
+    tip: 'kennen、bekannt、Erkenntnis。',
+    examples: [
+      { de: 'kennen', zh: '認識' },
+      { de: 'bekannt', zh: '知名的' },
+    ],
+  },
+  {
+    form: 'wiss',
+    kind: 'root',
+    level: 'A1',
+    zh: '知／知識',
+    tip: 'wissen、Wissenschaft、bewusst。',
+    examples: [
+      { de: 'wissen', zh: '知道' },
+      { de: 'Wissenschaft', zh: '科學' },
+    ],
+  },
+  {
+    form: 'ess',
+    kind: 'root',
+    level: 'A1',
+    zh: '吃',
+    tip: 'essen、Essen、fressen。',
+    examples: [
+      { de: 'essen', zh: '吃' },
+      { de: 'Essen', zh: '餐；食物' },
+    ],
+  },
+  {
+    form: 'trink',
+    kind: 'root',
+    level: 'A1',
+    zh: '喝',
+    tip: 'trinken、Getränk。',
+    examples: [
+      { de: 'trinken', zh: '喝' },
+      { de: 'Getränk', zh: '飲料' },
+    ],
+  },
 ]
 
 const allForLookup = [...PREFIX_MEANINGS, ...SUFFIX_MEANINGS]
@@ -2025,6 +2478,14 @@ const prefixByForm = new Map(
 )
 const suffixByForm = new Map(
   SUFFIX_MEANINGS.map((e) => [e.form.toLowerCase(), e]),
+)
+const rootByForm = new Map(
+  ROOT_MEANINGS.map((e) => [e.form.toLowerCase(), e]),
+)
+
+/** Longest-first root forms for fuzzy stem matching */
+const ROOT_MATCH_ORDER: AffixEntry[] = [...ROOT_MEANINGS].sort(
+  (a, b) => b.form.length - a.form.length,
 )
 
 /** Longest-first forms for stripping prefixes in enrich.ts */
@@ -2045,13 +2506,52 @@ export function lookupSuffix(form: string): AffixEntry | undefined {
   return suffixByForm.get(form.toLowerCase())
 }
 
+/**
+ * Find a root meaning for an auto-split stem.
+ * Exact match first, then longest known root that the stem starts with.
+ * Reverse match (root starts with stem) only when stem is nearly as long.
+ */
+export function lookupRoot(stem: string): AffixEntry | undefined {
+  const s = stem.toLowerCase().trim()
+  if (!s) return undefined
+  const exact = rootByForm.get(s)
+  if (exact) return exact
+
+  for (const e of ROOT_MATCH_ORDER) {
+    const f = e.form.toLowerCase()
+    if (f.length < 3) continue
+    if (s.startsWith(f)) return e
+  }
+
+  for (const e of ROOT_MATCH_ORDER) {
+    const f = e.form.toLowerCase()
+    if (f.length < 3) continue
+    // hol → holen-style only when stem is almost the full root
+    if (f.startsWith(s) && s.length >= Math.min(4, f.length)) return e
+  }
+
+  for (const e of ROOT_MATCH_ORDER) {
+    const f = e.form.toLowerCase()
+    if (f.length >= 3) continue
+    if (s === f) return e
+  }
+  return undefined
+}
+
 export function affixMeaningLine(
-  kind: 'prefix' | 'suffix',
+  kind: 'prefix' | 'suffix' | 'root',
   form: string,
 ): string | undefined {
-  const e = kind === 'prefix' ? lookupPrefix(form) : lookupSuffix(form)
+  const e =
+    kind === 'prefix'
+      ? lookupPrefix(form)
+      : kind === 'suffix'
+        ? lookupSuffix(form)
+        : lookupRoot(form)
   if (!e) return undefined
-  return kind === 'prefix' ? `${form}-=${e.zh}` : `-${form}=${e.zh}`
+  if (kind === 'prefix') return `${form}-=${e.zh}`
+  if (kind === 'suffix') return `-${form}=${e.zh}`
+  return `${form}≈${e.zh}`
 }
 
 export function countAffixes(): {

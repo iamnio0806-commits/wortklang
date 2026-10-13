@@ -2,6 +2,7 @@ import type { Gender, VocabWord } from '../data/vocabulary'
 import { vocabulary } from '../data/vocabulary'
 import {
   lookupPrefix,
+  lookupRoot,
   lookupSuffix,
   PREFIX_MATCH_FORMS,
   SUFFIX_MATCH_FORMS,
@@ -449,7 +450,10 @@ function stripPrefix(word: string): { prefix?: string; rest: string } {
   const bare = lower.replace(/^sich\s+/, '')
   for (const p of PREFIXES) {
     if (bare.startsWith(p) && bare.length > p.length + 2) {
-      return { prefix: p, rest: bare.slice(p.length) }
+      const rest = bare.slice(p.length)
+      // Short prefixes often false-split (an+tworten). Only keep if rest looks like a known stem.
+      if (p.length <= 3 && !lookupRoot(rest)) continue
+      return { prefix: p, rest }
     }
   }
   return { rest: bare }
@@ -472,12 +476,19 @@ function analyzeParts(word: string): WordParts {
   const suffixes: string[] = []
   let core = rest
   for (const s of SUFFIXES) {
-    if (core.endsWith(s) && core.length > s.length + 1) {
+    if (core.endsWith(s) && core.length > s.length + 2) {
+      const next = core.slice(0, -s.length)
+      // Avoid suchen → su + -chen; keep diminutives only when leftover is a real stem
+      if (s.length <= 4 && next.length < 4 && !lookupRoot(next)) continue
       suffixes.unshift(s)
-      core = core.slice(0, -s.length)
+      core = next
       break // one productive suffix is enough for display
     }
   }
+
+  const stem = core || rest
+  const rootHit = lookupRoot(stem)
+  const rootLabel = rootHit?.form ?? stem
 
   const noteParts: string[] = []
   if (prefixes.length) {
@@ -486,6 +497,11 @@ function analyzeParts(word: string): WordParts {
       return m ? `${p}-（${m.zh}）` : `${p}-`
     })
     noteParts.push(`字首 ${withMeaning.join(' + ')}`)
+  }
+  if (rootHit) {
+    noteParts.push(`字根 ${rootHit.form}（${rootHit.zh}）`)
+  } else if (stem) {
+    noteParts.push(`字根約為「${stem}」`)
   }
   if (suffixes.length) {
     const withMeaning = suffixes.map((s) => {
@@ -497,11 +513,9 @@ function analyzeParts(word: string): WordParts {
 
   return {
     prefixes,
-    root: core || rest,
+    root: rootLabel,
     suffixes,
-    note: noteParts.length
-      ? `${noteParts.join('，')}；字根約為「${core || rest}」`
-      : undefined,
+    note: noteParts.length ? noteParts.join('，') : undefined,
   }
 }
 
@@ -746,10 +760,21 @@ function memoryTips(w: VocabWord, type: EnrichedWord['wordType'], pluralPattern?
   if (type === '形容詞') {
     tips.push('形容詞可記反義對（大／小、好／壞），再配一個短例句。')
   }
-  if (parts?.prefixes.length || parts?.suffixes.length) {
-    tips.push(
-      `拆字記：${[...parts.prefixes.map((p) => p + '-'), parts.root, ...parts.suffixes.map((s) => '-' + s)].join(' + ')}`,
-    )
+  if (parts?.prefixes.length || parts?.suffixes.length || parts?.root) {
+    const chunks: string[] = []
+    for (const p of parts.prefixes) {
+      const m = lookupPrefix(p)
+      chunks.push(m ? `${p}-（${m.zh}）` : `${p}-`)
+    }
+    {
+      const m = lookupRoot(parts.root)
+      chunks.push(m ? `${parts.root}（${m.zh}）` : parts.root)
+    }
+    for (const s of parts.suffixes) {
+      const m = lookupSuffix(s)
+      chunks.push(m ? `-${s}（${m.zh}）` : `-${s}`)
+    }
+    tips.push(`拆字記：${chunks.join(' + ')}`)
   }
   tips.push('用例句情境記：把中文意思套回例句再說一次德文。')
   return tips

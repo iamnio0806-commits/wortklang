@@ -32,7 +32,7 @@ import AffixesIntro from './AffixesIntro'
 import ReadingView from './ReadingView'
 import ExamView from './ExamView'
 import LearnHub from './LearnHub'
-import { lookupPrefix, lookupSuffix } from './data/affixes'
+import { lookupPrefix, lookupRoot, lookupSuffix } from './data/affixes'
 import { getGrammarTopic } from './data/grammar'
 import { getReadingById } from './data/reading'
 import {
@@ -178,20 +178,26 @@ function GrammarPanels({
               const m = lookupPrefix(p)
               return (
                 <span key={p} className="chip chip-prefix" title={m?.tip}>
-                  {p}-{m ? <small className="chip-mean">{m.zh}</small> : null}
+                  {p}-
+                  <small className="chip-mean">{m?.zh ?? '字首'}</small>
                 </span>
               )
             })}
-            <span className="chip chip-root">
+            <span
+              className="chip chip-root"
+              title={lookupRoot(e.parts.root)?.tip}
+            >
               {e.parts.root}
-              <small className="chip-mean">字根</small>
+              <small className="chip-mean">
+                {lookupRoot(e.parts.root)?.zh ?? '字根'}
+              </small>
             </span>
             {e.parts.suffixes.map((s) => {
               const m = lookupSuffix(s)
               return (
                 <span key={s} className="chip chip-suffix" title={m?.tip}>
                   -{s}
-                  {m ? <small className="chip-mean">{m.zh}</small> : null}
+                  <small className="chip-mean">{m?.zh ?? '字尾'}</small>
                 </span>
               )
             })}
