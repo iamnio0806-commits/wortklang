@@ -50,6 +50,15 @@ OBJECT_HINTS = (
     "書", "桌", "椅", "袋", "包", "筆", "紙", "機", "車", "鍵", "杯",
     "盤", "燈", "床", "鞋", "衣", "帽", "錶", "票", "卡", "箱",
     "瓶", "鏡", "球", "琴", "畫", "圖", "信", "報", "腦", "手機",
+    "枕", "刷", "衫", "毛衣", "尺", "櫃", "屜", "線", "帚", "布",
+)
+BODY_HINTS = (
+    "頭", "臉", "眼", "耳", "鼻", "嘴", "牙", "手", "腳", "腿", "臂",
+    "指", "心", "胃", "背", "肩", "脖", "髮", "皮膚", "血", "骨",
+)
+COUNTRY_HINTS = (
+    "國", "德國", "奧地利", "瑞士", "法國", "義大利", "西班牙", "英國",
+    "美國", "中國", "日本", "台灣", "歐洲", "亞洲",
 )
 FOOD_HINTS = (
     "食", "飯", "麵", "包", "肉", "菜", "果", "水", "茶", "咖", "酒",
@@ -152,10 +161,25 @@ def classify_noun(w: dict) -> str:
         return "time"
     if cat == "旅行" or has_any(zh, TRAVEL_HINTS):
         return "travel"
+    if has_any(zh, COUNTRY_HINTS) or low in {
+        "deutschland", "österreich", "schweiz", "frankreich", "italien",
+        "spanien", "england", "europa", "asien", "amerika", "china", "japan",
+        "taiwan", "berlin", "münchen", "hamburg", "wien", "zürich",
+    }:
+        return "place"
+    # devices/objects before body: 枕頭 contains 頭, 手機 contains 手
     if has_any(zh, DEVICE_HINTS) or low in {
         "computer", "handy", "telefon", "drucker", "laptop", "tablet", "bildschirm",
     }:
         return "object"
+    if has_any(zh, OBJECT_HINTS):
+        return "object"
+    if low in {
+        "kopf", "gesicht", "auge", "ohr", "nase", "mund", "zahn", "hand",
+        "fuß", "fuss", "bein", "arm", "finger", "herz", "magen", "rücken",
+        "schulter", "hals", "haar", "haut", "blut", "knochen",
+    } or has_any(zh, BODY_HINTS):
+        return "body"
     if cat == "自然" and not low.endswith(ABSTRACT_SUFFIX):
         return "nature"
     if cat == "家庭" and has_any(zh, PERSON_HINTS):
@@ -169,11 +193,17 @@ def classify_noun(w: dict) -> str:
         ("zimmer", "haus", "platz", "gasse", "straße", "strasse", "laden", "markt", "schule", "büro")
     ):
         return "place"
-    if has_any(zh, OBJECT_HINTS):
-        return "object"
-    if low.endswith(ABSTRACT_SUFFIX) or has_any(
+    # names / speech acts / feelings → abstract, never "lamp beside X"
+    if low in {
+        "name", "wort", "satz", "frage", "antwort", "bitte", "danke",
+        "traum", "ziel", "idee", "plan", "glück", "pech", "glückwunsch",
+        "wunsch", "problem", "lösung", "grund", "beispiel", "farbe", "form",
+        "kreis", "quadrat", "linie", "punkt", "zahl", "geld", "preis",
+        "spiel", "spaß", "spass", "musik", "film", "foto",
+    } or low.endswith(ABSTRACT_SUFFIX) or has_any(
         zh,
-        ("性", "感", "度", "力", "權", "制", "義", "論", "念", "況", "果", "勢", "關係", "態度", "決定", "發展", "意圖", "假設"),
+        ("性", "感", "度", "力", "權", "制", "義", "論", "念", "況", "果", "勢", "關係", "態度", "決定", "發展", "意圖", "假設",
+         "名字", "請求", "祝賀", "夢", "目標", "想法", "問題", "答案", "顏色", "形狀", "錢", "遊戲"),
     ):
         return "abstract"
     if cat in {"日常", "家庭", "工作"}:
@@ -200,6 +230,12 @@ def ex_illness(w, seed) -> tuple[str, str]:
 
 # ── curated overrides for high-frequency / easy-to-get-wrong lemmas ──
 CURATED: dict[str, tuple[str, str]] = {
+    "name": ("Mein Name steht auf dem Formular.", "我的名字寫在表格上。"),
+    "herz": ("Nach dem Laufen schlägt mein Herz schnell.", "跑步後我的心跳很快。"),
+    "schweiz": ("Im Sommer fahren wir in die Schweiz.", "夏天我們去瑞士。"),
+    "geld": ("Hast du genug Geld für das Ticket?", "你有足夠的錢買票嗎？"),
+    "farbe": ("Welche Farbe hat dein neues Auto?", "你的新車是什麼顏色？"),
+    "spiel": ("Das Spiel beginnt um drei Uhr.", "比賽／遊戲三點開始。"),
     "haus": ("Wir wohnen in einem kleinen Haus.", "我們住在一棟小房子裡。"),
     "wohnung": ("Die Wohnung ist hell und ruhig.", "這間公寓明亮又安靜。"),
     "zimmer": ("Mein Zimmer ist oben links.", "我的房間在樓上左邊。"),
@@ -276,13 +312,32 @@ def ex_object(w, seed) -> tuple[str, str]:
         (f"{Art} {word} liegt auf dem Tisch.", f"{zh}在桌上。"),
         (f"Kannst du mir {a} {word} geben?", f"你可以給我這個{zh}嗎？"),
         (f"Ich habe {a} {word} zu Hause gelassen.", f"我把{zh}忘在家了。"),
-        (f"{name} kauft {a} {word} im Laden.", f"{name}在店裡買{zh}。"),
-        (f"Ohne {a} {word} kann ich nicht arbeiten.", f"沒有{zh}我沒辦法做事。"),
+        (f"{name} sucht {a} {word} im Schrank.", f"{name}在櫃子裡找{zh}。"),
+        (f"Ohne {a} {word} komme ich heute nicht zurecht.", f"今天沒有{zh}我應付不來。"),
         (f"Wo hast du {a} {word} hingetan?", f"你把{zh}放哪裡了？"),
         (f"Nimm bitte {a} {word} mit.", f"請把{zh}一起帶上。"),
-        (f"{Art} {word} gehört {name}.", f"這個{zh}是{name}的。"),
         (f"Ich brauche noch {a} {word}.", f"我還需要{zh}。"),
-        (f"Neben {d} {word} steht eine Lampe.", f"{zh}旁邊有一盞燈。"),
+        (f"{Art} {word} ist neu und praktisch.", f"這個{zh}又新又實用。"),
+        (f"Leihst du mir kurz {a} {word}?", f"可以跟你借一下{zh}嗎？"),
+    ]
+    return bank[seed % len(bank)]
+
+
+def ex_body(w, seed) -> tuple[str, str]:
+    art, word, zh = w["article"], w["word"], short_zh(w["translation"])
+    a, d, Art = akk(art), dat(art), cap(art)
+    name = pick(NAMES, seed, 1)
+    bank = [
+        (f"Mir tut {art} {word} weh.", f"我的{zh}痛。"),
+        (f"{name} hält sich {a} {word}.", f"{name}按著自己的{zh}。"),
+        (f"Hebe bitte {a} {word}!", f"請舉起{zh}！"),
+        (f"Wasch dir {a} {word}.", f"把你的{zh}洗一洗。"),
+        (f"Ich habe mich am {word} verletzt." if art == "der" else f"Ich habe mich an {d} {word} verletzt.", f"我傷到{zh}了。"),
+        (f"{Art} {word} ist ganz warm.", f"{zh}熱熱的。"),
+        (f"Zeig mir bitte {a} {word}.", f"請把{zh}給我看。"),
+        (f"Ohne {a} {word} geht das nicht.", f"沒有{zh}這就辦不到。"),
+        (f"Der Arzt untersucht {a} {word}.", f"醫生在檢查{zh}。"),
+        (f"Beweg {a} {word} langsam.", f"慢慢活動{zh}。"),
     ]
     return bank[seed % len(bank)]
 
@@ -1000,7 +1055,7 @@ def ex_adj(w, seed) -> tuple[str, str]:
         bank = [
             (f"Das sieht {word} aus.", f"這看起來很{zh}。"),
             (f"Der Film war ziemlich {word}.", f"這電影相當{zh}。"),
-            (f"{name} findet die Idee {word}.", f"{name}覺得這想法很{zh}。"),
+            (f"{name} findet den Vorschlag {word}.", f"{name}覺得這建議很{zh}。"),
             (f"Bitte mach es nicht zu {word}.", f"請不要弄得太{zh}。"),
             (f"Für den Preis ist das {word}.", f"以這個價錢來說算{zh}。"),
             (f"Die Lösung klingt {word}.", f"這解法聽起來很{zh}。"),
@@ -1124,6 +1179,7 @@ def make_example(w: dict, index: int) -> tuple[str, str]:
             "nature": ex_nature,
             "abstract": ex_abstract,
             "illness": ex_illness,
+            "body": ex_body,
         }[kind]
         de, zh = fn(w, seed)
     elif w["category"] == "動詞":
